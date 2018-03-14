@@ -1,0 +1,1641 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-flash.min.css?v=1.0.2" rel="stylesheet">
+  <script>
+    (function(){
+        if(''){
+            if (prompt('please input password') !== ''){
+                alert('false password！');
+                history.back();
+            }
+        }
+    })();
+  </script>
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="javascript," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="SnailDove's blog" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="AJAX的介绍和优点什么是AJAXAJAX = Asynchronous JavaScript and XML,AJAX 是一种用于创建快速动态网页的技术。通过在后台与服务器进行少量数据交换，AJAX 可以使网页实现异步更新。这意味着可以在不重新加载整个网页的情况下，对网页的某部分进行更新。传统的网页（不使用 AJAX）如果需要更新内容，必需重载整个网页面。AJAX 不是新的编程语言，而是一种使用">
+<meta name="keywords" content="javascript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AJAX">
+<meta property="og:url" content="https://snaildove.github.io/2016/02/28/AJAX/index.html">
+<meta property="og:site_name" content="SnailDove&#39;s blog">
+<meta property="og:description" content="AJAX的介绍和优点什么是AJAXAJAX = Asynchronous JavaScript and XML,AJAX 是一种用于创建快速动态网页的技术。通过在后台与服务器进行少量数据交换，AJAX 可以使网页实现异步更新。这意味着可以在不重新加载整个网页的情况下，对网页的某部分进行更新。传统的网页（不使用 AJAX）如果需要更新内容，必需重载整个网页面。AJAX 不是新的编程语言，而是一种使用">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-03-14T09:49:35.955Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="AJAX">
+<meta name="twitter:description" content="AJAX的介绍和优点什么是AJAXAJAX = Asynchronous JavaScript and XML,AJAX 是一种用于创建快速动态网页的技术。通过在后台与服务器进行少量数据交换，AJAX 可以使网页实现异步更新。这意味着可以在不重新加载整个网页的情况下，对网页的某部分进行更新。传统的网页（不使用 AJAX）如果需要更新内容，必需重载整个网页面。AJAX 不是新的编程语言，而是一种使用">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":5,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideLeftIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://snaildove.github.io/2016/02/28/AJAX/"/>
+
+
+
+
+
+  <title>AJAX | SnailDove's blog</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?9385c404e3043551a2c60f0d9b0b3113";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">SnailDove's blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">蜗牛哥博客</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-sitemap">
+          <a href="/sitemap.xml" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />
+            
+            站点地图
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://snaildove.github.io/2016/02/28/AJAX/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="SnailDove">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SnailDove's blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">AJAX</h1>
+        
+
+        <div class="post-meta">
+		  
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-02-28T20:16:00+08:00">
+                2016-02-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/中文/" itemprop="url" rel="index">
+                    <span itemprop="name">中文</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-eye"></i>
+                  <span class="post-meta-item-text">阅读次数</span>
+              <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">全文字数</span>
+                
+                <span title="全文字数">
+                  4,179
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  17
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="AJAX的介绍和优点"><a href="#AJAX的介绍和优点" class="headerlink" title="AJAX的介绍和优点"></a>AJAX的介绍和优点</h2><h3 id="什么是AJAX"><a href="#什么是AJAX" class="headerlink" title="什么是AJAX"></a>什么是AJAX</h3><p>AJAX = Asynchronous JavaScript and XML,AJAX 是一种用于创建快速动态网页的技术。通过在后台与服务器进行少量数据交换，AJAX 可以使网页实现异步更新。这意味着可以在不重新加载整个网页的情况下，对网页的某部分进行更新。传统的网页（不使用 AJAX）如果需要更新内容，必需重载整个网页面。AJAX 不是新的编程语言，而是一种使用现有标准的新方法。AJAX 是与服务器交换数据并更新部分网页局部数据的艺术，在不重新加载整个页面的情况下(按需取数据)。</p>
+<h3 id="AJAX优缺点"><a href="#AJAX优缺点" class="headerlink" title="AJAX优缺点"></a>AJAX优缺点</h3><ol>
+<li><p>优点：局部刷新，用户体验好（通过 AJAX，JavaScript 无需等待服务器的响应，而是：<br>在等待服务器响应时执行其他脚本<br>当响应就绪后对响应进行处理），服务器负载减轻</p>
+</li>
+<li><p>缺点：移动端不是支持很好，而且创建对象比较麻烦，各浏览器都不一样（总体：2种）</p>
+</li>
+</ol>
+<h3 id="AJAX应用"><a href="#AJAX应用" class="headerlink" title="AJAX应用"></a>AJAX应用</h3><p>大量交互数据的web，提高响应速度与用户体验.有很多使用 AJAX 的应用程序案例：新浪微博、Google 地图、开心网等等。</p>
+<h2 id="AJAX对象"><a href="#AJAX对象" class="headerlink" title="AJAX对象"></a>AJAX对象</h2><p><strong>XMLHttpRequest 是 AJAX 的基础。</strong></p>
+<h3 id="XMLHttpRequest-对象"><a href="#XMLHttpRequest-对象" class="headerlink" title="XMLHttpRequest 对象"></a>XMLHttpRequest 对象</h3><p>所有现代浏览器均支持 XMLHttpRequest 对象（IE5 和 IE6 使用 ActiveXObject）。</p>
+<p>XMLHttpRequest 用于在后台与服务器交换数据。这意味着可以在不重新加载整个网页的情况下，对网页的某部分进行更新。</p>
+<h3 id="创建-XMLHttpRequest-对象"><a href="#创建-XMLHttpRequest-对象" class="headerlink" title="创建 XMLHttpRequest 对象"></a>创建 XMLHttpRequest 对象</h3><p>所有现代浏览器（IE7+、Firefox、Chrome、Safari 以及 Opera）均内建 XMLHttpRequest 对象。</p>
+<h3 id="创建-XMLHttpRequest-对象的语法"><a href="#创建-XMLHttpRequest-对象的语法" class="headerlink" title="创建 XMLHttpRequest 对象的语法"></a>创建 XMLHttpRequest 对象的语法</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">variable=<span class="keyword">new</span> XMLHttpRequest();</span><br></pre></td></tr></table></figure>
+<h3 id="老版本的-Internet-Explorer-（IE5-和-IE6）使用-ActiveX-对象"><a href="#老版本的-Internet-Explorer-（IE5-和-IE6）使用-ActiveX-对象" class="headerlink" title="老版本的 Internet Explorer （IE5 和 IE6）使用 ActiveX 对象"></a>老版本的 Internet Explorer （IE5 和 IE6）使用 ActiveX 对象</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">variable=<span class="keyword">new</span> ActiveXObject(<span class="string">"Microsoft.XMLHTTP"</span>);</span><br></pre></td></tr></table></figure>
+<p>为了应对所有的现代浏览器，包括 IE5 和 IE6，请检查浏览器是否支持 XMLHttpRequest 对象。如果支持，则创建 XMLHttpRequest 对象。如果不支持，则创建 ActiveXObject ：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> xmlhttp;</span><br><span class="line"><span class="keyword">if</span> (<span class="built_in">window</span>.XMLHttpRequest)</span><br><span class="line">&#123;<span class="comment">// code for IE7+, Firefox, Chrome, Opera, Safari</span></span><br><span class="line">    xmlhttp=<span class="keyword">new</span> XMLHttpRequest();</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">&#123;<span class="comment">// code for IE6, IE5</span></span><br><span class="line">    xmlhttp=<span class="keyword">new</span> ActiveXObject(<span class="string">"Microsoft.XMLHTTP"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>XMLHttpRequest 对象用于和服务器交换数据。</strong></p>
+<h2 id="向服务器发送请求"><a href="#向服务器发送请求" class="headerlink" title="向服务器发送请求"></a>向服务器发送请求</h2><p>如需将请求发送到服务器，我们使用 XMLHttpRequest 对象的 open() 和 send() 方法：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">xmlhttp.open(<span class="string">"GET"</span>,<span class="string">"test1.txt"</span>,<span class="literal">true</span>);</span><br><span class="line">xmlhttp.send();</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>open(<em>method</em>,<em>url</em>,<em>async</em>)</td>
+<td>规定请求的类型、URL 以及是否异步处理请求。<em>method</em>：请求的类型；GET 或 POST<em>url</em>：文件在服务器上的位置<em>async</em>：true（异步）或 false（同步）</td>
+</tr>
+<tr>
+<td>send(<em>string</em>)</td>
+<td>将请求发送到服务器。<em>string</em>：仅用于 POST 请求</td>
+</tr>
+</tbody>
+</table>
+<h3 id="GET-还是-POST？"><a href="#GET-还是-POST？" class="headerlink" title="GET 还是 POST？"></a>GET 还是 POST？</h3><p>与 POST 相比，GET 更简单也更快，并且在大部分情况下都能用。</p>
+<p>然而，在以下情况中，请使用 POST 请求：</p>
+<ul>
+<li>无法使用缓存文件（更新服务器上的文件或数据库）</li>
+<li>向服务器发送大量数据（POST 没有数据量限制）</li>
+<li>发送包含未知字符的用户输入时，POST 比 GET 更稳定也更可靠</li>
+</ul>
+<p>对象的 open() 和 send() 方法：</p>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>open(<em>method</em>,<em>url</em>,<em>async</em>)</td>
+<td>规定请求的类型、URL 以及是否异步处理请求。<strong>method</strong>：请求的类型；GET 或 POST <strong>url</strong>：文件在服务器上的位置，该文件可以是任何类型的文件，比如 .json 和 .xml，或者服务器脚本文件，比如 .asp 和 .php （在传回响应之前，能够在服务器上执行任务）。<strong>async</strong>：true（异步）或 false（同步）</td>
+</tr>
+<tr>
+<td>send(<em>string</em>)</td>
+<td>将请求发送到服务器。<em>string</em>：仅用于 POST 请求</td>
+</tr>
+</tbody>
+</table>
+<h4 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ajaxObj.open(<span class="string">"GET"</span>,<span class="string">"test1.txt"</span>,<span class="literal">true</span>);  </span><br><span class="line">ajaxObj.send();</span><br></pre></td></tr></table></figure>
+<h3 id="GET-or-POST？"><a href="#GET-or-POST？" class="headerlink" title="GET or POST？"></a>GET or POST？</h3><p>与 POST 相比，GET 更简单也更快，并且在大部分情况下都能用。 然而，在以下情况中，请使用 POST 请求：无法使用缓存文件（更新服务器上的文件或数据库）向服务器发送大量数据（POST 没有数据量限制）发送包含未知字符的用户输入时，POST 比 GET 更稳定也更可靠。</p>
+<h3 id="GET-请求"><a href="#GET-请求" class="headerlink" title="GET 请求"></a>GET 请求</h3><p>一个简单的 GET 请求：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">xmlhttp.open(<span class="string">"GET"</span>,<span class="string">"demo_get.asp"</span>,<span class="literal">true</span>);</span><br><span class="line">xmlhttp.send();</span><br></pre></td></tr></table></figure>
+<p><a href="http://www.w3school.com.cn/tiy/t.asp?f=ajax_get" target="_blank" rel="noopener">亲自试一试</a></p>
+<p>在上面的例子中，您可能得到的是缓存的结果。</p>
+<p>为了避免这种情况，请向 URL 添加一个唯一的 ID：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">xmlhttp.open(<span class="string">"GET"</span>,<span class="string">"demo_get.asp?t="</span> + <span class="built_in">Math</span>.random(),<span class="literal">true</span>);</span><br><span class="line">xmlhttp.send();</span><br></pre></td></tr></table></figure>
+<p><a href="http://www.w3school.com.cn/tiy/t.asp?f=ajax_get_unique" target="_blank" rel="noopener">亲自试一试</a></p>
+<p>如果您希望通过 GET 方法发送信息，请向 URL 添加信息：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">xmlhttp.open(<span class="string">"GET"</span>,<span class="string">"demo_get2.asp?fname=Bill&amp;lname=Gates"</span>,<span class="literal">true</span>);</span><br><span class="line">xmlhttp.send();</span><br></pre></td></tr></table></figure>
+<p><a href="http://www.w3school.com.cn/tiy/t.asp?f=ajax_get2" target="_blank" rel="noopener">亲自试一试</a></p>
+<h3 id="POST-请求"><a href="#POST-请求" class="headerlink" title="POST 请求"></a>POST 请求</h3><p>一个简单 POST 请求：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">xmlhttp.open(<span class="string">"POST"</span>,<span class="string">"demo_post.asp"</span>,<span class="literal">true</span>);</span><br><span class="line">xmlhttp.send();</span><br></pre></td></tr></table></figure>
+<p><a href="http://www.w3school.com.cn/tiy/t.asp?f=ajax_post" target="_blank" rel="noopener">亲自试一试</a></p>
+<p>如果需要像 HTML 表单那样 POST 数据，请使用 setRequestHeader() 来添加 HTTP 头。然后在 send() 方法中规定您希望发送的数据：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">xmlhttp.open(<span class="string">"POST"</span>,<span class="string">"ajax_test.asp"</span>,<span class="literal">true</span>);</span><br><span class="line">xmlhttp.setRequestHeader(<span class="string">"Content-type"</span>,<span class="string">"application/x-www-form-urlencoded"</span>);</span><br><span class="line">xmlhttp.send(<span class="string">"fname=Bill&amp;lname=Gates"</span>);</span><br></pre></td></tr></table></figure>
+<p><a href="http://www.w3school.com.cn/tiy/t.asp?f=ajax_post2" target="_blank" rel="noopener">亲自试一试</a></p>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>setRequestHeader(<em>header</em>,<em>value</em>)</td>
+<td>向请求添加 HTTP 头。<em>header</em>: 规定头的名称<em>value</em>: 规定头的值</td>
+</tr>
+</tbody>
+</table>
+<h3 id="url-服务器上的文件"><a href="#url-服务器上的文件" class="headerlink" title="url - 服务器上的文件"></a>url - 服务器上的文件</h3><p>open() 方法的 <em>url</em> 参数是服务器上文件的地址：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xmlhttp.open(<span class="string">"GET"</span>,<span class="string">"ajax_test.asp"</span>,<span class="literal">true</span>);</span><br></pre></td></tr></table></figure>
+<p>该文件可以是任何类型的文件，比如 .txt 和 .xml，或者服务器脚本文件，比如 .asp 和 .php （在传回响应之前，能够在服务器上执行任务）。</p>
+<h3 id="异步-True-或-False？"><a href="#异步-True-或-False？" class="headerlink" title="异步 - True 或 False？"></a>异步 - True 或 False？</h3><p>AJAX 指的是异步 JavaScript 和 XML（Asynchronous JavaScript and XML）。</p>
+<p>XMLHttpRequest 对象如果要用于 AJAX 的话，其 open() 方法的 async 参数必须设置为 true：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xmlhttp.open(<span class="string">"GET"</span>,<span class="string">"ajax_test.asp"</span>,<span class="literal">true</span>);</span><br></pre></td></tr></table></figure>
+<p>对于 web 开发人员来说，发送异步请求是一个巨大的进步。很多在服务器执行的任务都相当费时。AJAX 出现之前，这可能会引起应用程序挂起或停止。</p>
+<p>通过 AJAX，JavaScript 无需等待服务器的响应，而是：</p>
+<ul>
+<li>在等待服务器响应时执行其他脚本</li>
+<li>当响应就绪后对响应进行处理</li>
+</ul>
+<h3 id="Async-true"><a href="#Async-true" class="headerlink" title="Async = true"></a>Async = true</h3><p>当使用 async=true 时，请规定在响应处于 onreadystatechange 事件中的就绪状态时执行的函数：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">xmlhttp.onreadystatechange=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (xmlhttp.readyState==<span class="number">4</span> &amp;&amp; xmlhttp.status==<span class="number">200</span>)</span><br><span class="line">    &#123;</span><br><span class="line">    <span class="built_in">document</span>.getElementById(<span class="string">"myDiv"</span>).innerHTML=xmlhttp.responseText;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">xmlhttp.open(<span class="string">"GET"</span>,<span class="string">"test1.txt"</span>,<span class="literal">true</span>);</span><br><span class="line">xmlhttp.send();</span><br></pre></td></tr></table></figure>
+<p><a href="http://www.w3school.com.cn/tiy/t.asp?f=ajax_async_true" target="_blank" rel="noopener">亲自试一试</a></p>
+<p>您将在稍后的章节学习更多有关 onreadystatechange 的内容。</p>
+<h3 id="Async-false"><a href="#Async-false" class="headerlink" title="Async = false"></a>Async = false</h3><p>如需使用 async=false，请将 open() 方法中的第三个参数改为 false：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xmlhttp.open(<span class="string">"GET"</span>,<span class="string">"test1.txt"</span>,<span class="literal">false</span>);</span><br></pre></td></tr></table></figure>
+<p>我们不推荐使用 async=false，但是对于一些小型的请求，也是可以的。</p>
+<p>请记住，JavaScript 会等到服务器响应就绪才继续执行。如果服务器繁忙或缓慢，应用程序会挂起或停止。</p>
+<p>注释：当您使用 async=false 时，请不要编写 onreadystatechange 函数 - 把代码放到 send() 语句后面即可：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">xmlhttp.open(<span class="string">"GET"</span>,<span class="string">"test1.txt"</span>,<span class="literal">false</span>);</span><br><span class="line">xmlhttp.send();</span><br><span class="line"><span class="built_in">document</span>.getElementById(<span class="string">"myDiv"</span>).innerHTML=xmlhttp.responseText;</span><br></pre></td></tr></table></figure>
+<p><a href="http://www.w3school.com.cn/tiy/t.asp?f=ajax_async_false" target="_blank" rel="noopener">亲自试一试</a></p>
+<h2 id="AJAX-服务器响应"><a href="#AJAX-服务器响应" class="headerlink" title="AJAX - 服务器响应"></a>AJAX - 服务器响应</h2><ul>
+<li><a href="http://www.w3school.com.cn/ajax/ajax_xmlhttprequest_send.asp" target="_blank" rel="noopener">XMLHttpRequest 请求</a></li>
+<li><a href="http://www.w3school.com.cn/ajax/ajax_xmlhttprequest_onreadystatechange.asp" target="_blank" rel="noopener">XMLHttpRequest readyState</a></li>
+</ul>
+<h3 id="服务器响应"><a href="#服务器响应" class="headerlink" title="服务器响应"></a>服务器响应</h3><p>如需获得来自服务器的响应，请使用 XMLHttpRequest 对象的 responseText 或 responseXML 属性。</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>responseText</td>
+<td>获得字符串形式的响应数据。</td>
+</tr>
+<tr>
+<td>responseXML</td>
+<td>获得 XML 形式的响应数据。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="responseText-属性"><a href="#responseText-属性" class="headerlink" title="responseText 属性"></a>responseText 属性</h3><p>如果来自服务器的响应并非 XML，请使用 responseText 属性。</p>
+<p>responseText 属性返回字符串形式的响应，因此您可以这样使用：</p>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">document.getElementById(<span class="string">"myDiv"</span>).<span class="attribute">innerHTML</span>=xmlhttp.responseText;</span><br></pre></td></tr></table></figure>
+<p><a href="http://www.w3school.com.cn/tiy/t.asp?f=ajax_async_true" target="_blank" rel="noopener">亲自试一试</a></p>
+<h3 id="responseXML-属性"><a href="#responseXML-属性" class="headerlink" title="responseXML 属性"></a>responseXML 属性</h3><p>如果来自服务器的响应是 XML，而且需要作为 XML 对象进行解析，请使用 responseXML 属性：</p>
+<p>请求 <a href="http://www.w3school.com.cn/example/xmle/books.xml" target="_blank" rel="noopener">books.xml</a> 文件，并解析响应：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">xmlDoc=xmlhttp.responseXML;</span><br><span class="line">txt=<span class="string">""</span>;</span><br><span class="line">x=xmlDoc.getElementsByTagName(<span class="string">"ARTIST"</span>);</span><br><span class="line"><span class="keyword">for</span> (i=<span class="number">0</span>;i&lt;x.length;i++)</span><br><span class="line">&#123;</span><br><span class="line">  txt=txt + x[i].childNodes[<span class="number">0</span>].nodeValue + <span class="string">"&lt;br /&gt;"</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">document</span>.getElementById(<span class="string">"myDiv"</span>).innerHTML=txt;</span><br></pre></td></tr></table></figure>
+<p><a href="http://www.w3school.com.cn/tiy/t.asp?f=ajax_responsexml" target="_blank" rel="noopener">亲自试一试</a></p>
+<h3 id="AJAX-onreadystatechange-事件"><a href="#AJAX-onreadystatechange-事件" class="headerlink" title="AJAX - onreadystatechange 事件"></a>AJAX - onreadystatechange 事件</h3><ul>
+<li><a href="http://www.w3school.com.cn/ajax/ajax_xmlhttprequest_response.asp" target="_blank" rel="noopener">XHR 响应</a></li>
+<li><a href="http://www.w3school.com.cn/ajax/ajax_asp_php.asp" target="_blank" rel="noopener">AJAX ASP/PHP</a></li>
+</ul>
+<h3 id="onreadystatechange-事件"><a href="#onreadystatechange-事件" class="headerlink" title="onreadystatechange 事件"></a>onreadystatechange 事件</h3><p>当请求被发送到服务器时，我们需要执行一些基于响应的任务。</p>
+<p>每当 readyState 改变时，就会触发 onreadystatechange 事件。</p>
+<p>readyState 属性存有 XMLHttpRequest 的状态信息。</p>
+<p>下面是 XMLHttpRequest 对象的三个重要的属性：</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>onreadystatechange</td>
+<td>存储函数（或函数名），每当 readyState 属性改变时，就会调用该函数。</td>
+</tr>
+<tr>
+<td>readyState</td>
+<td>存有 XMLHttpRequest 的状态。从 0 到 4 发生变化。0: 请求未初始化1: 服务器连接已建立2: 请求已接收3: 请求处理中4: 请求已完成，且响应已就绪</td>
+</tr>
+<tr>
+<td>status</td>
+<td>200: “OK”404: 未找到页面</td>
+</tr>
+</tbody>
+</table>
+<p>在 onreadystatechange 事件中，我们规定当服务器响应已做好被处理的准备时所执行的任务。</p>
+<p>当 readyState 等于 4 且状态为 200 时，表示响应已就绪：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">xmlhttp.onreadystatechange=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (xmlhttp.readyState==<span class="number">4</span> &amp;&amp; xmlhttp.status==<span class="number">200</span>)</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="built_in">document</span>.getElementById(<span class="string">"myDiv"</span>).innerHTML=xmlhttp.responseText;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><a href="http://www.w3school.com.cn/tiy/t.asp?f=ajax_async_true" target="_blank" rel="noopener">亲自试一试</a></p>
+<p>注释：onreadystatechange 事件被触发 5 次（0 - 4），对应着 readyState 的每个变化。</p>
+<h3 id="使用-Callback-函数"><a href="#使用-Callback-函数" class="headerlink" title="使用 Callback 函数"></a>使用 Callback 函数</h3><p>callback 函数是一种以参数形式传递给另一个函数的函数。</p>
+<p>如果您的网站上存在多个 AJAX 任务，那么您应该为创建 XMLHttpRequest 对象编写一个<em>标准</em>的函数，并为每个 AJAX 任务调用该函数。</p>
+<p>该函数调用应该包含 URL 以及发生 onreadystatechange 事件时执行的任务（每次调用可能不尽相同）：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">myFunction</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  loadXMLDoc(<span class="string">"ajax_info.txt"</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (xmlhttp.readyState==<span class="number">4</span> &amp;&amp; xmlhttp.status==<span class="number">200</span>)</span><br><span class="line">    &#123;</span><br><span class="line">    <span class="built_in">document</span>.getElementById(<span class="string">"myDiv"</span>).innerHTML=xmlhttp.responseText;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><a href="http://www.w3school.com.cn/tiy/t.asp?f=ajax_callback" target="_blank" rel="noopener">亲自试一试</a></p>
+<h2 id="AJAX-ASP-PHP-请求实例"><a href="#AJAX-ASP-PHP-请求实例" class="headerlink" title="AJAX ASP/PHP 请求实例"></a>AJAX ASP/PHP 请求实例</h2><ul>
+<li><a href="http://www.w3school.com.cn/ajax/ajax_xmlhttprequest_onreadystatechange.asp" target="_blank" rel="noopener">XHR readyState</a></li>
+<li><a href="http://www.w3school.com.cn/ajax/ajax_database.asp" target="_blank" rel="noopener">AJAX 数据库</a></li>
+</ul>
+<p><strong>AJAX 用于创造动态性更强的应用程序。</strong></p>
+<h3 id="AJAX-ASP-PHP-实例"><a href="#AJAX-ASP-PHP-实例" class="headerlink" title="AJAX ASP/PHP 实例"></a>AJAX ASP/PHP 实例</h3><p>下面的例子将为您演示当用户在输入框中键入字符时，网页如何与 web 服务器进行通信：</p>
+<p>请在下面的输入框中键入字母（A - Z）：</p>
+<p>姓氏：</p>
+<p>建议：</p>
+<p><a href="http://www.w3school.com.cn/tiy/t.asp?f=ajax_suggest" target="_blank" rel="noopener">亲自试一下源代码</a></p>
+<h3 id="实例解释-showHint-函数"><a href="#实例解释-showHint-函数" class="headerlink" title="实例解释 - showHint() 函数"></a>实例解释 - showHint() 函数</h3><p>当用户在上面的输入框中键入字符时，会执行函数 “showHint()” 。该函数由 “onkeyup” 事件触发：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">showHint</span>(<span class="params">str</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">var</span> xmlhttp;</span><br><span class="line">	<span class="keyword">if</span> (str.length==<span class="number">0</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">document</span>.getElementById(<span class="string">"txtHint"</span>).innerHTML=<span class="string">""</span>;</span><br><span class="line">		<span class="keyword">return</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">if</span> (<span class="built_in">window</span>.XMLHttpRequest)</span><br><span class="line">	&#123;<span class="comment">// code for IE7+, Firefox, Chrome, Opera, Safari</span></span><br><span class="line">		xmlhttp=<span class="keyword">new</span> XMLHttpRequest();</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;<span class="comment">// code for IE6, IE5</span></span><br><span class="line">		xmlhttp=<span class="keyword">new</span> ActiveXObject(<span class="string">"Microsoft.XMLHTTP"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	xmlhttp.onreadystatechange=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		<span class="keyword">if</span> (xmlhttp.readyState==<span class="number">4</span> &amp;&amp; xmlhttp.status==<span class="number">200</span>)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="built_in">document</span>.getElementById(<span class="string">"txtHint"</span>).innerHTML=xmlhttp.responseText;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	xmlhttp.open(<span class="string">"GET"</span>,<span class="string">"gethint.asp?q="</span>+str,<span class="literal">true</span>);</span><br><span class="line">	xmlhttp.send();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="源代码解释："><a href="#源代码解释：" class="headerlink" title="源代码解释："></a>源代码解释：</h3><p>如果输入框为空 (str.length==0)，则该函数清空 txtHint 占位符的内容，并退出函数。</p>
+<p>如果输入框不为空，showHint() 函数执行以下任务：</p>
+<ul>
+<li>创建 XMLHttpRequest 对象</li>
+<li>当服务器响应就绪时执行函数</li>
+<li>把请求发送到服务器上的文件</li>
+<li>请注意我们向 URL 添加了一个参数 q （带有输入框的内容）</li>
+</ul>
+<h2 id="用XMLHttpRequest对象封装AJAX"><a href="#用XMLHttpRequest对象封装AJAX" class="headerlink" title="用XMLHttpRequest对象封装AJAX"></a>用XMLHttpRequest对象封装AJAX</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Ajax</span>(<span class="params">recvType</span>) </span>&#123;</span><br><span class="line">    <span class="comment">//创建ajax对象</span></span><br><span class="line">    <span class="keyword">var</span> ajaxObj = <span class="keyword">new</span> <span class="built_in">Object</span>();</span><br><span class="line"></span><br><span class="line">    <span class="comment">//AJAX请求服务器而返回的文件类型</span></span><br><span class="line">    ajaxObj.recvType = recvType ? recvType.toUpperCase() : <span class="string">'HTML'</span>; <span class="comment">//HTML XML</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">//ajax发送的url</span></span><br><span class="line">    ajaxObj.url = <span class="string">''</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//ajax发送的字符串</span></span><br><span class="line">    ajaxObj.sendStr = <span class="literal">null</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//ajax请求成功的回调函数</span></span><br><span class="line">    ajaxObj.callback = <span class="literal">null</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//声明ajax XMLHttpRequest对象</span></span><br><span class="line">    ajaxObj.XMLHttpRequest = <span class="literal">null</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//定义产生XMLHttpRequest的方法</span></span><br><span class="line">    ajaxObj.createXMLHttpRequest = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">var</span> request = <span class="literal">false</span>;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//windows对象中有XMLHttpRequest存在就是非IE，包括（IE7,IE8）</span></span><br><span class="line">        <span class="keyword">if</span> (<span class="built_in">window</span>.XMLHttpRequest) &#123;</span><br><span class="line">            request = <span class="keyword">new</span> XMLHttpRequest();</span><br><span class="line">            <span class="keyword">if</span> (request.overrideMimeType) &#123;</span><br><span class="line">                <span class="comment">/*</span></span><br><span class="line"><span class="comment">                 如果来自服务器的响应没有 XML mime-type 头部，则一些版本的 Mozilla 浏览器不能正常运行。</span></span><br><span class="line"><span class="comment">                 对于这种情况，httpRequest.overrideMimeType('text/xml'); 语句将覆盖发送给服务器的头部，</span></span><br><span class="line"><span class="comment">                 强制 text/xml 作为 mime-type。</span></span><br><span class="line"><span class="comment">                 */</span></span><br><span class="line">                request.overrideMimeType(<span class="string">"text/xml"</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (<span class="built_in">window</span>.ActiveXObject) &#123;<span class="comment">//windows对象中有ActiveXObject属性存在就是IE</span></span><br><span class="line">            <span class="keyword">var</span> browserVersions = [<span class="string">'Microsoft.XMLHTTP'</span>, <span class="string">'MSXML.XMLHTTP'</span>, <span class="string">'Msxml2.XMLHTTP.7.0'</span>, <span class="string">'Msxml2.XMLHTTP.6.0'</span>,</span><br><span class="line">                <span class="string">'Msxml2.XMLHTTP.5.0'</span>, <span class="string">'Msxml2.XMLHTTP.4.0'</span>, <span class="string">'MSXML2.XMLHTTP.3.0'</span>, <span class="string">'MSXML2.XMLHTTP'</span>];</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; browserVersions.length; ++i) &#123;</span><br><span class="line">                <span class="keyword">try</span> &#123;</span><br><span class="line">                    request = <span class="keyword">new</span> ActiveXObject(browserVersions[i]);</span><br><span class="line">                    <span class="keyword">if</span> (request) &#123;</span><br><span class="line">                        <span class="keyword">return</span> request;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125; <span class="keyword">catch</span> (e) &#123;</span><br><span class="line">                    request = <span class="literal">false</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">return</span> request;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    ajaxObj.XMLHttpRequest = ajaxObj.createXMLHttpRequest();</span><br><span class="line"></span><br><span class="line">    <span class="comment">//封装ajax底层的GET方法</span></span><br><span class="line">    ajaxObj.get = <span class="function"><span class="keyword">function</span> (<span class="params">url, callback</span>) </span>&#123;</span><br><span class="line">        ajaxObj.url = url;</span><br><span class="line">        <span class="keyword">if</span> (callback != <span class="literal">null</span>) &#123;<span class="comment">//回调函数不为空时：如何调用</span></span><br><span class="line">            ajaxObj.XMLHttpRequest.onreadystatechange = ajaxObj.handleCallback();</span><br><span class="line">            ajaxObj.callback = callback;<span class="comment">//将GET方法设定的回调方法传递给ajax</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (<span class="built_in">window</span>.XMLHttpRequest) &#123;<span class="comment">//非IE浏览器,包括（IE7,IE8）</span></span><br><span class="line">            ajaxObj.XMLHttpRequest.open(<span class="string">'GET'</span>, ajaxObj.url);<span class="comment">//异步</span></span><br><span class="line">            ajaxObj.XMLHttpRequest.send(<span class="literal">null</span>);</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;<span class="comment">//windows对象中有ActiveXObject属性存在就是IE</span></span><br><span class="line">            ajaxObj.XMLHttpRequest.open(<span class="string">'GET'</span>, ajaxObj.url, <span class="literal">true</span>);</span><br><span class="line">            ajaxObj.XMLHttpRequest.send();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">	<span class="comment">//封装ajax底层的POST方法</span></span><br><span class="line">    ajax.post = <span class="function"><span class="keyword">function</span>(<span class="params">url, sendStr, callback</span>)</span>&#123;</span><br><span class="line">        ajaxObj.url = url;<span class="comment">//传递url给ajax对象</span></span><br><span class="line">        <span class="comment">//拼接发送的数据</span></span><br><span class="line">        <span class="keyword">if</span>(<span class="string">'object'</span>== <span class="keyword">typeof</span> (sendStr))&#123;<span class="comment">//发送的字符串为对象类型</span></span><br><span class="line">            <span class="keyword">var</span> str = <span class="string">''</span>;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">var</span> key <span class="keyword">in</span> sendStr)&#123;</span><br><span class="line">                str += key + <span class="string">'='</span> + sendStr[key] + <span class="string">"&amp;"</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            ajaxObj.sendStr = str;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            ajaxObj.sendStr = sendStr;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (callback != <span class="literal">null</span>) &#123;<span class="comment">//回调函数不为空时：怎么调用</span></span><br><span class="line">            ajaxObj.XMLHttpRequest.onreadystatechange = ajaxObj.handleCallback();</span><br><span class="line">            ajaxObj.callback = callback;<span class="comment">//将GET方法设定的回调方法传递给ajax</span></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        ajaxObj.XMLHttpRequest.open(<span class="string">'POST'</span>, ajaxObj.url);</span><br><span class="line">        ajaxObj.XMLHttpRequest.setRequestHeader(<span class="string">'Content-Type'</span>, <span class="string">'application/x-www-form-urlencoded'</span>);<span class="comment">//必须指定编码</span></span><br><span class="line">        ajaxObj.XMLHttpRequest.send(ajaxObj.sendStr);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    ajaxObj.handleCallback=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(ajaxObj.XMLHttpRequest.readyState == <span class="number">4</span>)&#123;<span class="comment">//请求完成才执行</span></span><br><span class="line">            <span class="keyword">if</span>(ajaxObj.XMLHttpRequest.status == <span class="number">200</span>)&#123;<span class="comment">//请求成功才行</span></span><br><span class="line">                <span class="keyword">if</span>(ajaxObj.recvType==<span class="string">"HTML"</span>)</span><br><span class="line">                    ajaxObj.callback(ajaxObj.XMLHttpRequest.responseText);</span><br><span class="line">                <span class="keyword">else</span> <span class="keyword">if</span>(aj.recvType==<span class="string">"XML"</span>)</span><br><span class="line">                    ajaxObj.callback(ajaxObj.XMLHttpRequest.responseXML);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ajaxObj;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="关于-jQuery-与-AJAX"><a href="#关于-jQuery-与-AJAX" class="headerlink" title="关于 jQuery 与 AJAX"></a>关于 jQuery 与 AJAX</h2><p>jQuery 提供多个与 AJAX 有关的方法。</p>
+<p>通过 jQuery AJAX 方法，您能够使用 HTTP Get 和 HTTP Post 从远程服务器上请求文本、HTML、XML 或 JSON - 同时您能够把这些外部数据直接载入网页的被选元素中。</p>
+<p><strong>提示：如果没有 jQuery，AJAX 编程还是有些难度的，上面封装AJAX就看得出来。</strong></p>
+<p>编写常规的 AJAX 代码并不容易，因为不同的浏览器对 AJAX 的实现并不相同。这意味着您必须编写额外的代码对浏览器进行测试。不过，jQuery 团队为我们解决了这个难题，我们只需要一行简单的代码，就可以实现 AJAX 功能。</p>
+<p><strong>jQuery get() 和 post() 方法用于通过 HTTP GET 或 POST 请求从服务器请求数据。</strong></p>
+<h3 id="HTTP-请求：GET-vs-POST"><a href="#HTTP-请求：GET-vs-POST" class="headerlink" title="HTTP 请求：GET vs. POST"></a>HTTP 请求：GET vs. POST</h3><p>两种在客户端和服务器端进行请求-响应的常用方法是：GET 和 POST。</p>
+<ul>
+<li><em>GET</em> - 从指定的资源请求数据</li>
+<li><em>POST</em> - 向指定的资源提交要处理的数据</li>
+</ul>
+<p>GET 基本上用于从服务器获得（取回）数据。注释：GET 方法可能返回缓存数据。</p>
+<p>POST 也可用于从服务器获取数据。不过，POST 方法不会缓存数据，并且常用于连同请求一起发送数据。</p>
+<p>如需学习更多有关 GET 和 POST 以及两方法差异的知识，请阅读 <a href="http://www.w3school.com.cn/tags/html_ref_httpmethods.asp" target="_blank" rel="noopener">HTTP 方法 - GET 对比 POST</a>。</p>
+<h3 id="jQuery-get-方法"><a href="#jQuery-get-方法" class="headerlink" title="jQuery $.get() 方法"></a>jQuery $.get() 方法</h3><p>$.get() 方法通过 HTTP GET 请求从服务器上请求数据。语法：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$.get(URL,callback);</span><br></pre></td></tr></table></figure>
+<p>必需的 <em>URL</em> 参数规定您希望请求的 URL。</p>
+<p>可选的 <em>callback</em> 参数是请求成功后所执行的函数名。</p>
+<p>下面的例子使用 $.get() 方法从服务器上的一个文件中取回数据：</p>
+<h3 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"button"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  $.get(<span class="string">"demo_test.asp"</span>,<span class="function"><span class="keyword">function</span>(<span class="params">data,status</span>)</span>&#123;</span><br><span class="line">    alert(<span class="string">"Data: "</span> + data + <span class="string">"\nStatus: "</span> + status);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p><a href="http://www.w3school.com.cn/tiy/t.asp?f=jquery_ajax_get" target="_blank" rel="noopener">亲自试一试</a></p>
+<p>$.get() 的第一个参数是我们希望请求的 URL（”demo_test.asp”）。</p>
+<p>第二个参数是回调函数。第一个回调参数存有被请求页面的内容，第二个回调参数存有请求的状态。</p>
+<p>提示：这个 ASP 文件 (“demo_test.asp”) 类似这样：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;%</span><br><span class="line">response.write(<span class="string">"This is some text from an external ASP file."</span>)</span><br><span class="line">%&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="jQuery-post-方法"><a href="#jQuery-post-方法" class="headerlink" title="jQuery $.post() 方法"></a>jQuery $.post() 方法</h3><p>$.post() 方法通过 HTTP POST 请求从服务器上请求数据。语法：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$.post(URL,data,callback);</span><br></pre></td></tr></table></figure>
+<p>必需的 <em>URL</em> 参数规定您希望请求的 URL。</p>
+<p>可选的 <em>data</em> 参数规定连同请求发送的数据。</p>
+<p>可选的 <em>callback</em> 参数是请求成功后所执行的函数名。</p>
+<p>下面的例子使用 $.post() 连同请求一起发送数据：</p>
+<h3 id="实例-1"><a href="#实例-1" class="headerlink" title="实例"></a>实例</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"button"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  $.post(<span class="string">"demo_test_post.asp"</span>,</span><br><span class="line">  &#123;</span><br><span class="line">    name:<span class="string">"Donald Duck"</span>,</span><br><span class="line">    city:<span class="string">"Duckburg"</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="function"><span class="keyword">function</span>(<span class="params">data,status</span>)</span>&#123;</span><br><span class="line">    alert(<span class="string">"Data: "</span> + data + <span class="string">"\nStatus: "</span> + status);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p><a href="http://www.w3school.com.cn/tiy/t.asp?f=jquery_ajax_post" target="_blank" rel="noopener">亲自试一试</a></p>
+<p>$.post() 的第一个参数是我们希望请求的 URL (“demo_test_post.asp”)。</p>
+<p>然后我们连同请求（name 和 city）一起发送数据。</p>
+<p>“demo_test_post.asp” 中的 ASP 脚本读取这些参数，对它们进行处理，然后返回结果。</p>
+<p>第三个参数是回调函数。第一个回调参数存有被请求页面的内容，而第二个参数存有请求的状态。</p>
+<p>提示：这个 ASP 文件 (“demo_test_post.asp”) 类似这样：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;%</span><br><span class="line">dim fname,city</span><br><span class="line">fname=Request.Form(<span class="string">"name"</span>)</span><br><span class="line">city=Request.Form(<span class="string">"city"</span>)</span><br><span class="line">Response.Write(<span class="string">"Dear "</span> &amp; fname &amp; <span class="string">". "</span>)</span><br><span class="line">Response.Write(<span class="string">"Hope you live well in "</span> &amp; city &amp; <span class="string">"."</span>)</span><br><span class="line">%&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="jQuery-AJAX-参考手册"><a href="#jQuery-AJAX-参考手册" class="headerlink" title="jQuery AJAX 参考手册"></a>jQuery AJAX 参考手册</h3><p>如需完整的 AJAX 方法参考，请访问我们的 <a href="http://www.w3school.com.cn/jquery/jquery_ref_ajax.asp" target="_blank" rel="noopener">jQuery AJAX 参考手册</a>。</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    SnailDove
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://snaildove.github.io/2016/02/28/AJAX/" title="AJAX">https://snaildove.github.io/2016/02/28/AJAX/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/javascript/" rel="tag"><i class="fa fa-tag"></i> javascript</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div id="needsharebutton-postbottom">
+            <span class="btn">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </span>
+          </div>
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/01/20/vim_without_widgets/" rel="next" title="vim无插件使用">
+                <i class="fa fa-chevron-left"></i> vim无插件使用
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/08/01/positive_definite_matrix/" rel="prev" title="正定矩阵">
+                正定矩阵 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zMjg4NC85NDQ1"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.png"
+                alt="SnailDove" />
+            
+              <p class="site-author-name" itemprop="name">SnailDove</p>
+              <p class="site-description motion-element" itemprop="description">keep enthusiasm</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">29</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+            
+			<script type="text/javascript" charset="utf-8" src="/js/tagcloud.js"></script>
+			<script type="text/javascript" charset="utf-8" src="/js/tagcanvas.js"></script>
+			<div class="widget-wrap">
+				<h4 class="widget-title">Tag Cloud</h4>
+					<div id="myCanvasContainer" class="widget tagcloud">
+					<canvas width="250" height="250" id="resCanvas" style="width=100%">
+						<ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Data-Structure/">Data Structure</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning/">Machine Learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/">javascript</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linear-algebra/">linear_algebra</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/probability/">probability</a><span class="tag-list-count">10</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据结构/">数据结构</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/机器学习/">机器学习</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/概率论/">概率论</a><span class="tag-list-count">10</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/线性代数/">线性代数</a><span class="tag-list-count">12</span></li></ul>
+					</canvas>
+				</div>
+			</div>
+			
+          </nav>
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://weibo.com/brt10" target="_blank" title="My Weibo">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>My Weibo</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/" title="Linear Algebra on MIT" target="_blank">Linear Algebra on MIT</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://ocw.mit.edu/courses/mathematics/18-05-introduction-to-probability-and-statistics-spring-2014/" title="Probability-and-statistics on MIT" target="_blank">Probability-and-statistics on MIT</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#AJAX的介绍和优点"><span class="nav-number">1.</span> <span class="nav-text">AJAX的介绍和优点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是AJAX"><span class="nav-number">1.1.</span> <span class="nav-text">什么是AJAX</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#AJAX优缺点"><span class="nav-number">1.2.</span> <span class="nav-text">AJAX优缺点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#AJAX应用"><span class="nav-number">1.3.</span> <span class="nav-text">AJAX应用</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#AJAX对象"><span class="nav-number">2.</span> <span class="nav-text">AJAX对象</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#XMLHttpRequest-对象"><span class="nav-number">2.1.</span> <span class="nav-text">XMLHttpRequest 对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建-XMLHttpRequest-对象"><span class="nav-number">2.2.</span> <span class="nav-text">创建 XMLHttpRequest 对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建-XMLHttpRequest-对象的语法"><span class="nav-number">2.3.</span> <span class="nav-text">创建 XMLHttpRequest 对象的语法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#老版本的-Internet-Explorer-（IE5-和-IE6）使用-ActiveX-对象"><span class="nav-number">2.4.</span> <span class="nav-text">老版本的 Internet Explorer （IE5 和 IE6）使用 ActiveX 对象</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#向服务器发送请求"><span class="nav-number">3.</span> <span class="nav-text">向服务器发送请求</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#GET-还是-POST？"><span class="nav-number">3.1.</span> <span class="nav-text">GET 还是 POST？</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#例子"><span class="nav-number">3.1.1.</span> <span class="nav-text">例子</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GET-or-POST？"><span class="nav-number">3.2.</span> <span class="nav-text">GET or POST？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GET-请求"><span class="nav-number">3.3.</span> <span class="nav-text">GET 请求</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#POST-请求"><span class="nav-number">3.4.</span> <span class="nav-text">POST 请求</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#url-服务器上的文件"><span class="nav-number">3.5.</span> <span class="nav-text">url - 服务器上的文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#异步-True-或-False？"><span class="nav-number">3.6.</span> <span class="nav-text">异步 - True 或 False？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Async-true"><span class="nav-number">3.7.</span> <span class="nav-text">Async = true</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Async-false"><span class="nav-number">3.8.</span> <span class="nav-text">Async = false</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#AJAX-服务器响应"><span class="nav-number">4.</span> <span class="nav-text">AJAX - 服务器响应</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#服务器响应"><span class="nav-number">4.1.</span> <span class="nav-text">服务器响应</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#responseText-属性"><span class="nav-number">4.2.</span> <span class="nav-text">responseText 属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#responseXML-属性"><span class="nav-number">4.3.</span> <span class="nav-text">responseXML 属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#AJAX-onreadystatechange-事件"><span class="nav-number">4.4.</span> <span class="nav-text">AJAX - onreadystatechange 事件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#onreadystatechange-事件"><span class="nav-number">4.5.</span> <span class="nav-text">onreadystatechange 事件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用-Callback-函数"><span class="nav-number">4.6.</span> <span class="nav-text">使用 Callback 函数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#AJAX-ASP-PHP-请求实例"><span class="nav-number">5.</span> <span class="nav-text">AJAX ASP/PHP 请求实例</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#AJAX-ASP-PHP-实例"><span class="nav-number">5.1.</span> <span class="nav-text">AJAX ASP/PHP 实例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实例解释-showHint-函数"><span class="nav-number">5.2.</span> <span class="nav-text">实例解释 - showHint() 函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#源代码解释："><span class="nav-number">5.3.</span> <span class="nav-text">源代码解释：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#用XMLHttpRequest对象封装AJAX"><span class="nav-number">6.</span> <span class="nav-text">用XMLHttpRequest对象封装AJAX</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关于-jQuery-与-AJAX"><span class="nav-number">7.</span> <span class="nav-text">关于 jQuery 与 AJAX</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#HTTP-请求：GET-vs-POST"><span class="nav-number">7.1.</span> <span class="nav-text">HTTP 请求：GET vs. POST</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#jQuery-get-方法"><span class="nav-number">7.2.</span> <span class="nav-text">jQuery $.get() 方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实例"><span class="nav-number">7.3.</span> <span class="nav-text">实例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#jQuery-post-方法"><span class="nav-number">7.4.</span> <span class="nav-text">jQuery $.post() 方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实例-1"><span class="nav-number">7.5.</span> <span class="nav-text">实例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#jQuery-AJAX-参考手册"><span class="nav-number">7.6.</span> <span class="nav-text">jQuery AJAX 参考手册</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2017 &mdash; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">SnailDove</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">全站文章总字数</span>
+    
+    <span title="全站文章总字数">50.5k</span>
+  
+</div>
+
+<!-- 
+注释掉底部hexo主题提示:强有力
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+-->
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="post-meta-item-text">访问人数</span>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+	  <span class="post-meta-item-text">总访问量</span>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three-waves.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "box";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+  </script>
+
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+
+  
+
+  
+  <!-- 添加网站宠物 -->
+  
+<div id="hexo-helper-live2d">
+  <canvas id="live2dcanvas" width="150" height="300"></canvas>
+</div>
+<style>
+  #live2dcanvas{
+    position: fixed;
+    width: 150px;
+    height: 300px;
+    opacity:0.7;
+    right: 0px;
+    z-index: 999;
+    pointer-events: none;
+    bottom: -20px;
+  }
+</style>
+<script type="text/javascript" src="/live2d/device.min.js"></script>
+<script type="text/javascript">
+const loadScript = function loadScript(c,b){var a=document.createElement("script");a.type="text/javascript";"undefined"!=typeof b&&(a.readyState?a.onreadystatechange=function(){if("loaded"==a.readyState||"complete"==a.readyState)a.onreadystatechange=null,b()}:a.onload=function(){b()});a.src=c;document.body.appendChild(a)};
+(function(){
+  if((typeof(device) != 'undefined') && (device.mobile())){
+    document.getElementById("live2dcanvas").style.width = '75px';
+    document.getElementById("live2dcanvas").style.height = '150px';
+  }else
+    if (typeof(device) === 'undefined') console.error('Cannot find current-device script.');
+  loadScript("/live2d/script.js", function(){loadlive2d("live2dcanvas", "/live2d/assets/z16.model.json", 0.5);});
+})();
+</script>
+
+  
+</body>
+<!--崩溃欺骗-->
+<script type="text/javascript" src="/js/src/crash_cheat.js"></script>
+</html>

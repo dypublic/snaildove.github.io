@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>SnailDove&#39;s blog</title>
+  
+  <subtitle>蜗牛哥博客</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://snaildove.github.io/"/>
+  <updated>2018-03-14T09:23:31.403Z</updated>
+  <id>https://snaildove.github.io/</id>
+  
+  <author>
+    <name>SnailDove</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>经典摘录-贝叶斯公式</title>
+    <link href="https://snaildove.github.io/2017/08/28/Bayes_rule/"/>
+    <id>https://snaildove.github.io/2017/08/28/Bayes_rule/</id>
+    <published>2017-08-28T12:16:00.000Z</published>
+    <updated>2018-03-14T09:23:31.403Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;说明：全文摘自&lt;a href=&quot;http://www.athenasc.com/probbook.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Introduction to probability, 2nd Edition&lt;/a&gt;
+        
+      
+    
+    </summary>
+    
+      <category term="中文" scheme="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+    
+    
+      <category term="probability" scheme="https://snaildove.github.io/tags/probability/"/>
+    
+      <category term="概率论" scheme="https://snaildove.github.io/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>经典摘录-正态随机变量</title>
+    <link href="https://snaildove.github.io/2017/08/27/normal_random_variables/"/>
+    <id>https://snaildove.github.io/2017/08/27/normal_random_variables/</id>
+    <published>2017-08-27T12:16:00.000Z</published>
+    <updated>2018-03-14T09:23:31.420Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;strong&gt;说明&lt;/strong&gt;：全文摘自 &lt;a href=&quot;http://www.athenasc.com/probbook.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Introduction to probability, 2nd
+        
+      
+    
+    </summary>
+    
+      <category term="中文" scheme="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+    
+    
+      <category term="probability" scheme="https://snaildove.github.io/tags/probability/"/>
+    
+      <category term="概率论" scheme="https://snaildove.github.io/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>经典摘录-分段常数概率密度函数的均值和方差</title>
+    <link href="https://snaildove.github.io/2017/08/27/mean_and_variance_of_a_piecewise_constant_PDF/"/>
+    <id>https://snaildove.github.io/2017/08/27/mean_and_variance_of_a_piecewise_constant_PDF/</id>
+    <published>2017-08-27T12:16:00.000Z</published>
+    <updated>2018-03-14T09:23:31.415Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;本文摘录自 &lt;a href=&quot;http://www.athenasc.com/probbook.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Introduction to probability, 2nd Edition&lt;/a&gt;
+        
+      
+    
+    </summary>
+    
+      <category term="中文" scheme="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+    
+    
+      <category term="probability" scheme="https://snaildove.github.io/tags/probability/"/>
+    
+      <category term="概率论" scheme="https://snaildove.github.io/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>经典摘录-均匀随机变量的均值和方差</title>
+    <link href="https://snaildove.github.io/2017/08/26/mean_and_variance_of_uniform_random_variable/"/>
+    <id>https://snaildove.github.io/2017/08/26/mean_and_variance_of_uniform_random_variable/</id>
+    <published>2017-08-26T12:16:00.000Z</published>
+    <updated>2018-03-14T09:23:31.419Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;说明：全文摘自&lt;a href=&quot;http://www.athenasc.com/probbook.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Introduction to probability, 2nd Edition&lt;/a&gt;
+        
+      
+    
+    </summary>
+    
+      <category term="中文" scheme="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+    
+    
+      <category term="probability" scheme="https://snaildove.github.io/tags/probability/"/>
+    
+      <category term="概率论" scheme="https://snaildove.github.io/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>经典摘录-[累积]分布函数CDF</title>
+    <link href="https://snaildove.github.io/2017/08/26/cumulative_distribution_function/"/>
+    <id>https://snaildove.github.io/2017/08/26/cumulative_distribution_function/</id>
+    <published>2017-08-26T12:16:00.000Z</published>
+    <updated>2018-03-14T09:23:31.410Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;说明：全文摘自 &lt;a href=&quot;http://www.athenasc.com/probbook.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Introduction to probability, 2nd
+        
+      
+    
+    </summary>
+    
+      <category term="中文" scheme="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+    
+    
+      <category term="probability" scheme="https://snaildove.github.io/tags/probability/"/>
+    
+      <category term="概率论" scheme="https://snaildove.github.io/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>经典摘录-样本均值的期望方差与模拟的方法估计概率</title>
+    <link href="https://snaildove.github.io/2017/08/25/mean_and_variance_of_sample_and_estimating_probability_by_simulation/"/>
+    <id>https://snaildove.github.io/2017/08/25/mean_and_variance_of_sample_and_estimating_probability_by_simulation/</id>
+    <published>2017-08-25T12:16:00.000Z</published>
+    <updated>2018-03-14T09:23:31.416Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;样本均值的期望方差&quot;&gt;&lt;a href=&quot;#样本均值的期望方差&quot; class=&quot;headerlink&quot; title=&quot;样本均值的期望方差&quot;&gt;&lt;/a&gt;样本均值的期望方差&lt;/h2&gt;&lt;p&gt;摘录自：&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="中文" scheme="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+    
+    
+      <category term="probability" scheme="https://snaildove.github.io/tags/probability/"/>
+    
+      <category term="概率论" scheme="https://snaildove.github.io/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>经典摘录-两个信封的悖论</title>
+    <link href="https://snaildove.github.io/2017/08/24/the_two-envelopes_paradox/"/>
+    <id>https://snaildove.github.io/2017/08/24/the_two-envelopes_paradox/</id>
+    <published>2017-08-24T12:16:00.000Z</published>
+    <updated>2018-03-14T09:23:31.426Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;本文摘录自：&lt;a href=&quot;http://www.athenasc.com/probbook.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Introduction to probability, 2nd Edition&lt;/a&gt;
+        
+      
+    
+    </summary>
+    
+      <category term="中文" scheme="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+    
+    
+      <category term="probability" scheme="https://snaildove.github.io/tags/probability/"/>
+    
+      <category term="概率论" scheme="https://snaildove.github.io/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>经典摘录-几何随机变量的均值和方差</title>
+    <link href="https://snaildove.github.io/2017/08/23/mean_and_variance_of_the_geometric/"/>
+    <id>https://snaildove.github.io/2017/08/23/mean_and_variance_of_the_geometric/</id>
+    <published>2017-08-23T14:16:00.000Z</published>
+    <updated>2018-03-14T09:23:31.417Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;本文摘录自 &lt;a href=&quot;http://www.athenasc.com/probbook.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Introduction to probability, 2nd Edition&lt;/a&gt; 
+        
+      
+    
+    </summary>
+    
+      <category term="中文" scheme="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+    
+    
+      <category term="probability" scheme="https://snaildove.github.io/tags/probability/"/>
+    
+      <category term="概率论" scheme="https://snaildove.github.io/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Trees describe the sample space</title>
+    <link href="https://snaildove.github.io/2017/08/15/trees_describe_the_sample_space/"/>
+    <id>https://snaildove.github.io/2017/08/15/trees_describe_the_sample_space/</id>
+    <published>2017-08-15T12:16:00.000Z</published>
+    <updated>2018-03-14T09:23:31.431Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;This note comes from &lt;a href=&quot;http://www.athenasc.com/probbook.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Introduction to Probability, 2nd
+        
+      
+    
+    </summary>
+    
+      <category term="English" scheme="https://snaildove.github.io/categories/English/"/>
+    
+    
+      <category term="probability" scheme="https://snaildove.github.io/tags/probability/"/>
+    
+      <category term="概率论" scheme="https://snaildove.github.io/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>期望定义的由来</title>
+    <link href="https://snaildove.github.io/2017/08/14/definition_of_expectation/"/>
+    <id>https://snaildove.github.io/2017/08/14/definition_of_expectation/</id>
+    <published>2017-08-14T12:16:00.000Z</published>
+    <updated>2018-03-14T09:23:31.411Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;我们很早就学到某个随机变量$X$的期望就是$X$的所有取值相对于它的概率的加权平均，
+        
+      
+    
+    </summary>
+    
+      <category term="中文" scheme="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+    
+    
+      <category term="probability" scheme="https://snaildove.github.io/tags/probability/"/>
+    
+      <category term="概率论" scheme="https://snaildove.github.io/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>复数与复矩阵</title>
+    <link href="https://snaildove.github.io/2017/08/12/complex_and_complex_matrix/"/>
+    <id>https://snaildove.github.io/2017/08/12/complex_and_complex_matrix/</id>
+    <published>2017-08-12T12:16:00.000Z</published>
+    <updated>2018-03-14T09:23:31.408Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;笔记源自：清华大学公开课：线性代数2——第12讲：复数与复矩阵&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;之前接触的大部分线性代数知识都只考虑实数情形&lt;/em&gt;，但复数情形不可避免会遇到。例如$\begin{pmatrix}cos\theta&amp;amp;-sin\theta\sin\theta&amp;
+        
+      
+    
+    </summary>
+    
+      <category term="中文" scheme="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+    
+    
+      <category term="linear_algebra" scheme="https://snaildove.github.io/tags/linear-algebra/"/>
+    
+      <category term="线性代数" scheme="https://snaildove.github.io/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>计算机图像</title>
+    <link href="https://snaildove.github.io/2017/08/11/computer_graphics/"/>
+    <id>https://snaildove.github.io/2017/08/11/computer_graphics/</id>
+    <published>2017-08-11T12:16:00.000Z</published>
+    <updated>2018-03-14T09:23:31.409Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;笔记源自：清华大学公开课：线性代数2——第11讲：计算机图像&lt;/p&gt;
+&lt;h2 id=&quot;引言&quot;&gt;&lt;a href=&quot;#引言&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="中文" scheme="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+    
+    
+      <category term="linear_algebra" scheme="https://snaildove.github.io/tags/linear-algebra/"/>
+    
+      <category term="线性代数" scheme="https://snaildove.github.io/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>图和网络</title>
+    <link href="https://snaildove.github.io/2017/08/08/graph_and_network/"/>
+    <id>https://snaildove.github.io/2017/08/08/graph_and_network/</id>
+    <published>2017-08-08T12:16:00.000Z</published>
+    <updated>2018-03-14T09:23:31.412Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;笔记源自：清华大学公开课：线性代数2——第8讲：图和网络&lt;/p&gt;
+&lt;h3 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h3&gt;&lt;h4 id=&quot;欧姆定律Ohm’s-law的向量形式&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="中文" scheme="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+    
+    
+      <category term="linear_algebra" scheme="https://snaildove.github.io/tags/linear-algebra/"/>
+    
+      <category term="线性代数" scheme="https://snaildove.github.io/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>工程中的矩阵</title>
+    <link href="https://snaildove.github.io/2017/08/07/engineering_matrices/"/>
+    <id>https://snaildove.github.io/2017/08/07/engineering_matrices/</id>
+    <published>2017-08-07T12:16:00.000Z</published>
+    <updated>2018-03-14T09:23:31.412Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;笔记源自：清华大学公开课：线性代数2——第七讲：工程中的矩阵&lt;/p&gt;
+&lt;h2 id=&quot;应用数学的几个原则&quot;&gt;&lt;a href=&quot;#应用数学的几个原则&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="中文" scheme="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+    
+    
+      <category term="linear_algebra" scheme="https://snaildove.github.io/tags/linear-algebra/"/>
+    
+      <category term="线性代数" scheme="https://snaildove.github.io/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>伪逆(广义逆)pseudo inverse</title>
+    <link href="https://snaildove.github.io/2017/08/06/pseudo_inverse/"/>
+    <id>https://snaildove.github.io/2017/08/06/pseudo_inverse/</id>
+    <published>2017-08-06T12:30:00.000Z</published>
+    <updated>2018-03-14T09:23:31.423Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;笔记源自：清华大学公开课：线性代数2——第六讲：伪逆&lt;/p&gt;
+&lt;h2 id=&quot;引言&quot;&gt;&lt;a href=&quot;#引言&quot; class=&quot;headerlink&quot; title=&quot;引言&quot;&gt;&lt;/a&gt;引言&lt;/h2&gt;&lt;p&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+      <category term="中文" scheme="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+    
+    
+      <category term="linear_algebra" scheme="https://snaildove.github.io/tags/linear-algebra/"/>
+    
+      <category term="线性代数" scheme="https://snaildove.github.io/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>马尔科夫矩阵和正矩阵</title>
+    <link href="https://snaildove.github.io/2017/08/06/Markov_matrix/"/>
+    <id>https://snaildove.github.io/2017/08/06/Markov_matrix/</id>
+    <published>2017-08-06T12:16:00.000Z</published>
+    <updated>2018-03-14T09:23:31.405Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;笔记源自：清华大学公开课：线性代数2——第9讲：马尔科夫矩阵和正矩阵&lt;/p&gt;
+&lt;h2 id=&quot;引言&quot;&gt;&lt;a href=&quot;#引言&quot; class=&quot;headerlink&quot; title=&quot;引言&quot;&gt;&lt;/a&gt;引言&lt;/h2&gt;&lt;p&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+      <category term="中文" scheme="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+    
+    
+      <category term="linear_algebra" scheme="https://snaildove.github.io/tags/linear-algebra/"/>
+    
+      <category term="线性代数" scheme="https://snaildove.github.io/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>线性变换2</title>
+    <link href="https://snaildove.github.io/2017/08/05/linear_transformation_2nd_part/"/>
+    <id>https://snaildove.github.io/2017/08/05/linear_transformation_2nd_part/</id>
+    <published>2017-08-05T12:16:00.000Z</published>
+    <updated>2018-03-14T09:23:31.414Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;笔记源自：清华大学公开课：线性代数2——第五讲：线性变换2&lt;/p&gt;
+&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="中文" scheme="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+    
+    
+      <category term="linear_algebra" scheme="https://snaildove.github.io/tags/linear-algebra/"/>
+    
+      <category term="线性代数" scheme="https://snaildove.github.io/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>线性变换1</title>
+    <link href="https://snaildove.github.io/2017/08/04/linear_transformation_1st_part/"/>
+    <id>https://snaildove.github.io/2017/08/04/linear_transformation_1st_part/</id>
+    <published>2017-08-04T12:16:00.000Z</published>
+    <updated>2018-03-14T09:23:31.413Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;笔记源自：清华大学公开课：线性代数2——第四讲：线性变换1&lt;/p&gt;
+&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;历史上英国数学家Arthur
+        
+      
+    
+    </summary>
+    
+      <category term="中文" scheme="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+    
+    
+      <category term="linear_algebra" scheme="https://snaildove.github.io/tags/linear-algebra/"/>
+    
+      <category term="线性代数" scheme="https://snaildove.github.io/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>奇异值分解singular values decomposition</title>
+    <link href="https://snaildove.github.io/2017/08/03/singular_values_decomposition/"/>
+    <id>https://snaildove.github.io/2017/08/03/singular_values_decomposition/</id>
+    <published>2017-08-03T12:16:00.000Z</published>
+    <updated>2018-03-14T09:23:31.424Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;笔记源自：清华大学公开课：线性代数2——第三讲：奇异值分解&lt;/p&gt;
+&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="中文" scheme="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+    
+    
+      <category term="linear_algebra" scheme="https://snaildove.github.io/tags/linear-algebra/"/>
+    
+      <category term="线性代数" scheme="https://snaildove.github.io/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>傅里叶级数</title>
+    <link href="https://snaildove.github.io/2017/08/02/Fourier_series/"/>
+    <id>https://snaildove.github.io/2017/08/02/Fourier_series/</id>
+    <published>2017-08-02T12:16:00.000Z</published>
+    <updated>2018-03-14T09:23:31.404Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;笔记源自：清华大学公开课：线性代数2——第10讲：傅里叶级数&lt;/p&gt;
+&lt;h2 id=&quot;引言&quot;&gt;&lt;a href=&quot;#引言&quot; class=&quot;headerlink&quot; title=&quot;引言&quot;&gt;&lt;/a&gt;引言&lt;/h2&gt;&lt;p&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+      <category term="中文" scheme="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+    
+    
+      <category term="linear_algebra" scheme="https://snaildove.github.io/tags/linear-algebra/"/>
+    
+      <category term="线性代数" scheme="https://snaildove.github.io/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/"/>
+    
+  </entry>
+  
+</feed>
