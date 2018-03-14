@@ -85,7 +85,7 @@
 
 
 
-  <meta name="keywords" content="linear_algebra,线性代数," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -98,47 +98,20 @@
 
 
 
-<meta name="description" content="笔记源自：清华大学公开课：线性代数2——第四讲：线性变换1 前言历史上英国数学家Arthur Cayley是为了描述线性变换的复合而引入矩阵的乘法，从而使矩阵成为数学的研究对象。线性变换是两个向量空间之间保持线性运算的映射。线性代数就是从其中心问题（求解线性方程组）出发发展起来研究向量空间、线性变换以及研究相关数学问题的数学学科。对有限维向量空间的研究总可以转化成对矩阵的研究，这是线性代数的核心特">
-<meta name="keywords" content="linear_algebra,线性代数">
+<meta name="description" content="3.5 conditioning problems3.18设 $X$ 是一个随机变量，其概率密度函数为：$$f_X(x)=\cases{\frac{x}{4}, &amp;amp; 若 $1&amp;lt; x \le 3$, \0, &amp;amp; 其他}$$令 $A={X\ge 2}$ (a) 计算 $E[X], P(A), f_{X|A}(x), E[X|A]​$  (b) 令 $Y=X^2$ ，计算 $E[Y">
 <meta property="og:type" content="article">
-<meta property="og:title" content="线性变换1">
-<meta property="og:url" content="https://snaildove.github.io/2017/08/04/linear_transformation_1st_part/index.html">
+<meta property="og:title" content="SnailDove&#39;s blog">
+<meta property="og:url" content="https://snaildove.github.io/2018/03/14/conditioning_problems/index.html">
 <meta property="og:site_name" content="SnailDove&#39;s blog">
-<meta property="og:description" content="笔记源自：清华大学公开课：线性代数2——第四讲：线性变换1 前言历史上英国数学家Arthur Cayley是为了描述线性变换的复合而引入矩阵的乘法，从而使矩阵成为数学的研究对象。线性变换是两个向量空间之间保持线性运算的映射。线性代数就是从其中心问题（求解线性方程组）出发发展起来研究向量空间、线性变换以及研究相关数学问题的数学学科。对有限维向量空间的研究总可以转化成对矩阵的研究，这是线性代数的核心特">
+<meta property="og:description" content="3.5 conditioning problems3.18设 $X$ 是一个随机变量，其概率密度函数为：$$f_X(x)=\cases{\frac{x}{4}, &amp;amp; 若 $1&amp;lt; x \le 3$, \0, &amp;amp; 其他}$$令 $A={X\ge 2}$ (a) 计算 $E[X], P(A), f_{X|A}(x), E[X|A]​$  (b) 令 $Y=X^2$ ，计算 $E[Y">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://img.blog.csdn.net/20171220223939235?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:image" content="http://img.blog.csdn.net/20171220224007231?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:image" content="http://img.blog.csdn.net/20171220224030237?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:image" content="http://img.blog.csdn.net/20171220224058461?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:image" content="http://img.blog.csdn.net/20171220224129556?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:image" content="http://img.blog.csdn.net/20171220224156832?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:image" content="http://img.blog.csdn.net/20171220224219722?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:image" content="http://img.blog.csdn.net/20171220224245061?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:image" content="http://img.blog.csdn.net/20171220224330083?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:image" content="http://img.blog.csdn.net/20171220224350476?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:image" content="http://img.blog.csdn.net/20171220224413351?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:image" content="http://img.blog.csdn.net/20171220224501190?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:image" content="http://img.blog.csdn.net/20171220224523818?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:image" content="http://img.blog.csdn.net/20171220224549318?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:image" content="http://img.blog.csdn.net/20171220224614672?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:image" content="http://img.blog.csdn.net/20171220224639475?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:image" content="http://img.blog.csdn.net/20171220224701225?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:image" content="http://img.blog.csdn.net/20171220224738544?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:image" content="http://img.blog.csdn.net/20171220224804691?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:image" content="http://img.blog.csdn.net/20171220224831848?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:image" content="http://img.blog.csdn.net/20171220225003186?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:image" content="http://img.blog.csdn.net/20171220225023158?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:image" content="http://img.blog.csdn.net/20171220225054861?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:image" content="http://img.blog.csdn.net/20171220225116921?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:image" content="http://img.blog.csdn.net/20171220225147025?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:image" content="http://img.blog.csdn.net/20171220225208727?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:image" content="http://img.blog.csdn.net/20171220225248218?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:image" content="http://img.blog.csdn.net/20171220225313979?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:updated_time" content="2018-03-14T09:23:31.413Z">
+<meta property="og:image" content="https://snaildove.github.io/2018/03/14/conditioning_problems/problem_3.23.png">
+<meta property="og:image" content="https://snaildove.github.io/2018/03/14/conditioning_problems/problem_3.23_(2">
+<meta property="og:updated_time" content="2018-03-14T09:44:03.197Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="线性变换1">
-<meta name="twitter:description" content="笔记源自：清华大学公开课：线性代数2——第四讲：线性变换1 前言历史上英国数学家Arthur Cayley是为了描述线性变换的复合而引入矩阵的乘法，从而使矩阵成为数学的研究对象。线性变换是两个向量空间之间保持线性运算的映射。线性代数就是从其中心问题（求解线性方程组）出发发展起来研究向量空间、线性变换以及研究相关数学问题的数学学科。对有限维向量空间的研究总可以转化成对矩阵的研究，这是线性代数的核心特">
-<meta name="twitter:image" content="http://img.blog.csdn.net/20171220223939235?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta name="twitter:title" content="SnailDove&#39;s blog">
+<meta name="twitter:description" content="3.5 conditioning problems3.18设 $X$ 是一个随机变量，其概率密度函数为：$$f_X(x)=\cases{\frac{x}{4}, &amp;amp; 若 $1&amp;lt; x \le 3$, \0, &amp;amp; 其他}$$令 $A={X\ge 2}$ (a) 计算 $E[X], P(A), f_{X|A}(x), E[X|A]​$  (b) 令 $Y=X^2$ ，计算 $E[Y">
+<meta name="twitter:image" content="https://snaildove.github.io/2018/03/14/conditioning_problems/problem_3.23.png">
 
 
 
@@ -168,13 +141,13 @@
 
 
 
-  <link rel="canonical" href="https://snaildove.github.io/2017/08/04/linear_transformation_1st_part/"/>
+  <link rel="canonical" href="https://snaildove.github.io/2018/03/14/conditioning_problems/"/>
 
 
 
 
 
-  <title>线性变换1 | SnailDove's blog</title>
+  <title> | SnailDove's blog</title>
   
 
 
@@ -345,7 +318,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://snaildove.github.io/2017/08/04/linear_transformation_1st_part/">
+    <link itemprop="mainEntityOfPage" href="https://snaildove.github.io/2018/03/14/conditioning_problems/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="SnailDove">
@@ -362,7 +335,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">线性变换1</h1>
+          <h1 class="post-title" itemprop="name headline"></h1>
         
 
         <div class="post-meta">
@@ -375,8 +348,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-04T20:16:00+08:00">
-                2017-08-04
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-14T18:43:25+08:00">
+                2018-03-14
               </time>
             
 
@@ -385,28 +358,6 @@
             
           </span>
 
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/中文/" itemprop="url" rel="index">
-                    <span itemprop="name">中文</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -435,7 +386,7 @@
                   <span class="post-meta-item-text">全文字数</span>
                 
                 <span title="全文字数">
-                  1,225
+                  3,038
                 </span>
               
 
@@ -451,7 +402,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  6
+                  14
                 </span>
               
             </div>
@@ -472,51 +423,77 @@
       
 
       
-        <p>笔记源自：清华大学公开课：线性代数2——第四讲：线性变换1</p>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>历史上英国数学家Arthur Cayley是为了描述线性变换的复合而引入矩阵的乘法，从而使矩阵成为数学的研究对象。线性变换是两个向量空间之间保持线性运算的映射。线性代数就是从其中心问题（求解线性方程组）出发发展起来研究向量空间、线性变换以及研究相关数学问题的数学学科。对有限维向量空间的研究总可以转化成对矩阵的研究，这是线性代数的核心特点。</p>
-<h2 id="线性变换的定义性质运算"><a href="#线性变换的定义性质运算" class="headerlink" title="线性变换的定义性质运算"></a>线性变换的定义性质运算</h2><p>回顾中学阶段学过的函数：$f(x)=2x\quad g(x)=x^{2}\quad l(x)=sin(x)$ 都是一个映射从定义域中的一个数映成值域中的一个数。推广到把向量映射到向量的映射比如f是从 $R^{3}$ 映到 $R^{2}$ 的一个映射：$f:\begin{pmatrix}x\y\z\end{pmatrix}\,\rightarrow\,\begin{pmatrix}2x\3y-z\end{pmatrix}$，我们关心向量空间到向量空间的映射。人们发现平面上的点、空间中的点 、矩阵多项式函数、连续函数等等集合看上去不同但是它们各自的加法和数乘满足同样的性质，于是就引入了向量空间这样的一个抽象的概念来统一地研究向量空间的概念。</p>
-<h3 id="向量空间的定义"><a href="#向量空间的定义" class="headerlink" title="向量空间的定义"></a>向量空间的定义</h3><p><img src="http://img.blog.csdn.net/20171220223939235?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="definition_of_vector_space"></p>
-<h3 id="线性变换的定义"><a href="#线性变换的定义" class="headerlink" title="线性变换的定义"></a>线性变换的定义</h3><p><img src="http://img.blog.csdn.net/20171220224007231?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="definition_of_linear_transformation"></p>
-<h4 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h4><p><img src="http://img.blog.csdn.net/20171220224030237?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="example1_of_linear_transformation"><br><img src="http://img.blog.csdn.net/20171220224058461?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="example2_of_linear_transformation"><br><img src="http://img.blog.csdn.net/20171220224129556?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="example3_of_linear_transformation"><br><img src="http://img.blog.csdn.net/20171220224156832?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="example4_of_linear_transformation"><br><img src="http://img.blog.csdn.net/20171220224219722?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="example5_of_linear_transformation"><br><img src="http://img.blog.csdn.net/20171220224245061?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="example6_of_linear_transformation"></p>
-<p><strong>注意，由线性变换的定义 $T:V\,\rightarrow\,W$ 得到 $T(0)=0$</strong></p>
-<p><img src="http://img.blog.csdn.net/20171220224330083?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="example7_of_linear_transformation"><br><img src="http://img.blog.csdn.net/20171220224350476?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="example8_of_linear_transformation"></p>
-<h3 id="线性变换的性质"><a href="#线性变换的性质" class="headerlink" title="线性变换的性质"></a>线性变换的性质</h3><p><img src="http://img.blog.csdn.net/20171220224413351?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="properties_of_linear_transformation"></p>
-<p>针对第一条证明： 如果 $T(0)\ne0$ 不满足线性变换定义 $T(cx)=cT(x)$，例如： $T(0)=1\,\rightarrow\,T(0)=T(c0)=1\,\ne\,cT(0)=c$</p>
-<p>针对第三条证明：若 $x_{1},\,…\,,x_{n}$ 线性相关，那么存在不全为0的数 $c_{1},\,…\,,c_{n}$ 满足 $c_{1}x_{1}\,+\,…\,+\,c_{n}x_{n}=0$  即 $T(c_{1}x_{1}\,+\,c_{2}x_{2}\,+\,…\,+\,c_{n}x_{n})=T(0)=c_{1}f(x_{1})\,+\,…\,+\,c_{n}f(x_{n})=0$，即$T(x_{1}),\,…\,,T(x_{n})$ 线性相关。</p>
-<h3 id="线性变换的运算"><a href="#线性变换的运算" class="headerlink" title="线性变换的运算"></a>线性变换的运算</h3><h4 id="加法"><a href="#加法" class="headerlink" title="加法"></a>加法</h4><p><img src="http://img.blog.csdn.net/20171220224501190?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="addition_of_linear_transformation"></p>
-<h4 id="数乘"><a href="#数乘" class="headerlink" title="数乘"></a>数乘</h4><p><img src="http://img.blog.csdn.net/20171220224523818?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="scalar_multiplication_of_linear_transformation"></p>
-<h4 id="乘积"><a href="#乘积" class="headerlink" title="乘积"></a>乘积</h4><p><strong>注：线性变换的乘积被定义为线性变换的复合运算</strong></p>
-<p><img src="http://img.blog.csdn.net/20171220224549318?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="multiplication_of_linear_transformation"></p>
-<p><strong>注意：线性变换不满足乘法交换律、消去律，与矩阵乘法类似</strong></p>
-<h4 id="逆"><a href="#逆" class="headerlink" title="逆"></a>逆</h4><p><img src="http://img.blog.csdn.net/20171220224614672?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="inverse_of_linear_transformation"></p>
-<h4 id="幂"><a href="#幂" class="headerlink" title="幂"></a>幂</h4><p><img src="http://img.blog.csdn.net/20171220224639475?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="exponential_operation_of_linear_transformation1"></p>
-<h4 id="多项式"><a href="#多项式" class="headerlink" title="多项式"></a>多项式</h4><p><img src="http://img.blog.csdn.net/20171220224701225?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="polynomial_of_linear_transformation"></p>
-<p><strong>注：由于线性变换不满足乘法交换律，因此$(\sigma\tau)^{m}=\underbrace{(\sigma\tau)(\sigma\tau)\,…\,(\sigma\tau)}_{m个(\sigma\tau)相乘}\ne\sigma^{m}\tau^{m}$</strong></p>
-<h2 id="线性变化的矩阵表示"><a href="#线性变化的矩阵表示" class="headerlink" title="线性变化的矩阵表示"></a>线性变化的矩阵表示</h2><p><img src="http://img.blog.csdn.net/20171220224738544?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="线性变换的矩阵表示1"> </p>
-<p>由于 $T(v_{1})$,$T(v_{2})$, … , $T(v_{3})\,\epsilon\,W$ 这个输出空间, 因此可以进行如下：<br><img src="http://img.blog.csdn.net/20171220224804691?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="线性变换的矩阵表示2"><br><img src="http://img.blog.csdn.net/20171220224831848?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="线性变换的矩阵表示3"> </p>
-<h3 id="例子-1"><a href="#例子-1" class="headerlink" title="例子"></a>例子</h3><p><img src="http://img.blog.csdn.net/20171220225003186?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="线性变换的矩阵表示-例子1"><br><img src="http://img.blog.csdn.net/20171220225023158?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="线性变换的矩阵表示-例子2"><br><img src="http://img.blog.csdn.net/20171220225054861?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="线性变换的矩阵表示-例子3"><br><img src="http://img.blog.csdn.net/20171220225116921?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="线性变换的矩阵表示-例子4"> </p>
-<h2 id="线性变换与矩阵之间的关系"><a href="#线性变换与矩阵之间的关系" class="headerlink" title="线性变换与矩阵之间的关系"></a>线性变换与矩阵之间的关系</h2><h3 id="一一对应"><a href="#一一对应" class="headerlink" title="一一对应"></a>一一对应</h3><p><img src="http://img.blog.csdn.net/20171220225147025?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="the_relation_between_transformation_and_matrix"><br><img src="http://img.blog.csdn.net/20171220225208727?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="the_inverse_of_transformation_and_matrix"></p>
-<h3 id="线性变换的乘积与矩阵的乘积"><a href="#线性变换的乘积与矩阵的乘积" class="headerlink" title="线性变换的乘积与矩阵的乘积"></a>线性变换的乘积与矩阵的乘积</h3><p><img src="http://img.blog.csdn.net/20171220225248218?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="the_product_of_transfromation_and_matrices"></p>
-<p><strong>注（极其重要）：这里线性变换的乘积（复合）对应的是矩阵的“左乘”。</strong></p>
-<h3 id="线性同构"><a href="#线性同构" class="headerlink" title="线性同构"></a>线性同构</h3><p><img src="http://img.blog.csdn.net/20171220225313979?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="linear_isomorphism_between_matrix_and_transformation"></p>
-<p><strong>例</strong>：设线性变换$\tau\,:\,R^{3}\rightarrow\,R^{2}$定义为$\tau(x,y,z)=(x+y,y-z)$, 线性变换$\sigma:R^{2}\,\rightarrow\,R^{2}$定义为$\sigma(u,v)=(2u-v,u)$.求线性变换$\sigma\tau:R^{3}\,\rightarrow\,R^{2}$在$R^{3}$与$R^{2}$标准基下的矩阵.</p>
-<p><strong>解</strong>：注意到$\sigma\tau=\sigma(\tau(x,y,z))=\sigma(x+y, y-z)=(2x+y+z, x+y)$ </p>
-<p>因此标准基下线性变化$\sigma(\tau(x\,y\,z)):R^{3}\to\,R^{2}$:</p>
-<p>$$e_{1}=(1,0,0)^{T}, e_{2}=(0,1,0)^{T}, e_{3}=(0,0,1)^{T}\,\Rightarrow\, I_{3}=(e_{1}\,e_{2}\,e_{3})$$</p>
-<p>$\sigma(\tau(e_{1}))=\sigma(\tau(\,(1,0,0)\,)=\begin{pmatrix}2\1\\end{pmatrix}\quad\sigma((\tau(e_{2}))=\begin{pmatrix}1\1\\end{pmatrix}\quad\sigma(\tau(e_{3}))=\begin{pmatrix}1\0\\end{pmatrix}$</p>
-<p>$\sigma(\tau(e_{1}\,e_{2}\,e_{3}))=\sigma(\tau(I_{3}))=\underbrace{\begin{pmatrix}2&amp;1&amp;1\1&amp;1&amp;0\end{pmatrix}}_{C}$</p>
-<p>第一个线性变化$\tau(x,y,z)=(x+y,y-z):R^{3}\,\to\,R^{2}$ :</p>
-<p>$$\tau(e_{1})=\tau(1,0,0)=(1+0,0+0)=(1,0)$$</p>
-<p>$$\tau(e_{2})=\tau(0,1,0)=(0+1,1+0)=(1,1)$$</p>
-<p>$$\tau(e_{3})=\tau(0,0,1)=(0+0,0+1)=(0,1)$$</p>
-<p>$$\tau(I_{3})=\tau(e_{1}\,e_{2}\,e_{3})=\begin{pmatrix}1&amp;1&amp;0\0&amp;1&amp;-1\end{pmatrix}=I_{2}\begin{pmatrix}1&amp;1&amp;0\0&amp;1&amp;-1\end{pmatrix}$$</p>
-<p>$$\underbrace{\begin{pmatrix}1&amp;1&amp;0\0&amp;1&amp;-1\end{pmatrix}}_{A}\begin{pmatrix}x\y\z\end{pmatrix}=\begin{pmatrix}x+y\y-z\end{pmatrix}$$</p>
-<p>第二个线性变化$\sigma(u,v)=(2u-v,u): R^{2}\,\to\,R^{2}$:</p>
-<p>$$\delta_{1}=(1,0)^{T}, \delta_{2}=(0,1)^{T}\,\Rightarrow\, I_{2}=(\delta_{1}\,\delta_{2})$$</p>
-<p>$$\sigma(\delta_{1})=\begin{pmatrix}2\1\end{pmatrix},\,\sigma(\delta_{2})=\begin{pmatrix}-1\0\end{pmatrix}\Rightarrow\sigma(\delta_{1}\,\delta_{2})=I_{2}\begin{pmatrix}2&amp;-1\1&amp;0\end{pmatrix}$$</p>
-<p>$$\underbrace{\begin{pmatrix}2&amp;-1\1&amp;0\end{pmatrix}}_{B}\begin{pmatrix}u\v\end{pmatrix}=\begin{pmatrix}2u-v\u\end{pmatrix}$$</p>
-<p>发现$BA=C\,\Rightarrow\,\begin{pmatrix}2&amp;-1\1&amp;0\end{pmatrix}\begin{pmatrix}1&amp;1&amp;0\0&amp;1&amp;-1\end{pmatrix}=\begin{pmatrix}2&amp;1&amp;1\1&amp;1&amp;0\end{pmatrix}$，符合上文所说的线性变换的复合是对应矩阵的左乘。</p>
-<p>结论：<strong>有限维向量空间上的线性变换$\leftarrow\rightarrow$矩阵</strong></p>
+        <h2 id="3-5-conditioning-problems"><a href="#3-5-conditioning-problems" class="headerlink" title="3.5 conditioning problems"></a>3.5 conditioning problems</h2><h3 id="3-18"><a href="#3-18" class="headerlink" title="3.18"></a>3.18</h3><p>设 $X$ 是一个随机变量，其概率密度函数为：<br>$$<br>f_X(x)=\cases{<br>\frac{x}{4}, &amp; 若 $1&lt; x \le 3$, \<br>0, &amp; 其他<br>}<br>$$<br>令 $A={X\ge 2}$</p>
+<p>(a) 计算 $E[X], P(A), f_{X|A}(x), E[X|A]​$ </p>
+<p>(b) 令 $Y=X^2$ ，计算 $E[Y], var(Y)$ 。</p>
+<p>解答：</p>
+<p>(a)<br>$$<br>E[X]=\int_{1}^{3}xf_X(x)dx=\int_{1}^{3}x\frac{x}{4}dx = \frac{x^3}{12}|<em>1^3=\frac{13}{6} \<br>P(A)=\int</em>{2}^{3}f_X(x)dx=\int_{2}^{3}\frac{x}{4}dx=\frac{x^2}{8}|<em>2^3=\frac{5}{8} \<br>f</em>{X|A}(x)=\cases{<br>    \frac{f_X(x)}{P(A)}=\frac{2x}{5}, &amp; $x\in A$, \<br>    0, &amp; 其他<br>} \<br>E[X|A]=\int_{2}^{3}xf_{X|A}(x)dx=\int_{2}^{3}x\frac{2x}{5}dx=\frac{2x^3}{15}|_2^3=\frac{38}{15}<br>$$<br>(b)<br>$$<br>E[Y]=\cases{<br>\int Y f_X(x)dx=\int x^2f_X(x)dx=\int_1^3\frac{x^3}{4}dx=\frac{x^4}{16}|_1^3=5, &amp; $1&lt; x \le 3$, \<br>0,<br>}\<br>E[Y^2]=\cases{<br>\int Y^2 f_X(x)dx=\int x^4f_X(x)dx=\int_1^3\frac{x^5}{4}dx=\frac{x^6}{24}|_1^3=\frac{91}{3} &amp; $1&lt; x \le 3$, \<br>0,<br>}\<br>var(Y)=E[Y^2]-(E[Y])^2=\frac{16}{3}<br>$$</p>
+<h3 id="3-20"><a href="#3-20" class="headerlink" title="3.20"></a>3.20</h3><p>一个粗心的教授错误地将两个学生的答疑时间安排在了同一个时间段。已知两位同学的答疑时间长度是两个相互独立的并且同分布的随机变量，分布是指数分布，期望值为 $30$ 分钟，第一个学生按时到达，5分钟以后，第二个学生也到达。从第一个学生到达起直到第二个学生离开所需要时间的期望值是？</p>
+<p>解答：</p>
+<p>用 $T_{total}$ 表示教授答疑总共用时的随机变量，用 $T_{s_1}, T_{s_2} $ 表示教授分别对学生 $1$ 和学生 $2$ 答疑时间，那么<br>$$<br>E[T_{total}]=P(T_{s_1}&lt; 5) \cdot E[5+E[T_{s_2}]] + P(T_{s_1} \ge 5)(E[T_{s_1}|T_{s_1}\ge5]+E[T_{s_2}])<br>$$<br>据题目得：$E[T_{s_1}]=E[T_{s_2}]=30$ ，利用<a href="">指数型随机变量的无记忆性</a>得到：$E[T_{s_1}|T_{s_1}\ge5] = 5+E[T_{s_1}] = 35$ 。<br>$$<br>P(T_{s_1} \ge 5) = e^{-\frac{1}{30}\cdot5} \<br>P(T_{s_1} &lt; 5)=1-P(T_{s_1}\ge 5)=1-e^{-\frac{1}{30}\cdot5}\<br>$$<br>因此：<br>$$<br>E[T_{total}]=(1-e^{-\frac{1}{30}\cdot5})\cdot (5+30)+(e^{-\frac{1}{30}\cdot5})\cdot (35+30)=35+30\cdot e^{-\frac{5}{30}}=60.394<br>$$</p>
+<h3 id="3-21"><a href="#3-21" class="headerlink" title="3.21"></a>3.21</h3><p>从一个长度为 $l$ 的杆开始，在杆上随机找一个点，以这个点为切断点，将杆分为两半。保留杆的左边部分，设这部分的长度为 $Y$ 。对于长度为 $Y$ 的这根杆子，重复这一切断的过程，设第二次切断后保留下来的部分长度为 $X$ 。</p>
+<p>(a) 求出 $X,Y$ 的联合概率密度函数。</p>
+<p>(b) 求 $X$ 的边缘概率密度函数。</p>
+<p>(c) 利用  的边缘概率密度函数计算 $E[X]$ 。</p>
+<p>(d) 利用关系式 $X=Y\cdot(\frac{X}{Y})$ 计算 $E[X]$ 。</p>
+<p>解答：</p>
+<p>(a) $f_Y(y)=\frac{1}{l},  0\le y\le l$ . 因此在 $y$ 值在给定情况下。随便变量 $X$ 均匀分布在 $[0,y]$ ，所以 $f_{X|Y}(x|y)=\frac{1}{y}, 0\le x\le y $ 。总结如下：<br>$$<br>f_{X,Y}(x,y)=f_Y(y)f_{X|Y}(x|y)=\cases{<br>    \frac{1}{l} \cdot \frac{1}{y}, &amp; $0 \le x \le y \le l$, \<br>    0, &amp; otherwise<br>}<br>$$<br>(b)<br>$$<br>f_X(x)=\int f_{X,Y}(x,y)dy=\int_{x}^{l}\frac{1}{ly}dy=\frac{1}{l}ln(\frac{l}{x}), \quad 0\le x \le l<br>$$<br>(c)<br>$$<br>E[X]=\int_{0}^{l}xf_X(x)dx=\int_{0}^{l}\frac{x}{l}ln(\frac{l}{x})dx=\frac{l}{4}<br>$$<br>(d) 第一次折断以后，杆的 $\frac{Y}{l}$ 部分被留下来，经过第二次折断之后，杆的 $\frac{X}{Y}$ 被留了下来，而这两次折断是独立的</p>
+<p>事件。而且，随机变量 $Y$ 和 $\frac{X}{Y}$ 是分别均匀分布在 $[0,l]$ 和 $[0,1]$ 之间的，因此 $E[Y]=\frac{l}{2}$ ，$E[\frac{X}{Y}]=\frac{1}{2}$ 。因此：<br>$$<br>E[X]=E[Y]E[\frac{X}{Y}]=\frac{l}{2} \cdot \frac{1}{2}=\frac{l}{4}<br>$$</p>
+<h3 id="3-22"><a href="#3-22" class="headerlink" title="3.22"></a>3.22</h3><p>有一根长度为 $l$ 的杆，利用3种不同的方法将杆子截成 $3$ 段。</p>
+<ol>
+<li>在杆子上随机且独立地选取 $2$ 个点（每个点被选取都是等可能的，以下描述类同），在这两个点处将杆子截断。</li>
+<li>首先，在杆子上随机地选取一个点，在这个点处将杆子截断，然后将包含原右端点的这一段按同样的方法地截成 $2$ 段。</li>
+<li>首先，在杆子上随机的选取一个点，在这个点处将杆子截成 $2$ 段，然后将较长的那一段按同样的方法再截成 $2$ 段。</li>
+</ol>
+<p>对这 $3$ 种方法的每种方法，分别求出截成小段后杆子能组成一个三角形的概率。</p>
+<p>解答：</p>
+<p>将原杆子长度标准化一下，视为总长为 $1$ 的杆子，左端点视为 $0$ 点（原点），右端点视为 $1$ 的点。用 $X$ 表示第一次截取点的位置，$Y$ 表示第二次截取点位置。将$X,Y$ 放置到坐标系下观察。对于方法 2，那么 $X &lt; Y$ 。对于方法1和3，我们假设 $X&lt;Y$ ，随后利用对称性解释 $Y&lt;X$ 的情况。</p>
+<p><strong>假设 $X&lt;Y$ 的情况下</strong>，那么3段长度分别为：$X, Y-X, 1-Y$ 。它们能组成三角形的前提是：任意两端的和大于第三段：<br>$$<br>X&lt;(Y-X)+(1-Y),\quad (Y-X)&lt;X+(1-Y),\quad (1-Y)&lt;X+(Y-X)<br>$$<br>化简即：<br>$$<br>X&lt;0.5,\quad Y-X&lt;0.5,\quad Y&gt;0.5<br>$$<br>对于方法1：$X,Y$ 满足上述3个条件下，坐标 $(X,Y)$ 必须处在顶点 $(0,0.5),(0.5,0.5),(0.5,1)$ 围成的三角形内（在直角坐标系下画出区域得到），这个三角形面积为样本空间的 $\frac{1}{8}$ ，根据对称性，在 $Y&lt;X$ 的情况下，方法1得到符合组成三角形这个事件的概率也是 $\frac{1}{8}$ 。因此按照方法1，由于在 $X&lt;Y$ 和 $X&gt;Y$ 这两个条件下产生的事件是独立地，因此，按照方法1截断杆子成能够拼成三角形的三段的概率为：$\frac{1}{4}$ 。</p>
+<p>对于方法2： $X,Y$ 满足均匀分布地随机变量，且 $0&lt;X&lt;Y&lt;1$ ，$f_{x,y}(x,y)=f_{X}(x)f_{Y|X}(y|x)=1\cdot \frac{1}{1-x}$ 。那么在上述3个条件下，坐标 $(X,Y)$ 必须处在顶点 $(0,0.5),(0.5,0.5),(0.5,1)$ 围成的三角形内（在直角坐标系下画出区域得到），那么概率可由积分得到：<br>$$<br>\begin{eqnarray}<br>\int_{0}^{\frac{1}{2}}\int_{\frac{1}{2}}^{\frac{x+1}{2}}f_{X,Y}(x,y)dydx&amp;=&amp;\int_{0}^{\frac{1}{2}}\int_{\frac{1}{2}}^{\frac{x+1}{2}}\frac{1}{1-x}dydx =\int_{0}^{\frac{1}{2}}\frac{x}{1-x}dx \<br>&amp;=&amp; \int_{0}^{\frac{1}{2}}\frac{[-(1-x)+1]}{1-x}dx = \int_{0}^{\frac{1}{2}}[\frac{1}{1-x}-1]dx \<br>&amp;=&amp; [-ln(1-x)-x]|_{0}^{\frac{1}{2}} \<br>&amp;=&amp; -\frac{1}{2}+ln2<br>\end{eqnarray}<br>$$<br>对于方法3：先考虑 $X&lt;0.5$ 的情况，那么第一次折断产生的两段中比较长的那一段是右边那一段，这正如方法2的情形。但是还有一种情况是 $X&gt;0.5$ 的情况，那么 $0&lt;Y&lt;X&lt;1$ 。根据对称性，得到在方法3下，3段能拼成三角形的概率为方法2的两倍，即 $-1+2ln2$ 。</p>
+<h3 id="3-23"><a href="#3-23" class="headerlink" title="3.23"></a>3.23</h3><p>设在直角坐标系中3个点 $(0,0),(0,1),(1,0)$ 组成的一个三角形。假定 $(X&lt;Y)$ 是一个随机选择的点的坐标，这个随机点是在三角形上均匀分布的。</p>
+<ol>
+<li>找出 $X$ 和 $Y$ 的联合概率密度函数。</li>
+<li>找出 $Y$ 的边缘概率密度函数。</li>
+<li>找出 $X$ 的在给定 $Y$ 值之下的条件概率密度函数。</li>
+<li>求出 $E[X|Y=y]$ ，利用全期望定理求出 $E[X]$ 的依赖于 $E[Y]$ 的表达式。</li>
+<li>利用对称性求出 $E[X]$ 。</li>
+</ol>
+<p>解答：</p>
+<ol>
+<li>由于随机变量是均匀分布的，样本空间的面积是 $\frac{1}{2}$ ，因此 $f_{X,Y}=2$ 。</li>
+</ol>
+<p><img src="problem_3.23.png" alt=""></p>
+<ol>
+<li><p>$f_Y(y)=\int_{-\infty}^{+\infty}f_{X,Y}(x,y)dx=\int_{0}^{1-y}2dx=2(1-y), \quad 0\le y \le 1$</p>
+</li>
+<li><p>$f_{X|Y}(x|y)=\frac{f_{X,Y}(x,y)}{f_Y(y)}=\frac{1}{1-y}, \quad 0 \le x \le 1-y$ 条件概率密度函数正如上图(b)所示</p>
+<p><img src="./problem_3.23_(2" alt="">.png)</p>
+</li>
+<li><p>​<br>$$<br>E[X|Y]=\int xf_{X|Y}(x,y)dx=\int_{0}^{1-y}x\frac {1}{1-y}dx=\frac{1}{2}x^2\cdot\frac{1}{1-y}|_0^{1-y}=\frac{1-y}{2}, 0\le y &lt; 1\<br>E[X]=\int E[X|Y]f_Y(y)dy=\int_{0}^{1}\frac{1-y}{2}f_Y(y)dy=\int_0^1 \frac{1}{2}f_Y(y)dy-\frac{1}{2}yf_Y(y)dy=\frac{1}{2}-\frac{1}{2}E[Y]<br>$$</p>
+</li>
+<li><p>根据对称性性，$E[X]=E[Y]$ ，又因为： $E[X]=\frac{1}{2}-\frac{1}{2}E[Y]=\frac{1}{2}-\frac{1}{2}E[X]\rightarrow E[X]=\frac{1}{3}$</p>
+</li>
+</ol>
+<h3 id="3-24"><a href="#3-24" class="headerlink" title="3.24"></a>3.24</h3><p>设在直角坐标系中三个点 $(0,0),(1,0), 和 (0,2)$ 组成一个三角形。假定 $(X,Y)$ 是一个随机点的坐标，这个随机点是三角形上均匀分布的（与题 $23$ 不同，此题中的 $X$ 和 $Y$ 是不对称的），按题 $23$ 中求出 $E[X]$ 和 $E[Y]$ 。</p>
+<p>解答：</p>
+<p>显然这个三角形是由 $X, Y$ 轴和直线 $y=-2x+2$ 围成的。在给定 $y$ 的情况下，$x\in [0,\frac{(2-y)}{2}]$ ，$X,Y$ 联合条件概率密度为 $f_{X,Y}=\frac{1}{1\times 2 \div 2}=1$<br>$$<br>f_Y(y)=\int_{-\infty}^{+\infty}f_{X,Y}dx= \int_{0}^{\frac{2-y}{2}}1dx=\frac{2-y}{2}\rightarrow f_{X|Y}(x,y)=\frac{f_{X,Y}(x,y)}{f_Y(y)}=\frac{2}{2-y}\rightarrow \<br>E[X|Y=y]=\int_{-\infty}^{+\infty} xf_{X|Y}(x,y)dx=\int_{0}^{\frac{2-y}{2}}\frac{2x}{2-y}dx=\frac{x^2}{2-y}|<em>{0}^{\frac{2-y}{2}}=\frac{2-y}{4}, \quad y\in [0,2]<br>$$<br>再使用期望的全概率公式，得到：<br>$$<br>E[X]=\int</em>{0}^{2}\frac{2-y}{4}f_Y(y)dy=\int_{0}^{2}\frac{2}{4}f_Y(y)-\frac{1}{4}yf_Y(y)dy=\int_{0}^{2}\frac{2-y}{4}dy-\frac{1}{4}E[Y]=\frac{1}{2}-\frac{1}{4}E[Y]<br>$$<br>类似地，在给定 $x$ 的条件下，$y\in [0,2-2x]$ ，那么：<br>$$<br>E[Y|X=x]=1-x, \quad 0 \le x \le 1<br>$$<br>因此：<br>$$<br>E[Y]=\int_{0}^{1}(1-x)f_X(x)dx=1-E[X]<br>$$<br>联合 $E[X], E[Y]$ 的公式，得到：<br>$$<br>E[X]=\frac{1}{3},\quad E[Y]=\frac{2}{3}<br>$$</p>
+<h3 id="3-25"><a href="#3-25" class="headerlink" title="3.25"></a>3.25</h3><p>设平面上一个随机点的两个坐标为 $X$ 和 $Y$ 。它们是独立同分布的正态随机变量，公共期望为 $0$ ，方差为 $\sigma^2$ 。已知这个点离原点的距离至少为 $c$ 。求 $X$ 和 $Y$ 的条件联合概率密度。 </p>
+<p>解答：</p>
+<p>用 $C$ 表示 $X^2+Y^2 \ge  c^2$ 事件，概率 $P(C)$ 通过极坐标系可以计算如下：<br>$$<br>\begin{eqnarray}<br>P(C) &amp;=&amp; \frac{1}{2\pi \sigma^2}\int_{0}^{2\pi}\int_{c}^{\infty}re^{\frac{-r^2}{2\sigma^2}}drd\theta \<br>&amp;=&amp; \frac{1}{\sigma^2}\int_{c}^{\infty}re^{\frac{-r^2}{2\sigma^2}}dr\<br>&amp;=&amp;e^{\frac{-c^2}{2\sigma^2}}<br>\end{eqnarray}<br>$$<br>因此，<br>$$<br>\forall (X,Y)\in C, f_{X,Y|C}(x,y)=\frac{f_{X,Y}(x,y)}{P(C)}=\frac{1}{2\pi\sigma^2}e^{-\frac{1}{2\sigma^2}(x^2+y^2-c^2)}<br>$$</p>
+<h2 id="3-6-The-Continuous-Bayes’-Rule-problems"><a href="#3-6-The-Continuous-Bayes’-Rule-problems" class="headerlink" title="3.6 The Continuous Bayes’ Rule problems"></a>3.6 The Continuous Bayes’ Rule problems</h2><h3 id="3-34"><a href="#3-34" class="headerlink" title="3.34"></a>3.34</h3><p>一台有问题的硬币浇铸机所生产的硬币是有缺陷的，它生产的硬币在抛掷试验中正面出现的概率 $P$ 是一个随机变量。 $P$ 的概率密度函数是：<br>$$<br>f_P(p)=\cases{<br>    pe^p,  &amp; $p\in [0,1]$ ,\<br>    0, &amp; 其他<br>}<br>$$<br>现在从这批产品中抽取一枚进行抛掷硬币试验，进行独立重复的抛掷。</p>
+<ol>
+<li><p>求出抛掷硬币的时候，正面出现的概率。</p>
+<p>使用 $A$ 表示抽出的硬币抛掷试验是正面朝上，使用连续版本的全概率公式和分部积分法：<br>$$<br>P(A)=\int_{0}^{1}P(A|P=p)f_P(p)dp=\int_{0}^{1}p^2e^pdp=e-2<br>$$</p>
+</li>
+<li><p>已知抛掷一枚硬币后出现正面，求 $P$ 的条件概率密度函数。<br>$$<br>f_{P|A}(p)=\frac{P(A|P=p)f_P(p)}{P(A)}=\cases{</p>
+<pre><code>\frac{P^2 e^p}{e-2}, &amp; $0\le p \le 1$ , \\
+0, &amp; otherwise
+</code></pre><p>}<br>$$</p>
+</li>
+<li><p>给定第一次抛掷的结果是出现正面。求第二次抛掷硬币的时候出现正面的条件概率。</p>
+<p>使用 $B$ 表示第二次抛掷硬币的时候出现正面，那么<br>$$<br>\begin{eqnarray}<br>P(B|A) &amp;=&amp; \int_{0}^{1}P(B|P=p,A)f_{P|A}(p)dp \<br>&amp;=&amp; \int_{0}^{1}P(B|P=p)f_{P|A}(p)dp\<br>&amp;=&amp; \frac{1}{e-2}\int_{0}^{1}p^3e^pdp \<br>&amp;=&amp; \frac{1}{e-2} \cdot (6-2e) \<br>&amp;=&amp; 0.786 \<br>\end{eqnarray}<br>$$<br>​</p>
+</li>
+</ol>
 
       
     </div>
@@ -537,7 +514,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://snaildove.github.io/2017/08/04/linear_transformation_1st_part/" title="线性变换1">https://snaildove.github.io/2017/08/04/linear_transformation_1st_part/</a>
+    <a href="https://snaildove.github.io/2018/03/14/conditioning_problems/" title="">https://snaildove.github.io/2018/03/14/conditioning_problems/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -549,14 +526,6 @@
     
 
     <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/linear-algebra/" rel="tag"><i class="fa fa-tag"></i> linear_algebra</a>
-          
-            <a href="/tags/线性代数/" rel="tag"><i class="fa fa-tag"></i> 线性代数</a>
-          
-        </div>
       
 
       
@@ -582,8 +551,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/08/03/singular_values_decomposition/" rel="next" title="奇异值分解singular values decomposition">
-                <i class="fa fa-chevron-left"></i> 奇异值分解singular values decomposition
+              <a href="/2017/08/28/Bayes_rule/" rel="next" title="经典摘录-贝叶斯公式">
+                <i class="fa fa-chevron-left"></i> 经典摘录-贝叶斯公式
               </a>
             
           </div>
@@ -591,10 +560,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/08/05/linear_transformation_2nd_part/" rel="prev" title="线性变换2">
-                线性变换2 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -780,7 +745,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#线性变换的定义性质运算"><span class="nav-number">2.</span> <span class="nav-text">线性变换的定义性质运算</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#向量空间的定义"><span class="nav-number">2.1.</span> <span class="nav-text">向量空间的定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#线性变换的定义"><span class="nav-number">2.2.</span> <span class="nav-text">线性变换的定义</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#例子"><span class="nav-number">2.2.1.</span> <span class="nav-text">例子</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#线性变换的性质"><span class="nav-number">2.3.</span> <span class="nav-text">线性变换的性质</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#线性变换的运算"><span class="nav-number">2.4.</span> <span class="nav-text">线性变换的运算</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#加法"><span class="nav-number">2.4.1.</span> <span class="nav-text">加法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#数乘"><span class="nav-number">2.4.2.</span> <span class="nav-text">数乘</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#乘积"><span class="nav-number">2.4.3.</span> <span class="nav-text">乘积</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#逆"><span class="nav-number">2.4.4.</span> <span class="nav-text">逆</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#幂"><span class="nav-number">2.4.5.</span> <span class="nav-text">幂</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#多项式"><span class="nav-number">2.4.6.</span> <span class="nav-text">多项式</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#线性变化的矩阵表示"><span class="nav-number">3.</span> <span class="nav-text">线性变化的矩阵表示</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#例子-1"><span class="nav-number">3.1.</span> <span class="nav-text">例子</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#线性变换与矩阵之间的关系"><span class="nav-number">4.</span> <span class="nav-text">线性变换与矩阵之间的关系</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#一一对应"><span class="nav-number">4.1.</span> <span class="nav-text">一一对应</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#线性变换的乘积与矩阵的乘积"><span class="nav-number">4.2.</span> <span class="nav-text">线性变换的乘积与矩阵的乘积</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#线性同构"><span class="nav-number">4.3.</span> <span class="nav-text">线性同构</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-5-conditioning-problems"><span class="nav-number">1.</span> <span class="nav-text">3.5 conditioning problems</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-18"><span class="nav-number">1.1.</span> <span class="nav-text">3.18</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-20"><span class="nav-number">1.2.</span> <span class="nav-text">3.20</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-21"><span class="nav-number">1.3.</span> <span class="nav-text">3.21</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-22"><span class="nav-number">1.4.</span> <span class="nav-text">3.22</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-23"><span class="nav-number">1.5.</span> <span class="nav-text">3.23</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-24"><span class="nav-number">1.6.</span> <span class="nav-text">3.24</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-25"><span class="nav-number">1.7.</span> <span class="nav-text">3.25</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-6-The-Continuous-Bayes’-Rule-problems"><span class="nav-number">2.</span> <span class="nav-text">3.6 The Continuous Bayes’ Rule problems</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-34"><span class="nav-number">2.1.</span> <span class="nav-text">3.34</span></a></li></ol></li></ol></div>
             
 
           </div>
