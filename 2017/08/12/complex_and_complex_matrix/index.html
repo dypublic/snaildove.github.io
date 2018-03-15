@@ -112,7 +112,7 @@
 <meta property="og:image" content="http://img.blog.csdn.net/20171230223508262?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="http://img.blog.csdn.net/20171230223615170?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="http://img.blog.csdn.net/20171230223715887?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:updated_time" content="2018-03-14T09:23:31.408Z">
+<meta property="og:updated_time" content="2018-03-15T18:24:52.981Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="复数与复矩阵">
 <meta name="twitter:description" content="笔记源自：清华大学公开课：线性代数2——第12讲：复数与复矩阵 之前接触的大部分线性代数知识都只考虑实数情形，但复数情形不可避免会遇到。例如$\begin{pmatrix}cos\theta&amp;amp;-sin\theta\sin\theta&amp;amp;cos\theta\end{pmatrix}$没有实特征值（除了极特殊情形），目的：比较实数和复数情形的异同，注意学习复数和实数的区别联系。  复数复">
@@ -498,10 +498,10 @@
 <li>向量$u$是$A$的关于$\lambda$的特征向量$\Leftrightarrow u$是$A^H$的关于$\bar{\lambda}$的特征向量。证明：<br>设$Au=\lambda u\Rightarrow (A-\lambda I)u=0$令$B=A-\lambda I\Rightarrow ||B^Hu||^2=u^HBB^Hu=u^HB^HBu=||Bu||^2=0$，因为$||B^Hu||^2=0\Rightarrow B^Hu=0, (A-\lambda I)^H=B^H\Rightarrow  (A^H-\bar{\lambda}I)u=0\Rightarrow A^Hu=\bar{\lambda}u$</li>
 <li>不同特征值的特征向量正交。证明与Hermite矩阵一样。</li>
 </ol>
-<p><strong>定理(Schur)</strong>：<strong>任意一个复矩阵$A$酉相似于一个上三角阵</strong>。即：$\exists\ U\in $ unitary  matrix,$\forall\ A\in$ complex matrix, $U^H=U^{-1}, U^HAU=\begin{pmatrix}\lambda_1&amp;*&amp;* \0&amp;\ddots&amp;*\0&amp;0&amp;\lambda_n\end{pmatrix} \Rightarrow$<strong>任意一个复正规阵酉相似于对角阵</strong>，特别地，酉相似于$\begin{pmatrix}1\&amp;1\&amp;&amp;\ddots\&amp;&amp;&amp;1\end{pmatrix}$, $U^HAU=diag(\lambda_1,\ldots,\lambda_n)\Rightarrow AU=\lambda U$。</p>
+<p><strong>定理(Schur)</strong>：<strong>任意一个复矩阵$A$酉相似于一个上三角阵</strong>。即：$\exists\ U\in $ unitary  matrix,$\forall\ A\in$ complex matrix, $U^H=U^{-1}, U^HAU=\begin{pmatrix}\lambda_1&amp;<em>&amp;</em> \0&amp;\ddots&amp;*\0&amp;0&amp;\lambda_n\end{pmatrix} \Rightarrow$<strong>任意一个复正规阵酉相似于对角阵</strong>，特别地，酉相似于$\begin{pmatrix}1\&amp;1\&amp;&amp;\ddots\&amp;&amp;&amp;1\end{pmatrix}$, $U^HAU=diag(\lambda_1,\ldots,\lambda_n)\Rightarrow AU=\lambda U$。</p>
 <p>一个实矩阵$A$是正规的$\Leftrightarrow A^TA=AA^T$。例如，$A$是正交阵或者$A$是对称（反对称）矩阵。</p>
 <p>如果$A$是正规的，那么存在正交阵$\Omega$使得：</p>
-<p>$\Omega^TA\Omega=\begin{pmatrix}\begin{pmatrix}a_1&amp;b_1 \ -b_1&amp;a_1\end{pmatrix}\&amp;\ddots\&amp;&amp;\begin{pmatrix}a_s&amp;b_s \ -b_s&amp;a_s\end{pmatrix}\&amp;&amp;&amp;\lambda_{2s+1}\&amp;&amp;&amp;&amp;\ddots\&amp;&amp;&amp;&amp;&amp;\lambda_n\end{pmatrix}$，即<strong>实正规阵正交相似于分块对角阵</strong>。 </p>
+<p>$\Omega^TA\Omega=\begin{pmatrix}\begin{pmatrix}a_1&amp;b_1 \ -b_1&amp;a_1\end{pmatrix}\&amp;\ddots\&amp;&amp;\begin{pmatrix}a_s&amp;b_s \ -b_s&amp;a_s\end{pmatrix}\&amp;&amp;&amp;\lambda_{2s+1}\&amp;&amp;&amp;&amp;\ddots\&amp;&amp;&amp;&amp;&amp;\lambda_n\end{pmatrix}​$，即<strong>实正规阵正交相似于分块对角阵</strong>。 </p>
 <p>对于复正规阵酉相似对角阵$U^HAU=diag(\lambda_1,\ldots,\lambda_n)\Rightarrow AU=\lambda U$，这里如果把$U$的列向量写成$u_k=\beta+i\gamma,\ \ k\in [1,n],\ \beta,\gamma \in R_n$，例如：$\begin{pmatrix}1+i\1-i\end{pmatrix}=\begin{pmatrix}1\1\end{pmatrix}+i\begin{pmatrix}1 \ -1\end{pmatrix}$。</p>
 <p>$Au_k=\lambda_ku_k\Rightarrow A(\beta+i\gamma)=\lambda_k(\beta+i\gamma)$，令$\lambda_k=a+ib$，得：$A\beta=a\beta-b\gamma, A\gamma=b\beta+a\gamma\Rightarrow$<br>$A(\beta, \gamma)=(\beta,\gamma)\begin{pmatrix}a&amp;b \ -b&amp;a\end{pmatrix}$ ，所以$\Omega$的实际上是由$U$的特征向量的实部和虚部组成的这样一个形式。 $\Omega$是一个正交阵，那$\beta$和$\gamma$是不是正交的？它们的长度相等嘛？不然无法保证$\Omega$是一个正交阵。 结论：设$A$是$n$解实正交阵。若$\lambda=a+ib(b\ne 0)$是$A$的特征值，$x=x_1+ix_2,\ x_1,x_2\in R_n$是对应的特征向量，则$||x_1||=||x_2||$，且$x_1,x_2$是相互正交的。</p>
 <p>证明：如果$\lambda=a+ib$ 是$A$的特征值，那么$\lambda=a-ib$ 也是$A$的特征值。因为$A$实正交阵，所以对$Ax=\lambda x$取两边共轭得：$\overline{Ax}=A\bar{x}=\bar{\lambda}\bar{x}$。那么得到$\lambda,\bar{\lambda}$都是$A$的特征值，由于正交阵不同特征值对应的特征向量正交，所以${\bar{x}}^Hx=0, x=x_1+ix_2, \bar{x}=x_1-ix_2\Rightarrow ||x_1||=||x_2||, x_1^Tx_2=0$。 </p>
