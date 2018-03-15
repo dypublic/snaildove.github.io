@@ -454,13 +454,13 @@
 </ol>
 </blockquote>
 <p>Let us prove the fifth rule. If $A = R^{T}R$, then</p>
-<p>$$<br>\begin{eqnarray}<br>x^{T}Ax&amp;=&amp;x^{T}R^{T}Rx \nonumber\<br>&amp;=&amp;(x^{T}R^{T})Rx \nonumber\<br>&amp;=&amp;(Rx)^{T}Rx \nonumber\<br>&amp;=&amp;|Rx| \nonumber\<br>&amp;\ge&amp;0 \nonumber<br>\end{eqnarray}<br>$$</p>
+<p>$$<br>\begin{eqnarray}<br>x^{T}Ax&amp;=&amp;x^{T}R^{T}Rx \nonumber\\<br>&amp;=&amp;(x^{T}R^{T})Rx \nonumber\\<br>&amp;=&amp;(Rx)^{T}Rx \nonumber\\<br>&amp;=&amp;|Rx| \nonumber\\<br>&amp;\ge&amp;0 \nonumber<br>\end{eqnarray}<br>$$</p>
 <p>And the columns of $R$ are also independent, so $|Rx|=x^{T}Ax&gt;0$, except when $x$=0 and thus $A$ is positive definite.</p>
 <h2 id="A-T-A"><a href="#A-T-A" class="headerlink" title="$A^{T}A$"></a>$A^{T}A$</h2><p>$A_{m\times n}$ is almost certainly not symmetric, but $A^{T}A$ is square (m by m) and symmetric. We can easily get the following equations through left multiplying $A^{T}A$ by $x^{T}$ and right multiplying $A^{T}A$ by $x$:</p>
-<p>$$<br>\begin{eqnarray}<br>x^{T}A{^TA}x&amp;=&amp;x^{T}(A{^TA})x\nonumber\<br>&amp;=&amp;(x^{T}A^{T})Ax\nonumber\<br>&amp;=&amp;(Ax)^{T}(Ax)\nonumber\<br>&amp;=&amp;|Ax|\nonumber\<br>&amp;\ge&amp;0\nonumber<br>\end{eqnarray}<br>$$</p>
+<p>$$<br>\begin{eqnarray}<br>x^{T}A{^TA}x&amp;=&amp;x^{T}(A{^TA})x\nonumber\\<br>&amp;=&amp;(x^{T}A^{T})Ax\nonumber\\<br>&amp;=&amp;(Ax)^{T}(Ax)\nonumber\\<br>&amp;=&amp;|Ax|\nonumber\\<br>&amp;\ge&amp;0\nonumber<br>\end{eqnarray}<br>$$</p>
 <p>If $A_{m\times\,n}$ has rank $n$ (independent columns), then except when $x = 0$, $Ax=|Ax|=x^{T}(A{^TA})x&gt;0$ and thus $A^{T}A$ is positive definite. And vice versus.</p>
 <p>Besides, $A^{T}A$ is invertible only if $A$ has rank $n$ (independent columns). To prove this, we assume $Ax=0$, then:</p>
-<p>$$<br>\begin{eqnarray}<br>Ax&amp;=&amp;0\nonumber\<br>(Ax)^{T}(Ax)&amp;=&amp;0\nonumber\<br>(x^{T}A{^T})(Ax)&amp;=&amp;0\nonumber\<br>x^{T}A{^T}(Ax)&amp;=&amp;x^{T}0\nonumber\<br>(A{^TA})x&amp;=&amp;0\nonumber<br>\end{eqnarray}<br>$$</p>
+<p>$$<br>\begin{eqnarray}<br>Ax&amp;=&amp;0\nonumber\\<br>(Ax)^{T}(Ax)&amp;=&amp;0\nonumber\\<br>(x^{T}A{^T})(Ax)&amp;=&amp;0\nonumber\\<br>x^{T}A{^T}(Ax)&amp;=&amp;x^{T}0\nonumber\\<br>(A{^TA})x&amp;=&amp;0\nonumber<br>\end{eqnarray}<br>$$</p>
 <p>From the above equations, we know solutions of $Ax=0$ are also solutions of  $(A{^TA})x=0$. Because $A_{m\times\,n}$ has a full set of column rank (independent columns),  $Ax=0$ only has a zero solution as well as $(A{^T}A)x=0$. Moreover, if $A{^T}A$ is invertible, then $A_{m\times\,n}$ has rank $n$ (independent columns). We also notice that if $A$ is square and invertible, then  $A{^T}A$ is invertible. </p>
 <p>Overall, <strong>if all columns of $A_{m\times\,n}$ are mutual independent, then $(A{^T}A)$ is invertible and positive definite as well, and vice versus.</strong></p>
 <h2 id="least-square"><a href="#least-square" class="headerlink" title="least square"></a>least square</h2><p>We have learned that <strong>least square</strong> comes from <strong>projection</strong> :<br>$$b-p=e\Rightarrow\,A^{T}(b-A\hat{x})=0\Rightarrow\,A^{T}A\hat{x}=A^{T}b$$<br>Consequently, only if $A^{T}A$ is invertible, then we can use linear regression to find approximate solutions $\hat{x}=(A^{T}A)^{-1}A^{T}b$ to unsolvable systems of linear equations. </p>

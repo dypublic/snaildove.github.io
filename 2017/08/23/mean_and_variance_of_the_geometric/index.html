@@ -449,12 +449,12 @@
 <p>$$p_X(k)=(1-p)^{k-1}p, k = 1, 2, ….$$</p>
 <p>那么 $X$ 的方差和均值为：</p>
 <p>$$E[X] = \sum\limits_{k=1}^{\infty}k(1-p)^{k-1}p, var(X)=\sum\limits_{k=1}^{\infty}(k-E[X])^2(1-p)^{k-1}p$$</p>
-<p>但是衡量这些无限和有点麻烦。我们利用全期望定理进行计算。记 $A_1={X=1}={\text{first try is a success}}, A_2={X&gt;1}={\text{first try is a failure}}$。 如果第一次就成功，得到 $X=1​$ ，且</p>
+<p>但是衡量这些无限和有点麻烦。我们利用全期望定理进行计算。记 $A_1=\{X=1\}=\{\text{first try is a success}\}, A_2=\{X&gt;1\}=\{\text{first try is a failure}\}$。 如果第一次就成功，得到 $X=1​$ ，且</p>
 <p>$$E[X|X=1]=\sum\limits_{}^{}xp_{X|X=1}=1p_{1|X=1}=1$$ </p>
 <p>如果首次尝试失败 ( X &gt; 1)，我们将浪费一次尝试，我们重新开始，由于是在第一次失败的条件下，那么表示尝试次数的 $X$ 的均值一定是大于1的，剩余尝试的期望即 $E[X]$  。</p>
 <p>$$E[X|X&gt;1] = E[X+1] = 1+E[X]$$</p>
 <p>因此，由全期望定理：</p>
-<p>$$<br>\begin{eqnarray}<br>E[X] &amp;=&amp; P[X=1]E[X|X=1]+P(X&gt;1)E[X|X&gt;1] \<br>&amp;=&amp; p + (1 - p) (1+E[X])<br>\end{eqnarray}<br>$$<br>从而可以得到：</p>
+<p>$$<br>\begin{eqnarray}<br>E[X] &amp;=&amp; P[X=1]E[X|X=1]+P(X&gt;1)E[X|X&gt;1] \\<br>&amp;=&amp; p + (1 - p) (1+E[X])<br>\end{eqnarray}<br>$$<br>从而可以得到：</p>
 <p>$$E[X]=\frac{1}{p}$$</p>
 <p>相似的推理，我们也得到</p>
 <p>$$E[X^2|X=1]=1,\quad E[X^2|X&gt;1]=E[(1+X)^2]=1+2E[X]+E[X^2]$$</p>
