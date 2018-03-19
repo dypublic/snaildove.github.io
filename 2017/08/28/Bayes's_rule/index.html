@@ -85,7 +85,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="probability,概率论," />
 
 
 
@@ -98,16 +98,21 @@
 
 
 
-<meta name="description" content="keep enthusiasm">
-<meta property="og:type" content="website">
-<meta property="og:title" content="SnailDove&#39;s blog">
-<meta property="og:url" content="https://snaildove.github.io/archives/2017/index.html">
+<meta name="description" content="说明：全文摘自Introduction to probability, 2nd Edition  本文讨论条件概率定律的应用，首先引入一个计算事件概率的定理。 The law of total probability设 $A_1, A_2, … , A_n$ 是一组互不相容的事件，它形成样本空间的一个分割（每个试验结果必定使得其中一个事件发生！）。又假定对每个 $i, P(A_i) &amp;gt; 0$">
+<meta name="keywords" content="probability,概率论">
+<meta property="og:type" content="article">
+<meta property="og:title" content="经典摘录-贝叶斯公式">
+<meta property="og:url" content="https://snaildove.github.io/2017/08/28/Bayes's_rule/index.html">
 <meta property="og:site_name" content="SnailDove&#39;s blog">
-<meta property="og:description" content="keep enthusiasm">
+<meta property="og:description" content="说明：全文摘自Introduction to probability, 2nd Edition  本文讨论条件概率定律的应用，首先引入一个计算事件概率的定理。 The law of total probability设 $A_1, A_2, … , A_n$ 是一组互不相容的事件，它形成样本空间的一个分割（每个试验结果必定使得其中一个事件发生！）。又假定对每个 $i, P(A_i) &amp;gt; 0$">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://img.blog.csdn.net/20180301153607785?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+<meta property="og:image" content="http://img.blog.csdn.net/20180301153651988?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+<meta property="og:updated_time" content="2018-03-19T14:37:29.032Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="SnailDove&#39;s blog">
-<meta name="twitter:description" content="keep enthusiasm">
+<meta name="twitter:title" content="经典摘录-贝叶斯公式">
+<meta name="twitter:description" content="说明：全文摘自Introduction to probability, 2nd Edition  本文讨论条件概率定律的应用，首先引入一个计算事件概率的定理。 The law of total probability设 $A_1, A_2, … , A_n$ 是一组互不相容的事件，它形成样本空间的一个分割（每个试验结果必定使得其中一个事件发生！）。又假定对每个 $i, P(A_i) &amp;gt; 0$">
+<meta name="twitter:image" content="http://img.blog.csdn.net/20180301153607785?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
 
 
 
@@ -137,13 +142,13 @@
 
 
 
-  <link rel="canonical" href="https://snaildove.github.io/archives/2017/"/>
+  <link rel="canonical" href="https://snaildove.github.io/2017/08/28/Bayes's_rule/"/>
 
 
 
 
 
-  <title>归档 | SnailDove's blog</title>
+  <title>经典摘录-贝叶斯公式 | SnailDove's blog</title>
   
 
 
@@ -172,7 +177,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -300,411 +305,291 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://snaildove.github.io/2017/08/28/Bayes's_rule/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="SnailDove">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SnailDove's blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">经典摘录-贝叶斯公式</h1>
         
+
+        <div class="post-meta">
+		  
+            <i class="fa fa-thumb-tack"></i>
+            <font color=7D26CD>置顶</font>
+            <span class="post-meta-divider">|</span>
           
-        
-        嗯..! 目前共计 28 篇日志。 继续努力。
-      </span>
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-28T20:16:00+08:00">
+                2017-08-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/中文/" itemprop="url" rel="index">
+                    <span itemprop="name">中文</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-eye"></i>
+                  <span class="post-meta-item-text">阅读次数</span>
+              <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">全文字数</span>
+                
+                <span title="全文字数">
+                  4,034
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  17
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
+      
 
+      
+        <p>说明：全文摘自<a href="http://www.athenasc.com/probbook.html" target="_blank" rel="noopener">Introduction to probability, 2nd Edition</a> </p>
+<p>本文讨论条件概率定律的应用，首先引入一个计算事件概率的定理。</p>
+<h2 id="The-law-of-total-probability"><a href="#The-law-of-total-probability" class="headerlink" title="The law of total probability"></a>The law of total probability</h2><p>设 $A_1, A_2, … , A_n$ 是一组互不相容的事件，它形成样本空间的一个分割（每个试验结果必定使得其中一个事件发生！）。又假定对每个 $i, P(A_i) &gt; 0$ 。则对任何事件 $B$ ，下列公式成立<br>$$<br>\begin{eqnarray}<br>P(B) &amp;=&amp; P(A_1\cap B )+\cdots+P(A_n\cap B) \\<br>&amp;=&amp; P(A_1)P(B|A_1)+\cdots+P(B)P(B|A_n)<br>\end{eqnarray}<br>$$<br>这是<strong>总概率定律（或翻译为：全概率定律），</strong>下面有图示和证明。直观上，将样本空间分割成若干事件 $A_i$ 的并（ $A_1, \cdots, A_n$ 形成样本空间的一个分割）然后任意事件 $B$ 的概率等于事件 $B$ 在 $A_i$ 发生的情况下的条件概率的加权平均，而权重刚好等于这些事件 $A_i$ 的无条件概率。这条定理的一个主要应用是计算事件 $B$ 的概率。直接计算事件 $B$ 的概率有点难度，但是若条件概率 $P(B|A_i)$ 是已知的或是很容易推导计算时，总概率定律定理就成为了计算 $P(B)$ 的有力工具。应用这条定理的关键是找到合适的分割 $A_1,\cdots, A_n$ ，而合适的分割又与问题的实际背景有关。</p>
+<p><img src="http://img.blog.csdn.net/20180301153607785?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="Figure_1.13_visualization_and_verification_of_the_total_probability_theorem.png"></p>
+<p>由于事件 $A_1, A_2, \cdots, A_n$ 形成一个样本空间的一个分割，事件 $B$ 可以分解成不想交的 $n$ 个事件的并，即：</p>
+<p>$$<br>B=(A_!\cap B)\cup\cdots\cup(A_n\cap B) \quad (1)<br>$$<br>利用可加定理，得到：</p>
+<p>$$<br>P(B) = P(A_1 \cap B)+\cdots+P(A_n \cap B) \quad (2)<br>$$<br>利用条件概率的定义，得到：</p>
+<p>$$<br>P(A_i\cap B) = P(A_i)P(B|A_i) \quad (3)<br>$$<br>将 $(3)$ 式子代入 $(2)$ 式子中得到：</p>
+<p>$$<br>P(B)=P(A_1)P(B|A_1)+\cdots+P(A_n)P(B|A_n)<br>$$<br>也可以用等价的序列树形图来说明总概率定律（如上右边图）：叶子 $A_i \cap B$ 的概率等于由叶子到根部上的概率的乘积 $P(A_i)P(B|A_i)$ 。而事件 $B$ 由图上显示的3个叶子组成，将它们的概率相加就得到 $P(B)$ 。</p>
+<h3 id="总概率定律的例子"><a href="#总概率定律的例子" class="headerlink" title="总概率定律的例子"></a>总概率定律的例子</h3><p>例 1.13 你参加一个棋类比赛，其中 $50\%$ 是一类棋手，你赢他们的概率为 $0.3\%$ ； $25\%$ 是二类棋手，你赢他们的概率是 $0.4$ ；剩下的是三类棋手，你赢得他们的概率是 $0.5$ 。从他们中间随机地选一位棋手与你比赛，你胜算的概率有多大？</p>
+<p>记 $A_i$ 表示与你下棋的棋手的类别。依题意</p>
+<p>$$<br>P(A_1)=0.5,\quad P(A_2) =0.25, \quad P(A_3) = 0.25<br>$$<br>记 $B$ 为你赢得比赛的事件，那么得到：</p>
+<p>$$<br>P(B|A_1)=0.3,\quad P(B|A_2)=0.4,\quad P(B|A_3)=0.5<br>$$<br>那么利用总概率定律，你在不比赛中胜出的概率为：<br>$$<br>\begin{eqnarray}<br>P(B) &amp;=&amp; P(A_1)P(B|A_1)+P(A_2)P(B|A_2)+P(A_3)P(B|A_3) \\<br>&amp;=&amp; 0.5 \cdot 0.3+ 0.25 \cdot 0.4 + 0.25 \cdot 0.5 \\<br>&amp;=&amp; 0.375<br>\end{eqnarray}<br>$$</p>
+<h2 id="Inference-and-Bayes’-Rule-推断与贝叶斯定律"><a href="#Inference-and-Bayes’-Rule-推断与贝叶斯定律" class="headerlink" title="Inference and Bayes’ Rule 推断与贝叶斯定律"></a>Inference and Bayes’ Rule 推断与贝叶斯定律</h2><p>总概率定律经常与著名的贝叶斯定律联系起来，<strong>贝叶斯定律将形如 $P(A|B)$ 的条件概率与形如 $P(B|A)$ 的条件概率联系起来</strong>。</p>
+<h3 id="Bayes’-Rule贝叶斯定律"><a href="#Bayes’-Rule贝叶斯定律" class="headerlink" title="Bayes’ Rule贝叶斯定律"></a>Bayes’ Rule贝叶斯定律</h3><p>设 $A_1,A_2,\ldots,A_n$ 是一组互斥的事件，它形成样本空间的一个分割（每个试验结果必定使得其中一个事件发生）。又假定对每一个 $i, P(A_i)&gt;0$ ，则对于任何事件 $B$ ，只要它满足 $P(B)&gt;0$ ，下列公式成立：<br>$$<br>\begin{eqnarray}<br>P(A_i|B) &amp;=&amp; \frac{P(A_i)P(B|A_i)}{P(B)}\\<br>&amp;=&amp;\frac{P(A_i)P(B|A_i)}{P(A_1)P(B|A_1)+\cdots+P(A_n)P(B|A_n)}<br>\end{eqnarray}<br>$$<br>为证明贝叶斯定律，只需注意到 $P(A_i)P(B|A_i)$ 与 $P(B)P(A_i|B)$ 是相等的，它们都等于 $P(A_i \cap B)$ ，这样得到了第一个等式，至于第二个等式，只需对 $P(B)$ 利用总概率定律即可。</p>
+<p>贝叶斯定律还可以用来进行<strong>因果推理</strong>。有许多”原因“可以造成某一”结果“。现在设我们观察到某一结果，希望推断造成这个结果出现的”原因“。现在设事件 $A_1,\ldots, A_n$ 是原因，而 $B$ 代表由原因引起的结果。 $P(B|A_i)$ 表示在因果模型中由”原因“ $A_i$ 造成结果 $B$ 的概率（见下图）。当观察到结果 $B$ 的时候，希望反推结果 $B$ 是由原因 $A_i$  造成的概率 $P(A_i|B)$ 。 $P(A_i|B)$ 为由于代表新近得到的信息 $B$ 之后 $A_i$ 出现的概率，称之为 <strong>posterior probability 后验概率</strong>，而原来的 $P(A_i)$ 就称为 <strong>prior probability 先验概率</strong>。</p>
+<h3 id="贝叶斯定律进行推断的例子"><a href="#贝叶斯定律进行推断的例子" class="headerlink" title="贝叶斯定律进行推断的例子"></a>贝叶斯定律进行推断的例子</h3><h4 id="医学"><a href="#医学" class="headerlink" title="医学"></a>医学</h4><p>在某病人X光片中发现一个阴影，（用 $B$ 表示，代表”结果“）。希望对造成这种结果的3个原因进行分析。这3个原因互斥，并且造成这个结果的原因一定是三者之一：原因1（事件 $A_1$）是恶性肿瘤，原因2（事件 $A_2$）是良性肿瘤，原因3（事件 $A_3$）是肿瘤外的其他原因。假定已经知道 $P(A_i)$ 和 $P(B|A_i), i=1,2,3$  。现在已经发现了阴影（事件 $B$ 发生），利用贝叶斯公式，这些原因的条件概率为：</p>
+<p>$$<br>P(A_i|B)=\frac{P(A_i)P(B|A_i)}{P(A_1)P(B|A_1)+P(A_2)P(B|A_2)+P(A_3)P(B|A_3)},i=1,2,3<br>$$<br>在右图给出序列树形图，可用序列树形图给出条件概率计算的另外一种等价的解释。图中第一个深灰的叶子表示恶性肿瘤并出现阴影，其概率为 $P(A_1\cap B)$ ，且所有深灰的叶子表示片子中出现阴影，其概率为 $P(B)$ ，而由恶性肿瘤造成阴影的条件概率 $P(A_1|B)$ 是两个概率相除的结果。</p>
+<h4 id="比赛"><a href="#比赛" class="headerlink" title="比赛"></a>比赛</h4><p>继续使用例 1.13 你参加一个棋类比赛，其中 $50\%$ 是一类棋手，你赢他们的概率为 $0.3\%$ ； $25\%$ 是二类棋手，你赢他们的概率是 $0.4$ ；剩下的是三类棋手，你赢得他们的概率是 $0.5$ 。现在假定你已经得胜，问你的对手为一类棋手的概率有多大？<br>用 $A_i$ 表示你与 $i$ 类棋手相遇的事件。由例中给出的条件知道：<br>$$<br>P(A_1)=0.5,\quad P(A_2)=0.25,\quad P(A_3)=0.25<br>$$<br>记 $B$ 表示你赢的比赛的事件，你胜出的概率为：<br>$$<br>P(B|A_1)=0.3,\quad P(B|A_2)=0.4,\quad P(B|A_3)=0.5<br>$$<br>利用贝叶斯公式得：<br>$$<br>\begin{eqnarray}<br>P(A_1|B) &amp;=&amp; \frac{P(A_1)P(B|A_1)}{P(A_1)P(B|A_1)+P(A_2)P(B|A_2)+P(A_3)P(B|A_3)} \\<br>&amp;=&amp; \frac{0.5\cdot 0.3}{0.5\cdot 0.3+0.25\cdot 0.4+0.25\cdot 0.5} \\<br>&amp;=&amp; 0.4<br>\end{eqnarray}<br>$$</p>
+<h4 id="假阳性之谜"><a href="#假阳性之谜" class="headerlink" title="假阳性之谜"></a>假阳性之谜</h4><p> 设对于某种少见的疾病的检出率为 $0.95$ ；如果一个被检查的病人有某种疾病，其检查结果为阳性的概率为 $0.95$ ；如果该人没有这种疾病，其检查结果为阴性的概率是 $0.95$ 。现在假定某一人群中患有这种病的概率为  $0.001$ ，并从这个总体中随机地抽取一个人进行检测，检查结果为阳性。现在问这个人患有这种病的概率有多大？</p>
+<p>设 $A$ 为这个人有这种疾病， $B$ 为经检验这个人为阳性。利用贝叶斯公式：<br>$$<br>\begin{eqnarray}<br>P(A|B) &amp;=&amp; \frac{P(A)P(B|A)}{P(A)P(B|A)+P(A^c)P(B|A^c)} \\<br>&amp;=&amp; \frac{0.001\cdot 0.95}{0.001\cdot 0.95 + 0.999\cdot 0.05} \\<br>&amp;=&amp; 0.0187<br>\end{eqnarray}<br>$$<br>尽管检验方法非常精确，一个经检测为阳性的人仍然不大可能真正患有这种疾病（患有该疾病的概率小于 $2\%$ ）。根据《经济学人》杂志 $1999$ 年 $2$ 月 $20$ 日的报道，在一家著名的大医院中 $80\%$ 的受访者不知道这类问题的正确答案，而大部分人回答，这个经检测为阳性的人患病概率为 $0.95$ !</p>
+<h2 id="连续随机变量的贝叶斯定律"><a href="#连续随机变量的贝叶斯定律" class="headerlink" title="连续随机变量的贝叶斯定律"></a>连续随机变量的贝叶斯定律</h2><p>在许多情况下，我们会遇到一个没有观察到的对象。用随机变量 $X$ 代表这种未观察到的量，设其概率密度函数是 $ f_X(x)$ 。我们能够观察到的量是经过噪声干扰的量 $Y$ ，$Y$ 的分布函数是条件分布函数，其条件概率密度函数为： $f_{X|Y}(y|x)$ 。当 $Y$ 的值被观察到以后，它包含 $X$ 的多少信息呢？这类问题与离散随机变量的推断问题类似。现在唯一的不同之处在于处理的是连续随机变量。</p>
+<p><img src="http://img.blog.csdn.net/20180301153651988?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="Figure_3.20_schematic_description_of_the_inference_problem.png"></p>
+<p>上图是推断问题的框图，有一个未观察到的变量 $X$ ，其概率密度函数 $f_X$ 是已知的，同时得到一个观察到的随机变量 $Y$ ，其条件概率密度函数为 $f_{Y|X}(y|x)$ 。给定 $Y$ 的观察值 $y$ ，推断问题变成条件概率密度函数 $f_{X|Y}(x|y)$ 的计算问题。</p>
+<p>注意到：当观察到事件 $Y=y$ 以后，所有的信息都包含在条件概率密度函数 $f_{X|Y}(x|y)$ 中，现在只需计算这个条件概率密度函数。利用公式 $f_Xf_{Y|X}=f_{X,Y}=f_Yf_{X|Y}$ 可以得到：</p>
+<p>$$<br>f_{X|Y}(x|y)=\frac{f_X(x)f_{Y|X}(y|x)}{f_Y(y)}<br>$$<br>这个即所求的公式，与之等价的公式：</p>
+<p>$$<br>f_{X|Y}(x|y)=\frac{f_X(x)f_{Y|X}(y|x)}{\int_{-\infty}^{+\infty}f_X(t)f_{Y|X}(y|t)dt}<br>$$</p>
+<h3 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h3><p>通用照明公司生产一种灯泡，已知其使用寿命 $Y$ 为指数随机变量，其概率密度函数为 $\lambda e^{-\lambda y}, y&gt;0$ ，按过往经验，在任意给定的一天参数 $\lambda$ 实际上是一个随机变量，其概率密度函数为区间 $[1, \frac{3}{2}]$ 上的均匀分布。现在随机地取已知灯泡进行试验，得到灯泡的寿命数据。得到数据以后，对于 $\lambda$ 的分布有什么新的认识？</p>
+<p>将 $\lambda$ 看成一个随机变量 $\Lambda$ ，作为对 $\lambda$ 的初始认识，那么根据题意 $\Lambda$ 的概率密度函数是：</p>
+<p>$$<br>f_{\Lambda(\lambda)}=2, 1\le \lambda \le \frac{3}{2}<br>$$<br>当得到数据 $y$ 以后，关于 $\Lambda$ 的信息包含于条件概率密度函数 $f_{\Lambda, y}(\lambda|y)$ 中，利用连续贝叶斯公式得到：</p>
+<p>$$<br>f_{ \Lambda|y}(\lambda|y)=\frac{f_\Lambda(\lambda)f_{Y|\Lambda}(y|\lambda)}{\int_{+\infty}^{-\infty}f_{\Lambda}(t)f_{Y|\Lambda}(y|t)dt}=\frac{2\lambda e^{-\lambda y}}{\int_{1}^{\frac{3}{2}}2te^{-ty}dt}，1\le \lambda \le \frac{3}{2}<br>$$</p>
+<h2 id="关于连续随机变量的推断"><a href="#关于连续随机变量的推断" class="headerlink" title="关于连续随机变量的推断"></a>关于连续随机变量的推断</h2><p>在许多实际问题中，未观察到的随机变量可能是连续的随机变量。例如，在通信问题中传输的信号是一个二进制的信号，经过传输以后，混入的噪声是正态随机变量，这样，观测到的随机变量就是连续的随机变量；或者在医疗诊断中，观察到的量也是连续的测量值，例如：体温或血液样本中的指标。这种情况下需要将贝叶斯公式作适当改变。</p>
+<p>现在研究一种特殊情况，未观察到的是一个事件$A$ 。不知道 $A$ 是否发生了。事件 $A$ 的概率 $P(A)$ 是已知的。设 $Y$ 是一个连续的随机变量，并且假定条件概率密度函数 $f_{Y|A}(y)$ 和 $f_{Y|A^c}(y)$ 是已知的。令人兴趣的是事件 $A$  的条件概率密度函数 $P(A|Y=y)$ 。这个量代表得到的观察值 $y$ 以后关于事件 $A$ 的信息。</p>
+<p>由于事件 ${Y=y}$ 是一个零概率事件，转而去考虑事件 ${y \le Y \le y+\delta}$ ，其中 $\delta$ 是一个很小的正数，然后令 $\delta$ 趋于0 。利用贝叶斯公式，令 $f_{Y}(y)&gt;0$ ，我们得到：<br>$$<br>\begin{eqnarray}<br>P(A|Y=y) &amp;\approx&amp; P(A|y\le Y \le y+\delta) \\<br>&amp;=&amp; \frac{P(A)P(y\le Y \le y+\delta|A)}{P(y\le Y \le y+\delta)} \\<br>&amp;\approx&amp;\frac{P(A)f_{Y|A}(y)\delta}{f_Y(y)\delta} \\<br>&amp;=&amp; \frac{P(A)f_{Y|A}(y)}{f_Y(y)}<br>\end{eqnarray}<br>$$<br>利用总概率定律，可将上式的分母写成：<br>$$<br>f_{Y}(y)=P(A)f_{Y|A}(y)+P(A^c)f_{Y|A^c}(y)<br>$$<br>这样得到：<br>$$<br>P(A|Y=y)=\frac{P(A)f_{Y|A}(y)}{P(A)f_{Y|A}(y)+P(A^c)f_{Y|A^c}(y)}<br>$$<br>现在令事件 $A$ 具有形式 $\{N=n\}$ ，其中 $N$ 是一个离散的随机变量，代表未观察到的随机变量。记 $p_N$ 为 $N$ 的分布函数。令 $Y$  为连续随机变量，对任意 $N$ 的取值 $n$，$Y$  具有条件概率密度函数 $f_{Y|N}(y|n)$ 。 这样上面的公式变成 ：<br>$$<br>P(N=n|Y=y)=\frac{p_N(n)f_{Y|N}(y|n)}{f_Y(y)}<br>$$<br>利用下面的总概率定律：<br>$$<br>f_Y(y)=\sum\limits_{i}p_N(i)f_{Y|N}(y|i)<br>$$<br>得到：<br>$$<br>P(N=n|Y=y)=\frac{p_N(n)f_{Y|N}(y|n)}{\sum\limits_{i}p_N(i)f_{Y|N}(y|i)}<br>$$</p>
+<h3 id="例子-信号检测"><a href="#例子-信号检测" class="headerlink" title="例子-信号检测"></a>例子-信号检测</h3><p>设 $S$ 是一个只取2个值的信号（signal）。记  $P(S=1)=p$ 和 $P(S=-1)=1-p$ 。在接收端，得到的信号为 $Y=N+S$ ，其中 $N$ 是一个正态分布的噪声（noise），期望为0，方差为1，并且与 $S$ 相互独立。当观察到的信号为 $y$ 的时候，$S=1$ 的概率是多少？</p>
+<p>对于给定的 $S=s=1, Y$ 是一个正态随机变量，期望为 $s=1$ ，方差为 $1$ 。应用刚才得到的公式：<br>$$<br>P(S=1|Y=y)=\frac{p_S(1)f_{Y|S}(y|1)}{f_Y(y)}=\frac{\frac{p}{\sqrt{2\pi}}e^{-\frac{(y-1)^2}{2}}}{\frac{p}{\sqrt{2\pi}}e^{-\frac{(y-1)^2}{2}}+\frac{1-p}{\sqrt{2\pi}}e^{-\frac{(y+1)^2}{2}}}<br>$$<br>将上式化简得：<br>$$<br>P(S=1|Y=y)=\frac{pe^y}{pe^y+(1-p)e^{-y}}<br>$$<br>注意：当 $y\rightarrow -\infty, P(S=1|Y=y)\rightarrow 0$ ，当 $y\rightarrow \infty, P(S=1|Y=y)\rightarrow 1$ 。 $y$ 在实数轴上变化时， $P(S=1|Y=y)$ 是 $y$ 的严格上升函数，这符合直观的理解。</p>
+<h3 id="基于离散观察值的推断"><a href="#基于离散观察值的推断" class="headerlink" title="基于离散观察值的推断"></a>基于离散观察值的推断</h3><p>在前文连续随机变量的贝叶斯定律中得到的：<br>$$<br>\begin{eqnarray}<br>P(A|Y=y) &amp;\approx&amp; P(A|y\le Y \le y+\delta) \\<br>&amp;=&amp; \frac{P(A)P(y\le Y \le y+\delta|A)}{P(y\le Y \le y+\delta)} \\<br>&amp;\approx&amp;\frac{P(A)f_{Y|A}(y)\delta}{f_Y(y)\delta} \\<br>&amp;=&amp; \frac{P(A)f_{Y|A}(y)}{f_Y(y)}<br>\end{eqnarray}<br>$$<br>反解得到：<br>$$<br>f_{Y|A}(y)=\frac{f_Y(y)P(A|Y=y)}{P(A)}<br>$$<br>根据归一性（$\int_{-\infty}^{+\infty}f_{Y|A}(y)dy=1$），那么得到一个等价的表达式：<br>$$<br>f_{Y|A}(y)=\frac{f_Y(y)P(A|Y=y)}{\int_{-\infty}^{+\infty}f_Y(t)P(A|Y=t)dt}<br>$$<br>这个公式可以用于当事件 $A$  被观测到时候，对随机变量 $Y$ 进行推断。对于事件 $A$ 是 $\{N=n\}$ 的形式，根据前文：<br>$$<br>P(N=n|Y=y)=\frac{p_N(n)f_{Y|N}(y|n)}{\sum\limits_{i}p_N(i)f_{Y|N}(y|i)}<br>$$<br>得到一个相似的公式对随机变量 $Y$ 进行推断：<br>$$<br>f_{Y|N}(y|n)=\frac{P(N=n|Y=y)\sum\limits_{i}p_N(i)f_{Y|N}(y|i)}{p_N(n)}<br>$$</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>令 $Y$ 为连续随机变量。</p>
+<ol>
+<li><p>若 $X$ 为连续随机变量，则有：<br>$$<br>f_{X|Y}(x|y)f_Y(y)=f_X(x)f_{Y|X}(y|x)<br>$$<br>和<br>$$<br>f_{X|Y}(x|y)=\frac{f_X(x)f_{Y|X}(y|x)}{f_Y(y)}=\frac{f_X(x)f_{Y|X}(y|x)}{\int_{-\infty}^{+\infty}f_X(t)f_{Y|X}(y|t)dt}<br>$$</p>
+</li>
+<li><p>若 $N$ 为离散随机变量，则有：<br>$$<br>f_Y(y)P(N=n|Y=y)=p_N(n)f_{Y|N}(y|n)<br>$$<br>得到贝叶斯定律为：<br>$$<br>P(N=n|Y=y)=\frac{p_N(n)f_{Y|N}(y|n)}{f_Y(y)}=\frac{p_N(n)f_{Y|N}(y|n)}{\sum\limits_{i}p_N(i)f_{Y|N}(y|i)}<br>$$<br>和<br>$$<br>f_{Y|N}(y|n)=\frac{f_Y(y)P(N=n|Y=y)}{p_N(n)}=\frac{f_Y(y)P(N=n|Y=y)}{\int_{-\infty}^{+\infty}f_Y(t)P(N=n|Y=t)dt}<br>$$</p>
+</li>
+<li><p>对于事件 $A$ ，关于 $P(A|Y=y)$ 和 $f_{Y|A}(y)$ 具有类似的贝叶斯定律。</p>
+</li>
+</ol>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    SnailDove
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://snaildove.github.io/2017/08/28/Bayes's_rule/" title="经典摘录-贝叶斯公式">https://snaildove.github.io/2017/08/28/Bayes's_rule/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/probability/" rel="tag"><i class="fa fa-tag"></i> probability</a>
+          
+            <a href="/tags/概率论/" rel="tag"><i class="fa fa-tag"></i> 概率论</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
         
-        
+
         
 
         
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2017">2017</h1>
+          <div id="needsharebutton-postbottom">
+            <span class="btn">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </span>
           </div>
         
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/08/28/Bayes's_rule/" itemprop="url">
-              
-                <span itemprop="name">经典摘录-贝叶斯公式</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-08-28T20:16:00+08:00"
-              content="2017-08-28" >
-          08-28
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
+        </div>
+      
       
 
-        
-        
-        
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/08/27/normal_random_variables/" rel="next" title="经典摘录-正态随机变量">
+                <i class="fa fa-chevron-left"></i> 经典摘录-正态随机变量
+              </a>
+            
+          </div>
 
-        
-        
+          <span class="post-nav-divider"></span>
 
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/08/27/normal_random_variables/" itemprop="url">
-              
-                <span itemprop="name">经典摘录-正态随机变量</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-08-27T20:16:00+08:00"
-              content="2017-08-27" >
-          08-27
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/08/27/mean_and_variance_of_a_piecewise_constant_PDF/" itemprop="url">
-              
-                <span itemprop="name">经典摘录-分段常数概率密度函数的均值和方差</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-08-27T20:16:00+08:00"
-              content="2017-08-27" >
-          08-27
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/08/26/mean_and_variance_of_uniform_random_variable/" itemprop="url">
-              
-                <span itemprop="name">经典摘录-均匀随机变量的均值和方差</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-08-26T20:16:00+08:00"
-              content="2017-08-26" >
-          08-26
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/08/26/cumulative_distribution_function/" itemprop="url">
-              
-                <span itemprop="name">经典摘录-[累积]分布函数CDF</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-08-26T20:16:00+08:00"
-              content="2017-08-26" >
-          08-26
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/08/25/mean_and_variance_of_sample_and_estimating_probability_by_simulation/" itemprop="url">
-              
-                <span itemprop="name">经典摘录-样本均值的期望方差与模拟的方法估计概率</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-08-25T20:16:00+08:00"
-              content="2017-08-25" >
-          08-25
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/08/24/the_two-envelopes_paradox/" itemprop="url">
-              
-                <span itemprop="name">经典摘录-两个信封的悖论</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-08-24T20:16:00+08:00"
-              content="2017-08-24" >
-          08-24
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/08/23/mean_and_variance_of_the_geometric/" itemprop="url">
-              
-                <span itemprop="name">经典摘录-几何随机变量的均值和方差</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-08-23T22:16:00+08:00"
-              content="2017-08-23" >
-          08-23
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/08/15/trees_describe_the_sample_space/" itemprop="url">
-              
-                <span itemprop="name">Trees describe the sample space</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-08-15T20:16:00+08:00"
-              content="2017-08-15" >
-          08-15
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/08/14/definition_of_expectation/" itemprop="url">
-              
-                <span itemprop="name">期望定义的由来</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-08-14T20:16:00+08:00"
-              content="2017-08-14" >
-          08-14
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-    </div>
+    </footer>
   </div>
   
   
   
-
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/archives/2017/page/2/">2</a><a class="page-number" href="/archives/2017/page/3/">3</a><a class="extend next" rel="next" href="/archives/2017/page/2/"><i class="fa fa-angle-right"></i></a>
-  </nav>
+  </article>
 
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -712,6 +597,15 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zMjg4NC85NDQ1"></div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -732,8 +626,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -842,6 +745,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#The-law-of-total-probability"><span class="nav-number">1.</span> <span class="nav-text">The law of total probability</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#总概率定律的例子"><span class="nav-number">1.1.</span> <span class="nav-text">总概率定律的例子</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Inference-and-Bayes’-Rule-推断与贝叶斯定律"><span class="nav-number">2.</span> <span class="nav-text">Inference and Bayes’ Rule 推断与贝叶斯定律</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Bayes’-Rule贝叶斯定律"><span class="nav-number">2.1.</span> <span class="nav-text">Bayes’ Rule贝叶斯定律</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#贝叶斯定律进行推断的例子"><span class="nav-number">2.2.</span> <span class="nav-text">贝叶斯定律进行推断的例子</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#医学"><span class="nav-number">2.2.1.</span> <span class="nav-text">医学</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#比赛"><span class="nav-number">2.2.2.</span> <span class="nav-text">比赛</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#假阳性之谜"><span class="nav-number">2.2.3.</span> <span class="nav-text">假阳性之谜</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#连续随机变量的贝叶斯定律"><span class="nav-number">3.</span> <span class="nav-text">连续随机变量的贝叶斯定律</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#例子"><span class="nav-number">3.1.</span> <span class="nav-text">例子</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关于连续随机变量的推断"><span class="nav-number">4.</span> <span class="nav-text">关于连续随机变量的推断</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#例子-信号检测"><span class="nav-number">4.1.</span> <span class="nav-text">例子-信号检测</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基于离散观察值的推断"><span class="nav-number">4.2.</span> <span class="nav-text">基于离散观察值的推断</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">5.</span> <span class="nav-text">总结</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1030,6 +949,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -1058,6 +981,17 @@
 
 
 
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 

@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>https://snaildove.github.io/2017/08/28/Bayes's_rule/</loc>
+    <lastmod>2018-03-19T14:37:29.032Z</lastmod>
+    <data>
+        <display>
+        <title>经典摘录-贝叶斯公式</title>
+        <pubTime>2017-08-28T12:16:00.000Z</pubTime>
+        
+        <tag>probability</tag>
+         
+        <tag>概率论</tag>
+         
+         
+           
+             
+              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://snaildove.github.io/2017/08/12/complex_and_complex_matrix/</loc>
     <lastmod>2018-03-15T19:16:02.161Z</lastmod>
     <data>
@@ -357,28 +379,6 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2014/06/01/longest_common_sub-sequence/</loc>
-    <lastmod>2018-03-14T09:23:31.414Z</lastmod>
-    <data>
-        <display>
-        <title>动态规划-最长公共子序列</title>
-        <pubTime>2014-06-01T14:16:00.000Z</pubTime>
-        
-        <tag>Data Structure</tag>
-         
-        <tag>数据结构</tag>
-         
-         
-           
-             
-              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://snaildove.github.io/2017/08/05/linear_transformation_2nd_part/</loc>
     <lastmod>2018-03-14T09:23:31.414Z</lastmod>
     <data>
@@ -401,16 +401,16 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2017/08/04/linear_transformation_1st_part/</loc>
-    <lastmod>2018-03-14T09:23:31.413Z</lastmod>
+    <loc>https://snaildove.github.io/2014/06/01/longest_common_sub-sequence/</loc>
+    <lastmod>2018-03-14T09:23:31.414Z</lastmod>
     <data>
         <display>
-        <title>线性变换1</title>
-        <pubTime>2017-08-04T12:16:00.000Z</pubTime>
+        <title>动态规划-最长公共子序列</title>
+        <pubTime>2014-06-01T14:16:00.000Z</pubTime>
         
-        <tag>linear_algebra</tag>
+        <tag>Data Structure</tag>
          
-        <tag>线性代数</tag>
+        <tag>数据结构</tag>
          
          
            
@@ -423,12 +423,12 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2017/08/08/graph_and_network/</loc>
-    <lastmod>2018-03-14T09:23:31.412Z</lastmod>
+    <loc>https://snaildove.github.io/2017/08/04/linear_transformation_1st_part/</loc>
+    <lastmod>2018-03-14T09:23:31.413Z</lastmod>
     <data>
         <display>
-        <title>图和网络</title>
-        <pubTime>2017-08-08T12:16:00.000Z</pubTime>
+        <title>线性变换1</title>
+        <pubTime>2017-08-04T12:16:00.000Z</pubTime>
         
         <tag>linear_algebra</tag>
          
@@ -467,12 +467,56 @@
 
     
   <url>
+    <loc>https://snaildove.github.io/2017/08/08/graph_and_network/</loc>
+    <lastmod>2018-03-14T09:23:31.412Z</lastmod>
+    <data>
+        <display>
+        <title>图和网络</title>
+        <pubTime>2017-08-08T12:16:00.000Z</pubTime>
+        
+        <tag>linear_algebra</tag>
+         
+        <tag>线性代数</tag>
+         
+         
+           
+             
+              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://snaildove.github.io/2017/08/14/definition_of_expectation/</loc>
     <lastmod>2018-03-14T09:23:31.411Z</lastmod>
     <data>
         <display>
         <title>期望定义的由来</title>
         <pubTime>2017-08-14T12:16:00.000Z</pubTime>
+        
+        <tag>probability</tag>
+         
+        <tag>概率论</tag>
+         
+         
+           
+             
+              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2017/08/26/cumulative_distribution_function/</loc>
+    <lastmod>2018-03-14T09:23:31.410Z</lastmod>
+    <data>
+        <display>
+        <title>经典摘录-[累积]分布函数CDF</title>
+        <pubTime>2017-08-26T12:16:00.000Z</pubTime>
         
         <tag>probability</tag>
          
@@ -499,28 +543,6 @@
         <tag>Machine Learning</tag>
          
         <tag>机器学习</tag>
-         
-         
-           
-             
-              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://snaildove.github.io/2017/08/26/cumulative_distribution_function/</loc>
-    <lastmod>2018-03-14T09:23:31.410Z</lastmod>
-    <data>
-        <display>
-        <title>经典摘录-[累积]分布函数CDF</title>
-        <pubTime>2017-08-26T12:16:00.000Z</pubTime>
-        
-        <tag>probability</tag>
-         
-        <tag>概率论</tag>
          
          
            
@@ -587,28 +609,6 @@
         <tag>linear_algebra</tag>
          
         <tag>线性代数</tag>
-         
-         
-           
-             
-              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://snaildove.github.io/2017/08/28/Bayes_rule/</loc>
-    <lastmod>2018-03-14T09:23:31.403Z</lastmod>
-    <data>
-        <display>
-        <title>经典摘录-贝叶斯公式</title>
-        <pubTime>2017-08-28T12:16:00.000Z</pubTime>
-        
-        <tag>probability</tag>
-         
-        <tag>概率论</tag>
          
          
            
