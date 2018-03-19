@@ -101,16 +101,16 @@
 <meta name="description" content="说明：全文摘自Introduction to probability, 2nd Edition  本文讨论条件概率定律的应用，首先引入一个计算事件概率的定理。 The law of total probability设 $A_1, A_2, … , A_n$ 是一组互不相容的事件，它形成样本空间的一个分割（每个试验结果必定使得其中一个事件发生！）。又假定对每个 $i, P(A_i) &amp;gt; 0$">
 <meta name="keywords" content="probability,概率论">
 <meta property="og:type" content="article">
-<meta property="og:title" content="经典摘录-贝叶斯公式">
+<meta property="og:title" content="经典摘录-Bayes&#39; rule贝叶斯定律">
 <meta property="og:url" content="https://snaildove.github.io/2017/08/28/Bayes'_rule/index.html">
 <meta property="og:site_name" content="SnailDove&#39;s blog">
 <meta property="og:description" content="说明：全文摘自Introduction to probability, 2nd Edition  本文讨论条件概率定律的应用，首先引入一个计算事件概率的定理。 The law of total probability设 $A_1, A_2, … , A_n$ 是一组互不相容的事件，它形成样本空间的一个分割（每个试验结果必定使得其中一个事件发生！）。又假定对每个 $i, P(A_i) &amp;gt; 0$">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://img.blog.csdn.net/20180301153607785?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
 <meta property="og:image" content="http://img.blog.csdn.net/20180301153651988?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
-<meta property="og:updated_time" content="2018-03-19T14:37:55.692Z">
+<meta property="og:updated_time" content="2018-03-19T14:43:42.441Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="经典摘录-贝叶斯公式">
+<meta name="twitter:title" content="经典摘录-Bayes&#39; rule贝叶斯定律">
 <meta name="twitter:description" content="说明：全文摘自Introduction to probability, 2nd Edition  本文讨论条件概率定律的应用，首先引入一个计算事件概率的定理。 The law of total probability设 $A_1, A_2, … , A_n$ 是一组互不相容的事件，它形成样本空间的一个分割（每个试验结果必定使得其中一个事件发生！）。又假定对每个 $i, P(A_i) &amp;gt; 0$">
 <meta name="twitter:image" content="http://img.blog.csdn.net/20180301153607785?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
 
@@ -148,7 +148,7 @@
 
 
 
-  <title>经典摘录-贝叶斯公式 | SnailDove's blog</title>
+  <title>经典摘录-Bayes' rule贝叶斯定律 | SnailDove's blog</title>
   
 
 
@@ -336,7 +336,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">经典摘录-贝叶斯公式</h1>
+          <h1 class="post-title" itemprop="name headline">经典摘录-Bayes' rule贝叶斯定律</h1>
         
 
         <div class="post-meta">
@@ -465,7 +465,7 @@
 <p>$$<br>P(B|A_1)=0.3,\quad P(B|A_2)=0.4,\quad P(B|A_3)=0.5<br>$$<br>那么利用总概率定律，你在不比赛中胜出的概率为：<br>$$<br>\begin{eqnarray}<br>P(B) &amp;=&amp; P(A_1)P(B|A_1)+P(A_2)P(B|A_2)+P(A_3)P(B|A_3) \\<br>&amp;=&amp; 0.5 \cdot 0.3+ 0.25 \cdot 0.4 + 0.25 \cdot 0.5 \\<br>&amp;=&amp; 0.375<br>\end{eqnarray}<br>$$</p>
 <h2 id="Inference-and-Bayes’-Rule-推断与贝叶斯定律"><a href="#Inference-and-Bayes’-Rule-推断与贝叶斯定律" class="headerlink" title="Inference and Bayes’ Rule 推断与贝叶斯定律"></a>Inference and Bayes’ Rule 推断与贝叶斯定律</h2><p>总概率定律经常与著名的贝叶斯定律联系起来，<strong>贝叶斯定律将形如 $P(A|B)$ 的条件概率与形如 $P(B|A)$ 的条件概率联系起来</strong>。</p>
 <h3 id="Bayes’-Rule贝叶斯定律"><a href="#Bayes’-Rule贝叶斯定律" class="headerlink" title="Bayes’ Rule贝叶斯定律"></a>Bayes’ Rule贝叶斯定律</h3><p>设 $A_1,A_2,\ldots,A_n$ 是一组互斥的事件，它形成样本空间的一个分割（每个试验结果必定使得其中一个事件发生）。又假定对每一个 $i, P(A_i)&gt;0$ ，则对于任何事件 $B$ ，只要它满足 $P(B)&gt;0$ ，下列公式成立：<br>$$<br>\begin{eqnarray}<br>P(A_i|B) &amp;=&amp; \frac{P(A_i)P(B|A_i)}{P(B)}\\<br>&amp;=&amp;\frac{P(A_i)P(B|A_i)}{P(A_1)P(B|A_1)+\cdots+P(A_n)P(B|A_n)}<br>\end{eqnarray}<br>$$<br>为证明贝叶斯定律，只需注意到 $P(A_i)P(B|A_i)$ 与 $P(B)P(A_i|B)$ 是相等的，它们都等于 $P(A_i \cap B)$ ，这样得到了第一个等式，至于第二个等式，只需对 $P(B)$ 利用总概率定律即可。</p>
-<p>贝叶斯定律还可以用来进行<strong>因果推理</strong>。有许多”原因“可以造成某一”结果“。现在设我们观察到某一结果，希望推断造成这个结果出现的”原因“。现在设事件 $A_1,\ldots, A_n$ 是原因，而 $B$ 代表由原因引起的结果。 $P(B|A_i)$ 表示在因果模型中由”原因“ $A_i$ 造成结果 $B$ 的概率（见下图）。当观察到结果 $B$ 的时候，希望反推结果 $B$ 是由原因 $A_i$  造成的概率 $P(A_i|B)$ 。 $P(A_i|B)$ 为由于代表新近得到的信息 $B$ 之后 $A_i$ 出现的概率，称之为 <strong>posterior probability 后验概率</strong>，而原来的 $P(A_i)$ 就称为 <strong>prior probability 先验概率</strong>。</p>
+<p>贝叶斯定律还可以用来进行<strong>因果推理</strong>。有许多”原因“可以造成某一”结果“。现在设我们观察到某一结果，希望推断造成这个结果出现的”原因“。现在设事件 $A_1,\ldots, A_n​$ 是原因，而 $B​$ 代表由原因引起的结果。 $P(B|A_i)​$ 表示在因果模型中由”原因“ $A_i​$ 造成结果 $B​$ 的概率（见下图）。当观察到结果 $B​$ 的时候，希望反推结果 $B​$ 是由原因 $A_i​$  造成的概率 $P(A_i|B)​$ 。 $P(A_i|B)​$ 为由于代表新近得到的信息 $B​$ 之后 $A_i​$ 出现的概率，称之为 <strong>posterior probability 后验概率</strong>，而原来的 $P(A_i)​$ 就称为 <strong>prior probability 先验概率</strong>。</p>
 <h3 id="贝叶斯定律进行推断的例子"><a href="#贝叶斯定律进行推断的例子" class="headerlink" title="贝叶斯定律进行推断的例子"></a>贝叶斯定律进行推断的例子</h3><h4 id="医学"><a href="#医学" class="headerlink" title="医学"></a>医学</h4><p>在某病人X光片中发现一个阴影，（用 $B$ 表示，代表”结果“）。希望对造成这种结果的3个原因进行分析。这3个原因互斥，并且造成这个结果的原因一定是三者之一：原因1（事件 $A_1$）是恶性肿瘤，原因2（事件 $A_2$）是良性肿瘤，原因3（事件 $A_3$）是肿瘤外的其他原因。假定已经知道 $P(A_i)$ 和 $P(B|A_i), i=1,2,3$  。现在已经发现了阴影（事件 $B$ 发生），利用贝叶斯公式，这些原因的条件概率为：</p>
 <p>$$<br>P(A_i|B)=\frac{P(A_i)P(B|A_i)}{P(A_1)P(B|A_1)+P(A_2)P(B|A_2)+P(A_3)P(B|A_3)},i=1,2,3<br>$$<br>在右图给出序列树形图，可用序列树形图给出条件概率计算的另外一种等价的解释。图中第一个深灰的叶子表示恶性肿瘤并出现阴影，其概率为 $P(A_1\cap B)$ ，且所有深灰的叶子表示片子中出现阴影，其概率为 $P(B)$ ，而由恶性肿瘤造成阴影的条件概率 $P(A_1|B)$ 是两个概率相除的结果。</p>
 <h4 id="比赛"><a href="#比赛" class="headerlink" title="比赛"></a>比赛</h4><p>继续使用例 1.13 你参加一个棋类比赛，其中 $50\%$ 是一类棋手，你赢他们的概率为 $0.3\%$ ； $25\%$ 是二类棋手，你赢他们的概率是 $0.4$ ；剩下的是三类棋手，你赢得他们的概率是 $0.5$ 。现在假定你已经得胜，问你的对手为一类棋手的概率有多大？<br>用 $A_i$ 表示你与 $i$ 类棋手相遇的事件。由例中给出的条件知道：<br>$$<br>P(A_1)=0.5,\quad P(A_2)=0.25,\quad P(A_3)=0.25<br>$$<br>记 $B$ 表示你赢的比赛的事件，你胜出的概率为：<br>$$<br>P(B|A_1)=0.3,\quad P(B|A_2)=0.4,\quad P(B|A_3)=0.5<br>$$<br>利用贝叶斯公式得：<br>$$<br>\begin{eqnarray}<br>P(A_1|B) &amp;=&amp; \frac{P(A_1)P(B|A_1)}{P(A_1)P(B|A_1)+P(A_2)P(B|A_2)+P(A_3)P(B|A_3)} \\<br>&amp;=&amp; \frac{0.5\cdot 0.3}{0.5\cdot 0.3+0.25\cdot 0.4+0.25\cdot 0.5} \\<br>&amp;=&amp; 0.4<br>\end{eqnarray}<br>$$</p>
@@ -516,7 +516,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://snaildove.github.io/2017/08/28/Bayes'_rule/" title="经典摘录-贝叶斯公式">https://snaildove.github.io/2017/08/28/Bayes'_rule/</a>
+    <a href="https://snaildove.github.io/2017/08/28/Bayes'_rule/" title="经典摘录-Bayes' rule贝叶斯定律">https://snaildove.github.io/2017/08/28/Bayes'_rule/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
