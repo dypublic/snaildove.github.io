@@ -85,7 +85,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="probability,概率论," />
 
 
 
@@ -98,16 +98,18 @@
 
 
 
-<meta name="description" content="keep enthusiasm">
-<meta property="og:type" content="website">
-<meta property="og:title" content="SnailDove&#39;s blog">
-<meta property="og:url" content="https://snaildove.github.io/page/4/index.html">
+<meta name="description" content="Example 2.5. Mean and Variance of the Bernoulli.伯努利随机变量的均值和方差Consider the experiment of tossing a coin, which comes up a head with probability $p$ and a tail with probability $1 - p$. and the Bernoull">
+<meta name="keywords" content="probability,概率论">
+<meta property="og:type" content="article">
+<meta property="og:title" content="经典摘录 - 伯努利和泊松随机变量的均值方差">
+<meta property="og:url" content="https://snaildove.github.io/2017/08/28/mean_and_variance_of_Bernoulli_and_Possion_random/index.html">
 <meta property="og:site_name" content="SnailDove&#39;s blog">
-<meta property="og:description" content="keep enthusiasm">
+<meta property="og:description" content="Example 2.5. Mean and Variance of the Bernoulli.伯努利随机变量的均值和方差Consider the experiment of tossing a coin, which comes up a head with probability $p$ and a tail with probability $1 - p$. and the Bernoull">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-03-25T16:04:25.863Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="SnailDove&#39;s blog">
-<meta name="twitter:description" content="keep enthusiasm">
+<meta name="twitter:title" content="经典摘录 - 伯努利和泊松随机变量的均值方差">
+<meta name="twitter:description" content="Example 2.5. Mean and Variance of the Bernoulli.伯努利随机变量的均值和方差Consider the experiment of tossing a coin, which comes up a head with probability $p$ and a tail with probability $1 - p$. and the Bernoull">
 
 
 
@@ -137,13 +139,13 @@
 
 
 
-  <link rel="canonical" href="https://snaildove.github.io/page/4/"/>
+  <link rel="canonical" href="https://snaildove.github.io/2017/08/28/mean_and_variance_of_Bernoulli_and_Possion_random/"/>
 
 
 
 
 
-  <title>SnailDove's blog</title>
+  <title>经典摘录 - 伯努利和泊松随机变量的均值方差 | SnailDove's blog</title>
   
 
 
@@ -172,8 +174,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -300,9 +301,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -315,7 +316,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://snaildove.github.io/2017/08/06/pseudo_inverse/">
+    <link itemprop="mainEntityOfPage" href="https://snaildove.github.io/2017/08/28/mean_and_variance_of_Bernoulli_and_Possion_random/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="SnailDove">
@@ -332,743 +333,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/08/06/pseudo_inverse/" itemprop="url">伪逆(广义逆)pseudo inverse</a></h1>
-        
-
-        <div class="post-meta">
-		  
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-06T20:30:00+08:00">
-                2017-08-06
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/中文/" itemprop="url" rel="index">
-                    <span itemprop="name">中文</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">全文字数</span>
-                
-                <span title="全文字数">
-                  1,417
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  7
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          笔记源自：清华大学公开课：线性代数2——第六讲：伪逆
-引言矩阵的奇异值分解可以理解成从$R^n$到$R^m$的线性变换在不同基底下矩阵表示，接下来利用矩阵的奇异值分解来定义矩阵的伪逆，然后再利用矩阵的伪逆来讨论线性方程组Ax＝b无解时的最小二乘解，线性代数的中心问题是求解线性方程组$Ax=b$，最简单的情况是如果系数矩阵A是n阶的可逆矩阵，那么这时对于任意的n维向量$b$，线性方程组$Ax=b$有
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/08/06/pseudo_inverse/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://snaildove.github.io/2017/08/06/Markov_matrix/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="SnailDove">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="SnailDove's blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/08/06/Markov_matrix/" itemprop="url">马尔科夫矩阵和正矩阵</a></h1>
-        
-
-        <div class="post-meta">
-		  
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-06T20:16:00+08:00">
-                2017-08-06
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/中文/" itemprop="url" rel="index">
-                    <span itemprop="name">中文</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">全文字数</span>
-                
-                <span title="全文字数">
-                  184
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          笔记源自：清华大学公开课：线性代数2——第9讲：马尔科夫矩阵和正矩阵
-引言
-马尔科夫链详细参考：Markov chain
-Markov Matrix正矩阵
-马尔科夫矩阵定义
-马尔科夫矩阵性质
-正马尔科夫矩阵
-正马尔科夫矩阵的性质
-例子
-人口流动模型
-正矩阵
-谱半径Spectral radius 定义为谱半径是矩阵特征值模的最大值，而非最大特征值，注意：矩阵来自于线性变换（也叫线性算子），因此线性变
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/08/06/Markov_matrix/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://snaildove.github.io/2017/08/05/linear_transformation_2nd_part/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="SnailDove">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="SnailDove's blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/08/05/linear_transformation_2nd_part/" itemprop="url">线性变换2</a></h1>
-        
-
-        <div class="post-meta">
-		  
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-05T20:16:00+08:00">
-                2017-08-05
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/中文/" itemprop="url" rel="index">
-                    <span itemprop="name">中文</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">全文字数</span>
-                
-                <span title="全文字数">
-                  1,742
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  7
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          笔记源自：清华大学公开课：线性代数2——第五讲：线性变换2
-前言对于给定的线性变换选取适当的基底使得其矩阵表示尽可能简单，我们引入了线性变换的矩阵表示对于从$n$维的向量空间$V$到$m$维的向量空间$W$的线性变换$\sigma$，我们取定$V$的一组基$v_1$到$v_n$取定W的一组基$w_1$到$w_m$，那线性变换$σ$作用在$v_1$到$v_n$上可以被$w_1,…,w_m$线性表示，
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/08/05/linear_transformation_2nd_part/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://snaildove.github.io/2017/08/04/linear_transformation_1st_part/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="SnailDove">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="SnailDove's blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/08/04/linear_transformation_1st_part/" itemprop="url">线性变换1</a></h1>
-        
-
-        <div class="post-meta">
-		  
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-04T20:16:00+08:00">
-                2017-08-04
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/中文/" itemprop="url" rel="index">
-                    <span itemprop="name">中文</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">全文字数</span>
-                
-                <span title="全文字数">
-                  1,225
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  6
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          笔记源自：清华大学公开课：线性代数2——第四讲：线性变换1
-前言历史上英国数学家Arthur Cayley是为了描述线性变换的复合而引入矩阵的乘法，从而使矩阵成为数学的研究对象。线性变换是两个向量空间之间保持线性运算的映射。线性代数就是从其中心问题（求解线性方程组）出发发展起来研究向量空间、线性变换以及研究相关数学问题的数学学科。对有限维向量空间的研究总可以转化成对矩阵的研究，这是线性代数的核心特
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/08/04/linear_transformation_1st_part/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://snaildove.github.io/2017/08/03/singular_values_decomposition/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="SnailDove">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="SnailDove's blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/08/03/singular_values_decomposition/" itemprop="url">奇异值分解singular values decomposition</a></h1>
+          <h1 class="post-title" itemprop="name headline">经典摘录 - 伯努利和泊松随机变量的均值方差</h1>
         
 
         <div class="post-meta">
@@ -1085,8 +350,8 @@ Markov Matrix正矩阵
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-03T20:16:00+08:00">
-                2017-08-03
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-28T20:16:00+08:00">
+                2017-08-28
               </time>
             
 
@@ -1127,6 +392,12 @@ Markov Matrix正矩阵
           
 
           
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-eye"></i>
+                  <span class="post-meta-item-text">阅读次数</span>
+              <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
 
           
             <div class="post-wordcount">
@@ -1139,7 +410,7 @@ Markov Matrix正矩阵
                   <span class="post-meta-item-text">全文字数</span>
                 
                 <span title="全文字数">
-                  994
+                  548
                 </span>
               
 
@@ -1155,7 +426,7 @@ Markov Matrix正矩阵
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  4
+                  3
                 </span>
               
             </div>
@@ -1176,20 +447,11 @@ Markov Matrix正矩阵
       
 
       
-        
-          
-          笔记源自：清华大学公开课：线性代数2——第三讲：奇异值分解
-前言对角矩阵是我们最喜欢的一类矩阵，对能够相似于对角阵的矩阵能方便地计算其幂和指数，对不能相似于对角阵的方阵。上节课我们讨论了如何求出其尽可能简单的相似标准形及Jordan标准形以上讨论的都是方阵。那么对m乘n的矩阵我们如何来对它进行对角化呢？
-线性代数中最重要的一类矩阵分解即奇异值分解，从而回答以上的问题。对角矩阵是我们最喜欢的一类矩阵
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/08/03/singular_values_decomposition/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+        <h3 id="Example-2-5-Mean-and-Variance-of-the-Bernoulli-伯努利随机变量的均值和方差"><a href="#Example-2-5-Mean-and-Variance-of-the-Bernoulli-伯努利随机变量的均值和方差" class="headerlink" title="Example 2.5. Mean and Variance of the Bernoulli.伯努利随机变量的均值和方差"></a>Example 2.5. Mean and Variance of the Bernoulli.伯努利随机变量的均值和方差</h3><p>Consider the experiment of tossing a coin, which comes up a head with probability $p$ and a tail with probability $1 - p$. and the Bernoulli random variable $X$ with $PMF$ :<br>$$<br>p_X(k)=\cases{p, &amp; if $k=1$\\1-p, &amp; if $k=0$}<br>$$<br>The mean. second moment. and variance of $X$ are given by the following calculations:<br>$$<br>E[X]=1\cdot p + 0 \cdot (1-p) = p ,\\<br>E[X^2]=1^2\cdot p + 0 \cdot (1-p) = p, \\<br>var(x)=E[X^2]-(E[X])^2=p-p^2=p(1-p)<br>$$</p>
+<h3 id="Example-2-7-The-Mean-of-the-Poisson-泊松随机变量的均值方差"><a href="#Example-2-7-The-Mean-of-the-Poisson-泊松随机变量的均值方差" class="headerlink" title="Example 2.7. The Mean of the Poisson. 泊松随机变量的均值方差"></a>Example 2.7. The Mean of the Poisson. 泊松随机变量的均值方差</h3><p>The mean of the Poisson $PMF $ :<br>$$<br>p_X(k)=e^{-\lambda}\frac{\lambda^k}{k!}, k=0,1,2,\ldots<br>$$<br>can be calculated is follows:<br>$$<br>\begin{eqnarray}<br>E[X] &amp;=&amp; \sum\limits^{\infty}_{k=0}ke^{-\lambda}\frac{\lambda^k}{k!}\\<br>&amp;=&amp; \sum\limits^{\infty}_{k=1}ke^{-\lambda}\frac{\lambda^k}{k!} \quad (\text{k=0的项等于0})\\<br>&amp;=&amp; \lambda\sum\limits_{k=1}^{\infty}e^{-\lambda}\frac{\lambda^{k-1}}{k-1!}\\<br>&amp;=&amp; \lambda\sum\limits_{m=0}^{\infty}e^{-\lambda}\frac{m^{k-1}}{m!} \quad (\text{让m=k-1})\\<br>&amp;=&amp; \lambda<br>\end{eqnarray}<br>$$<br>The last equality is obtained by noting that is the normalization property for the Poisson $PMF$. </p>
+<h3 id="Example-2-20-Variance-of-the-Binomial-and-the-Poisson-二项随机变量和泊松随机变量的方差"><a href="#Example-2-20-Variance-of-the-Binomial-and-the-Poisson-二项随机变量和泊松随机变量的方差" class="headerlink" title="Example 2.20. Variance of the Binomial and the Poisson. 二项随机变量和泊松随机变量的方差"></a>Example 2.20. Variance of the Binomial and the Poisson. 二项随机变量和泊松随机变量的方差</h3><p>We consider $n$ independent coin tosses, with each toss having probability $p$ of coming up a head. For each $i$, we let $X_i$ be the Bernoulli random variable which is equal to $1$ if the $i$th toss comes up a head, and is 0 otherwise. Then, $X = X_l + X_2 + . . . + X_n$ is a binomial random variable. Its mean is $E[X] = np$. as derived in Example 2. 10. By the independence of the coin tosses. the random variables $X_1 , . . . . X_n$ are independent, and<br>$$<br>var(X)=\sum\limits_{i=1}^{n}var(x_i)=np(1-p)<br>$$<br>As we discussed in Section 2.2. a Poisson random variable $Y$ with parameter $\lambda$ can be viewed as the “limit” of the binomial as $n\rightarrow \infty, p\rightarrow 0$. while $np = \lambda$. Thus, taking the limit of the mean and the variance of the binomial. we informally obtain the mean and variance of the Poisson: $E[Y] = var(Y) = \lambda $ .  We have indeed verified the formula $E[Y] = \lambda$ in Example 2.7. To verify the formula $var(Y) = \lambda$, we write<br>$$<br>\begin{eqnarray}<br>E[Y^2] &amp;=&amp; \sum\limits_{k=1}^{\infty}k^2e^{-\lambda}\frac{\lambda^k}{k!} \\<br>&amp;=&amp; \lambda\sum\limits_{k=1}^{\infty}k\frac{e^{-\lambda}\lambda^{k-1}}{(k-1)!} \\<br>&amp;=&amp; \lambda\sum\limits_{m=0}^{\infty}(m+1)\frac{e^{-\lambda}\lambda^{m}}{m!}, m = k-1 \\<br>&amp;=&amp; \lambda[\sum\limits_{m=0}^{\infty}m\frac{e^{-\lambda}\lambda^{m}}{m!}+\sum\limits_{m=0}^{\infty}\frac{e^{-\lambda}\lambda^{m}}{m!}], \\<br>&amp;=&amp; \lambda(E[Y]+1) , \\<br>&amp;=&amp; \lambda(\lambda+1) \\<br>\end{eqnarray}<br>$$</p>
+<p>from which<br>$$<br>var(Y)=E[Y^2]-(E[Y])^2=\lambda(\lambda+1)-\lambda^2=\lambda<br>$$</p>
+
       
     </div>
     
@@ -1201,17 +463,78 @@ Markov Matrix正矩阵
     
 
     
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    SnailDove
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://snaildove.github.io/2017/08/28/mean_and_variance_of_Bernoulli_and_Possion_random/" title="经典摘录 - 伯努利和泊松随机变量的均值方差">https://snaildove.github.io/2017/08/28/mean_and_variance_of_Bernoulli_and_Possion_random/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
 
     <footer class="post-footer">
       
-
+        <div class="post-tags">
+          
+            <a href="/tags/probability/" rel="tag"><i class="fa fa-tag"></i> probability</a>
+          
+            <a href="/tags/概率论/" rel="tag"><i class="fa fa-tag"></i> 概率论</a>
+          
+        </div>
       
 
       
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div id="needsharebutton-postbottom">
+            <span class="btn">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </span>
+          </div>
+        
+        </div>
+      
+      
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/08/27/normal_random_variables/" rel="next" title="经典摘录-正态随机变量">
+                <i class="fa fa-chevron-left"></i> 经典摘录-正态随机变量
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/08/28/Bayes'_rule/" rel="prev" title="经典摘录-Bayes' rule贝叶斯定律">
+                经典摘录-Bayes' rule贝叶斯定律 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
-        <div class="post-eof"></div>
+
+      
       
     </footer>
   </div>
@@ -1221,14 +544,11 @@ Markov Matrix正矩阵
   </article>
 
 
-    
-  </section>
 
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/3/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/5/"><i class="fa fa-angle-right"></i></a>
-  </nav>
-
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -1236,6 +556,15 @@ Markov Matrix正矩阵
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zMjg4NC85NDQ1"></div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -1256,8 +585,17 @@ Markov Matrix正矩阵
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -1366,6 +704,22 @@ Markov Matrix正矩阵
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Example-2-5-Mean-and-Variance-of-the-Bernoulli-伯努利随机变量的均值和方差"><span class="nav-number">1.</span> <span class="nav-text">Example 2.5. Mean and Variance of the Bernoulli.伯努利随机变量的均值和方差</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Example-2-7-The-Mean-of-the-Poisson-泊松随机变量的均值方差"><span class="nav-number">2.</span> <span class="nav-text">Example 2.7. The Mean of the Poisson. 泊松随机变量的均值方差</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Example-2-20-Variance-of-the-Binomial-and-the-Poisson-二项随机变量和泊松随机变量的方差"><span class="nav-number">3.</span> <span class="nav-text">Example 2.20. Variance of the Binomial and the Poisson. 二项随机变量和泊松随机变量的方差</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1554,6 +908,10 @@ Markov Matrix正矩阵
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -1582,6 +940,17 @@ Markov Matrix正矩阵
 
 
 
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 

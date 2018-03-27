@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://snaildove.github.io/2017/08/28/mean_and_variance_of_Bernoulli_and_Possion_random/</loc>
+    
+    <lastmod>2018-03-25T16:04:25.863Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://snaildove.github.io/2017/08/28/Bayes'_rule/</loc>
     
-    <lastmod>2018-03-19T14:43:42.441Z</lastmod>
+    <lastmod>2018-03-25T13:17:05.699Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2017/08/27/normal_random_variables/</loc>
+    
+    <lastmod>2018-03-25T09:26:11.186Z</lastmod>
     
   </url>
   
@@ -58,14 +72,14 @@
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2013/05/13/stack_application_on_expression-resolution-with-braces/</loc>
+    <loc>https://snaildove.github.io/2013/05/12/stack_application_on_line-editor_or_buff_zone/</loc>
     
     <lastmod>2018-03-14T09:23:31.425Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2013/05/12/stack_application_on_line-editor_or_buff_zone/</loc>
+    <loc>https://snaildove.github.io/2013/05/13/stack_application_on_expression-resolution-with-braces/</loc>
     
     <lastmod>2018-03-14T09:23:31.425Z</lastmod>
     
@@ -93,13 +107,6 @@
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2015/04/24/perception_learning_algorithm/</loc>
-    
-    <lastmod>2018-03-14T09:23:31.421Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://snaildove.github.io/2017/08/01/positive_definite_and_least_square/</loc>
     
     <lastmod>2018-03-14T09:23:31.421Z</lastmod>
@@ -107,9 +114,9 @@
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2017/08/27/normal_random_variables/</loc>
+    <loc>https://snaildove.github.io/2015/04/24/perception_learning_algorithm/</loc>
     
-    <lastmod>2018-03-14T09:23:31.420Z</lastmod>
+    <lastmod>2018-03-14T09:23:31.421Z</lastmod>
     
   </url>
   
@@ -142,14 +149,14 @@
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2017/08/05/linear_transformation_2nd_part/</loc>
+    <loc>https://snaildove.github.io/2014/06/01/longest_common_sub-sequence/</loc>
     
     <lastmod>2018-03-14T09:23:31.414Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2014/06/01/longest_common_sub-sequence/</loc>
+    <loc>https://snaildove.github.io/2017/08/05/linear_transformation_2nd_part/</loc>
     
     <lastmod>2018-03-14T09:23:31.414Z</lastmod>
     
@@ -184,14 +191,14 @@
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2015/05/01/decision_tree/</loc>
+    <loc>https://snaildove.github.io/2017/08/26/cumulative_distribution_function/</loc>
     
     <lastmod>2018-03-14T09:23:31.410Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2017/08/26/cumulative_distribution_function/</loc>
+    <loc>https://snaildove.github.io/2015/05/01/decision_tree/</loc>
     
     <lastmod>2018-03-14T09:23:31.410Z</lastmod>
     
