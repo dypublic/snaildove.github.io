@@ -269,6 +269,33 @@
   </entry>
   
   <entry>
+    <title>转载-LaTeX各种符号</title>
+    <link href="https://snaildove.github.io/2017/08/20/LaTeX_symbols/"/>
+    <id>https://snaildove.github.io/2017/08/20/LaTeX_symbols/</id>
+    <published>2017-08-20T12:16:00.000Z</published>
+    <updated>2018-03-31T17:05:39.733Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;strong&gt;根据左侧文章目录，快速定位想要的符号&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&quot;声调&quot;&gt;&lt;a href=&quot;#声调&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="中文" scheme="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+    
+    
+      <category term="Latex" scheme="https://snaildove.github.io/tags/Latex/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Trees describe the sample space</title>
     <link href="https://snaildove.github.io/2017/08/15/trees_describe_the_sample_space/"/>
     <id>https://snaildove.github.io/2017/08/15/trees_describe_the_sample_space/</id>
@@ -542,35 +569,6 @@
         
           &lt;p&gt;笔记源自：清华大学公开课：线性代数2——第四讲：线性变换1&lt;/p&gt;
 &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;历史上英国数学家Arthur
-        
-      
-    
-    </summary>
-    
-      <category term="中文" scheme="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
-    
-    
-      <category term="linear_algebra" scheme="https://snaildove.github.io/tags/linear-algebra/"/>
-    
-      <category term="线性代数" scheme="https://snaildove.github.io/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>奇异值分解singular values decomposition</title>
-    <link href="https://snaildove.github.io/2017/08/03/singular_values_decomposition/"/>
-    <id>https://snaildove.github.io/2017/08/03/singular_values_decomposition/</id>
-    <published>2017-08-03T12:16:00.000Z</published>
-    <updated>2018-03-14T09:23:31.424Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;笔记源自：清华大学公开课：线性代数2——第三讲：奇异值分解&lt;/p&gt;
-&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;
         
       
     
