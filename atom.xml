@@ -49,7 +49,7 @@
     <link href="https://snaildove.github.io/2017/08/28/mean_and_variance_of_Bernoulli_and_Possion_random/"/>
     <id>https://snaildove.github.io/2017/08/28/mean_and_variance_of_Bernoulli_and_Possion_random/</id>
     <published>2017-08-28T12:16:00.000Z</published>
-    <updated>2018-03-25T16:04:25.863Z</updated>
+    <updated>2018-03-27T12:54:25.670Z</updated>
     
     <summary type="html">
     
@@ -129,11 +129,11 @@
   </entry>
   
   <entry>
-    <title>经典摘录-[累积]分布函数CDF</title>
-    <link href="https://snaildove.github.io/2017/08/26/cumulative_distribution_function/"/>
-    <id>https://snaildove.github.io/2017/08/26/cumulative_distribution_function/</id>
+    <title>经典摘录-均匀随机变量的均值和方差</title>
+    <link href="https://snaildove.github.io/2017/08/26/mean_and_variance_of_uniform_random_variable/"/>
+    <id>https://snaildove.github.io/2017/08/26/mean_and_variance_of_uniform_random_variable/</id>
     <published>2017-08-26T12:16:00.000Z</published>
-    <updated>2018-03-14T09:23:31.410Z</updated>
+    <updated>2018-03-14T09:23:31.419Z</updated>
     
     <summary type="html">
     
@@ -141,7 +141,7 @@
       
         
         
-          &lt;p&gt;说明：全文摘自 &lt;a href=&quot;http://www.athenasc.com/probbook.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Introduction to probability, 2nd
+          &lt;p&gt;说明：全文摘自&lt;a href=&quot;http://www.athenasc.com/probbook.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Introduction to probability, 2nd Edition&lt;/a&gt;
         
       
     
@@ -157,11 +157,11 @@
   </entry>
   
   <entry>
-    <title>经典摘录-均匀随机变量的均值和方差</title>
-    <link href="https://snaildove.github.io/2017/08/26/mean_and_variance_of_uniform_random_variable/"/>
-    <id>https://snaildove.github.io/2017/08/26/mean_and_variance_of_uniform_random_variable/</id>
+    <title>经典摘录-[累积]分布函数CDF</title>
+    <link href="https://snaildove.github.io/2017/08/26/cumulative_distribution_function/"/>
+    <id>https://snaildove.github.io/2017/08/26/cumulative_distribution_function/</id>
     <published>2017-08-26T12:16:00.000Z</published>
-    <updated>2018-03-14T09:23:31.419Z</updated>
+    <updated>2018-03-14T09:23:31.410Z</updated>
     
     <summary type="html">
     
@@ -169,7 +169,7 @@
       
         
         
-          &lt;p&gt;说明：全文摘自&lt;a href=&quot;http://www.athenasc.com/probbook.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Introduction to probability, 2nd Edition&lt;/a&gt;
+          &lt;p&gt;说明：全文摘自 &lt;a href=&quot;http://www.athenasc.com/probbook.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Introduction to probability, 2nd
         
       
     
