@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://snaildove.github.io/"/>
-  <updated>2018-03-31T16:37:40.790Z</updated>
+  <updated>2018-03-31T18:56:25.480Z</updated>
   <id>https://snaildove.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://snaildove.github.io/2018/02/10/hexo_source-code_synchronization/"/>
     <id>https://snaildove.github.io/2018/02/10/hexo_source-code_synchronization/</id>
     <published>2018-02-09T16:00:00.000Z</published>
-    <updated>2018-03-31T16:37:40.790Z</updated>
+    <updated>2018-03-31T18:56:25.480Z</updated>
     
     <summary type="html">
     
@@ -95,11 +95,11 @@
   </entry>
   
   <entry>
-    <title>经典摘录-正态随机变量</title>
-    <link href="https://snaildove.github.io/2017/08/27/normal_random_variables/"/>
-    <id>https://snaildove.github.io/2017/08/27/normal_random_variables/</id>
+    <title>经典摘录-分段常数概率密度函数的均值和方差</title>
+    <link href="https://snaildove.github.io/2017/08/27/mean_and_variance_of_a_piecewise_constant_PDF/"/>
+    <id>https://snaildove.github.io/2017/08/27/mean_and_variance_of_a_piecewise_constant_PDF/</id>
     <published>2017-08-27T12:16:00.000Z</published>
-    <updated>2018-03-25T09:26:11.186Z</updated>
+    <updated>2018-03-14T09:23:31.415Z</updated>
     
     <summary type="html">
     
@@ -107,7 +107,7 @@
       
         
         
-          &lt;p&gt;&lt;strong&gt;说明&lt;/strong&gt;：全文摘自 &lt;a href=&quot;http://www.athenasc.com/probbook.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Introduction to probability, 2nd
+          &lt;p&gt;本文摘录自 &lt;a href=&quot;http://www.athenasc.com/probbook.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Introduction to probability, 2nd Edition&lt;/a&gt;
         
       
     
@@ -123,11 +123,11 @@
   </entry>
   
   <entry>
-    <title>经典摘录-分段常数概率密度函数的均值和方差</title>
-    <link href="https://snaildove.github.io/2017/08/27/mean_and_variance_of_a_piecewise_constant_PDF/"/>
-    <id>https://snaildove.github.io/2017/08/27/mean_and_variance_of_a_piecewise_constant_PDF/</id>
+    <title>经典摘录-正态随机变量</title>
+    <link href="https://snaildove.github.io/2017/08/27/normal_random_variables/"/>
+    <id>https://snaildove.github.io/2017/08/27/normal_random_variables/</id>
     <published>2017-08-27T12:16:00.000Z</published>
-    <updated>2018-03-14T09:23:31.415Z</updated>
+    <updated>2018-03-25T09:26:11.186Z</updated>
     
     <summary type="html">
     
@@ -135,7 +135,7 @@
       
         
         
-          &lt;p&gt;本文摘录自 &lt;a href=&quot;http://www.athenasc.com/probbook.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Introduction to probability, 2nd Edition&lt;/a&gt;
+          &lt;p&gt;&lt;strong&gt;说明&lt;/strong&gt;：全文摘自 &lt;a href=&quot;http://www.athenasc.com/probbook.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Introduction to probability, 2nd
         
       
     
@@ -295,7 +295,7 @@
     <link href="https://snaildove.github.io/2017/08/20/LaTeX_symbols/"/>
     <id>https://snaildove.github.io/2017/08/20/LaTeX_symbols/</id>
     <published>2017-08-20T12:16:00.000Z</published>
-    <updated>2018-03-31T18:35:44.174Z</updated>
+    <updated>2018-03-31T18:38:33.322Z</updated>
     
     <summary type="html">
     
