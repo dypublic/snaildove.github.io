@@ -99,34 +99,6 @@
   </entry>
   
   <entry>
-    <title>经典摘录-正态随机变量</title>
-    <link href="https://snaildove.github.io/2017/08/27/normal_random_variables/"/>
-    <id>https://snaildove.github.io/2017/08/27/normal_random_variables/</id>
-    <published>2017-08-27T12:16:00.000Z</published>
-    <updated>2018-03-25T09:26:11.186Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;&lt;strong&gt;说明&lt;/strong&gt;：全文摘自 &lt;a href=&quot;http://www.athenasc.com/probbook.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Introduction to probability, 2nd
-        
-      
-    
-    </summary>
-    
-      <category term="中文" scheme="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
-    
-    
-      <category term="probability" scheme="https://snaildove.github.io/tags/probability/"/>
-    
-      <category term="概率论" scheme="https://snaildove.github.io/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
-    
-  </entry>
-  
-  <entry>
     <title>经典摘录-分段常数概率密度函数的均值和方差</title>
     <link href="https://snaildove.github.io/2017/08/27/mean_and_variance_of_a_piecewise_constant_PDF/"/>
     <id>https://snaildove.github.io/2017/08/27/mean_and_variance_of_a_piecewise_constant_PDF/</id>
@@ -155,11 +127,11 @@
   </entry>
   
   <entry>
-    <title>经典摘录-均匀随机变量的均值和方差</title>
-    <link href="https://snaildove.github.io/2017/08/26/mean_and_variance_of_uniform_random_variable/"/>
-    <id>https://snaildove.github.io/2017/08/26/mean_and_variance_of_uniform_random_variable/</id>
-    <published>2017-08-26T12:16:00.000Z</published>
-    <updated>2018-03-14T09:23:31.419Z</updated>
+    <title>经典摘录-正态随机变量</title>
+    <link href="https://snaildove.github.io/2017/08/27/normal_random_variables/"/>
+    <id>https://snaildove.github.io/2017/08/27/normal_random_variables/</id>
+    <published>2017-08-27T12:16:00.000Z</published>
+    <updated>2018-03-25T09:26:11.186Z</updated>
     
     <summary type="html">
     
@@ -167,7 +139,7 @@
       
         
         
-          &lt;p&gt;说明：全文摘自&lt;a href=&quot;http://www.athenasc.com/probbook.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Introduction to probability, 2nd Edition&lt;/a&gt;
+          &lt;p&gt;&lt;strong&gt;说明&lt;/strong&gt;：全文摘自 &lt;a href=&quot;http://www.athenasc.com/probbook.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Introduction to probability, 2nd
         
       
     
@@ -196,6 +168,34 @@
         
         
           &lt;p&gt;说明：全文摘自 &lt;a href=&quot;http://www.athenasc.com/probbook.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Introduction to probability, 2nd
+        
+      
+    
+    </summary>
+    
+      <category term="中文" scheme="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+    
+    
+      <category term="probability" scheme="https://snaildove.github.io/tags/probability/"/>
+    
+      <category term="概率论" scheme="https://snaildove.github.io/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>经典摘录-均匀随机变量的均值和方差</title>
+    <link href="https://snaildove.github.io/2017/08/26/mean_and_variance_of_uniform_random_variable/"/>
+    <id>https://snaildove.github.io/2017/08/26/mean_and_variance_of_uniform_random_variable/</id>
+    <published>2017-08-26T12:16:00.000Z</published>
+    <updated>2018-03-14T09:23:31.419Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;说明：全文摘自&lt;a href=&quot;http://www.athenasc.com/probbook.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Introduction to probability, 2nd Edition&lt;/a&gt;
         
       
     
