@@ -43,11 +43,11 @@
   </entry>
   
   <entry>
-    <title>经典摘录-Bayes&#39; rule贝叶斯定律</title>
-    <link href="https://snaildove.github.io/2017/08/28/Bayes&#39;_rule/"/>
-    <id>https://snaildove.github.io/2017/08/28/Bayes&#39;_rule/</id>
-    <published>2017-08-28T12:16:00.000Z</published>
-    <updated>2018-03-25T13:17:05.699Z</updated>
+    <title>转载-希腊字母常用指代意义及中文读音</title>
+    <link href="https://snaildove.github.io/2018/02/02/greek-letters/"/>
+    <id>https://snaildove.github.io/2018/02/02/greek-letters/</id>
+    <published>2018-02-02T10:06:02.000Z</published>
+    <updated>2018-04-02T10:11:03.415Z</updated>
     
     <summary type="html">
     
@@ -55,7 +55,8 @@
       
         
         
-          &lt;p&gt;说明：全文摘自&lt;a href=&quot;http://www.athenasc.com/probbook.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Introduction to probability, 2nd Edition&lt;/a&gt;
+          &lt;p&gt;&lt;img src=&quot;https://snaildove.github.io/math/Greek_letters.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;更多细节请参考 &lt;a
         
       
     
@@ -64,9 +65,7 @@
       <category term="中文" scheme="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
     
     
-      <category term="probability" scheme="https://snaildove.github.io/tags/probability/"/>
-    
-      <category term="概率论" scheme="https://snaildove.github.io/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
+      <category term="english" scheme="https://snaildove.github.io/tags/english/"/>
     
   </entry>
   
@@ -99,11 +98,11 @@
   </entry>
   
   <entry>
-    <title>经典摘录-分段常数概率密度函数的均值和方差</title>
-    <link href="https://snaildove.github.io/2017/08/27/mean_and_variance_of_a_piecewise_constant_PDF/"/>
-    <id>https://snaildove.github.io/2017/08/27/mean_and_variance_of_a_piecewise_constant_PDF/</id>
-    <published>2017-08-27T12:16:00.000Z</published>
-    <updated>2018-03-14T09:23:31.415Z</updated>
+    <title>经典摘录-Bayes&#39; rule贝叶斯定律</title>
+    <link href="https://snaildove.github.io/2017/08/28/Bayes&#39;_rule/"/>
+    <id>https://snaildove.github.io/2017/08/28/Bayes&#39;_rule/</id>
+    <published>2017-08-28T12:16:00.000Z</published>
+    <updated>2018-03-25T13:17:05.699Z</updated>
     
     <summary type="html">
     
@@ -111,7 +110,7 @@
       
         
         
-          &lt;p&gt;本文摘录自 &lt;a href=&quot;http://www.athenasc.com/probbook.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Introduction to probability, 2nd Edition&lt;/a&gt;
+          &lt;p&gt;说明：全文摘自&lt;a href=&quot;http://www.athenasc.com/probbook.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Introduction to probability, 2nd Edition&lt;/a&gt;
         
       
     
@@ -155,11 +154,11 @@
   </entry>
   
   <entry>
-    <title>经典摘录-[累积]分布函数CDF</title>
-    <link href="https://snaildove.github.io/2017/08/26/cumulative_distribution_function/"/>
-    <id>https://snaildove.github.io/2017/08/26/cumulative_distribution_function/</id>
-    <published>2017-08-26T12:16:00.000Z</published>
-    <updated>2018-03-14T09:23:31.410Z</updated>
+    <title>经典摘录-分段常数概率密度函数的均值和方差</title>
+    <link href="https://snaildove.github.io/2017/08/27/mean_and_variance_of_a_piecewise_constant_PDF/"/>
+    <id>https://snaildove.github.io/2017/08/27/mean_and_variance_of_a_piecewise_constant_PDF/</id>
+    <published>2017-08-27T12:16:00.000Z</published>
+    <updated>2018-03-14T09:23:31.415Z</updated>
     
     <summary type="html">
     
@@ -167,7 +166,7 @@
       
         
         
-          &lt;p&gt;说明：全文摘自 &lt;a href=&quot;http://www.athenasc.com/probbook.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Introduction to probability, 2nd
+          &lt;p&gt;本文摘录自 &lt;a href=&quot;http://www.athenasc.com/probbook.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Introduction to probability, 2nd Edition&lt;/a&gt;
         
       
     
@@ -211,11 +210,11 @@
   </entry>
   
   <entry>
-    <title>经典摘录-指数型随机变量的均值和方差</title>
-    <link href="https://snaildove.github.io/2017/08/25/exponential_random_variables/"/>
-    <id>https://snaildove.github.io/2017/08/25/exponential_random_variables/</id>
-    <published>2017-08-25T12:16:00.000Z</published>
-    <updated>2018-04-02T05:13:18.654Z</updated>
+    <title>经典摘录-[累积]分布函数CDF</title>
+    <link href="https://snaildove.github.io/2017/08/26/cumulative_distribution_function/"/>
+    <id>https://snaildove.github.io/2017/08/26/cumulative_distribution_function/</id>
+    <published>2017-08-26T12:16:00.000Z</published>
+    <updated>2018-03-14T09:23:31.410Z</updated>
     
     <summary type="html">
     
@@ -223,7 +222,7 @@
       
         
         
-          &lt;p&gt;&lt;strong&gt;说明&lt;/strong&gt;：全文摘自 &lt;a href=&quot;http://www.athenasc.com/probbook.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Introduction to probability, 2nd
+          &lt;p&gt;说明：全文摘自 &lt;a href=&quot;http://www.athenasc.com/probbook.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Introduction to probability, 2nd
         
       
     
@@ -252,6 +251,34 @@
         
         
           &lt;h2 id=&quot;样本均值的期望方差&quot;&gt;&lt;a href=&quot;#样本均值的期望方差&quot; class=&quot;headerlink&quot; title=&quot;样本均值的期望方差&quot;&gt;&lt;/a&gt;样本均值的期望方差&lt;/h2&gt;&lt;p&gt;摘录自：&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="中文" scheme="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+    
+    
+      <category term="probability" scheme="https://snaildove.github.io/tags/probability/"/>
+    
+      <category term="概率论" scheme="https://snaildove.github.io/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>经典摘录-指数型随机变量的均值和方差</title>
+    <link href="https://snaildove.github.io/2017/08/25/exponential_random_variables/"/>
+    <id>https://snaildove.github.io/2017/08/25/exponential_random_variables/</id>
+    <published>2017-08-25T12:16:00.000Z</published>
+    <updated>2018-04-02T05:13:18.654Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;strong&gt;说明&lt;/strong&gt;：全文摘自 &lt;a href=&quot;http://www.athenasc.com/probbook.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Introduction to probability, 2nd
         
       
     
@@ -535,35 +562,6 @@
         
         
           &lt;p&gt;笔记源自：清华大学公开课：线性代数2——第六讲：伪逆&lt;/p&gt;
-&lt;h2 id=&quot;引言&quot;&gt;&lt;a href=&quot;#引言&quot; class=&quot;headerlink&quot; title=&quot;引言&quot;&gt;&lt;/a&gt;引言&lt;/h2&gt;&lt;p&gt;&lt;img
-        
-      
-    
-    </summary>
-    
-      <category term="中文" scheme="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
-    
-    
-      <category term="linear_algebra" scheme="https://snaildove.github.io/tags/linear-algebra/"/>
-    
-      <category term="线性代数" scheme="https://snaildove.github.io/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>马尔科夫矩阵和正矩阵</title>
-    <link href="https://snaildove.github.io/2017/08/06/Markov_matrix/"/>
-    <id>https://snaildove.github.io/2017/08/06/Markov_matrix/</id>
-    <published>2017-08-06T12:16:00.000Z</published>
-    <updated>2018-03-14T09:23:31.405Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;笔记源自：清华大学公开课：线性代数2——第9讲：马尔科夫矩阵和正矩阵&lt;/p&gt;
 &lt;h2 id=&quot;引言&quot;&gt;&lt;a href=&quot;#引言&quot; class=&quot;headerlink&quot; title=&quot;引言&quot;&gt;&lt;/a&gt;引言&lt;/h2&gt;&lt;p&gt;&lt;img
         
       
