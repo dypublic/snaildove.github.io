@@ -4,8 +4,30 @@
 
     
   <url>
+    <loc>https://snaildove.github.io/2018/01/01/what-is-machine-learning/</loc>
+    <lastmod>2018-04-05T09:48:54.941Z</lastmod>
+    <data>
+        <display>
+        <title>Note1:introduction</title>
+        <pubTime>2017-12-31T16:00:00.000Z</pubTime>
+        
+        <tag>机器学习</tag>
+         
+        <tag>Machine Leaning</tag>
+         
+         
+           
+             
+              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://snaildove.github.io/2018/02/02/greek-letters/</loc>
-    <lastmod>2018-04-02T10:11:03.415Z</lastmod>
+    <lastmod>2018-04-02T10:13:10.108Z</lastmod>
     <data>
         <display>
         <title>转载-希腊字母常用指代意义及中文读音</title>
@@ -483,16 +505,16 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2014/06/01/longest_common_sub-sequence/</loc>
+    <loc>https://snaildove.github.io/2017/08/05/linear_transformation_2nd_part/</loc>
     <lastmod>2018-03-14T09:23:31.414Z</lastmod>
     <data>
         <display>
-        <title>动态规划-最长公共子序列</title>
-        <pubTime>2014-06-01T14:16:00.000Z</pubTime>
+        <title>线性变换2</title>
+        <pubTime>2017-08-05T12:16:00.000Z</pubTime>
         
-        <tag>Data Structure</tag>
+        <tag>linear_algebra</tag>
          
-        <tag>数据结构</tag>
+        <tag>线性代数</tag>
          
          
            
@@ -505,16 +527,16 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2017/08/05/linear_transformation_2nd_part/</loc>
+    <loc>https://snaildove.github.io/2014/06/01/longest_common_sub-sequence/</loc>
     <lastmod>2018-03-14T09:23:31.414Z</lastmod>
     <data>
         <display>
-        <title>线性变换2</title>
-        <pubTime>2017-08-05T12:16:00.000Z</pubTime>
+        <title>动态规划-最长公共子序列</title>
+        <pubTime>2014-06-01T14:16:00.000Z</pubTime>
         
-        <tag>linear_algebra</tag>
+        <tag>Data Structure</tag>
          
-        <tag>线性代数</tag>
+        <tag>数据结构</tag>
          
          
            

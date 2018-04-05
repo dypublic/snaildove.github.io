@@ -98,19 +98,19 @@
 
 
 
-<meta name="description" content="算法总体思想动态规划（Dynamic Programming）是通过组合子问题的解而解决整个问题的。分治是指将问题划分成一些独立的子问题，递归地求解各子问题，然后合并子问题的解而得到原始问题的解，与此不同，动态规划适用于子问题不是独立的情况，也就是各个子问题包含公共的子问题。在这种情况下，采用分治法会做许多不必要的工作，即重复地求解公共地子问题。动态规划算法对每个子问题只求解一次，将其结果保存在一">
+<meta name="description" content="算法总体思想动态规划（Dynamic Programming）是通过组合子问题的解而解决整个问题的。分治是指将问题划分成一些独立的子问题，递归地求解各子问题，然后合并子问题的解而得到原始问题的解，与此不同，动态规划适用于子问题不是独立的情况，也就是各个子问题包含公共的子问题。在这种情况下，采用分治法会做许多不必要的工作，即重复地求解公共地子问题。动态规划算法对每个子问题只求解一次，将其结果保存在">
 <meta name="keywords" content="Data Structure,数据结构">
 <meta property="og:type" content="article">
 <meta property="og:title" content="动态规划-最长公共子序列">
 <meta property="og:url" content="https://snaildove.github.io/2014/06/01/longest_common_sub-sequence/index.html">
 <meta property="og:site_name" content="SnailDove&#39;s blog">
-<meta property="og:description" content="算法总体思想动态规划（Dynamic Programming）是通过组合子问题的解而解决整个问题的。分治是指将问题划分成一些独立的子问题，递归地求解各子问题，然后合并子问题的解而得到原始问题的解，与此不同，动态规划适用于子问题不是独立的情况，也就是各个子问题包含公共的子问题。在这种情况下，采用分治法会做许多不必要的工作，即重复地求解公共地子问题。动态规划算法对每个子问题只求解一次，将其结果保存在一">
+<meta property="og:description" content="算法总体思想动态规划（Dynamic Programming）是通过组合子问题的解而解决整个问题的。分治是指将问题划分成一些独立的子问题，递归地求解各子问题，然后合并子问题的解而得到原始问题的解，与此不同，动态规划适用于子问题不是独立的情况，也就是各个子问题包含公共的子问题。在这种情况下，采用分治法会做许多不必要的工作，即重复地求解公共地子问题。动态规划算法对每个子问题只求解一次，将其结果保存在">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://img.blog.csdn.net/20180207171333211?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:updated_time" content="2018-03-14T09:23:31.414Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="动态规划-最长公共子序列">
-<meta name="twitter:description" content="算法总体思想动态规划（Dynamic Programming）是通过组合子问题的解而解决整个问题的。分治是指将问题划分成一些独立的子问题，递归地求解各子问题，然后合并子问题的解而得到原始问题的解，与此不同，动态规划适用于子问题不是独立的情况，也就是各个子问题包含公共的子问题。在这种情况下，采用分治法会做许多不必要的工作，即重复地求解公共地子问题。动态规划算法对每个子问题只求解一次，将其结果保存在一">
+<meta name="twitter:description" content="算法总体思想动态规划（Dynamic Programming）是通过组合子问题的解而解决整个问题的。分治是指将问题划分成一些独立的子问题，递归地求解各子问题，然后合并子问题的解而得到原始问题的解，与此不同，动态规划适用于子问题不是独立的情况，也就是各个子问题包含公共的子问题。在这种情况下，采用分治法会做许多不必要的工作，即重复地求解公共地子问题。动态规划算法对每个子问题只求解一次，将其结果保存在">
 <meta name="twitter:image" content="http://img.blog.csdn.net/20180207171333211?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 
 
@@ -445,7 +445,7 @@
       
 
       
-        <h2 id="算法总体思想"><a href="#算法总体思想" class="headerlink" title="算法总体思想"></a>算法总体思想</h2><p>动态规划（Dynamic Programming）是通过组合子问题的解而解决整个问题的。分治是指将问题划分成一些独立的子问题，递归地求解各子问题，然后合并子问题的解而得到原始问题的解，与此不同，动态规划适用于子问题不是独立的情况，也就是各个子问题包含公共的子问题。在这种情况下，采用分治法会做许多不必要的工作，即重复地求解公共地子问题。动态规划算法对每个子问题只求解一次，将其结果保存在一张表中，从而避免每次遇到各个子问题时重新计算答案。</p>
+        <script src="/assets/js/APlayer.min.js"> </script><h2 id="算法总体思想"><a href="#算法总体思想" class="headerlink" title="算法总体思想"></a>算法总体思想</h2><p>动态规划（Dynamic Programming）是通过组合子问题的解而解决整个问题的。分治是指将问题划分成一些独立的子问题，递归地求解各子问题，然后合并子问题的解而得到原始问题的解，与此不同，动态规划适用于子问题不是独立的情况，也就是各个子问题包含公共的子问题。在这种情况下，采用分治法会做许多不必要的工作，即重复地求解公共地子问题。动态规划算法对每个子问题只求解一次，将其结果保存在一张表中，从而避免每次遇到各个子问题时重新计算答案。</p>
 <h2 id="动态规划算法的基本要素"><a href="#动态规划算法的基本要素" class="headerlink" title="动态规划算法的基本要素"></a>动态规划算法的基本要素</h2><h3 id="最优子结构"><a href="#最优子结构" class="headerlink" title="最优子结构"></a>最优子结构</h3><ul>
 <li>矩阵连乘计算次序问题的最优解包含着其子问题的最优解。这种性质称为最优子结构性质。</li>
 <li>在分析问题的最优子结构性质时，所用的方法具有普遍性：首先假设由问题的最优解导出的子问题的解不是最优的，然后再设法说明在这个假设下可构造出比原问题最优解更好的解，从而导致矛盾。</li>
@@ -638,7 +638,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">33</span>
+                  <span class="site-state-item-count">34</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -649,7 +649,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -660,7 +660,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -672,7 +672,7 @@
 				<h4 class="widget-title">Tag Cloud</h4>
 					<div id="myCanvasContainer" class="widget tagcloud">
 					<canvas width="250" height="250" id="resCanvas" style="width=100%">
-						<ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Data-Structure/">Data Structure</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Latex/">Latex</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning/">Machine Learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/english/">english</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linear-algebra/">linear_algebra</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/probability/">probability</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据结构/">数据结构</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/机器学习/">机器学习</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/概率论/">概率论</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/线性代数/">线性代数</a><span class="tag-list-count">12</span></li></ul>
+						<ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Data-Structure/">Data Structure</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Latex/">Latex</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Leaning/">Machine Leaning</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning/">Machine Learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/english/">english</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linear-algebra/">linear_algebra</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/probability/">probability</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据结构/">数据结构</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/机器学习/">机器学习</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/概率论/">概率论</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/线性代数/">线性代数</a><span class="tag-list-count">12</span></li></ul>
 					</canvas>
 				</div>
 			</div>
@@ -771,7 +771,7 @@
     
       <span class="post-meta-item-text">全站文章总字数</span>
     
-    <span title="全站文章总字数">50.8k</span>
+    <span title="全站文章总字数">54.4k</span>
   
 </div>
 

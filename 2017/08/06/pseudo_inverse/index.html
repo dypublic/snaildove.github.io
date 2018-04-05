@@ -98,13 +98,13 @@
 
 
 
-<meta name="description" content="笔记源自：清华大学公开课：线性代数2——第六讲：伪逆 引言矩阵的奇异值分解可以理解成从$R^n$到$R^m$的线性变换在不同基底下矩阵表示，接下来利用矩阵的奇异值分解来定义矩阵的伪逆，然后再利用矩阵的伪逆来讨论线性方程组Ax＝b无解时的最小二乘解，线性代数的中心问题是求解线性方程组$Ax=b$，最简单的情况是如果系数矩阵A是n阶的可逆矩阵，那么这时对于任意的n维向量$b$，线性方程组$Ax=b$有">
+<meta name="description" content="笔记源自：清华大学公开课：线性代数2——第六讲：伪逆 引言矩阵的奇异值分解可以理解成从$R^n$到$R^m$的线性变换在不同基底下矩阵表示，接下来利用矩阵的奇异值分解来定义矩阵的伪逆，然后再利用矩阵的伪逆来讨论线性方程组Ax＝b无解时的最小二乘解，线性代数的中心问题是求解线性方程组$Ax=b$，最简单的情况是如果系数矩阵A是n阶的可逆矩阵，那么这时对于任意的n维向量$b$，线性方程组$Ax=b$">
 <meta name="keywords" content="linear_algebra,线性代数">
 <meta property="og:type" content="article">
 <meta property="og:title" content="伪逆(广义逆)pseudo inverse">
 <meta property="og:url" content="https://snaildove.github.io/2017/08/06/pseudo_inverse/index.html">
 <meta property="og:site_name" content="SnailDove&#39;s blog">
-<meta property="og:description" content="笔记源自：清华大学公开课：线性代数2——第六讲：伪逆 引言矩阵的奇异值分解可以理解成从$R^n$到$R^m$的线性变换在不同基底下矩阵表示，接下来利用矩阵的奇异值分解来定义矩阵的伪逆，然后再利用矩阵的伪逆来讨论线性方程组Ax＝b无解时的最小二乘解，线性代数的中心问题是求解线性方程组$Ax=b$，最简单的情况是如果系数矩阵A是n阶的可逆矩阵，那么这时对于任意的n维向量$b$，线性方程组$Ax=b$有">
+<meta property="og:description" content="笔记源自：清华大学公开课：线性代数2——第六讲：伪逆 引言矩阵的奇异值分解可以理解成从$R^n$到$R^m$的线性变换在不同基底下矩阵表示，接下来利用矩阵的奇异值分解来定义矩阵的伪逆，然后再利用矩阵的伪逆来讨论线性方程组Ax＝b无解时的最小二乘解，线性代数的中心问题是求解线性方程组$Ax=b$，最简单的情况是如果系数矩阵A是n阶的可逆矩阵，那么这时对于任意的n维向量$b$，线性方程组$Ax=b$">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://img.blog.csdn.net/20171220210633009?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="http://img.blog.csdn.net/20171220210709948?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
@@ -120,7 +120,7 @@
 <meta property="og:updated_time" content="2018-03-14T09:23:31.423Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="伪逆(广义逆)pseudo inverse">
-<meta name="twitter:description" content="笔记源自：清华大学公开课：线性代数2——第六讲：伪逆 引言矩阵的奇异值分解可以理解成从$R^n$到$R^m$的线性变换在不同基底下矩阵表示，接下来利用矩阵的奇异值分解来定义矩阵的伪逆，然后再利用矩阵的伪逆来讨论线性方程组Ax＝b无解时的最小二乘解，线性代数的中心问题是求解线性方程组$Ax=b$，最简单的情况是如果系数矩阵A是n阶的可逆矩阵，那么这时对于任意的n维向量$b$，线性方程组$Ax=b$有">
+<meta name="twitter:description" content="笔记源自：清华大学公开课：线性代数2——第六讲：伪逆 引言矩阵的奇异值分解可以理解成从$R^n$到$R^m$的线性变换在不同基底下矩阵表示，接下来利用矩阵的奇异值分解来定义矩阵的伪逆，然后再利用矩阵的伪逆来讨论线性方程组Ax＝b无解时的最小二乘解，线性代数的中心问题是求解线性方程组$Ax=b$，最简单的情况是如果系数矩阵A是n阶的可逆矩阵，那么这时对于任意的n维向量$b$，线性方程组$Ax=b$">
 <meta name="twitter:image" content="http://img.blog.csdn.net/20171220210633009?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 
 
@@ -455,7 +455,7 @@
       
 
       
-        <p>笔记源自：清华大学公开课：线性代数2——第六讲：伪逆</p>
+        <script src="/assets/js/APlayer.min.js"> </script><p>笔记源自：清华大学公开课：线性代数2——第六讲：伪逆</p>
 <h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p><img src="http://img.blog.csdn.net/20171220210633009?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="introductory_content_of_pseudo-inverse"><br>矩阵的奇异值分解可以理解成从$R^n$到$R^m$的线性变换在不同基底下矩阵表示，接下来利用矩阵的奇异值分解<br>来定义矩阵的伪逆，然后再利用矩阵的伪逆来讨论线性方程组Ax＝b无解时的最小二乘解，线性代数的中心问题是<br>求解线性方程组$Ax=b$，最简单的情况是如果系数矩阵A是n阶的可逆矩阵，那么这时对于任意的n维向量$b$，线性方程组$Ax=b$有唯一的解，这个解是$A^{-1} b$，那这就启发去对于不可逆的矩阵或者是对于$A_{m\times n}$的矩阵，我们来定义它的一个逆矩阵，那么这时候逆矩阵我们叫做<strong>伪逆</strong>或者是叫<strong>广义逆</strong> 。</p>
 <h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>伪逆的定义来自于奇异值分解：<br><img src="http://img.blog.csdn.net/20171220210709948?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="definition_of_pseudo_inverse"><br>(1)若$A$可逆，即$r=m=n$，则：$A^{-1}=(U\Sigma V^T)^{-1}=V\Sigma^{-1}U^T=A^+$，注意：由奇异值分解公式$AV=U\Sigma,\ (v_1\,…\,v_r)\in C(A^T),\ (v_{r+1}\,…\,v_n)\in N(A),\ (u_1\,…\,u_r)\in C(A),\ (u_{r+1}\,…\,u_m)\in N(A^T)$ 得：$AV=U\Sigma: C(A^T)\rightarrow C(A)$，同理可得：$A^+U^T=V\Sigma^{+}:C(A)\rightarrow C(A^T)$</p>
 <p>(2)$AA^+=(U\Sigma_{m\times n} V^T)(V\Sigma^+_{n\times m}U^T)=U\Sigma_{m\times n}\Sigma^+_{n\times m}U^T=U\begin{pmatrix}I_r&amp;0\\0&amp;0\end{pmatrix}_{m\times m}U^T$ 得出以下3个性质：</p>
@@ -657,7 +657,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">33</span>
+                  <span class="site-state-item-count">34</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -668,7 +668,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -679,7 +679,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -691,7 +691,7 @@
 				<h4 class="widget-title">Tag Cloud</h4>
 					<div id="myCanvasContainer" class="widget tagcloud">
 					<canvas width="250" height="250" id="resCanvas" style="width=100%">
-						<ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Data-Structure/">Data Structure</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Latex/">Latex</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning/">Machine Learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/english/">english</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linear-algebra/">linear_algebra</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/probability/">probability</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据结构/">数据结构</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/机器学习/">机器学习</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/概率论/">概率论</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/线性代数/">线性代数</a><span class="tag-list-count">12</span></li></ul>
+						<ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Data-Structure/">Data Structure</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Latex/">Latex</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Leaning/">Machine Leaning</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning/">Machine Learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/english/">english</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linear-algebra/">linear_algebra</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/probability/">probability</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据结构/">数据结构</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/机器学习/">机器学习</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/概率论/">概率论</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/线性代数/">线性代数</a><span class="tag-list-count">12</span></li></ul>
 					</canvas>
 				</div>
 			</div>
@@ -790,7 +790,7 @@
     
       <span class="post-meta-item-text">全站文章总字数</span>
     
-    <span title="全站文章总字数">50.8k</span>
+    <span title="全站文章总字数">54.4k</span>
   
 </div>
 

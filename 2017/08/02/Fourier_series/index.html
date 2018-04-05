@@ -98,13 +98,13 @@
 
 
 
-<meta name="description" content="笔记源自：清华大学公开课：线性代数2——第10讲：傅里叶级数 引言 傅里叶级数Fourier series定义定义1设$f(x)$是周期为$2\pi$的有限个分段（piecewise）的连续函数（ continuous function）（即在$[\pi,-\pi]$中只有有限个点不连续，且不连续点的左右极限存在），那么它的傅里叶级数是 $F={a_0\over 2}+\sum\limits_{k">
+<meta name="description" content="笔记源自：清华大学公开课：线性代数2——第10讲：傅里叶级数 引言 傅里叶级数Fourier series定义定义1设$f(x)$是周期为$2\pi$的有限个分段（piecewise）的连续函数（ continuous function）（即在$[\pi,-\pi]$中只有有限个点不连续，且不连续点的左右极限存在），那么它的傅里叶级数是 $F={a_0\over 2}+\sum\limits_{">
 <meta name="keywords" content="linear_algebra,线性代数">
 <meta property="og:type" content="article">
 <meta property="og:title" content="傅里叶级数">
 <meta property="og:url" content="https://snaildove.github.io/2017/08/02/Fourier_series/index.html">
 <meta property="og:site_name" content="SnailDove&#39;s blog">
-<meta property="og:description" content="笔记源自：清华大学公开课：线性代数2——第10讲：傅里叶级数 引言 傅里叶级数Fourier series定义定义1设$f(x)$是周期为$2\pi$的有限个分段（piecewise）的连续函数（ continuous function）（即在$[\pi,-\pi]$中只有有限个点不连续，且不连续点的左右极限存在），那么它的傅里叶级数是 $F={a_0\over 2}+\sum\limits_{k">
+<meta property="og:description" content="笔记源自：清华大学公开课：线性代数2——第10讲：傅里叶级数 引言 傅里叶级数Fourier series定义定义1设$f(x)$是周期为$2\pi$的有限个分段（piecewise）的连续函数（ continuous function）（即在$[\pi,-\pi]$中只有有限个点不连续，且不连续点的左右极限存在），那么它的傅里叶级数是 $F={a_0\over 2}+\sum\limits_{">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://img.blog.csdn.net/20180102122314698?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="http://img.blog.csdn.net/20180102123620120?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
@@ -115,7 +115,7 @@
 <meta property="og:updated_time" content="2018-03-14T09:23:31.404Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="傅里叶级数">
-<meta name="twitter:description" content="笔记源自：清华大学公开课：线性代数2——第10讲：傅里叶级数 引言 傅里叶级数Fourier series定义定义1设$f(x)$是周期为$2\pi$的有限个分段（piecewise）的连续函数（ continuous function）（即在$[\pi,-\pi]$中只有有限个点不连续，且不连续点的左右极限存在），那么它的傅里叶级数是 $F={a_0\over 2}+\sum\limits_{k">
+<meta name="twitter:description" content="笔记源自：清华大学公开课：线性代数2——第10讲：傅里叶级数 引言 傅里叶级数Fourier series定义定义1设$f(x)$是周期为$2\pi$的有限个分段（piecewise）的连续函数（ continuous function）（即在$[\pi,-\pi]$中只有有限个点不连续，且不连续点的左右极限存在），那么它的傅里叶级数是 $F={a_0\over 2}+\sum\limits_{">
 <meta name="twitter:image" content="http://img.blog.csdn.net/20180102122314698?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 
 
@@ -450,7 +450,7 @@
       
 
       
-        <p>笔记源自：清华大学公开课：线性代数2——第10讲：傅里叶级数</p>
+        <script src="/assets/js/APlayer.min.js"> </script><p>笔记源自：清华大学公开课：线性代数2——第10讲：傅里叶级数</p>
 <h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p><img src="http://img.blog.csdn.net/20180102122314698?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="preface"></p>
 <h2 id="傅里叶级数Fourier-series定义"><a href="#傅里叶级数Fourier-series定义" class="headerlink" title="傅里叶级数Fourier series定义"></a>傅里叶级数Fourier series定义</h2><h3 id="定义1"><a href="#定义1" class="headerlink" title="定义1"></a>定义1</h3><p>设$f(x)$是周期为$2\pi$的有限个分段（<a href="https://en.wikipedia.org/wiki/Piecewise" target="_blank" rel="noopener">piecewise</a>）的连续函数（ continuous function）（即在$[\pi,-\pi]$中只有有限个点不连续，且不连续点的左右极限存在），那么它的傅里叶级数是 $F={a_0\over 2}+\sum\limits_{k=1}^{\infty}(\ a_kcos(kx)+b_ksin(kx)\ ), a_k={1\over \pi}\int_{-\pi}^{\pi}f(x)cos(kx)dx, b_k={1\over \pi}\int_{-\pi}^{\pi}f(x)sin(kx)dx,k=0,1,\ldots$，这个级数又称为<strong>傅里叶级数的实形式</strong>。</p>
 <p>$f(x)$举例如下的$(1)$，而 $(2)$ 在周期内的不连续点处无极限。<br><img src="http://img.blog.csdn.net/20180102123620120?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="example_of_2_kinds_of_piecewise_function"></p>
@@ -645,7 +645,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">33</span>
+                  <span class="site-state-item-count">34</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -656,7 +656,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -667,7 +667,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -679,7 +679,7 @@
 				<h4 class="widget-title">Tag Cloud</h4>
 					<div id="myCanvasContainer" class="widget tagcloud">
 					<canvas width="250" height="250" id="resCanvas" style="width=100%">
-						<ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Data-Structure/">Data Structure</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Latex/">Latex</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning/">Machine Learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/english/">english</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linear-algebra/">linear_algebra</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/probability/">probability</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据结构/">数据结构</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/机器学习/">机器学习</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/概率论/">概率论</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/线性代数/">线性代数</a><span class="tag-list-count">12</span></li></ul>
+						<ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Data-Structure/">Data Structure</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Latex/">Latex</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Leaning/">Machine Leaning</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning/">Machine Learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/english/">english</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linear-algebra/">linear_algebra</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/probability/">probability</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据结构/">数据结构</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/机器学习/">机器学习</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/概率论/">概率论</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/线性代数/">线性代数</a><span class="tag-list-count">12</span></li></ul>
 					</canvas>
 				</div>
 			</div>
@@ -778,7 +778,7 @@
     
       <span class="post-meta-item-text">全站文章总字数</span>
     
-    <span title="全站文章总字数">50.8k</span>
+    <span title="全站文章总字数">54.4k</span>
   
 </div>
 

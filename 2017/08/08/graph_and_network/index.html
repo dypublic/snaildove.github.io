@@ -98,13 +98,13 @@
 
 
 
-<meta name="description" content="笔记源自：清华大学公开课：线性代数2——第8讲：图和网络 简介欧姆定律Ohm’s law的向量形式 图与矩阵 关联矩阵incidence matrix 邻接矩阵adjacency matrix 拉普拉斯矩阵laplacian matrix 注： 半正定证明与刚度矩阵类似 网络和加权Laplacian矩阵 电路相关的物理定律 例子不接外部源 接外部源 带权$K=A^TCA$ 关联矩阵的四个基本子空间">
+<meta name="description" content="笔记源自：清华大学公开课：线性代数2——第8讲：图和网络 简介欧姆定律Ohm’s law的向量形式 图与矩阵 关联矩阵incidence matrix 邻接矩阵adjacency matrix 拉普拉斯矩阵laplacian matrix 注： 半正定证明与刚度矩阵类似 网络和加权Laplacian矩阵 电路相关的物理定律 例子不接外部源 接外部源 带权$K=A^TCA$ 关联矩阵的四个基本子空">
 <meta name="keywords" content="linear_algebra,线性代数">
 <meta property="og:type" content="article">
 <meta property="og:title" content="图和网络">
 <meta property="og:url" content="https://snaildove.github.io/2017/08/08/graph_and_network/index.html">
 <meta property="og:site_name" content="SnailDove&#39;s blog">
-<meta property="og:description" content="笔记源自：清华大学公开课：线性代数2——第8讲：图和网络 简介欧姆定律Ohm’s law的向量形式 图与矩阵 关联矩阵incidence matrix 邻接矩阵adjacency matrix 拉普拉斯矩阵laplacian matrix 注： 半正定证明与刚度矩阵类似 网络和加权Laplacian矩阵 电路相关的物理定律 例子不接外部源 接外部源 带权$K=A^TCA$ 关联矩阵的四个基本子空间">
+<meta property="og:description" content="笔记源自：清华大学公开课：线性代数2——第8讲：图和网络 简介欧姆定律Ohm’s law的向量形式 图与矩阵 关联矩阵incidence matrix 邻接矩阵adjacency matrix 拉普拉斯矩阵laplacian matrix 注： 半正定证明与刚度矩阵类似 网络和加权Laplacian矩阵 电路相关的物理定律 例子不接外部源 接外部源 带权$K=A^TCA$ 关联矩阵的四个基本子空">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://img.blog.csdn.net/20171231112548461?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="http://img.blog.csdn.net/20171230225940479?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
@@ -125,7 +125,7 @@
 <meta property="og:updated_time" content="2018-03-14T09:23:31.412Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="图和网络">
-<meta name="twitter:description" content="笔记源自：清华大学公开课：线性代数2——第8讲：图和网络 简介欧姆定律Ohm’s law的向量形式 图与矩阵 关联矩阵incidence matrix 邻接矩阵adjacency matrix 拉普拉斯矩阵laplacian matrix 注： 半正定证明与刚度矩阵类似 网络和加权Laplacian矩阵 电路相关的物理定律 例子不接外部源 接外部源 带权$K=A^TCA$ 关联矩阵的四个基本子空间">
+<meta name="twitter:description" content="笔记源自：清华大学公开课：线性代数2——第8讲：图和网络 简介欧姆定律Ohm’s law的向量形式 图与矩阵 关联矩阵incidence matrix 邻接矩阵adjacency matrix 拉普拉斯矩阵laplacian matrix 注： 半正定证明与刚度矩阵类似 网络和加权Laplacian矩阵 电路相关的物理定律 例子不接外部源 接外部源 带权$K=A^TCA$ 关联矩阵的四个基本子空">
 <meta name="twitter:image" content="http://img.blog.csdn.net/20171231112548461?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 
 
@@ -460,7 +460,7 @@
       
 
       
-        <p>笔记源自：清华大学公开课：线性代数2——第8讲：图和网络</p>
+        <script src="/assets/js/APlayer.min.js"> </script><p>笔记源自：清华大学公开课：线性代数2——第8讲：图和网络</p>
 <h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><h4 id="欧姆定律Ohm’s-law的向量形式"><a href="#欧姆定律Ohm’s-law的向量形式" class="headerlink" title="欧姆定律Ohm’s law的向量形式"></a>欧姆定律Ohm’s law的向量形式</h4><p><img src="http://img.blog.csdn.net/20171231112548461?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="matrix_of_Ohm&#39;s_law.png"></p>
 <h3 id="图与矩阵"><a href="#图与矩阵" class="headerlink" title="图与矩阵"></a>图与矩阵</h3><p><img src="http://img.blog.csdn.net/20171230225940479?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="directed_graphs.png"><br><img src="http://img.blog.csdn.net/20171231112706557?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="circute_graph"></p>
 <h4 id="关联矩阵incidence-matrix"><a href="#关联矩阵incidence-matrix" class="headerlink" title="关联矩阵incidence matrix"></a>关联矩阵incidence matrix</h4><p><img src="http://img.blog.csdn.net/20171231113339967?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="incidence_matrix"></p>
@@ -663,7 +663,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">33</span>
+                  <span class="site-state-item-count">34</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -674,7 +674,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -685,7 +685,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -697,7 +697,7 @@
 				<h4 class="widget-title">Tag Cloud</h4>
 					<div id="myCanvasContainer" class="widget tagcloud">
 					<canvas width="250" height="250" id="resCanvas" style="width=100%">
-						<ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Data-Structure/">Data Structure</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Latex/">Latex</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning/">Machine Learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/english/">english</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linear-algebra/">linear_algebra</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/probability/">probability</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据结构/">数据结构</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/机器学习/">机器学习</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/概率论/">概率论</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/线性代数/">线性代数</a><span class="tag-list-count">12</span></li></ul>
+						<ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Data-Structure/">Data Structure</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Latex/">Latex</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Leaning/">Machine Leaning</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning/">Machine Learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/english/">english</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linear-algebra/">linear_algebra</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/probability/">probability</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据结构/">数据结构</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/机器学习/">机器学习</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/概率论/">概率论</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/线性代数/">线性代数</a><span class="tag-list-count">12</span></li></ul>
 					</canvas>
 				</div>
 			</div>
@@ -796,7 +796,7 @@
     
       <span class="post-meta-item-text">全站文章总字数</span>
     
-    <span title="全站文章总字数">50.8k</span>
+    <span title="全站文章总字数">54.4k</span>
   
 </div>
 

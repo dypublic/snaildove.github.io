@@ -98,18 +98,18 @@
 
 
 
-<meta name="description" content="功能接收用户的从终端输入程序或数据，并存入用户的数据区。由于用户在终端上输入难免出现差错，因此，若在行编辑程序中，“每接收一个字符即存入用户数据区”显然是不合理的。较好的做法，设立一个缓冲区，用以接收用户输入的每一行字符，然后逐行存入用户数据区。允许用户输入出错，并在发现有误时可以及时更正。例如，当用户发现刚刚键入的一个字符是错的时，补进一个退格符#，以表示前一个字符无效；如果发现当前键入的行内差">
+<meta name="description" content="功能接收用户的从终端输入程序或数据，并存入用户的数据区。由于用户在终端上输入难免出现差错，因此，若在行编辑程序中，“每接收一个字符即存入用户数据区”显然是不合理的。较好的做法，设立一个缓冲区，用以接收用户输入的每一行字符，然后逐行存入用户数据区。允许用户输入出错，并在发现有误时可以及时更正。例如，当用户发现刚刚键入的一个字符是错的时，补进一个退格符#，以表示前一个字符无效；如果发现当前键入的行内">
 <meta name="keywords" content="Data Structure,数据结构">
 <meta property="og:type" content="article">
 <meta property="og:title" content="行编辑器&#x2F;容错缓冲区-栈的基础应用2">
 <meta property="og:url" content="https://snaildove.github.io/2013/05/12/stack_application_on_line-editor_or_buff_zone/index.html">
 <meta property="og:site_name" content="SnailDove&#39;s blog">
-<meta property="og:description" content="功能接收用户的从终端输入程序或数据，并存入用户的数据区。由于用户在终端上输入难免出现差错，因此，若在行编辑程序中，“每接收一个字符即存入用户数据区”显然是不合理的。较好的做法，设立一个缓冲区，用以接收用户输入的每一行字符，然后逐行存入用户数据区。允许用户输入出错，并在发现有误时可以及时更正。例如，当用户发现刚刚键入的一个字符是错的时，补进一个退格符#，以表示前一个字符无效；如果发现当前键入的行内差">
+<meta property="og:description" content="功能接收用户的从终端输入程序或数据，并存入用户的数据区。由于用户在终端上输入难免出现差错，因此，若在行编辑程序中，“每接收一个字符即存入用户数据区”显然是不合理的。较好的做法，设立一个缓冲区，用以接收用户输入的每一行字符，然后逐行存入用户数据区。允许用户输入出错，并在发现有误时可以及时更正。例如，当用户发现刚刚键入的一个字符是错的时，补进一个退格符#，以表示前一个字符无效；如果发现当前键入的行内">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2018-03-14T09:23:31.425Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="行编辑器&#x2F;容错缓冲区-栈的基础应用2">
-<meta name="twitter:description" content="功能接收用户的从终端输入程序或数据，并存入用户的数据区。由于用户在终端上输入难免出现差错，因此，若在行编辑程序中，“每接收一个字符即存入用户数据区”显然是不合理的。较好的做法，设立一个缓冲区，用以接收用户输入的每一行字符，然后逐行存入用户数据区。允许用户输入出错，并在发现有误时可以及时更正。例如，当用户发现刚刚键入的一个字符是错的时，补进一个退格符#，以表示前一个字符无效；如果发现当前键入的行内差">
+<meta name="twitter:description" content="功能接收用户的从终端输入程序或数据，并存入用户的数据区。由于用户在终端上输入难免出现差错，因此，若在行编辑程序中，“每接收一个字符即存入用户数据区”显然是不合理的。较好的做法，设立一个缓冲区，用以接收用户输入的每一行字符，然后逐行存入用户数据区。允许用户输入出错，并在发现有误时可以及时更正。例如，当用户发现刚刚键入的一个字符是错的时，补进一个退格符#，以表示前一个字符无效；如果发现当前键入的行内">
 
 
 
@@ -443,7 +443,7 @@
       
 
       
-        <h2 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h2><p>接收用户的从终端输入程序或数据，并存入用户的数据区。由于用户在终端上输入难免出现差错，因此，若在行编辑程序中，“每接收一个字符即存入用户数据区”显然是不合理的。较好的做法，设立一个缓冲区，用以接收用户输入的每一行字符，然后逐行存入用户数据区。允许用户输入出错，并在发现有误时可以及时更正。例如，当用户发现刚刚键入的一个字符是错的时，补进一个退格符#，以表示前一个字符无效；如果发现当前键入的行内差错较多或难以补救，就可以键入一个退行符号@，以表示当前行中的字符均无效。</p>
+        <script src="/assets/js/APlayer.min.js"> </script><h2 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h2><p>接收用户的从终端输入程序或数据，并存入用户的数据区。由于用户在终端上输入难免出现差错，因此，若在行编辑程序中，“每接收一个字符即存入用户数据区”显然是不合理的。较好的做法，设立一个缓冲区，用以接收用户输入的每一行字符，然后逐行存入用户数据区。允许用户输入出错，并在发现有误时可以及时更正。例如，当用户发现刚刚键入的一个字符是错的时，补进一个退格符#，以表示前一个字符无效；如果发现当前键入的行内差错较多或难以补救，就可以键入一个退行符号@，以表示当前行中的字符均无效。</p>
 <h2 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h2><p>​         从终端接收这样两行字符：</p>
 <p>​                            whi##ilr#e(s#*s)</p>
 <p>​                                     outcha@putchar(*s#++)</p>
@@ -611,7 +611,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">33</span>
+                  <span class="site-state-item-count">34</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -622,7 +622,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -633,7 +633,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -645,7 +645,7 @@
 				<h4 class="widget-title">Tag Cloud</h4>
 					<div id="myCanvasContainer" class="widget tagcloud">
 					<canvas width="250" height="250" id="resCanvas" style="width=100%">
-						<ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Data-Structure/">Data Structure</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Latex/">Latex</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning/">Machine Learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/english/">english</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linear-algebra/">linear_algebra</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/probability/">probability</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据结构/">数据结构</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/机器学习/">机器学习</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/概率论/">概率论</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/线性代数/">线性代数</a><span class="tag-list-count">12</span></li></ul>
+						<ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Data-Structure/">Data Structure</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Latex/">Latex</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Leaning/">Machine Leaning</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning/">Machine Learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/english/">english</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linear-algebra/">linear_algebra</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/probability/">probability</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据结构/">数据结构</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/机器学习/">机器学习</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/概率论/">概率论</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/线性代数/">线性代数</a><span class="tag-list-count">12</span></li></ul>
 					</canvas>
 				</div>
 			</div>
@@ -744,7 +744,7 @@
     
       <span class="post-meta-item-text">全站文章总字数</span>
     
-    <span title="全站文章总字数">50.8k</span>
+    <span title="全站文章总字数">54.4k</span>
   
 </div>
 

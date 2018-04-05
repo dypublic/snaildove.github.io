@@ -98,18 +98,18 @@
 
 
 
-<meta name="description" content="前言我们很早就学到某个随机变量$X$的期望就是$X$的所有取值相对于它的概率的加权平均， 但是这是为什么呢？很多人都有疑问，后来看了MIT教授写的 Introduction to Probability, 2nd Edition 书，豁然开朗，以此小计一篇。 例子我们先以一个例子入手：假设你有机会转动一个幸运轮许多次，每次转动后幸运轮都会出现一个数字（数字即奖金数），不妨设为$m_i, i$表示第">
+<meta name="description" content="前言我们很早就学到某个随机变量$X$的期望就是$X$的所有取值相对于它的概率的加权平均， 但是这是为什么呢？很多人都有疑问，后来看了MIT教授写的 Introduction to Probability, 2nd Edition 书，豁然开朗，以此小计一篇。 例子我们先以一个例子入手：假设你有机会转动一个幸运轮许多次，每次转动后幸运轮都会出现一个数字（数字即奖金数），不妨设为$m_i, i$表示">
 <meta name="keywords" content="probability,概率论">
 <meta property="og:type" content="article">
 <meta property="og:title" content="期望定义的由来">
 <meta property="og:url" content="https://snaildove.github.io/2017/08/14/definition_of_expectation/index.html">
 <meta property="og:site_name" content="SnailDove&#39;s blog">
-<meta property="og:description" content="前言我们很早就学到某个随机变量$X$的期望就是$X$的所有取值相对于它的概率的加权平均， 但是这是为什么呢？很多人都有疑问，后来看了MIT教授写的 Introduction to Probability, 2nd Edition 书，豁然开朗，以此小计一篇。 例子我们先以一个例子入手：假设你有机会转动一个幸运轮许多次，每次转动后幸运轮都会出现一个数字（数字即奖金数），不妨设为$m_i, i$表示第">
+<meta property="og:description" content="前言我们很早就学到某个随机变量$X$的期望就是$X$的所有取值相对于它的概率的加权平均， 但是这是为什么呢？很多人都有疑问，后来看了MIT教授写的 Introduction to Probability, 2nd Edition 书，豁然开朗，以此小计一篇。 例子我们先以一个例子入手：假设你有机会转动一个幸运轮许多次，每次转动后幸运轮都会出现一个数字（数字即奖金数），不妨设为$m_i, i$表示">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2018-03-14T09:23:31.411Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="期望定义的由来">
-<meta name="twitter:description" content="前言我们很早就学到某个随机变量$X$的期望就是$X$的所有取值相对于它的概率的加权平均， 但是这是为什么呢？很多人都有疑问，后来看了MIT教授写的 Introduction to Probability, 2nd Edition 书，豁然开朗，以此小计一篇。 例子我们先以一个例子入手：假设你有机会转动一个幸运轮许多次，每次转动后幸运轮都会出现一个数字（数字即奖金数），不妨设为$m_i, i$表示第">
+<meta name="twitter:description" content="前言我们很早就学到某个随机变量$X$的期望就是$X$的所有取值相对于它的概率的加权平均， 但是这是为什么呢？很多人都有疑问，后来看了MIT教授写的 Introduction to Probability, 2nd Edition 书，豁然开朗，以此小计一篇。 例子我们先以一个例子入手：假设你有机会转动一个幸运轮许多次，每次转动后幸运轮都会出现一个数字（数字即奖金数），不妨设为$m_i, i$表示">
 
 
 
@@ -443,7 +443,7 @@
       
 
       
-        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>我们很早就学到某个随机变量$X$的期望就是$X$的所有取值相对于它的概率的加权平均， 但是这是为什么呢？很多人都有疑问，后来看了MIT教授写的 <a href="http://www.athenasc.com/probbook.html" target="_blank" rel="noopener">Introduction to Probability, 2nd Edition</a> 书，豁然开朗，以此小计一篇。</p>
+        <script src="/assets/js/APlayer.min.js"> </script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>我们很早就学到某个随机变量$X$的期望就是$X$的所有取值相对于它的概率的加权平均， 但是这是为什么呢？很多人都有疑问，后来看了MIT教授写的 <a href="http://www.athenasc.com/probbook.html" target="_blank" rel="noopener">Introduction to Probability, 2nd Edition</a> 书，豁然开朗，以此小计一篇。</p>
 <h2 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h2><p>我们先以一个例子入手：假设你有机会转动一个幸运轮许多次，每次转动后幸运轮都会出现一个数字（数字即奖金数），不妨设为$m_i, i$表示第$i$次转动幸运轮，而且这些数字出现的概率分别为$p_i$，那么每次你期望得到的奖金数是多少呢？此处“每次”和”期望“都是一些不确定的词汇，我们来一一明确它们的含义。</p>
 <p>假设一共转动幸运轮$k$次，而其中有$k_i$次转动的结果为$m_i$。你所得到的总钱数为：$\sum\limits_{i=1}^{n}m_i k_i$，那么每次转动的钱数为$M=\frac{\sum\limits_{i=1}^{n}{m_i k_i}}{k}$，现在假设$k$是一个很大的数字，那么我们可以假设概率与频率相互接近。即：</p>
 <p>$$\frac{k_i}{k}\approx p_i, i=1,\ldots,n$$</p>
@@ -616,7 +616,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">33</span>
+                  <span class="site-state-item-count">34</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -627,7 +627,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -638,7 +638,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -650,7 +650,7 @@
 				<h4 class="widget-title">Tag Cloud</h4>
 					<div id="myCanvasContainer" class="widget tagcloud">
 					<canvas width="250" height="250" id="resCanvas" style="width=100%">
-						<ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Data-Structure/">Data Structure</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Latex/">Latex</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning/">Machine Learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/english/">english</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linear-algebra/">linear_algebra</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/probability/">probability</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据结构/">数据结构</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/机器学习/">机器学习</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/概率论/">概率论</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/线性代数/">线性代数</a><span class="tag-list-count">12</span></li></ul>
+						<ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Data-Structure/">Data Structure</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Latex/">Latex</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Leaning/">Machine Leaning</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning/">Machine Learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/english/">english</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linear-algebra/">linear_algebra</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/probability/">probability</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据结构/">数据结构</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/机器学习/">机器学习</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/概率论/">概率论</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/线性代数/">线性代数</a><span class="tag-list-count">12</span></li></ul>
 					</canvas>
 				</div>
 			</div>
@@ -749,7 +749,7 @@
     
       <span class="post-meta-item-text">全站文章总字数</span>
     
-    <span title="全站文章总字数">50.8k</span>
+    <span title="全站文章总字数">54.4k</span>
   
 </div>
 

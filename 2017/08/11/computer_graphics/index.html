@@ -98,13 +98,13 @@
 
 
 
-<meta name="description" content="笔记源自：清华大学公开课：线性代数2——第11讲：计算机图像 引言熟悉的三维空间的基本变换是：平移(translation)，伸缩(rescaling)，旋转(rotation)，投影(projection)和反射(reflection)。现在一个问题：平移变换只对于点才有意义，因为平移变换会改变点的坐标，可是普通向量没有位置概念，只有大小和方向。那如何区分点和向量呢？这时候引入齐次坐标系(hom">
+<meta name="description" content="笔记源自：清华大学公开课：线性代数2——第11讲：计算机图像 引言熟悉的三维空间的基本变换是：平移(translation)，伸缩(rescaling)，旋转(rotation)，投影(projection)和反射(reflection)。现在一个问题：平移变换只对于点才有意义，因为平移变换会改变点的坐标，可是普通向量没有位置概念，只有大小和方向。那如何区分点和向量呢？这时候引入齐次坐标系(ho">
 <meta name="keywords" content="linear_algebra,线性代数">
 <meta property="og:type" content="article">
 <meta property="og:title" content="计算机图像">
 <meta property="og:url" content="https://snaildove.github.io/2017/08/11/computer_graphics/index.html">
 <meta property="og:site_name" content="SnailDove&#39;s blog">
-<meta property="og:description" content="笔记源自：清华大学公开课：线性代数2——第11讲：计算机图像 引言熟悉的三维空间的基本变换是：平移(translation)，伸缩(rescaling)，旋转(rotation)，投影(projection)和反射(reflection)。现在一个问题：平移变换只对于点才有意义，因为平移变换会改变点的坐标，可是普通向量没有位置概念，只有大小和方向。那如何区分点和向量呢？这时候引入齐次坐标系(hom">
+<meta property="og:description" content="笔记源自：清华大学公开课：线性代数2——第11讲：计算机图像 引言熟悉的三维空间的基本变换是：平移(translation)，伸缩(rescaling)，旋转(rotation)，投影(projection)和反射(reflection)。现在一个问题：平移变换只对于点才有意义，因为平移变换会改变点的坐标，可是普通向量没有位置概念，只有大小和方向。那如何区分点和向量呢？这时候引入齐次坐标系(ho">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://img.blog.csdn.net/20180102231717753?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="http://img.blog.csdn.net/20180102231747264?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
@@ -117,7 +117,7 @@
 <meta property="og:updated_time" content="2018-03-14T09:23:31.409Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="计算机图像">
-<meta name="twitter:description" content="笔记源自：清华大学公开课：线性代数2——第11讲：计算机图像 引言熟悉的三维空间的基本变换是：平移(translation)，伸缩(rescaling)，旋转(rotation)，投影(projection)和反射(reflection)。现在一个问题：平移变换只对于点才有意义，因为平移变换会改变点的坐标，可是普通向量没有位置概念，只有大小和方向。那如何区分点和向量呢？这时候引入齐次坐标系(hom">
+<meta name="twitter:description" content="笔记源自：清华大学公开课：线性代数2——第11讲：计算机图像 引言熟悉的三维空间的基本变换是：平移(translation)，伸缩(rescaling)，旋转(rotation)，投影(projection)和反射(reflection)。现在一个问题：平移变换只对于点才有意义，因为平移变换会改变点的坐标，可是普通向量没有位置概念，只有大小和方向。那如何区分点和向量呢？这时候引入齐次坐标系(ho">
 <meta name="twitter:image" content="http://img.blog.csdn.net/20180102231717753?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 
 
@@ -452,7 +452,7 @@
       
 
       
-        <p>笔记源自：清华大学公开课：线性代数2——第11讲：计算机图像</p>
+        <script src="/assets/js/APlayer.min.js"> </script><p>笔记源自：清华大学公开课：线性代数2——第11讲：计算机图像</p>
 <h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>熟悉的三维空间的基本变换是：平移(translation)，伸缩(rescaling)，旋转(rotation)，投影(projection)和反射(reflection)。现在一个问题：平移变换只对于点才有意义，因为平移变换会改变点的坐标，可是普通向量没有位置概念，只有大小和方向。那如何区分点和向量呢？这时候引入<strong>齐次坐标系(homogeneous coordinate system)</strong>。</p>
 <p>对于任意一个3维空间点$p$的坐标均是参照（相对于）基点（原点）的坐标，可以表示成$p=x\vec e_1+y\vec e_2+z\vec e_3+ O=x\begin{pmatrix}1\\0\\0\end{pmatrix}+y\begin{pmatrix}0\\1\\0\end{pmatrix}+z\begin{pmatrix}0\\0\\1\end{pmatrix}+\begin{pmatrix}0\\0\\0\end{pmatrix}$，然而$\vec{op}=x\vec e_1+y\vec e_2+z\vec e_3$ 是不参照任何东西的，为了在线性代数中统一表示和区分，把$p=\begin{pmatrix}1&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\\0&amp;0&amp;1&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix}\begin{pmatrix}x\\y\\z\\1\end{pmatrix}\quad \vec{op}=\begin{pmatrix}1&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\\0&amp;0&amp;1&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix}\begin{pmatrix}x\\y\\z\\0\end{pmatrix}$， 这时三维空间中的一个点的齐次坐标是$(x,y,z,1)$或$\begin{pmatrix}x\\y\\z\\1\end{pmatrix}$，一个向量的齐次坐标是$(x,y,z,0)$或$\begin{pmatrix}x\\y\\z\\0\end{pmatrix}$，所以平移变换就不是$R^3\rightarrow R^3$。</p>
 <p>定义 一个函数$f: R^n \rightarrow R^N $是一个<strong>刚体运动(rigid motion)</strong>，如果$\forall v,w\in R^n, ||f(v)-f(w)||=||v-w||$，即内部的各点间距离不变。定理 $R^3$上的刚体运动是平移，旋转和反射的合成。此时，$f(v)=Av+v_0$，其中$A$是三阶正交阵。三阶正交阵的分类：设$A$是一个三阶正交阵，则存在实可逆阵$P$，$P^{-1}AP=\begin{pmatrix}cos\theta&amp;-sin\theta&amp;0\\sin\theta&amp;cos\theta&amp;0\\0&amp;0&amp;\pm 1\end{pmatrix}=B$，其中$P=(\alpha_1, \alpha_2, \alpha_3)$，根据相似的性质：$|B|=\pm 1\rightarrow |A|=\pm 1$，$A$本身是一个正交阵，因此$A^TA=I_3$。</p>
@@ -628,7 +628,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">33</span>
+                  <span class="site-state-item-count">34</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -639,7 +639,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -650,7 +650,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -662,7 +662,7 @@
 				<h4 class="widget-title">Tag Cloud</h4>
 					<div id="myCanvasContainer" class="widget tagcloud">
 					<canvas width="250" height="250" id="resCanvas" style="width=100%">
-						<ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Data-Structure/">Data Structure</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Latex/">Latex</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning/">Machine Learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/english/">english</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linear-algebra/">linear_algebra</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/probability/">probability</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据结构/">数据结构</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/机器学习/">机器学习</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/概率论/">概率论</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/线性代数/">线性代数</a><span class="tag-list-count">12</span></li></ul>
+						<ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Data-Structure/">Data Structure</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Latex/">Latex</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Leaning/">Machine Leaning</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning/">Machine Learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/english/">english</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linear-algebra/">linear_algebra</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/probability/">probability</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据结构/">数据结构</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/机器学习/">机器学习</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/概率论/">概率论</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/线性代数/">线性代数</a><span class="tag-list-count">12</span></li></ul>
 					</canvas>
 				</div>
 			</div>
@@ -761,7 +761,7 @@
     
       <span class="post-meta-item-text">全站文章总字数</span>
     
-    <span title="全站文章总字数">50.8k</span>
+    <span title="全站文章总字数">54.4k</span>
   
 </div>
 

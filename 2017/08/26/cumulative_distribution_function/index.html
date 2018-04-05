@@ -447,7 +447,7 @@
       
 
       
-        <p>说明：全文摘自 <a href="http://www.athenasc.com/probbook.html" target="_blank" rel="noopener">Introduction to probability, 2nd Edition</a></p>
+        <script src="/assets/js/APlayer.min.js"> </script><p>说明：全文摘自 <a href="http://www.athenasc.com/probbook.html" target="_blank" rel="noopener">Introduction to probability, 2nd Edition</a></p>
 <h2 id="分布函数"><a href="#分布函数" class="headerlink" title="分布函数"></a>分布函数</h2><p>我们分别用概率质量函数 PMF(Probability Mass Function) 和概率密度函数 PDF(Probability Density Function) 来刻画随机变量 $X$ 的取值规律。现在<strong>希望用一个统一的数学工具去刻画随机变量的取值规律</strong>。  </p>
 <p>​<strong>分布函数</strong>（用记号 CDF 表示简称）就能完成这个任务。 $X$ 的 CDF 是一个 $x$ 的函数，对每一个 $x$ ，$F_X(x)$ 定义为 $P(X\le x)$ 。特别地，当 $X$ 为离散或连续的情况下：<br>$$<br>F_X(x)=P(X\le x)=\cases{\sum\limits_{k\le x}p_X(k), \text{若 $X$ 是离散的}\\\int_{-\infty}^{x}f_X(x)dt, \text{若 $X$ 是连续的 }}<br>$$<br><strong>分布函数又称为累积分布函数（cumulative distribution function）</strong>，累积意味着 $F_X(x)$ 将 $X$ 取值的概率由 $-\infty\rightarrow x$。 </p>
 <p>在一个概率模型中，随机变量可以有不同的类型，可以是离散的，也可以是连续的，甚至可以是既非离散的也非连续的。但不管是什么类型的随机变量，它们有一个共同的特征，即都有一个分布函数，这是因为 $\{X\le x\}$ 是一个随机事件，这些事件的概率形成概率分布。今后，凡是通过 PMF\PDF\CDF刻画事件 $\{X\le x\}$ 概率的，都称为<strong>随机变量 $X$ 的概率律</strong>。因此离散情况下的分布列，连续情况下的概率密度函数以及一般情况下的分布函数都是相应的随机变量的概率律。</p>
@@ -552,8 +552,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/08/25/mean_and_variance_of_sample_and_estimating_probability_by_simulation/" rel="next" title="经典摘录-样本均值的期望方差与模拟的方法估计概率">
-                <i class="fa fa-chevron-left"></i> 经典摘录-样本均值的期望方差与模拟的方法估计概率
+              <a href="/2017/08/25/exponential_random_variables/" rel="next" title="经典摘录-指数型随机变量的均值和方差">
+                <i class="fa fa-chevron-left"></i> 经典摘录-指数型随机变量的均值和方差
               </a>
             
           </div>
@@ -650,7 +650,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">33</span>
+                  <span class="site-state-item-count">34</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -661,7 +661,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -672,7 +672,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -684,7 +684,7 @@
 				<h4 class="widget-title">Tag Cloud</h4>
 					<div id="myCanvasContainer" class="widget tagcloud">
 					<canvas width="250" height="250" id="resCanvas" style="width=100%">
-						<ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Data-Structure/">Data Structure</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Latex/">Latex</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning/">Machine Learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/english/">english</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linear-algebra/">linear_algebra</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/probability/">probability</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据结构/">数据结构</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/机器学习/">机器学习</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/概率论/">概率论</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/线性代数/">线性代数</a><span class="tag-list-count">12</span></li></ul>
+						<ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Data-Structure/">Data Structure</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Latex/">Latex</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Leaning/">Machine Leaning</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning/">Machine Learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/english/">english</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linear-algebra/">linear_algebra</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/probability/">probability</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据结构/">数据结构</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/机器学习/">机器学习</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/概率论/">概率论</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/线性代数/">线性代数</a><span class="tag-list-count">12</span></li></ul>
 					</canvas>
 				</div>
 			</div>
@@ -783,7 +783,7 @@
     
       <span class="post-meta-item-text">全站文章总字数</span>
     
-    <span title="全站文章总字数">50.8k</span>
+    <span title="全站文章总字数">54.4k</span>
   
 </div>
 

@@ -98,20 +98,20 @@
 
 
 
-<meta name="description" content="说明：全文摘自Introduction to probability, 2nd Edition  本文讨论条件概率定律的应用，首先引入一个计算事件概率的定理。 The law of total probability设 $A_1, A_2, … , A_n$ 是一组互不相容的事件，它形成样本空间的一个分割（每个试验结果必定使得其中一个事件发生！）。又假定对每个 $i, P(A_i) &amp;gt; 0$">
+<meta name="description" content="说明：全文摘自Introduction to probability, 2nd Edition  本文讨论条件概率定律的应用，首先引入一个计算事件概率的定理。 The law of total probability设 $A_1, A_2, … , A_n$ 是一组互不相容的事件，它形成样本空间的一个分割（每个试验结果必定使得其中一个事件发生！）。又假定对每个 $i, P(A_i) &amp;gt; 0">
 <meta name="keywords" content="probability,概率论">
 <meta property="og:type" content="article">
 <meta property="og:title" content="经典摘录-Bayes&#39; rule贝叶斯定律">
 <meta property="og:url" content="https://snaildove.github.io/2017/08/28/Bayes'_rule/index.html">
 <meta property="og:site_name" content="SnailDove&#39;s blog">
-<meta property="og:description" content="说明：全文摘自Introduction to probability, 2nd Edition  本文讨论条件概率定律的应用，首先引入一个计算事件概率的定理。 The law of total probability设 $A_1, A_2, … , A_n$ 是一组互不相容的事件，它形成样本空间的一个分割（每个试验结果必定使得其中一个事件发生！）。又假定对每个 $i, P(A_i) &amp;gt; 0$">
+<meta property="og:description" content="说明：全文摘自Introduction to probability, 2nd Edition  本文讨论条件概率定律的应用，首先引入一个计算事件概率的定理。 The law of total probability设 $A_1, A_2, … , A_n$ 是一组互不相容的事件，它形成样本空间的一个分割（每个试验结果必定使得其中一个事件发生！）。又假定对每个 $i, P(A_i) &amp;gt; 0">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://img.blog.csdn.net/20180301153607785?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
 <meta property="og:image" content="http://img.blog.csdn.net/20180301153651988?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
 <meta property="og:updated_time" content="2018-03-25T13:17:05.699Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="经典摘录-Bayes&#39; rule贝叶斯定律">
-<meta name="twitter:description" content="说明：全文摘自Introduction to probability, 2nd Edition  本文讨论条件概率定律的应用，首先引入一个计算事件概率的定理。 The law of total probability设 $A_1, A_2, … , A_n$ 是一组互不相容的事件，它形成样本空间的一个分割（每个试验结果必定使得其中一个事件发生！）。又假定对每个 $i, P(A_i) &amp;gt; 0$">
+<meta name="twitter:description" content="说明：全文摘自Introduction to probability, 2nd Edition  本文讨论条件概率定律的应用，首先引入一个计算事件概率的定理。 The law of total probability设 $A_1, A_2, … , A_n$ 是一组互不相容的事件，它形成样本空间的一个分割（每个试验结果必定使得其中一个事件发生！）。又假定对每个 $i, P(A_i) &amp;gt; 0">
 <meta name="twitter:image" content="http://img.blog.csdn.net/20180301153607785?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
 
 
@@ -450,7 +450,7 @@
       
 
       
-        <p>说明：全文摘自<a href="http://www.athenasc.com/probbook.html" target="_blank" rel="noopener">Introduction to probability, 2nd Edition</a> </p>
+        <script src="/assets/js/APlayer.min.js"> </script><p>说明：全文摘自<a href="http://www.athenasc.com/probbook.html" target="_blank" rel="noopener">Introduction to probability, 2nd Edition</a> </p>
 <p>本文讨论条件概率定律的应用，首先引入一个计算事件概率的定理。</p>
 <h2 id="The-law-of-total-probability"><a href="#The-law-of-total-probability" class="headerlink" title="The law of total probability"></a>The law of total probability</h2><p>设 $A_1, A_2, … , A_n$ 是一组互不相容的事件，它形成样本空间的一个分割（每个试验结果必定使得其中一个事件发生！）。又假定对每个 $i, P(A_i) &gt; 0$ 。则对任何事件 $B$ ，下列公式成立<br>$$<br>\begin{eqnarray}<br>P(B) &amp;=&amp; P(A_1\cap B )+\cdots+P(A_n\cap B) \\<br>&amp;=&amp; P(A_1)P(B|A_1)+\cdots+P(B)P(B|A_n)<br>\end{eqnarray}<br>$$<br>这是<strong>总概率定律（或翻译为：全概率定律），</strong>下面有图示和证明。直观上，将样本空间分割成若干事件 $A_i$ 的并（ $A_1, \cdots, A_n$ 形成样本空间的一个分割）然后任意事件 $B$ 的概率等于事件 $B$ 在 $A_i$ 发生的情况下的条件概率的加权平均，而权重刚好等于这些事件 $A_i$ 的无条件概率。这条定理的一个主要应用是计算事件 $B$ 的概率。直接计算事件 $B$ 的概率有点难度，但是若条件概率 $P(B|A_i)$ 是已知的或是很容易推导计算时，总概率定律定理就成为了计算 $P(B)$ 的有力工具。应用这条定理的关键是找到合适的分割 $A_1,\cdots, A_n$ ，而合适的分割又与问题的实际背景有关。</p>
 <p><img src="http://img.blog.csdn.net/20180301153607785?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="Figure_1.13_visualization_and_verification_of_the_total_probability_theorem.png"></p>
@@ -561,8 +561,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/08/27/normal_random_variables/" rel="next" title="经典摘录-正态随机变量">
-                <i class="fa fa-chevron-left"></i> 经典摘录-正态随机变量
+              <a href="/2017/08/28/mean_and_variance_of_Bernoulli_and_Possion_random/" rel="next" title="经典摘录 - 伯努利和泊松随机变量的均值方差">
+                <i class="fa fa-chevron-left"></i> 经典摘录 - 伯努利和泊松随机变量的均值方差
               </a>
             
           </div>
@@ -571,8 +571,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/08/28/mean_and_variance_of_Bernoulli_and_Possion_random/" rel="prev" title="经典摘录 - 伯努利和泊松随机变量的均值方差">
-                经典摘录 - 伯努利和泊松随机变量的均值方差 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/01/01/what-is-machine-learning/" rel="prev" title="Note1:introduction">
+                Note1:introduction <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -659,7 +659,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">33</span>
+                  <span class="site-state-item-count">34</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -670,7 +670,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -681,7 +681,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -693,7 +693,7 @@
 				<h4 class="widget-title">Tag Cloud</h4>
 					<div id="myCanvasContainer" class="widget tagcloud">
 					<canvas width="250" height="250" id="resCanvas" style="width=100%">
-						<ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Data-Structure/">Data Structure</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Latex/">Latex</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning/">Machine Learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/english/">english</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linear-algebra/">linear_algebra</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/probability/">probability</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据结构/">数据结构</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/机器学习/">机器学习</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/概率论/">概率论</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/线性代数/">线性代数</a><span class="tag-list-count">12</span></li></ul>
+						<ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Data-Structure/">Data Structure</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Latex/">Latex</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Leaning/">Machine Leaning</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning/">Machine Learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/english/">english</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linear-algebra/">linear_algebra</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/probability/">probability</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据结构/">数据结构</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/机器学习/">机器学习</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/概率论/">概率论</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/线性代数/">线性代数</a><span class="tag-list-count">12</span></li></ul>
 					</canvas>
 				</div>
 			</div>
@@ -792,7 +792,7 @@
     
       <span class="post-meta-item-text">全站文章总字数</span>
     
-    <span title="全站文章总字数">50.8k</span>
+    <span title="全站文章总字数">54.4k</span>
   
 </div>
 

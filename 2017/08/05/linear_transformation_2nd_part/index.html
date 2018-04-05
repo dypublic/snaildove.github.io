@@ -98,13 +98,13 @@
 
 
 
-<meta name="description" content="笔记源自：清华大学公开课：线性代数2——第五讲：线性变换2 前言对于给定的线性变换选取适当的基底使得其矩阵表示尽可能简单，我们引入了线性变换的矩阵表示对于从$n$维的向量空间$V$到$m$维的向量空间$W$的线性变换$\sigma$，我们取定$V$的一组基$v_1$到$v_n$取定W的一组基$w_1$到$w_m$，那线性变换$σ$作用在$v_1$到$v_n$上可以被$w_1,…,w_m$线性表示，">
+<meta name="description" content="笔记源自：清华大学公开课：线性代数2——第五讲：线性变换2 前言对于给定的线性变换选取适当的基底使得其矩阵表示尽可能简单，我们引入了线性变换的矩阵表示对于从$n$维的向量空间$V$到$m$维的向量空间$W$的线性变换$\sigma$，我们取定$V$的一组基$v_1$到$v_n$取定W的一组基$w_1$到$w_m$，那线性变换$σ$作用在$v_1$到$v_n$上可以被$w_1,…,w_m$线性表示">
 <meta name="keywords" content="linear_algebra,线性代数">
 <meta property="og:type" content="article">
 <meta property="og:title" content="线性变换2">
 <meta property="og:url" content="https://snaildove.github.io/2017/08/05/linear_transformation_2nd_part/index.html">
 <meta property="og:site_name" content="SnailDove&#39;s blog">
-<meta property="og:description" content="笔记源自：清华大学公开课：线性代数2——第五讲：线性变换2 前言对于给定的线性变换选取适当的基底使得其矩阵表示尽可能简单，我们引入了线性变换的矩阵表示对于从$n$维的向量空间$V$到$m$维的向量空间$W$的线性变换$\sigma$，我们取定$V$的一组基$v_1$到$v_n$取定W的一组基$w_1$到$w_m$，那线性变换$σ$作用在$v_1$到$v_n$上可以被$w_1,…,w_m$线性表示，">
+<meta property="og:description" content="笔记源自：清华大学公开课：线性代数2——第五讲：线性变换2 前言对于给定的线性变换选取适当的基底使得其矩阵表示尽可能简单，我们引入了线性变换的矩阵表示对于从$n$维的向量空间$V$到$m$维的向量空间$W$的线性变换$\sigma$，我们取定$V$的一组基$v_1$到$v_n$取定W的一组基$w_1$到$w_m$，那线性变换$σ$作用在$v_1$到$v_n$上可以被$w_1,…,w_m$线性表示">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://img.blog.csdn.net/20171220232535941?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="http://img.blog.csdn.net/20171220232605933?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
@@ -131,7 +131,7 @@
 <meta property="og:updated_time" content="2018-03-14T09:23:31.414Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="线性变换2">
-<meta name="twitter:description" content="笔记源自：清华大学公开课：线性代数2——第五讲：线性变换2 前言对于给定的线性变换选取适当的基底使得其矩阵表示尽可能简单，我们引入了线性变换的矩阵表示对于从$n$维的向量空间$V$到$m$维的向量空间$W$的线性变换$\sigma$，我们取定$V$的一组基$v_1$到$v_n$取定W的一组基$w_1$到$w_m$，那线性变换$σ$作用在$v_1$到$v_n$上可以被$w_1,…,w_m$线性表示，">
+<meta name="twitter:description" content="笔记源自：清华大学公开课：线性代数2——第五讲：线性变换2 前言对于给定的线性变换选取适当的基底使得其矩阵表示尽可能简单，我们引入了线性变换的矩阵表示对于从$n$维的向量空间$V$到$m$维的向量空间$W$的线性变换$\sigma$，我们取定$V$的一组基$v_1$到$v_n$取定W的一组基$w_1$到$w_m$，那线性变换$σ$作用在$v_1$到$v_n$上可以被$w_1,…,w_m$线性表示">
 <meta name="twitter:image" content="http://img.blog.csdn.net/20171220232535941?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 
 
@@ -466,7 +466,7 @@
       
 
       
-        <p>笔记源自：清华大学公开课：线性代数2——第五讲：线性变换2</p>
+        <script src="/assets/js/APlayer.min.js"> </script><p>笔记源自：清华大学公开课：线性代数2——第五讲：线性变换2</p>
 <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>对于给定的线性变换选取适当的基底使得其矩阵表示尽可能简单，我们引入了线性变换的矩阵表示<br>对于从$n$维的向量空间$V$到$m$维的向量空间$W$的线性变换$\sigma$，我们取定$V$的一组基$v_1$到$v_n$取定W的一组基$w_1$到$w_m$，那线性变换$σ$作用在$v_1$到$v_n$上可以被$w_1,…,w_m$线性表示，表示的系数我们被一个$m×n$的矩阵$A$去描述，那么这样线性变换$σ$就跟这个$m×n$的矩阵$A$一一对应。线性变换的矩阵表示要依赖于我们基底的选取，一般说来如果基做了改变，同一个线性变换它会有不同的矩阵表示，那我们希望找出线性变换与基底选取无关的性质，这样当我们借助矩阵来研究线性变换的这些性质的时候就可以利用好基底下面尽可能简单的矩阵表示。</p>
 <h2 id="恒等变换与基变换"><a href="#恒等变换与基变换" class="headerlink" title="恒等变换与基变换"></a>恒等变换与基变换</h2><p>恒等变换就是不变，那么不变的线性变换对应单位矩阵。</p>
 <p><img src="http://img.blog.csdn.net/20171220232535941?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="identical_linear_transformation"> </p>
@@ -670,7 +670,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">33</span>
+                  <span class="site-state-item-count">34</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -681,7 +681,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -692,7 +692,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -704,7 +704,7 @@
 				<h4 class="widget-title">Tag Cloud</h4>
 					<div id="myCanvasContainer" class="widget tagcloud">
 					<canvas width="250" height="250" id="resCanvas" style="width=100%">
-						<ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Data-Structure/">Data Structure</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Latex/">Latex</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning/">Machine Learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/english/">english</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linear-algebra/">linear_algebra</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/probability/">probability</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据结构/">数据结构</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/机器学习/">机器学习</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/概率论/">概率论</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/线性代数/">线性代数</a><span class="tag-list-count">12</span></li></ul>
+						<ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Data-Structure/">Data Structure</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Latex/">Latex</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Leaning/">Machine Leaning</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning/">Machine Learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/english/">english</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linear-algebra/">linear_algebra</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/probability/">probability</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据结构/">数据结构</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/机器学习/">机器学习</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/概率论/">概率论</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/线性代数/">线性代数</a><span class="tag-list-count">12</span></li></ul>
 					</canvas>
 				</div>
 			</div>
@@ -803,7 +803,7 @@
     
       <span class="post-meta-item-text">全站文章总字数</span>
     
-    <span title="全站文章总字数">50.8k</span>
+    <span title="全站文章总字数">54.4k</span>
   
 </div>
 
