@@ -5,10 +5,10 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/01/01/what-is-machine-learning/</loc>
-    <lastmod>2018-04-05T10:37:06.331Z</lastmod>
+    <lastmod>2018-04-05T10:40:44.645Z</lastmod>
     <data>
         <display>
-        <title>Note1:introduction</title>
+        <title>Note1 introduction</title>
         <pubTime>2017-12-31T16:00:00.000Z</pubTime>
         
         <tag>Machine Leaning</tag>
@@ -569,12 +569,12 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2017/08/08/graph_and_network/</loc>
+    <loc>https://snaildove.github.io/2017/08/07/engineering_matrices/</loc>
     <lastmod>2018-03-14T09:23:31.412Z</lastmod>
     <data>
         <display>
-        <title>图和网络</title>
-        <pubTime>2017-08-08T12:16:00.000Z</pubTime>
+        <title>工程中的矩阵</title>
+        <pubTime>2017-08-07T12:16:00.000Z</pubTime>
         
         <tag>linear_algebra</tag>
          
@@ -591,12 +591,12 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2017/08/07/engineering_matrices/</loc>
+    <loc>https://snaildove.github.io/2017/08/08/graph_and_network/</loc>
     <lastmod>2018-03-14T09:23:31.412Z</lastmod>
     <data>
         <display>
-        <title>工程中的矩阵</title>
-        <pubTime>2017-08-07T12:16:00.000Z</pubTime>
+        <title>图和网络</title>
+        <pubTime>2017-08-08T12:16:00.000Z</pubTime>
         
         <tag>linear_algebra</tag>
          
