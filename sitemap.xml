@@ -2,9 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://snaildove.github.io/2018/01/01/what-is-machine-learning/</loc>
+    <loc>https://snaildove.github.io/2018/01/01/05_octave-matlab-tutorial/</loc>
     
-    <lastmod>2018-04-05T10:40:44.645Z</lastmod>
+    <lastmod>2018-04-11T10:49:21.032Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2018/01/01/04_linear-regression-with-multiple-variables/</loc>
+    
+    <lastmod>2018-04-11T10:48:19.078Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2018/01/01/03-linear-algebra-review/</loc>
+    
+    <lastmod>2018-04-11T10:33:49.021Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2018/01/01/01-what-is-machine-learning/</loc>
+    
+    <lastmod>2018-04-11T10:32:59.660Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2018/01/01/02-linear-regression-with-one-variable/</loc>
+    
+    <lastmod>2018-04-11T10:14:46.821Z</lastmod>
     
   </url>
   
@@ -114,14 +142,14 @@
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2013/05/13/stack_application_on_expression-resolution-with-braces/</loc>
+    <loc>https://snaildove.github.io/2013/05/12/stack_application_on_line-editor_or_buff_zone/</loc>
     
     <lastmod>2018-03-14T09:23:31.425Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2013/05/12/stack_application_on_line-editor_or_buff_zone/</loc>
+    <loc>https://snaildove.github.io/2013/05/13/stack_application_on_expression-resolution-with-braces/</loc>
     
     <lastmod>2018-03-14T09:23:31.425Z</lastmod>
     
@@ -184,14 +212,14 @@
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2017/08/05/linear_transformation_2nd_part/</loc>
+    <loc>https://snaildove.github.io/2014/06/01/longest_common_sub-sequence/</loc>
     
     <lastmod>2018-03-14T09:23:31.414Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2014/06/01/longest_common_sub-sequence/</loc>
+    <loc>https://snaildove.github.io/2017/08/05/linear_transformation_2nd_part/</loc>
     
     <lastmod>2018-03-14T09:23:31.414Z</lastmod>
     
