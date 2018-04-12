@@ -4,8 +4,50 @@
 
     
   <url>
+    <loc>https://snaildove.github.io/2017/08/06/pseudo_inverse/</loc>
+    <lastmod>2018-04-12T17:19:40.428Z</lastmod>
+    <data>
+        <display>
+        <title>伪逆(广义逆)pseudo inverse</title>
+        <pubTime>2017-08-06T12:30:00.000Z</pubTime>
+        
+        <tag>linear_algebra</tag>
+         
+        <tag>线性代数</tag>
+         
+         
+           
+             
+              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2018/01/01/02-linear-regression-with-one-variable/</loc>
+    <lastmod>2018-04-12T13:54:33.602Z</lastmod>
+    <data>
+        <display>
+        <title>02_linear-regression-with-one-variable note2</title>
+        <pubTime>2017-12-31T16:00:00.000Z</pubTime>
+        
+        <tag>Machine Learning by Andrew NG</tag>
+         
+         
+           
+             
+              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://snaildove.github.io/2018/01/01/05_octave-matlab-tutorial/</loc>
-    <lastmod>2018-04-12T09:44:40.975Z</lastmod>
+    <lastmod>2018-04-12T12:16:57.552Z</lastmod>
     <data>
         <display>
         <title>05_octave-matlab-tutorial note5</title>
@@ -77,26 +119,6 @@
            
              
               <breadCrumb title="英文" url="https://snaildove.github.io/categories/%E8%8B%B1%E6%96%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://snaildove.github.io/2018/01/01/02-linear-regression-with-one-variable/</loc>
-    <lastmod>2018-04-11T10:14:46.821Z</lastmod>
-    <data>
-        <display>
-        <title>02_linear-regression-with-one-variable note2</title>
-        <pubTime>2017-12-31T16:00:00.000Z</pubTime>
-        
-        <tag>Machine Learning by Andrew NG</tag>
-         
-         
-           
-             
-              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
           
         </display>
     </data>
@@ -363,28 +385,6 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2013/05/12/stack_application_on_line-editor_or_buff_zone/</loc>
-    <lastmod>2018-03-14T09:23:31.425Z</lastmod>
-    <data>
-        <display>
-        <title>行编辑器/容错缓冲区-栈的基础应用2</title>
-        <pubTime>2013-05-12T14:16:00.000Z</pubTime>
-        
-        <tag>Data Structure</tag>
-         
-        <tag>数据结构</tag>
-         
-         
-           
-             
-              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://snaildove.github.io/2013/05/13/stack_application_on_expression-resolution-with-braces/</loc>
     <lastmod>2018-03-14T09:23:31.425Z</lastmod>
     <data>
@@ -407,16 +407,16 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2017/08/03/singular_values_decomposition/</loc>
-    <lastmod>2018-03-14T09:23:31.424Z</lastmod>
+    <loc>https://snaildove.github.io/2013/05/12/stack_application_on_line-editor_or_buff_zone/</loc>
+    <lastmod>2018-03-14T09:23:31.425Z</lastmod>
     <data>
         <display>
-        <title>奇异值分解singular values decomposition</title>
-        <pubTime>2017-08-03T12:16:00.000Z</pubTime>
+        <title>行编辑器/容错缓冲区-栈的基础应用2</title>
+        <pubTime>2013-05-12T14:16:00.000Z</pubTime>
         
-        <tag>linear_algebra</tag>
+        <tag>Data Structure</tag>
          
-        <tag>线性代数</tag>
+        <tag>数据结构</tag>
          
          
            
@@ -429,12 +429,12 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2017/08/06/pseudo_inverse/</loc>
-    <lastmod>2018-03-14T09:23:31.423Z</lastmod>
+    <loc>https://snaildove.github.io/2017/08/03/singular_values_decomposition/</loc>
+    <lastmod>2018-03-14T09:23:31.424Z</lastmod>
     <data>
         <display>
-        <title>伪逆(广义逆)pseudo inverse</title>
-        <pubTime>2017-08-06T12:30:00.000Z</pubTime>
+        <title>奇异值分解singular values decomposition</title>
+        <pubTime>2017-08-03T12:16:00.000Z</pubTime>
         
         <tag>linear_algebra</tag>
          
@@ -649,12 +649,12 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2017/08/08/graph_and_network/</loc>
+    <loc>https://snaildove.github.io/2017/08/07/engineering_matrices/</loc>
     <lastmod>2018-03-14T09:23:31.412Z</lastmod>
     <data>
         <display>
-        <title>图和网络</title>
-        <pubTime>2017-08-08T12:16:00.000Z</pubTime>
+        <title>工程中的矩阵</title>
+        <pubTime>2017-08-07T12:16:00.000Z</pubTime>
         
         <tag>linear_algebra</tag>
          
@@ -671,12 +671,12 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2017/08/07/engineering_matrices/</loc>
+    <loc>https://snaildove.github.io/2017/08/08/graph_and_network/</loc>
     <lastmod>2018-03-14T09:23:31.412Z</lastmod>
     <data>
         <display>
-        <title>工程中的矩阵</title>
-        <pubTime>2017-08-07T12:16:00.000Z</pubTime>
+        <title>图和网络</title>
+        <pubTime>2017-08-08T12:16:00.000Z</pubTime>
         
         <tag>linear_algebra</tag>
          

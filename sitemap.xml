@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://snaildove.github.io/2017/08/06/pseudo_inverse/</loc>
+    
+    <lastmod>2018-04-12T17:19:40.428Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2018/01/01/02-linear-regression-with-one-variable/</loc>
+    
+    <lastmod>2018-04-12T13:54:33.602Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://snaildove.github.io/2018/01/01/05_octave-matlab-tutorial/</loc>
     
-    <lastmod>2018-04-12T09:44:40.975Z</lastmod>
+    <lastmod>2018-04-12T12:16:57.552Z</lastmod>
     
   </url>
   
@@ -26,13 +40,6 @@
     <loc>https://snaildove.github.io/2018/01/01/01-what-is-machine-learning/</loc>
     
     <lastmod>2018-04-11T10:32:59.660Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2018/01/01/02-linear-regression-with-one-variable/</loc>
-    
-    <lastmod>2018-04-11T10:14:46.821Z</lastmod>
     
   </url>
   
@@ -163,13 +170,6 @@
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2017/08/06/pseudo_inverse/</loc>
-    
-    <lastmod>2018-03-14T09:23:31.423Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://snaildove.github.io/2017/08/01/positive_definite_matrix/</loc>
     
     <lastmod>2018-03-14T09:23:31.422Z</lastmod>
@@ -233,14 +233,14 @@
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2017/08/08/graph_and_network/</loc>
+    <loc>https://snaildove.github.io/2017/08/07/engineering_matrices/</loc>
     
     <lastmod>2018-03-14T09:23:31.412Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2017/08/07/engineering_matrices/</loc>
+    <loc>https://snaildove.github.io/2017/08/08/graph_and_network/</loc>
     
     <lastmod>2018-03-14T09:23:31.412Z</lastmod>
     
@@ -254,14 +254,14 @@
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2015/05/01/decision_tree/</loc>
+    <loc>https://snaildove.github.io/2017/08/26/cumulative_distribution_function/</loc>
     
     <lastmod>2018-03-14T09:23:31.410Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2017/08/26/cumulative_distribution_function/</loc>
+    <loc>https://snaildove.github.io/2015/05/01/decision_tree/</loc>
     
     <lastmod>2018-03-14T09:23:31.410Z</lastmod>
     
