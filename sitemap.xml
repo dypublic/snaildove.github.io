@@ -2,30 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://snaildove.github.io/2017/08/06/pseudo_inverse/</loc>
+    <loc>https://snaildove.github.io/2018/01/01/04_linear-regression-with-multiple-variables/</loc>
     
-    <lastmod>2018-04-12T17:19:40.428Z</lastmod>
+    <lastmod>2018-04-17T13:27:05.097Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2018/01/01/02-linear-regression-with-one-variable/</loc>
+    <loc>https://snaildove.github.io/2017/08/20/LaTeX_symbols/</loc>
     
-    <lastmod>2018-04-12T13:54:33.602Z</lastmod>
+    <lastmod>2018-04-17T13:24:07.046Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://snaildove.github.io/2018/01/01/05_octave-matlab-tutorial/</loc>
     
-    <lastmod>2018-04-12T12:16:57.552Z</lastmod>
+    <lastmod>2018-04-14T04:11:38.553Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2018/01/01/04_linear-regression-with-multiple-variables/</loc>
+    <loc>https://snaildove.github.io/2018/01/01/02-linear-regression-with-one-variable/</loc>
     
-    <lastmod>2018-04-11T10:48:19.078Z</lastmod>
+    <lastmod>2018-04-12T17:21:18.261Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2017/08/06/pseudo_inverse/</loc>
+    
+    <lastmod>2018-04-12T17:19:40.428Z</lastmod>
     
   </url>
   
@@ -54,13 +61,6 @@
     <loc>https://snaildove.github.io/2017/08/25/exponential_random_variables/</loc>
     
     <lastmod>2018-04-02T05:13:18.654Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2017/08/20/LaTeX_symbols/</loc>
-    
-    <lastmod>2018-03-31T19:32:21.196Z</lastmod>
     
   </url>
   
@@ -254,14 +254,14 @@
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2017/08/26/cumulative_distribution_function/</loc>
+    <loc>https://snaildove.github.io/2015/05/01/decision_tree/</loc>
     
     <lastmod>2018-03-14T09:23:31.410Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2015/05/01/decision_tree/</loc>
+    <loc>https://snaildove.github.io/2017/08/26/cumulative_distribution_function/</loc>
     
     <lastmod>2018-03-14T09:23:31.410Z</lastmod>
     

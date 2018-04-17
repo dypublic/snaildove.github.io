@@ -114,7 +114,7 @@
 <meta property="og:image" content="https://img-blog.csdn.net/20180411184023749?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3lvdTEzMTQ1MjBtZQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
 <meta property="og:image" content="https://img-blog.csdn.net/201804111840488?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3lvdTEzMTQ1MjBtZQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
 <meta property="og:image" content="https://img-blog.csdn.net/20180411184105767?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3lvdTEzMTQ1MjBtZQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
-<meta property="og:updated_time" content="2018-04-11T10:48:19.078Z">
+<meta property="og:updated_time" content="2018-04-17T13:27:05.097Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="04_linear-regression-with-multiple-variables note4">
 <meta name="twitter:description" content="Multiple FeaturesNote:    [7:25 - $θ^T$ is a 1 by (n+1) matrix and not an (n+1) by 1 matrix]  Linear regression with multiple variables is also known as “multivariate linear regression”.  We now intr">
@@ -458,10 +458,36 @@
       
         <script src="/assets/js/APlayer.min.js"> </script><h2 id="Multiple-Features"><a href="#Multiple-Features" class="headerlink" title="Multiple Features"></a>Multiple Features</h2><p><strong>Note:</strong>    [7:25 - $θ^T$ is a 1 by (n+1) matrix and not an (n+1) by 1 matrix] </p>
 <p>Linear regression with multiple variables is also known as “multivariate linear regression”. </p>
-<p>We now introduce notation for equations where we can have any number of input variables.<br>$$<br>\begin{align<em>}x_j^{(i)} &amp;= \text{value of feature } j \text{ in the }i^{th}\text{ training example} \\ x^{(i)}&amp; = \text{the input (features) of the }i^{th}\text{ training example} \\ m &amp;= \text{the number of training examples} \\ n &amp;= \text{the number of features} \end{align</em>}<br>$$<br>The multivariable form of the hypothesis function accommodating these multiple features is as follows:<br>$$<br>h_\theta (x) = \theta_0 + \theta_1 x_1 + \theta_2 x_2 + \theta_3 x_3 + \cdots + \theta_n x_n<br>$$<br>In order to develop intuition about this function, we can think about $θ_0$ as the basic price of a house, $θ_1$ as the price per square meter, $θ_2$ as the price per floor, etc.  $x_1$ will be the number of square meters in the house, $x_2$ the number of floors, etc. </p>
-<p>Using the definition of matrix multiplication, our multivariable hypothesis function can be concisely represented as :<br>$$<br>\begin{align<em>}h_\theta(x) =\begin{bmatrix}\theta_0 \hspace{2em} \theta_1 \hspace{2em} … \hspace{2em} \theta_n\end{bmatrix}\begin{bmatrix}x_0 \\ x_1 \\ \vdots \\ x_n\end{bmatrix}= \theta^T x\end{align</em>}<br>$$<br>This is a vectorization of our hypothesis function for one training example; see the lessons on vectorization to learn more. </p>
+<p>We now introduce notation for equations where we can have any number of input variables.</p>
+
+$$
+\begin{align*}x_j^{(i)} &= \text{value of feature } j \text{ in the }i^{th}\text{ training example} \\ x^{(i)}& = \text{the input (features) of the }i^{th}\text{ training example} \\ m &= \text{the number of training examples} \\ n &= \text{the number of features} \end{align*}
+$$
+
+<p>The multivariable form of the hypothesis function accommodating these multiple features is as follows:</p>
+<p>$$<br>h_\theta (x) = \theta_0 + \theta_1 x_1 + \theta_2 x_2 + \theta_3 x_3 + \cdots + \theta_n x_n<br>$$</p>
+<p>In order to develop intuition about this function, we can think about $θ_0$ as the basic price of a house, $θ_1$ as the price per square meter, $θ_2$ as the price per floor, etc.  $x_1$ will be the number of square meters in the house, $x_2$ the number of floors, etc. </p>
+<p>Using the definition of matrix multiplication, our multivariable hypothesis function can be concisely represented as :</p>
+
+$$
+\begin{align*}h_\theta(x) =\begin{bmatrix}\theta_0 \hspace{2em} \theta_1 \hspace{2em} ... \hspace{2em} \theta_n\end{bmatrix}\begin{bmatrix}x_0 \\ x_1 \\ \vdots \\ x_n\end{bmatrix}= \theta^T x\end{align*}
+$$
+
+<p>This is a vectorization of our hypothesis function for one training example; see the lessons on vectorization to learn more. </p>
 <p><strong>Remark : Note that for convenience reasons in this course we assume $x^{(i)}_0=1 \text{ for }(i∈1,…,m)$ . This allows us to do matrix operations with theta and x. Hence making the two vectors ‘ $θ$ ‘ and $x^{(i)}$ match each other element-wise (that is, have the same number of elements: n+1)</strong> .] </p>
-<h2 id="Gradient-Descent-For-Multiple-Variables"><a href="#Gradient-Descent-For-Multiple-Variables" class="headerlink" title="Gradient Descent For Multiple Variables"></a>Gradient Descent For Multiple Variables</h2><p>The gradient descent equation itself is generally the same form; we just have to repeat it for our ‘n’ features :<br>$$<br>\begin{align<em>} &amp; \text{repeat until convergence:} \; \lbrace \newline \; &amp; \theta_0 := \theta_0 - \alpha \frac{1}{m} \sum\limits_{i=1}^{m} (h_\theta(x^{(i)}) - y^{(i)}) \cdot x_0^{(i)}\newline \; &amp; \theta_1 := \theta_1 - \alpha \frac{1}{m} \sum\limits_{i=1}^{m} (h_\theta(x^{(i)}) - y^{(i)}) \cdot x_1^{(i)} \newline \; &amp; \theta_2 := \theta_2 - \alpha \frac{1}{m} \sum\limits_{i=1}^{m} (h_\theta(x^{(i)}) - y^{(i)}) \cdot x_2^{(i)} \newline &amp; \cdots \newline \rbrace \end{align</em>}<br>$$<br>In other words :<br>$$<br>\begin{align<em>}&amp; \text{repeat until convergence:} \; \lbrace \newline \; &amp; \theta_j := \theta_j - \alpha \frac{1}{m} \sum\limits_{i=1}^{m} (h_\theta(x^{(i)}) - y^{(i)}) \cdot x_j^{(i)} \; &amp; \text{for j := 0…n}\newline \rbrace\end{align</em>}<br>$$<br>The following image compares gradient descent with one variable to gradient descent with multiple variables:</p>
+<h2 id="Gradient-Descent-For-Multiple-Variables"><a href="#Gradient-Descent-For-Multiple-Variables" class="headerlink" title="Gradient Descent For Multiple Variables"></a>Gradient Descent For Multiple Variables</h2><p>The gradient descent equation itself is generally the same form; we just have to repeat it for our ‘n’ features :</p>
+
+$$
+\begin{align*} & \text{repeat until convergence:} \; \lbrace \newline \; & \theta_0 := \theta_0 - \alpha \frac{1}{m} \sum\limits_{i=1}^{m} (h_\theta(x^{(i)}) - y^{(i)}) \cdot x_0^{(i)}\newline \; & \theta_1 := \theta_1 - \alpha \frac{1}{m} \sum\limits_{i=1}^{m} (h_\theta(x^{(i)}) - y^{(i)}) \cdot x_1^{(i)} \newline \; & \theta_2 := \theta_2 - \alpha \frac{1}{m} \sum\limits_{i=1}^{m} (h_\theta(x^{(i)}) - y^{(i)}) \cdot x_2^{(i)} \newline & \cdots \newline \rbrace \end{align*}
+$$
+
+<p>In other words :</p>
+
+$$
+\begin{align*}& \text{repeat until convergence:} \; \lbrace \newline \; & \theta_j := \theta_j - \alpha \frac{1}{m} \sum\limits_{i=1}^{m} (h_\theta(x^{(i)}) - y^{(i)}) \cdot x_j^{(i)} \; & \text{for j := 0...n}\newline \rbrace\end{align*}
+$$
+
+<p>The following image compares gradient descent with one variable to gradient descent with multiple variables:</p>
 <p><img src="https://img-blog.csdn.net/20180411183811766?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3lvdTEzMTQ1MjBtZQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="gradient_descent_with_multiple_variables"></p>
 <h2 id="Gradient-Descent-in-Practice-I-Feature-Scaling"><a href="#Gradient-Descent-in-Practice-I-Feature-Scaling" class="headerlink" title="Gradient Descent in Practice I - Feature Scaling"></a>Gradient Descent in Practice I - Feature Scaling</h2><p> <strong>Note:</strong>    [6:20 - The average size of a house is 1000 but 100 is accidentally written instead] </p>
 <p>We can speed up gradient descent by having each of our input values in roughly the same range. This is <strong>because $θ$ will descend quickly on small ranges and slowly on large ranges, and so will oscillate inefficiently down to the optimum when the variables are very uneven. </strong></p>
@@ -599,8 +625,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/01/01/03-linear-algebra-review/" rel="next" title="03-linear-algebra-review note3">
-                <i class="fa fa-chevron-left"></i> 03-linear-algebra-review note3
+              <a href="/2018/01/01/05_octave-matlab-tutorial/" rel="next" title="05_octave-matlab-tutorial note5">
+                <i class="fa fa-chevron-left"></i> 05_octave-matlab-tutorial note5
               </a>
             
           </div>
@@ -609,8 +635,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/01/01/05_octave-matlab-tutorial/" rel="prev" title="05_octave-matlab-tutorial note5">
-                05_octave-matlab-tutorial note5 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/02/02/greek-letters/" rel="prev" title="转载-希腊字母常用指代意义及中文读音">
+                转载-希腊字母常用指代意义及中文读音 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -830,7 +856,7 @@
     
       <span class="post-meta-item-text">全站文章总字数</span>
     
-    <span title="全站文章总字数">71.5k</span>
+    <span title="全站文章总字数">71.6k</span>
   
 </div>
 
