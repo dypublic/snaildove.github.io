@@ -5,10 +5,10 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/01/01/neural_work_backpropagation_reasoning/</loc>
-    <lastmod>2018-04-19T13:32:47.989Z</lastmod>
+    <lastmod>2018-04-19T14:11:23.807Z</lastmod>
     <data>
         <display>
-        <title>反向传播算法（Backpropagation）推导</title>
+        <title>神经网络的反向传播BP推导</title>
         <pubTime>2017-12-31T16:00:00.000Z</pubTime>
         
         <tag>Machine Learning by Andrew NG</tag>
@@ -16,7 +16,7 @@
          
            
              
-              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
+              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
           
         </display>
     </data>
@@ -669,12 +669,12 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2017/08/07/engineering_matrices/</loc>
+    <loc>https://snaildove.github.io/2017/08/08/graph_and_network/</loc>
     <lastmod>2018-03-14T09:23:31.412Z</lastmod>
     <data>
         <display>
-        <title>工程中的矩阵</title>
-        <pubTime>2017-08-07T12:16:00.000Z</pubTime>
+        <title>图和网络</title>
+        <pubTime>2017-08-08T12:16:00.000Z</pubTime>
         
         <tag>linear_algebra</tag>
          
@@ -691,12 +691,12 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2017/08/08/graph_and_network/</loc>
+    <loc>https://snaildove.github.io/2017/08/07/engineering_matrices/</loc>
     <lastmod>2018-03-14T09:23:31.412Z</lastmod>
     <data>
         <display>
-        <title>图和网络</title>
-        <pubTime>2017-08-08T12:16:00.000Z</pubTime>
+        <title>工程中的矩阵</title>
+        <pubTime>2017-08-07T12:16:00.000Z</pubTime>
         
         <tag>linear_algebra</tag>
          
@@ -735,16 +735,16 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2017/08/26/cumulative_distribution_function/</loc>
+    <loc>https://snaildove.github.io/2015/05/01/decision_tree/</loc>
     <lastmod>2018-03-14T09:23:31.410Z</lastmod>
     <data>
         <display>
-        <title>经典摘录-[累积]分布函数CDF</title>
-        <pubTime>2017-08-26T12:16:00.000Z</pubTime>
+        <title>决策树学习</title>
+        <pubTime>2015-05-01T12:16:00.000Z</pubTime>
         
-        <tag>probability</tag>
+        <tag>Machine Learning</tag>
          
-        <tag>概率论</tag>
+        <tag>机器学习</tag>
          
          
            
@@ -757,16 +757,16 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2015/05/01/decision_tree/</loc>
+    <loc>https://snaildove.github.io/2017/08/26/cumulative_distribution_function/</loc>
     <lastmod>2018-03-14T09:23:31.410Z</lastmod>
     <data>
         <display>
-        <title>决策树学习</title>
-        <pubTime>2015-05-01T12:16:00.000Z</pubTime>
+        <title>经典摘录-[累积]分布函数CDF</title>
+        <pubTime>2017-08-26T12:16:00.000Z</pubTime>
         
-        <tag>Machine Learning</tag>
+        <tag>probability</tag>
          
-        <tag>机器学习</tag>
+        <tag>概率论</tag>
          
          
            
