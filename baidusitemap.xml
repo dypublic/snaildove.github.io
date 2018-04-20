@@ -4,16 +4,34 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2015/05/01/decision_tree/</loc>
-    <lastmod>2018-04-20T11:03:52.364Z</lastmod>
+    <loc>https://snaildove.github.io/2018/01/01/02-linear-regression-with-one-variable/</loc>
+    <lastmod>2018-04-20T11:26:43.584Z</lastmod>
     <data>
         <display>
-        <title>决策树学习</title>
-        <pubTime>2015-05-01T12:16:00.000Z</pubTime>
+        <title>02_linear-regression-with-one-variable note2</title>
+        <pubTime>2017-12-31T16:00:00.000Z</pubTime>
         
-        <tag>Machine Learning</tag>
+        <tag>Machine Learning by Andrew NG</tag>
          
-        <tag>机器学习</tag>
+         
+           
+             
+              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2018/01/01/05_octave-matlab-tutorial/</loc>
+    <lastmod>2018-04-20T11:26:21.692Z</lastmod>
+    <data>
+        <display>
+        <title>05_octave-matlab-tutorial note5</title>
+        <pubTime>2017-12-31T16:00:00.000Z</pubTime>
+        
+        <tag>Machine Learning by Andrew NG</tag>
          
          
            
@@ -26,14 +44,16 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2018/01/01/05_octave-matlab-tutorial/</loc>
-    <lastmod>2018-04-20T05:27:31.076Z</lastmod>
+    <loc>https://snaildove.github.io/2015/05/01/decision_tree/</loc>
+    <lastmod>2018-04-20T11:03:52.364Z</lastmod>
     <data>
         <display>
-        <title>05_octave-matlab-tutorial note5</title>
-        <pubTime>2017-12-31T16:00:00.000Z</pubTime>
+        <title>决策树学习</title>
+        <pubTime>2015-05-01T12:16:00.000Z</pubTime>
         
-        <tag>Machine Learning by Andrew NG</tag>
+        <tag>Machine Learning</tag>
+         
+        <tag>机器学习</tag>
          
          
            
@@ -139,26 +159,6 @@
            
              
               <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://snaildove.github.io/2018/01/01/02-linear-regression-with-one-variable/</loc>
-    <lastmod>2018-04-12T17:21:18.261Z</lastmod>
-    <data>
-        <display>
-        <title>02_linear-regression-with-one-variable note2</title>
-        <pubTime>2017-12-31T16:00:00.000Z</pubTime>
-        
-        <tag>Machine Learning by Andrew NG</tag>
-         
-         
-           
-             
-              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
           
         </display>
     </data>
@@ -427,12 +427,12 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2013/05/13/stack_application_on_expression-resolution-with-braces/</loc>
+    <loc>https://snaildove.github.io/2013/05/12/stack_application_on_line-editor_or_buff_zone/</loc>
     <lastmod>2018-03-14T09:23:31.425Z</lastmod>
     <data>
         <display>
-        <title>含括号的运算表达式求解-栈的基础应用3</title>
-        <pubTime>2013-05-13T14:16:00.000Z</pubTime>
+        <title>行编辑器/容错缓冲区-栈的基础应用2</title>
+        <pubTime>2013-05-12T14:16:00.000Z</pubTime>
         
         <tag>Data Structure</tag>
          
@@ -449,12 +449,12 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2013/05/12/stack_application_on_line-editor_or_buff_zone/</loc>
+    <loc>https://snaildove.github.io/2013/05/13/stack_application_on_expression-resolution-with-braces/</loc>
     <lastmod>2018-03-14T09:23:31.425Z</lastmod>
     <data>
         <display>
-        <title>行编辑器/容错缓冲区-栈的基础应用2</title>
-        <pubTime>2013-05-12T14:16:00.000Z</pubTime>
+        <title>含括号的运算表达式求解-栈的基础应用3</title>
+        <pubTime>2013-05-13T14:16:00.000Z</pubTime>
         
         <tag>Data Structure</tag>
          
@@ -691,12 +691,12 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2017/08/07/engineering_matrices/</loc>
+    <loc>https://snaildove.github.io/2017/08/08/graph_and_network/</loc>
     <lastmod>2018-03-14T09:23:31.412Z</lastmod>
     <data>
         <display>
-        <title>工程中的矩阵</title>
-        <pubTime>2017-08-07T12:16:00.000Z</pubTime>
+        <title>图和网络</title>
+        <pubTime>2017-08-08T12:16:00.000Z</pubTime>
         
         <tag>linear_algebra</tag>
          
@@ -713,12 +713,12 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2017/08/08/graph_and_network/</loc>
+    <loc>https://snaildove.github.io/2017/08/07/engineering_matrices/</loc>
     <lastmod>2018-03-14T09:23:31.412Z</lastmod>
     <data>
         <display>
-        <title>图和网络</title>
-        <pubTime>2017-08-08T12:16:00.000Z</pubTime>
+        <title>工程中的矩阵</title>
+        <pubTime>2017-08-07T12:16:00.000Z</pubTime>
         
         <tag>linear_algebra</tag>
          
