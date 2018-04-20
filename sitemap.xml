@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://snaildove.github.io/2015/05/01/decision_tree/</loc>
+    
+    <lastmod>2018-04-20T11:03:52.364Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2018/01/01/05_octave-matlab-tutorial/</loc>
+    
+    <lastmod>2018-04-20T05:27:31.076Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2018/01/01/04_linear-regression-with-multiple-variables/</loc>
+    
+    <lastmod>2018-04-20T05:26:45.914Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://snaildove.github.io/2018/01/01/neural_work_backpropagation_reasoning/</loc>
     
     <lastmod>2018-04-19T14:11:23.807Z</lastmod>
@@ -26,20 +47,6 @@
     <loc>https://snaildove.github.io/2017/08/20/LaTeX_symbols/</loc>
     
     <lastmod>2018-04-17T13:40:26.990Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2018/01/01/04_linear-regression-with-multiple-variables/</loc>
-    
-    <lastmod>2018-04-17T13:27:05.097Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2018/01/01/05_octave-matlab-tutorial/</loc>
-    
-    <lastmod>2018-04-14T04:11:38.553Z</lastmod>
     
   </url>
   
@@ -257,13 +264,6 @@
     <loc>https://snaildove.github.io/2017/08/14/definition_of_expectation/</loc>
     
     <lastmod>2018-03-14T09:23:31.411Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2015/05/01/decision_tree/</loc>
-    
-    <lastmod>2018-03-14T09:23:31.410Z</lastmod>
     
   </url>
   
