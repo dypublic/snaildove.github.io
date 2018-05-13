@@ -4,15 +4,20 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2018/05/13/test/</loc>
-    <lastmod>2018-05-12T16:58:37.770Z</lastmod>
+    <loc>https://snaildove.github.io/2018/01/01/06-logistic-regression/</loc>
+    <lastmod>2018-05-13T04:15:14.177Z</lastmod>
     <data>
         <display>
-        <title></title>
-        <pubTime>2018-05-12T16:58:37.184Z</pubTime>
+        <title>06_logistic-regression note6</title>
+        <pubTime>2017-12-31T16:00:00.000Z</pubTime>
         
+        <tag>Machine Learning by Andrew NG</tag>
+         
          
            
+             
+              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
+          
         </display>
     </data>
     </url>
@@ -422,12 +427,12 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2013/05/12/stack_application_on_line-editor_or_buff_zone/</loc>
+    <loc>https://snaildove.github.io/2013/05/13/stack_application_on_expression-resolution-with-braces/</loc>
     <lastmod>2018-03-14T09:23:31.425Z</lastmod>
     <data>
         <display>
-        <title>行编辑器/容错缓冲区-栈的基础应用2</title>
-        <pubTime>2013-05-12T14:16:00.000Z</pubTime>
+        <title>含括号的运算表达式求解-栈的基础应用3</title>
+        <pubTime>2013-05-13T14:16:00.000Z</pubTime>
         
         <tag>Data Structure</tag>
          
@@ -444,12 +449,12 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2013/05/13/stack_application_on_expression-resolution-with-braces/</loc>
+    <loc>https://snaildove.github.io/2013/05/12/stack_application_on_line-editor_or_buff_zone/</loc>
     <lastmod>2018-03-14T09:23:31.425Z</lastmod>
     <data>
         <display>
-        <title>含括号的运算表达式求解-栈的基础应用3</title>
-        <pubTime>2013-05-13T14:16:00.000Z</pubTime>
+        <title>行编辑器/容错缓冲区-栈的基础应用2</title>
+        <pubTime>2013-05-12T14:16:00.000Z</pubTime>
         
         <tag>Data Structure</tag>
          
@@ -620,16 +625,16 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2014/06/01/longest_common_sub-sequence/</loc>
+    <loc>https://snaildove.github.io/2017/08/05/linear_transformation_2nd_part/</loc>
     <lastmod>2018-03-14T09:23:31.414Z</lastmod>
     <data>
         <display>
-        <title>动态规划-最长公共子序列</title>
-        <pubTime>2014-06-01T14:16:00.000Z</pubTime>
+        <title>线性变换2</title>
+        <pubTime>2017-08-05T12:16:00.000Z</pubTime>
         
-        <tag>Data Structure</tag>
+        <tag>linear_algebra</tag>
          
-        <tag>数据结构</tag>
+        <tag>线性代数</tag>
          
          
            
@@ -642,16 +647,16 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2017/08/05/linear_transformation_2nd_part/</loc>
+    <loc>https://snaildove.github.io/2014/06/01/longest_common_sub-sequence/</loc>
     <lastmod>2018-03-14T09:23:31.414Z</lastmod>
     <data>
         <display>
-        <title>线性变换2</title>
-        <pubTime>2017-08-05T12:16:00.000Z</pubTime>
+        <title>动态规划-最长公共子序列</title>
+        <pubTime>2014-06-01T14:16:00.000Z</pubTime>
         
-        <tag>linear_algebra</tag>
+        <tag>Data Structure</tag>
          
-        <tag>线性代数</tag>
+        <tag>数据结构</tag>
          
          
            
@@ -686,12 +691,12 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2017/08/08/graph_and_network/</loc>
+    <loc>https://snaildove.github.io/2017/08/07/engineering_matrices/</loc>
     <lastmod>2018-03-14T09:23:31.412Z</lastmod>
     <data>
         <display>
-        <title>图和网络</title>
-        <pubTime>2017-08-08T12:16:00.000Z</pubTime>
+        <title>工程中的矩阵</title>
+        <pubTime>2017-08-07T12:16:00.000Z</pubTime>
         
         <tag>linear_algebra</tag>
          
@@ -708,12 +713,12 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2017/08/07/engineering_matrices/</loc>
+    <loc>https://snaildove.github.io/2017/08/08/graph_and_network/</loc>
     <lastmod>2018-03-14T09:23:31.412Z</lastmod>
     <data>
         <display>
-        <title>工程中的矩阵</title>
-        <pubTime>2017-08-07T12:16:00.000Z</pubTime>
+        <title>图和网络</title>
+        <pubTime>2017-08-08T12:16:00.000Z</pubTime>
         
         <tag>linear_algebra</tag>
          

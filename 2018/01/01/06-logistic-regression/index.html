@@ -85,7 +85,7 @@
 
 
 
-  <meta name="keywords" content="probability,概率论," />
+  <meta name="keywords" content="Machine Learning by Andrew NG," />
 
 
 
@@ -98,21 +98,31 @@
 
 
 
-<meta name="description" content="说明：全文摘自Introduction to probability, 2nd Edition  本文讨论条件概率定律的应用，首先引入一个计算事件概率的定理。 The law of total probability设 $A_1, A_2, … , A_n$ 是一组互不相容的事件，它形成样本空间的一个分割（每个试验结果必定使得其中一个事件发生！）。又假定对每个 $i, P(A_i) &amp;gt; 0">
-<meta name="keywords" content="probability,概率论">
+<meta name="description" content="NoteThis personal note is written after studying the opening course on the coursera website, Machine Learning by Andrew NG . And images, audios of this note all comes from the opening course.  Classi">
+<meta name="keywords" content="Machine Learning by Andrew NG">
 <meta property="og:type" content="article">
-<meta property="og:title" content="经典摘录-Bayes&#39; rule贝叶斯定律">
-<meta property="og:url" content="https://snaildove.github.io/2017/08/28/Bayes'_rule/index.html">
+<meta property="og:title" content="06_logistic-regression note6">
+<meta property="og:url" content="https://snaildove.github.io/2018/01/01/06-logistic-regression/index.html">
 <meta property="og:site_name" content="SnailDove&#39;s blog">
-<meta property="og:description" content="说明：全文摘自Introduction to probability, 2nd Edition  本文讨论条件概率定律的应用，首先引入一个计算事件概率的定理。 The law of total probability设 $A_1, A_2, … , A_n$ 是一组互不相容的事件，它形成样本空间的一个分割（每个试验结果必定使得其中一个事件发生！）。又假定对每个 $i, P(A_i) &amp;gt; 0">
+<meta property="og:description" content="NoteThis personal note is written after studying the opening course on the coursera website, Machine Learning by Andrew NG . And images, audios of this note all comes from the opening course.  Classi">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://img.blog.csdn.net/20180301153607785?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
-<meta property="og:image" content="http://img.blog.csdn.net/20180301153651988?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
-<meta property="og:updated_time" content="2018-03-25T13:17:05.699Z">
+<meta property="og:image" content="https://img-blog.csdn.net/20180422163624155">
+<meta property="og:image" content="https://img-blog.csdn.net/20180422163643526">
+<meta property="og:image" content="https://img-blog.csdn.net/20180422163701410">
+<meta property="og:image" content="https://img-blog.csdn.net/20180422163720367">
+<meta property="og:image" content="https://img-blog.csdn.net/201804221637356">
+<meta property="og:image" content="https://img-blog.csdn.net/20180422163749272">
+<meta property="og:image" content="https://img-blog.csdn.net/20180422163806199">
+<meta property="og:image" content="https://img-blog.csdn.net/20180422163831992">
+<meta property="og:image" content="https://img-blog.csdn.net/2018042216390210">
+<meta property="og:image" content="https://img-blog.csdn.net/20180422163925276">
+<meta property="og:image" content="https://img-blog.csdn.net/20180422163953232">
+<meta property="og:image" content="https://img-blog.csdn.net/20180422164012496">
+<meta property="og:updated_time" content="2018-05-13T04:15:14.177Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="经典摘录-Bayes&#39; rule贝叶斯定律">
-<meta name="twitter:description" content="说明：全文摘自Introduction to probability, 2nd Edition  本文讨论条件概率定律的应用，首先引入一个计算事件概率的定理。 The law of total probability设 $A_1, A_2, … , A_n$ 是一组互不相容的事件，它形成样本空间的一个分割（每个试验结果必定使得其中一个事件发生！）。又假定对每个 $i, P(A_i) &amp;gt; 0">
-<meta name="twitter:image" content="http://img.blog.csdn.net/20180301153607785?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+<meta name="twitter:title" content="06_logistic-regression note6">
+<meta name="twitter:description" content="NoteThis personal note is written after studying the opening course on the coursera website, Machine Learning by Andrew NG . And images, audios of this note all comes from the opening course.  Classi">
+<meta name="twitter:image" content="https://img-blog.csdn.net/20180422163624155">
 
 
 
@@ -142,13 +152,13 @@
 
 
 
-  <link rel="canonical" href="https://snaildove.github.io/2017/08/28/Bayes'_rule/"/>
+  <link rel="canonical" href="https://snaildove.github.io/2018/01/01/06-logistic-regression/"/>
 
 
 
 
 
-  <title>经典摘录-Bayes' rule贝叶斯定律 | SnailDove's blog</title>
+  <title>06_logistic-regression note6 | SnailDove's blog</title>
   
 
 
@@ -319,7 +329,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://snaildove.github.io/2017/08/28/Bayes'_rule/">
+    <link itemprop="mainEntityOfPage" href="https://snaildove.github.io/2018/01/01/06-logistic-regression/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="SnailDove">
@@ -336,7 +346,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">经典摘录-Bayes' rule贝叶斯定律</h1>
+          <h1 class="post-title" itemprop="name headline">06_logistic-regression note6</h1>
         
 
         <div class="post-meta">
@@ -353,8 +363,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-28T20:16:00+08:00">
-                2017-08-28
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-01T00:00:00+08:00">
+                2018-01-01
               </time>
             
 
@@ -376,8 +386,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/中文/" itemprop="url" rel="index">
-                    <span itemprop="name">中文</span>
+                  <a href="/categories/english/" itemprop="url" rel="index">
+                    <span itemprop="name">english</span>
                   </a>
                 </span>
 
@@ -413,7 +423,7 @@
                   <span class="post-meta-item-text">全文字数</span>
                 
                 <span title="全文字数">
-                  4,034
+                  3,707
                 </span>
               
 
@@ -429,7 +439,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  17
+                  23
                 </span>
               
             </div>
@@ -450,51 +460,90 @@
       
 
       
-        <script src="/assets/js/APlayer.min.js"> </script><p>说明：全文摘自<a href="http://www.athenasc.com/probbook.html" target="_blank" rel="noopener">Introduction to probability, 2nd Edition</a> </p>
-<p>本文讨论条件概率定律的应用，首先引入一个计算事件概率的定理。</p>
-<h2 id="The-law-of-total-probability"><a href="#The-law-of-total-probability" class="headerlink" title="The law of total probability"></a>The law of total probability</h2><p>设 $A_1, A_2, … , A_n$ 是一组互不相容的事件，它形成样本空间的一个分割（每个试验结果必定使得其中一个事件发生！）。又假定对每个 $i, P(A_i) &gt; 0$ 。则对任何事件 $B$ ，下列公式成立<br>$$<br>\begin{eqnarray}<br>P(B) &amp;=&amp; P(A_1\cap B )+\cdots+P(A_n\cap B) \\<br>&amp;=&amp; P(A_1)P(B|A_1)+\cdots+P(B)P(B|A_n)<br>\end{eqnarray}<br>$$<br>这是<strong>总概率定律（或翻译为：全概率定律），</strong>下面有图示和证明。直观上，将样本空间分割成若干事件 $A_i$ 的并（ $A_1, \cdots, A_n$ 形成样本空间的一个分割）然后任意事件 $B$ 的概率等于事件 $B$ 在 $A_i$ 发生的情况下的条件概率的加权平均，而权重刚好等于这些事件 $A_i$ 的无条件概率。这条定理的一个主要应用是计算事件 $B$ 的概率。直接计算事件 $B$ 的概率有点难度，但是若条件概率 $P(B|A_i)$ 是已知的或是很容易推导计算时，总概率定律定理就成为了计算 $P(B)$ 的有力工具。应用这条定理的关键是找到合适的分割 $A_1,\cdots, A_n$ ，而合适的分割又与问题的实际背景有关。</p>
-<p><img src="http://img.blog.csdn.net/20180301153607785?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="Figure_1.13_visualization_and_verification_of_the_total_probability_theorem.png"></p>
-<p>由于事件 $A_1, A_2, \cdots, A_n$ 形成一个样本空间的一个分割，事件 $B$ 可以分解成不想交的 $n$ 个事件的并，即：</p>
-<p>$$<br>B=(A_!\cap B)\cup\cdots\cup(A_n\cap B) \quad (1)<br>$$<br>利用可加定理，得到：</p>
-<p>$$<br>P(B) = P(A_1 \cap B)+\cdots+P(A_n \cap B) \quad (2)<br>$$<br>利用条件概率的定义，得到：</p>
-<p>$$<br>P(A_i\cap B) = P(A_i)P(B|A_i) \quad (3)<br>$$<br>将 $(3)$ 式子代入 $(2)$ 式子中得到：</p>
-<p>$$<br>P(B)=P(A_1)P(B|A_1)+\cdots+P(A_n)P(B|A_n)<br>$$<br>也可以用等价的序列树形图来说明总概率定律（如上右边图）：叶子 $A_i \cap B$ 的概率等于由叶子到根部上的概率的乘积 $P(A_i)P(B|A_i)$ 。而事件 $B$ 由图上显示的3个叶子组成，将它们的概率相加就得到 $P(B)$ 。</p>
-<h3 id="总概率定律的例子"><a href="#总概率定律的例子" class="headerlink" title="总概率定律的例子"></a>总概率定律的例子</h3><p>例 1.13 你参加一个棋类比赛，其中 $50\%$ 是一类棋手，你赢他们的概率为 $0.3\%$ ； $25\%$ 是二类棋手，你赢他们的概率是 $0.4$ ；剩下的是三类棋手，你赢得他们的概率是 $0.5$ 。从他们中间随机地选一位棋手与你比赛，你胜算的概率有多大？</p>
-<p>记 $A_i$ 表示与你下棋的棋手的类别。依题意</p>
-<p>$$<br>P(A_1)=0.5,\quad P(A_2) =0.25, \quad P(A_3) = 0.25<br>$$<br>记 $B$ 为你赢得比赛的事件，那么得到：</p>
-<p>$$<br>P(B|A_1)=0.3,\quad P(B|A_2)=0.4,\quad P(B|A_3)=0.5<br>$$<br>那么利用总概率定律，你在不比赛中胜出的概率为：<br>$$<br>\begin{eqnarray}<br>P(B) &amp;=&amp; P(A_1)P(B|A_1)+P(A_2)P(B|A_2)+P(A_3)P(B|A_3) \\<br>&amp;=&amp; 0.5 \cdot 0.3+ 0.25 \cdot 0.4 + 0.25 \cdot 0.5 \\<br>&amp;=&amp; 0.375<br>\end{eqnarray}<br>$$</p>
-<h2 id="Inference-and-Bayes’-Rule-推断与贝叶斯定律"><a href="#Inference-and-Bayes’-Rule-推断与贝叶斯定律" class="headerlink" title="Inference and Bayes’ Rule 推断与贝叶斯定律"></a>Inference and Bayes’ Rule 推断与贝叶斯定律</h2><p>总概率定律经常与著名的贝叶斯定律联系起来，<strong>贝叶斯定律将形如 $P(A|B)$ 的条件概率与形如 $P(B|A)$ 的条件概率联系起来</strong>。</p>
-<h3 id="Bayes’-Rule贝叶斯定律"><a href="#Bayes’-Rule贝叶斯定律" class="headerlink" title="Bayes’ Rule贝叶斯定律"></a>Bayes’ Rule贝叶斯定律</h3><p>设 $A_1,A_2,\ldots,A_n$ 是一组互斥的事件，它形成样本空间的一个分割（每个试验结果必定使得其中一个事件发生）。又假定对每一个 $i, P(A_i)&gt;0$ ，则对于任何事件 $B$ ，只要它满足 $P(B)&gt;0$ ，下列公式成立：<br>$$<br>\begin{eqnarray}<br>P(A_i|B) &amp;=&amp; \frac{P(A_i)P(B|A_i)}{P(B)}\\<br>&amp;=&amp;\frac{P(A_i)P(B|A_i)}{P(A_1)P(B|A_1)+\cdots+P(A_n)P(B|A_n)}<br>\end{eqnarray}<br>$$<br>为证明贝叶斯定律，只需注意到 $P(A_i)P(B|A_i)$ 与 $P(B)P(A_i|B)$ 是相等的，它们都等于 $P(A_i \cap B)$ ，这样得到了第一个等式，至于第二个等式，只需对 $P(B)$ 利用总概率定律即可。</p>
-<p>贝叶斯定律还可以用来进行<strong>因果推理</strong>。有许多”原因“可以造成某一”结果“。现在设我们观察到某一结果，希望推断造成这个结果出现的”原因“。现在设事件 $A_1,\ldots, A_n​$ 是原因，而 $B​$ 代表由原因引起的结果。 $P(B|A_i)​$ 表示在因果模型中由”原因“ $A_i​$ 造成结果 $B​$ 的概率（见下图）。当观察到结果 $B​$ 的时候，希望反推结果 $B​$ 是由原因 $A_i​$  造成的概率 $P(A_i|B)​$ 。 $P(A_i|B)​$ 为由于代表新近得到的信息 $B​$ 之后 $A_i​$ 出现的概率，称之为 <strong>posterior probability 后验概率</strong>，而原来的 $P(A_i)​$ 就称为 <strong>prior probability 先验概率</strong>。</p>
-<h3 id="贝叶斯定律进行推断的例子"><a href="#贝叶斯定律进行推断的例子" class="headerlink" title="贝叶斯定律进行推断的例子"></a>贝叶斯定律进行推断的例子</h3><h4 id="医学"><a href="#医学" class="headerlink" title="医学"></a>医学</h4><p>在某病人X光片中发现一个阴影，（用 $B$ 表示，代表”结果“）。希望对造成这种结果的3个原因进行分析。这3个原因互斥，并且造成这个结果的原因一定是三者之一：原因1（事件 $A_1$）是恶性肿瘤，原因2（事件 $A_2$）是良性肿瘤，原因3（事件 $A_3$）是肿瘤外的其他原因。假定已经知道 $P(A_i)$ 和 $P(B|A_i), i=1,2,3$  。现在已经发现了阴影（事件 $B$ 发生），利用贝叶斯公式，这些原因的条件概率为：</p>
-<p>$$<br>P(A_i|B)=\frac{P(A_i)P(B|A_i)}{P(A_1)P(B|A_1)+P(A_2)P(B|A_2)+P(A_3)P(B|A_3)},i=1,2,3<br>$$<br>在右图给出序列树形图，可用序列树形图给出条件概率计算的另外一种等价的解释。图中第一个深灰的叶子表示恶性肿瘤并出现阴影，其概率为 $P(A_1\cap B)$ ，且所有深灰的叶子表示片子中出现阴影，其概率为 $P(B)$ ，而由恶性肿瘤造成阴影的条件概率 $P(A_1|B)$ 是两个概率相除的结果。</p>
-<h4 id="比赛"><a href="#比赛" class="headerlink" title="比赛"></a>比赛</h4><p>继续使用例 1.13 你参加一个棋类比赛，其中 $50\%$ 是一类棋手，你赢他们的概率为 $0.3\%$ ； $25\%$ 是二类棋手，你赢他们的概率是 $0.4$ ；剩下的是三类棋手，你赢得他们的概率是 $0.5$ 。现在假定你已经得胜，问你的对手为一类棋手的概率有多大？<br>用 $A_i$ 表示你与 $i$ 类棋手相遇的事件。由例中给出的条件知道：<br>$$<br>P(A_1)=0.5,\quad P(A_2)=0.25,\quad P(A_3)=0.25<br>$$<br>记 $B$ 表示你赢的比赛的事件，你胜出的概率为：<br>$$<br>P(B|A_1)=0.3,\quad P(B|A_2)=0.4,\quad P(B|A_3)=0.5<br>$$<br>利用贝叶斯公式得：<br>$$<br>\begin{eqnarray}<br>P(A_1|B) &amp;=&amp; \frac{P(A_1)P(B|A_1)}{P(A_1)P(B|A_1)+P(A_2)P(B|A_2)+P(A_3)P(B|A_3)} \\<br>&amp;=&amp; \frac{0.5\cdot 0.3}{0.5\cdot 0.3+0.25\cdot 0.4+0.25\cdot 0.5} \\<br>&amp;=&amp; 0.4<br>\end{eqnarray}<br>$$</p>
-<h4 id="假阳性之谜"><a href="#假阳性之谜" class="headerlink" title="假阳性之谜"></a>假阳性之谜</h4><p> 设对于某种少见的疾病的检出率为 $0.95$ ；如果一个被检查的病人有某种疾病，其检查结果为阳性的概率为 $0.95$ ；如果该人没有这种疾病，其检查结果为阴性的概率是 $0.95$ 。现在假定某一人群中患有这种病的概率为  $0.001$ ，并从这个总体中随机地抽取一个人进行检测，检查结果为阳性。现在问这个人患有这种病的概率有多大？</p>
-<p>设 $A$ 为这个人有这种疾病， $B$ 为经检验这个人为阳性。利用贝叶斯公式：<br>$$<br>\begin{eqnarray}<br>P(A|B) &amp;=&amp; \frac{P(A)P(B|A)}{P(A)P(B|A)+P(A^c)P(B|A^c)} \\<br>&amp;=&amp; \frac{0.001\cdot 0.95}{0.001\cdot 0.95 + 0.999\cdot 0.05} \\<br>&amp;=&amp; 0.0187<br>\end{eqnarray}<br>$$<br>尽管检验方法非常精确，一个经检测为阳性的人仍然不大可能真正患有这种疾病（患有该疾病的概率小于 $2\%$ ）。根据《经济学人》杂志 $1999$ 年 $2$ 月 $20$ 日的报道，在一家著名的大医院中 $80\%$ 的受访者不知道这类问题的正确答案，而大部分人回答，这个经检测为阳性的人患病概率为 $0.95$ !</p>
-<h2 id="连续随机变量的贝叶斯定律"><a href="#连续随机变量的贝叶斯定律" class="headerlink" title="连续随机变量的贝叶斯定律"></a>连续随机变量的贝叶斯定律</h2><p>在许多情况下，我们会遇到一个没有观察到的对象。用随机变量 $X$ 代表这种未观察到的量，设其概率密度函数是 $ f_X(x)$ 。我们能够观察到的量是经过噪声干扰的量 $Y$ ，$Y$ 的分布函数是条件分布函数，其条件概率密度函数为： $f_{X|Y}(y|x)$ 。当 $Y$ 的值被观察到以后，它包含 $X$ 的多少信息呢？这类问题与离散随机变量的推断问题类似。现在唯一的不同之处在于处理的是连续随机变量。</p>
-<p><img src="http://img.blog.csdn.net/20180301153651988?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveW91MTMxNDUyMG1l/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="Figure_3.20_schematic_description_of_the_inference_problem.png"></p>
-<p>上图是推断问题的框图，有一个未观察到的变量 $X$ ，其概率密度函数 $f_X$ 是已知的，同时得到一个观察到的随机变量 $Y$ ，其条件概率密度函数为 $f_{Y|X}(y|x)$ 。给定 $Y$ 的观察值 $y$ ，推断问题变成条件概率密度函数 $f_{X|Y}(x|y)$ 的计算问题。</p>
-<p>注意到：当观察到事件 $Y=y$ 以后，所有的信息都包含在条件概率密度函数 $f_{X|Y}(x|y)$ 中，现在只需计算这个条件概率密度函数。利用公式 $f_Xf_{Y|X}=f_{X,Y}=f_Yf_{X|Y}$ 可以得到：</p>
-<p>$$<br>f_{X|Y}(x|y)=\frac{f_X(x)f_{Y|X}(y|x)}{f_Y(y)}<br>$$<br>这个即所求的公式，与之等价的公式：</p>
-<p>$$<br>f_{X|Y}(x|y)=\frac{f_X(x)f_{Y|X}(y|x)}{\int_{-\infty}^{+\infty}f_X(t)f_{Y|X}(y|t)dt}<br>$$</p>
-<h3 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h3><p>通用照明公司生产一种灯泡，已知其使用寿命 $Y$ 为指数随机变量，其概率密度函数为 $\lambda e^{-\lambda y}, y&gt;0$ ，按过往经验，在任意给定的一天参数 $\lambda$ 实际上是一个随机变量，其概率密度函数为区间 $[1, \frac{3}{2}]$ 上的均匀分布。现在随机地取已知灯泡进行试验，得到灯泡的寿命数据。得到数据以后，对于 $\lambda$ 的分布有什么新的认识？</p>
-<p>将 $\lambda$ 看成一个随机变量 $\Lambda$ ，作为对 $\lambda$ 的初始认识，那么根据题意 $\Lambda$ 的概率密度函数是：</p>
-<p>$$<br>f_{\Lambda(\lambda)}=2, 1\le \lambda \le \frac{3}{2}<br>$$<br>当得到数据 $y$ 以后，关于 $\Lambda$ 的信息包含于条件概率密度函数 $f_{\Lambda, y}(\lambda|y)$ 中，利用连续贝叶斯公式得到：</p>
-<p>$$<br>f_{ \Lambda|y}(\lambda|y)=\frac{f_\Lambda(\lambda)f_{Y|\Lambda}(y|\lambda)}{\int_{+\infty}^{-\infty}f_{\Lambda}(t)f_{Y|\Lambda}(y|t)dt}=\frac{2\lambda e^{-\lambda y}}{\int_{1}^{\frac{3}{2}}2te^{-ty}dt}，1\le \lambda \le \frac{3}{2}<br>$$</p>
-<h2 id="关于连续随机变量的推断"><a href="#关于连续随机变量的推断" class="headerlink" title="关于连续随机变量的推断"></a>关于连续随机变量的推断</h2><p>在许多实际问题中，未观察到的随机变量可能是连续的随机变量。例如，在通信问题中传输的信号是一个二进制的信号，经过传输以后，混入的噪声是正态随机变量，这样，观测到的随机变量就是连续的随机变量；或者在医疗诊断中，观察到的量也是连续的测量值，例如：体温或血液样本中的指标。这种情况下需要将贝叶斯公式作适当改变。</p>
-<p>现在研究一种特殊情况，未观察到的是一个事件$A$ 。不知道 $A$ 是否发生了。事件 $A$ 的概率 $P(A)$ 是已知的。设 $Y$ 是一个连续的随机变量，并且假定条件概率密度函数 $f_{Y|A}(y)$ 和 $f_{Y|A^c}(y)$ 是已知的。令人兴趣的是事件 $A$  的条件概率密度函数 $P(A|Y=y)$ 。这个量代表得到的观察值 $y$ 以后关于事件 $A$ 的信息。</p>
-<p>由于事件 ${Y=y}$ 是一个零概率事件，转而去考虑事件 ${y \le Y \le y+\delta}$ ，其中 $\delta$ 是一个很小的正数，然后令 $\delta$ 趋于0 。利用贝叶斯公式，令 $f_{Y}(y)&gt;0$ ，我们得到：<br>$$<br>\begin{eqnarray}<br>P(A|Y=y) &amp;\approx&amp; P(A|y\le Y \le y+\delta) \\<br>&amp;=&amp; \frac{P(A)P(y\le Y \le y+\delta|A)}{P(y\le Y \le y+\delta)} \\<br>&amp;\approx&amp;\frac{P(A)f_{Y|A}(y)\delta}{f_Y(y)\delta} \\<br>&amp;=&amp; \frac{P(A)f_{Y|A}(y)}{f_Y(y)}<br>\end{eqnarray}<br>$$<br>利用总概率定律，可将上式的分母写成：<br>$$<br>f_{Y}(y)=P(A)f_{Y|A}(y)+P(A^c)f_{Y|A^c}(y)<br>$$<br>这样得到：<br>$$<br>P(A|Y=y)=\frac{P(A)f_{Y|A}(y)}{P(A)f_{Y|A}(y)+P(A^c)f_{Y|A^c}(y)}<br>$$<br>现在令事件 $A$ 具有形式 $\{N=n\}$ ，其中 $N$ 是一个离散的随机变量，代表未观察到的随机变量。记 $p_N$ 为 $N$ 的分布函数。令 $Y$  为连续随机变量，对任意 $N$ 的取值 $n$，$Y$  具有条件概率密度函数 $f_{Y|N}(y|n)$ 。 这样上面的公式变成 ：<br>$$<br>P(N=n|Y=y)=\frac{p_N(n)f_{Y|N}(y|n)}{f_Y(y)}<br>$$<br>利用下面的总概率定律：<br>$$<br>f_Y(y)=\sum\limits_{i}p_N(i)f_{Y|N}(y|i)<br>$$<br>得到：<br>$$<br>P(N=n|Y=y)=\frac{p_N(n)f_{Y|N}(y|n)}{\sum\limits_{i}p_N(i)f_{Y|N}(y|i)}<br>$$</p>
-<h3 id="例子-信号检测"><a href="#例子-信号检测" class="headerlink" title="例子-信号检测"></a>例子-信号检测</h3><p>设 $S$ 是一个只取2个值的信号（signal）。记  $P(S=1)=p$ 和 $P(S=-1)=1-p$ 。在接收端，得到的信号为 $Y=N+S$ ，其中 $N$ 是一个正态分布的噪声（noise），期望为0，方差为1，并且与 $S$ 相互独立。当观察到的信号为 $y$ 的时候，$S=1$ 的概率是多少？</p>
-<p>对于给定的 $S=s=1, Y$ 是一个正态随机变量，期望为 $s=1$ ，方差为 $1$ 。应用刚才得到的公式：<br>$$<br>P(S=1|Y=y)=\frac{p_S(1)f_{Y|S}(y|1)}{f_Y(y)}=\frac{\frac{p}{\sqrt{2\pi}}e^{-\frac{(y-1)^2}{2}}}{\frac{p}{\sqrt{2\pi}}e^{-\frac{(y-1)^2}{2}}+\frac{1-p}{\sqrt{2\pi}}e^{-\frac{(y+1)^2}{2}}}<br>$$<br>将上式化简得：<br>$$<br>P(S=1|Y=y)=\frac{pe^y}{pe^y+(1-p)e^{-y}}<br>$$<br>注意：当 $y\rightarrow -\infty, P(S=1|Y=y)\rightarrow 0$ ，当 $y\rightarrow \infty, P(S=1|Y=y)\rightarrow 1$ 。 $y$ 在实数轴上变化时， $P(S=1|Y=y)$ 是 $y$ 的严格上升函数，这符合直观的理解。</p>
-<h3 id="基于离散观察值的推断"><a href="#基于离散观察值的推断" class="headerlink" title="基于离散观察值的推断"></a>基于离散观察值的推断</h3><p>在前文连续随机变量的贝叶斯定律中得到的：<br>$$<br>\begin{eqnarray}<br>P(A|Y=y) &amp;\approx&amp; P(A|y\le Y \le y+\delta) \\<br>&amp;=&amp; \frac{P(A)P(y\le Y \le y+\delta|A)}{P(y\le Y \le y+\delta)} \\<br>&amp;\approx&amp;\frac{P(A)f_{Y|A}(y)\delta}{f_Y(y)\delta} \\<br>&amp;=&amp; \frac{P(A)f_{Y|A}(y)}{f_Y(y)}<br>\end{eqnarray}<br>$$<br>反解得到：<br>$$<br>f_{Y|A}(y)=\frac{f_Y(y)P(A|Y=y)}{P(A)}<br>$$<br>根据归一性（$\int_{-\infty}^{+\infty}f_{Y|A}(y)dy=1$），那么得到一个等价的表达式：<br>$$<br>f_{Y|A}(y)=\frac{f_Y(y)P(A|Y=y)}{\int_{-\infty}^{+\infty}f_Y(t)P(A|Y=t)dt}<br>$$<br>这个公式可以用于当事件 $A$  被观测到时候，对随机变量 $Y$ 进行推断。对于事件 $A$ 是 $\{N=n\}$ 的形式，根据前文：<br>$$<br>P(N=n|Y=y)=\frac{p_N(n)f_{Y|N}(y|n)}{\sum\limits_{i}p_N(i)f_{Y|N}(y|i)}<br>$$<br>得到一个相似的公式对随机变量 $Y$ 进行推断：<br>$$<br>f_{Y|N}(y|n)=\frac{P(N=n|Y=y)\sum\limits_{i}p_N(i)f_{Y|N}(y|i)}{p_N(n)}<br>$$</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>令 $Y$ 为连续随机变量。</p>
+        <script src="/assets/js/APlayer.min.js"> </script><h2 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h2><p>This personal note is written after studying the opening course on <a href="https://www.coursera.org" target="_blank" rel="noopener">the coursera website</a>, <a href="https://www.coursera.org/learn/machine-learning/home/welcome" target="_blank" rel="noopener">Machine Learning by Andrew NG</a> . And images, audios of this note all comes from the opening course. </p>
+<h2 id="Classification"><a href="#Classification" class="headerlink" title="Classification"></a>Classification</h2><p><img src="https://img-blog.csdn.net/20180422163624155" alt=""></p>
+<p>To attempt classification, one method is to use linear regression and map all predictions greater than 0.5 as a 1 and all less than 0.5 as a 0. However, this method doesn’t work well because classification is not actually a linear function. </p>
+<p><img src="https://img-blog.csdn.net/20180422163643526" alt=""></p>
+<p>The classification problem is just like the regression problem, except that the values we now want to predict take on only a small number of discrete values. For now, we will focus on the <strong>binary classification problem</strong> in which $y$ can take on only two values, 0 and 1. (Most of what we say here will also generalize to the multiple-class case.) For instance, if we are trying to build a spam classifier for email, then $x^{(i)}$ may be some features of a piece of email, and $y$ may be 1 if it is a piece of spam mail, and 0 otherwise. Hence, $y∈\{0,1\}$ . 0 is also called the negative class, and 1 the positive class, and they are sometimes also denoted by the symbols “-” and “+” . Given $x^{(i)}$, the corresponding $y^{(i)}$ is also called the label for the training example.</p>
+<h2 id="Hypothesis-Representation"><a href="#Hypothesis-Representation" class="headerlink" title="Hypothesis Representation"></a>Hypothesis Representation</h2><p>We could approach the classification problem ignoring the fact that $y$ is discrete-valued, and use our old linear regression algorithm to try to predict $y$ given $x$. However, it is easy to construct examples where this method performs very poorly. Intuitively, it also doesn’t make sense for $h_{θ}(x)$ to take values larger than 1 or smaller than $0$ when we know that $y ∈ \{0, 1\}$. To fix this, let’s change the form for our hypotheses $h_{θ}(x)$ to satisfy $0≤h_{θ}(x)≤1$. This is accomplished by plugging $θ^Tx$ into the <strong>Logistic Function</strong> . </p>
+<p>Our new form uses the <strong>“Sigmoid Function”</strong> , also called the <strong>“Logistic Function”</strong> :<br>$$<br>\begin{align*}& h_\theta (x) = g ( \theta^T x ) \\ \\& z = \theta^T x \\& g(z) = \dfrac{1}{1 + e^{-z}}\end{align*}<br>$$<br>Using python to implement it :</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np;</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sigmoid</span><span class="params">(z)</span>:</span></span><br><span class="line">   <span class="keyword">return</span> <span class="number">1</span> / (<span class="number">1</span> + np.exp(-z))</span><br></pre></td></tr></table></figure>
+<p>The following image shows us what the sigmoid function looks like:</p>
+<p><img src="https://img-blog.csdn.net/20180422163701410" alt=""></p>
+<p><strong>The function $g(z)$ , shown here, maps any real number to the $(0, 1)$ interval, making it useful for transforming an arbitrary-valued function into a function better suited for classification</strong>. </p>
+<p><strong>$h_{θ}(x)$ will give us the probability that our output is 1</strong>. For example, $h_{θ}(x)=0.7$ gives us a probability of $70\%$ that our output is 1. Our probability that our prediction is 0 is just the complement of our probability that it is 1 (e.g. if probability that it is 1 is $70\%$, then the probability that it is 0 is $30\%$).<br>$$<br>\begin{align*}& h_\theta(x) = P(y=1 | x ; \theta) = 1 - P(y=0 | x ; \theta) \\ & P(y = 0 | x;\theta) + P(y = 1 | x ; \theta) = 1\end{align*}<br>$$</p>
+<h2 id="Decision-Boundary"><a href="#Decision-Boundary" class="headerlink" title="Decision Boundary"></a>Decision Boundary</h2><p>In order to get our discrete 0 or 1 classification, we can translate the output of the hypothesis function as follows:<br>$$<br>\begin{align*}& h_\theta(x) \geq 0.5 \rightarrow y = 1 \\ & h_\theta(x) < 0.5 \rightarrow y = 0 \\ \end{align*}<br>$$<br>The way our logistic function g behaves is that when its input is greater than or equal to zero, its output is greater than or equal to 0.5:<br>$$<br>\begin{align*}& g(z) \geq 0.5 \\ & when \; z \geq 0\end{align*}<br>$$<br>From these statements we can now say:<br>$$<br>\begin{align*}& \theta^T x \geq 0 \Rightarrow y = 1 \\ & \theta^T x < 0 \Rightarrow y = 0 \\ \end{align*}<br>$$<br>The <strong>decision boundary</strong>  is the line that separates the area where y = 0 and where y = 1. It is created by our hypothesis function. </p>
+<p><strong>Example</strong> :<br>$$<br>\begin{align*}& \theta = \begin{bmatrix}5 \\ -1 \\ 0\end{bmatrix} \\ & y = 1 \; if \; 5 + (-1) x_1 + 0 x_2 \geq 0 \\ & 5 - x_1 \geq 0 \\ & - x_1 \geq -5 \\& x_1 \leq 5 \\ \end{align*}<br>$$<br>In this case, our decision boundary is a straight vertical line placed on the graph where $x_1=5$ , and everything to the left of that denotes $y = 1$ , while everything to the right denotes $y = 0$ . </p>
+<p><img src="https://img-blog.csdn.net/20180422163720367" alt=""></p>
+<p>Again, the input to the sigmoid function g(z) (e.g. $θ^TX$ ) doesn’t need to be linear, and could be a function that describes a circle (e.g.  $z=θ_0+θ_1x^2_1+θ_2x^2_2$ ) or any shape to fit our data.</p>
+<p><img src="https://img-blog.csdn.net/201804221637356" alt=""></p>
+<h2 id="Cost-Function"><a href="#Cost-Function" class="headerlink" title="Cost Function"></a>Cost Function</h2><p>We cannot use the same cost function that we use for linear regression because the Logistic Function will cause the output to be wavy, causing many local optima. In other words, it will not be a convex function. </p>
+<p><img src="https://img-blog.csdn.net/20180422163749272" alt=""></p>
+<p>Instead, our cost function for logistic regression looks like:<br>$$<br>\begin{align*}& J(\theta) = \dfrac{1}{m} \sum_{i=1}^m \mathrm{Cost}(h_\theta(x^{(i)}),y^{(i)}) \newline & \mathrm{Cost}(h_\theta(x),y) = -\log(h_\theta(x)) \; & \text{if y = 1} \newline & \mathrm{Cost}(h_\theta(x),y) = -\log(1-h_\theta(x)) \; & \text{if y = 0}\end{align*}<br>$$<br><img src="https://img-blog.csdn.net/20180422163806199" alt=""><br>$$<br>\begin{align*}& \mathrm{Cost}(h_\theta(x),y) = 0 \text{ if } h_\theta(x) = y \\ & \mathrm{Cost}(h_\theta(x),y) \rightarrow \infty \text{ if } y = 0 \; \mathrm{and} \; h_\theta(x) \rightarrow 1 \\ & \mathrm{Cost}(h_\theta(x),y) \rightarrow \infty \text{ if } y = 1 \; \mathrm{and} \; h_\theta(x) \rightarrow 0 \\ \end{align*}<br>$$</p>
 <ol>
-<li><p>若 $X$ 为连续随机变量，则有：<br>$$<br>f_{X|Y}(x|y)f_Y(y)=f_X(x)f_{Y|X}(y|x)<br>$$<br>和<br>$$<br>f_{X|Y}(x|y)=\frac{f_X(x)f_{Y|X}(y|x)}{f_Y(y)}=\frac{f_X(x)f_{Y|X}(y|x)}{\int_{-\infty}^{+\infty}f_X(t)f_{Y|X}(y|t)dt}<br>$$</p>
-</li>
-<li><p>若 $N$ 为离散随机变量，则有：<br>$$<br>f_Y(y)P(N=n|Y=y)=p_N(n)f_{Y|N}(y|n)<br>$$<br>得到贝叶斯定律为：<br>$$<br>P(N=n|Y=y)=\frac{p_N(n)f_{Y|N}(y|n)}{f_Y(y)}=\frac{p_N(n)f_{Y|N}(y|n)}{\sum\limits_{i}p_N(i)f_{Y|N}(y|i)}<br>$$<br>和<br>$$<br>f_{Y|N}(y|n)=\frac{f_Y(y)P(N=n|Y=y)}{p_N(n)}=\frac{f_Y(y)P(N=n|Y=y)}{\int_{-\infty}^{+\infty}f_Y(t)P(N=n|Y=t)dt}<br>$$</p>
-</li>
-<li><p>对于事件 $A$ ，关于 $P(A|Y=y)$ 和 $f_{Y|A}(y)$ 具有类似的贝叶斯定律。</p>
-</li>
+<li>If our correct answer ‘y’ is 0, then the cost function will be 0 if our hypothesis function also outputs 0. If our hypothesis approaches 1, then the cost function will approach infinity. </li>
+<li>If our correct answer ‘y’ is 1, then the cost function will be 0 if our hypothesis function outputs 1. If our hypothesis approaches 0, then the cost function will approach infinity. </li>
+</ol>
+<p>Note that writing the cost function in this way guarantees that $J(θ)$ is convex for logistic regression.</p>
+<h2 id="Simplified-Cost-Function-and-Gradient-Descent"><a href="#Simplified-Cost-Function-and-Gradient-Descent" class="headerlink" title="Simplified Cost Function and Gradient Descent"></a>Simplified Cost Function and Gradient Descent</h2><p><strong>Note:</strong>    [6:53 - the gradient descent equation should have a 1/m factor] </p>
+<p> We can compress our cost function’s two conditional cases into one case:<br>$$<br>\mathrm{Cost}(h_\theta(x),y) = - y \; \log(h_\theta(x)) - (1 - y) \log(1 - h_\theta(x))<br>$$<br>Notice that when y is equal to 1, then the second term $(1−y)log(1−h_θ(x))$ will be zero and will not affect the result. If y is equal to 0, then the first term $−ylog(h_θ(x))$ will be zero and will not affect the result. </p>
+<p>We can fully write out our entire cost function as follows:</p>
+<p>$$<br>J(\theta) =  \frac{1}{m} \displaystyle \sum_{i=1}^m [-y^{(i)}\log (h_\theta (x^{(i)})) - (1 - y^{(i)})\log (1 - h_\theta(x^{(i)}))]<br>$$</p>
+<h3 id="A-vectorized-implementation"><a href="#A-vectorized-implementation" class="headerlink" title="A vectorized implementation"></a>A vectorized implementation</h3><p>$$<br>\begin{align*} & h = g(X\theta)\newline & J(\theta) = \frac{1}{m} \cdot \left(-y^{T}\log(h)-(1-y)^{T}\log(1-h)\right) \end{align*}<br>$$</p>
+<p>Using python to implement it :</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">cost</span><span class="params">(theta, X, y)</span>:</span></span><br><span class="line">  theta = np.matrix(theta)</span><br><span class="line">  X = np.matrix(X)</span><br><span class="line">  y = np.matrix(y)</span><br><span class="line">  first = np.multiply(-y, np.log(sigmoid(X* theta.T)))</span><br><span class="line">  second = np.multiply((<span class="number">1</span> - y), np.log(<span class="number">1</span> - sigmoid(X* theta.T)))</span><br><span class="line">  <span class="keyword">return</span> np.sum(first - second) / (len(X))</span><br></pre></td></tr></table></figure>
+<h3 id="Gradient-Descent"><a href="#Gradient-Descent" class="headerlink" title="Gradient Descent"></a>Gradient Descent</h3><p>Remember that the general form of gradient descent is:<br>$$<br>\begin{align*}& Repeat \; \lbrace \\ & \; \theta_j := \theta_j - \alpha \dfrac{\partial}{\partial \theta_j}J(\theta) \\ & \rbrace\end{align*}<br>$$<br>We can work out the derivative part using calculus to get:<br>$$<br>\begin{align*} & Repeat \; \lbrace \\ & \; \theta_j := \theta_j - \frac{\alpha}{m} \sum_{i=1}^m (h_\theta(x^{(i)}) - y^{(i)}) x_j^{(i)} \\ & \rbrace \end{align*}<br>$$<br>The detail mathematical process :<br>$$<br>\begin{align*} 
+J(\theta) &= \frac{1}{m} \displaystyle \sum_{i=1}^m [-y^{(i)}\log (h_\theta (x^{(i)})) - (1 - y^{(i)})\log (1 - h_\theta(x^{(i)}))] \\
+&= -\frac{1}{m} \displaystyle \sum_{i=1}^m [{{y}^{(i)}}\log ( {h_\theta} {{x}^{(i)}} ) )+ ( 1-{{y}^{(i)}}  )\log  ( 1-{h_\theta} ( {{x}^{(i)}}  )  )] \\
+& = -\frac{1}{m} \displaystyle \sum_{i=1}^m [{{y}^{(i)}}\log ( \frac{1}{1+{{e}^{-{\theta^T}{{x}^{(i)}}}}} )+( 1-{{y}^{(i)}})\log ( 1-\frac{1}{1+{{e}^{-{\theta^T}{{x}^{(i)}}}}} )] \\
+& = -\frac{1}{m} \displaystyle \sum_{i=1}^m [ -{{y}^{(i)}}\log  ( 1+{{e}^{-{\theta^T}{{x}^{(i)}}}}  )- ( 1-{{y}^{(i)}}  )\log  ( 1+{{e}^{{\theta^T}{{x}^{(i)}}}}  )] \\
+\end{align*}<br>$$</p>
+<p>$$<br>\begin{align*}
+ \frac{\partial }{\partial {\theta_{j}}}J\left( \theta \right) &= -\frac{1}{m}\frac{\partial }{\partial {\theta_{j}}}[\sum\limits_{i=1}^{m}{[-{{y}^{(i)}}\log \left( 1+{{e}^{-{\theta^{T}}{{x}^{(i)}}}} \right)-\left( 1-{{y}^{(i)}} \right)\log \left( 1+{{e}^{{\theta^{T}}{{x}^{(i)}}}} \right)]}] \\
+& =\frac{\partial }{\partial {\theta_{j}}}[-\frac{1}{m}\sum\limits_{i=1}^{m}{[-{{y}^{(i)}}\log \left( 1+{{e}^{-{\theta^{T}}{{x}^{(i)}}}} \right)-\left( 1-{{y}^{(i)}} \right)\log \left( 1+{{e}^{{\theta^{T}}{{x}^{(i)}}}} \right)]}] \\
+& =-\frac{1}{m}\sum\limits_{i=1}^{m}{[-{{y}^{(i)}}\frac{-x_{j}^{(i)}{{e}^{-{\theta^{T}}{{x}^{(i)}}}}}{1+{{e}^{-{\theta^{T}}{{x}^{(i)}}}}}-\left( 1-{{y}^{(i)}} \right)\frac{x_j^{(i)}{{e}^{{\theta^T}{{x}^{(i)}}}}}{1+{{e}^{{\theta^T}{{x}^{(i)}}}}}}] \\
+& =-\frac{1}{m}\sum\limits_{i=1}^{m}{{y}^{(i)}}\frac{x_j^{(i)}}{1+{{e}^{{\theta^T}{{x}^{(i)}}}}}-\left( 1-{{y}^{(i)}} \right)\frac{x_j^{(i)}{{e}^{{\theta^T}{{x}^{(i)}}}}}{1+{{e}^{{\theta^T}{{x}^{(i)}}}}}] \\
+& =-\frac{1}{m}\sum\limits_{i=1}^{m}{\frac{{{y}^{(i)}}x_j^{(i)}-x_j^{(i)}{{e}^{{\theta^T}{{x}^{(i)}}}}+{{y}^{(i)}}x_j^{(i)}{{e}^{{\theta^T}{{x}^{(i)}}}}}{1+{{e}^{{\theta^T}{{x}^{(i)}}}}}} \\
+& =-\frac{1}{m}\sum\limits_{i=1}^{m}{\frac{{{y}^{(i)}}\left( 1\text{+}{{e}^{{\theta^T}{{x}^{(i)}}}} \right)-{{e}^{{\theta^T}{{x}^{(i)}}}}}{1+{{e}^{{\theta^T}{{x}^{(i)}}}}}x_j^{(i)}} \\
+& =-\frac{1}{m}\sum\limits_{i=1}^{m}{({{y}^{(i)}}-\frac{{{e}^{{\theta^T}{{x}^{(i)}}}}}{1+{{e}^{{\theta^T}{{x}^{(i)}}}}})x_j^{(i)}} \\
+& =-\frac{1}{m}\sum\limits_{i=1}^{m}{({{y}^{(i)}}-\frac{1}{1+{{e}^{-{\theta^T}{{x}^{(i)}}}}})x_j^{(i)}} \\
+& =-\frac{1}{m}\sum\limits_{i=1}^{m}{[{{y}^{(i)}}-{h_\theta}\left( {{x}^{(i)}} \right)]x_j^{(i)}} \\
+& =\frac{1}{m}\sum\limits_{i=1}^{m}{[{h_\theta}\left( {{x}^{(i)}} \right)-{{y}^{(i)}}]x_j^{(i)}} 
+\end{align*}<br>$$</p>
+<p>Notice that this algorithm is identical to the one we used in linear regression. We still have to simultaneously update all values in theta. </p>
+<h3 id="A-vectorized-implementation-1"><a href="#A-vectorized-implementation-1" class="headerlink" title="A vectorized implementation"></a>A vectorized implementation</h3><p>$$<br>\theta := \theta - \frac{\alpha}{m} X^{T} (g(X \theta ) - \vec{y})<br>$$</p>
+<h3 id="Note-1"><a href="#Note-1" class="headerlink" title="Note"></a>Note</h3><p><strong>The idea of feature scaling also applies to gradient descent for logistic regression. And yet we have features that are on different scale, then applying feature scaling can also make grading descent run faster for logistic regression.</strong></p>
+<h2 id="Advanced-Optimization"><a href="#Advanced-Optimization" class="headerlink" title="Advanced Optimization"></a>Advanced Optimization</h2><p><strong>Note:</strong>    [7:35 - ‘100’ should be 100 instead. The value provided should be an integer and not a character string.] </p>
+<p><strong>“Conjugate gradient”, “BFGS”, and “L-BFGS”</strong> <em>are more sophisticated, faster ways to optimize $θ$ that can be used instead of gradient descent. We suggest that you should not write these more sophisticated algorithms yourself (unless you are an expert in numerical computing) but use the libraries instead, as they’re already tested and highly optimized. Octave provides them.</em></p>
+<p><img src="https://img-blog.csdn.net/20180422163831992" alt=""></p>
+<p>These algorithms actually do more sophisticated things than just pick a good learning rate, and so they often end up converging much faster than gradient descent. These algorithms actually do more sophisticated things than just pick a good learning rate, and so they often end up converging much faster than gradient descent, but detailed discussion of exactly what they do is beyond the scope of this course. <strong>In fact, I actually used to have used these algorithms for a long time, like maybe over a decade, quite frequently, and it was only, you know, a few years ago that I actually figured out for myself the details of what conjugate gradient, BFGS and O-BFGS do. So it is actually entirely possible to use these algorithms successfully and apply to lots of different learning problems without actually understanding the inter-loop of what these algorithms do.</strong> If these algorithms have a disadvantage, I’d say that the main disadvantage is that they’re quite a lot more complex than gradient descent. And in particular, you probably should not implement these algorithms - conjugate gradient, L-BGFS, BFGS - yourself unless you’re an expert in numerical computing. Instead, just as I wouldn’t recommend that you write your own code to compute square roots of numbers or to compute inverses of matrices, for these algorithms also what I would recommend you do is just use a software library. So, you know, to take a square root what all of us do is use some function that someone else has written to compute the square roots of our numbers. And fortunately, Octave and the closely related language MATLAB - we’ll be using that - Octave has a very good. Has a pretty reasonable library implementing some of these advanced optimization algorithms. And so if you just use the built-in library, you know, you get pretty good results. I should say that there is a difference between good and bad implementations of these algorithms. And so, if you’re using a different language for your machine learning application, if you’re using C, C++, Java, and so on, you might want to try out a couple of different libraries to make sure that you find a good library for implementing these algorithms. Because there is a difference in performance between a good implementation of, you know, contour gradient or LPFGS versus less good implementation of contour gradient or LPFGS.</p>
+<p>We first need to provide a function that evaluates the following two functions for a given input value $θ$: </p>
+<p>We can write a single function that returns both of these: </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function [jVal, gradient] = costFunction(theta)</span><br><span class="line">  jVal = [...code to compute J(theta)...];</span><br><span class="line">  gradient = [...code to compute derivative of J(theta)...];</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
+<p>Then we can use octave’s <strong>“fminunc()”</strong> optimization algorithm along with the <strong>“optimset()”</strong> function that creates an object containing the options we want to send to “fminunc()”. (Note: the value for MaxIter should be an integer, not a character string - errata in the video at 7:30) </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">options = optimset(&apos;GradObj&apos;, &apos;on&apos;, &apos;MaxIter&apos;, 100);</span><br><span class="line">initialTheta = zeros(2,1);</span><br><span class="line">   [optTheta, functionVal, exitFlag] = fminunc(@costFunction, initialTheta, options);</span><br></pre></td></tr></table></figure>
+<p>We give to the function <strong>“fminunc()”</strong> our cost function, our initial vector of theta values, and the “options” object that we created beforehand.</p>
+<h2 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h2><p><img src="https://img-blog.csdn.net/2018042216390210" alt="1st_example_of_costFunction_and_fminunc_in_octave"></p>
+<p>Having implemented this cost function, you would, you can then call the advanced optimization function called the <strong>‘fminunc’ - it stands for function minimization unconstrained in Octave</strong> -and the way you call this is as follows. </p>
+<p>You set a few options. This is a options as a data structure that stores the options you want. <em>So <strong>‘GradObj’ and ‘on’</strong> , these set the gradient objective parameter to on . It just means you are indeed going to provide a gradient to this algorithm ( which tells <code>fminunc</code> that our function returns both the cost and the gradient. This allows <code>fminunc</code> to use the gradient when minimizing the function ). I’m going to <strong>set the maximum number of iterations to</strong>, let’s say, one hundred. We’re going <strong>give it an initial guess for $\theta$ </strong>. There’s a 2 by 1 vector. And then this command calls fminunc. This <strong>‘@’ </strong> symbol presents a pointer to the cost function that we just defined up there. And if you call this, this will compute, you know, will use one of the more advanced optimization  algorithms.  And if you want to think it as just like gradient descent. But automatically choosing the learning rate alpha for so you don’t have to do so yourself. But it will then attempt to use the sort of advanced optimization algorithms. Like gradient descent on steroids. To try to find the optimal value of theta for you.</em>  </p>
+<p> Let me actually show you what this looks like in Octave. So I’ve written this cost function of theta function exactly as we had it on the previous line. It computes J-val which is the cost function. And it computes the gradient with the two elements being the partial derivatives of the cost function with respect to, you know, the two parameters, theta one and theta two. </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">function [jVal, gradient]=costFunction(theta)</span><br><span class="line">　　jVal=(theta(1)-5)^2+(theta(2)-5)^2;</span><br><span class="line">　　gradient=zeros(2,1);</span><br><span class="line">　　gradient(1)=2*(theta(1)-5);</span><br><span class="line">　　gradient(2)=2*(theta(2)-5);</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
+<p>Now let’s switch to my Octave window. I’m gonna type in those commands I had just now. So, options equals optimset. </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">options=optimset(&apos;GradObj&apos;,&apos;on&apos;,&apos;MaxIter&apos;,100);</span><br><span class="line">initialTheta=zeros(2,1);</span><br><span class="line">[optTheta, functionVal, exitFlag]=fminunc(@costFunction, initialTheta, options);</span><br></pre></td></tr></table></figure>
+<p>This is the notation for setting my parameters on my options, for my optimization algorithm. And if I hit enter this will run the optimization algorithm. And it returns pretty quickly. </p>
+<p><img src="https://img-blog.csdn.net/20180422163925276" alt=""></p>
+<p>This funny formatting that’s because my line, you know, my code wrapped around. So, this funny thing is just because my command line had wrapped around. But what this says is that numerically renders, you know, think of it as gradient descent on steroids, they found the optimal value of a theta is theta 1 equals 5, theta 2 equals 5, exactly as we’re hoping for. <strong>The <code>functionValue</code> at the optimum is essentially 10-to -the-minus-30-power. So that’s essentially zero, which is also what we’re hoping for</strong> . And the <code>exitFlag</code> is 1, and this shows what the convergence status of this. And if you want you can do help <code>fminunc</code> to read the documentation for how to interpret the exit flag. But <strong>the <code>exitFlag</code> let’s you verify whether or not this algorithm thing has converged</strong>. So that’s how you run these algorithms in Octave. </p>
+<p>I should mention, by the way, that for the Octave implementation, this value of theta, your <strong>parameter : vector of theta, its dimension is at least greater than or equal to 2.</strong> So if theta is just a real number. So, if it is not at least a two-dimensional vector or some higher than two-dimensional vector, this <code>fminunc</code> may not work, so and if in case you have a one-dimensional function that you use to optimize, you can look in the octave documentation for <code>fminunc</code> for additional details. </p>
+<p>So, that’s how we optimize our trial example of this simple quick driving cost function. However, we apply this to let’s just say progression. In logistic regression we have a parameter vector theta, and I’m going to use a mix of octave notation and sort of math notation. But I hope this explanation will be clear, but our parameter vector theta comprises these parameters theta 0 through theta n because octave indexes, vectors using indexing from 1, you know, theta 0 is actually written theta 1 in octave, theta 1 is gonna be written. So, if theta 2 in octave and that’s gonna be a written theta n+1, right? And that’s because Octave indexes is vectors starting from index of 1 and so the index of 0. <strong>So what we need to do then is write a cost function that captures the cost function for logistic regression. Concretely, the cost function needs to return <code>jVal</code>, which is, you know, <code>jVal</code> as you need some codes to compute J of theta and we also need to give it the gradient.</strong> </p>
+<p><img src="https://img-blog.csdn.net/20180422163953232" alt=""></p>
+<p>So, gradient 1 is going to be some code to compute the partial derivative in respect to theta 0, the next partial derivative respect to theta 1 and so on. Once again, this is gradient 1, gradient 2 and so on, rather than gradient 0, gradient 1 because octave indexes is vectors starting from one rather than from zero. But <strong>the main concept I hope you take away from this slide is, that what you need to do, is write a function that returns the cost function and returns the gradient.</strong> And so in order to apply this to logistic regression or even to linear regression, if you want to use these optimization algorithms for linear regression. What you need to do is plug in the appropriate code to compute these things over here. So, now you know how to use these advanced optimization algorithms.</p>
+<p><strong>Because, using, because for these algorithms, you’re using a sophisticated optimization library, it makes the just a little bit more opaque and so just maybe a little bit harder to debug. But because these algorithms often run much faster than gradient descent, often quite typically whenever I have a large machine learning problem, I will use these algorithms instead of using gradient descent. And with these ideas, hopefully, you’ll be able to get logistic progression and also linear regression to work on much larger problems. So, that’s it for advanced optimization concepts.</strong> And in the next and final video on Logistic Regression, I want to tell you how to take the logistic regression algorithm that you already know about and make it work also on multi-class classification problems.</p>
+<h2 id="Multiclass-Classification-One-vs-all"><a href="#Multiclass-Classification-One-vs-all" class="headerlink" title="Multiclass Classification: One-vs-all"></a>Multiclass Classification: One-vs-all</h2><p>Now we will approach the classification of data when we have more than two categories. Instead of y = {0,1} we will expand our definition so that y = {0,1…n}.<br>$$<br>\begin{align*}& y \in \lbrace0, 1 ... n\rbrace \\ & h_\theta^{(0)}(x) = P(y = 0 | x ; \theta) \\ & h_\theta^{(1)}(x) = P(y = 1 | x ; \theta) \\ & \cdots \\ & h_\theta^{(n)}(x) = P(y = n | x ; \theta) \\ & \mathrm{prediction} = \max_i( h_\theta ^{(i)}(x) )\\ \end{align*}<br>$$<br>Since y = {0,1…n}, we divide our problem into n+1 (+1 because the index starts at 0) binary classification problems; in each one, we predict the probability that ‘y’ is a member of one of our classes.</p>
+<p><img src="https://img-blog.csdn.net/20180422164012496" alt=""></p>
+<p><strong>To summarize:</strong>   </p>
+<ol>
+<li>Train a logistic regression classifier $h_θ(x)$ for each class￼ to predict the probability that ￼ ￼$y = i￼ $￼. </li>
+<li>To make a prediction on a new $x$ ,  pick the class ￼that maximizes $h_θ(x)$</li>
 </ol>
 
       
@@ -516,7 +565,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://snaildove.github.io/2017/08/28/Bayes'_rule/" title="经典摘录-Bayes' rule贝叶斯定律">https://snaildove.github.io/2017/08/28/Bayes'_rule/</a>
+    <a href="https://snaildove.github.io/2018/01/01/06-logistic-regression/" title="06_logistic-regression note6">https://snaildove.github.io/2018/01/01/06-logistic-regression/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -531,9 +580,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/probability/" rel="tag"><i class="fa fa-tag"></i> probability</a>
-          
-            <a href="/tags/概率论/" rel="tag"><i class="fa fa-tag"></i> 概率论</a>
+            <a href="/tags/Machine-Learning-by-Andrew-NG/" rel="tag"><i class="fa fa-tag"></i> Machine Learning by Andrew NG</a>
           
         </div>
       
@@ -561,8 +608,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/08/28/mean_and_variance_of_Bernoulli_and_Possion_random/" rel="next" title="经典摘录 - 伯努利和泊松随机变量的均值方差">
-                <i class="fa fa-chevron-left"></i> 经典摘录 - 伯努利和泊松随机变量的均值方差
+              <a href="/2018/01/01/02-linear-regression-with-one-variable/" rel="next" title="02_linear-regression-with-one-variable note2">
+                <i class="fa fa-chevron-left"></i> 02_linear-regression-with-one-variable note2
               </a>
             
           </div>
@@ -571,8 +618,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/01/01/03-linear-algebra-review/" rel="prev" title="03-linear-algebra-review note3">
-                03-linear-algebra-review note3 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/01/01/05_octave-matlab-tutorial/" rel="prev" title="05_octave-matlab-tutorial note5">
+                05_octave-matlab-tutorial note5 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -759,7 +806,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#The-law-of-total-probability"><span class="nav-number">1.</span> <span class="nav-text">The law of total probability</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#总概率定律的例子"><span class="nav-number">1.1.</span> <span class="nav-text">总概率定律的例子</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Inference-and-Bayes’-Rule-推断与贝叶斯定律"><span class="nav-number">2.</span> <span class="nav-text">Inference and Bayes’ Rule 推断与贝叶斯定律</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Bayes’-Rule贝叶斯定律"><span class="nav-number">2.1.</span> <span class="nav-text">Bayes’ Rule贝叶斯定律</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#贝叶斯定律进行推断的例子"><span class="nav-number">2.2.</span> <span class="nav-text">贝叶斯定律进行推断的例子</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#医学"><span class="nav-number">2.2.1.</span> <span class="nav-text">医学</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#比赛"><span class="nav-number">2.2.2.</span> <span class="nav-text">比赛</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#假阳性之谜"><span class="nav-number">2.2.3.</span> <span class="nav-text">假阳性之谜</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#连续随机变量的贝叶斯定律"><span class="nav-number">3.</span> <span class="nav-text">连续随机变量的贝叶斯定律</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#例子"><span class="nav-number">3.1.</span> <span class="nav-text">例子</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关于连续随机变量的推断"><span class="nav-number">4.</span> <span class="nav-text">关于连续随机变量的推断</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#例子-信号检测"><span class="nav-number">4.1.</span> <span class="nav-text">例子-信号检测</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基于离散观察值的推断"><span class="nav-number">4.2.</span> <span class="nav-text">基于离散观察值的推断</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">5.</span> <span class="nav-text">总结</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Note"><span class="nav-number">1.</span> <span class="nav-text">Note</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Classification"><span class="nav-number">2.</span> <span class="nav-text">Classification</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hypothesis-Representation"><span class="nav-number">3.</span> <span class="nav-text">Hypothesis Representation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Decision-Boundary"><span class="nav-number">4.</span> <span class="nav-text">Decision Boundary</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Cost-Function"><span class="nav-number">5.</span> <span class="nav-text">Cost Function</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Simplified-Cost-Function-and-Gradient-Descent"><span class="nav-number">6.</span> <span class="nav-text">Simplified Cost Function and Gradient Descent</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#A-vectorized-implementation"><span class="nav-number">6.1.</span> <span class="nav-text">A vectorized implementation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Gradient-Descent"><span class="nav-number">6.2.</span> <span class="nav-text">Gradient Descent</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#A-vectorized-implementation-1"><span class="nav-number">6.3.</span> <span class="nav-text">A vectorized implementation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Note-1"><span class="nav-number">6.4.</span> <span class="nav-text">Note</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Advanced-Optimization"><span class="nav-number">7.</span> <span class="nav-text">Advanced Optimization</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Example"><span class="nav-number">8.</span> <span class="nav-text">Example</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Multiclass-Classification-One-vs-all"><span class="nav-number">9.</span> <span class="nav-text">Multiclass Classification: One-vs-all</span></a></li></ol></div>
             
 
           </div>
