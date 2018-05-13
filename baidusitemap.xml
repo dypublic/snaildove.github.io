@@ -4,6 +4,46 @@
 
     
   <url>
+    <loc>https://snaildove.github.io/2018/01/01/02-linear-regression-with-one-variable/</loc>
+    <lastmod>2018-05-13T17:15:15.646Z</lastmod>
+    <data>
+        <display>
+        <title>02_linear-regression-with-one-variable note2</title>
+        <pubTime>2017-12-31T16:00:00.000Z</pubTime>
+        
+        <tag>Machine Learning by Andrew NG</tag>
+         
+         
+           
+             
+              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2018/01/01/01-what-is-machine-learning/</loc>
+    <lastmod>2018-05-13T15:02:37.456Z</lastmod>
+    <data>
+        <display>
+        <title>01-introduction-note1</title>
+        <pubTime>2017-12-31T16:00:00.000Z</pubTime>
+        
+        <tag>Machine Learning by Andrew NG</tag>
+         
+         
+           
+             
+              <breadCrumb title="英文" url="https://snaildove.github.io/categories/%E8%8B%B1%E6%96%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://snaildove.github.io/2017/08/20/LaTeX_symbols/</loc>
     <lastmod>2018-04-30T16:52:12.697Z</lastmod>
     <data>
@@ -307,12 +347,12 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2013/05/12/stack_application_on_line-editor_or_buff_zone/</loc>
+    <loc>https://snaildove.github.io/2013/05/13/stack_application_on_expression-resolution-with-braces/</loc>
     <lastmod>2018-03-14T09:23:31.425Z</lastmod>
     <data>
         <display>
-        <title>行编辑器/容错缓冲区-栈的基础应用2</title>
-        <pubTime>2013-05-12T14:16:00.000Z</pubTime>
+        <title>含括号的运算表达式求解-栈的基础应用3</title>
+        <pubTime>2013-05-13T14:16:00.000Z</pubTime>
         
         <tag>Data Structure</tag>
          
@@ -329,12 +369,12 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2013/05/13/stack_application_on_expression-resolution-with-braces/</loc>
+    <loc>https://snaildove.github.io/2013/05/12/stack_application_on_line-editor_or_buff_zone/</loc>
     <lastmod>2018-03-14T09:23:31.425Z</lastmod>
     <data>
         <display>
-        <title>含括号的运算表达式求解-栈的基础应用3</title>
-        <pubTime>2013-05-13T14:16:00.000Z</pubTime>
+        <title>行编辑器/容错缓冲区-栈的基础应用2</title>
+        <pubTime>2013-05-12T14:16:00.000Z</pubTime>
         
         <tag>Data Structure</tag>
          
@@ -571,12 +611,12 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2017/08/07/engineering_matrices/</loc>
+    <loc>https://snaildove.github.io/2017/08/08/graph_and_network/</loc>
     <lastmod>2018-03-14T09:23:31.412Z</lastmod>
     <data>
         <display>
-        <title>工程中的矩阵</title>
-        <pubTime>2017-08-07T12:16:00.000Z</pubTime>
+        <title>图和网络</title>
+        <pubTime>2017-08-08T12:16:00.000Z</pubTime>
         
         <tag>linear_algebra</tag>
          
@@ -593,12 +633,12 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2017/08/08/graph_and_network/</loc>
+    <loc>https://snaildove.github.io/2017/08/07/engineering_matrices/</loc>
     <lastmod>2018-03-14T09:23:31.412Z</lastmod>
     <data>
         <display>
-        <title>图和网络</title>
-        <pubTime>2017-08-08T12:16:00.000Z</pubTime>
+        <title>工程中的矩阵</title>
+        <pubTime>2017-08-07T12:16:00.000Z</pubTime>
         
         <tag>linear_algebra</tag>
          
