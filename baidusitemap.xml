@@ -5,7 +5,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/01/01/06-logistic-regression/</loc>
-    <lastmod>2018-05-13T04:15:14.177Z</lastmod>
+    <lastmod>2018-05-13T06:58:32.936Z</lastmod>
     <data>
         <display>
         <title>06_logistic-regression note6</title>
@@ -24,28 +24,8 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2018/01/01/01-what-is-machine-learning/</loc>
-    <lastmod>2018-05-12T15:08:49.612Z</lastmod>
-    <data>
-        <display>
-        <title>01-introduction-note1</title>
-        <pubTime>2017-12-31T16:00:00.000Z</pubTime>
-        
-        <tag>Machine Learning by Andrew NG</tag>
-         
-         
-           
-             
-              <breadCrumb title="英文" url="https://snaildove.github.io/categories/%E8%8B%B1%E6%96%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://snaildove.github.io/2018/01/01/04_linear-regression-with-multiple-variables/</loc>
-    <lastmod>2018-05-12T15:02:59.155Z</lastmod>
+    <lastmod>2018-05-13T06:57:44.861Z</lastmod>
     <data>
         <display>
         <title>04_linear-regression-with-multiple-variables note4</title>
@@ -65,7 +45,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/01/01/03-linear-algebra-review/</loc>
-    <lastmod>2018-05-12T15:02:16.281Z</lastmod>
+    <lastmod>2018-05-13T06:57:17.721Z</lastmod>
     <data>
         <display>
         <title>03-linear-algebra-review note3</title>
@@ -85,7 +65,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/01/01/02-linear-regression-with-one-variable/</loc>
-    <lastmod>2018-05-12T15:01:53.283Z</lastmod>
+    <lastmod>2018-05-13T06:42:55.390Z</lastmod>
     <data>
         <display>
         <title>02_linear-regression-with-one-variable note2</title>
@@ -97,6 +77,26 @@
            
              
               <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2018/01/01/01-what-is-machine-learning/</loc>
+    <lastmod>2018-05-13T06:41:55.740Z</lastmod>
+    <data>
+        <display>
+        <title>01-introduction-note1</title>
+        <pubTime>2017-12-31T16:00:00.000Z</pubTime>
+        
+        <tag>Machine Learning by Andrew NG</tag>
+         
+         
+           
+             
+              <breadCrumb title="英文" url="https://snaildove.github.io/categories/%E8%8B%B1%E6%96%87/"/>
           
         </display>
     </data>
