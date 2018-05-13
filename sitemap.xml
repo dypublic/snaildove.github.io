@@ -2,23 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://snaildove.github.io/2017/08/20/LaTeX_symbols/</loc>
+    <loc>https://snaildove.github.io/2018/05/13/test/</loc>
     
-    <lastmod>2018-04-30T16:04:10.919Z</lastmod>
+    <lastmod>2018-05-12T16:58:37.770Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2018/01/01/01-what-is-machine-learning/</loc>
+    
+    <lastmod>2018-05-12T15:08:49.612Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2018/01/01/04_linear-regression-with-multiple-variables/</loc>
+    
+    <lastmod>2018-05-12T15:02:59.155Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2018/01/01/03-linear-algebra-review/</loc>
+    
+    <lastmod>2018-05-12T15:02:16.281Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://snaildove.github.io/2018/01/01/02-linear-regression-with-one-variable/</loc>
     
-    <lastmod>2018-04-20T11:26:43.584Z</lastmod>
+    <lastmod>2018-05-12T15:01:53.283Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://snaildove.github.io/2018/01/01/05_octave-matlab-tutorial/</loc>
     
-    <lastmod>2018-04-20T11:26:21.692Z</lastmod>
+    <lastmod>2018-05-03T16:12:33.968Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2017/08/20/LaTeX_symbols/</loc>
+    
+    <lastmod>2018-04-30T16:52:12.697Z</lastmod>
     
   </url>
   
@@ -26,27 +54,6 @@
     <loc>https://snaildove.github.io/2015/05/01/decision_tree/</loc>
     
     <lastmod>2018-04-20T11:03:52.364Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2018/01/01/04_linear-regression-with-multiple-variables/</loc>
-    
-    <lastmod>2018-04-20T05:26:45.914Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2018/01/01/01-what-is-machine-learning/</loc>
-    
-    <lastmod>2018-04-17T13:46:21.222Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2018/01/01/03-linear-algebra-review/</loc>
-    
-    <lastmod>2018-04-17T13:46:10.183Z</lastmod>
     
   </url>
   

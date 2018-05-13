@@ -106,15 +106,15 @@
 <meta property="og:site_name" content="SnailDove&#39;s blog">
 <meta property="og:description" content="NoteThis personal note is written after studying the coursera opening course, Machine Learning by Andrew NG . And images, audios of this note all comes from the opening course.  Matrices and VectorsM">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://img-blog.csdn.net/20180411182643718?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3lvdTEzMTQ1MjBtZQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
-<meta property="og:image" content="https://img-blog.csdn.net/20180411182659390?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3lvdTEzMTQ1MjBtZQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
-<meta property="og:image" content="https://img-blog.csdn.net/20180411182737347?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3lvdTEzMTQ1MjBtZQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
-<meta property="og:image" content="https://img-blog.csdn.net/2018041118275543?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3lvdTEzMTQ1MjBtZQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
-<meta property="og:updated_time" content="2018-04-17T13:46:10.183Z">
+<meta property="og:image" content="https://img-blog.csdn.net/20180411182643718">
+<meta property="og:image" content="https://img-blog.csdn.net/20180411182659390">
+<meta property="og:image" content="https://img-blog.csdn.net/20180411182737347">
+<meta property="og:image" content="https://img-blog.csdn.net/2018041118275543">
+<meta property="og:updated_time" content="2018-05-12T15:02:16.281Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="03-linear-algebra-review note3">
 <meta name="twitter:description" content="NoteThis personal note is written after studying the coursera opening course, Machine Learning by Andrew NG . And images, audios of this note all comes from the opening course.  Matrices and VectorsM">
-<meta name="twitter:image" content="https://img-blog.csdn.net/20180411182643718?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3lvdTEzMTQ1MjBtZQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+<meta name="twitter:image" content="https://img-blog.csdn.net/20180411182643718">
 
 
 
@@ -491,7 +491,7 @@ $$
 <p>An  <strong>m x n matrix</strong> multiplied by an <strong>n x 1 vector</strong> results in an <strong>m x 1 vector</strong> . </p>
 <p>Below is an example of a matrix-vector multiplication. Make sure you understand how the multiplication works. Feel free to try different matrix-vector multiplications.</p>
 <figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">% Initialize matrix A </span></span><br><span class="line">A = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>; <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>;<span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>] </span><br><span class="line"></span><br><span class="line"><span class="comment">% Initialize vector v </span></span><br><span class="line">v = [<span class="number">1</span>; <span class="number">1</span>; <span class="number">1</span>] </span><br><span class="line"></span><br><span class="line"><span class="comment">% Multiply A * v</span></span><br><span class="line">Av = A * v</span><br></pre></td></tr></table></figure>
-<p><img src="https://img-blog.csdn.net/20180411182643718?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3lvdTEzMTQ1MjBtZQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="matrix_vector_multiplication"><br><img src="https://img-blog.csdn.net/20180411182659390?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3lvdTEzMTQ1MjBtZQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="example_of_matrix_vector_multiplication"></p>
+<p><img src="https://img-blog.csdn.net/20180411182643718" alt="matrix_vector_multiplication"><br><img src="https://img-blog.csdn.net/20180411182659390" alt="example_of_matrix_vector_multiplication"></p>
 <h2 id="Matrix-Matrix-Multiplication"><a href="#Matrix-Matrix-Multiplication" class="headerlink" title="Matrix-Matrix Multiplication"></a>Matrix-Matrix Multiplication</h2><p>We multiply two matrices by breaking it into several vector multiplications and concatenating the result.</p>
 
 $$
@@ -503,8 +503,8 @@ $$
 <p>To multiply two matrices, the number of <strong>columns</strong> of the first matrix must equal the number of <strong>rows</strong> of the second matrix. </p>
 <p>For example:</p>
 <figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">% Initialize a 3 by 2 matrix </span></span><br><span class="line">A = [<span class="number">1</span>, <span class="number">2</span>; <span class="number">3</span>, <span class="number">4</span>;<span class="number">5</span>, <span class="number">6</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment">% Initialize a 2 by 1 matrix </span></span><br><span class="line">B = [<span class="number">1</span>; <span class="number">2</span>] </span><br><span class="line"></span><br><span class="line"><span class="comment">% We expect a resulting matrix of (3 by 2)*(2 by 1) = (3 by 1) </span></span><br><span class="line">mult_AB = A*B</span><br><span class="line"></span><br><span class="line"><span class="comment">% Make sure you understand why we got that result</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://img-blog.csdn.net/20180411182737347?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3lvdTEzMTQ1MjBtZQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="matrix_matrix_multiplication"></p>
-<p><img src="https://img-blog.csdn.net/2018041118275543?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3lvdTEzMTQ1MjBtZQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="example_of_matrix_matrix_multiplication"></p>
+<p><img src="https://img-blog.csdn.net/20180411182737347" alt="matrix_matrix_multiplication"></p>
+<p><img src="https://img-blog.csdn.net/2018041118275543" alt="example_of_matrix_matrix_multiplication"></p>
 <h2 id="Matrix-Multiplication-Properties"><a href="#Matrix-Multiplication-Properties" class="headerlink" title="Matrix Multiplication Properties"></a>Matrix Multiplication Properties</h2><ul>
 <li>​    Matrices are not commutative: $A∗B≠B∗A,A∗B≠B∗A$</li>
 <li>​    Matrices are associative: $(A∗B)∗C=A∗(B∗C)$</li>
@@ -581,8 +581,8 @@ $$
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/08/28/Bayes'_rule/" rel="next" title="经典摘录-Bayes' rule贝叶斯定律">
-                <i class="fa fa-chevron-left"></i> 经典摘录-Bayes' rule贝叶斯定律
+              <a href="/2017/08/28/mean_and_variance_of_Bernoulli_and_Possion_random/" rel="next" title="经典摘录 - 伯努利和泊松随机变量的均值方差">
+                <i class="fa fa-chevron-left"></i> 经典摘录 - 伯努利和泊松随机变量的均值方差
               </a>
             
           </div>
@@ -591,8 +591,8 @@ $$
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/01/01/04_linear-regression-with-multiple-variables/" rel="prev" title="04_linear-regression-with-multiple-variables note4">
-                04_linear-regression-with-multiple-variables note4 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/01/01/02-linear-regression-with-one-variable/" rel="prev" title="02_linear-regression-with-one-variable note2">
+                02_linear-regression-with-one-variable note2 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -679,7 +679,7 @@ $$
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">38</span>
+                  <span class="site-state-item-count">39</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -812,7 +812,7 @@ $$
     
       <span class="post-meta-item-text">全站文章总字数</span>
     
-    <span title="全站文章总字数">72.5k</span>
+    <span title="全站文章总字数">90.1k</span>
   
 </div>
 

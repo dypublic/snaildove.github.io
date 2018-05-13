@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://snaildove.github.io/"/>
-  <updated>2018-03-31T19:00:10.252Z</updated>
+  <updated>2018-05-12T16:58:37.770Z</updated>
   <id>https://snaildove.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="https://snaildove.github.io/2018/05/13/test/"/>
+    <id>https://snaildove.github.io/2018/05/13/test/</id>
+    <published>2018-05-12T16:58:37.184Z</published>
+    <updated>2018-05-12T16:58:37.770Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>同步hexo博客</title>
@@ -74,7 +96,7 @@
     <link href="https://snaildove.github.io/2018/01/01/01-what-is-machine-learning/"/>
     <id>https://snaildove.github.io/2018/01/01/01-what-is-machine-learning/</id>
     <published>2017-12-31T16:00:00.000Z</published>
-    <updated>2018-04-17T13:46:21.222Z</updated>
+    <updated>2018-05-12T15:08:49.612Z</updated>
     
     <summary type="html">
     
@@ -101,7 +123,7 @@
     <link href="https://snaildove.github.io/2018/01/01/05_octave-matlab-tutorial/"/>
     <id>https://snaildove.github.io/2018/01/01/05_octave-matlab-tutorial/</id>
     <published>2017-12-31T16:00:00.000Z</published>
-    <updated>2018-04-20T11:26:21.692Z</updated>
+    <updated>2018-05-03T16:12:33.968Z</updated>
     
     <summary type="html">
     
@@ -123,37 +145,11 @@
   </entry>
   
   <entry>
-    <title>02_linear-regression-with-one-variable note2</title>
-    <link href="https://snaildove.github.io/2018/01/01/02-linear-regression-with-one-variable/"/>
-    <id>https://snaildove.github.io/2018/01/01/02-linear-regression-with-one-variable/</id>
-    <published>2017-12-31T16:00:00.000Z</published>
-    <updated>2018-04-20T11:26:43.584Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This
-        
-      
-    
-    </summary>
-    
-      <category term="english" scheme="https://snaildove.github.io/categories/english/"/>
-    
-    
-      <category term="Machine Learning by Andrew NG" scheme="https://snaildove.github.io/tags/Machine-Learning-by-Andrew-NG/"/>
-    
-  </entry>
-  
-  <entry>
     <title>04_linear-regression-with-multiple-variables note4</title>
     <link href="https://snaildove.github.io/2018/01/01/04_linear-regression-with-multiple-variables/"/>
     <id>https://snaildove.github.io/2018/01/01/04_linear-regression-with-multiple-variables/</id>
     <published>2017-12-31T16:00:00.000Z</published>
-    <updated>2018-04-20T05:26:45.914Z</updated>
+    <updated>2018-05-12T15:02:59.155Z</updated>
     
     <summary type="html">
     
@@ -175,11 +171,37 @@
   </entry>
   
   <entry>
+    <title>02_linear-regression-with-one-variable note2</title>
+    <link href="https://snaildove.github.io/2018/01/01/02-linear-regression-with-one-variable/"/>
+    <id>https://snaildove.github.io/2018/01/01/02-linear-regression-with-one-variable/</id>
+    <published>2017-12-31T16:00:00.000Z</published>
+    <updated>2018-05-12T15:01:53.283Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This
+        
+      
+    
+    </summary>
+    
+      <category term="english" scheme="https://snaildove.github.io/categories/english/"/>
+    
+    
+      <category term="Machine Learning by Andrew NG" scheme="https://snaildove.github.io/tags/Machine-Learning-by-Andrew-NG/"/>
+    
+  </entry>
+  
+  <entry>
     <title>03-linear-algebra-review note3</title>
     <link href="https://snaildove.github.io/2018/01/01/03-linear-algebra-review/"/>
     <id>https://snaildove.github.io/2018/01/01/03-linear-algebra-review/</id>
     <published>2017-12-31T16:00:00.000Z</published>
-    <updated>2018-04-17T13:46:10.183Z</updated>
+    <updated>2018-05-12T15:02:16.281Z</updated>
     
     <summary type="html">
     
@@ -197,34 +219,6 @@
     
     
       <category term="Machine Learning by Andrew NG" scheme="https://snaildove.github.io/tags/Machine-Learning-by-Andrew-NG/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>经典摘录-Bayes&#39; rule贝叶斯定律</title>
-    <link href="https://snaildove.github.io/2017/08/28/Bayes&#39;_rule/"/>
-    <id>https://snaildove.github.io/2017/08/28/Bayes&#39;_rule/</id>
-    <published>2017-08-28T12:16:00.000Z</published>
-    <updated>2018-03-25T13:17:05.699Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;说明：全文摘自&lt;a href=&quot;http://www.athenasc.com/probbook.html&quot; target=&quot;_blank&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="中文" scheme="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
-    
-    
-      <category term="probability" scheme="https://snaildove.github.io/tags/probability/"/>
-    
-      <category term="概率论" scheme="https://snaildove.github.io/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
     
   </entry>
   
@@ -257,11 +251,11 @@
   </entry>
   
   <entry>
-    <title>经典摘录-分段常数概率密度函数的均值和方差</title>
-    <link href="https://snaildove.github.io/2017/08/27/mean_and_variance_of_a_piecewise_constant_PDF/"/>
-    <id>https://snaildove.github.io/2017/08/27/mean_and_variance_of_a_piecewise_constant_PDF/</id>
-    <published>2017-08-27T12:16:00.000Z</published>
-    <updated>2018-03-14T09:23:31.415Z</updated>
+    <title>经典摘录-Bayes&#39; rule贝叶斯定律</title>
+    <link href="https://snaildove.github.io/2017/08/28/Bayes&#39;_rule/"/>
+    <id>https://snaildove.github.io/2017/08/28/Bayes&#39;_rule/</id>
+    <published>2017-08-28T12:16:00.000Z</published>
+    <updated>2018-03-25T13:17:05.699Z</updated>
     
     <summary type="html">
     
@@ -269,7 +263,7 @@
       
         
         
-          &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;本文摘录自 &lt;a href=&quot;http://www.athenasc.com/probbook.html&quot; target=&quot;_blank&quot;
+          &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;说明：全文摘自&lt;a href=&quot;http://www.athenasc.com/probbook.html&quot; target=&quot;_blank&quot;
         
       
     
@@ -298,6 +292,34 @@
         
         
           &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;&lt;strong&gt;说明&lt;/strong&gt;：全文摘自 &lt;a href=&quot;http://www.athenasc.com/probbook.html&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="中文" scheme="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+    
+    
+      <category term="probability" scheme="https://snaildove.github.io/tags/probability/"/>
+    
+      <category term="概率论" scheme="https://snaildove.github.io/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>经典摘录-分段常数概率密度函数的均值和方差</title>
+    <link href="https://snaildove.github.io/2017/08/27/mean_and_variance_of_a_piecewise_constant_PDF/"/>
+    <id>https://snaildove.github.io/2017/08/27/mean_and_variance_of_a_piecewise_constant_PDF/</id>
+    <published>2017-08-27T12:16:00.000Z</published>
+    <updated>2018-03-14T09:23:31.415Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;本文摘录自 &lt;a href=&quot;http://www.athenasc.com/probbook.html&quot; target=&quot;_blank&quot;
         
       
     
@@ -485,7 +507,7 @@
     <link href="https://snaildove.github.io/2017/08/20/LaTeX_symbols/"/>
     <id>https://snaildove.github.io/2017/08/20/LaTeX_symbols/</id>
     <published>2017-08-20T12:16:00.000Z</published>
-    <updated>2018-04-30T16:04:10.919Z</updated>
+    <updated>2018-04-30T16:52:12.697Z</updated>
     
     <summary type="html">
     
@@ -527,34 +549,6 @@
     </summary>
     
       <category term="English" scheme="https://snaildove.github.io/categories/English/"/>
-    
-    
-      <category term="probability" scheme="https://snaildove.github.io/tags/probability/"/>
-    
-      <category term="概率论" scheme="https://snaildove.github.io/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>期望定义的由来</title>
-    <link href="https://snaildove.github.io/2017/08/14/definition_of_expectation/"/>
-    <id>https://snaildove.github.io/2017/08/14/definition_of_expectation/</id>
-    <published>2017-08-14T12:16:00.000Z</published>
-    <updated>2018-03-14T09:23:31.411Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="中文" scheme="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
     
     
       <category term="probability" scheme="https://snaildove.github.io/tags/probability/"/>
