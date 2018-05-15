@@ -2,30 +2,100 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://snaildove.github.io/2018/01/01/13_unsupervised-learning/</loc>
+    <loc>https://snaildove.github.io/2018/01/15/15_anomaly-detection/</loc>
     
-    <lastmod>2018-05-15T08:36:37.364Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2018/01/01/15_anomaly-detection/</loc>
-    
-    <lastmod>2018-05-15T08:34:09.880Z</lastmod>
+    <lastmod>2018-05-15T08:57:45.235Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2018/01/01/10_advice-for-applying-machine-learning/</loc>
+    <loc>https://snaildove.github.io/2018/01/14/14_dimensionality-reduction/</loc>
     
-    <lastmod>2018-05-15T08:33:36.540Z</lastmod>
+    <lastmod>2018-05-15T08:57:34.578Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2018/01/01/01-what-is-machine-learning/</loc>
+    <loc>https://snaildove.github.io/2018/01/13/13_unsupervised-learning/</loc>
     
-    <lastmod>2018-05-15T08:33:04.305Z</lastmod>
+    <lastmod>2018-05-15T08:57:18.796Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2018/01/11/11_machine-learning-system-design/</loc>
+    
+    <lastmod>2018-05-15T08:56:18.625Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2018/01/12/12_support-vector-machines/</loc>
+    
+    <lastmod>2018-05-15T08:56:13.433Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2018/01/10/10_advice-for-applying-machine-learning/</loc>
+    
+    <lastmod>2018-05-15T08:55:50.532Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2018/01/08/08_neural-networks-representation/</loc>
+    
+    <lastmod>2018-05-15T08:55:06.315Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2018/01/09/09_neural-networks-learning/</loc>
+    
+    <lastmod>2018-05-15T08:54:59.359Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2018/01/07/07_regularization/</loc>
+    
+    <lastmod>2018-05-15T08:54:23.938Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2018/01/06/06_logistic-regression/</loc>
+    
+    <lastmod>2018-05-15T08:54:19.351Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2018/01/04/04_linear-regression-with-multiple-variables/</loc>
+    
+    <lastmod>2018-05-15T08:54:12.137Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2018/01/03/03_linear-algebra-review/</loc>
+    
+    <lastmod>2018-05-15T08:54:06.684Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2018/01/02/02_linear-regression-with-one-variable/</loc>
+    
+    <lastmod>2018-05-15T08:53:53.908Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2018/01/01/01_what-is-machine-learning/</loc>
+    
+    <lastmod>2018-05-15T08:41:28.108Z</lastmod>
     
   </url>
   
@@ -37,13 +107,6 @@
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2018/01/01/14_dimensionality-reduction/</loc>
-    
-    <lastmod>2018-05-15T03:37:00.799Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://snaildove.github.io/2016/01/20/vim_without_widgets/</loc>
     
     <lastmod>2018-05-14T15:43:33.380Z</lastmod>
@@ -51,72 +114,9 @@
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2018/01/01/12_support-vector-machines/</loc>
-    
-    <lastmod>2018-05-14T06:08:23.746Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2018/01/01/11_machine-learning-system-design/</loc>
-    
-    <lastmod>2018-05-14T04:23:57.009Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2018/01/01/09_neural-networks-learning/</loc>
-    
-    <lastmod>2018-05-14T04:01:32.955Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2018/01/01/08_neural-networks-representation/</loc>
-    
-    <lastmod>2018-05-14T03:43:25.044Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2018/01/01/07_regularization/</loc>
-    
-    <lastmod>2018-05-14T02:55:30.377Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2018/01/01/06-logistic-regression/</loc>
-    
-    <lastmod>2018-05-14T02:48:33.623Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://snaildove.github.io/2018/01/01/05_octave-matlab-tutorial/</loc>
     
     <lastmod>2018-05-14T02:30:39.913Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2018/01/01/04_linear-regression-with-multiple-variables/</loc>
-    
-    <lastmod>2018-05-14T02:25:32.029Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2018/01/01/03-linear-algebra-review/</loc>
-    
-    <lastmod>2018-05-14T02:08:27.275Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2018/01/01/02-linear-regression-with-one-variable/</loc>
-    
-    <lastmod>2018-05-13T17:15:15.646Z</lastmod>
     
   </url>
   
