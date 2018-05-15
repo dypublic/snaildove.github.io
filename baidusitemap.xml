@@ -4,6 +4,86 @@
 
     
   <url>
+    <loc>https://snaildove.github.io/2018/01/01/13_unsupervised-learning/</loc>
+    <lastmod>2018-05-15T08:36:37.364Z</lastmod>
+    <data>
+        <display>
+        <title>13_unsupervised-learning note13</title>
+        <pubTime>2017-12-31T16:00:00.000Z</pubTime>
+        
+        <tag>Machine Learning by Andrew NG</tag>
+         
+         
+           
+             
+              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2018/01/01/15_anomaly-detection/</loc>
+    <lastmod>2018-05-15T08:34:09.880Z</lastmod>
+    <data>
+        <display>
+        <title>15_anomaly-detection note15</title>
+        <pubTime>2017-12-31T16:00:00.000Z</pubTime>
+        
+        <tag>Machine Learning by Andrew NG</tag>
+         
+         
+           
+             
+              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2018/01/01/10_advice-for-applying-machine-learning/</loc>
+    <lastmod>2018-05-15T08:33:36.540Z</lastmod>
+    <data>
+        <display>
+        <title>10_advice-for-applying-machine-learning note10</title>
+        <pubTime>2017-12-31T16:00:00.000Z</pubTime>
+        
+        <tag>Machine Learning by Andrew NG</tag>
+         
+         
+           
+             
+              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2018/01/01/01-what-is-machine-learning/</loc>
+    <lastmod>2018-05-15T08:33:04.305Z</lastmod>
+    <data>
+        <display>
+        <title>01-introduction note1</title>
+        <pubTime>2017-12-31T16:00:00.000Z</pubTime>
+        
+        <tag>Machine Learning by Andrew NG</tag>
+         
+         
+           
+             
+              <breadCrumb title="英文" url="https://snaildove.github.io/categories/%E8%8B%B1%E6%96%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://snaildove.github.io/2017/08/28/Bayes'_rule/</loc>
     <lastmod>2018-05-15T08:23:55.720Z</lastmod>
     <data>
@@ -26,26 +106,6 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2018/01/01/15_anomaly-detection/</loc>
-    <lastmod>2018-05-15T08:07:51.706Z</lastmod>
-    <data>
-        <display>
-        <title>15_anomaly-detection</title>
-        <pubTime>2017-12-31T16:00:00.000Z</pubTime>
-        
-        <tag>Machine Learning by Andrew NG</tag>
-         
-         
-           
-             
-              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://snaildove.github.io/2018/01/01/14_dimensionality-reduction/</loc>
     <lastmod>2018-05-15T03:37:00.799Z</lastmod>
     <data>
@@ -60,21 +120,6 @@
              
               <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://snaildove.github.io/2018/05/15/13_unsupervised-learning/</loc>
-    <lastmod>2018-05-14T17:17:18.446Z</lastmod>
-    <data>
-        <display>
-        <title></title>
-        <pubTime>2018-05-14T17:13:49.759Z</pubTime>
-        
-         
-           
         </display>
     </data>
     </url>
@@ -126,26 +171,6 @@
     <data>
         <display>
         <title>11_machine-learning-system-design note11</title>
-        <pubTime>2017-12-31T16:00:00.000Z</pubTime>
-        
-        <tag>Machine Learning by Andrew NG</tag>
-         
-         
-           
-             
-              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://snaildove.github.io/2018/01/01/10_advice-for-applying-machine-learning/</loc>
-    <lastmod>2018-05-14T04:17:00.202Z</lastmod>
-    <data>
-        <display>
-        <title>10_advice-for-applying-machine-learning</title>
         <pubTime>2017-12-31T16:00:00.000Z</pubTime>
         
         <tag>Machine Learning by Andrew NG</tag>
@@ -314,26 +339,6 @@
            
              
               <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://snaildove.github.io/2018/01/01/01-what-is-machine-learning/</loc>
-    <lastmod>2018-05-13T15:02:37.456Z</lastmod>
-    <data>
-        <display>
-        <title>01-introduction-note1</title>
-        <pubTime>2017-12-31T16:00:00.000Z</pubTime>
-        
-        <tag>Machine Learning by Andrew NG</tag>
-         
-         
-           
-             
-              <breadCrumb title="英文" url="https://snaildove.github.io/categories/%E8%8B%B1%E6%96%87/"/>
           
         </display>
     </data>

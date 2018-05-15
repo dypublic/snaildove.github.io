@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://snaildove.github.io/"/>
-  <updated>2018-05-14T17:17:18.446Z</updated>
+  <updated>2018-03-31T19:00:10.252Z</updated>
   <id>https://snaildove.github.io/</id>
   
   <author>
@@ -15,29 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title></title>
-    <link href="https://snaildove.github.io/2018/05/15/13_unsupervised-learning/"/>
-    <id>https://snaildove.github.io/2018/05/15/13_unsupervised-learning/</id>
-    <published>2018-05-14T17:13:49.759Z</published>
-    <updated>2018-05-14T17:17:18.446Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;hr&gt;
-&lt;p&gt;title: 13_unsupervised-learning&lt;br&gt;date: 2018-01-01&lt;br&gt;copyright:
-        
-      
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>同步hexo博客</title>
@@ -89,6 +66,32 @@
     
     
       <category term="english" scheme="https://snaildove.github.io/tags/english/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>03-linear-algebra-review note3</title>
+    <link href="https://snaildove.github.io/2018/01/01/03-linear-algebra-review/"/>
+    <id>https://snaildove.github.io/2018/01/01/03-linear-algebra-review/</id>
+    <published>2017-12-31T16:00:00.000Z</published>
+    <updated>2018-05-14T02:08:27.275Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This
+        
+      
+    
+    </summary>
+    
+      <category term="英文" scheme="https://snaildove.github.io/categories/%E8%8B%B1%E6%96%87/"/>
+    
+    
+      <category term="Machine Learning by Andrew NG" scheme="https://snaildove.github.io/tags/Machine-Learning-by-Andrew-NG/"/>
     
   </entry>
   
@@ -197,32 +200,6 @@
   </entry>
   
   <entry>
-    <title>08_neural-networks-representation note8</title>
-    <link href="https://snaildove.github.io/2018/01/01/08_neural-networks-representation/"/>
-    <id>https://snaildove.github.io/2018/01/01/08_neural-networks-representation/</id>
-    <published>2017-12-31T16:00:00.000Z</published>
-    <updated>2018-05-14T03:43:25.044Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h1 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h1&gt;&lt;p&gt;This
-        
-      
-    
-    </summary>
-    
-      <category term="english" scheme="https://snaildove.github.io/categories/english/"/>
-    
-    
-      <category term="Machine Learning by Andrew NG" scheme="https://snaildove.github.io/tags/Machine-Learning-by-Andrew-NG/"/>
-    
-  </entry>
-  
-  <entry>
     <title>09_neural-networks-learning note9</title>
     <link href="https://snaildove.github.io/2018/01/01/09_neural-networks-learning/"/>
     <id>https://snaildove.github.io/2018/01/01/09_neural-networks-learning/</id>
@@ -249,11 +226,11 @@
   </entry>
   
   <entry>
-    <title>10_advice-for-applying-machine-learning</title>
+    <title>10_advice-for-applying-machine-learning note10</title>
     <link href="https://snaildove.github.io/2018/01/01/10_advice-for-applying-machine-learning/"/>
     <id>https://snaildove.github.io/2018/01/01/10_advice-for-applying-machine-learning/</id>
     <published>2017-12-31T16:00:00.000Z</published>
-    <updated>2018-05-14T04:17:00.202Z</updated>
+    <updated>2018-05-15T08:33:36.540Z</updated>
     
     <summary type="html">
     
@@ -262,6 +239,32 @@
         
         
           &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;By now you have seen a lot of different learning algorithms. And if you’ve been
+        
+      
+    
+    </summary>
+    
+      <category term="english" scheme="https://snaildove.github.io/categories/english/"/>
+    
+    
+      <category term="Machine Learning by Andrew NG" scheme="https://snaildove.github.io/tags/Machine-Learning-by-Andrew-NG/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>08_neural-networks-representation note8</title>
+    <link href="https://snaildove.github.io/2018/01/01/08_neural-networks-representation/"/>
+    <id>https://snaildove.github.io/2018/01/01/08_neural-networks-representation/</id>
+    <published>2017-12-31T16:00:00.000Z</published>
+    <updated>2018-05-14T03:43:25.044Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h1 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h1&gt;&lt;p&gt;This
         
       
     
@@ -301,64 +304,11 @@
   </entry>
   
   <entry>
-    <title>01-introduction-note1</title>
-    <link href="https://snaildove.github.io/2018/01/01/01-what-is-machine-learning/"/>
-    <id>https://snaildove.github.io/2018/01/01/01-what-is-machine-learning/</id>
+    <title>13_unsupervised-learning note13</title>
+    <link href="https://snaildove.github.io/2018/01/01/13_unsupervised-learning/"/>
+    <id>https://snaildove.github.io/2018/01/01/13_unsupervised-learning/</id>
     <published>2017-12-31T16:00:00.000Z</published>
-    <updated>2018-05-13T15:02:37.456Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;&lt;strong&gt;Need to know&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;This personal note is written after studying the
-        
-      
-    
-    </summary>
-    
-      <category term="英文" scheme="https://snaildove.github.io/categories/%E8%8B%B1%E6%96%87/"/>
-    
-    
-      <category term="Machine Learning by Andrew NG" scheme="https://snaildove.github.io/tags/Machine-Learning-by-Andrew-NG/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>15_anomaly-detection</title>
-    <link href="https://snaildove.github.io/2018/01/01/15_anomaly-detection/"/>
-    <id>https://snaildove.github.io/2018/01/01/15_anomaly-detection/</id>
-    <published>2017-12-31T16:00:00.000Z</published>
-    <updated>2018-05-15T08:07:51.706Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This
-        
-      
-    
-    </summary>
-    
-      <category term="english" scheme="https://snaildove.github.io/categories/english/"/>
-    
-    
-      <category term="Machine Learning by Andrew NG" scheme="https://snaildove.github.io/tags/Machine-Learning-by-Andrew-NG/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>14_dimensionality-reduction note14</title>
-    <link href="https://snaildove.github.io/2018/01/01/14_dimensionality-reduction/"/>
-    <id>https://snaildove.github.io/2018/01/01/14_dimensionality-reduction/</id>
-    <published>2017-12-31T16:00:00.000Z</published>
-    <updated>2018-05-15T03:37:00.799Z</updated>
+    <updated>2018-05-15T08:36:37.364Z</updated>
     
     <summary type="html">
     
@@ -406,6 +356,58 @@
   </entry>
   
   <entry>
+    <title>15_anomaly-detection note15</title>
+    <link href="https://snaildove.github.io/2018/01/01/15_anomaly-detection/"/>
+    <id>https://snaildove.github.io/2018/01/01/15_anomaly-detection/</id>
+    <published>2017-12-31T16:00:00.000Z</published>
+    <updated>2018-05-15T08:34:09.880Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This
+        
+      
+    
+    </summary>
+    
+      <category term="english" scheme="https://snaildove.github.io/categories/english/"/>
+    
+    
+      <category term="Machine Learning by Andrew NG" scheme="https://snaildove.github.io/tags/Machine-Learning-by-Andrew-NG/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>14_dimensionality-reduction note14</title>
+    <link href="https://snaildove.github.io/2018/01/01/14_dimensionality-reduction/"/>
+    <id>https://snaildove.github.io/2018/01/01/14_dimensionality-reduction/</id>
+    <published>2017-12-31T16:00:00.000Z</published>
+    <updated>2018-05-15T03:37:00.799Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This
+        
+      
+    
+    </summary>
+    
+      <category term="english" scheme="https://snaildove.github.io/categories/english/"/>
+    
+    
+      <category term="Machine Learning by Andrew NG" scheme="https://snaildove.github.io/tags/Machine-Learning-by-Andrew-NG/"/>
+    
+  </entry>
+  
+  <entry>
     <title>02_linear-regression-with-one-variable note2</title>
     <link href="https://snaildove.github.io/2018/01/01/02-linear-regression-with-one-variable/"/>
     <id>https://snaildove.github.io/2018/01/01/02-linear-regression-with-one-variable/</id>
@@ -432,11 +434,11 @@
   </entry>
   
   <entry>
-    <title>03-linear-algebra-review note3</title>
-    <link href="https://snaildove.github.io/2018/01/01/03-linear-algebra-review/"/>
-    <id>https://snaildove.github.io/2018/01/01/03-linear-algebra-review/</id>
+    <title>01-introduction note1</title>
+    <link href="https://snaildove.github.io/2018/01/01/01-what-is-machine-learning/"/>
+    <id>https://snaildove.github.io/2018/01/01/01-what-is-machine-learning/</id>
     <published>2017-12-31T16:00:00.000Z</published>
-    <updated>2018-05-14T02:08:27.275Z</updated>
+    <updated>2018-05-15T08:33:04.305Z</updated>
     
     <summary type="html">
     
@@ -444,7 +446,8 @@
       
         
         
-          &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This
+          &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;&lt;strong&gt;Need to know&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This personal note is written after studying the
         
       
     
