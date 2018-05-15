@@ -106,7 +106,7 @@
 <meta property="og:site_name" content="SnailDove&#39;s blog">
 <meta property="og:description" content="本文根据使用经验，会持续更新。 vim的四种模式 一般模式：normal模式。可以移动光标，删除字符或整行，也可复制、粘贴文件数据。打开vim就是进入这个模式，3个模式的切换也是在这里中转。 编辑模式：一般模式下按下i I o O a A r R s S 任何一个进入该模式。可以编辑文件内容，按Esc回到一般模式。   i I是insert（在光标所在字符前和行首） o O是open新行（在光标">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-14T09:23:31.432Z">
+<meta property="og:updated_time" content="2018-05-14T15:43:33.380Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vim无插件使用">
 <meta name="twitter:description" content="本文根据使用经验，会持续更新。 vim的四种模式 一般模式：normal模式。可以移动光标，删除字符或整行，也可复制、粘贴文件数据。打开vim就是进入这个模式，3个模式的切换也是在这里中转。 编辑模式：一般模式下按下i I o O a A r R s S 任何一个进入该模式。可以编辑文件内容，按Esc回到一般模式。   i I是insert（在光标所在字符前和行首） o O是open新行（在光标">
@@ -406,7 +406,7 @@
                   <span class="post-meta-item-text">全文字数</span>
                 
                 <span title="全文字数">
-                  7,208
+                  7,219
                 </span>
               
 
@@ -763,6 +763,14 @@
 <td>yaw</td>
 <td>copy whole word including current cursor</td>
 </tr>
+<tr>
+<td>dtword</td>
+<td>delete until before the next ‘word’</td>
+</tr>
+<tr>
+<td>dfword</td>
+<td>delete until after the next ‘word’</td>
+</tr>
 </tbody>
 </table>
 <table>
@@ -783,7 +791,7 @@
 <h2 id="自动补全"><a href="#自动补全" class="headerlink" title="自动补全"></a>自动补全</h2><p>在insert模式下直接按： 最常用的补全</p>
 <figure class="highlight excel"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ctrl + <span class="built_in">n</span>  </span><br><span class="line">ctrl + p</span><br></pre></td></tr></table></figure>
 <p>智能补全</p>
-<figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ctrl + x <span class="comment">//进入补全模式</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ctrl + x <span class="comment">//进入补全模式</span></span><br></pre></td></tr></table></figure>
 <ul>
 <li>整行补全 <code>CTRL-X</code> <code>CTRL-L</code></li>
 <li><strong>根据当前文件里关键字补全</strong> <code>CTRL-X</code> <code>CTRL-N</code></li>
@@ -1129,7 +1137,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">45</span>
+                  <span class="site-state-item-count">48</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1163,7 +1171,7 @@
 				<h4 class="widget-title">Tag Cloud</h4>
 					<div id="myCanvasContainer" class="widget tagcloud">
 					<canvas width="250" height="250" id="resCanvas" style="width=100%">
-						<ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Data-Structure/">Data Structure</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Latex/">Latex</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning/">Machine Learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning-by-Andrew-NG/">Machine Learning by Andrew NG</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/english/">english</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linear-algebra/">linear_algebra</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/probability/">probability</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据结构/">数据结构</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/机器学习/">机器学习</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/概率论/">概率论</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/线性代数/">线性代数</a><span class="tag-list-count">12</span></li></ul>
+						<ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Data-Structure/">Data Structure</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Latex/">Latex</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning/">Machine Learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning-by-Andrew-NG/">Machine Learning by Andrew NG</a><span class="tag-list-count">14</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/english/">english</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linear-algebra/">linear_algebra</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/probability/">probability</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据结构/">数据结构</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/机器学习/">机器学习</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/概率论/">概率论</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/线性代数/">线性代数</a><span class="tag-list-count">12</span></li></ul>
 					</canvas>
 				</div>
 			</div>
@@ -1262,7 +1270,7 @@
     
       <span class="post-meta-item-text">全站文章总字数</span>
     
-    <span title="全站文章总字数">117.5k</span>
+    <span title="全站文章总字数">156.5k</span>
   
 </div>
 
