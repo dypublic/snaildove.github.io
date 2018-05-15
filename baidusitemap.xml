@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>https://snaildove.github.io/2017/08/28/Bayes'_rule/</loc>
+    <lastmod>2018-05-15T08:23:55.720Z</lastmod>
+    <data>
+        <display>
+        <title>经典摘录-Bayes' rule贝叶斯定律</title>
+        <pubTime>2017-08-28T12:16:00.000Z</pubTime>
+        
+        <tag>probability</tag>
+         
+        <tag>概率论</tag>
+         
+         
+           
+             
+              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://snaildove.github.io/2018/01/01/15_anomaly-detection/</loc>
     <lastmod>2018-05-15T08:07:51.706Z</lastmod>
     <data>
@@ -472,28 +494,6 @@
     <data>
         <display>
         <title>经典摘录 - 伯努利和泊松随机变量的均值方差</title>
-        <pubTime>2017-08-28T12:16:00.000Z</pubTime>
-        
-        <tag>probability</tag>
-         
-        <tag>概率论</tag>
-         
-         
-           
-             
-              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://snaildove.github.io/2017/08/28/Bayes'_rule/</loc>
-    <lastmod>2018-03-25T13:17:05.699Z</lastmod>
-    <data>
-        <display>
-        <title>经典摘录-Bayes' rule贝叶斯定律</title>
         <pubTime>2017-08-28T12:16:00.000Z</pubTime>
         
         <tag>probability</tag>

@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://snaildove.github.io/2017/08/28/Bayes'_rule/</loc>
+    
+    <lastmod>2018-05-15T08:23:55.720Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://snaildove.github.io/2018/01/01/15_anomaly-detection/</loc>
     
     <lastmod>2018-05-15T08:07:51.706Z</lastmod>
@@ -170,13 +177,6 @@
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2017/08/28/Bayes'_rule/</loc>
-    
-    <lastmod>2018-03-25T13:17:05.699Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://snaildove.github.io/2017/08/27/normal_random_variables/</loc>
     
     <lastmod>2018-03-25T09:26:11.186Z</lastmod>
@@ -289,14 +289,14 @@
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2014/06/01/longest_common_sub-sequence/</loc>
+    <loc>https://snaildove.github.io/2017/08/05/linear_transformation_2nd_part/</loc>
     
     <lastmod>2018-03-14T09:23:31.414Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2017/08/05/linear_transformation_2nd_part/</loc>
+    <loc>https://snaildove.github.io/2014/06/01/longest_common_sub-sequence/</loc>
     
     <lastmod>2018-03-14T09:23:31.414Z</lastmod>
     
@@ -310,14 +310,14 @@
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2017/08/07/engineering_matrices/</loc>
+    <loc>https://snaildove.github.io/2017/08/08/graph_and_network/</loc>
     
     <lastmod>2018-03-14T09:23:31.412Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2017/08/08/graph_and_network/</loc>
+    <loc>https://snaildove.github.io/2017/08/07/engineering_matrices/</loc>
     
     <lastmod>2018-03-14T09:23:31.412Z</lastmod>
     
