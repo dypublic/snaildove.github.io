@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://snaildove.github.io/2017/08/01/positive_definite_matrix/</loc>
+    
+    <lastmod>2018-05-15T13:50:07.878Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2017/08/28/mean_and_variance_of_Bernoulli_and_Possion_random/</loc>
+    
+    <lastmod>2018-05-15T10:55:28.266Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://snaildove.github.io/2018/01/15/15_anomaly-detection/</loc>
     
     <lastmod>2018-05-15T08:57:45.235Z</lastmod>
@@ -170,13 +184,6 @@
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2017/08/28/mean_and_variance_of_Bernoulli_and_Possion_random/</loc>
-    
-    <lastmod>2018-03-27T12:54:25.670Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://snaildove.github.io/2017/08/27/normal_random_variables/</loc>
     
     <lastmod>2018-03-25T09:26:11.186Z</lastmod>
@@ -247,13 +254,6 @@
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2017/08/01/positive_definite_matrix/</loc>
-    
-    <lastmod>2018-03-14T09:23:31.422Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://snaildove.github.io/2015/04/24/perception_learning_algorithm/</loc>
     
     <lastmod>2018-03-14T09:23:31.421Z</lastmod>
@@ -289,14 +289,14 @@
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2014/06/01/longest_common_sub-sequence/</loc>
+    <loc>https://snaildove.github.io/2017/08/05/linear_transformation_2nd_part/</loc>
     
     <lastmod>2018-03-14T09:23:31.414Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2017/08/05/linear_transformation_2nd_part/</loc>
+    <loc>https://snaildove.github.io/2014/06/01/longest_common_sub-sequence/</loc>
     
     <lastmod>2018-03-14T09:23:31.414Z</lastmod>
     

@@ -4,6 +4,50 @@
 
     
   <url>
+    <loc>https://snaildove.github.io/2017/08/01/positive_definite_matrix/</loc>
+    <lastmod>2018-05-15T13:50:07.878Z</lastmod>
+    <data>
+        <display>
+        <title>正定矩阵</title>
+        <pubTime>2017-08-01T12:16:00.000Z</pubTime>
+        
+        <tag>linear_algebra</tag>
+         
+        <tag>线性代数</tag>
+         
+         
+           
+             
+              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2017/08/28/mean_and_variance_of_Bernoulli_and_Possion_random/</loc>
+    <lastmod>2018-05-15T10:55:28.266Z</lastmod>
+    <data>
+        <display>
+        <title>经典摘录 - 伯努利和泊松随机变量的均值方差</title>
+        <pubTime>2017-08-28T12:16:00.000Z</pubTime>
+        
+        <tag>probability</tag>
+         
+        <tag>概率论</tag>
+         
+         
+           
+             
+              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://snaildove.github.io/2018/01/15/15_anomaly-detection/</loc>
     <lastmod>2018-05-15T08:57:45.235Z</lastmod>
     <data>
@@ -494,28 +538,6 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2017/08/28/mean_and_variance_of_Bernoulli_and_Possion_random/</loc>
-    <lastmod>2018-03-27T12:54:25.670Z</lastmod>
-    <data>
-        <display>
-        <title>经典摘录 - 伯努利和泊松随机变量的均值方差</title>
-        <pubTime>2017-08-28T12:16:00.000Z</pubTime>
-        
-        <tag>probability</tag>
-         
-        <tag>概率论</tag>
-         
-         
-           
-             
-              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://snaildove.github.io/2017/08/27/normal_random_variables/</loc>
     <lastmod>2018-03-25T09:26:11.186Z</lastmod>
     <data>
@@ -673,28 +695,6 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2017/08/01/positive_definite_matrix/</loc>
-    <lastmod>2018-03-14T09:23:31.422Z</lastmod>
-    <data>
-        <display>
-        <title>正定矩阵</title>
-        <pubTime>2017-08-01T12:16:00.000Z</pubTime>
-        
-        <tag>linear_algebra</tag>
-         
-        <tag>线性代数</tag>
-         
-         
-           
-             
-              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://snaildove.github.io/2015/04/24/perception_learning_algorithm/</loc>
     <lastmod>2018-03-14T09:23:31.421Z</lastmod>
     <data>
@@ -805,16 +805,16 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2017/08/05/linear_transformation_2nd_part/</loc>
+    <loc>https://snaildove.github.io/2014/06/01/longest_common_sub-sequence/</loc>
     <lastmod>2018-03-14T09:23:31.414Z</lastmod>
     <data>
         <display>
-        <title>线性变换2</title>
-        <pubTime>2017-08-05T12:16:00.000Z</pubTime>
+        <title>动态规划-最长公共子序列</title>
+        <pubTime>2014-06-01T14:16:00.000Z</pubTime>
         
-        <tag>linear_algebra</tag>
+        <tag>Data Structure</tag>
          
-        <tag>线性代数</tag>
+        <tag>数据结构</tag>
          
          
            
@@ -827,16 +827,16 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2014/06/01/longest_common_sub-sequence/</loc>
+    <loc>https://snaildove.github.io/2017/08/05/linear_transformation_2nd_part/</loc>
     <lastmod>2018-03-14T09:23:31.414Z</lastmod>
     <data>
         <display>
-        <title>动态规划-最长公共子序列</title>
-        <pubTime>2014-06-01T14:16:00.000Z</pubTime>
+        <title>线性变换2</title>
+        <pubTime>2017-08-05T12:16:00.000Z</pubTime>
         
-        <tag>Data Structure</tag>
+        <tag>linear_algebra</tag>
          
-        <tag>数据结构</tag>
+        <tag>线性代数</tag>
          
          
            
@@ -871,12 +871,12 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2017/08/08/graph_and_network/</loc>
+    <loc>https://snaildove.github.io/2017/08/07/engineering_matrices/</loc>
     <lastmod>2018-03-14T09:23:31.412Z</lastmod>
     <data>
         <display>
-        <title>图和网络</title>
-        <pubTime>2017-08-08T12:16:00.000Z</pubTime>
+        <title>工程中的矩阵</title>
+        <pubTime>2017-08-07T12:16:00.000Z</pubTime>
         
         <tag>linear_algebra</tag>
          
@@ -893,12 +893,12 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2017/08/07/engineering_matrices/</loc>
+    <loc>https://snaildove.github.io/2017/08/08/graph_and_network/</loc>
     <lastmod>2018-03-14T09:23:31.412Z</lastmod>
     <data>
         <display>
-        <title>工程中的矩阵</title>
-        <pubTime>2017-08-07T12:16:00.000Z</pubTime>
+        <title>图和网络</title>
+        <pubTime>2017-08-08T12:16:00.000Z</pubTime>
         
         <tag>linear_algebra</tag>
          
