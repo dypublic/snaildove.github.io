@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://snaildove.github.io/2016/01/20/vim_without_widgets/</loc>
+    
+    <lastmod>2018-05-21T03:47:03.856Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://snaildove.github.io/2018/01/04/04_linear-regression-with-multiple-variables/</loc>
     
     <lastmod>2018-05-21T03:41:45.044Z</lastmod>
@@ -145,13 +152,6 @@
     <loc>https://snaildove.github.io/2017/08/28/Bayes'_rule/</loc>
     
     <lastmod>2018-05-15T08:23:55.720Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2016/01/20/vim_without_widgets/</loc>
-    
-    <lastmod>2018-05-14T15:43:33.380Z</lastmod>
     
   </url>
   
