@@ -2,23 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://snaildove.github.io/2018/01/20/summary_of_ml-coursera-andrew-ng/</loc>
+    
+    <lastmod>2018-05-21T03:28:57.742Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2018/01/16/16_recommender-systems/</loc>
+    
+    <lastmod>2018-05-21T02:55:53.422Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2018/01/17/17_large-scale-machine-learning/</loc>
+    
+    <lastmod>2018-05-21T02:50:58.774Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2018/01/01/01_what-is-machine-learning/</loc>
+    
+    <lastmod>2018-05-21T02:30:32.909Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://snaildove.github.io/2018/01/18/18_application-example-photo-ocr/</loc>
     
     <lastmod>2018-05-20T14:40:18.893Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2018/05/20/17_large-scale-machine-learning/</loc>
-    
-    <lastmod>2018-05-20T14:40:06.374Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2018/05/20/16_recommender-systems/</loc>
-    
-    <lastmod>2018-05-20T10:07:28.693Z</lastmod>
     
   </url>
   
@@ -124,13 +138,6 @@
     <loc>https://snaildove.github.io/2018/01/02/02_linear-regression-with-one-variable/</loc>
     
     <lastmod>2018-05-15T08:53:53.908Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2018/01/01/01_what-is-machine-learning/</loc>
-    
-    <lastmod>2018-05-15T08:41:28.108Z</lastmod>
     
   </url>
   
@@ -310,14 +317,14 @@
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2014/06/01/longest_common_sub-sequence/</loc>
+    <loc>https://snaildove.github.io/2017/08/05/linear_transformation_2nd_part/</loc>
     
     <lastmod>2018-03-14T09:23:31.414Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2017/08/05/linear_transformation_2nd_part/</loc>
+    <loc>https://snaildove.github.io/2014/06/01/longest_common_sub-sequence/</loc>
     
     <lastmod>2018-03-14T09:23:31.414Z</lastmod>
     
