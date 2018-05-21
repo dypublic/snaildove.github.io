@@ -4,6 +4,126 @@
 
     
   <url>
+    <loc>https://snaildove.github.io/2018/01/04/04_linear-regression-with-multiple-variables/</loc>
+    <lastmod>2018-05-21T03:41:45.044Z</lastmod>
+    <data>
+        <display>
+        <title>04_linear-regression-with-multiple-variables note4</title>
+        <pubTime>2018-01-03T16:00:00.000Z</pubTime>
+        
+        <tag>Machine Learning by Andrew NG</tag>
+         
+         
+           
+             
+              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2018/01/06/06_logistic-regression/</loc>
+    <lastmod>2018-05-21T03:41:35.681Z</lastmod>
+    <data>
+        <display>
+        <title>06_logistic-regression note6</title>
+        <pubTime>2018-01-05T16:00:00.000Z</pubTime>
+        
+        <tag>Machine Learning by Andrew NG</tag>
+         
+         
+           
+             
+              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2018/01/09/09_neural-networks-learning/</loc>
+    <lastmod>2018-05-21T03:40:56.903Z</lastmod>
+    <data>
+        <display>
+        <title>09_neural-networks-learning note9</title>
+        <pubTime>2018-01-08T16:00:00.000Z</pubTime>
+        
+        <tag>Machine Learning by Andrew NG</tag>
+         
+         
+           
+             
+              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2018/01/12/12_support-vector-machines/</loc>
+    <lastmod>2018-05-21T03:40:24.701Z</lastmod>
+    <data>
+        <display>
+        <title>12_support-vector-machines note12</title>
+        <pubTime>2018-01-11T16:00:00.000Z</pubTime>
+        
+        <tag>Machine Learning by Andrew NG</tag>
+         
+         
+           
+             
+              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2018/01/14/14_dimensionality-reduction/</loc>
+    <lastmod>2018-05-21T03:40:13.708Z</lastmod>
+    <data>
+        <display>
+        <title>14_dimensionality-reduction note14</title>
+        <pubTime>2018-01-13T16:00:00.000Z</pubTime>
+        
+        <tag>Machine Learning by Andrew NG</tag>
+         
+         
+           
+             
+              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2018/01/15/15_anomaly-detection/</loc>
+    <lastmod>2018-05-21T03:40:03.343Z</lastmod>
+    <data>
+        <display>
+        <title>15_anomaly-detection note15</title>
+        <pubTime>2018-01-14T16:00:00.000Z</pubTime>
+        
+        <tag>Machine Learning by Andrew NG</tag>
+         
+         
+           
+             
+              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://snaildove.github.io/2018/01/20/summary_of_ml-coursera-andrew-ng/</loc>
     <lastmod>2018-05-21T03:34:43.212Z</lastmod>
     <data>
@@ -148,46 +268,6 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2018/01/15/15_anomaly-detection/</loc>
-    <lastmod>2018-05-15T08:57:45.235Z</lastmod>
-    <data>
-        <display>
-        <title>15_anomaly-detection note15</title>
-        <pubTime>2018-01-14T16:00:00.000Z</pubTime>
-        
-        <tag>Machine Learning by Andrew NG</tag>
-         
-         
-           
-             
-              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://snaildove.github.io/2018/01/14/14_dimensionality-reduction/</loc>
-    <lastmod>2018-05-15T08:57:34.578Z</lastmod>
-    <data>
-        <display>
-        <title>14_dimensionality-reduction note14</title>
-        <pubTime>2018-01-13T16:00:00.000Z</pubTime>
-        
-        <tag>Machine Learning by Andrew NG</tag>
-         
-         
-           
-             
-              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://snaildove.github.io/2018/01/13/13_unsupervised-learning/</loc>
     <lastmod>2018-05-15T08:57:18.796Z</lastmod>
     <data>
@@ -214,26 +294,6 @@
         <display>
         <title>11_machine-learning-system-design note11</title>
         <pubTime>2018-01-10T16:00:00.000Z</pubTime>
-        
-        <tag>Machine Learning by Andrew NG</tag>
-         
-         
-           
-             
-              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://snaildove.github.io/2018/01/12/12_support-vector-machines/</loc>
-    <lastmod>2018-05-15T08:56:13.433Z</lastmod>
-    <data>
-        <display>
-        <title>12_support-vector-machines note12</title>
-        <pubTime>2018-01-11T16:00:00.000Z</pubTime>
         
         <tag>Machine Learning by Andrew NG</tag>
          
@@ -288,72 +348,12 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2018/01/09/09_neural-networks-learning/</loc>
-    <lastmod>2018-05-15T08:54:59.359Z</lastmod>
-    <data>
-        <display>
-        <title>09_neural-networks-learning note9</title>
-        <pubTime>2018-01-08T16:00:00.000Z</pubTime>
-        
-        <tag>Machine Learning by Andrew NG</tag>
-         
-         
-           
-             
-              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://snaildove.github.io/2018/01/07/07_regularization/</loc>
     <lastmod>2018-05-15T08:54:23.938Z</lastmod>
     <data>
         <display>
         <title>07_regularization note7</title>
         <pubTime>2018-01-06T16:00:00.000Z</pubTime>
-        
-        <tag>Machine Learning by Andrew NG</tag>
-         
-         
-           
-             
-              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://snaildove.github.io/2018/01/06/06_logistic-regression/</loc>
-    <lastmod>2018-05-15T08:54:19.351Z</lastmod>
-    <data>
-        <display>
-        <title>06_logistic-regression note6</title>
-        <pubTime>2018-01-05T16:00:00.000Z</pubTime>
-        
-        <tag>Machine Learning by Andrew NG</tag>
-         
-         
-           
-             
-              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://snaildove.github.io/2018/01/04/04_linear-regression-with-multiple-variables/</loc>
-    <lastmod>2018-05-15T08:54:12.137Z</lastmod>
-    <data>
-        <display>
-        <title>04_linear-regression-with-multiple-variables note4</title>
-        <pubTime>2018-01-03T16:00:00.000Z</pubTime>
         
         <tag>Machine Learning by Andrew NG</tag>
          
