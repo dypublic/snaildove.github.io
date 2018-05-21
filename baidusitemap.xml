@@ -4,6 +4,444 @@
 
     
   <url>
+    <loc>https://snaildove.github.io/2015/05/01/decision_tree/</loc>
+    <lastmod>2018-05-21T11:01:13.428Z</lastmod>
+    <data>
+        <display>
+        <title>决策树学习</title>
+        <pubTime>2015-05-01T12:16:00.000Z</pubTime>
+        
+        <tag>Machine Learning</tag>
+         
+        <tag>机器学习</tag>
+         
+         
+           
+             
+              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2017/08/15/trees_describe_the_sample_space/</loc>
+    <lastmod>2018-05-21T10:58:03.268Z</lastmod>
+    <data>
+        <display>
+        <title>Trees describe the sample space</title>
+        <pubTime>2017-08-15T12:16:00.000Z</pubTime>
+        
+        <tag>probability</tag>
+         
+        <tag>概率论</tag>
+         
+         
+           
+             
+              <breadCrumb title="English" url="https://snaildove.github.io/categories/English/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2015/04/24/perception_learning_algorithm/</loc>
+    <lastmod>2018-05-21T10:45:01.375Z</lastmod>
+    <data>
+        <display>
+        <title>Perception Learning Algorithm</title>
+        <pubTime>2015-04-24T12:16:00.000Z</pubTime>
+        
+        <tag>Machine Learning</tag>
+         
+        <tag>机器学习</tag>
+         
+         
+           
+             
+              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2017/08/27/normal_random_variables/</loc>
+    <lastmod>2018-05-21T10:02:51.193Z</lastmod>
+    <data>
+        <display>
+        <title>经典摘录-正态随机变量</title>
+        <pubTime>2017-08-27T12:16:00.000Z</pubTime>
+        
+        <tag>probability</tag>
+         
+        <tag>概率论</tag>
+         
+         
+           
+             
+              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2017/08/26/mean_and_variance_of_uniform_random_variable/</loc>
+    <lastmod>2018-05-21T09:58:21.213Z</lastmod>
+    <data>
+        <display>
+        <title>经典摘录-均匀随机变量的均值和方差</title>
+        <pubTime>2017-08-26T12:16:00.000Z</pubTime>
+        
+        <tag>probability</tag>
+         
+        <tag>概率论</tag>
+         
+         
+           
+             
+              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2017/08/28/mean_and_variance_of_Bernoulli_and_Possion_random/</loc>
+    <lastmod>2018-05-21T09:52:25.414Z</lastmod>
+    <data>
+        <display>
+        <title>经典摘录 - 伯努利和泊松随机变量的均值方差</title>
+        <pubTime>2017-08-28T12:16:00.000Z</pubTime>
+        
+        <tag>probability</tag>
+         
+        <tag>概率论</tag>
+         
+         
+           
+             
+              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2017/08/27/mean_and_variance_of_a_piecewise_constant_PDF/</loc>
+    <lastmod>2018-05-21T09:51:12.181Z</lastmod>
+    <data>
+        <display>
+        <title>经典摘录-分段常数概率密度函数的均值和方差</title>
+        <pubTime>2017-08-27T12:16:00.000Z</pubTime>
+        
+        <tag>probability</tag>
+         
+        <tag>概率论</tag>
+         
+         
+           
+             
+              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2017/08/25/exponential_random_variables/</loc>
+    <lastmod>2018-05-21T09:37:05.640Z</lastmod>
+    <data>
+        <display>
+        <title>经典摘录-指数型随机变量的均值和方差</title>
+        <pubTime>2017-08-25T12:16:00.000Z</pubTime>
+        
+        <tag>probability</tag>
+         
+        <tag>概率论</tag>
+         
+         
+           
+             
+              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2017/08/26/cumulative_distribution_function/</loc>
+    <lastmod>2018-05-21T09:32:06.924Z</lastmod>
+    <data>
+        <display>
+        <title>经典摘录-[累积]分布函数CDF</title>
+        <pubTime>2017-08-26T12:16:00.000Z</pubTime>
+        
+        <tag>probability</tag>
+         
+        <tag>概率论</tag>
+         
+         
+           
+             
+              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2017/08/06/pseudo_inverse/</loc>
+    <lastmod>2018-05-21T09:15:01.881Z</lastmod>
+    <data>
+        <display>
+        <title>伪逆(广义逆)pseudo inverse</title>
+        <pubTime>2017-08-06T12:30:00.000Z</pubTime>
+        
+        <tag>linear_algebra</tag>
+         
+        <tag>线性代数</tag>
+         
+         
+           
+             
+              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2017/08/06/Markov_matrix/</loc>
+    <lastmod>2018-05-21T09:08:53.717Z</lastmod>
+    <data>
+        <display>
+        <title>马尔科夫矩阵和正矩阵</title>
+        <pubTime>2017-08-06T12:16:00.000Z</pubTime>
+        
+        <tag>linear_algebra</tag>
+         
+        <tag>线性代数</tag>
+         
+         
+           
+             
+              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2017/08/05/linear_transformation_2nd_part/</loc>
+    <lastmod>2018-05-21T08:47:32.215Z</lastmod>
+    <data>
+        <display>
+        <title>线性变换2</title>
+        <pubTime>2017-08-05T12:16:00.000Z</pubTime>
+        
+        <tag>linear_algebra</tag>
+         
+        <tag>线性代数</tag>
+         
+         
+           
+             
+              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2017/08/04/linear_transformation_1st_part/</loc>
+    <lastmod>2018-05-21T08:22:05.797Z</lastmod>
+    <data>
+        <display>
+        <title>线性变换1</title>
+        <pubTime>2017-08-04T12:16:00.000Z</pubTime>
+        
+        <tag>linear_algebra</tag>
+         
+        <tag>线性代数</tag>
+         
+         
+           
+             
+              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2017/08/08/graph_and_network/</loc>
+    <lastmod>2018-05-21T08:10:19.599Z</lastmod>
+    <data>
+        <display>
+        <title>图和网络</title>
+        <pubTime>2017-08-08T12:16:00.000Z</pubTime>
+        
+        <tag>linear_algebra</tag>
+         
+        <tag>线性代数</tag>
+         
+         
+           
+             
+              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2017/08/02/Fourier_series/</loc>
+    <lastmod>2018-05-21T07:44:28.773Z</lastmod>
+    <data>
+        <display>
+        <title>傅里叶级数</title>
+        <pubTime>2017-08-02T12:16:00.000Z</pubTime>
+        
+        <tag>linear_algebra</tag>
+         
+        <tag>线性代数</tag>
+         
+         
+           
+             
+              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2017/08/07/engineering_matrices/</loc>
+    <lastmod>2018-05-21T07:37:22.108Z</lastmod>
+    <data>
+        <display>
+        <title>工程中的矩阵</title>
+        <pubTime>2017-08-07T12:16:00.000Z</pubTime>
+        
+        <tag>linear_algebra</tag>
+         
+        <tag>线性代数</tag>
+         
+         
+           
+             
+              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2017/08/11/computer_graphics/</loc>
+    <lastmod>2018-05-21T07:29:34.590Z</lastmod>
+    <data>
+        <display>
+        <title>计算机图像</title>
+        <pubTime>2017-08-11T12:16:00.000Z</pubTime>
+        
+        <tag>linear_algebra</tag>
+         
+        <tag>线性代数</tag>
+         
+         
+           
+             
+              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2017/08/03/singular_values_decomposition/</loc>
+    <lastmod>2018-05-21T07:18:30.967Z</lastmod>
+    <data>
+        <display>
+        <title>奇异值分解singular values decomposition</title>
+        <pubTime>2017-08-03T12:16:00.000Z</pubTime>
+        
+        <tag>linear_algebra</tag>
+         
+        <tag>线性代数</tag>
+         
+         
+           
+             
+              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2017/08/12/complex_and_complex_matrix/</loc>
+    <lastmod>2018-05-21T04:13:18.405Z</lastmod>
+    <data>
+        <display>
+        <title>复数与复矩阵</title>
+        <pubTime>2017-08-12T12:16:00.000Z</pubTime>
+        
+        <tag>linear_algebra</tag>
+         
+        <tag>线性代数</tag>
+         
+         
+           
+             
+              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2018/01/13/13_unsupervised-learning/</loc>
+    <lastmod>2018-05-21T03:47:49.001Z</lastmod>
+    <data>
+        <display>
+        <title>13_unsupervised-learning note13</title>
+        <pubTime>2018-01-12T16:00:00.000Z</pubTime>
+        
+        <tag>Machine Learning by Andrew NG</tag>
+         
+         
+           
+             
+              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://snaildove.github.io/2016/01/20/vim_without_widgets/</loc>
     <lastmod>2018-05-21T03:47:03.856Z</lastmod>
     <data>
@@ -266,48 +704,6 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2017/08/28/mean_and_variance_of_Bernoulli_and_Possion_random/</loc>
-    <lastmod>2018-05-15T10:55:28.266Z</lastmod>
-    <data>
-        <display>
-        <title>经典摘录 - 伯努利和泊松随机变量的均值方差</title>
-        <pubTime>2017-08-28T12:16:00.000Z</pubTime>
-        
-        <tag>probability</tag>
-         
-        <tag>概率论</tag>
-         
-         
-           
-             
-              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://snaildove.github.io/2018/01/13/13_unsupervised-learning/</loc>
-    <lastmod>2018-05-15T08:57:18.796Z</lastmod>
-    <data>
-        <display>
-        <title>13_unsupervised-learning note13</title>
-        <pubTime>2018-01-12T16:00:00.000Z</pubTime>
-        
-        <tag>Machine Learning by Andrew NG</tag>
-         
-         
-           
-             
-              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://snaildove.github.io/2018/01/11/11_machine-learning-system-design/</loc>
     <lastmod>2018-05-15T08:56:18.625Z</lastmod>
     <data>
@@ -490,50 +886,6 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2015/05/01/decision_tree/</loc>
-    <lastmod>2018-04-20T11:03:52.364Z</lastmod>
-    <data>
-        <display>
-        <title>决策树学习</title>
-        <pubTime>2015-05-01T12:16:00.000Z</pubTime>
-        
-        <tag>Machine Learning</tag>
-         
-        <tag>机器学习</tag>
-         
-         
-           
-             
-              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://snaildove.github.io/2017/08/06/pseudo_inverse/</loc>
-    <lastmod>2018-04-12T17:19:40.428Z</lastmod>
-    <data>
-        <display>
-        <title>伪逆(广义逆)pseudo inverse</title>
-        <pubTime>2017-08-06T12:30:00.000Z</pubTime>
-        
-        <tag>linear_algebra</tag>
-         
-        <tag>线性代数</tag>
-         
-         
-           
-             
-              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://snaildove.github.io/2018/02/02/greek-letters/</loc>
     <lastmod>2018-04-02T10:13:10.108Z</lastmod>
     <data>
@@ -542,28 +894,6 @@
         <pubTime>2018-02-02T10:06:02.000Z</pubTime>
         
         <tag>english</tag>
-         
-         
-           
-             
-              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://snaildove.github.io/2017/08/25/exponential_random_variables/</loc>
-    <lastmod>2018-04-02T05:13:18.654Z</lastmod>
-    <data>
-        <display>
-        <title>经典摘录-指数型随机变量的均值和方差</title>
-        <pubTime>2017-08-25T12:16:00.000Z</pubTime>
-        
-        <tag>probability</tag>
-         
-        <tag>概率论</tag>
          
          
            
@@ -617,72 +947,6 @@
     </url>
 
     
-  <url>
-    <loc>https://snaildove.github.io/2017/08/27/normal_random_variables/</loc>
-    <lastmod>2018-03-25T09:26:11.186Z</lastmod>
-    <data>
-        <display>
-        <title>经典摘录-正态随机变量</title>
-        <pubTime>2017-08-27T12:16:00.000Z</pubTime>
-        
-        <tag>probability</tag>
-         
-        <tag>概率论</tag>
-         
-         
-           
-             
-              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://snaildove.github.io/2017/08/12/complex_and_complex_matrix/</loc>
-    <lastmod>2018-03-15T19:16:02.161Z</lastmod>
-    <data>
-        <display>
-        <title>复数与复矩阵</title>
-        <pubTime>2017-08-12T12:16:00.000Z</pubTime>
-        
-        <tag>linear_algebra</tag>
-         
-        <tag>线性代数</tag>
-         
-         
-           
-             
-              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://snaildove.github.io/2017/08/15/trees_describe_the_sample_space/</loc>
-    <lastmod>2018-03-14T10:52:13.287Z</lastmod>
-    <data>
-        <display>
-        <title>Trees describe the sample space</title>
-        <pubTime>2017-08-15T12:16:00.000Z</pubTime>
-        
-        <tag>probability</tag>
-         
-        <tag>概率论</tag>
-         
-         
-           
-             
-              <breadCrumb title="English" url="https://snaildove.github.io/categories/English/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
     
     
     
@@ -697,28 +961,6 @@
         <tag>probability</tag>
          
         <tag>概率论</tag>
-         
-         
-           
-             
-              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://snaildove.github.io/2013/05/13/stack_application_on_expression-resolution-with-braces/</loc>
-    <lastmod>2018-03-14T09:23:31.425Z</lastmod>
-    <data>
-        <display>
-        <title>含括号的运算表达式求解-栈的基础应用3</title>
-        <pubTime>2013-05-13T14:16:00.000Z</pubTime>
-        
-        <tag>Data Structure</tag>
-         
-        <tag>数据结构</tag>
          
          
            
@@ -753,60 +995,16 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2017/08/03/singular_values_decomposition/</loc>
-    <lastmod>2018-03-14T09:23:31.424Z</lastmod>
+    <loc>https://snaildove.github.io/2013/05/13/stack_application_on_expression-resolution-with-braces/</loc>
+    <lastmod>2018-03-14T09:23:31.425Z</lastmod>
     <data>
         <display>
-        <title>奇异值分解singular values decomposition</title>
-        <pubTime>2017-08-03T12:16:00.000Z</pubTime>
+        <title>含括号的运算表达式求解-栈的基础应用3</title>
+        <pubTime>2013-05-13T14:16:00.000Z</pubTime>
         
-        <tag>linear_algebra</tag>
+        <tag>Data Structure</tag>
          
-        <tag>线性代数</tag>
-         
-         
-           
-             
-              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://snaildove.github.io/2015/04/24/perception_learning_algorithm/</loc>
-    <lastmod>2018-03-14T09:23:31.421Z</lastmod>
-    <data>
-        <display>
-        <title>Perception Learning Algorithm</title>
-        <pubTime>2015-04-24T12:16:00.000Z</pubTime>
-        
-        <tag>Machine Learning</tag>
-         
-        <tag>机器学习</tag>
-         
-         
-           
-             
-              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://snaildove.github.io/2017/08/26/mean_and_variance_of_uniform_random_variable/</loc>
-    <lastmod>2018-03-14T09:23:31.419Z</lastmod>
-    <data>
-        <display>
-        <title>经典摘录-均匀随机变量的均值和方差</title>
-        <pubTime>2017-08-26T12:16:00.000Z</pubTime>
-        
-        <tag>probability</tag>
-         
-        <tag>概率论</tag>
+        <tag>数据结构</tag>
          
          
            
@@ -863,50 +1061,6 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2017/08/27/mean_and_variance_of_a_piecewise_constant_PDF/</loc>
-    <lastmod>2018-03-14T09:23:31.415Z</lastmod>
-    <data>
-        <display>
-        <title>经典摘录-分段常数概率密度函数的均值和方差</title>
-        <pubTime>2017-08-27T12:16:00.000Z</pubTime>
-        
-        <tag>probability</tag>
-         
-        <tag>概率论</tag>
-         
-         
-           
-             
-              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://snaildove.github.io/2017/08/05/linear_transformation_2nd_part/</loc>
-    <lastmod>2018-03-14T09:23:31.414Z</lastmod>
-    <data>
-        <display>
-        <title>线性变换2</title>
-        <pubTime>2017-08-05T12:16:00.000Z</pubTime>
-        
-        <tag>linear_algebra</tag>
-         
-        <tag>线性代数</tag>
-         
-         
-           
-             
-              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://snaildove.github.io/2014/06/01/longest_common_sub-sequence/</loc>
     <lastmod>2018-03-14T09:23:31.414Z</lastmod>
     <data>
@@ -929,72 +1083,6 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2017/08/04/linear_transformation_1st_part/</loc>
-    <lastmod>2018-03-14T09:23:31.413Z</lastmod>
-    <data>
-        <display>
-        <title>线性变换1</title>
-        <pubTime>2017-08-04T12:16:00.000Z</pubTime>
-        
-        <tag>linear_algebra</tag>
-         
-        <tag>线性代数</tag>
-         
-         
-           
-             
-              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://snaildove.github.io/2017/08/07/engineering_matrices/</loc>
-    <lastmod>2018-03-14T09:23:31.412Z</lastmod>
-    <data>
-        <display>
-        <title>工程中的矩阵</title>
-        <pubTime>2017-08-07T12:16:00.000Z</pubTime>
-        
-        <tag>linear_algebra</tag>
-         
-        <tag>线性代数</tag>
-         
-         
-           
-             
-              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://snaildove.github.io/2017/08/08/graph_and_network/</loc>
-    <lastmod>2018-03-14T09:23:31.412Z</lastmod>
-    <data>
-        <display>
-        <title>图和网络</title>
-        <pubTime>2017-08-08T12:16:00.000Z</pubTime>
-        
-        <tag>linear_algebra</tag>
-         
-        <tag>线性代数</tag>
-         
-         
-           
-             
-              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://snaildove.github.io/2017/08/14/definition_of_expectation/</loc>
     <lastmod>2018-03-14T09:23:31.411Z</lastmod>
     <data>
@@ -1005,94 +1093,6 @@
         <tag>probability</tag>
          
         <tag>概率论</tag>
-         
-         
-           
-             
-              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://snaildove.github.io/2017/08/26/cumulative_distribution_function/</loc>
-    <lastmod>2018-03-14T09:23:31.410Z</lastmod>
-    <data>
-        <display>
-        <title>经典摘录-[累积]分布函数CDF</title>
-        <pubTime>2017-08-26T12:16:00.000Z</pubTime>
-        
-        <tag>probability</tag>
-         
-        <tag>概率论</tag>
-         
-         
-           
-             
-              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://snaildove.github.io/2017/08/11/computer_graphics/</loc>
-    <lastmod>2018-03-14T09:23:31.409Z</lastmod>
-    <data>
-        <display>
-        <title>计算机图像</title>
-        <pubTime>2017-08-11T12:16:00.000Z</pubTime>
-        
-        <tag>linear_algebra</tag>
-         
-        <tag>线性代数</tag>
-         
-         
-           
-             
-              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://snaildove.github.io/2017/08/06/Markov_matrix/</loc>
-    <lastmod>2018-03-14T09:23:31.405Z</lastmod>
-    <data>
-        <display>
-        <title>马尔科夫矩阵和正矩阵</title>
-        <pubTime>2017-08-06T12:16:00.000Z</pubTime>
-        
-        <tag>linear_algebra</tag>
-         
-        <tag>线性代数</tag>
-         
-         
-           
-             
-              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://snaildove.github.io/2017/08/02/Fourier_series/</loc>
-    <lastmod>2018-03-14T09:23:31.404Z</lastmod>
-    <data>
-        <display>
-        <title>傅里叶级数</title>
-        <pubTime>2017-08-02T12:16:00.000Z</pubTime>
-        
-        <tag>linear_algebra</tag>
-         
-        <tag>线性代数</tag>
          
          
            

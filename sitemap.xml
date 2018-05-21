@@ -2,6 +2,146 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://snaildove.github.io/2015/05/01/decision_tree/</loc>
+    
+    <lastmod>2018-05-21T11:01:13.428Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2017/08/15/trees_describe_the_sample_space/</loc>
+    
+    <lastmod>2018-05-21T10:58:03.268Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2015/04/24/perception_learning_algorithm/</loc>
+    
+    <lastmod>2018-05-21T10:45:01.375Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2017/08/27/normal_random_variables/</loc>
+    
+    <lastmod>2018-05-21T10:02:51.193Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2017/08/26/mean_and_variance_of_uniform_random_variable/</loc>
+    
+    <lastmod>2018-05-21T09:58:21.213Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2017/08/28/mean_and_variance_of_Bernoulli_and_Possion_random/</loc>
+    
+    <lastmod>2018-05-21T09:52:25.414Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2017/08/27/mean_and_variance_of_a_piecewise_constant_PDF/</loc>
+    
+    <lastmod>2018-05-21T09:51:12.181Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2017/08/25/exponential_random_variables/</loc>
+    
+    <lastmod>2018-05-21T09:37:05.640Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2017/08/26/cumulative_distribution_function/</loc>
+    
+    <lastmod>2018-05-21T09:32:06.924Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2017/08/06/pseudo_inverse/</loc>
+    
+    <lastmod>2018-05-21T09:15:01.881Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2017/08/06/Markov_matrix/</loc>
+    
+    <lastmod>2018-05-21T09:08:53.717Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2017/08/05/linear_transformation_2nd_part/</loc>
+    
+    <lastmod>2018-05-21T08:47:32.215Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2017/08/04/linear_transformation_1st_part/</loc>
+    
+    <lastmod>2018-05-21T08:22:05.797Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2017/08/08/graph_and_network/</loc>
+    
+    <lastmod>2018-05-21T08:10:19.599Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2017/08/02/Fourier_series/</loc>
+    
+    <lastmod>2018-05-21T07:44:28.773Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2017/08/07/engineering_matrices/</loc>
+    
+    <lastmod>2018-05-21T07:37:22.108Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2017/08/11/computer_graphics/</loc>
+    
+    <lastmod>2018-05-21T07:29:34.590Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2017/08/03/singular_values_decomposition/</loc>
+    
+    <lastmod>2018-05-21T07:18:30.967Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2017/08/12/complex_and_complex_matrix/</loc>
+    
+    <lastmod>2018-05-21T04:13:18.405Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2018/01/13/13_unsupervised-learning/</loc>
+    
+    <lastmod>2018-05-21T03:47:49.001Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://snaildove.github.io/2016/01/20/vim_without_widgets/</loc>
     
     <lastmod>2018-05-21T03:47:03.856Z</lastmod>
@@ -93,20 +233,6 @@
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2017/08/28/mean_and_variance_of_Bernoulli_and_Possion_random/</loc>
-    
-    <lastmod>2018-05-15T10:55:28.266Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2018/01/13/13_unsupervised-learning/</loc>
-    
-    <lastmod>2018-05-15T08:57:18.796Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://snaildove.github.io/2018/01/11/11_machine-learning-system-design/</loc>
     
     <lastmod>2018-05-15T08:56:18.625Z</lastmod>
@@ -170,30 +296,9 @@
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2015/05/01/decision_tree/</loc>
-    
-    <lastmod>2018-04-20T11:03:52.364Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2017/08/06/pseudo_inverse/</loc>
-    
-    <lastmod>2018-04-12T17:19:40.428Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://snaildove.github.io/2018/02/02/greek-letters/</loc>
     
     <lastmod>2018-04-02T10:13:10.108Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2017/08/25/exponential_random_variables/</loc>
-    
-    <lastmod>2018-04-02T05:13:18.654Z</lastmod>
     
   </url>
   
@@ -208,27 +313,6 @@
     <loc>https://snaildove.github.io/2017/08/01/positive_definite_and_least_square/</loc>
     
     <lastmod>2018-03-31T09:46:38.663Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2017/08/27/normal_random_variables/</loc>
-    
-    <lastmod>2018-03-25T09:26:11.186Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2017/08/12/complex_and_complex_matrix/</loc>
-    
-    <lastmod>2018-03-15T19:16:02.161Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2017/08/15/trees_describe_the_sample_space/</loc>
-    
-    <lastmod>2018-03-14T10:52:13.287Z</lastmod>
     
   </url>
   
@@ -261,13 +345,6 @@
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2013/05/12/stack_application_on_line-editor_or_buff_zone/</loc>
-    
-    <lastmod>2018-03-14T09:23:31.425Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://snaildove.github.io/2013/05/13/stack_application_on_expression-resolution-with-braces/</loc>
     
     <lastmod>2018-03-14T09:23:31.425Z</lastmod>
@@ -275,23 +352,9 @@
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2017/08/03/singular_values_decomposition/</loc>
+    <loc>https://snaildove.github.io/2013/05/12/stack_application_on_line-editor_or_buff_zone/</loc>
     
-    <lastmod>2018-03-14T09:23:31.424Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2015/04/24/perception_learning_algorithm/</loc>
-    
-    <lastmod>2018-03-14T09:23:31.421Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2017/08/26/mean_and_variance_of_uniform_random_variable/</loc>
-    
-    <lastmod>2018-03-14T09:23:31.419Z</lastmod>
+    <lastmod>2018-03-14T09:23:31.425Z</lastmod>
     
   </url>
   
@@ -310,20 +373,6 @@
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2017/08/27/mean_and_variance_of_a_piecewise_constant_PDF/</loc>
-    
-    <lastmod>2018-03-14T09:23:31.415Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2017/08/05/linear_transformation_2nd_part/</loc>
-    
-    <lastmod>2018-03-14T09:23:31.414Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://snaildove.github.io/2014/06/01/longest_common_sub-sequence/</loc>
     
     <lastmod>2018-03-14T09:23:31.414Z</lastmod>
@@ -331,58 +380,9 @@
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2017/08/04/linear_transformation_1st_part/</loc>
-    
-    <lastmod>2018-03-14T09:23:31.413Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2017/08/07/engineering_matrices/</loc>
-    
-    <lastmod>2018-03-14T09:23:31.412Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2017/08/08/graph_and_network/</loc>
-    
-    <lastmod>2018-03-14T09:23:31.412Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://snaildove.github.io/2017/08/14/definition_of_expectation/</loc>
     
     <lastmod>2018-03-14T09:23:31.411Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2017/08/26/cumulative_distribution_function/</loc>
-    
-    <lastmod>2018-03-14T09:23:31.410Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2017/08/11/computer_graphics/</loc>
-    
-    <lastmod>2018-03-14T09:23:31.409Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2017/08/06/Markov_matrix/</loc>
-    
-    <lastmod>2018-03-14T09:23:31.405Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2017/08/02/Fourier_series/</loc>
-    
-    <lastmod>2018-03-14T09:23:31.404Z</lastmod>
     
   </url>
   
