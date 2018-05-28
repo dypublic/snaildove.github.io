@@ -121,7 +121,7 @@
     root: '/',
     scheme: 'Pisces',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":5,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":5,"b2t":false,"scrollpercent":true,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideLeftIn"}},
@@ -738,7 +738,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#算法总体思想"><span class="nav-number">1.</span> <span class="nav-text">算法总体思想</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#动态规划算法的基本要素"><span class="nav-number">2.</span> <span class="nav-text">动态规划算法的基本要素</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#最优子结构"><span class="nav-number">2.1.</span> <span class="nav-text">最优子结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#重叠子问题"><span class="nav-number">2.2.</span> <span class="nav-text">重叠子问题</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#问题举例"><span class="nav-number">3.</span> <span class="nav-text">问题举例</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#最长公共子序列-LCS"><span class="nav-number">3.1.</span> <span class="nav-text">最长公共子序列(LCS)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#最长公共子序列的结构-LCS"><span class="nav-number">3.2.</span> <span class="nav-text">最长公共子序列的结构(LCS)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#LCS时间复杂度"><span class="nav-number">4.</span> <span class="nav-text">LCS时间复杂度</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#子问题的递归结构"><span class="nav-number">4.1.</span> <span class="nav-text">子问题的递归结构</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#计算最优值（伪代码）"><span class="nav-number">5.</span> <span class="nav-text">计算最优值（伪代码）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#源代码实现（测试通过）"><span class="nav-number">6.</span> <span class="nav-text">源代码实现（测试通过）</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#算法总体思想"><span class="nav-text">算法总体思想</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#动态规划算法的基本要素"><span class="nav-text">动态规划算法的基本要素</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#最优子结构"><span class="nav-text">最优子结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#重叠子问题"><span class="nav-text">重叠子问题</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#问题举例"><span class="nav-text">问题举例</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#最长公共子序列-LCS"><span class="nav-text">最长公共子序列(LCS)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#最长公共子序列的结构-LCS"><span class="nav-text">最长公共子序列的结构(LCS)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#LCS时间复杂度"><span class="nav-text">LCS时间复杂度</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#子问题的递归结构"><span class="nav-text">子问题的递归结构</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#计算最优值（伪代码）"><span class="nav-text">计算最优值（伪代码）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#源代码实现（测试通过）"><span class="nav-text">源代码实现（测试通过）</span></a></li></ol></div>
             
 
           </div>
@@ -831,6 +831,8 @@
     
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
         
       </div>
     

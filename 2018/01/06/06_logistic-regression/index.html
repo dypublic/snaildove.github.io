@@ -132,7 +132,7 @@
     root: '/',
     scheme: 'Pisces',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":5,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":5,"b2t":false,"scrollpercent":true,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideLeftIn"}},
@@ -801,7 +801,7 @@ J(\theta) &= \frac{1}{m} \displaystyle \sum_{i=1}^m [-y^{(i)}\log (h_\theta (x^{
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Note"><span class="nav-number">1.</span> <span class="nav-text">Note</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Classification"><span class="nav-number">2.</span> <span class="nav-text">Classification</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hypothesis-Representation"><span class="nav-number">3.</span> <span class="nav-text">Hypothesis Representation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Decision-Boundary"><span class="nav-number">4.</span> <span class="nav-text">Decision Boundary</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Cost-Function"><span class="nav-number">5.</span> <span class="nav-text">Cost Function</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Simplified-Cost-Function-and-Gradient-Descent"><span class="nav-number">6.</span> <span class="nav-text">Simplified Cost Function and Gradient Descent</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#A-vectorized-implementation"><span class="nav-number">6.1.</span> <span class="nav-text">A vectorized implementation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Gradient-Descent"><span class="nav-number">6.2.</span> <span class="nav-text">Gradient Descent</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#A-vectorized-implementation-1"><span class="nav-number">6.3.</span> <span class="nav-text">A vectorized implementation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Note-1"><span class="nav-number">6.4.</span> <span class="nav-text">Note</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Advanced-Optimization"><span class="nav-number">7.</span> <span class="nav-text">Advanced Optimization</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Example"><span class="nav-number">8.</span> <span class="nav-text">Example</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Multiclass-Classification-One-vs-all"><span class="nav-number">9.</span> <span class="nav-text">Multiclass Classification: One-vs-all</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Note"><span class="nav-text">Note</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Classification"><span class="nav-text">Classification</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hypothesis-Representation"><span class="nav-text">Hypothesis Representation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Decision-Boundary"><span class="nav-text">Decision Boundary</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Cost-Function"><span class="nav-text">Cost Function</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Simplified-Cost-Function-and-Gradient-Descent"><span class="nav-text">Simplified Cost Function and Gradient Descent</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#A-vectorized-implementation"><span class="nav-text">A vectorized implementation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Gradient-Descent"><span class="nav-text">Gradient Descent</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#A-vectorized-implementation-1"><span class="nav-text">A vectorized implementation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Note-1"><span class="nav-text">Note</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Advanced-Optimization"><span class="nav-text">Advanced Optimization</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Example"><span class="nav-text">Example</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Multiclass-Classification-One-vs-all"><span class="nav-text">Multiclass Classification: One-vs-all</span></a></li></ol></div>
             
 
           </div>
@@ -894,6 +894,8 @@ J(\theta) &= \frac{1}{m} \displaystyle \sum_{i=1}^m [-y^{(i)}\log (h_\theta (x^{
     
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
         
       </div>
     

@@ -123,7 +123,7 @@
     root: '/',
     scheme: 'Pisces',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":5,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":5,"b2t":false,"scrollpercent":true,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideLeftIn"}},
@@ -562,8 +562,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/08/27/mean_and_variance_of_a_piecewise_constant_PDF/" rel="prev" title="经典摘录-分段常数概率密度函数的均值和方差">
-                经典摘录-分段常数概率密度函数的均值和方差 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/08/27/normal_random_variables/" rel="prev" title="经典摘录-正态随机变量">
+                经典摘录-正态随机变量 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -750,7 +750,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#分布函数"><span class="nav-number">1.</span> <span class="nav-text">分布函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CDF-的性质"><span class="nav-number">2.</span> <span class="nav-text">CDF 的性质</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#例子"><span class="nav-number">3.</span> <span class="nav-text">例子</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#几个随机变量的最大值"><span class="nav-number">3.1.</span> <span class="nav-text">几个随机变量的最大值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#距离的分布函数和概率密度函数"><span class="nav-number">3.2.</span> <span class="nav-text">距离的分布函数和概率密度函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#等待时间"><span class="nav-number">3.3.</span> <span class="nav-text">等待时间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#投飞标游戏"><span class="nav-number">3.4.</span> <span class="nav-text">投飞标游戏</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#几何和指数随机变量的分布函数"><span class="nav-number">4.</span> <span class="nav-text">几何和指数随机变量的分布函数</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#分布函数"><span class="nav-text">分布函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CDF-的性质"><span class="nav-text">CDF 的性质</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#例子"><span class="nav-text">例子</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#几个随机变量的最大值"><span class="nav-text">几个随机变量的最大值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#距离的分布函数和概率密度函数"><span class="nav-text">距离的分布函数和概率密度函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#等待时间"><span class="nav-text">等待时间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#投飞标游戏"><span class="nav-text">投飞标游戏</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#几何和指数随机变量的分布函数"><span class="nav-text">几何和指数随机变量的分布函数</span></a></li></ol></div>
             
 
           </div>
@@ -843,6 +843,8 @@
     
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
         
       </div>
     
