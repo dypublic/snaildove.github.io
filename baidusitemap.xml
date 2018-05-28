@@ -4,6 +4,72 @@
 
     
   <url>
+    <loc>https://snaildove.github.io/2018/02/04/04_deep-neural-networks/</loc>
+    <lastmod>2018-05-28T16:29:41.844Z</lastmod>
+    <data>
+        <display>
+        <title>04_deep-neural-network</title>
+        <pubTime>2018-02-03T16:00:00.000Z</pubTime>
+        
+        <tag>neural-networks-deep-learning</tag>
+         
+        <tag>deep learning</tag>
+         
+         
+           
+             
+              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2018/02/03/03_shallow-neural-networks/</loc>
+    <lastmod>2018-05-28T16:29:18.256Z</lastmod>
+    <data>
+        <display>
+        <title>03_shallow-neural-networks</title>
+        <pubTime>2018-02-02T16:00:00.000Z</pubTime>
+        
+        <tag>neural-networks-deep-learning</tag>
+         
+        <tag>deep learning</tag>
+         
+         
+           
+             
+              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2018/02/02/02_neural-networks-basics/</loc>
+    <lastmod>2018-05-28T16:28:59.656Z</lastmod>
+    <data>
+        <display>
+        <title>02_logistic-regression-as-a-neural-network</title>
+        <pubTime>2018-02-01T16:00:00.000Z</pubTime>
+        
+        <tag>neural-networks-deep-learning</tag>
+         
+        <tag>deep learning</tag>
+         
+         
+           
+             
+              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://snaildove.github.io/2018/02/08/neural-networks-deep-learning/</loc>
     <lastmod>2018-05-28T16:21:31.002Z</lastmod>
     <data>
@@ -76,72 +142,6 @@
         <display>
         <title>planar data classification with one-hidden layer</title>
         <pubTime>2018-02-05T16:00:00.000Z</pubTime>
-        
-        <tag>neural-networks-deep-learning</tag>
-         
-        <tag>deep learning</tag>
-         
-         
-           
-             
-              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://snaildove.github.io/2018/02/04/04_deep-neural-networks/</loc>
-    <lastmod>2018-05-28T13:10:45.616Z</lastmod>
-    <data>
-        <display>
-        <title>04_deep-neural-network</title>
-        <pubTime>2018-02-03T16:00:00.000Z</pubTime>
-        
-        <tag>neural-networks-deep-learning</tag>
-         
-        <tag>deep learning</tag>
-         
-         
-           
-             
-              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://snaildove.github.io/2018/02/03/03_shallow-neural-networks/</loc>
-    <lastmod>2018-05-28T13:09:24.538Z</lastmod>
-    <data>
-        <display>
-        <title>03_shallow-neural-networks</title>
-        <pubTime>2018-02-02T16:00:00.000Z</pubTime>
-        
-        <tag>neural-networks-deep-learning</tag>
-         
-        <tag>deep learning</tag>
-         
-         
-           
-             
-              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://snaildove.github.io/2018/02/02/02_neural-networks-basics/</loc>
-    <lastmod>2018-05-28T13:08:32.657Z</lastmod>
-    <data>
-        <display>
-        <title>02_logistic-regression-as-a-neural-network</title>
-        <pubTime>2018-02-01T16:00:00.000Z</pubTime>
         
         <tag>neural-networks-deep-learning</tag>
          
