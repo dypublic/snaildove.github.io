@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://snaildove.github.io/2018/02/05/logistic-regression-with-a-neural-network-mindset_week1_and_week2/</loc>
+    
+    <lastmod>2018-05-28T13:21:51.701Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2018/02/06/planar-data-classification-with-one-hidden%20layer_week3/</loc>
+    
+    <lastmod>2018-05-28T13:21:44.392Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://snaildove.github.io/2018/02/04/04_deep-neural-networks/</loc>
     
     <lastmod>2018-05-28T13:10:45.616Z</lastmod>
