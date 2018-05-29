@@ -114,7 +114,7 @@
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpage/deeplearning.ai/neural-networks-deep-learning/programming_assignments/week1_week2/output_95_0.png">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpage/deeplearning.ai/neural-networks-deep-learning/programming_assignments/week1_week2/output_98_1.png">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpage/deeplearning.ai/neural-networks-deep-learning/programming_assignments/week1_week2/output_101_2.png">
-<meta property="og:updated_time" content="2018-05-28T13:21:51.701Z">
+<meta property="og:updated_time" content="2018-05-29T03:07:05.029Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="logistic-regression-with-a-neural-network-mindset">
 <meta name="twitter:description" content="NoteThese are my personal programming assignments at the first and second week after studying the course neural-networks-deep-learning and the copyright belongs to deeplearning.ai. Part 1：Python Basi">
@@ -415,7 +415,7 @@
                   <span class="post-meta-item-text">全文字数</span>
                 
                 <span title="全文字数">
-                  8,124
+                  8,040
                 </span>
               
 
@@ -431,7 +431,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  51
+                  50
                 </span>
               
             </div>
@@ -463,26 +463,7 @@
 <pre><code>0.9525741268224334
 </code></pre><p>Actually, we rarely use the “math” library in deep learning because the inputs of the functions are real numbers. In deep learning we mostly use matrices and vectors. This is why numpy is more useful.</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">### One reason why we use "numpy" instead of "math" in Deep Learning ###</span></span><br><span class="line">x = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line">basic_sigmoid(x) <span class="comment"># you will see this give an error when you run it, because x is a vector.</span></span><br></pre></td></tr></table></figure>
-<pre><code>---------------------------------------------------------------------------
-
-TypeError                                 Traceback (most recent call last)
-
-&lt;ipython-input-72-8ccefa5bf989&gt; in &lt;module&gt;()
-      1 ### One reason why we use &quot;numpy&quot; instead of &quot;math&quot; in Deep Learning ###
-      2 x = [1, 2, 3]
-----&gt; 3 basic_sigmoid(x) # you will see this give an error when you run it, because x is a vector.
-
-
-&lt;ipython-input-70-2bb656682a61&gt; in basic_sigmoid(x)
-     15 
-     16     ### START CODE HERE ### (≈ 1 line of code)
----&gt; 17     s = 1 / (1 + math.exp(-x));
-     18     ### END CODE HERE ###
-     19 
-
-
-TypeError: bad operand type for unary -: &apos;list&apos;
-</code></pre><p>In fact, if $x=(x_1,x_2,…,x_n)$ is a row vector then <code>np.exp(x)</code> will apply the exponential function to every element of $x$. The output will thus be: $np.exp(x)=(e^{x_1},e^{x_2},…,e^{x_n})$</p>
+<p>In fact, if $x=(x_1,x_2,…,x_n)$ is a row vector then <code>np.exp(x)</code> will apply the exponential function to every element of $x$. The output will thus be: $np.exp(x)=(e^{x_1},e^{x_2},…,e^{x_n})$</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line"><span class="comment"># example of np.exp</span></span><br><span class="line">x = np.array([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>])</span><br><span class="line">print(np.exp(x)) <span class="comment"># result is (exp(1), exp(2), exp(3))</span></span><br></pre></td></tr></table></figure>
 <pre><code>[ 2.71828183  7.3890561  20.08553692]
 </code></pre><p>Furthermore, if $x$ is a vector, then a Python operation such as $s=x+3$ or $s=\frac{1}{x}$ will output s as a vector of the same size as $x$.</p>
@@ -1189,7 +1170,7 @@ test accuracy: 36.0 %
     
       <span class="post-meta-item-text">全站文章总字数</span>
     
-    <span title="全站文章总字数">221.7k</span>
+    <span title="全站文章总字数">221.6k</span>
   
 </div>
 
