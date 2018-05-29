@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>https://snaildove.github.io/2018/02/01/01_introduction-to-deep-learning/</loc>
+    <lastmod>2018-05-29T02:58:20.342Z</lastmod>
+    <data>
+        <display>
+        <title>01_introduction-to-deep-learning</title>
+        <pubTime>2018-01-31T16:00:00.000Z</pubTime>
+        
+        <tag>neural-networks-deep-learning</tag>
+         
+        <tag>deep learning</tag>
+         
+         
+           
+             
+              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://snaildove.github.io/2018/02/08/neural-networks-deep-learning/</loc>
     <lastmod>2018-05-28T16:39:17.597Z</lastmod>
     <data>
@@ -142,28 +164,6 @@
         <display>
         <title>planar data classification with one-hidden layer</title>
         <pubTime>2018-02-05T16:00:00.000Z</pubTime>
-        
-        <tag>neural-networks-deep-learning</tag>
-         
-        <tag>deep learning</tag>
-         
-         
-           
-             
-              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://snaildove.github.io/2018/02/01/01_introduction-to-deep-learning/</loc>
-    <lastmod>2018-05-28T13:06:17.558Z</lastmod>
-    <data>
-        <display>
-        <title>01_introduction-to-deep-learning</title>
-        <pubTime>2018-01-31T16:00:00.000Z</pubTime>
         
         <tag>neural-networks-deep-learning</tag>
          

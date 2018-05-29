@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://snaildove.github.io/2018/02/01/01_introduction-to-deep-learning/</loc>
+    
+    <lastmod>2018-05-29T02:58:20.342Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://snaildove.github.io/2018/02/08/neural-networks-deep-learning/</loc>
     
     <lastmod>2018-05-28T16:39:17.597Z</lastmod>
@@ -47,13 +54,6 @@
     <loc>https://snaildove.github.io/2018/02/06/planar-data-classification-with-one-hidden%20layer_week3/</loc>
     
     <lastmod>2018-05-28T13:21:44.392Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2018/02/01/01_introduction-to-deep-learning/</loc>
-    
-    <lastmod>2018-05-28T13:06:17.558Z</lastmod>
     
   </url>
   
