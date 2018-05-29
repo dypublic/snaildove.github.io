@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://snaildove.github.io/about/index.html</loc>
+    
+    <lastmod>2018-05-29T03:20:23.675Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://snaildove.github.io/2018/02/05/logistic-regression-with-a-neural-network-mindset_week1_and_week2/</loc>
     
     <lastmod>2018-05-29T03:07:05.029Z</lastmod>
@@ -397,13 +404,6 @@
     <loc>https://snaildove.github.io/categories/index.html</loc>
     
     <lastmod>2018-03-14T09:23:31.434Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/about/index.html</loc>
-    
-    <lastmod>2018-03-14T09:23:31.433Z</lastmod>
     
   </url>
   
