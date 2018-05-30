@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://snaildove.github.io/2018/02/05/logistic-regression-with-a-neural-network-mindset_week1_and_week2/</loc>
+    
+    <lastmod>2018-05-30T02:50:27.211Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2018/01/12/12_support-vector-machines/</loc>
+    
+    <lastmod>2018-05-30T02:23:30.844Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://snaildove.github.io/2018/01/20/summary_of_ml-coursera-andrew-ng/</loc>
     
     <lastmod>2018-05-30T01:34:07.427Z</lastmod>
@@ -12,13 +26,6 @@
     <loc>https://snaildove.github.io/about/index.html</loc>
     
     <lastmod>2018-05-29T07:52:23.859Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2018/02/05/logistic-regression-with-a-neural-network-mindset_week1_and_week2/</loc>
-    
-    <lastmod>2018-05-29T03:07:05.029Z</lastmod>
     
   </url>
   
@@ -257,13 +264,6 @@
     <loc>https://snaildove.github.io/2018/01/09/09_neural-networks-learning/</loc>
     
     <lastmod>2018-05-21T03:40:56.903Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2018/01/12/12_support-vector-machines/</loc>
-    
-    <lastmod>2018-05-21T03:40:24.701Z</lastmod>
     
   </url>
   
