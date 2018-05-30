@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://snaildove.github.io/2018/01/23/hexo_source-code_synchronization/</loc>
+    
+    <lastmod>2018-05-30T10:39:52.166Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://snaildove.github.io/2018/02/06/planar-data-classification-with-one-hidden%20layer_week3/</loc>
     
     <lastmod>2018-05-30T04:58:59.350Z</lastmod>
@@ -376,13 +383,6 @@
     <loc>https://snaildove.github.io/2018/02/02/greek-letters/</loc>
     
     <lastmod>2018-04-02T10:13:10.108Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2018/02/10/hexo_source-code_synchronization/</loc>
-    
-    <lastmod>2018-03-31T19:00:10.252Z</lastmod>
     
   </url>
   
