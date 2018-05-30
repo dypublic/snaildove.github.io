@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://snaildove.github.io/2018/01/20/summary_of_ml-coursera-andrew-ng/</loc>
+    
+    <lastmod>2018-05-30T01:34:07.427Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://snaildove.github.io/about/index.html</loc>
     
     <lastmod>2018-05-29T07:52:23.859Z</lastmod>
@@ -271,13 +278,6 @@
     <loc>https://snaildove.github.io/2018/01/15/15_anomaly-detection/</loc>
     
     <lastmod>2018-05-21T03:40:03.343Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2018/01/20/summary_of_ml-coursera-andrew-ng/</loc>
-    
-    <lastmod>2018-05-21T03:34:43.212Z</lastmod>
     
   </url>
   
