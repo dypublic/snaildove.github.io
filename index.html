@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next pisces use-motion" lang="zh-Hans">
+<html class="theme-next pisces use-motion" lang="en">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -104,7 +104,7 @@
 <meta property="og:url" content="https://snaildove.github.io/index.html">
 <meta property="og:site_name" content="SnailDove&#39;s blog">
 <meta property="og:description" content="keep enthusiasm">
-<meta property="og:locale" content="zh-Hans">
+<meta property="og:locale" content="en">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SnailDove&#39;s blog">
 <meta name="twitter:description" content="keep enthusiasm">
@@ -123,7 +123,7 @@
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideLeftIn"}},
     duoshuo: {
       userId: '0',
-      author: '博主'
+      author: 'Author'
     },
     algolia: {
       applicationID: '',
@@ -165,7 +165,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
 
   
   
@@ -214,7 +214,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            首页
+            Home
           </a>
         </li>
       
@@ -224,7 +224,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
-            关于
+            About
           </a>
         </li>
       
@@ -234,7 +234,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            归档
+            Archives
           </a>
         </li>
       
@@ -244,7 +244,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />
             
-            站点地图
+            Sitemap
           </a>
         </li>
       
@@ -257,7 +257,7 @@
             
               <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
             
-            搜索
+            Search
           </a>
         </li>
       
@@ -277,7 +277,7 @@
     </span>
     <div class="local-search-input-wrapper">
       <input autocomplete="off"
-             placeholder="搜索..." spellcheck="false"
+             placeholder="Searching..." spellcheck="false"
              type="text" id="local-search-input">
     </div>
   </div>
@@ -301,6 +301,186 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://snaildove.github.io/2018/02/10/hexo_source-code_synchronization/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="SnailDove">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SnailDove's blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/02/10/hexo_source-code_synchronization/" itemprop="url">同步hexo博客</a></h1>
+        
+
+        <div class="post-meta">
+		  
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-10T00:00:00+08:00">
+                2018-02-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/中文/" itemprop="url" rel="index">
+                    <span itemprop="name">中文</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article</span>
+                
+                <span title="Words count in article">
+                  208
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">
+                  1
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+           旧电脑上博客根目录执行12345678git initgit check -b sourcegit check sourcegit add *git rm --cached ./node_modules/ ./source/_drafts ._config.yml ./themes/next/_config.ymlvim .gitignore #添加：./node_modules/ ./sour
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/02/10/hexo_source-code_synchronization/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
     
       
 
@@ -349,9 +529,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-08T00:00:00+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-08T00:00:00+08:00">
                 2018-02-08
               </time>
             
@@ -370,7 +550,7 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">分类于</span>
+                <span class="post-meta-item-text">In</span>
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -402,9 +582,9 @@
                   <i class="fa fa-file-word-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">全文字数</span>
+                  <span class="post-meta-item-text">Words count in article</span>
                 
-                <span title="全文字数">
+                <span title="Words count in article">
                   92
                 </span>
               
@@ -418,9 +598,9 @@
                   <i class="fa fa-clock-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
                 
-                <span title="阅读时长">
+                <span title="Reading time">
                   1
                 </span>
               
@@ -450,7 +630,7 @@ My personal notes
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/02/08/neural-networks-deep-learning/#more" rel="contents">
-              阅读全文 &raquo;
+              Read more &raquo;
             </a>
           </div>
           <!--/noindex-->
@@ -500,7 +680,7 @@ My personal notes
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://snaildove.github.io/2018/01/20/summary_of_ml-coursera-andrew-ng/">
+    <link itemprop="mainEntityOfPage" href="https://snaildove.github.io/2018/02/07/Building-your-Deep-Neural-Network_week4/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="SnailDove">
@@ -519,25 +699,21 @@ My personal notes
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/01/20/summary_of_ml-coursera-andrew-ng/" itemprop="url">My summary of Machine Learning</a></h1>
+                <a class="post-title-link" href="/2018/02/07/Building-your-Deep-Neural-Network_week4/" itemprop="url">Building your Deep Neural Network</a></h1>
         
 
         <div class="post-meta">
 		  
-            <i class="fa fa-thumb-tack"></i>
-            <font color=7D26CD>置顶</font>
-            <span class="post-meta-divider">|</span>
-          
           <span class="post-time">
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-20T00:00:00+08:00">
-                2018-01-20
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-07T00:00:00+08:00">
+                2018-02-07
               </time>
             
 
@@ -555,12 +731,12 @@ My personal notes
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">分类于</span>
+                <span class="post-meta-item-text">In</span>
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/英文/" itemprop="url" rel="index">
-                    <span itemprop="name">英文</span>
+                  <a href="/categories/english/" itemprop="url" rel="index">
+                    <span itemprop="name">english</span>
                   </a>
                 </span>
 
@@ -587,10 +763,10 @@ My personal notes
                   <i class="fa fa-file-word-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">全文字数</span>
+                  <span class="post-meta-item-text">Words count in article</span>
                 
-                <span title="全文字数">
-                  926
+                <span title="Words count in article">
+                  9,178
                 </span>
               
 
@@ -603,10 +779,10 @@ My personal notes
                   <i class="fa fa-clock-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
                 
-                <span title="阅读时长">
-                  6
+                <span title="Reading time">
+                  57
                 </span>
               
             </div>
@@ -629,12 +805,13 @@ My personal notes
       
         
           
-           The content table of Machine LearningThis course is a coursera version teached by Andrew NG, AP of Stanford University, which corresponds to the full-time campus version CS229 at Stanford university,
+           NoteThese are my personal programming assignments at the 4th week after studying the course neural-networks-deep-learning and the copyright belongs to deeplearning.ai.
+Part 1：Building your Deep Neura
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/01/20/summary_of_ml-coursera-andrew-ng/#more" rel="contents">
-              阅读全文 &raquo;
+            <a class="btn" href="/2018/02/07/Building-your-Deep-Neural-Network_week4/#more" rel="contents">
+              Read more &raquo;
             </a>
           </div>
           <!--/noindex-->
@@ -684,7 +861,7 @@ My personal notes
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://snaildove.github.io/2017/08/28/Bayes'_rule/">
+    <link itemprop="mainEntityOfPage" href="https://snaildove.github.io/2018/02/06/planar-data-classification-with-one-hidden layer_week3/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="SnailDove">
@@ -703,25 +880,21 @@ My personal notes
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/08/28/Bayes'_rule/" itemprop="url">经典摘录-Bayes' rule贝叶斯定律</a></h1>
+                <a class="post-title-link" href="/2018/02/06/planar-data-classification-with-one-hidden layer_week3/" itemprop="url">planar data classification with one-hidden layer</a></h1>
         
 
         <div class="post-meta">
 		  
-            <i class="fa fa-thumb-tack"></i>
-            <font color=7D26CD>置顶</font>
-            <span class="post-meta-divider">|</span>
-          
           <span class="post-time">
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-28T20:16:00+08:00">
-                2017-08-28
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-06T00:00:00+08:00">
+                2018-02-06
               </time>
             
 
@@ -739,12 +912,12 @@ My personal notes
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">分类于</span>
+                <span class="post-meta-item-text">In</span>
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/中文/" itemprop="url" rel="index">
-                    <span itemprop="name">中文</span>
+                  <a href="/categories/english/" itemprop="url" rel="index">
+                    <span itemprop="name">english</span>
                   </a>
                 </span>
 
@@ -771,10 +944,10 @@ My personal notes
                   <i class="fa fa-file-word-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">全文字数</span>
+                  <span class="post-meta-item-text">Words count in article</span>
                 
-                <span title="全文字数">
-                  4,034
+                <span title="Words count in article">
+                  4,633
                 </span>
               
 
@@ -787,10 +960,10 @@ My personal notes
                   <i class="fa fa-clock-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
                 
-                <span title="阅读时长">
-                  17
+                <span title="Reading time">
+                  29
                 </span>
               
             </div>
@@ -813,14 +986,13 @@ My personal notes
       
         
           
-           说明：全文摘自Introduction to probability, 2nd Edition 
-本文讨论条件概率定律的应用，首先引入一个计算事件概率的定理。
-The law of total probability设 $A_1, A_2, … , A_n$ 是一组互不相容的事件，它形成样本空间的一个分割（每个试验结果必定使得其中一个事件发生！）。又假定对每个 $i, P(A_i) &gt; 0
+           NoteThese are my personal programming assignments at the third week after studying the course neural-networks-deep-learning and the copyright belongs to deeplearning.ai.
+planar data classification wi
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2017/08/28/Bayes'_rule/#more" rel="contents">
-              阅读全文 &raquo;
+            <a class="btn" href="/2018/02/06/planar-data-classification-with-one-hidden layer_week3/#more" rel="contents">
+              Read more &raquo;
             </a>
           </div>
           <!--/noindex-->
@@ -870,7 +1042,7 @@ The law of total probability设 $A_1, A_2, … , A_n$ 是一组互不相容的�
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://snaildove.github.io/2017/08/03/singular_values_decomposition/">
+    <link itemprop="mainEntityOfPage" href="https://snaildove.github.io/2018/02/05/logistic-regression-with-a-neural-network-mindset_week1_and_week2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="SnailDove">
@@ -889,25 +1061,21 @@ The law of total probability设 $A_1, A_2, … , A_n$ 是一组互不相容的�
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/08/03/singular_values_decomposition/" itemprop="url">奇异值分解singular values decomposition</a></h1>
+                <a class="post-title-link" href="/2018/02/05/logistic-regression-with-a-neural-network-mindset_week1_and_week2/" itemprop="url">logistic-regression-with-a-neural-network-mindset</a></h1>
         
 
         <div class="post-meta">
 		  
-            <i class="fa fa-thumb-tack"></i>
-            <font color=7D26CD>置顶</font>
-            <span class="post-meta-divider">|</span>
-          
           <span class="post-time">
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-03T20:16:00+08:00">
-                2017-08-03
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-05T00:00:00+08:00">
+                2018-02-05
               </time>
             
 
@@ -925,12 +1093,12 @@ The law of total probability设 $A_1, A_2, … , A_n$ 是一组互不相容的�
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">分类于</span>
+                <span class="post-meta-item-text">In</span>
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/中文/" itemprop="url" rel="index">
-                    <span itemprop="name">中文</span>
+                  <a href="/categories/english/" itemprop="url" rel="index">
+                    <span itemprop="name">english</span>
                   </a>
                 </span>
 
@@ -957,10 +1125,10 @@ The law of total probability设 $A_1, A_2, … , A_n$ 是一组互不相容的�
                   <i class="fa fa-file-word-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">全文字数</span>
+                  <span class="post-meta-item-text">Words count in article</span>
                 
-                <span title="全文字数">
-                  993
+                <span title="Words count in article">
+                  8,041
                 </span>
               
 
@@ -973,10 +1141,10 @@ The law of total probability设 $A_1, A_2, … , A_n$ 是一组互不相容的�
                   <i class="fa fa-clock-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
                 
-                <span title="阅读时长">
-                  4
+                <span title="Reading time">
+                  50
                 </span>
               
             </div>
@@ -999,199 +1167,13 @@ The law of total probability设 $A_1, A_2, … , A_n$ 是一组互不相容的�
       
         
           
-           笔记源自：清华大学公开课：线性代数2——第三讲：奇异值分解
-前言对角矩阵是我们最喜欢的一类矩阵，对能够相似于对角阵的矩阵能方便地计算其幂和指数，对不能相似于对角阵的方阵。上节课我们讨论了如何求出其尽可能简单的相似标准形及Jordan标准形以上讨论的都是方阵。那么对m乘n的矩阵我们如何来对它进行对角化呢？
-线性代数中最重要的一类矩阵分解即奇异值分解，从而回答以上的问题。对角矩阵是我们最喜欢的一类矩
+           NoteThese are my personal programming assignments at the first and second week after studying the course neural-networks-deep-learning and the copyright belongs to deeplearning.ai.
+Part 1：Python Basi
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2017/08/03/singular_values_decomposition/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://snaildove.github.io/2015/04/24/perception_learning_algorithm/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="SnailDove">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="SnailDove's blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2015/04/24/perception_learning_algorithm/" itemprop="url">Perception Learning Algorithm</a></h1>
-        
-
-        <div class="post-meta">
-		  
-            <i class="fa fa-thumb-tack"></i>
-            <font color=7D26CD>置顶</font>
-            <span class="post-meta-divider">|</span>
-          
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-04-24T20:16:00+08:00">
-                2015-04-24
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/中文/" itemprop="url" rel="index">
-                    <span itemprop="name">中文</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">全文字数</span>
-                
-                <span title="全文字数">
-                  1,329
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  6
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-           PLA(Perception Learning Algorithm) 适用于二维及高维的线性可划分问题。问题的答案只有同意或者不同意。
-例子银行可以根据顾客的个人信息来判断是否给顾客发放信用卡。将顾客抽象为一个向量$X$，包括姓名、年龄、年收入、负债数等。同时设定各个属性所占的权重向量为$W$，对于正相关的属性设置相对较高的权重，如年收入，对于负相关的属性设置较低的权重，如负债数。$y$表示是否
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2015/04/24/perception_learning_algorithm/#more" rel="contents">
-              阅读全文 &raquo;
+            <a class="btn" href="/2018/02/05/logistic-regression-with-a-neural-network-mindset_week1_and_week2/#more" rel="contents">
+              Read more &raquo;
             </a>
           </div>
           <!--/noindex-->
@@ -1283,7 +1265,7 @@ The law of total probability设 $A_1, A_2, … , A_n$ 是一组互不相容的�
                 <a href="/archives/">
               
                   <span class="site-state-item-count">60</span>
-                  <span class="site-state-item-name">日志</span>
+                  <span class="site-state-item-name">posts</span>
                 </a>
               </div>
             
@@ -1294,7 +1276,7 @@ The law of total probability设 $A_1, A_2, … , A_n$ 是一组互不相容的�
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
                   <span class="site-state-item-count">4</span>
-                  <span class="site-state-item-name">分类</span>
+                  <span class="site-state-item-name">categories</span>
                 </a>
               </div>
             
@@ -1305,7 +1287,7 @@ The law of total probability设 $A_1, A_2, … , A_n$ 是一组互不相容的�
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
                   <span class="site-state-item-count">16</span>
-                  <span class="site-state-item-name">标签</span>
+                  <span class="site-state-item-name">tags</span>
                 </a>
               </div>
             
@@ -1397,9 +1379,9 @@ The law of total probability设 $A_1, A_2, … , A_n$ 是一组互不相容的�
       <i class="fa fa-area-chart"></i>
     </span>
     
-      <span class="post-meta-item-text">全站文章总字数</span>
+      <span class="post-meta-item-text">Site words total count</span>
     
-    <span title="全站文章总字数">221.6k</span>
+    <span title="Site words total count">221.6k</span>
   
 </div>
 
@@ -1407,7 +1389,7 @@ The law of total probability设 $A_1, A_2, … , A_n$ 是一组互不相容的�
 注释掉底部hexo主题提示:强有力
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
 
 
 
@@ -1415,7 +1397,7 @@ The law of total probability设 $A_1, A_2, … , A_n$ 是一组互不相容的�
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
 
 
 
@@ -1429,7 +1411,7 @@ The law of total probability设 $A_1, A_2, … , A_n$ 是一组互不相容的�
   
     <span class="site-uv">
       <i class="fa fa-user"></i>
-      <span class="post-meta-item-text">访问人数</span>
+      <span class="post-meta-item-text">Visitors</span>
       <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
       
     </span>
@@ -1438,7 +1420,7 @@ The law of total probability设 $A_1, A_2, … , A_n$ 是一组互不相容的�
   
     <span class="site-pv">
       <i class="fa fa-eye"></i>
-	  <span class="post-meta-item-text">总访问量</span>
+	  <span class="post-meta-item-text">Total hits</span>
       <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
       
     </span>
