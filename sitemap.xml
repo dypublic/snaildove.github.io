@@ -2,6 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://snaildove.github.io/2018/01/17/17_large-scale-machine-learning/</loc>
+    
+    <lastmod>2018-06-03T16:26:37.564Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2018/01/16/16_recommender-systems/</loc>
+    
+    <lastmod>2018-06-03T16:26:25.842Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2018/01/03/03_linear-algebra-review/</loc>
+    
+    <lastmod>2018-06-03T16:26:12.722Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2018/01/01/01_what-is-machine-learning/</loc>
+    
+    <lastmod>2018-06-03T16:25:58.544Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2018/01/20/summary_of_ml-coursera-andrew-ng/</loc>
+    
+    <lastmod>2018-06-03T16:25:30.280Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2017/08/01/positive_definite_and_least_square/</loc>
+    
+    <lastmod>2018-06-03T16:24:53.542Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2017/08/15/trees_describe_the_sample_space/</loc>
+    
+    <lastmod>2018-06-03T16:24:27.780Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://snaildove.github.io/2017/08/02/Fourier_series/</loc>
     
     <lastmod>2018-06-03T16:19:14.444Z</lastmod>
@@ -86,23 +135,9 @@
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2017/08/01/positive_definite_and_least_square/</loc>
-    
-    <lastmod>2018-06-03T16:14:12.531Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://snaildove.github.io/2017/08/28/Bayes'_rule/</loc>
     
     <lastmod>2018-06-03T16:13:59.468Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2017/08/15/trees_describe_the_sample_space/</loc>
-    
-    <lastmod>2018-06-03T16:13:45.530Z</lastmod>
     
   </url>
   
@@ -233,13 +268,6 @@
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2018/01/20/summary_of_ml-coursera-andrew-ng/</loc>
-    
-    <lastmod>2018-05-30T01:34:07.427Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://snaildove.github.io/about/index.html</loc>
     
     <lastmod>2018-05-29T07:52:23.859Z</lastmod>
@@ -345,27 +373,6 @@
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2018/01/16/16_recommender-systems/</loc>
-    
-    <lastmod>2018-05-21T02:55:53.422Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2018/01/17/17_large-scale-machine-learning/</loc>
-    
-    <lastmod>2018-05-21T02:50:58.774Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2018/01/01/01_what-is-machine-learning/</loc>
-    
-    <lastmod>2018-05-21T02:30:32.909Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://snaildove.github.io/2018/01/18/18_application-example-photo-ocr/</loc>
     
     <lastmod>2018-05-20T14:40:18.893Z</lastmod>
@@ -397,13 +404,6 @@
     <loc>https://snaildove.github.io/2018/01/07/07_regularization/</loc>
     
     <lastmod>2018-05-15T08:54:23.938Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2018/01/03/03_linear-algebra-review/</loc>
-    
-    <lastmod>2018-05-15T08:54:06.684Z</lastmod>
     
   </url>
   
