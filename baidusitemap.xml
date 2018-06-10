@@ -4,8 +4,250 @@
 
     
   <url>
+    <loc>https://snaildove.github.io/2018/03/01/01_practical-aspects-of-deep-learning/</loc>
+    <lastmod>2018-06-10T19:11:17.511Z</lastmod>
+    <data>
+        <display>
+        <title>01_practical-aspects-of-deep-learning</title>
+        <pubTime>2018-02-28T16:00:00.000Z</pubTime>
+        
+        <tag>deep learning</tag>
+         
+        <tag>Improving Deep Neural Networks</tag>
+         
+         
+           
+             
+              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2018/03/02/02_optimization-algorithms/</loc>
+    <lastmod>2018-06-10T19:11:05.200Z</lastmod>
+    <data>
+        <display>
+        <title>02_optimization-algorithms</title>
+        <pubTime>2018-03-01T16:00:00.000Z</pubTime>
+        
+        <tag>deep learning</tag>
+         
+        <tag>Improving Deep Neural Networks</tag>
+         
+         
+           
+             
+              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2018/03/02/03_hyperparameter-tuning-batch-normalization-and-programming-frameworks/</loc>
+    <lastmod>2018-06-10T19:10:53.782Z</lastmod>
+    <data>
+        <display>
+        <title>03_hyperparameter-tuning-batch-normalization-and-programming-frameworks</title>
+        <pubTime>2018-03-01T16:00:00.000Z</pubTime>
+        
+        <tag>deep learning</tag>
+         
+        <tag>Improving Deep Neural Networks</tag>
+         
+         
+           
+             
+              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2018/03/03/Tensorflow%20Tutorial/</loc>
+    <lastmod>2018-06-10T19:10:37.350Z</lastmod>
+    <data>
+        <display>
+        <title>Tensorflow Tutorial</title>
+        <pubTime>2018-03-02T16:00:00.000Z</pubTime>
+        
+        <tag>deep learning</tag>
+         
+        <tag>Improving Deep Neural Networks</tag>
+         
+         
+           
+             
+              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2018/03/01/practical-aspects-of-deep-learning/</loc>
+    <lastmod>2018-06-10T19:10:26.145Z</lastmod>
+    <data>
+        <display>
+        <title>practical-aspects-of-deep-learning</title>
+        <pubTime>2018-02-28T16:00:00.000Z</pubTime>
+        
+        <tag>deep learning</tag>
+         
+        <tag>Improving Deep Neural Networks</tag>
+         
+         
+           
+             
+              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2018/03/02/OptimizationMethods/</loc>
+    <lastmod>2018-06-10T19:10:10.386Z</lastmod>
+    <data>
+        <display>
+        <title>Optimization Methods</title>
+        <pubTime>2018-03-01T16:00:00.000Z</pubTime>
+        
+        <tag>deep learning</tag>
+         
+        <tag>Improving Deep Neural Networks</tag>
+         
+         
+           
+             
+              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2018/04/03/summary_of_Structuring-Machine%20-Learning-Projects/</loc>
+    <lastmod>2018-06-10T19:09:52.017Z</lastmod>
+    <data>
+        <display>
+        <title>My summary of Structuring Machine Learning Projects</title>
+        <pubTime>2018-04-02T16:00:00.000Z</pubTime>
+        
+        <tag>deep learning</tag>
+         
+        <tag>Structuring Machine Learning Projects</tag>
+         
+         
+           
+             
+              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2018/03/02/summary_of_Improving-Deep-Neural-Networks/</loc>
+    <lastmod>2018-06-10T19:09:37.542Z</lastmod>
+    <data>
+        <display>
+        <title>My summary of Improving-Deep-Neural-Networks</title>
+        <pubTime>2018-03-01T16:00:00.000Z</pubTime>
+        
+        <tag>deep learning</tag>
+         
+        <tag>Improving Deep Neural Networks</tag>
+         
+         
+           
+             
+              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2018/04/02/02_ml-strategy-2/</loc>
+    <lastmod>2018-06-10T18:52:12.908Z</lastmod>
+    <data>
+        <display>
+        <title>02_ml-strategy-2</title>
+        <pubTime>2018-04-01T16:00:00.000Z</pubTime>
+        
+        <tag>deep learning</tag>
+         
+        <tag>Structuring Machine Learning Projects</tag>
+         
+         
+           
+             
+              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2018/04/01/01_ml-strategy-1/</loc>
+    <lastmod>2018-06-10T18:47:34.791Z</lastmod>
+    <data>
+        <display>
+        <title>01_ml-strategy-1</title>
+        <pubTime>2018-03-31T16:00:00.000Z</pubTime>
+        
+        <tag>deep learning</tag>
+         
+        <tag>Structuring Machine Learning Projects</tag>
+         
+         
+           
+             
+              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2018/02/07/Building-your-Deep-Neural-Network_week4/</loc>
+    <lastmod>2018-06-10T18:20:07.685Z</lastmod>
+    <data>
+        <display>
+        <title>Building your Deep Neural Network</title>
+        <pubTime>2018-02-06T16:00:00.000Z</pubTime>
+        
+        <tag>neural-networks-deep-learning</tag>
+         
+        <tag>deep learning</tag>
+         
+         
+           
+             
+              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://snaildove.github.io/2018/01/01/01_what-is-machine-learning/</loc>
-    <lastmod>2018-06-08T09:34:41.614Z</lastmod>
+    <lastmod>2018-06-08T09:41:58.656Z</lastmod>
     <data>
         <display>
         <title>01_introduction note1</title>
@@ -863,28 +1105,6 @@
         <display>
         <title>02_logistic-regression-as-a-neural-network</title>
         <pubTime>2018-02-01T16:00:00.000Z</pubTime>
-        
-        <tag>neural-networks-deep-learning</tag>
-         
-        <tag>deep learning</tag>
-         
-         
-           
-             
-              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://snaildove.github.io/2018/02/07/Building-your-Deep-Neural-Network_week4/</loc>
-    <lastmod>2018-05-28T16:12:12.749Z</lastmod>
-    <data>
-        <display>
-        <title>Building your Deep Neural Network</title>
-        <pubTime>2018-02-06T16:00:00.000Z</pubTime>
         
         <tag>neural-networks-deep-learning</tag>
          
