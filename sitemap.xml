@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://snaildove.github.io/2018/02/08/neural-networks-deep-learning/</loc>
+    
+    <lastmod>2018-06-13T17:56:55.011Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://snaildove.github.io/2018/03/02/summary_of_Improving-Deep-Neural-Networks/</loc>
     
     <lastmod>2018-06-13T17:12:09.503Z</lastmod>
@@ -355,13 +362,6 @@
     <loc>https://snaildove.github.io/2018/02/01/01_introduction-to-deep-learning/</loc>
     
     <lastmod>2018-05-29T02:58:20.342Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2018/02/08/neural-networks-deep-learning/</loc>
-    
-    <lastmod>2018-05-28T16:39:17.597Z</lastmod>
     
   </url>
   
