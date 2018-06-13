@@ -129,11 +129,67 @@
   </entry>
   
   <entry>
+    <title>02_optimization-algorithms</title>
+    <link href="https://snaildove.github.io/2018/03/02/02_optimization-algorithms/"/>
+    <id>https://snaildove.github.io/2018/03/02/02_optimization-algorithms/</id>
+    <published>2018-03-01T16:00:00.000Z</published>
+    <updated>2018-06-10T19:11:05.200Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is my
+        
+      
+    
+    </summary>
+    
+      <category term="english" scheme="https://snaildove.github.io/categories/english/"/>
+    
+    
+      <category term="deep learning" scheme="https://snaildove.github.io/tags/deep-learning/"/>
+    
+      <category term="Improving Deep Neural Networks" scheme="https://snaildove.github.io/tags/Improving-Deep-Neural-Networks/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>03_hyperparameter-tuning-batch-normalization-and-programming-frameworks</title>
+    <link href="https://snaildove.github.io/2018/03/02/03_hyperparameter-tuning-batch-normalization-and-programming-frameworks/"/>
+    <id>https://snaildove.github.io/2018/03/02/03_hyperparameter-tuning-batch-normalization-and-programming-frameworks/</id>
+    <published>2018-03-01T16:00:00.000Z</published>
+    <updated>2018-06-10T19:10:53.782Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is my
+        
+      
+    
+    </summary>
+    
+      <category term="english" scheme="https://snaildove.github.io/categories/english/"/>
+    
+    
+      <category term="deep learning" scheme="https://snaildove.github.io/tags/deep-learning/"/>
+    
+      <category term="Improving Deep Neural Networks" scheme="https://snaildove.github.io/tags/Improving-Deep-Neural-Networks/"/>
+    
+  </entry>
+  
+  <entry>
     <title>My summary of Improving-Deep-Neural-Networks</title>
     <link href="https://snaildove.github.io/2018/03/02/summary_of_Improving-Deep-Neural-Networks/"/>
     <id>https://snaildove.github.io/2018/03/02/summary_of_Improving-Deep-Neural-Networks/</id>
     <published>2018-03-01T16:00:00.000Z</published>
-    <updated>2018-06-10T19:09:37.542Z</updated>
+    <updated>2018-06-13T16:48:35.973Z</updated>
     
     <summary type="html">
     
@@ -185,39 +241,11 @@
   </entry>
   
   <entry>
-    <title>03_hyperparameter-tuning-batch-normalization-and-programming-frameworks</title>
-    <link href="https://snaildove.github.io/2018/03/02/03_hyperparameter-tuning-batch-normalization-and-programming-frameworks/"/>
-    <id>https://snaildove.github.io/2018/03/02/03_hyperparameter-tuning-batch-normalization-and-programming-frameworks/</id>
-    <published>2018-03-01T16:00:00.000Z</published>
-    <updated>2018-06-10T19:10:53.782Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is my
-        
-      
-    
-    </summary>
-    
-      <category term="english" scheme="https://snaildove.github.io/categories/english/"/>
-    
-    
-      <category term="deep learning" scheme="https://snaildove.github.io/tags/deep-learning/"/>
-    
-      <category term="Improving Deep Neural Networks" scheme="https://snaildove.github.io/tags/Improving-Deep-Neural-Networks/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>02_optimization-algorithms</title>
-    <link href="https://snaildove.github.io/2018/03/02/02_optimization-algorithms/"/>
-    <id>https://snaildove.github.io/2018/03/02/02_optimization-algorithms/</id>
-    <published>2018-03-01T16:00:00.000Z</published>
-    <updated>2018-06-10T19:11:05.200Z</updated>
+    <title>01_practical-aspects-of-deep-learning</title>
+    <link href="https://snaildove.github.io/2018/03/01/01_practical-aspects-of-deep-learning/"/>
+    <id>https://snaildove.github.io/2018/03/01/01_practical-aspects-of-deep-learning/</id>
+    <published>2018-02-28T16:00:00.000Z</published>
+    <updated>2018-06-10T19:11:17.511Z</updated>
     
     <summary type="html">
     
@@ -254,34 +282,6 @@
         
         
           &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;These are
-        
-      
-    
-    </summary>
-    
-      <category term="english" scheme="https://snaildove.github.io/categories/english/"/>
-    
-    
-      <category term="deep learning" scheme="https://snaildove.github.io/tags/deep-learning/"/>
-    
-      <category term="Improving Deep Neural Networks" scheme="https://snaildove.github.io/tags/Improving-Deep-Neural-Networks/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>01_practical-aspects-of-deep-learning</title>
-    <link href="https://snaildove.github.io/2018/03/01/01_practical-aspects-of-deep-learning/"/>
-    <id>https://snaildove.github.io/2018/03/01/01_practical-aspects-of-deep-learning/</id>
-    <published>2018-02-28T16:00:00.000Z</published>
-    <updated>2018-06-10T19:11:17.511Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is my
         
       
     
