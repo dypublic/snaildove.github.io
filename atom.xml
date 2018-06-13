@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://snaildove.github.io/"/>
-  <updated>2018-06-10T19:09:52.017Z</updated>
+  <updated>2018-06-13T17:09:54.547Z</updated>
   <id>https://snaildove.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://snaildove.github.io/2018/04/03/summary_of_Structuring-Machine%20-Learning-Projects/"/>
     <id>https://snaildove.github.io/2018/04/03/summary_of_Structuring-Machine -Learning-Projects/</id>
     <published>2018-04-02T16:00:00.000Z</published>
-    <updated>2018-06-10T19:09:52.017Z</updated>
+    <updated>2018-06-13T17:09:54.547Z</updated>
     
     <summary type="html">
     
@@ -129,11 +129,67 @@
   </entry>
   
   <entry>
+    <title>Optimization Methods</title>
+    <link href="https://snaildove.github.io/2018/03/02/OptimizationMethods/"/>
+    <id>https://snaildove.github.io/2018/03/02/OptimizationMethods/</id>
+    <published>2018-03-01T16:00:00.000Z</published>
+    <updated>2018-06-10T19:10:10.386Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;These are
+        
+      
+    
+    </summary>
+    
+      <category term="english" scheme="https://snaildove.github.io/categories/english/"/>
+    
+    
+      <category term="deep learning" scheme="https://snaildove.github.io/tags/deep-learning/"/>
+    
+      <category term="Improving Deep Neural Networks" scheme="https://snaildove.github.io/tags/Improving-Deep-Neural-Networks/"/>
+    
+  </entry>
+  
+  <entry>
     <title>02_optimization-algorithms</title>
     <link href="https://snaildove.github.io/2018/03/02/02_optimization-algorithms/"/>
     <id>https://snaildove.github.io/2018/03/02/02_optimization-algorithms/</id>
     <published>2018-03-01T16:00:00.000Z</published>
     <updated>2018-06-10T19:11:05.200Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is my
+        
+      
+    
+    </summary>
+    
+      <category term="english" scheme="https://snaildove.github.io/categories/english/"/>
+    
+    
+      <category term="deep learning" scheme="https://snaildove.github.io/tags/deep-learning/"/>
+    
+      <category term="Improving Deep Neural Networks" scheme="https://snaildove.github.io/tags/Improving-Deep-Neural-Networks/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>My summary of Improving-Deep-Neural-Networks</title>
+    <link href="https://snaildove.github.io/2018/03/02/summary_of_Improving-Deep-Neural-Networks/"/>
+    <id>https://snaildove.github.io/2018/03/02/summary_of_Improving-Deep-Neural-Networks/</id>
+    <published>2018-03-01T16:00:00.000Z</published>
+    <updated>2018-06-13T17:12:09.503Z</updated>
     
     <summary type="html">
     
@@ -185,39 +241,11 @@
   </entry>
   
   <entry>
-    <title>My summary of Improving-Deep-Neural-Networks</title>
-    <link href="https://snaildove.github.io/2018/03/02/summary_of_Improving-Deep-Neural-Networks/"/>
-    <id>https://snaildove.github.io/2018/03/02/summary_of_Improving-Deep-Neural-Networks/</id>
-    <published>2018-03-01T16:00:00.000Z</published>
-    <updated>2018-06-13T16:48:35.973Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is my
-        
-      
-    
-    </summary>
-    
-      <category term="english" scheme="https://snaildove.github.io/categories/english/"/>
-    
-    
-      <category term="deep learning" scheme="https://snaildove.github.io/tags/deep-learning/"/>
-    
-      <category term="Improving Deep Neural Networks" scheme="https://snaildove.github.io/tags/Improving-Deep-Neural-Networks/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Optimization Methods</title>
-    <link href="https://snaildove.github.io/2018/03/02/OptimizationMethods/"/>
-    <id>https://snaildove.github.io/2018/03/02/OptimizationMethods/</id>
-    <published>2018-03-01T16:00:00.000Z</published>
-    <updated>2018-06-10T19:10:10.386Z</updated>
+    <title>practical-aspects-of-deep-learning</title>
+    <link href="https://snaildove.github.io/2018/03/01/practical-aspects-of-deep-learning/"/>
+    <id>https://snaildove.github.io/2018/03/01/practical-aspects-of-deep-learning/</id>
+    <published>2018-02-28T16:00:00.000Z</published>
+    <updated>2018-06-10T19:10:26.145Z</updated>
     
     <summary type="html">
     
@@ -254,34 +282,6 @@
         
         
           &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is my
-        
-      
-    
-    </summary>
-    
-      <category term="english" scheme="https://snaildove.github.io/categories/english/"/>
-    
-    
-      <category term="deep learning" scheme="https://snaildove.github.io/tags/deep-learning/"/>
-    
-      <category term="Improving Deep Neural Networks" scheme="https://snaildove.github.io/tags/Improving-Deep-Neural-Networks/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>practical-aspects-of-deep-learning</title>
-    <link href="https://snaildove.github.io/2018/03/01/practical-aspects-of-deep-learning/"/>
-    <id>https://snaildove.github.io/2018/03/01/practical-aspects-of-deep-learning/</id>
-    <published>2018-02-28T16:00:00.000Z</published>
-    <updated>2018-06-10T19:10:26.145Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;These are
         
       
     
