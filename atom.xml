@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://snaildove.github.io/"/>
-  <updated>2018-07-24T19:08:01.483Z</updated>
+  <updated>2018-07-24T19:08:50.063Z</updated>
   <id>https://snaildove.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>my summary of learning Deep Learning Specialization</title>
+    <title>summary of learning Deep Learning Specialization</title>
     <link href="https://snaildove.github.io/2018/06/28/summary_of_learning_of_Deep_Learning_Specializatio_on_Coursera/"/>
     <id>https://snaildove.github.io/2018/06/28/summary_of_learning_of_Deep_Learning_Specializatio_on_Coursera/</id>
     <published>2018-06-27T16:00:00.000Z</published>
-    <updated>2018-07-24T19:08:01.483Z</updated>
+    <updated>2018-07-24T19:08:50.063Z</updated>
     
     <summary type="html">
     
@@ -213,11 +213,11 @@
   </entry>
   
   <entry>
-    <title>Improvise a Jazz Solo with an LSTM Network</title>
-    <link href="https://snaildove.github.io/2018/06/02/Improvise+a+Jazz+Solo+with+an+LSTM+Network+-+v3/"/>
-    <id>https://snaildove.github.io/2018/06/02/Improvise+a+Jazz+Solo+with+an+LSTM+Network+-+v3/</id>
+    <title>Building a Recurrent Neural Network Step by Step</title>
+    <link href="https://snaildove.github.io/2018/06/02/Building+a+Recurrent+Neural+Network+-+Step+by+Step+-+v3/"/>
+    <id>https://snaildove.github.io/2018/06/02/Building+a+Recurrent+Neural+Network+-+Step+by+Step+-+v3/</id>
     <published>2018-06-01T16:00:00.000Z</published>
-    <updated>2018-07-24T17:22:50.597Z</updated>
+    <updated>2018-07-24T17:22:33.525Z</updated>
     
     <summary type="html">
     
@@ -269,11 +269,11 @@
   </entry>
   
   <entry>
-    <title>Building a Recurrent Neural Network Step by Step</title>
-    <link href="https://snaildove.github.io/2018/06/02/Building+a+Recurrent+Neural+Network+-+Step+by+Step+-+v3/"/>
-    <id>https://snaildove.github.io/2018/06/02/Building+a+Recurrent+Neural+Network+-+Step+by+Step+-+v3/</id>
+    <title>Improvise a Jazz Solo with an LSTM Network</title>
+    <link href="https://snaildove.github.io/2018/06/02/Improvise+a+Jazz+Solo+with+an+LSTM+Network+-+v3/"/>
+    <id>https://snaildove.github.io/2018/06/02/Improvise+a+Jazz+Solo+with+an+LSTM+Network+-+v3/</id>
     <published>2018-06-01T16:00:00.000Z</published>
-    <updated>2018-07-24T17:22:33.525Z</updated>
+    <updated>2018-07-24T17:22:50.597Z</updated>
     
     <summary type="html">
     
@@ -381,34 +381,6 @@
   </entry>
   
   <entry>
-    <title>Deep Learning &amp; Art Neural Style Transfer</title>
-    <link href="https://snaildove.github.io/2018/05/04/Art+Generation+with+Neural+Style+Transfer+-+v3/"/>
-    <id>https://snaildove.github.io/2018/05/04/Art+Generation+with+Neural+Style+Transfer+-+v3/</id>
-    <published>2018-05-03T16:00:00.000Z</published>
-    <updated>2018-07-24T17:23:18.652Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;These are
-        
-      
-    
-    </summary>
-    
-      <category term="english" scheme="https://snaildove.github.io/categories/english/"/>
-    
-    
-      <category term="deep learning" scheme="https://snaildove.github.io/tags/deep-learning/"/>
-    
-      <category term="convolutional-neural-networks" scheme="https://snaildove.github.io/tags/convolutional-neural-networks/"/>
-    
-  </entry>
-  
-  <entry>
     <title>04_special-applications-face-recognition-neural-style-transfer</title>
     <link href="https://snaildove.github.io/2018/05/04/04_special-applications-face-recognition-neural-style-transfer/"/>
     <id>https://snaildove.github.io/2018/05/04/04_special-applications-face-recognition-neural-style-transfer/</id>
@@ -465,11 +437,11 @@
   </entry>
   
   <entry>
-    <title>03_object-detection</title>
-    <link href="https://snaildove.github.io/2018/05/03/03_object-detection/"/>
-    <id>https://snaildove.github.io/2018/05/03/03_object-detection/</id>
-    <published>2018-05-02T16:00:00.000Z</published>
-    <updated>2018-07-19T08:37:42.069Z</updated>
+    <title>Deep Learning &amp; Art Neural Style Transfer</title>
+    <link href="https://snaildove.github.io/2018/05/04/Art+Generation+with+Neural+Style+Transfer+-+v3/"/>
+    <id>https://snaildove.github.io/2018/05/04/Art+Generation+with+Neural+Style+Transfer+-+v3/</id>
+    <published>2018-05-03T16:00:00.000Z</published>
+    <updated>2018-07-24T17:23:18.652Z</updated>
     
     <summary type="html">
     
@@ -477,7 +449,7 @@
       
         
         
-          &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is my
+          &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;These are
         
       
     
@@ -521,11 +493,39 @@
   </entry>
   
   <entry>
-    <title>Residual Networks</title>
-    <link href="https://snaildove.github.io/2018/05/02/Residual+Networks+-+v2/"/>
-    <id>https://snaildove.github.io/2018/05/02/Residual+Networks+-+v2/</id>
+    <title>03_object-detection</title>
+    <link href="https://snaildove.github.io/2018/05/03/03_object-detection/"/>
+    <id>https://snaildove.github.io/2018/05/03/03_object-detection/</id>
+    <published>2018-05-02T16:00:00.000Z</published>
+    <updated>2018-07-19T08:37:42.069Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is my
+        
+      
+    
+    </summary>
+    
+      <category term="english" scheme="https://snaildove.github.io/categories/english/"/>
+    
+    
+      <category term="deep learning" scheme="https://snaildove.github.io/tags/deep-learning/"/>
+    
+      <category term="convolutional-neural-networks" scheme="https://snaildove.github.io/tags/convolutional-neural-networks/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Keras Tutorial Happy House</title>
+    <link href="https://snaildove.github.io/2018/05/02/Keras+-+Tutorial+-+Happy+House+v2/"/>
+    <id>https://snaildove.github.io/2018/05/02/Keras+-+Tutorial+-+Happy+House+v2/</id>
     <published>2018-05-01T16:00:00.000Z</published>
-    <updated>2018-07-19T04:58:19.593Z</updated>
+    <updated>2018-07-19T04:28:31.492Z</updated>
     
     <summary type="html">
     
@@ -549,11 +549,11 @@
   </entry>
   
   <entry>
-    <title>Keras Tutorial Happy House</title>
-    <link href="https://snaildove.github.io/2018/05/02/Keras+-+Tutorial+-+Happy+House+v2/"/>
-    <id>https://snaildove.github.io/2018/05/02/Keras+-+Tutorial+-+Happy+House+v2/</id>
+    <title>Residual Networks</title>
+    <link href="https://snaildove.github.io/2018/05/02/Residual+Networks+-+v2/"/>
+    <id>https://snaildove.github.io/2018/05/02/Residual+Networks+-+v2/</id>
     <published>2018-05-01T16:00:00.000Z</published>
-    <updated>2018-07-19T04:28:31.492Z</updated>
+    <updated>2018-07-19T04:58:19.593Z</updated>
     
     <summary type="html">
     
