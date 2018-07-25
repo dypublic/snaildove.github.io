@@ -4,6 +4,46 @@
 
     
   <url>
+    <loc>https://snaildove.github.io/2017/12/28/summary_of_Linear-Algebra/</loc>
+    <lastmod>2018-07-25T09:49:25.515Z</lastmod>
+    <data>
+        <display>
+        <title>summary of Linear Algebra</title>
+        <pubTime>2017-12-27T16:00:00.000Z</pubTime>
+        
+        <tag>linear_algebra</tag>
+         
+         
+           
+             
+              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2017/08/08/graph_and_network/</loc>
+    <lastmod>2018-07-25T07:47:38.770Z</lastmod>
+    <data>
+        <display>
+        <title>Tsinghua linear-algebra-2 8th-lecture graph-and-network</title>
+        <pubTime>2017-08-08T12:16:00.000Z</pubTime>
+        
+        <tag>linear_algebra</tag>
+         
+         
+           
+             
+              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://snaildove.github.io/2018/01/20/summary_of_ml-coursera-andrew-ng/</loc>
     <lastmod>2018-07-24T19:22:38.587Z</lastmod>
     <data>
@@ -947,26 +987,6 @@
            
              
               <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://snaildove.github.io/2017/08/08/graph_and_network/</loc>
-    <lastmod>2018-06-03T16:19:09.390Z</lastmod>
-    <data>
-        <display>
-        <title>Tsinghua linear-algebra-2 2nd-lecture graph-and-network</title>
-        <pubTime>2017-08-08T12:16:00.000Z</pubTime>
-        
-        <tag>linear_algebra</tag>
-         
-         
-           
-             
-              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
           
         </display>
     </data>
