@@ -461,7 +461,7 @@
       
 
       
-        <script src="/assets/js/APlayer.min.js"> </script><p>笔记源自：清华大学公开课：线性代数2——第三讲：奇异值分解</p>
+        <script src="\assets\js\APlayer.min.js"> </script><p>笔记源自：清华大学公开课：线性代数2——第三讲：奇异值分解</p>
 <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>对角矩阵是我们最喜欢的一类矩阵，对能够相似于对角阵的矩阵能方便地计算其幂和指数，对不能相似于对角阵的方阵。上节课我们讨论了如何求出其尽可能简单的相似标准形及Jordan标准形以上讨论的都是方阵。那么对m乘n的矩阵我们如何来对它进行对角化呢？</p>
 <p>线性代数中最重要的一类矩阵分解即奇异值分解，从而回答以上的问题。<strong>对角矩阵是我们最喜欢的一类矩阵，因为给定一个对角阵立即就可以得到它的特征值，行列式，幂和指数函数等等。对角矩阵的运算跟我们熟悉的数的运算有很多相似之处，而一个n阶的矩阵相似于对角阵当且仅当它存在着n个线性无关的特征向量。</strong><br><img src="http://p8o3egtyk.bkt.clouddn.com/gitpage/tsinghua_linear_algebra/2-3/1.png" alt="preface_SVD"><br>特别地，实对称矩阵一定会正交相似于对角阵，也就是说给你一个实对称矩阵，一定存在着正交矩阵$Q$把它的列向量记成$v_1$到$v_n$，它能够满足$Q^TAQ$等于$\lambda$，$\lambda$是一个对角阵，它的对角元是$A$的特征值，那么其中$Q$的列向量$v_i$，它是矩阵$A$的属于特征值，$\lambda_i$的特征向量，也就是满足$Av_i$等于$\lambda_iv_i$。我们现在有个问题是说，如果对于$m \times n$的一个矩阵，我们如何来”对角化”它。那么也就是说在什么意义上，我们能够尽可能地。把$m \times n$的一个矩形的阵向对角阵靠拢，今天我们来讨论矩阵的奇异值分解它是线性代数应用中，最重要的一类矩阵分解。</p>
 <h2 id="AA-T-与-A-TA-的特性"><a href="#AA-T-与-A-TA-的特性" class="headerlink" title="$AA^T$与$A^TA$的特性"></a>$AA^T$与$A^TA$的特性</h2><h3 id="AA-T-与-A-TA-的特征值"><a href="#AA-T-与-A-TA-的特征值" class="headerlink" title="$AA^T$与$A^TA$的特征值"></a>$AA^T$与$A^TA$的特征值</h3><p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpage/tsinghua_linear_algebra/2-3/2.png" alt="1st_property_of_AAT"> </p>

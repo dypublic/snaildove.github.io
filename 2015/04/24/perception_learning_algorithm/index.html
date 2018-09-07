@@ -458,7 +458,7 @@
       
 
       
-        <script src="/assets/js/APlayer.min.js"> </script><p>PLA(Perception Learning Algorithm) 适用于二维及高维的线性可划分问题。问题的答案只有同意或者不同意。</p>
+        <script src="\assets\js\APlayer.min.js"> </script><p>PLA(Perception Learning Algorithm) 适用于二维及高维的线性可划分问题。问题的答案只有同意或者不同意。</p>
 <h2 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h2><p>银行可以根据顾客的个人信息来判断是否给顾客发放信用卡。<strong>将顾客抽象为一个向量$X$，包括姓名、年龄、年收入、负债数等。同时设定各个属性所占的权重向量为$W$，对于正相关的属性设置相对较高的权重，如年收入，对于负相关的属性设置较低的权重，如负债数。$y$表示是否想该用户发放了信用卡。</strong>通过求$X$和$W$的内积减去一个阀值threshold，若为正则同意发放信用卡，否则不发放信用卡。我们假设存在着一个从$X$到$Y$的映射$f$，PLA算法就是用来模拟这个映射，使得求出的函数与$f$尽可能的相似，起码在已知的数据集(即样本上)上一致。</p>
 <p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpage/Hsuan-Tien_Lin/perception-learning-algorithm/1.png" alt="img"></p>
 <p><strong>PLA算法即用来求向量$W$</strong>，使得在已知的数据中机器做出的判断与现实数据相同。当$X$为二维向量时，相当于在平面上画出一条直线将所有的点分成两部分，一部分同意发送，另一部分的不同意。内积可以表示成：<br>$$<br>\begin{eqnarray}<br>h(x) &amp;=&amp; sign((\sum\limits_{i=1}^{d}W_i X_i)-threshold)\\<br>&amp;=&amp; sign((\sum\limits_{i=1}^{d}W_i X_i)+\underbrace{(-threshold)}_{W_0}\times\underbrace{(+1)}_{X_0})\\<br>&amp;=&amp; sign(\sum\limits_{i=0}^{d}W_i X_i)\\<br>&amp;=&amp; sign(W^TX)<br>\end{eqnarray}<br>$$</p>
