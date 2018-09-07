@@ -2,23 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://snaildove.github.io/2018/06/28/summary_of_learning_of_Deep_Learning_Specializatio_on_Coursera/</loc>
+    <loc>https://snaildove.github.io/2018/01/28/Calculus_and_Differential/</loc>
     
-    <lastmod>2018-07-26T03:42:31.796Z</lastmod>
+    <lastmod>2018-09-07T15:49:24.559Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2017/12/28/summary_of_Linear-Algebra/</loc>
+    <loc>https://snaildove.github.io/2016/01/20/vim_without_widgets/</loc>
     
-    <lastmod>2018-07-25T17:05:59.228Z</lastmod>
+    <lastmod>2018-09-01T16:28:27.251Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://snaildove.github.io/2018/04/03/summary_of_Structuring-Machine-Learning-Projects/</loc>
     
-    <lastmod>2018-07-25T14:06:14.101Z</lastmod>
+    <lastmod>2018-08-01T07:51:40.529Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2018/05/01/02_deep-convolutional-models-case-studies/</loc>
+    
+    <lastmod>2018-07-29T13:52:20.680Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2018/06/06/summary_of_nlp-sequence-models/</loc>
+    
+    <lastmod>2018-07-27T10:28:32.776Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2017/12/28/summary_of_Linear-Algebra/</loc>
+    
+    <lastmod>2018-07-27T10:13:35.539Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2018/06/28/summary_of_learning_of_Deep_Learning_Specializatio_on_Coursera/</loc>
+    
+    <lastmod>2018-07-26T03:45:06.502Z</lastmod>
     
   </url>
   
@@ -47,13 +75,6 @@
     <loc>https://snaildove.github.io/2018/05/04/summary_of_convolutional-neural-networks/</loc>
     
     <lastmod>2018-07-25T14:05:29.151Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2018/06/06/summary_of_nlp-sequence-models/</loc>
-    
-    <lastmod>2018-07-25T12:43:22.804Z</lastmod>
     
   </url>
   
@@ -180,13 +201,6 @@
     <loc>https://snaildove.github.io/2018/05/03/03_object-detection/</loc>
     
     <lastmod>2018-07-19T08:37:42.069Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2018/05/01/02_deep-convolutional-models-case-studies/</loc>
-    
-    <lastmod>2018-07-19T08:33:50.103Z</lastmod>
     
   </url>
   
@@ -565,13 +579,6 @@
     <loc>https://snaildove.github.io/2018/01/13/13_unsupervised-learning/</loc>
     
     <lastmod>2018-05-21T03:47:49.001Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2016/01/20/vim_without_widgets/</loc>
-    
-    <lastmod>2018-05-21T03:47:03.856Z</lastmod>
     
   </url>
   

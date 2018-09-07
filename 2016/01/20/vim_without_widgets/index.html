@@ -106,7 +106,7 @@
 <meta property="og:site_name" content="SnailDove&#39;s blog">
 <meta property="og:description" content="本文根据使用经验，会持续更新。 vim的四种模式 一般模式：normal模式。可以移动光标，删除字符或整行，也可复制、粘贴文件数据。打开vim就是进入这个模式，3个模式的切换也是在这里中转。 编辑模式：一般模式下按下i I o O a A r R s S 任何一个进入该模式。可以编辑文件内容，按Esc回到一般模式。   i I是insert（在光标所在字符前和行首） o O是open新行（在光标">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-05-21T03:47:03.856Z">
+<meta property="og:updated_time" content="2018-09-01T16:28:27.251Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vim无插件使用">
 <meta name="twitter:description" content="本文根据使用经验，会持续更新。 vim的四种模式 一般模式：normal模式。可以移动光标，删除字符或整行，也可复制、粘贴文件数据。打开vim就是进入这个模式，3个模式的切换也是在这里中转。 编辑模式：一般模式下按下i I o O a A r R s S 任何一个进入该模式。可以编辑文件内容，按Esc回到一般模式。   i I是insert（在光标所在字符前和行首） o O是open新行（在光标">
@@ -497,7 +497,7 @@
 <td><code>ctr + u</code>  page up</td>
 </tr>
 <tr>
-<td><code>ctr + f</code>   page former</td>
+<td><code>ctr + f</code>   page forward</td>
 <td><code>ctr + b</code>  page back</td>
 </tr>
 </tbody>
@@ -939,7 +939,7 @@
 <h3 id="跳转到差异"><a href="#跳转到差异" class="headerlink" title="跳转到差异"></a>跳转到差异</h3><p>有两条命令可用于在跳转到差异文所在的位置:</p>
 <ol>
 <li><code>[c</code>              反向跳转至上一处更改的开始。计数前缀使之重复执行相应次。</li>
-<li><code>]c</code>              正向跳转至下一个更改的开始。计数前缀使之重复执行相应次。<br>如果不存在光标可以跳转到的更改，将产生错误。</li>
+<li><code>]c</code>              正向跳转至下一个更改的开始。计数前缀使之重复执行相应次。<br> 如果不存在光标可以跳转到的更改，将产生错误。</li>
 </ol>
 <h3 id="合并"><a href="#合并" class="headerlink" title="合并"></a>合并</h3><p>比较目的就是合并差异，直接使用以下自带命令或者麻烦的办法：手动从一个窗口拷贝至另一个窗口。</p>
 <figure class="highlight accesslog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">:<span class="string">[range]</span>diffg<span class="string">[et]</span> <span class="string">[bufspec]</span></span><br><span class="line">                用另一个缓冲区来修改当前的缓冲区，消除不同之处。除非只有另外一</span><br><span class="line">                个比较模式下的缓冲区， <span class="string">[bufspec]</span> 必须存在并指定那个缓冲区。</span><br><span class="line">                如果 <span class="string">[bufspec]</span> 指定的是当前缓冲区，则为空动作。<span class="string">[range]</span> 可以参考下面。</span><br><span class="line">:<span class="string">[range]</span>diffpu<span class="string">[t]</span> <span class="string">[bufspec]</span></span><br><span class="line">                用当前缓冲区来修改另一个缓冲区，消除不同之处。</span><br><span class="line"><span class="string">[count]</span>do       同 <span class="string">":diffget"</span>，但没有范围。<span class="string">"o"</span> 表示 <span class="string">"obtain"</span> (不能用</span><br><span class="line">                <span class="string">"dg"</span>，因为那可能是 <span class="string">"dgg"</span> 的开始！)。</span><br><span class="line">dp              同 <span class="string">":diffput"</span>，但没有范围。注意 不适用于可视模式。</span><br><span class="line">                给出的 <span class="string">[count]</span> 用作 <span class="string">":diffput"</span> 的 <span class="string">[bufspec]</span> 参数。</span><br><span class="line"></span><br><span class="line">当没有给定 <span class="string">[range]</span> 时，受影响的仅是当前光标所处位置或其紧上方的差异文本。</span><br><span class="line">当指定 <span class="string">[range]</span> 时，Vim 试图仅改动它指定的行。不过，当有被删除的行时，这不总有效。</span><br><span class="line">参数 <span class="string">[bufspec]</span> 可以是缓冲区的序号，匹配缓冲区名称或缓冲区名称的一部分的模式。</span><br><span class="line">例如:</span><br><span class="line">        :diffget                使用另一个进入比较模式的缓冲区</span><br><span class="line">        :diffget <span class="number">3</span>              使用 <span class="number">3</span> 号缓冲区</span><br><span class="line">        :diffget v2             使用名字同 <span class="string">"v2"</span> 匹配的缓冲区，并进入比较模式(例如，<span class="string">"file.c.v2"</span>)</span><br></pre></td></tr></table></figure>
@@ -1137,7 +1137,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">94</span>
+                  <span class="site-state-item-count">95</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -1171,7 +1171,7 @@
 				<h4 class="widget-title">Tag Cloud</h4>
 					<div id="myCanvasContainer" class="widget tagcloud">
 					<canvas width="250" height="250" id="resCanvas" style="width=100%">
-						<ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Basic-Algorithm/">Basic Algorithm</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Data-Structure/">Data Structure</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Improving-Deep-Neural-Networks/">Improving Deep Neural Networks</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Latex/">Latex</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning/">Machine Learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning-by-Andrew-NG/">Machine Learning by Andrew NG</a><span class="tag-list-count">19</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Structuring-Machine-Learning-Projects/">Structuring Machine Learning Projects</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/convolutional-neural-networks/">convolutional-neural-networks</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/deep-learning/">deep learning</a><span class="tag-list-count">41</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/english/">english</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linear-algebra/">linear_algebra</a><span class="tag-list-count">13</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/machine-learning/">machine learning</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/neural-networks-deep-learning/">neural-networks-deep-learning</a><span class="tag-list-count">8</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nlp-sequence-models/">nlp-sequence-models</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/probability/">probability</a><span class="tag-list-count">12</span></li></ul>
+						<ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Basic-Algorithm/">Basic Algorithm</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Data-Structure/">Data Structure</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Improving-Deep-Neural-Networks/">Improving Deep Neural Networks</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Latex/">Latex</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning/">Machine Learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning-by-Andrew-NG/">Machine Learning by Andrew NG</a><span class="tag-list-count">19</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Structuring-Machine-Learning-Projects/">Structuring Machine Learning Projects</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/convolutional-neural-networks/">convolutional-neural-networks</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/deep-learning/">deep learning</a><span class="tag-list-count">41</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/english/">english</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linear-algebra/">linear_algebra</a><span class="tag-list-count">14</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/machine-learning/">machine learning</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/neural-networks-deep-learning/">neural-networks-deep-learning</a><span class="tag-list-count">8</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nlp-sequence-models/">nlp-sequence-models</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/probability/">probability</a><span class="tag-list-count">12</span></li></ul>
 					</canvas>
 				</div>
 			</div>
@@ -1270,7 +1270,7 @@
     
       <span class="post-meta-item-text">Site words total count</span>
     
-    <span title="Site words total count">527.4k</span>
+    <span title="Site words total count">528.1k</span>
   
 </div>
 
