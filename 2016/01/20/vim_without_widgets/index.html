@@ -106,7 +106,7 @@
 <meta property="og:site_name" content="SnailDove&#39;s blog">
 <meta property="og:description" content="本文根据使用经验，会持续更新。 vim的四种模式 一般模式：normal模式。可以移动光标，删除字符或整行，也可复制、粘贴文件数据。打开vim就是进入这个模式，3个模式的切换也是在这里中转。 编辑模式：一般模式下按下i I o O a A r R s S 任何一个进入该模式。可以编辑文件内容，按Esc回到一般模式。   i I是insert（在光标所在字符前和行首） o O是open新行（在光标">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-09-01T16:28:27.251Z">
+<meta property="og:updated_time" content="2018-09-16T16:22:09.418Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vim无插件使用">
 <meta name="twitter:description" content="本文根据使用经验，会持续更新。 vim的四种模式 一般模式：normal模式。可以移动光标，删除字符或整行，也可复制、粘贴文件数据。打开vim就是进入这个模式，3个模式的切换也是在这里中转。 编辑模式：一般模式下按下i I o O a A r R s S 任何一个进入该模式。可以编辑文件内容，按Esc回到一般模式。   i I是insert（在光标所在字符前和行首） o O是open新行（在光标">
@@ -406,7 +406,7 @@
                   <span class="post-meta-item-text">Words count in article</span>
                 
                 <span title="Words count in article">
-                  7,219
+                  7,251
                 </span>
               
 
@@ -422,7 +422,7 @@
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
                 <span title="Reading time">
-                  27
+                  28
                 </span>
               
             </div>
@@ -764,23 +764,39 @@
 <td>copy whole word including current cursor</td>
 </tr>
 <tr>
-<td>dtword</td>
-<td>delete until before the next ‘word’</td>
+<td>d/word</td>
+<td>delete forward until the former character of the next ‘word’</td>
 </tr>
 <tr>
-<td>dfword</td>
-<td>delete until after the next ‘word’</td>
+<td>d?word</td>
+<td>delete backward until the former character of the last ‘word’</td>
 </tr>
 </tbody>
 </table>
 <table>
 <thead>
 <tr>
-<th>范围+动作操作指令</th>
+<th>动作操作指令+范围</th>
 <th>效果</th>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>dtc</td>
+<td>delete until before the next ‘c’</td>
+</tr>
+<tr>
+<td>dfc</td>
+<td>delete until after the next ‘c’</td>
+</tr>
+<tr>
+<td>范围+动作操作指令</td>
+<td>效果</td>
+</tr>
+<tr>
+<td>———————</td>
+<td>———-</td>
+</tr>
 <tr>
 <td><code>bve</code> 或 <code>BvE</code> + c/d/y</td>
 <td>操作一个变量或字符串</td>
@@ -1270,7 +1286,7 @@
     
       <span class="post-meta-item-text">Site words total count</span>
     
-    <span title="Site words total count">532.6k</span>
+    <span title="Site words total count">532.7k</span>
   
 </div>
 
