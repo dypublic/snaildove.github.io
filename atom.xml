@@ -45,34 +45,6 @@
   </entry>
   
   <entry>
-    <title>summary of nlp sequence models</title>
-    <link href="https://snaildove.github.io/2018/06/06/summary_of_nlp-sequence-models/"/>
-    <id>https://snaildove.github.io/2018/06/06/summary_of_nlp-sequence-models/</id>
-    <published>2018-06-05T16:00:00.000Z</published>
-    <updated>2018-07-27T10:28:32.776Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is my
-        
-      
-    
-    </summary>
-    
-      <category term="english" scheme="https://snaildove.github.io/categories/english/"/>
-    
-    
-      <category term="deep learning" scheme="https://snaildove.github.io/tags/deep-learning/"/>
-    
-      <category term="nlp-sequence-models" scheme="https://snaildove.github.io/tags/nlp-sequence-models/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Trigger word</title>
     <link href="https://snaildove.github.io/2018/06/06/Trigger%20word%20detection%20-%20v1/"/>
     <id>https://snaildove.github.io/2018/06/06/Trigger word detection - v1/</id>
@@ -101,11 +73,11 @@
   </entry>
   
   <entry>
-    <title>Neural machine translation with attention</title>
-    <link href="https://snaildove.github.io/2018/06/05/Neural+machine+translation+with+attention+-+v4/"/>
-    <id>https://snaildove.github.io/2018/06/05/Neural+machine+translation+with+attention+-+v4/</id>
-    <published>2018-06-04T16:00:00.000Z</published>
-    <updated>2018-07-24T17:21:47.241Z</updated>
+    <title>summary of nlp sequence models</title>
+    <link href="https://snaildove.github.io/2018/06/06/summary_of_nlp-sequence-models/"/>
+    <id>https://snaildove.github.io/2018/06/06/summary_of_nlp-sequence-models/</id>
+    <published>2018-06-05T16:00:00.000Z</published>
+    <updated>2018-07-27T10:28:32.776Z</updated>
     
     <summary type="html">
     
@@ -113,7 +85,7 @@
       
         
         
-          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is one
+          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is my
         
       
     
@@ -129,11 +101,11 @@
   </entry>
   
   <entry>
-    <title>Operations on word vectors</title>
-    <link href="https://snaildove.github.io/2018/06/03/Operations+on+word+vectors+-+v2/"/>
-    <id>https://snaildove.github.io/2018/06/03/Operations+on+word+vectors+-+v2/</id>
-    <published>2018-06-02T16:00:00.000Z</published>
-    <updated>2018-07-24T17:22:15.500Z</updated>
+    <title>Neural machine translation with attention</title>
+    <link href="https://snaildove.github.io/2018/06/05/Neural+machine+translation+with+attention+-+v4/"/>
+    <id>https://snaildove.github.io/2018/06/05/Neural+machine+translation+with+attention+-+v4/</id>
+    <published>2018-06-04T16:00:00.000Z</published>
+    <updated>2018-07-24T17:21:47.241Z</updated>
     
     <summary type="html">
     
@@ -213,6 +185,34 @@
   </entry>
   
   <entry>
+    <title>Operations on word vectors</title>
+    <link href="https://snaildove.github.io/2018/06/03/Operations+on+word+vectors+-+v2/"/>
+    <id>https://snaildove.github.io/2018/06/03/Operations+on+word+vectors+-+v2/</id>
+    <published>2018-06-02T16:00:00.000Z</published>
+    <updated>2018-07-24T17:22:15.500Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is one
+        
+      
+    
+    </summary>
+    
+      <category term="english" scheme="https://snaildove.github.io/categories/english/"/>
+    
+    
+      <category term="deep learning" scheme="https://snaildove.github.io/tags/deep-learning/"/>
+    
+      <category term="nlp-sequence-models" scheme="https://snaildove.github.io/tags/nlp-sequence-models/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Improvise a Jazz Solo with an LSTM Network</title>
     <link href="https://snaildove.github.io/2018/06/02/Improvise+a+Jazz+Solo+with+an+LSTM+Network+-+v3/"/>
     <id>https://snaildove.github.io/2018/06/02/Improvise+a+Jazz+Solo+with+an+LSTM+Network+-+v3/</id>
@@ -226,6 +226,34 @@
         
         
           &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is one
+        
+      
+    
+    </summary>
+    
+      <category term="english" scheme="https://snaildove.github.io/categories/english/"/>
+    
+    
+      <category term="deep learning" scheme="https://snaildove.github.io/tags/deep-learning/"/>
+    
+      <category term="nlp-sequence-models" scheme="https://snaildove.github.io/tags/nlp-sequence-models/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>natural language processing word embeddings</title>
+    <link href="https://snaildove.github.io/2018/06/02/02_natural-language-processing-word-embeddings/"/>
+    <id>https://snaildove.github.io/2018/06/02/02_natural-language-processing-word-embeddings/</id>
+    <published>2018-06-01T16:00:00.000Z</published>
+    <updated>2018-07-24T17:23:06.352Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is my
         
       
     
@@ -297,34 +325,6 @@
   </entry>
   
   <entry>
-    <title>natural language processing word embeddings</title>
-    <link href="https://snaildove.github.io/2018/06/02/02_natural-language-processing-word-embeddings/"/>
-    <id>https://snaildove.github.io/2018/06/02/02_natural-language-processing-word-embeddings/</id>
-    <published>2018-06-01T16:00:00.000Z</published>
-    <updated>2018-07-24T17:23:06.352Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is my
-        
-      
-    
-    </summary>
-    
-      <category term="english" scheme="https://snaildove.github.io/categories/english/"/>
-    
-    
-      <category term="deep learning" scheme="https://snaildove.github.io/tags/deep-learning/"/>
-    
-      <category term="nlp-sequence-models" scheme="https://snaildove.github.io/tags/nlp-sequence-models/"/>
-    
-  </entry>
-  
-  <entry>
     <title>recurrent neural networks</title>
     <link href="https://snaildove.github.io/2018/06/01/01_recurrent-neural-networks/"/>
     <id>https://snaildove.github.io/2018/06/01/01_recurrent-neural-networks/</id>
@@ -353,11 +353,11 @@
   </entry>
   
   <entry>
-    <title>Face Recognition for the Happy House</title>
-    <link href="https://snaildove.github.io/2018/05/04/Face+Recognition+for+the+Happy+House+-+v3/"/>
-    <id>https://snaildove.github.io/2018/05/04/Face+Recognition+for+the+Happy+House+-+v3/</id>
+    <title>04_special-applications-face-recognition-neural-style-transfer</title>
+    <link href="https://snaildove.github.io/2018/05/04/04_special-applications-face-recognition-neural-style-transfer/"/>
+    <id>https://snaildove.github.io/2018/05/04/04_special-applications-face-recognition-neural-style-transfer/</id>
     <published>2018-05-03T16:00:00.000Z</published>
-    <updated>2018-07-24T17:23:41.876Z</updated>
+    <updated>2018-07-24T17:24:12.317Z</updated>
     
     <summary type="html">
     
@@ -365,7 +365,7 @@
       
         
         
-          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;These are
+          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is my
         
       
     
@@ -381,11 +381,11 @@
   </entry>
   
   <entry>
-    <title>04_special-applications-face-recognition-neural-style-transfer</title>
-    <link href="https://snaildove.github.io/2018/05/04/04_special-applications-face-recognition-neural-style-transfer/"/>
-    <id>https://snaildove.github.io/2018/05/04/04_special-applications-face-recognition-neural-style-transfer/</id>
+    <title>Face Recognition for the Happy House</title>
+    <link href="https://snaildove.github.io/2018/05/04/Face+Recognition+for+the+Happy+House+-+v3/"/>
+    <id>https://snaildove.github.io/2018/05/04/Face+Recognition+for+the+Happy+House+-+v3/</id>
     <published>2018-05-03T16:00:00.000Z</published>
-    <updated>2018-07-24T17:24:12.317Z</updated>
+    <updated>2018-07-24T17:23:41.876Z</updated>
     
     <summary type="html">
     
@@ -393,7 +393,7 @@
       
         
         
-          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is my
+          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;These are
         
       
     
@@ -465,34 +465,6 @@
   </entry>
   
   <entry>
-    <title>Autonomous driving - Car detection</title>
-    <link href="https://snaildove.github.io/2018/05/03/Autonomous+driving+application+-+Car+detection+-+v3/"/>
-    <id>https://snaildove.github.io/2018/05/03/Autonomous+driving+application+-+Car+detection+-+v3/</id>
-    <published>2018-05-02T16:00:00.000Z</published>
-    <updated>2018-07-24T17:23:52.279Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;These are
-        
-      
-    
-    </summary>
-    
-      <category term="english" scheme="https://snaildove.github.io/categories/english/"/>
-    
-    
-      <category term="deep learning" scheme="https://snaildove.github.io/tags/deep-learning/"/>
-    
-      <category term="convolutional-neural-networks" scheme="https://snaildove.github.io/tags/convolutional-neural-networks/"/>
-    
-  </entry>
-  
-  <entry>
     <title>03_object-detection</title>
     <link href="https://snaildove.github.io/2018/05/03/03_object-detection/"/>
     <id>https://snaildove.github.io/2018/05/03/03_object-detection/</id>
@@ -521,11 +493,11 @@
   </entry>
   
   <entry>
-    <title>Residual Networks</title>
-    <link href="https://snaildove.github.io/2018/05/02/Residual+Networks+-+v2/"/>
-    <id>https://snaildove.github.io/2018/05/02/Residual+Networks+-+v2/</id>
-    <published>2018-05-01T16:00:00.000Z</published>
-    <updated>2018-07-19T04:58:19.593Z</updated>
+    <title>Autonomous driving - Car detection</title>
+    <link href="https://snaildove.github.io/2018/05/03/Autonomous+driving+application+-+Car+detection+-+v3/"/>
+    <id>https://snaildove.github.io/2018/05/03/Autonomous+driving+application+-+Car+detection+-+v3/</id>
+    <published>2018-05-02T16:00:00.000Z</published>
+    <updated>2018-07-24T17:23:52.279Z</updated>
     
     <summary type="html">
     
@@ -554,6 +526,34 @@
     <id>https://snaildove.github.io/2018/05/02/Keras+-+Tutorial+-+Happy+House+v2/</id>
     <published>2018-05-01T16:00:00.000Z</published>
     <updated>2018-07-19T04:28:31.492Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;These are
+        
+      
+    
+    </summary>
+    
+      <category term="english" scheme="https://snaildove.github.io/categories/english/"/>
+    
+    
+      <category term="deep learning" scheme="https://snaildove.github.io/tags/deep-learning/"/>
+    
+      <category term="convolutional-neural-networks" scheme="https://snaildove.github.io/tags/convolutional-neural-networks/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Residual Networks</title>
+    <link href="https://snaildove.github.io/2018/05/02/Residual+Networks+-+v2/"/>
+    <id>https://snaildove.github.io/2018/05/02/Residual+Networks+-+v2/</id>
+    <published>2018-05-01T16:00:00.000Z</published>
+    <updated>2018-07-19T04:58:19.593Z</updated>
     
     <summary type="html">
     

@@ -106,7 +106,7 @@
 <meta property="og:site_name" content="SnailDove&#39;s blog">
 <meta property="og:description" content="本文根据使用经验，会持续更新。 vim的四种模式 一般模式：normal模式。可以移动光标，删除字符或整行，也可复制、粘贴文件数据。打开vim就是进入这个模式，3个模式的切换也是在这里中转。 编辑模式：一般模式下按下i I o O a A r R s S 任何一个进入该模式。可以编辑文件内容，按Esc回到一般模式。   i I是insert（在光标所在字符前和行首） o O是open新行（在光标">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-09-16T16:22:09.418Z">
+<meta property="og:updated_time" content="2018-09-17T13:42:18.032Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vim无插件使用">
 <meta name="twitter:description" content="本文根据使用经验，会持续更新。 vim的四种模式 一般模式：normal模式。可以移动光标，删除字符或整行，也可复制、粘贴文件数据。打开vim就是进入这个模式，3个模式的切换也是在这里中转。 编辑模式：一般模式下按下i I o O a A r R s S 任何一个进入该模式。可以编辑文件内容，按Esc回到一般模式。   i I是insert（在光标所在字符前和行首） o O是open新行（在光标">
@@ -406,7 +406,7 @@
                   <span class="post-meta-item-text">Words count in article</span>
                 
                 <span title="Words count in article">
-                  7,251
+                  7,253
                 </span>
               
 
@@ -473,16 +473,17 @@
 <li><strong>高频使用场景6</strong>： 删除到末尾:<code>d$</code> 删除到开头: <code>d^</code></li>
 </ol>
 <h3 id="标记"><a href="#标记" class="headerlink" title="标记"></a>标记</h3><p>简记：<strong>标记是为了更好地查找</strong>，normal模式下：</p>
-<p><code>mx</code> mean: mark x, x is mark name;<br><code>&#39;x</code> mean: go to the position of x mark</p>
+<p><code>mx</code> meaning: mark x, x is the name of mark;<br><code>&#39;x</code> meaning: go to the position of x mark</p>
 <ol>
 <li><strong>高频使用场景1：</strong> 在函数中看到调用其他函数，你想去看怎么定义的，你看完之后要回来，那么先标记一下，然后在跳回来。</li>
 </ol>
 <h3 id="语法相关的跳转"><a href="#语法相关的跳转" class="headerlink" title="语法相关的跳转"></a>语法相关的跳转</h3><p>normal模式下：</p>
 <ol>
 <li><code>gd</code> 意思： go to definition</li>
-<li>先按 <code>[</code> 再按 <code>ctrl+d</code> 跳转到#define处 语言支持不太良好</li>
-<li>先按 <code>[</code> 再按 <code>ctrl+i</code> 跳转到函数、变量和#define 语言支持不太良好</li>
+<li>先按 <code>[</code> 再按 <code>ctrl+d</code> 跳转到#define处 </li>
+<li>先按 <code>[</code> 再按 <code>ctrl+i</code> 跳转到函数、变量和#define </li>
 </ol>
+<p><strong>注意</strong>：语言支持不太良好, 大家可以试试所用的语言</p>
 <h3 id="快速翻页"><a href="#快速翻页" class="headerlink" title="快速翻页"></a>快速翻页</h3><p>normal模式下：</p>
 <table>
 <thead>
@@ -847,9 +848,10 @@
 <li><code>:tabo</code> 关闭<strong>其他</strong>的tab</li>
 <li><code>:tabs</code> 查看<strong>所有打开</strong>的tab</li>
 <li><code>:tabp</code> 前一个previous tab window</li>
-<li><code>:tabn</code> 后一个next tab window</li>
+<li><p><code>:tabn</code> 后一个next tab window</p>
+<p><code>gt</code> , <code>gT</code> 可以直接在tab之间切换。 还有很多他命令， :help table 吧。</p>
+</li>
 </ul>
-<p>标准模式下： <code>gt</code> , <code>gT</code> 可以直接在tab之间切换。 还有很多他命令， :help table 吧。</p>
 <h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><p>normal模式下：</p>
 <ol>
 <li><code>:Te</code> 以tab窗口形式显示当前目录 然后可进行切换目录、打开某个文件</li>
