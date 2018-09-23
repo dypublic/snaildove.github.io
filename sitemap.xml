@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://snaildove.github.io/2018/06/06/summary_of_nlp-sequence-models/</loc>
+    
+    <lastmod>2018-09-23T03:10:33.547Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://snaildove.github.io/2016/01/20/vim_without_widgets/</loc>
     
-    <lastmod>2018-09-18T03:21:09.044Z</lastmod>
+    <lastmod>2018-09-19T12:36:34.648Z</lastmod>
     
   </url>
   
@@ -33,13 +40,6 @@
     <loc>https://snaildove.github.io/2018/05/01/02_deep-convolutional-models-case-studies/</loc>
     
     <lastmod>2018-07-29T13:52:20.680Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2018/06/06/summary_of_nlp-sequence-models/</loc>
-    
-    <lastmod>2018-07-27T10:28:32.776Z</lastmod>
     
   </url>
   
