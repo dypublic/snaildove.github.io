@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>https://snaildove.github.io/2018/06/02/Building+a+Recurrent+Neural+Network+-+Step+by+Step+-+v3/</loc>
+    <lastmod>2018-09-23T16:12:36.674Z</lastmod>
+    <data>
+        <display>
+        <title>Building a Recurrent Neural Network Step by Step</title>
+        <pubTime>2018-06-01T16:00:00.000Z</pubTime>
+        
+        <tag>deep learning</tag>
+         
+        <tag>nlp-sequence-models</tag>
+         
+         
+           
+             
+              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://snaildove.github.io/2018/06/06/summary_of_nlp-sequence-models/</loc>
     <lastmod>2018-09-23T10:25:41.950Z</lastmod>
     <data>
@@ -456,28 +478,6 @@
         <display>
         <title>sequence models attention mechanism</title>
         <pubTime>2018-06-02T16:00:00.000Z</pubTime>
-        
-        <tag>deep learning</tag>
-         
-        <tag>nlp-sequence-models</tag>
-         
-         
-           
-             
-              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://snaildove.github.io/2018/06/02/Building+a+Recurrent+Neural+Network+-+Step+by+Step+-+v3/</loc>
-    <lastmod>2018-07-24T17:22:33.525Z</lastmod>
-    <data>
-        <display>
-        <title>Building a Recurrent Neural Network Step by Step</title>
-        <pubTime>2018-06-01T16:00:00.000Z</pubTime>
         
         <tag>deep learning</tag>
          
