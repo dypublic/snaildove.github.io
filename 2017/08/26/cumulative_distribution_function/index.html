@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next pisces use-motion" lang="en">
+<html class="theme-next pisces use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -105,7 +105,7 @@
 <meta property="og:url" content="https://snaildove.github.io/2017/08/26/cumulative_distribution_function/index.html">
 <meta property="og:site_name" content="SnailDove&#39;s blog">
 <meta property="og:description" content="说明：全文摘自 Introduction to probability, 2nd Edition 分布函数我们分别用概率质量函数 PMF(Probability Mass Function) 和概率密度函数 PDF(Probability Density Function) 来刻画随机变量 $X$ 的取值规律。现在希望用一个统一的数学工具去刻画随机变量的取值规律。   ​分布函数（用记号 CDF">
-<meta property="og:locale" content="en">
+<meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpage/introduction-to-probability/cumulative-distribution-function/1.png">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpage/introduction-to-probability/cumulative-distribution-function/2.png">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpage/introduction-to-probability/cumulative-distribution-function/3.png">
@@ -129,7 +129,7 @@
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideLeftIn"}},
     duoshuo: {
       userId: '0',
-      author: 'Author'
+      author: '博主'
     },
     algolia: {
       applicationID: '',
@@ -171,7 +171,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
@@ -219,7 +219,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Home
+            首页
           </a>
         </li>
       
@@ -229,7 +229,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
-            About
+            关于
           </a>
         </li>
       
@@ -239,7 +239,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archives
+            归档
           </a>
         </li>
       
@@ -249,7 +249,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />
             
-            Sitemap
+            站点地图
           </a>
         </li>
       
@@ -262,7 +262,7 @@
             
               <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
             
-            Search
+            搜索
           </a>
         </li>
       
@@ -282,7 +282,7 @@
     </span>
     <div class="local-search-input-wrapper">
       <input autocomplete="off"
-             placeholder="Searching..." spellcheck="false"
+             placeholder="搜索..." spellcheck="false"
              type="text" id="local-search-input">
     </div>
   </div>
@@ -348,9 +348,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-26T20:16:00+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-26T20:16:00+08:00">
                 2017-08-26
               </time>
             
@@ -369,7 +369,7 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">In</span>
+                <span class="post-meta-item-text">分类于</span>
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -394,7 +394,7 @@
           
             <span class="post-meta-divider">|</span>
             <span class="page-pv"><i class="fa fa-eye"></i>
-                  <span class="post-meta-item-text">Hits</span>
+                  <span class="post-meta-item-text">阅读次数</span>
               <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
             </span>
           
@@ -407,9 +407,9 @@
                   <i class="fa fa-file-word-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">Words count in article</span>
+                  <span class="post-meta-item-text">全文字数</span>
                 
-                <span title="Words count in article">
+                <span title="全文字数">
                   2,946
                 </span>
               
@@ -423,9 +423,9 @@
                   <i class="fa fa-clock-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="Reading time">
+                <span title="阅读时长">
                   13
                 </span>
               
@@ -502,16 +502,16 @@
       <div>
         <ul class="post-copyright">
   <li class="post-copyright-author">
-    <strong>Post author:</strong>
+    <strong>本文作者：</strong>
     SnailDove
   </li>
   <li class="post-copyright-link">
-    <strong>Post link:</strong>
+    <strong>本文链接：</strong>
     <a href="https://snaildove.github.io/2017/08/26/cumulative_distribution_function/" title="经典摘录-[累积]分布函数CDF">https://snaildove.github.io/2017/08/26/cumulative_distribution_function/</a>
   </li>
   <li class="post-copyright-license">
-    <strong>Copyright Notice: </strong>
-    All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> unless stating additionally.
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
   </li>
 </ul>
 
@@ -550,8 +550,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/08/26/mean_and_variance_of_uniform_random_variable/" rel="next" title="经典摘录-均匀随机变量的均值和方差">
-                <i class="fa fa-chevron-left"></i> 经典摘录-均匀随机变量的均值和方差
+              <a href="/2017/08/25/mean_and_variance_of_sample_and_estimating_probability_by_simulation/" rel="next" title="经典摘录-样本均值的期望方差与模拟的方法估计概率">
+                <i class="fa fa-chevron-left"></i> 经典摘录-样本均值的期望方差与模拟的方法估计概率
               </a>
             
           </div>
@@ -560,8 +560,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/08/27/normal_random_variables/" rel="prev" title="经典摘录-正态随机变量">
-                经典摘录-正态随机变量 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/08/26/mean_and_variance_of_uniform_random_variable/" rel="prev" title="经典摘录-均匀随机变量的均值和方差">
+                经典摘录-均匀随机变量的均值和方差 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -621,10 +621,10 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
+            文章目录
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
+            站点概览
           </li>
         </ul>
       
@@ -649,7 +649,7 @@
                 <a href="/archives/">
               
                   <span class="site-state-item-count">97</span>
-                  <span class="site-state-item-name">posts</span>
+                  <span class="site-state-item-name">日志</span>
                 </a>
               </div>
             
@@ -660,7 +660,7 @@
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
                   <span class="site-state-item-count">3</span>
-                  <span class="site-state-item-name">categories</span>
+                  <span class="site-state-item-name">分类</span>
                 </a>
               </div>
             
@@ -671,7 +671,7 @@
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
                   <span class="site-state-item-count">21</span>
-                  <span class="site-state-item-name">tags</span>
+                  <span class="site-state-item-name">标签</span>
                 </a>
               </div>
             
@@ -779,9 +779,9 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-      <span class="post-meta-item-text">Site words total count</span>
+      <span class="post-meta-item-text">全站文章总字数</span>
     
-    <span title="Site words total count">538.9k</span>
+    <span title="全站文章总字数">538.9k</span>
   
 </div>
 
@@ -789,7 +789,7 @@
 注释掉底部hexo主题提示:强有力
 
 
-  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
 
 
@@ -797,7 +797,7 @@
 
 
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
 
 
 
@@ -811,7 +811,7 @@
   
     <span class="site-uv">
       <i class="fa fa-user"></i>
-      <span class="post-meta-item-text">Visitors</span>
+      <span class="post-meta-item-text">访问人数</span>
       <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
       
     </span>
@@ -820,7 +820,7 @@
   
     <span class="site-pv">
       <i class="fa fa-eye"></i>
-	  <span class="post-meta-item-text">Total hits</span>
+	  <span class="post-meta-item-text">总访问量</span>
       <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
       
     </span>
