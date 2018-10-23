@@ -123,7 +123,6 @@
 <meta property="og:image" content="https://images0.cnblogs.com/blog/790160/201508/281741063903129.png">
 <meta property="og:image" content="https://images0.cnblogs.com/blog/790160/201508/281741071878772.png">
 <meta property="og:image" content="https://images0.cnblogs.com/blog/790160/201508/281741079371402.png">
-<meta property="og:image" content="https://images0.cnblogs.com/blog/790160/201508/281741086564787.png">
 <meta property="og:image" content="https://images0.cnblogs.com/blog/790160/201508/281741096569959.png">
 <meta property="og:image" content="https://images0.cnblogs.com/blog/790160/201508/281741105783874.png">
 <meta property="og:image" content="https://images0.cnblogs.com/blog/790160/201508/281741112346475.png">
@@ -142,7 +141,7 @@
 <meta property="og:image" content="https://images0.cnblogs.com/blog/790160/201508/281741205943068.png">
 <meta property="og:image" content="https://images0.cnblogs.com/blog/790160/201508/281741210788681.png">
 <meta property="og:image" content="https://images0.cnblogs.com/blog/790160/201508/281741221567111.png">
-<meta property="og:image" content="http://images0.cnblogs.com/blog/790160/201508/281741226256954.png">
+<meta property="og:image" content="https://images0.cnblogs.com/blog/790160/201508/281741229068740.png">
 <meta property="og:image" content="https://images0.cnblogs.com/blog/790160/201508/281741237343627.png">
 <meta property="og:image" content="https://images0.cnblogs.com/blog/790160/201508/281741247657042.png">
 <meta property="og:image" content="https://images0.cnblogs.com/blog/790160/201508/281741257344971.png">
@@ -163,9 +162,7 @@
 <meta property="og:image" content="https://images0.cnblogs.com/blog/790160/201508/281741376723253.png">
 <meta property="og:image" content="https://images0.cnblogs.com/blog/790160/201508/281741386875195.png">
 <meta property="og:image" content="https://images0.cnblogs.com/blog/790160/201508/281741396871368.png">
-<meta property="og:image" content="https://images0.cnblogs.com/blog/790160/201508/281741406729768.png">
 <meta property="og:image" content="https://images0.cnblogs.com/blog/790160/201508/281741413904155.png">
-<meta property="og:image" content="https://images0.cnblogs.com/blog/790160/201508/281741422971299.png">
 <meta property="og:image" content="https://images0.cnblogs.com/blog/790160/201508/281741432814998.png">
 <meta property="og:image" content="https://images0.cnblogs.com/blog/790160/201508/281741439695843.png">
 <meta property="og:image" content="https://images0.cnblogs.com/blog/790160/201508/281741450948286.png">
@@ -175,7 +172,7 @@
 <meta property="og:image" content="https://images0.cnblogs.com/blog/790160/201508/281741482031602.png">
 <meta property="og:image" content="https://images0.cnblogs.com/blog/790160/201508/281741506727490.png">
 <meta property="og:image" content="https://images0.cnblogs.com/blog/790160/201508/281741517501219.png">
-<meta property="og:updated_time" content="2018-10-22T16:05:58.175Z">
+<meta property="og:updated_time" content="2018-10-23T02:34:00.346Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="统计学习方法第7章-支持向量机">
 <meta name="twitter:description" content="注：李航这一章节除了核空间和SMO(序列最小优化)算法，其他讲的都比较容易理解，文中在恰当地方将会给出更好的参考资料。 支持向量机(support vector machines, SVM)是一种二类分类模型。它的基本模型是定义在特征空间上的间隔最大的线性分类器；支持向量机还包括核技巧，这使它成为实质上的非线性分类器。支持向量机的学习策略就是间隔最大化，可形式化为一个求解凸二次规划(convex">
@@ -480,7 +477,7 @@
                   <span class="post-meta-item-text">全文字数</span>
                 
                 <span title="全文字数">
-                  4,344
+                  4,311
                 </span>
               
 
@@ -496,7 +493,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  16
+                  15
                 </span>
               
             </div>
@@ -520,179 +517,179 @@
         <script src="\assets\js\APlayer.min.js"> </script><p><strong>注</strong>：李航这一章节除了核空间和SMO(序列最小优化)算法，其他讲的都比较容易理解，文中在恰当地方将会给出更好的参考资料。</p>
 <p>支持向量机(support vector machines, SVM)是一种二类分类模型。它的基本模型是定义在特征空间上的间隔最大的线性分类器；支持向量机还包括核技巧，这使它成为实质上的非线性分类器。支持向量机的学习策略就是<strong>间隔最大化</strong>，可形式化为一个求解凸二次规划(convex quadratic programming)的问题，也等价于正则化的合页损失函数的最小化问。支持向量机的学习算法是<strong>求解凸二次规划的最优化算法。</strong></p>
 <p><strong>支持向量机学习模型：</strong>线性可分支持向量机(linear support vector machine in linearly separable case )、线性支持向量机(linear support vector machine)及非线性支持向量机(non-linear support vector machine)。<strong>学习方法包括：</strong>硬间隔最大化(hard margin maximization)、软间隔最大化(soft margin maximization)、核技巧(kernel trick)。通过使用核函数可以学习非线性支持向量机，等价于隐式地在高维的特征空间中学习线性支持向量机。这样的方法称为核技巧(kernel trick)</p>
-<h2 id="7-1-线性可分支持向量机与硬间隔最大化"><a href="#7-1-线性可分支持向量机与硬间隔最大化" class="headerlink" title="7.1 线性可分支持向量机与硬间隔最大化"></a>7.1 线性可分支持向量机与硬间隔最大化</h2><p><strong>定义7.1 (线性可分支持向量机)：</strong>给定线性可分训练数据集，通过间隔最大化或等价地求解相应的凸二次规划问题学习得到的分离超平面为</p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281740491567429.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281740494379215.png" alt="4f34cad4-5f67-4aa9-9a40-a296c2a68afb"></a></p>
+<h2 id="7-1-线性可分支持向量机与硬间隔最大化"><a href="#7-1-线性可分支持向量机与硬间隔最大化" class="headerlink" title="7.1 线性可分支持向量机与硬间隔最大化"></a>7.1 线性可分支持向量机与硬间隔最大化</h2><p><strong>定义7.1 (线性可分支持向量机)：</strong>给定线性可分训练数据集，通过间隔最大化或等价地求解相应的凸二次规划问题学习得到的分离超平面为s</p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281740494379215.png" alt="4f34cad4-5f67-4aa9-9a40-a296c2a68afb"></p>
 <p>以及相应的分类决策函数</p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281740497039529.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281740500159559.png" alt="39588f12-8e53-44db-a649-41c863f67b24"></a></p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281740500159559.png" alt="39588f12-8e53-44db-a649-41c863f67b24"></p>
 <p>称为线性可分支持向量机.</p>
 <p><strong>函数间隔和几何间隔</strong></p>
 <p><strong>定义7.2(函数间隔  functiona lmargin**</strong>)：**对于给定的训练数据集T和超平面(w, b)，定义超平面关于样本点(xi, yi)的函数间隔为</p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281740503758901.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281740507509715.png" alt="0fdead85-e023-4225-8a7e-beca9b97a554"></a></p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281740507509715.png" alt="0fdead85-e023-4225-8a7e-beca9b97a554"></p>
 <p>定义超平面(w,b)关于训练数据集T的函数间隔为超平面(w,b)关于T中所有样本点(xi, yi)的函数间隔之最小值，即</p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281740509847488.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281740513442532.png" alt="dfd9abeb-2f5b-4091-a520-b7e50f4ac27e"></a></p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281740513442532.png" alt="dfd9abeb-2f5b-4091-a520-b7e50f4ac27e"></p>
 <p>函数间隔可以表示分类预测的正确性及确信度。但是成比例地改变w和b，例如将它们改为2w和2b，超平面并没有改变，但函数间隔却成为原来的2倍。</p>
 <p>对分离超平面的法向量、加某些约束，如规范化，||w||=1，使得间隔是确定的。这时函数间隔成为几何间隔。</p>
 <p><strong>定义7.2(几何间隔 geometric margin)：</strong>对于给定的训练数据集T和超平面(w, b)，定义超平面关于样本点(xi, yi)的函数间隔为</p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281740516092846.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281740519535417.png" alt="5a3ad74c-1130-4cea-b025-866edf09f654"></a></p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281740519535417.png" alt="5a3ad74c-1130-4cea-b025-866edf09f654"></p>
 <p>定义超平面(w,b)关于训练数据集T的函数间隔为超平面(w,b)关于T中所有样本点(xi, yi)的函数间隔之最小值，即</p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281740525158989.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281740530787860.png" alt="ce16dcf9-2a27-457e-b8c5-883b34d91116"></a></p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281740530787860.png" alt="ce16dcf9-2a27-457e-b8c5-883b34d91116"></p>
 <p>函数间隔和几何间隔的关系:</p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281740536402434.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281740541874534.png" alt="1f969fe8-50ba-496f-b291-a80189ebb42a"></a></p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281740541874534.png" alt="1f969fe8-50ba-496f-b291-a80189ebb42a"></p>
 <p>如果超平面参数w和b成比例地改变(超平面没有改变)，函数间隔也按此比例改变，而几何间隔不变。</p>
 <p><strong>间隔最大化</strong></p>
 <p>支持向量机学习的基本想法是求解能够正确划分训练数据集并且几何间隔最大的分离超平面。对线性可分的训练数据集而言，线性可分分离超平面有无穷多个(等价于感知机)，但是几何间隔最大的分离超平面是唯一的。这里的间隔最大化又称为硬间隔最大化。   </p>
 <p>间隔最大化的直观解释是：对训练数据集找到几何间隔最大的超平面意味着以充分大的确信度对训练数据进行分类，也就是说，不仅将正负实例点分开，而且对最难分的实例点(离超平面最近的点)也有足够大的确信度将它们分开。</p>
 <p>线性可分支持向量机的学习算法——最大间隔法(maximum margin method)。</p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281740549532934.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281740554374249.png" alt="86139cf7-7256-4c2e-9440-30c89fba14f2"></a></p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281740554374249.png" alt="86139cf7-7256-4c2e-9440-30c89fba14f2"></p>
 <p><strong>定理7.1 (最大间隔分离超平面的存在唯一性)：</strong>若训练数据集z线性可分，则可将训练数据集中的样本点完全正确分开的最大间隔分离超平面存在且唯一。</p>
 <p><strong>支持向量和间隔边界</strong></p>
 <p>在线性可分情况下，训练数据集的样本点中与分离超平面跄离最近的样本点的实例称为<strong>支持向量( support vector )。</strong>支持向量是使约束条件式等号成立的点，即</p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281740560003120.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281740563597163.png" alt="789b7362-f5ce-4253-8efe-e2137b4b1ec5"></a></p>
-<p>对yi=+1的正例点，支持向量在超平面<a href="http://images0.cnblogs.com/blog/790160/201508/281740569695750.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281740574067350.png" alt="5f9b7317-ce09-4c89-8499-704cd3ef8edd"></a></p>
-<p>对yi=-1的负例点，支持向量在超平面<a href="http://images0.cnblogs.com/blog/790160/201508/281740577652394.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281740590782894.png" alt="d74b323a-aa9d-474f-a776-e24c4cc2da68"></a></p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281740563597163.png" alt="789b7362-f5ce-4253-8efe-e2137b4b1ec5"></p>
+<p>对yi=+1的正例点，支持向量在超平面<img src="https://images0.cnblogs.com/blog/790160/201508/281740574067350.png" alt="5f9b7317-ce09-4c89-8499-704cd3ef8edd"></p>
+<p>对yi=-1的负例点，支持向量在超平面<img src="https://images0.cnblogs.com/blog/790160/201508/281740590782894.png" alt="d74b323a-aa9d-474f-a776-e24c4cc2da68"></p>
 <p>下图中在H1和H2上的点就是支持向量</p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281740596406466.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741030003325.png" alt="509f593c-9f7e-4199-94b9-3283b0847944"></a></p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281741030003325.png" alt="509f593c-9f7e-4199-94b9-3283b0847944"></p>
 <p>H1和H2之间的距离称为间隔(margin)。间隔依赖于分离超平面的法向量w，等于2/||w||。H1和H2称为间隔边界.</p>
 <p>在决定分离超平面时只有支持向量起作用，而其他实例点并不起作用。如果移动支持向量将改变所求的解；但是如果移动其他实例点，甚至去掉这些点，则解是不会改变的。由于支持向量在确定分离超平面中起决定性作用，所以将这种分类模型称为支持向量机。支持向量的个数一般很少，所以支持向量机由很少的“重要的”训练样本确定。</p>
 <p><strong>学习的对偶算法**</strong>(dual algorithn)**</p>
 <p>构建拉格朗日函数(Lagrange function)，引进拉格朗日乘子(Lagrange multiplier)：</p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281741033905612.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741037192413.png" alt="3cf878be-9207-4713-9435-bdf4f391a82f"></a></p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281741037192413.png" alt="3cf878be-9207-4713-9435-bdf4f391a82f"></p>
 <p>根据拉格朗日对偶性，原始问题的对偶问题是拉格朗日函数的极大极小问题</p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281741040008497.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741042811284.png" alt="b35ebd22-8c2c-4efa-a0a6-ea6322ad102a"></a></p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281741042811284.png" alt="b35ebd22-8c2c-4efa-a0a6-ea6322ad102a"></p>
 <p><strong>定理7.2：</strong>设a<em>是对偶最优化问题的解，则存在下标j使得aj</em> &gt;0，并可按下式求得原始最优化问题的解:</p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281741060152315.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741063903129.png" alt="dfa4474b-0d55-49ee-a714-8bb02d82b4d5"></a></p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281741063903129.png" alt="dfa4474b-0d55-49ee-a714-8bb02d82b4d5"></p>
 <p><strong>算法7.2(线性可分支持向量机学习算法)</strong></p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281741067502471.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741071878772.png" alt="bbabfe7c-8095-4104-b626-7124e9c43652"></a></p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281741071878772.png" alt="bbabfe7c-8095-4104-b626-7124e9c43652"></p>
 <p><strong>定义7.4(支持向量)</strong>：将训练数据集中对应于ai*&gt;0的样本点(xi, yi)的实例xi称为支持向量。支持向量<strong>一定在间隔边界上。</strong></p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281741075004100.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741079371402.png" alt="ab4f71eb-e428-4309-997f-17c83ee892cb"></a><a href="http://images0.cnblogs.com/blog/790160/201508/281741083287986.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741086564787.png" alt="8e95762d-483f-4c6a-a122-43c53f392100"></a></p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281741079371402.png" alt="ab4f71eb-e428-4309-997f-17c83ee892cb"></p>
 <h2 id="7-2-线性支持向量机与软间隔最大化"><a href="#7-2-线性支持向量机与软间隔最大化" class="headerlink" title="7.2 线性支持向量机与软间隔最大化"></a>7.2 线性支持向量机与软间隔最大化</h2><p>针对线性不可分训练数据：</p>
 <p>线性不可分意味着某些样本点不能满足函数间隔大于等于1的约束条件,为了解决这个问题，可以对每个样本点引进一个松弛变量，约束条件变为：</p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281741089694817.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741096569959.png" alt="3916fdda-1a67-432d-9af5-cf231acc2485"></a></p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281741096569959.png" alt="3916fdda-1a67-432d-9af5-cf231acc2485"></p>
 <p>线性不可分的线性支持向量机的学习问题变成凸二次规划(convex quadratic progamming )问题（原始问题）:</p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281741101876288.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741105783874.png" alt="1d5a8c54-3d25-4e42-aecb-d1d12df0a6f8"></a></p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281741105783874.png" alt="1d5a8c54-3d25-4e42-aecb-d1d12df0a6f8"></p>
 <p><strong>定义7.5(线性支持向量机)：</strong>对于给定的线性不可分的训练数据集，通过求解凸二次规划问题，即软间隔最大化问题。得到的分离超平面为</p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281741109377917.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741112346475.png" alt="09cbb788-31ce-4e1d-b261-cbca4903c811"></a></p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281741112346475.png" alt="09cbb788-31ce-4e1d-b261-cbca4903c811"></p>
 <p>以及相应的分类决策函数</p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281741116405533.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741120004875.png" alt="1784da58-1611-4c9f-9358-d9e3aa6956e8"></a></p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281741120004875.png" alt="1784da58-1611-4c9f-9358-d9e3aa6956e8"></p>
 <p>称为线性支持向量机.</p>
 <p><strong>学习的对偶算法**</strong>(dual algorithn) ：拉格朗日函数**</p>
 <p>通过求解对偶问题得到</p>
 <p><strong>定理7.3：</strong>设a<em>是对偶最优化问题的一个解，则存在一个分量0&lt;aj</em> &lt;C，可得原始最优化问题的解:</p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281741124063933.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741128441234.png" alt="5e3d3502-6e29-411c-88f1-1644e90a50d9"></a></p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281741128441234.png" alt="5e3d3502-6e29-411c-88f1-1644e90a50d9"></p>
 <p><strong>算法7.3(线性支持向量机学习算法)</strong></p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281741132974306.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741138446406.png" alt="96ffadce-18a0-420e-a472-f9e1cb5fb138"></a></p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281741138446406.png" alt="96ffadce-18a0-420e-a472-f9e1cb5fb138"></p>
 <p><strong>支持向量</strong></p>
 <p>线性不可分的情况下，将对偶问题的解a<em>中对应于aj</em> &gt; 0的样本点(xi，yi)的实例xi称为支持向量(软间隔的支持向量)。</p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281741141878977.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741145312549.png" alt="a38fbe6a-3a58-4a36-a37f-4ab85c9b9d9c"></a></p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281741145312549.png" alt="a38fbe6a-3a58-4a36-a37f-4ab85c9b9d9c"></p>
 <p>软间隔的支持向量xi或者在间隔边界上，或者在间隔边界与分离超平面之间，或者在分离超平面误分一侧。</p>
-<p>若a*&lt;C，则约束<a href="http://images0.cnblogs.com/blog/790160/201508/281741148755120.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741152349163.png" alt="401120af-9701-4bc1-8bf4-6286b6352e2a"></a>，支持向量xi恰好落在间隔边界上；</p>
+<p>若a*&lt;C，则约束 <img src="https://images0.cnblogs.com/blog/790160/201508/281741152349163.png" alt="401120af-9701-4bc1-8bf4-6286b6352e2a">，支持向量xi恰好落在间隔边界上；</p>
 <p>若a*&lt;C，0&lt;约束&lt;1，则分类正确，xi在间隔边界与分离超平面之间;</p>
 <p>若a*&lt;C，约束=1，则xi在分离超平面上:</p>
 <p>若a*&lt;C，约束&gt;1，则xi位于分离超平面误分一侧.</p>
 <p><strong>合页损失函数</strong></p>
 <p>线性支持向量机学习还有另外一种解释，就是最小化以下目标函数</p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281741157655493.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741160007563.png" alt="c3715bf8-b810-4c9a-b9c9-26a41affd59c"></a></p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281741160007563.png" alt="c3715bf8-b810-4c9a-b9c9-26a41affd59c"></p>
 <p>目标函数的第1项是经验损失或经验风险，函数</p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281741162653579.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741164693108.png" alt="d1cf6309-84fc-4122-bf0f-0d464a4b338a"></a></p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281741164693108.png" alt="d1cf6309-84fc-4122-bf0f-0d464a4b338a"></p>
 <p>称为合页损失函数(hinge loss ftmction)</p>
 <p><strong>定理7.4</strong> 线性支持向量机原始最优化问题等价于最优化问题：</p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281741167651665.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741170947465.png" alt="bb231fd3-26a4-43fb-8e81-fece5f494659"></a></p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281741174845051.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741178449094.png" alt="9cb75fb7-253b-40af-8c1d-a4da7cce8840"></a></p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281741170947465.png" alt="bb231fd3-26a4-43fb-8e81-fece5f494659"></p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281741178449094.png" alt="9cb75fb7-253b-40af-8c1d-a4da7cce8840"></p>
 <p>合页损失函数不仅要分类正确，而且确信度足够高时损失才是0。</p>
 <h2 id="7-3-非线性支持向量机与核函数"><a href="#7-3-非线性支持向量机与核函数" class="headerlink" title="7.3 非线性支持向量机与核函数"></a>7.3 非线性支持向量机与核函数</h2><p><strong>核技巧</strong><br>非线性分类问题：如果能用Rn中的一个超曲面将正负例正确分开，则称这个问题为非线性可分问题.</p>
 <p>求解方法：进行非线性变换，将非线性问题变成线性问题。</p>
 <p>核技巧应用到支持向量机，其基本想法就是通过一个非线性变换将输入空间(欧氏空间Rn或离散集合)对应于一个特征空间(希尔伯特空间H)，使得在输入空间Rn中的超曲面模型对应于特征空间H中的超平面模型(支持向量机)。</p>
 <p><strong>定义7.6（核函数）</strong>设X是输入空间，H为特征空间，如果存在一个映射映射函数</p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281741181564423.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741183902195.png" alt="e96165e1-009b-48a1-832a-607bf056c2ed"></a></p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281741183902195.png" alt="e96165e1-009b-48a1-832a-607bf056c2ed"></p>
 <p>使得对所有属于X的x,z，函数K(x,z)满足条件</p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281741187971253.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741191569594.png" alt="a3a2eaf9-c2c8-4649-a322-767cfcb7b4f2"></a></p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281741191569594.png" alt="a3a2eaf9-c2c8-4649-a322-767cfcb7b4f2"></p>
 <p><strong>则称K(x,z)为核函数。</strong></p>
 <p>核技巧的想法是，在学习与预测中只定义核函数K(x,z)，而不显式地定义映射函数。对于给定的核K(x,z)，特征空间x和映射函数的取法并不唯一，可以取不同的特征空间，即便是在同一特征空间里也可以取不同的映射。</p>
 <p>核技巧在支持向量机中的应用</p>
 <p>在对偶问题的目标函数中的内积(xi*xj)可以用核函数K(xi, xj)来代替：</p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281741195003166.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741198597210.png" alt="a7ed2e79-2ffb-4aef-b12f-828b5e3fdaf0"></a></p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281741198597210.png" alt="a7ed2e79-2ffb-4aef-b12f-828b5e3fdaf0"></p>
 <p>分类决策函数也可用核函数代替，变为：</p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281741202192254.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741205943068.png" alt="308a9c5e-7cbc-48b6-ba00-0dfd119761d8"></a></p>
-<p>这等价于经过映射函数将原来的输入空间变换到一个新的特征空间，将输入空间中的内积(xi*xj)变换为特征空间中的内积<a href="http://images0.cnblogs.com/blog/790160/201508/281741208285139.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741210788681.png" alt="4889bcf4-3647-410f-8563-d853c839ee59"></a>。在新的特征空间里从训练样本中学习线性支持向量机。当映射函数是非线性函数时，学习到的含有核函数的支持向量机是非线性分类模型。</p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281741205943068.png" alt="308a9c5e-7cbc-48b6-ba00-0dfd119761d8"></p>
+<p>这等价于经过映射函数将原来的输入空间变换到一个新的特征空间，将输入空间中的内积(xi*xj)变换为特征空间中的内积 <img src="https://images0.cnblogs.com/blog/790160/201508/281741210788681.png" alt="4889bcf4-3647-410f-8563-d853c839ee59">。在新的特征空间里从训练样本中学习线性支持向量机。当映射函数是非线性函数时，学习到的含有核函数的支持向量机是非线性分类模型。</p>
 <p>在核函数给定的条件下，可以利用解线性分类问题的方法求解非线性分类问题的支持向量机。学习是隐式地在特征空间进行的，不需要显式地定义特征空间和映射函数。这样的技巧称为核技巧。</p>
 <p><strong>正定核(</strong>positive definite kernel function)的充要条件</p>
 <p><strong>定理7.5(正定核的充要条件)</strong> 设K:X*X-&gt;R是对称函数，则K(x,z)为正定核函数的充要条件是对任意xi属于X，i=1,2,… ,m,  K(x,z)对应的Gram矩阵</p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281741218755325.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741221567111.png" alt="9483c4e5-ab6a-43f0-ae46-5033351f68c3"></a></p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281741221567111.png" alt="9483c4e5-ab6a-43f0-ae46-5033351f68c3"></p>
 <p>是半正定矩阵.</p>
 <p><strong>定义7.7 (正定核的等价定义)</strong></p>
 <p>设X包含于Rn，K(x,z)为定义在X*X上的对称函数，如果对任意xi属于X，i=1,2,… ,m,  K(x,z)对应的Gram矩阵</p>
-<p>[<img src="http://images0.cnblogs.com/blog/790160/201508/281741226256954.png" alt="9483c4e5-ab6a-43f0-ae46-5033351f68c3[1\]](https://images0.cnblogs.com/blog/790160/201508/281741229068740.png)"></p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281741229068740.png" alt=""></p>
 <p>是半正定矩阵，则称K(x,z)是正定核。</p>
 <p><strong>常用核函数</strong></p>
 <p>（1） 多项式核函数（polynomial kernel function）</p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281741232653784.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741237343627.png" alt="386f8dbe-1efc-46b2-90a6-92eb2f6c95ad"></a></p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281741237343627.png" alt="386f8dbe-1efc-46b2-90a6-92eb2f6c95ad"></p>
 <p>对应的支持向量机是一个P次多项式分类器.在此情形下，分类决策函数成为</p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281741242507483.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741247657042.png" alt="094d6867-f16b-452b-8d17-8650b50ef909"></a></p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281741247657042.png" alt="094d6867-f16b-452b-8d17-8650b50ef909"></p>
 <p>（2）高斯核函数（Gaussian kernel  function）</p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281741252973372.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741257344971.png" alt="78560be6-5204-4516-ba36-f19c1f0f32f9"></a></p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281741257344971.png" alt="78560be6-5204-4516-ba36-f19c1f0f32f9"></p>
 <p>对应的支持向量机是一个高斯径向基函数( radial basis function )分类器.在此情形下，分类决策函数成为</p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281741260787542.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741265154844.png" alt="959f717c-d0d0-4ed7-b854-62c834829492"></a></p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281741265154844.png" alt="959f717c-d0d0-4ed7-b854-62c834829492"></p>
 <p>（3）字符串核函数(string kernel function)</p>
 <pre><code>核函数不仅可以定义在欧氏空间上，还可以定义在离散数据的集合上。比如，字符串核是定义在字符串集合上的核函数。
 </code></pre><p>两个字符串s和t上的字符串核函数是基于映射</p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281741268289171.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741271409201.png" alt="db5778ec-3034-4188-bdce-d0968a028a32"></a></p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281741271409201.png" alt="db5778ec-3034-4188-bdce-d0968a028a32"></p>
 <p>的特征空间中的内积</p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281741274534529.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741277503087.png" alt="0d26b91e-31a7-4559-ada6-dccb2144f0c3"></a></p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281741277503087.png" alt="0d26b91e-31a7-4559-ada6-dccb2144f0c3"></p>
 <p>字符串核函数气kn(s, t)给出了字符串s和t中长度等于n的所有子串组成的特征向量的余弦相似度(cosine similuity)。直观上，两个字符串相同的子串越多，它们就越相似，字符串核函数的值就越大。字符串核函数可以由动态规划快速地计算。</p>
 <p><strong>非线性支持向量分类机</strong></p>
 <p><strong>定义7.8 (非线性支持向量机)</strong> 从非线性分类训练集，通过核函数与软间隔最大化，或凸二次规划，学习得到的分类决策函数</p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281741279849858.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741284065687.png" alt="1bf4bdb2-0a6b-4687-816b-d748ef1d94ff"></a></p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281741284065687.png" alt="1bf4bdb2-0a6b-4687-816b-d748ef1d94ff"></p>
 <p>称为非线性支持向量，K(x,z)是正定核函数</p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281741289225246.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741294535873.png" alt="63f233fd-392d-4a3b-814d-a0a3f268ac3e"></a></p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281741294535873.png" alt="63f233fd-392d-4a3b-814d-a0a3f268ac3e"></p>
 <h2 id="7-4-序列最小最优化算法-sequential-minimal-opfimization，SMO"><a href="#7-4-序列最小最优化算法-sequential-minimal-opfimization，SMO" class="headerlink" title="7.4 序列最小最优化算法(sequential minimal opfimization，SMO)"></a>7.4 序列最小最优化算法(sequential minimal opfimization，SMO)</h2><p>SMO算法要解如下凸二次规划的对偶问题：</p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281741299695432.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741302653989.png" alt="e22bbdde-cd11-48e2-b92f-04dcfe7de6e0"></a></p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281741302653989.png" alt="e22bbdde-cd11-48e2-b92f-04dcfe7de6e0"></p>
 <p>SMO算法是一种启发式算法，其基本思路是：如果所有变量的解都满足此最优化问题的KKT条件(Karush-Kuhn-Tucker conditions)，那么这个最优化问题的解就得到了。因为KKT条件是该最优化问题的充分必要条件。否则，选择两个变量，固定其他变量，针对这两个变量构建一个二次规划问题。这个二次规划问题关于这两个变量的解应该更接近原始二次规划问题的解，因为这会使得原始二次规划问题的目标函数值变得更小。重要的是，这时子问题可以通过解析方法求解，这样就可以大大提高整个算法的计算速度。子问题有两个变量，一个是违反KKT条件最严重的那一个，另一个由约束条件自动确定。如此，SMO算法将原问题不断分解为子问题并对子问题求解，进而达到求解原问题的目的。</p>
 <p>整个SMO算法包括两个部分:求解两个变量二次规划的解析方法和选择变量的启发式方法.</p>
 <p><strong>两个变量二次规划的求解方法</strong></p>
 <p>以下如有不懂请参考：<a href="https://zhuanlan.zhihu.com/p/29212107" target="_blank" rel="noopener">机器学习算法实践-SVM中的SMO算法 - PytLab酱的文章 - 知乎</a></p>
 <p>不失一般性，假设选择的两个变量是a1，a2，其他变量ai (i=3,4, …, N)是固定的。SMO的最优化问题的子问题可以写成:</p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281741306878818.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741310312390.png" alt="53256721-f2fe-4103-8707-d1873957b25e"></a></p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281741310312390.png" alt="53256721-f2fe-4103-8707-d1873957b25e"></p>
 <p>假设初始可行解为a1old和a2old，最优解为a1new和a2new，满足</p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281741314063204.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741317657247.png" alt="51a1329f-7585-4ede-92fa-bf98def0ca60"></a></p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281741317657247.png" alt="51a1329f-7585-4ede-92fa-bf98def0ca60"></p>
 <p>L与H是a2new所在的对角线段端点的界</p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281741320151791.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741323594362.png" alt="5d8507e3-9131-4e5f-865f-673cfbc04b12"></a></p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281741323594362.png" alt="5d8507e3-9131-4e5f-865f-673cfbc04b12"></p>
 <p>如果y1 != y2,</p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281741327501948.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741330621977.png" alt="d76bf7c0-b460-4f02-8be1-377822320277"></a></p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281741330621977.png" alt="d76bf7c0-b460-4f02-8be1-377822320277"></p>
 <p>如果y1 = y2,</p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281741334064548.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741338441850.png" alt="995549ce-76ee-4e56-bb49-af928b3ad403"></a></p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281741338441850.png" alt="995549ce-76ee-4e56-bb49-af928b3ad403"></p>
 <p>根据约束条件，有</p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281741342031192.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741346099249.png" alt="2165530b-ecc7-428d-b82b-829b09783204"></a></p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281741346099249.png" alt="2165530b-ecc7-428d-b82b-829b09783204"></p>
 <p>引入记号，</p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281741351723822.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741356569435.png" alt="2c761f00-ffe9-43fa-b492-bfd052794656"></a></p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281741360946737.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741364844322.png" alt="d11d09c5-723b-49a9-9219-5deb98e2a8a9"></a></p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281741372654195.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741376723253.png" alt="fcb1841c-ba4f-44ee-8dc2-6812702a9d83"></a></p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281741356569435.png" alt="2c761f00-ffe9-43fa-b492-bfd052794656"></p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281741364844322.png" alt="d11d09c5-723b-49a9-9219-5deb98e2a8a9"></p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281741376723253.png" alt="fcb1841c-ba4f-44ee-8dc2-6812702a9d83"></p>
 <p>代入到最优化问题中，有</p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281741382195353.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741386875195.png" alt="987fcd02-6219-489a-b33a-7f4062aacde9"></a></p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281741386875195.png" alt="987fcd02-6219-489a-b33a-7f4062aacde9"></p>
 <p>这样，通过对W进行求导可以得到</p>
 <p><strong>定理7.6</strong> 最优化问题沿着约束方向未经剪辑时的解是</p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281741390944253.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741396871368.png" alt="e2398718-ed70-44df-bf9f-493f36548cde"></a> <a href="http://images0.cnblogs.com/blog/790160/201508/281741401878453.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741406729768.png" alt="56ef3e48-6ffc-4f67-bfc5-53574b3780b9"></a>经剪辑后的解是</p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281741410153340.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741413904155.png" alt="e4666783-775c-4041-b21e-09b561c78740"></a><a href="http://images0.cnblogs.com/blog/790160/201508/281741418128983.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741422971299.png" alt="bef7ab4f-0351-423a-ad7a-2f491a9c1a0e"></a></p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281741396871368.png" alt="e2398718-ed70-44df-bf9f-493f36548cde"> 经剪辑后的解是</p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281741413904155.png" alt="e4666783-775c-4041-b21e-09b561c78740"></p>
 <p><strong>变量的选择方法</strong></p>
 <p>第1个变量的选择</p>
 <pre><code>SMO称选择第1个变量的过程为外层循环。外层循环在训练样本中选取违
 </code></pre><p>反KKT条件最严重的样本点，并将其对应的变量作为第1个变量。具体地，检</p>
 <p>验训练样本点(xi,yi)是否满足KKT条件，即</p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281741427342898.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741432814998.png" alt="b5a726f5-08e4-4d70-9b14-4815811e7196"></a></p>
-<p>该检验是在<a href="http://images0.cnblogs.com/blog/790160/201508/281741436409042.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741439695843.png" alt="3753c0ab-830f-483b-84ba-396c63ba9ef5"></a>范围内进行的。在检验过程中，外层循环首先遍历所有满足条件<a href="http://images0.cnblogs.com/blog/790160/201508/281741443128414.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741450948286.png" alt="47fe6e3c-dc5d-4c53-9763-707a3e2c3468"></a>的样本点，即在间隔边界上的支持向量点，检验它们是否满足KKT条件。如果这些样本点都满足KKT条件，那么遍历整个训练集，检验它们是否满足KKT条件。</p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281741432814998.png" alt="b5a726f5-08e4-4d70-9b14-4815811e7196"></p>
+<p>该检验是在 <img src="https://images0.cnblogs.com/blog/790160/201508/281741439695843.png" alt="3753c0ab-830f-483b-84ba-396c63ba9ef5"> 范围内进行的。在检验过程中，外层循环首先遍历所有满足条件<a href="http://images0.cnblogs.com/blog/790160/201508/281741443128414.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741450948286.png" alt="47fe6e3c-dc5d-4c53-9763-707a3e2c3468"></a>的样本点，即在间隔边界上的支持向量点，检验它们是否满足KKT条件。如果这些样本点都满足KKT条件，那么遍历整个训练集，检验它们是否满足KKT条件。</p>
 <p><strong>第2个变量的选择</strong></p>
 <p>SMO称选择第2个变量的过程为内层循环。假设在外层循环中已经找到第1个变量a1，现在要在内层循环中找第2个变量a2。第2个变量选择的标准是希望使a2有足够大的变化.</p>
 <p>由定理7.6可知a2是依赖于|E1-E2|的，为了加快计算速度，一种简单的做法是选择a2使其对应的|E1-E2|最大。因为a1已定，E1也确定了。如果E1是正的，那么选择最小的Ei作为E2；如果E1是负的，那么选择最大的Ei作为E2。在特殊情况下，如果内层循环通过以上方法选择的a2不能使目标函数有足够的下降，那么采用以下启发式规则继续选择a2。遍历在间隔边界上的支持向量点，依次将其对应的变量作为a2试用，直到目标函数有足够的下降。若找不到合适的a2，那么遍历训练数据集；若仍找不到合适的a2，则放弃第1个a1，再通过外层循环寻求另外的a1。</p>
 <p><strong>计算阈值b和差值Ei</strong></p>
 <p>由变量选择的检验条件可得，</p>
-<p>如果<a href="http://images0.cnblogs.com/blog/790160/201508/281741455946372.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741458449915.png" alt="89be1833-04ec-4f63-a170-e1fcbc48d645"></a>，</p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281741461091230.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741463286529.png" alt="ab193a8d-861f-496d-98e7-e84b8d8a51b2"></a></p>
-<p>如果<a href="http://images0.cnblogs.com/blog/790160/201508/281741467502358.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741472035430.png" alt="fafc9cbb-7e5b-45a3-9d8b-77409441a436"></a>，</p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281741477341759.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741482031602.png" alt="4e1047e6-1e03-4f25-9cea-65be0fc396f4"></a></p>
-<pre><code>如果a1new和a2new同时满足条件[![ebdbcc26-b2f3-4721-8dcd-e4dfec1344e4](https://images0.cnblogs.com/blog/790160/201508/281741488594203.png)](http://images0.cnblogs.com/blog/790160/201508/281741484843388.png)那么[![1fe6805a-d6c9-47ed-a9db-1c47483cfbd2](https://images0.cnblogs.com/blog/790160/201508/281741498125361.png)](http://images0.cnblogs.com/blog/790160/201508/281741493758059.png)。如果a1new和a2new是0或者C，那么b1new和b2new以及它们之间的数都是符合KKT条件的阈值，这时选择它们的中点作为bnew。
+<p>如果 <img src="https://images0.cnblogs.com/blog/790160/201508/281741458449915.png" alt="89be1833-04ec-4f63-a170-e1fcbc48d645">，</p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281741463286529.png" alt="ab193a8d-861f-496d-98e7-e84b8d8a51b2"></p>
+<p>如果 <img src="https://images0.cnblogs.com/blog/790160/201508/281741472035430.png" alt="fafc9cbb-7e5b-45a3-9d8b-77409441a436">，</p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281741482031602.png" alt="4e1047e6-1e03-4f25-9cea-65be0fc396f4"></p>
+<pre><code>如果a1new和a2new同时满足条件 ![ebdbcc26-b2f3-4721-8dcd-e4dfec1344e4](https://images0.cnblogs.com/blog/790160/201508/281741488594203.png)。如果a1new和a2new是0或者C，那么b1new和b2new以及它们之间的数都是符合KKT条件的阈值，这时选择它们的中点作为bnew。
 </code></pre><p>Ei值的更新要用到bnew值，以及所有支持向量对应的aj</p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281741503597461.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741506727490.png" alt="9a44009b-9251-4908-8161-141a76e901e3"></a></p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281741506727490.png" alt="9a44009b-9251-4908-8161-141a76e901e3"></p>
 <p>其中S是所有支持向量xj的集合</p>
-<p><a href="http://images0.cnblogs.com/blog/790160/201508/281741511407333.png" target="_blank" rel="noopener"><img src="https://images0.cnblogs.com/blog/790160/201508/281741517501219.png" alt="3e39303e-5179-49b3-a446-d575403daed4"></a></p>
+<p><img src="https://images0.cnblogs.com/blog/790160/201508/281741517501219.png" alt="3e39303e-5179-49b3-a446-d575403daed4"></p>
 <p>参考：</p>
 <ol>
 <li>李航《统计学习方法》</li>
@@ -762,8 +759,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/10/01/summary_of_LiHang_Statistical-learning-methods/" rel="next" title="《统计学习方法总结》">
-                <i class="fa fa-chevron-left"></i> 《统计学习方法总结》
+              <a href="/2018/06/28/summary_of_learning_of_Deep_Learning_Specializatio_on_Coursera/" rel="next" title="summary of learning Deep Learning Specialization">
+                <i class="fa fa-chevron-left"></i> summary of learning Deep Learning Specialization
               </a>
             
           </div>
@@ -771,6 +768,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/10/01/summary_of_LiHang_Statistical-learning-methods/" rel="prev" title="《统计学习方法总结》">
+                《统计学习方法总结》 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -989,7 +990,7 @@
     
       <span class="post-meta-item-text">全站文章总字数</span>
     
-    <span title="全站文章总字数">546.1k</span>
+    <span title="全站文章总字数">546.0k</span>
   
 </div>
 
