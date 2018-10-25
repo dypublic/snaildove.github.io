@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://snaildove.github.io/"/>
-  <updated>2018-10-23T15:30:12.718Z</updated>
+  <updated>2018-10-25T16:07:42.913Z</updated>
   <id>https://snaildove.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://snaildove.github.io/2018/10/01/summary_of_LiHang_Statistical-learning-methods/"/>
     <id>https://snaildove.github.io/2018/10/01/summary_of_LiHang_Statistical-learning-methods/</id>
     <published>2018-09-30T16:00:00.000Z</published>
-    <updated>2018-10-23T15:30:12.718Z</updated>
+    <updated>2018-10-25T16:07:42.913Z</updated>
     
     <summary type="html">
     
@@ -45,11 +45,11 @@
   </entry>
   
   <entry>
-    <title>提升方法之AdaBoost\BoostingTree\GBDT</title>
-    <link href="https://snaildove.github.io/2018/10/01/Booting-Methods_Statistical-Learning-Methods/"/>
-    <id>https://snaildove.github.io/2018/10/01/Booting-Methods_Statistical-Learning-Methods/</id>
+    <title>《统计学习方法》第8章 提升方法之AdaBoost\BoostingTree\GBDT</title>
+    <link href="https://snaildove.github.io/2018/10/01/8.Booting-Methods_LiHang-Statistical-Learning-Methods/"/>
+    <id>https://snaildove.github.io/2018/10/01/8.Booting-Methods_LiHang-Statistical-Learning-Methods/</id>
     <published>2018-09-30T16:00:00.000Z</published>
-    <updated>2018-10-25T15:27:14.303Z</updated>
+    <updated>2018-10-25T16:02:32.688Z</updated>
     
     <summary type="html">
     
@@ -409,34 +409,6 @@
   </entry>
   
   <entry>
-    <title>Deep Learning &amp; Art Neural Style Transfer</title>
-    <link href="https://snaildove.github.io/2018/05/04/Art+Generation+with+Neural+Style+Transfer+-+v3/"/>
-    <id>https://snaildove.github.io/2018/05/04/Art+Generation+with+Neural+Style+Transfer+-+v3/</id>
-    <published>2018-05-03T16:00:00.000Z</published>
-    <updated>2018-07-24T17:23:18.652Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;These are
-        
-      
-    
-    </summary>
-    
-      <category term="english" scheme="https://snaildove.github.io/categories/english/"/>
-    
-    
-      <category term="deep learning" scheme="https://snaildove.github.io/tags/deep-learning/"/>
-    
-      <category term="convolutional-neural-networks" scheme="https://snaildove.github.io/tags/convolutional-neural-networks/"/>
-    
-  </entry>
-  
-  <entry>
     <title>summary of convolutional neural networks</title>
     <link href="https://snaildove.github.io/2018/05/04/summary_of_convolutional-neural-networks/"/>
     <id>https://snaildove.github.io/2018/05/04/summary_of_convolutional-neural-networks/</id>
@@ -450,34 +422,6 @@
         
         
           &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is my
-        
-      
-    
-    </summary>
-    
-      <category term="english" scheme="https://snaildove.github.io/categories/english/"/>
-    
-    
-      <category term="deep learning" scheme="https://snaildove.github.io/tags/deep-learning/"/>
-    
-      <category term="convolutional-neural-networks" scheme="https://snaildove.github.io/tags/convolutional-neural-networks/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Face Recognition for the Happy House</title>
-    <link href="https://snaildove.github.io/2018/05/04/Face+Recognition+for+the+Happy+House+-+v3/"/>
-    <id>https://snaildove.github.io/2018/05/04/Face+Recognition+for+the+Happy+House+-+v3/</id>
-    <published>2018-05-03T16:00:00.000Z</published>
-    <updated>2018-07-24T17:23:41.876Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;These are
         
       
     
@@ -521,11 +465,11 @@
   </entry>
   
   <entry>
-    <title>03_object-detection</title>
-    <link href="https://snaildove.github.io/2018/05/03/03_object-detection/"/>
-    <id>https://snaildove.github.io/2018/05/03/03_object-detection/</id>
-    <published>2018-05-02T16:00:00.000Z</published>
-    <updated>2018-07-19T08:37:42.069Z</updated>
+    <title>Deep Learning &amp; Art Neural Style Transfer</title>
+    <link href="https://snaildove.github.io/2018/05/04/Art+Generation+with+Neural+Style+Transfer+-+v3/"/>
+    <id>https://snaildove.github.io/2018/05/04/Art+Generation+with+Neural+Style+Transfer+-+v3/</id>
+    <published>2018-05-03T16:00:00.000Z</published>
+    <updated>2018-07-24T17:23:18.652Z</updated>
     
     <summary type="html">
     
@@ -533,7 +477,35 @@
       
         
         
-          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is my
+          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;These are
+        
+      
+    
+    </summary>
+    
+      <category term="english" scheme="https://snaildove.github.io/categories/english/"/>
+    
+    
+      <category term="deep learning" scheme="https://snaildove.github.io/tags/deep-learning/"/>
+    
+      <category term="convolutional-neural-networks" scheme="https://snaildove.github.io/tags/convolutional-neural-networks/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Face Recognition for the Happy House</title>
+    <link href="https://snaildove.github.io/2018/05/04/Face+Recognition+for+the+Happy+House+-+v3/"/>
+    <id>https://snaildove.github.io/2018/05/04/Face+Recognition+for+the+Happy+House+-+v3/</id>
+    <published>2018-05-03T16:00:00.000Z</published>
+    <updated>2018-07-24T17:23:41.876Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;These are
         
       
     
@@ -562,6 +534,34 @@
         
         
           &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;These are
+        
+      
+    
+    </summary>
+    
+      <category term="english" scheme="https://snaildove.github.io/categories/english/"/>
+    
+    
+      <category term="deep learning" scheme="https://snaildove.github.io/tags/deep-learning/"/>
+    
+      <category term="convolutional-neural-networks" scheme="https://snaildove.github.io/tags/convolutional-neural-networks/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>03_object-detection</title>
+    <link href="https://snaildove.github.io/2018/05/03/03_object-detection/"/>
+    <id>https://snaildove.github.io/2018/05/03/03_object-detection/</id>
+    <published>2018-05-02T16:00:00.000Z</published>
+    <updated>2018-07-19T08:37:42.069Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is my
         
       
     

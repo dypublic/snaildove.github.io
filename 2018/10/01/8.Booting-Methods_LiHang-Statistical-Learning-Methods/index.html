@@ -98,13 +98,13 @@
 
 
 
-<meta name="description" content="前沿在深度学习火起来之前，提升方法（包括AdaBoost, GBDT）是kaggle等比赛中的利器，所以提升方法是必备的知识点。李航《统计学习方法》第8章——提升方法主要内容：AdaBoost, Boosting Tree, GBDT。写本文章主要目的是复习笔记，有价值的地方：对于证明比较跳跃和勘误的地方我都做了注解，以便快速阅读理解不会卡住。 正文提升（boosting） 方法是一种常用的统计">
+<meta name="description" content="前沿在深度学习火起来之前，提升方法（包括AdaBoost, GBDT）是kaggle等比赛中的利器，所以提升方法是必备的知识点。李航《统计学习方法》第8章——提升方法主要内容：AdaBoost, Boosting Tree, GBDT。写本文章主要目的是复习（毕竟之前看纸质版做的笔记），对于证明比较跳跃和勘误的地方我都做了注解，以便初学者快速阅读理解不会卡住。 正文提升（boosting） 方法">
 <meta name="keywords" content="Machine Learning,统计学习方法">
 <meta property="og:type" content="article">
-<meta property="og:title" content="提升方法之AdaBoost\BoostingTree\GBDT">
-<meta property="og:url" content="https://snaildove.github.io/2018/10/01/Booting-Methods_Statistical-Learning-Methods/index.html">
+<meta property="og:title" content="《统计学习方法》第8章 提升方法之AdaBoost\BoostingTree\GBDT">
+<meta property="og:url" content="https://snaildove.github.io/2018/10/01/8.Booting-Methods_LiHang-Statistical-Learning-Methods/index.html">
 <meta property="og:site_name" content="SnailDove&#39;s blog">
-<meta property="og:description" content="前沿在深度学习火起来之前，提升方法（包括AdaBoost, GBDT）是kaggle等比赛中的利器，所以提升方法是必备的知识点。李航《统计学习方法》第8章——提升方法主要内容：AdaBoost, Boosting Tree, GBDT。写本文章主要目的是复习笔记，有价值的地方：对于证明比较跳跃和勘误的地方我都做了注解，以便快速阅读理解不会卡住。 正文提升（boosting） 方法是一种常用的统计">
+<meta property="og:description" content="前沿在深度学习火起来之前，提升方法（包括AdaBoost, GBDT）是kaggle等比赛中的利器，所以提升方法是必备的知识点。李航《统计学习方法》第8章——提升方法主要内容：AdaBoost, Boosting Tree, GBDT。写本文章主要目的是复习（毕竟之前看纸质版做的笔记），对于证明比较跳跃和勘误的地方我都做了注解，以便初学者快速阅读理解不会卡住。 正文提升（boosting） 方法">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/8-boosting/1540460336537.png">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/8-boosting/1540463170951.png">
@@ -131,10 +131,10 @@
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/8-boosting/1540465941113.png">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/8-boosting/1540466073088.png">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/8-boosting/1540466119053.png">
-<meta property="og:updated_time" content="2018-10-25T15:27:14.303Z">
+<meta property="og:updated_time" content="2018-10-25T16:02:32.688Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="提升方法之AdaBoost\BoostingTree\GBDT">
-<meta name="twitter:description" content="前沿在深度学习火起来之前，提升方法（包括AdaBoost, GBDT）是kaggle等比赛中的利器，所以提升方法是必备的知识点。李航《统计学习方法》第8章——提升方法主要内容：AdaBoost, Boosting Tree, GBDT。写本文章主要目的是复习笔记，有价值的地方：对于证明比较跳跃和勘误的地方我都做了注解，以便快速阅读理解不会卡住。 正文提升（boosting） 方法是一种常用的统计">
+<meta name="twitter:title" content="《统计学习方法》第8章 提升方法之AdaBoost\BoostingTree\GBDT">
+<meta name="twitter:description" content="前沿在深度学习火起来之前，提升方法（包括AdaBoost, GBDT）是kaggle等比赛中的利器，所以提升方法是必备的知识点。李航《统计学习方法》第8章——提升方法主要内容：AdaBoost, Boosting Tree, GBDT。写本文章主要目的是复习（毕竟之前看纸质版做的笔记），对于证明比较跳跃和勘误的地方我都做了注解，以便初学者快速阅读理解不会卡住。 正文提升（boosting） 方法">
 <meta name="twitter:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/8-boosting/1540460336537.png">
 
 
@@ -165,13 +165,13 @@
 
 
 
-  <link rel="canonical" href="https://snaildove.github.io/2018/10/01/Booting-Methods_Statistical-Learning-Methods/"/>
+  <link rel="canonical" href="https://snaildove.github.io/2018/10/01/8.Booting-Methods_LiHang-Statistical-Learning-Methods/"/>
 
 
 
 
 
-  <title>提升方法之AdaBoost\BoostingTree\GBDT | SnailDove's blog</title>
+  <title>《统计学习方法》第8章 提升方法之AdaBoost\BoostingTree\GBDT | SnailDove's blog</title>
   
 
 
@@ -352,7 +352,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://snaildove.github.io/2018/10/01/Booting-Methods_Statistical-Learning-Methods/">
+    <link itemprop="mainEntityOfPage" href="https://snaildove.github.io/2018/10/01/8.Booting-Methods_LiHang-Statistical-Learning-Methods/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="SnailDove">
@@ -369,7 +369,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">提升方法之AdaBoost\BoostingTree\GBDT</h1>
+          <h1 class="post-title" itemprop="name headline">《统计学习方法》第8章 提升方法之AdaBoost\BoostingTree\GBDT</h1>
         
 
         <div class="post-meta">
@@ -446,7 +446,7 @@
                   <span class="post-meta-item-text">全文字数</span>
                 
                 <span title="全文字数">
-                  1,237
+                  1,244
                 </span>
               
 
@@ -483,7 +483,7 @@
       
 
       
-        <script src="\assets\js\APlayer.min.js"> </script><h1 id="前沿"><a href="#前沿" class="headerlink" title="前沿"></a>前沿</h1><p>在深度学习火起来之前，提升方法（包括AdaBoost, GBDT）是kaggle等比赛中的利器，所以提升方法是必备的知识点。<strong>李航《统计学习方法》第8章——提升方法主要内容：AdaBoost, Boosting Tree, GBDT</strong>。写本文章主要目的是复习笔记，<strong>有价值的地方</strong>：对于证明比较跳跃和勘误的地方我都做了注解，以便快速阅读理解不会卡住。</p>
+        <script src="\assets\js\APlayer.min.js"> </script><h1 id="前沿"><a href="#前沿" class="headerlink" title="前沿"></a>前沿</h1><p>在深度学习火起来之前，提升方法（包括AdaBoost, GBDT）是kaggle等比赛中的利器，所以提升方法是必备的知识点。<strong>李航《统计学习方法》第8章——提升方法主要内容：AdaBoost, Boosting Tree, GBDT</strong>。写本文章主要目的是复习（毕竟之前看纸质版做的笔记），对于证明比较跳跃和勘误的地方我都做了注解，以便初学者快速阅读理解不会卡住。</p>
 <h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p><strong>提升（boosting） 方法</strong>是一种常用的统计学习方法， 应用广泛且 有效。 <strong>在分类问题中， 它通过改变训练样本的权重， 学习多个分类 器， 并将这些分类器进行线性组合， 提高分类的性能</strong>。 </p>
 <p><strong>本章主要内容</strong></p>
 <ol>
@@ -543,7 +543,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://snaildove.github.io/2018/10/01/Booting-Methods_Statistical-Learning-Methods/" title="提升方法之AdaBoost\BoostingTree\GBDT">https://snaildove.github.io/2018/10/01/Booting-Methods_Statistical-Learning-Methods/</a>
+    <a href="https://snaildove.github.io/2018/10/01/8.Booting-Methods_LiHang-Statistical-Learning-Methods/" title="《统计学习方法》第8章 提升方法之AdaBoost\BoostingTree\GBDT">https://snaildove.github.io/2018/10/01/8.Booting-Methods_LiHang-Statistical-Learning-Methods/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
