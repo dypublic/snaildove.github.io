@@ -85,7 +85,7 @@
 
 
 
-  <meta name="keywords" content="Machine Learning by Andrew NG," />
+  <meta name="keywords" content="Machine Learning,统计学习方法," />
 
 
 
@@ -98,31 +98,42 @@
 
 
 
-<meta name="description" content="NoteThis personal note is written after studying the opening course on the coursera website, Machine Learning by Andrew NG . And images, audios of this note all comes from the opening course.  Classi">
-<meta name="keywords" content="Machine Learning by Andrew NG">
+<meta name="description" content="前言EM算法有很多的应用，最广泛的就是混合高斯模型、聚类、HMM等等，本质上就是一种优化算法，不断迭代，获得优值，与梯度下降、牛顿法都起到同一类的作用。 本文是对李航《统计学习方法》的第9章复习总结，主要在于将算法证明有跳跃性（有2~3处）的地方标注出来，以及梳理网上很多人觉得原书例子讲解不够清楚，我将会把这个例子跟公式一一对应起来，变得一目了然。当然大家也可以参考Standford CS299">
+<meta name="keywords" content="Machine Learning,统计学习方法">
 <meta property="og:type" content="article">
-<meta property="og:title" content="06_logistic-regression note6">
-<meta property="og:url" content="https://snaildove.github.io/2018/01/06/06_logistic-regression/index.html">
+<meta property="og:title" content="《统计学习方法》第9章 EM&#x2F;GMM&#x2F;GEM">
+<meta property="og:url" content="https://snaildove.github.io/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/index.html">
 <meta property="og:site_name" content="SnailDove&#39;s blog">
-<meta property="og:description" content="NoteThis personal note is written after studying the opening course on the coursera website, Machine Learning by Andrew NG . And images, audios of this note all comes from the opening course.  Classi">
+<meta property="og:description" content="前言EM算法有很多的应用，最广泛的就是混合高斯模型、聚类、HMM等等，本质上就是一种优化算法，不断迭代，获得优值，与梯度下降、牛顿法都起到同一类的作用。 本文是对李航《统计学习方法》的第9章复习总结，主要在于将算法证明有跳跃性（有2~3处）的地方标注出来，以及梳理网上很多人觉得原书例子讲解不够清楚，我将会把这个例子跟公式一一对应起来，变得一目了然。当然大家也可以参考Standford CS299">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpage/ml-andrew-ng/06/1.png">
-<meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpage/ml-andrew-ng/06/2.png">
-<meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpage/ml-andrew-ng/06/3.png">
-<meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpage/ml-andrew-ng/06/4.png">
-<meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpage/ml-andrew-ng/06/5.png">
-<meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpage/ml-andrew-ng/06/6.png">
-<meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpage/ml-andrew-ng/06/7.png">
-<meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpage/ml-andrew-ng/06/8.png">
-<meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpage/ml-andrew-ng/06/1st_example_of_costFunction_and_fminunc_in_octave.png">
-<meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpage/ml-andrew-ng/06/10.png">
-<meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpage/ml-andrew-ng/06/11.png">
-<meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpage/ml-andrew-ng/06/12.png">
-<meta property="og:updated_time" content="2018-05-21T03:41:35.681Z">
+<meta property="og:image" content="c:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1540625262559.png">
+<meta property="og:image" content="c:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1540629489022.png">
+<meta property="og:image" content="c:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1540629535384.png">
+<meta property="og:image" content="c:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1540629838496.png">
+<meta property="og:image" content="c:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1540633799099.png">
+<meta property="og:image" content="c:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1540633951648.png">
+<meta property="og:image" content="c:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1540634136349.png">
+<meta property="og:image" content="c:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1540634346383.png">
+<meta property="og:image" content="c:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1540634609480.png">
+<meta property="og:image" content="c:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1540634779544.png">
+<meta property="og:image" content="c:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1540634917442.png">
+<meta property="og:image" content="c:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1540634901751.png">
+<meta property="og:image" content="c:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1540635377338.png">
+<meta property="og:image" content="c:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1540635519121.png">
+<meta property="og:image" content="c:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1540635774989.png">
+<meta property="og:image" content="c:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1540658158963.png">
+<meta property="og:image" content="c:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1540658354291.png">
+<meta property="og:image" content="c:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1540660313512.png">
+<meta property="og:image" content="c:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1540660432941.png">
+<meta property="og:image" content="c:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1540660738386.png">
+<meta property="og:image" content="c:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1540660826025.png">
+<meta property="og:image" content="c:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1540660851087.png">
+<meta property="og:image" content="c:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1540661928677.png">
+<meta property="og:updated_time" content="2018-10-27T17:46:02.123Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="06_logistic-regression note6">
-<meta name="twitter:description" content="NoteThis personal note is written after studying the opening course on the coursera website, Machine Learning by Andrew NG . And images, audios of this note all comes from the opening course.  Classi">
-<meta name="twitter:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpage/ml-andrew-ng/06/1.png">
+<meta name="twitter:title" content="《统计学习方法》第9章 EM&#x2F;GMM&#x2F;GEM">
+<meta name="twitter:description" content="前言EM算法有很多的应用，最广泛的就是混合高斯模型、聚类、HMM等等，本质上就是一种优化算法，不断迭代，获得优值，与梯度下降、牛顿法都起到同一类的作用。 本文是对李航《统计学习方法》的第9章复习总结，主要在于将算法证明有跳跃性（有2~3处）的地方标注出来，以及梳理网上很多人觉得原书例子讲解不够清楚，我将会把这个例子跟公式一一对应起来，变得一目了然。当然大家也可以参考Standford CS299">
+<meta name="twitter:image" content="c:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1540625262559.png">
 
 
 
@@ -152,13 +163,13 @@
 
 
 
-  <link rel="canonical" href="https://snaildove.github.io/2018/01/06/06_logistic-regression/"/>
+  <link rel="canonical" href="https://snaildove.github.io/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/"/>
 
 
 
 
 
-  <title>06_logistic-regression note6 | SnailDove's blog</title>
+  <title>《统计学习方法》第9章 EM/GMM/GEM | SnailDove's blog</title>
   
 
 
@@ -339,7 +350,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://snaildove.github.io/2018/01/06/06_logistic-regression/">
+    <link itemprop="mainEntityOfPage" href="https://snaildove.github.io/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="SnailDove">
@@ -356,11 +367,15 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">06_logistic-regression note6</h1>
+          <h1 class="post-title" itemprop="name headline">《统计学习方法》第9章 EM/GMM/GEM</h1>
         
 
         <div class="post-meta">
 		  
+            <i class="fa fa-thumb-tack"></i>
+            <font color=7D26CD>sticky</font>
+            <span class="post-meta-divider">|</span>
+          
           <span class="post-time">
             
               <span class="post-meta-item-icon">
@@ -369,8 +384,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-06T00:00:00+08:00">
-                2018-01-06
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-10-01T00:00:00+08:00">
+                2018-10-01
               </time>
             
 
@@ -392,8 +407,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/english/" itemprop="url" rel="index">
-                    <span itemprop="name">english</span>
+                  <a href="/categories/中文/" itemprop="url" rel="index">
+                    <span itemprop="name">中文</span>
                   </a>
                 </span>
 
@@ -429,7 +444,7 @@
                   <span class="post-meta-item-text">Words count in article</span>
                 
                 <span title="Words count in article">
-                  3,707
+                  2,545
                 </span>
               
 
@@ -445,7 +460,7 @@
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
                 <span title="Reading time">
-                  23
+                  12
                 </span>
               
             </div>
@@ -466,90 +481,50 @@
       
 
       
-        <script src="\assets\js\APlayer.min.js"> </script><h2 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h2><p>This personal note is written after studying the opening course on <a href="https://www.coursera.org" target="_blank" rel="noopener">the coursera website</a>, <a href="https://www.coursera.org/learn/machine-learning/home/welcome" target="_blank" rel="noopener">Machine Learning by Andrew NG</a> . And images, audios of this note all comes from the opening course. </p>
-<h2 id="Classification"><a href="#Classification" class="headerlink" title="Classification"></a>Classification</h2><p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpage/ml-andrew-ng/06/1.png" alt=""><br>To attempt classification, one method is to use linear regression and map all predictions greater than 0.5 as a 1 and all less than 0.5 as a 0. However, this method doesn’t work well because classification is not actually a linear function. </p>
-<p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpage/ml-andrew-ng/06/2.png" alt=""></p>
-<p>The classification problem is just like the regression problem, except that the values we now want to predict take on only a small number of discrete values. For now, we will focus on the <strong>binary classification problem</strong> in which $y$ can take on only two values, 0 and 1. (Most of what we say here will also generalize to the multiple-class case.) For instance, if we are trying to build a spam classifier for email, then $x^{(i)}$ may be some features of a piece of email, and $y$ may be 1 if it is a piece of spam mail, and 0 otherwise. Hence, $y∈\{0,1\}$ . 0 is also called the negative class, and 1 the positive class, and they are sometimes also denoted by the symbols “-” and “+” . Given $x^{(i)}$, the corresponding $y^{(i)}$ is also called the label for the training example.</p>
-<h2 id="Hypothesis-Representation"><a href="#Hypothesis-Representation" class="headerlink" title="Hypothesis Representation"></a>Hypothesis Representation</h2><p>We could approach the classification problem ignoring the fact that $y$ is discrete-valued, and use our old linear regression algorithm to try to predict $y$ given $x$. However, it is easy to construct examples where this method performs very poorly. Intuitively, it also doesn’t make sense for $h_{θ}(x)$ to take values larger than 1 or smaller than $0$ when we know that $y ∈ \{0, 1\}$. To fix this, let’s change the form for our hypotheses $h_{θ}(x)$ to satisfy $0≤h_{θ}(x)≤1$. This is accomplished by plugging $θ^Tx$ into the <strong>Logistic Function</strong> . </p>
-<p>Our new form uses the <strong>“Sigmoid Function”</strong> , also called the <strong>“Logistic Function”</strong> :<br>$$<br>\begin{align*}& h_\theta (x) = g ( \theta^T x ) \\ \\& z = \theta^T x \\& g(z) = \dfrac{1}{1 + e^{-z}}\end{align*}<br>$$<br>Using python to implement it :</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np;</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sigmoid</span><span class="params">(z)</span>:</span></span><br><span class="line">   <span class="keyword">return</span> <span class="number">1</span> / (<span class="number">1</span> + np.exp(-z))</span><br></pre></td></tr></table></figure>
-<p>The following image shows us what the sigmoid function looks like:</p>
-<p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpage/ml-andrew-ng/06/3.png" alt=""></p>
-<p><strong>The function $g(z)$ , shown here, maps any real number to the $(0, 1)$ interval, making it useful for transforming an arbitrary-valued function into a function better suited for classification</strong>. </p>
-<p><strong>$h_{θ}(x)$ will give us the probability that our output is 1</strong>. For example, $h_{θ}(x)=0.7$ gives us a probability of $70\%$ that our output is 1. Our probability that our prediction is 0 is just the complement of our probability that it is 1 (e.g. if probability that it is 1 is $70\%$, then the probability that it is 0 is $30\%$).<br>$$<br>\begin{align*}& h_\theta(x) = P(y=1 | x ; \theta) = 1 - P(y=0 | x ; \theta) \\ & P(y = 0 | x;\theta) + P(y = 1 | x ; \theta) = 1\end{align*}<br>$$</p>
-<h2 id="Decision-Boundary"><a href="#Decision-Boundary" class="headerlink" title="Decision Boundary"></a>Decision Boundary</h2><p>In order to get our discrete 0 or 1 classification, we can translate the output of the hypothesis function as follows:<br>$$<br>\begin{align*}& h_\theta(x) \geq 0.5 \rightarrow y = 1 \\ & h_\theta(x) < 0.5 \rightarrow y = 0 \\ \end{align*}<br>$$<br>The way our logistic function g behaves is that when its input is greater than or equal to zero, its output is greater than or equal to 0.5:<br>$$<br>\begin{align*}& g(z) \geq 0.5 \\ & when \; z \geq 0\end{align*}<br>$$<br>From these statements we can now say:<br>$$<br>\begin{align*}& \theta^T x \geq 0 \Rightarrow y = 1 \\ & \theta^T x < 0 \Rightarrow y = 0 \\ \end{align*}<br>$$<br>The <strong>decision boundary</strong>  is the line that separates the area where y = 0 and where y = 1. It is created by our hypothesis function. </p>
-<p><strong>Example</strong> :<br>$$<br>\begin{align*}& \theta = \begin{bmatrix}5 \\ -1 \\ 0\end{bmatrix} \\ & y = 1 \; if \; 5 + (-1) x_1 + 0 x_2 \geq 0 \\ & 5 - x_1 \geq 0 \\ & - x_1 \geq -5 \\& x_1 \leq 5 \\ \end{align*}<br>$$<br>In this case, our decision boundary is a straight vertical line placed on the graph where $x_1=5$ , and everything to the left of that denotes $y = 1$ , while everything to the right denotes $y = 0$ . </p>
-<p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpage/ml-andrew-ng/06/4.png" alt=""></p>
-<p>Again, the input to the sigmoid function g(z) (e.g. $θ^TX$ ) doesn’t need to be linear, and could be a function that describes a circle (e.g.  $z=θ_0+θ_1x^2_1+θ_2x^2_2$ ) or any shape to fit our data.</p>
-<p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpage/ml-andrew-ng/06/5.png" alt=""></p>
-<h2 id="Cost-Function"><a href="#Cost-Function" class="headerlink" title="Cost Function"></a>Cost Function</h2><p>We cannot use the same cost function that we use for linear regression because the Logistic Function will cause the output to be wavy, causing many local optima. In other words, it will not be a convex function. </p>
-<p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpage/ml-andrew-ng/06/6.png" alt=""></p>
-<p>Instead, our cost function for logistic regression looks like:<br>$$<br>\begin{align*}& J(\theta) = \dfrac{1}{m} \sum_{i=1}^m \mathrm{Cost}(h_\theta(x^{(i)}),y^{(i)}) \newline & \mathrm{Cost}(h_\theta(x),y) = -\log(h_\theta(x)) \; & \text{if y = 1} \newline & \mathrm{Cost}(h_\theta(x),y) = -\log(1-h_\theta(x)) \; & \text{if y = 0}\end{align*}<br>$$<br><img src="http://p8o3egtyk.bkt.clouddn.com/gitpage/ml-andrew-ng/06/7.png" alt=""><br>$$<br>\begin{align*}& \mathrm{Cost}(h_\theta(x),y) = 0 \text{ if } h_\theta(x) = y \\ & \mathrm{Cost}(h_\theta(x),y) \rightarrow \infty \text{ if } y = 0 \; \mathrm{and} \; h_\theta(x) \rightarrow 1 \\ & \mathrm{Cost}(h_\theta(x),y) \rightarrow \infty \text{ if } y = 1 \; \mathrm{and} \; h_\theta(x) \rightarrow 0 \\ \end{align*}<br>$$</p>
-<ol>
-<li>If our correct answer ‘y’ is 0, then the cost function will be 0 if our hypothesis function also outputs 0. If our hypothesis approaches 1, then the cost function will approach infinity. </li>
-<li>If our correct answer ‘y’ is 1, then the cost function will be 0 if our hypothesis function outputs 1. If our hypothesis approaches 0, then the cost function will approach infinity. </li>
-</ol>
-<p>Note that writing the cost function in this way guarantees that $J(θ)$ is convex for logistic regression.</p>
-<h2 id="Simplified-Cost-Function-and-Gradient-Descent"><a href="#Simplified-Cost-Function-and-Gradient-Descent" class="headerlink" title="Simplified Cost Function and Gradient Descent"></a>Simplified Cost Function and Gradient Descent</h2><p><strong>Note:</strong>    [6:53 - the gradient descent equation should have a 1/m factor] </p>
-<p> We can compress our cost function’s two conditional cases into one case:<br>$$<br>\mathrm{Cost}(h_\theta(x),y) = - y \; \log(h_\theta(x)) - (1 - y) \log(1 - h_\theta(x))<br>$$<br>Notice that when y is equal to 1, then the second term $(1−y)log(1−h_θ(x))$ will be zero and will not affect the result. If y is equal to 0, then the first term $−ylog(h_θ(x))$ will be zero and will not affect the result. </p>
-<p>We can fully write out our entire cost function as follows:</p>
-<p>$$<br>J(\theta) =  \frac{1}{m} \displaystyle \sum_{i=1}^m [-y^{(i)}\log (h_\theta (x^{(i)})) - (1 - y^{(i)})\log (1 - h_\theta(x^{(i)}))]<br>$$</p>
-<h3 id="A-vectorized-implementation"><a href="#A-vectorized-implementation" class="headerlink" title="A vectorized implementation"></a>A vectorized implementation</h3><p>$$<br>\begin{align*} & h = g(X\theta)\newline & J(\theta) = \frac{1}{m} \cdot \left(-y^{T}\log(h)-(1-y)^{T}\log(1-h)\right) \end{align*}<br>$$</p>
-<p>Using python to implement it :</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">cost</span><span class="params">(theta, X, y)</span>:</span></span><br><span class="line">  theta = np.matrix(theta)</span><br><span class="line">  X = np.matrix(X)</span><br><span class="line">  y = np.matrix(y)</span><br><span class="line">  first = np.multiply(-y, np.log(sigmoid(X* theta.T)))</span><br><span class="line">  second = np.multiply((<span class="number">1</span> - y), np.log(<span class="number">1</span> - sigmoid(X* theta.T)))</span><br><span class="line">  <span class="keyword">return</span> np.sum(first - second) / (len(X))</span><br></pre></td></tr></table></figure>
-<h3 id="Gradient-Descent"><a href="#Gradient-Descent" class="headerlink" title="Gradient Descent"></a>Gradient Descent</h3><p>Remember that the general form of gradient descent is:<br>$$<br>\begin{align*}& Repeat \; \lbrace \\ & \; \theta_j := \theta_j - \alpha \dfrac{\partial}{\partial \theta_j}J(\theta) \\ & \rbrace\end{align*}<br>$$<br>We can work out the derivative part using calculus to get:<br>$$<br>\begin{align*} & Repeat \; \lbrace \\ & \; \theta_j := \theta_j - \frac{\alpha}{m} \sum_{i=1}^m (h_\theta(x^{(i)}) - y^{(i)}) x_j^{(i)} \\ & \rbrace \end{align*}<br>$$<br>The detail mathematical process :<br>$$<br>\begin{align*} 
-J(\theta) &= \frac{1}{m} \displaystyle \sum_{i=1}^m [-y^{(i)}\log (h_\theta (x^{(i)})) - (1 - y^{(i)})\log (1 - h_\theta(x^{(i)}))] \\
-&= -\frac{1}{m} \displaystyle \sum_{i=1}^m [{{y}^{(i)}}\log ( {h_\theta} {{x}^{(i)}} ) )+ ( 1-{{y}^{(i)}}  )\log  ( 1-{h_\theta} ( {{x}^{(i)}}  )  )] \\
-& = -\frac{1}{m} \displaystyle \sum_{i=1}^m [{{y}^{(i)}}\log ( \frac{1}{1+{{e}^{-{\theta^T}{{x}^{(i)}}}}} )+( 1-{{y}^{(i)}})\log ( 1-\frac{1}{1+{{e}^{-{\theta^T}{{x}^{(i)}}}}} )] \\
-& = -\frac{1}{m} \displaystyle \sum_{i=1}^m [ -{{y}^{(i)}}\log  ( 1+{{e}^{-{\theta^T}{{x}^{(i)}}}}  )- ( 1-{{y}^{(i)}}  )\log  ( 1+{{e}^{{\theta^T}{{x}^{(i)}}}}  )] \\
-\end{align*}<br>$$</p>
-<p>$$<br>\begin{align*}
- \frac{\partial }{\partial {\theta_{j}}}J\left( \theta \right) &= -\frac{1}{m}\frac{\partial }{\partial {\theta_{j}}}[\sum\limits_{i=1}^{m}{[-{{y}^{(i)}}\log \left( 1+{{e}^{-{\theta^{T}}{{x}^{(i)}}}} \right)-\left( 1-{{y}^{(i)}} \right)\log \left( 1+{{e}^{{\theta^{T}}{{x}^{(i)}}}} \right)]}] \\
-& =\frac{\partial }{\partial {\theta_{j}}}[-\frac{1}{m}\sum\limits_{i=1}^{m}{[-{{y}^{(i)}}\log \left( 1+{{e}^{-{\theta^{T}}{{x}^{(i)}}}} \right)-\left( 1-{{y}^{(i)}} \right)\log \left( 1+{{e}^{{\theta^{T}}{{x}^{(i)}}}} \right)]}] \\
-& =-\frac{1}{m}\sum\limits_{i=1}^{m}{[-{{y}^{(i)}}\frac{-x_{j}^{(i)}{{e}^{-{\theta^{T}}{{x}^{(i)}}}}}{1+{{e}^{-{\theta^{T}}{{x}^{(i)}}}}}-\left( 1-{{y}^{(i)}} \right)\frac{x_j^{(i)}{{e}^{{\theta^T}{{x}^{(i)}}}}}{1+{{e}^{{\theta^T}{{x}^{(i)}}}}}}] \\
-& =-\frac{1}{m}\sum\limits_{i=1}^{m}{{y}^{(i)}}\frac{x_j^{(i)}}{1+{{e}^{{\theta^T}{{x}^{(i)}}}}}-\left( 1-{{y}^{(i)}} \right)\frac{x_j^{(i)}{{e}^{{\theta^T}{{x}^{(i)}}}}}{1+{{e}^{{\theta^T}{{x}^{(i)}}}}}] \\
-& =-\frac{1}{m}\sum\limits_{i=1}^{m}{\frac{{{y}^{(i)}}x_j^{(i)}-x_j^{(i)}{{e}^{{\theta^T}{{x}^{(i)}}}}+{{y}^{(i)}}x_j^{(i)}{{e}^{{\theta^T}{{x}^{(i)}}}}}{1+{{e}^{{\theta^T}{{x}^{(i)}}}}}} \\
-& =-\frac{1}{m}\sum\limits_{i=1}^{m}{\frac{{{y}^{(i)}}\left( 1\text{+}{{e}^{{\theta^T}{{x}^{(i)}}}} \right)-{{e}^{{\theta^T}{{x}^{(i)}}}}}{1+{{e}^{{\theta^T}{{x}^{(i)}}}}}x_j^{(i)}} \\
-& =-\frac{1}{m}\sum\limits_{i=1}^{m}{({{y}^{(i)}}-\frac{{{e}^{{\theta^T}{{x}^{(i)}}}}}{1+{{e}^{{\theta^T}{{x}^{(i)}}}}})x_j^{(i)}} \\
-& =-\frac{1}{m}\sum\limits_{i=1}^{m}{({{y}^{(i)}}-\frac{1}{1+{{e}^{-{\theta^T}{{x}^{(i)}}}}})x_j^{(i)}} \\
-& =-\frac{1}{m}\sum\limits_{i=1}^{m}{[{{y}^{(i)}}-{h_\theta}\left( {{x}^{(i)}} \right)]x_j^{(i)}} \\
-& =\frac{1}{m}\sum\limits_{i=1}^{m}{[{h_\theta}\left( {{x}^{(i)}} \right)-{{y}^{(i)}}]x_j^{(i)}} 
-\end{align*}<br>$$</p>
-<p>Notice that this algorithm is identical to the one we used in linear regression. We still have to simultaneously update all values in theta. </p>
-<h3 id="A-vectorized-implementation-1"><a href="#A-vectorized-implementation-1" class="headerlink" title="A vectorized implementation"></a>A vectorized implementation</h3><p>$$<br>\theta := \theta - \frac{\alpha}{m} X^{T} (g(X \theta ) - \vec{y})<br>$$</p>
-<h3 id="Note-1"><a href="#Note-1" class="headerlink" title="Note"></a>Note</h3><p><strong>The idea of feature scaling also applies to gradient descent for logistic regression. And yet we have features that are on different scale, then applying feature scaling can also make grading descent run faster for logistic regression.</strong></p>
-<h2 id="Advanced-Optimization"><a href="#Advanced-Optimization" class="headerlink" title="Advanced Optimization"></a>Advanced Optimization</h2><p><strong>Note:</strong>    [7:35 - ‘100’ should be 100 instead. The value provided should be an integer and not a character string.] </p>
-<p><strong>“Conjugate gradient”, “BFGS”, and “L-BFGS”</strong> <em>are more sophisticated, faster ways to optimize $θ$ that can be used instead of gradient descent. We suggest that you should not write these more sophisticated algorithms yourself (unless you are an expert in numerical computing) but use the libraries instead, as they’re already tested and highly optimized. Octave provides them.</em></p>
-<p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpage/ml-andrew-ng/06/8.png" alt=""></p>
-<p>These algorithms actually do more sophisticated things than just pick a good learning rate, and so they often end up converging much faster than gradient descent. These algorithms actually do more sophisticated things than just pick a good learning rate, and so they often end up converging much faster than gradient descent, but detailed discussion of exactly what they do is beyond the scope of this course. <strong>In fact, I actually used to have used these algorithms for a long time, like maybe over a decade, quite frequently, and it was only, you know, a few years ago that I actually figured out for myself the details of what conjugate gradient, BFGS and O-BFGS do. So it is actually entirely possible to use these algorithms successfully and apply to lots of different learning problems without actually understanding the inter-loop of what these algorithms do.</strong> If these algorithms have a disadvantage, I’d say that the main disadvantage is that they’re quite a lot more complex than gradient descent. And in particular, you probably should not implement these algorithms - conjugate gradient, L-BGFS, BFGS - yourself unless you’re an expert in numerical computing. Instead, just as I wouldn’t recommend that you write your own code to compute square roots of numbers or to compute inverses of matrices, for these algorithms also what I would recommend you do is just use a software library. So, you know, to take a square root what all of us do is use some function that someone else has written to compute the square roots of our numbers. And fortunately, Octave and the closely related language MATLAB - we’ll be using that - Octave has a very good. Has a pretty reasonable library implementing some of these advanced optimization algorithms. And so if you just use the built-in library, you know, you get pretty good results. I should say that there is a difference between good and bad implementations of these algorithms. And so, if you’re using a different language for your machine learning application, if you’re using C, C++, Java, and so on, you might want to try out a couple of different libraries to make sure that you find a good library for implementing these algorithms. Because there is a difference in performance between a good implementation of, you know, contour gradient or LPFGS versus less good implementation of contour gradient or LPFGS.</p>
-<p>We first need to provide a function that evaluates the following two functions for a given input value $θ$: </p>
-<p>We can write a single function that returns both of these: </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function [jVal, gradient] = costFunction(theta)</span><br><span class="line">  jVal = [...code to compute J(theta)...];</span><br><span class="line">  gradient = [...code to compute derivative of J(theta)...];</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
-<p>Then we can use octave’s <strong>“fminunc()”</strong> optimization algorithm along with the <strong>“optimset()”</strong> function that creates an object containing the options we want to send to “fminunc()”. (Note: the value for MaxIter should be an integer, not a character string - errata in the video at 7:30) </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">options = optimset(&apos;GradObj&apos;, &apos;on&apos;, &apos;MaxIter&apos;, 100);</span><br><span class="line">initialTheta = zeros(2,1);</span><br><span class="line">   [optTheta, functionVal, exitFlag] = fminunc(@costFunction, initialTheta, options);</span><br></pre></td></tr></table></figure>
-<p>We give to the function <strong>“fminunc()”</strong> our cost function, our initial vector of theta values, and the “options” object that we created beforehand.</p>
-<h2 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h2><p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpage/ml-andrew-ng/06/1st_example_of_costFunction_and_fminunc_in_octave.png" alt="1st_example_of_costFunction_and_fminunc_in_octave"></p>
-<p>Having implemented this cost function, you would, you can then call the advanced optimization function called the <strong>‘fminunc’ - it stands for function minimization unconstrained in Octave</strong> -and the way you call this is as follows. </p>
-<p>You set a few options. This is a options as a data structure that stores the options you want. <em>So <strong>‘GradObj’ and ‘on’</strong> , these set the gradient objective parameter to on . It just means you are indeed going to provide a gradient to this algorithm ( which tells <code>fminunc</code> that our function returns both the cost and the gradient. This allows <code>fminunc</code> to use the gradient when minimizing the function ). I’m going to <strong>set the maximum number of iterations to</strong>, let’s say, one hundred. We’re going <strong>give it an initial guess for $\theta$ </strong>. There’s a 2 by 1 vector. And then this command calls fminunc. This <strong>‘@’ </strong> symbol presents a pointer to the cost function that we just defined up there. And if you call this, this will compute, you know, will use one of the more advanced optimization  algorithms.  And if you want to think it as just like gradient descent. But automatically choosing the learning rate alpha for so you don’t have to do so yourself. But it will then attempt to use the sort of advanced optimization algorithms. Like gradient descent on steroids. To try to find the optimal value of theta for you.</em>  </p>
-<p> Let me actually show you what this looks like in Octave. So I’ve written this cost function of theta function exactly as we had it on the previous line. It computes J-val which is the cost function. And it computes the gradient with the two elements being the partial derivatives of the cost function with respect to, you know, the two parameters, theta one and theta two. </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">function [jVal, gradient]=costFunction(theta)</span><br><span class="line">　　jVal=(theta(1)-5)^2+(theta(2)-5)^2;</span><br><span class="line">　　gradient=zeros(2,1);</span><br><span class="line">　　gradient(1)=2*(theta(1)-5);</span><br><span class="line">　　gradient(2)=2*(theta(2)-5);</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
-<p>Now let’s switch to my Octave window. I’m gonna type in those commands I had just now. So, options equals optimset. </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">options=optimset(&apos;GradObj&apos;,&apos;on&apos;,&apos;MaxIter&apos;,100);</span><br><span class="line">initialTheta=zeros(2,1);</span><br><span class="line">[optTheta, functionVal, exitFlag]=fminunc(@costFunction, initialTheta, options);</span><br></pre></td></tr></table></figure>
-<p>This is the notation for setting my parameters on my options, for my optimization algorithm. And if I hit enter this will run the optimization algorithm. And it returns pretty quickly. </p>
-<p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpage/ml-andrew-ng/06/10.png" alt=""></p>
-<p>This funny formatting that’s because my line, you know, my code wrapped around. So, this funny thing is just because my command line had wrapped around. But what this says is that numerically renders, you know, think of it as gradient descent on steroids, they found the optimal value of a theta is theta 1 equals 5, theta 2 equals 5, exactly as we’re hoping for. <strong>The <code>functionValue</code> at the optimum is essentially 10-to -the-minus-30-power. So that’s essentially zero, which is also what we’re hoping for</strong> . And the <code>exitFlag</code> is 1, and this shows what the convergence status of this. And if you want you can do help <code>fminunc</code> to read the documentation for how to interpret the exit flag. But <strong>the <code>exitFlag</code> let’s you verify whether or not this algorithm thing has converged</strong>. So that’s how you run these algorithms in Octave. </p>
-<p>I should mention, by the way, that for the Octave implementation, this value of theta, your <strong>parameter : vector of theta, its dimension is at least greater than or equal to 2.</strong> So if theta is just a real number. So, if it is not at least a two-dimensional vector or some higher than two-dimensional vector, this <code>fminunc</code> may not work, so and if in case you have a one-dimensional function that you use to optimize, you can look in the octave documentation for <code>fminunc</code> for additional details. </p>
-<p>So, that’s how we optimize our trial example of this simple quick driving cost function. However, we apply this to let’s just say progression. In logistic regression we have a parameter vector theta, and I’m going to use a mix of octave notation and sort of math notation. But I hope this explanation will be clear, but our parameter vector theta comprises these parameters theta 0 through theta n because octave indexes, vectors using indexing from 1, you know, theta 0 is actually written theta 1 in octave, theta 1 is gonna be written. So, if theta 2 in octave and that’s gonna be a written theta n+1, right? And that’s because Octave indexes is vectors starting from index of 1 and so the index of 0. <strong>So what we need to do then is write a cost function that captures the cost function for logistic regression. Concretely, the cost function needs to return <code>jVal</code>, which is, you know, <code>jVal</code> as you need some codes to compute J of theta and we also need to give it the gradient.</strong> </p>
-<p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpage/ml-andrew-ng/06/11.png" alt=""></p>
-<p>So, gradient 1 is going to be some code to compute the partial derivative in respect to theta 0, the next partial derivative respect to theta 1 and so on. Once again, this is gradient 1, gradient 2 and so on, rather than gradient 0, gradient 1 because octave indexes is vectors starting from one rather than from zero. But <strong>the main concept I hope you take away from this slide is, that what you need to do, is write a function that returns the cost function and returns the gradient.</strong> And so in order to apply this to logistic regression or even to linear regression, if you want to use these optimization algorithms for linear regression. What you need to do is plug in the appropriate code to compute these things over here. So, now you know how to use these advanced optimization algorithms.</p>
-<p><strong>Because, using, because for these algorithms, you’re using a sophisticated optimization library, it makes the just a little bit more opaque and so just maybe a little bit harder to debug. But because these algorithms often run much faster than gradient descent, often quite typically whenever I have a large machine learning problem, I will use these algorithms instead of using gradient descent. And with these ideas, hopefully, you’ll be able to get logistic progression and also linear regression to work on much larger problems. So, that’s it for advanced optimization concepts.</strong> And in the next and final video on Logistic Regression, I want to tell you how to take the logistic regression algorithm that you already know about and make it work also on multi-class classification problems.</p>
-<h2 id="Multiclass-Classification-One-vs-all"><a href="#Multiclass-Classification-One-vs-all" class="headerlink" title="Multiclass Classification: One-vs-all"></a>Multiclass Classification: One-vs-all</h2><p>Now we will approach the classification of data when we have more than two categories. Instead of y = {0,1} we will expand our definition so that y = {0,1…n}.<br>$$<br>\begin{align*}& y \in \lbrace0, 1 ... n\rbrace \\ & h_\theta^{(0)}(x) = P(y = 0 | x ; \theta) \\ & h_\theta^{(1)}(x) = P(y = 1 | x ; \theta) \\ & \cdots \\ & h_\theta^{(n)}(x) = P(y = n | x ; \theta) \\ & \mathrm{prediction} = \max_i( h_\theta ^{(i)}(x) )\\ \end{align*}<br>$$<br>Since y = {0,1…n}, we divide our problem into n+1 (+1 because the index starts at 0) binary classification problems; in each one, we predict the probability that ‘y’ is a member of one of our classes.</p>
-<p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpage/ml-andrew-ng/06/12.png" alt=""></p>
-<p><strong>To summarize:</strong>   </p>
-<ol>
-<li>Train a logistic regression classifier $h_θ(x)$ for each class￼ to predict the probability that ￼ ￼$y = i￼ $￼. </li>
-<li>To make a prediction on a new $x$ ,  pick the class ￼that maximizes $h_θ(x)$</li>
-</ol>
+        <script src="\assets\js\APlayer.min.js"> </script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>EM算法有很多的应用，最广泛的就是混合高斯模型、聚类、HMM等等，本质上就是一种优化算法，不断迭代，获得优值，与梯度下降、牛顿法都起到同一类的作用。</p>
+<p>本文是对李航《统计学习方法》的第9章复习总结，主要在于将算法证明有跳跃性（有2~3处）的地方标注出来，以及梳理网上很多人觉得原书例子讲解不够清楚，我将会把这个例子跟公式一一对应起来，变得一目了然。当然大家也可以参考Standford <a href="http://cs229.stanford.edu/" target="_blank" rel="noopener">CS299 Machine Learning</a> 的 <a href="http://cs229.stanford.edu/notes/cs229-notes8.pdf" target="_blank" rel="noopener">EM课件</a> ，相比之下李航这本书在 Jensen‘s inequality（琴声不等式：凸优化知识的应用）讲的不够详细，其他都差不多，只是表述上不一样，有兴趣可以综合来看。</p>
+<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><h2 id="9-1-EM算法的引入"><a href="#9-1-EM算法的引入" class="headerlink" title="9.1 EM算法的引入"></a>9.1 EM算法的引入</h2><p>概率模型有时既含有<strong>观测变量（observable variable）</strong> ， 又含有<strong>隐变量（hidden variable）</strong>或<strong>潜在变量（latent variable）</strong> 。</p>
+<p><u> 如果概率模型的变量都是观测变量， 那么给定数据， 可以直接用极大似然估计法或贝叶斯估计法估计模型参数。 但是， 当模型含有隐变量时， 就不能简单地使用这些估计方法。 EM算法就是含有隐变量的概率模型参数的极大似然估计法， 或极大后验概率估计法</u>。 我们仅讨论极大似然估计， 极大后验概率估计与其类似。</p>
+<h3 id="9-1-1-EM算法"><a href="#9-1-1-EM算法" class="headerlink" title="9.1.1 EM算法"></a>9.1.1 EM算法</h3><p><img src="C:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1540625262559.png" alt="1540625262559"></p>
+<p>这里， 随机变量 $y$ 是观测变量， 表示一次试验观测的结果是1或0； 随机变量 $z$ 是隐变量， 表示未观测到的掷硬币 $A$ 的结果； $\theta＝( \pi ,p， q)$ 是模型参数。 这一模型是以上数据的生成模型。 注意， 随机变量 $y$ 的数据可以观测， 随机变量 $z$ 的数据不可观测。<br>$$<br>\begin{align}<br>P(y|\theta) &amp;= \sum\limits_{z}P(y,z|\theta)=\sum\limits_{z}\frac{P(z,\theta)}{P(\theta)}\cdot\frac{P(y,z,\theta)}{P(z, \theta)}=\sum\limits_{z}P(z|\theta)P(y|z,\theta) \\<br>&amp;= P(z=1|\theta)P(y|z=1, \theta) + P(z=0|\theta)P(y|z=0, \theta)\\<br>&amp;= \pi p^y(1-p)^{(1-y)} + (1 - \pi) q^y(1-q)^{(1-y)} \tag{9.1}\\<br>&amp;= \begin{cases} \pi p + (1 - \pi) q, &amp;y=1\\ \pi (1-p) + (1-\pi)(1-q), &amp;y=0\end{cases}<br>\end{align}<br>$$<br>将观测数据表示为 $Y＝(Y_1， Y_2,…,Y_n)^T$， 未观测数据表示为 $Z＝(Z_1,Z_2,…,Z_n)^T$， 则观测数据的似然函数为<br>$$<br>P(Y|\theta) = \sum\limits_{Z}P(Y,Z|\theta)=\sum\limits_{Z}P(Z|\theta)P(Y|Z,\theta) \tag{9.2}<br>$$<br>即：<br>$$<br>P(Y|\theta)= \prod_{j=1}^{n}\left\{\pi p^{y_j}(1-p)^{(1-y_j)} + (1 - \pi) q^{y_j}(1-q)^{(1-y_j)}\right\} \tag{9.3}<br>$$<br>考虑求模型参数 $\theta =(\pi, p, q) $ 的极大似然估计，即：<br>$$<br>\begin{equation}<br>\hat{\theta}=\mathop{\arg\max}_{\theta} \mathrm{log}P(Y|\theta)<br>\end{equation}<br>$$<br><strong>这个问题没有解析解，因为隐变量数据无法获得，只有通过迭代的方法求解</strong>。 EM算法就是可以用于求解这个问题的一种迭代算法。 </p>
+<p>一般地， 用 $Y$ 表示观测随机变量的数据， $Z$ 表示隐随机变量的数据。 $Y$ 和 $Z$ 连在一起称为<strong>完全数据（complete-data） </strong>， 观测数据 $Y$ 又称为<strong>不完全数据（incomplete-data） </strong>。 假设给定观测数据 $Y$， 其概率分布是 $P(Y|\theta)$， 其中是需要估计的模型参数， 那么不完全数据 $Y$ 的似然函数是 $P(Y|\theta)$， 对数似然函数 $L(\theta)＝\mathrm{log}P(Y|\theta)$ ； 假设 $Y$ 和 $Z$ 的联合概率分布是 $P(Y, Z|\theta)$， 那么完全数据的对数似然函数是 $\mathrm{log}P(Y, Z|\theta)$。 </p>
+<h3 id="9-1-2-EM算法的导出"><a href="#9-1-2-EM算法的导出" class="headerlink" title="9.1.2 EM算法的导出"></a>9.1.2 EM算法的导出</h3><p><img src="C:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1540629489022.png" alt="1540629489022"></p>
+<p><img src="C:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1540629535384.png" alt="1540629535384"></p>
+<p><strong>注</strong>：最后一步源自于 $Z$ 所有可能取值的概率和为1<br>$$<br>\mathrm{log}P(Y|\theta^{(i)})=\mathrm{log}P(Y|\theta^{(i)}) \cdot \sum\limits_{Z}P(Z|Y, \theta^{(i)})<br>$$<br><img src="C:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1540629838496.png" alt="1540629838496"><br>$$<br>\begin{align}<br>\theta^{(i+1)} &amp;= \mathop{\arg\max}_{\theta} \left\{ L(\theta^{(i)}) + \sum\limits_{Z}P(Z|Y, \theta^{(i)})\mathrm{log}\frac{P(Y|Z,\theta)P(Z|\theta)}{P(Z|Y,\theta^{(i)})P(Y|\theta^{(i)})}\right\} \\<br>&amp;= \mathop{\arg\max}_{\theta}\left\{ \mathrm{log}P(Y|\theta^{(i)})\sum\limits_{Z}P(Z|Y, \theta^{(i)})  + \sum\limits_{Z}P(Z|Y, \theta^{(i)})\mathrm{log}\frac{P(Y|Z,\theta)P(Z|\theta)}{P(Z|Y,\theta^{(i)})P(Y|\theta^{(i)})} \right\} \\<br>\end{align}<br>$$<br>加号右边，利用对数函数的性质得到：<br>$$<br>\begin{align}<br>&amp;\sum\limits_{Z}P(Z|Y, \theta^{(i)})\mathrm{log}\frac{P(Y|Z,\theta)P(Z|\theta)}{P(Z|Y,\theta^{(i)})P(Y|\theta^{(i)})} \\<br>&amp;=\sum\limits_{Z}P(Z|Y,\theta^{(i)})\left\{\mathrm{log}[P(Y|Z,\theta)P(Z|\theta)] - \mathrm{log}[P(Z|Y,\theta^{(i)})P(Y|\theta^{(i)})]\right\} \\<br>&amp;=\sum\limits_{Z}P(Z|Y,\theta^{(i)})\left\{\mathrm{log}[P(Y|Z,\theta)P(Z|\theta)] - \mathrm{log}P(Z|Y,\theta^{(i)})-\mathrm{log}P(Y|\theta^{(i)})\right\} \\<br>&amp;= \sum\limits_{Z}P(Z|Y,\theta^{(i)})\mathrm{log}[P(Y|Z,\theta)P(Z|\theta)] - \sum\limits_{Z}P(Z|Y,\theta^{(i)})\mathrm{log}P(Z|Y,\theta^{(i)})-\sum\limits_{Z}P(Z|Y,\theta^{(i)})\mathrm{log}P(Y|\theta^{(i)}) \\<br>\end{align}<br>$$<br>代入上式可得：<br>$$<br>\begin{align}<br>\theta^{(i+1)} &amp;= \mathop{\arg\max}_{\theta} \left\{ \sum\limits_{Z}P(Z|Y, \theta^{(i)})\mathrm{log}[P(Y|Z,\theta)P(Z|\theta)]-\sum\limits_{Z}P(Z|Y,\theta^{(i)})\mathrm{log}P(Z|Y,\theta^{(i)}) \right\} \\<br>\end{align}<br>$$</p>
+<p>由于在迭代求第 $i+1$ 步时，$\theta^{(i)}$ 是已知的，那么由训练数据中可以求得 $P(Z|Y,\theta^{(i)})$ ，所以在 $\theta^{(i)}$ 值确定的情况下，$P(Z|Y,\theta^{(i)})$ 的值也是确定的，那么对上式极大化等价求解对下面式子的极大化<br>$$<br>\begin{align}<br>\theta^{(i+1)} &amp;= \mathop{\arg\max}_{\theta} \left\{ \sum\limits_{Z}P(Z|Y, \theta^{(i)})\mathrm{log}[P(Y|Z,\theta)P(Z|\theta)]\right\} \\<br>&amp;= \mathop{\arg\max}_{\theta} \left\{ \sum\limits_{Z}P(Z|Y, \theta^{(i)})\mathrm{log}P(Y,Z|\theta)\right\}  \\<br>&amp;= \mathop{\arg\max}_{\theta}Q(\theta, \theta^{(i)}) \tag{9.17}<br>\end{align}<br>$$</p>
+<h4 id="Q函数"><a href="#Q函数" class="headerlink" title="Q函数"></a>Q函数</h4><p><img src="C:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1540633799099.png" alt="1540633799099"></p>
+<h4 id="EM算法"><a href="#EM算法" class="headerlink" title="EM算法"></a>EM算法</h4><p><img src="C:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1540633951648.png" alt="1540633951648"></p>
+<p><img src="C:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1540634136349.png" alt="1540634136349"></p>
+<p><img src="C:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1540634346383.png" alt="1540634346383"></p>
+<h4 id="EM算法解释"><a href="#EM算法解释" class="headerlink" title="EM算法解释"></a>EM算法解释</h4><p><img src="C:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1540634609480.png" alt="1540634609480"></p>
+<p><img src="C:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1540634779544.png" alt="1540634779544"></p>
+<h3 id="9-1-3-EM算法在非监督学习中的应用"><a href="#9-1-3-EM算法在非监督学习中的应用" class="headerlink" title="9.1.3 EM算法在非监督学习中的应用"></a>9.1.3 EM算法在非监督学习中的应用</h3><p><img src="C:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1540634917442.png" alt="1540634917442"></p>
+<h2 id="9-2-EM算法的收敛性"><a href="#9-2-EM算法的收敛性" class="headerlink" title="9.2 EM算法的收敛性"></a>9.2 EM算法的收敛性</h2><p>这一部分原书讲的比较详细，不画蛇添足，贴上来。</p>
+<p><img src="C:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1540634901751.png" alt="1540634901751"></p>
+<p><img src="C:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1540635377338.png" alt="1540635377338"></p>
+<p><img src="C:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1540635519121.png" alt="1540635519121"></p>
+<h2 id="三硬币例子"><a href="#三硬币例子" class="headerlink" title="三硬币例子"></a>三硬币例子</h2><p><strong>前文讲到抛硬币的例子，现在重新详细推导一下三硬币这个例子。</strong></p>
+<p><img src="C:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1540635774989.png" alt="1540635774989"></p>
+<p>$j$ 是训练集中的数据编号，实际上书上这里求得是<br>$$<br>\begin{align}<br>P(Z|y_j,\theta^{(i)}) = \cases{P(Z=1|y_j,\theta^{(i)})=\mu_{j}^{(i+1)} \\ P(Z=0|y_j,\theta^{(i)})=1- \mu_{j}^{(i+1)}}<br>\end{align}<br>$$<br>前文已知Q函数：<br>$$<br>Q(\theta, \theta^{(i)})=\sum\limits_{Z}P(Z|Y, \theta^{(i)})\mathrm{log}P(Y,Z|\theta)<br>$$</p>
+<h3 id="第一步求期望"><a href="#第一步求期望" class="headerlink" title="第一步求期望"></a>第一步求期望</h3><p>即求Q函数<br>$$<br>\begin{align}<br>Q(\theta, \theta^{(i)}) &amp;=  \sum\limits_{j=1}^{n}\sum\limits_{Z}P(Z|y_j, \theta^{(i)})\mathrm{log}P(y_j,Z|\theta)\\<br>&amp;= \sum\limits_{j=1}^{n}\left\{ P(Z=1|y_j, \theta^{(i)})\mathrm{log}P(y_j,Z=1|\theta) + P(Z=0|y_j, \theta^{(i)})\mathrm{log}P(y_j,Z=0|\theta) \right\}\\<br>&amp;= \sum\limits_{j=1}^{n}\left\{\mu_{j}^{(i+1)}\mathrm{log}P(y_j,Z=1|\theta) + (1-\mu_{j}^{(i+1)})\mathrm{log}P(y_j,Z=0|\theta) \right\}\\<br>&amp;= \sum\limits_{j=1}^{n}\left\{\mu_{j}^{(i+1)}\log [\pi p^{y_j}(1-p)^{1-y_j}]+(1-\mu_{j}^{(i+1)})\log [(1-\pi )q^{y_j}(1-q)^{1-y_j}]  \right\}\\<br>\end{align}### 第二步极大化Q函数**，$\begin{align}<br>\theta^{(i+1)} =  \mathop{\arg\max}_{\theta}Q(\theta, \theta^{(i)}) = \mathop{\arg\max}_{\theta} \left\{ \sum\limits_{Z}P(Z|Y, \theta^{(i)})\mathrm{log}P(Y,Z|\theta)\right\}<br>\end{align}$ 用微积分求解最大值，先求导数为0点（为了求导方便另对数的底数为e，即认为此处对数函数为自然对数）：<br>$$</p>
+<h3 id="第二步极大化Q函数"><a href="#第二步极大化Q函数" class="headerlink" title="第二步极大化Q函数"></a>第二步极大化Q函数</h3><p>$\begin{align}<br>\theta^{(i+1)} =  \mathop{\arg\max}_{\theta}Q(\theta, \theta^{(i)}) = \mathop{\arg\max}_{\theta} \left\{ \sum\limits_{Z}P(Z|Y, \theta^{(i)})\mathrm{log}P(Y,Z|\theta)\right\}<br>\end{align}$ 用微积分求解最大值，先求导数为0点（为了求导方便另对数的底数为e，即认为此处对数函数为自然对数）：<br>$$<br>\begin{aligned} \frac{\partial Q(\theta,\theta^{(i)})}{\partial \pi}&amp;=\sum_{j=1}^N\{\frac{\mu_{j}^{(i+1)}\ln [\pi p^{y_j}(1-p)^{1-y_j}]+(1-\mu_{j}^{(i+1)})\ln [(1-\pi )q^{y_j}(1-q)^{1-y_j}] }{\partial \pi}\}\\&amp;=\sum_{j=1}^N\{ \mu_{j}^{(i+1)}\frac{p^{y_j}(1-p)^{1-y_j}}{\pi p^{y_j}(1-p)^{1-y_j}}+(1-\mu_{j}^{(i+1)})\frac{-q^{y_j}(1-q)^{1-y_j}}{(1-\pi )q^{y_j}(1-q)^{1-y_j}} \}\\&amp;=\sum_{j=1}^N\{ \frac{\mu_{j}^{(i+1)}-\pi }{\pi (1-\pi)}\}\\&amp;=\frac{(\sum_{j=1}^N\mu_{j}^{(i+1)})-n\pi }{\pi (1-\pi)} \end{aligned}<br>$$</p>
+<p>$$<br>\begin{aligned}<br>\because \quad\frac{\partial Q(\theta,\theta^{(i)})}{\partial \pi}=0 &amp;\implies \pi =\frac 1n\sum_{j=1}^N\mu_{j}^{(i+1)}\\<br>\therefore \quad \pi^{(i+1)}&amp;=\frac 1n\sum_{j=1}^N\mu_{j}^{(i+1)} \end{aligned}<br>$$</p>
+<p>$$<br>\begin{aligned} \frac{\partial Q(\theta,\theta^{(i)})}{\partial p}&amp;=\sum_{j=1}^N\{\frac{\mu_{j}^{(i+1)}\ln [\pi p^{y_j}(1-p)^{1-y_j}]+(1-\mu_{j}^{(i+1)})\ln [(1-\pi )q^{y_j}(1-q)^{1-y_j}] }{\partial p}\}\\&amp;=\sum_{j=1}^N\{\mu_{j}^{(i+1)}\frac{\pi (y_jp^{y_j-1}(1-p)^{1-y_j}+p^{y_j}(-1)(1-y_j)(1-p)^{1-y_j-1})}{\pi p^{y_j}(1-p)^{1-y_j}}+0 \}\\&amp;=\sum_{j=1}^N\{ \frac{\mu_{j}^{(i+1)}(y_j-p) }{p(1-p)}\}\\&amp;=\frac{(\sum_{j=1}^N\mu_{j}^{(i+1)}y_j)-(p\sum_{j=1}^N\mu_{j}^{(i+1)}) }{p(1-p)} \end{aligned}<br>$$</p>
+<p>$$<br>\begin{aligned}<br>\because \quad \frac{\partial Q(\theta,\theta^{(i)})}{\partial p}=0 &amp;\implies p =\frac{\sum_{j=1}^N \mu^{(i+1)}_j y_j}{\sum_{j=1}^N\mu^{(i+1)}_j} \\<br>\therefore \quad p^{(i+1)}&amp;=\frac{\sum_{j=1}^N\mu^{(i+1)}_j y_j}{\sum_{j=1}^N\mu^{(i+1)}_j}  \\<br>q^{(i+1)}&amp;=\frac{\sum_{j=1}^N(1-\mu^{(i+1)}_j)y_j}{\sum_{j=1}^N(1-\mu^{(i+1)}_j)}<br>\end{aligned}<br>$$<br>可以参照书上的结果，一模一样：</p>
+<p><img src="C:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1540658158963.png" alt="1540658158963"></p>
+<p><img src="C:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1540658354291.png" alt="1540658354291"></p>
+<h2 id="9-3-EM算法在高斯混合模型学习中的应用"><a href="#9-3-EM算法在高斯混合模型学习中的应用" class="headerlink" title="9.3 EM算法在高斯混合模型学习中的应用"></a>9.3 EM算法在高斯混合模型学习中的应用</h2><p>EM算法的一个重要应用是高斯混合模型的参数估计。 高斯混合模型应用广泛， 在许多情况下， EM算法是学习高斯混合模型（Gaussian misture model） 的有效方法。 </p>
+<h3 id="9-3-1-高斯混合模型"><a href="#9-3-1-高斯混合模型" class="headerlink" title="9.3.1 高斯混合模型"></a>9.3.1 高斯混合模型</h3><p><img src="C:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1540660313512.png" alt="1540660313512"></p>
+<h3 id="9-3-2-高斯混合模型参数估计的EM算法"><a href="#9-3-2-高斯混合模型参数估计的EM算法" class="headerlink" title="9.3.2 高斯混合模型参数估计的EM算法"></a>9.3.2 高斯混合模型参数估计的EM算法</h3><p><img src="C:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1540660432941.png" alt="1540660432941"></p>
+<p><img src="C:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1540660738386.png" alt="1540660738386"></p>
+<p><img src="C:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1540660826025.png" alt="1540660826025"></p>
+<p><b><span style="color: red">注意：上面的极大化的求混合模型参数迭代公式的过程参考： 大牛<a href="https://www.cnblogs.com/jerrylead/" target="_blank" rel="noopener">JerryLead</a> 的 <a href="https://www.cnblogs.com/jerrylead/archive/2011/04/06/2006936.html" target="_blank" rel="noopener">（EM算法）The EM Algorithm </a></span></b></p>
+<p><img src="C:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1540660851087.png" alt="1540660851087"></p>
+<h3 id="与K-means比较"><a href="#与K-means比较" class="headerlink" title="与K-means比较"></a>与K-means比较</h3><p>相同点：都是可用于聚类的算法；都需要指定K值。</p>
+<p>不同点：GMM可以给出一个样本属于某类的概率是多少。</p>
+<h2 id="9-4-EM算法的推广"><a href="#9-4-EM算法的推广" class="headerlink" title="9.4 EM算法的推广"></a>9.4 EM算法的推广</h2><p>EM算法还可以解释为F函数（F function） 的<strong>极大-极大算法（maximization maximization algorithm）</strong> ， 基于这个解释有若干变形与推广， 如<strong>广义期望极大（generalized expectation maximization，GEM）</strong> 算法。 下面予以介绍。 </p>
+<h3 id="9-4-1-F函数的极大-极大算法"><a href="#9-4-1-F函数的极大-极大算法" class="headerlink" title="9.4.1 F函数的极大-极大算法"></a>9.4.1 F函数的极大-极大算法</h3><p><img src="C:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1540661928677.png" alt="1540661928677"></p>
+<p><b><span style="color:red">此处证明解释不清，需要解释说明，困了，先睡，未完待续。。。。</span></b></p>
 
       
     </div>
@@ -570,7 +545,7 @@ J(\theta) &= \frac{1}{m} \displaystyle \sum_{i=1}^m [-y^{(i)}\log (h_\theta (x^{
   </li>
   <li class="post-copyright-link">
     <strong>Post link:</strong>
-    <a href="https://snaildove.github.io/2018/01/06/06_logistic-regression/" title="06_logistic-regression note6">https://snaildove.github.io/2018/01/06/06_logistic-regression/</a>
+    <a href="https://snaildove.github.io/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/" title="《统计学习方法》第9章 EM/GMM/GEM">https://snaildove.github.io/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice: </strong>
@@ -585,7 +560,9 @@ J(\theta) &= \frac{1}{m} \displaystyle \sum_{i=1}^m [-y^{(i)}\log (h_\theta (x^{
       
         <div class="post-tags">
           
-            <a href="/tags/Machine-Learning-by-Andrew-NG/" rel="tag"><i class="fa fa-tag"></i> Machine Learning by Andrew NG</a>
+            <a href="/tags/Machine-Learning/" rel="tag"><i class="fa fa-tag"></i> Machine Learning</a>
+          
+            <a href="/tags/统计学习方法/" rel="tag"><i class="fa fa-tag"></i> 统计学习方法</a>
           
         </div>
       
@@ -613,8 +590,8 @@ J(\theta) &= \frac{1}{m} \displaystyle \sum_{i=1}^m [-y^{(i)}\log (h_\theta (x^{
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/01/04/04_linear-regression-with-multiple-variables/" rel="next" title="04_linear-regression-with-multiple-variables note4">
-                <i class="fa fa-chevron-left"></i> 04_linear-regression-with-multiple-variables note4
+              <a href="/2018/10/01/8.Booting-Methods_LiHang-Statistical-Learning-Methods/" rel="next" title="《统计学习方法》第8章 提升方法之AdaBoost\BoostingTree\GBDT">
+                <i class="fa fa-chevron-left"></i> 《统计学习方法》第8章 提升方法之AdaBoost\BoostingTree\GBDT
               </a>
             
           </div>
@@ -623,8 +600,8 @@ J(\theta) &= \frac{1}{m} \displaystyle \sum_{i=1}^m [-y^{(i)}\log (h_\theta (x^{
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/01/07/07_regularization/" rel="prev" title="07_regularization note7">
-                07_regularization note7 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/10/01/summary_of_LiHang_Statistical-learning-methods/" rel="prev" title="《统计学习方法总结》">
+                《统计学习方法总结》 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -811,7 +788,7 @@ J(\theta) &= \frac{1}{m} \displaystyle \sum_{i=1}^m [-y^{(i)}\log (h_\theta (x^{
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Note"><span class="nav-text">Note</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Classification"><span class="nav-text">Classification</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hypothesis-Representation"><span class="nav-text">Hypothesis Representation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Decision-Boundary"><span class="nav-text">Decision Boundary</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Cost-Function"><span class="nav-text">Cost Function</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Simplified-Cost-Function-and-Gradient-Descent"><span class="nav-text">Simplified Cost Function and Gradient Descent</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#A-vectorized-implementation"><span class="nav-text">A vectorized implementation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Gradient-Descent"><span class="nav-text">Gradient Descent</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#A-vectorized-implementation-1"><span class="nav-text">A vectorized implementation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Note-1"><span class="nav-text">Note</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Advanced-Optimization"><span class="nav-text">Advanced Optimization</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Example"><span class="nav-text">Example</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Multiclass-Classification-One-vs-all"><span class="nav-text">Multiclass Classification: One-vs-all</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#正文"><span class="nav-text">正文</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#9-1-EM算法的引入"><span class="nav-text">9.1 EM算法的引入</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#9-1-1-EM算法"><span class="nav-text">9.1.1 EM算法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-1-2-EM算法的导出"><span class="nav-text">9.1.2 EM算法的导出</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Q函数"><span class="nav-text">Q函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#EM算法"><span class="nav-text">EM算法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#EM算法解释"><span class="nav-text">EM算法解释</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-1-3-EM算法在非监督学习中的应用"><span class="nav-text">9.1.3 EM算法在非监督学习中的应用</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-2-EM算法的收敛性"><span class="nav-text">9.2 EM算法的收敛性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三硬币例子"><span class="nav-text">三硬币例子</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#第一步求期望"><span class="nav-text">第一步求期望</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第二步极大化Q函数"><span class="nav-text">第二步极大化Q函数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-3-EM算法在高斯混合模型学习中的应用"><span class="nav-text">9.3 EM算法在高斯混合模型学习中的应用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#9-3-1-高斯混合模型"><span class="nav-text">9.3.1 高斯混合模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-3-2-高斯混合模型参数估计的EM算法"><span class="nav-text">9.3.2 高斯混合模型参数估计的EM算法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#与K-means比较"><span class="nav-text">与K-means比较</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-4-EM算法的推广"><span class="nav-text">9.4 EM算法的推广</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#9-4-1-F函数的极大-极大算法"><span class="nav-text">9.4.1 F函数的极大-极大算法</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>

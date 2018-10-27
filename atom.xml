@@ -45,11 +45,11 @@
   </entry>
   
   <entry>
-    <title>《统计学习方法》第8章 提升方法之AdaBoost\BoostingTree\GBDT</title>
-    <link href="https://snaildove.github.io/2018/10/01/8.Booting-Methods_LiHang-Statistical-Learning-Methods/"/>
-    <id>https://snaildove.github.io/2018/10/01/8.Booting-Methods_LiHang-Statistical-Learning-Methods/</id>
+    <title>《统计学习方法总结》</title>
+    <link href="https://snaildove.github.io/2018/10/01/summary_of_LiHang_Statistical-learning-methods/"/>
+    <id>https://snaildove.github.io/2018/10/01/summary_of_LiHang_Statistical-learning-methods/</id>
     <published>2018-09-30T16:00:00.000Z</published>
-    <updated>2018-10-25T16:02:32.688Z</updated>
+    <updated>2018-10-27T03:48:05.209Z</updated>
     
     <summary type="html">
     
@@ -57,7 +57,7 @@
       
         
         
-          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h1 id=&quot;前沿&quot;&gt;&lt;a href=&quot;#前沿&quot; class=&quot;headerlink&quot;
+          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;这是个人学习完&lt;a href=&quot;http://www.hangli-hl.com/index.html&quot; target=&quot;_blank&quot;
         
       
     
@@ -73,11 +73,11 @@
   </entry>
   
   <entry>
-    <title>《统计学习方法总结》</title>
-    <link href="https://snaildove.github.io/2018/10/01/summary_of_LiHang_Statistical-learning-methods/"/>
-    <id>https://snaildove.github.io/2018/10/01/summary_of_LiHang_Statistical-learning-methods/</id>
+    <title>《统计学习方法》第9章 EM/GMM/GEM</title>
+    <link href="https://snaildove.github.io/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/"/>
+    <id>https://snaildove.github.io/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/</id>
     <published>2018-09-30T16:00:00.000Z</published>
-    <updated>2018-10-26T17:04:29.692Z</updated>
+    <updated>2018-10-27T17:46:02.123Z</updated>
     
     <summary type="html">
     
@@ -85,7 +85,35 @@
       
         
         
-          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;这是个人学习完&lt;a href=&quot;http://www.hangli-hl.com/index.html&quot; target=&quot;_blank&quot;
+          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="中文" scheme="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+    
+    
+      <category term="Machine Learning" scheme="https://snaildove.github.io/tags/Machine-Learning/"/>
+    
+      <category term="统计学习方法" scheme="https://snaildove.github.io/tags/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《统计学习方法》第8章 提升方法之AdaBoost\BoostingTree\GBDT</title>
+    <link href="https://snaildove.github.io/2018/10/01/8.Booting-Methods_LiHang-Statistical-Learning-Methods/"/>
+    <id>https://snaildove.github.io/2018/10/01/8.Booting-Methods_LiHang-Statistical-Learning-Methods/</id>
+    <published>2018-09-30T16:00:00.000Z</published>
+    <updated>2018-10-25T16:02:32.688Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h1 id=&quot;前沿&quot;&gt;&lt;a href=&quot;#前沿&quot; class=&quot;headerlink&quot;
         
       
     
@@ -127,11 +155,11 @@
   </entry>
   
   <entry>
-    <title>summary of nlp sequence models</title>
-    <link href="https://snaildove.github.io/2018/06/06/summary_of_nlp-sequence-models/"/>
-    <id>https://snaildove.github.io/2018/06/06/summary_of_nlp-sequence-models/</id>
+    <title>Trigger word</title>
+    <link href="https://snaildove.github.io/2018/06/06/Trigger%20word%20detection%20-%20v1/"/>
+    <id>https://snaildove.github.io/2018/06/06/Trigger word detection - v1/</id>
     <published>2018-06-05T16:00:00.000Z</published>
-    <updated>2018-09-23T10:25:41.950Z</updated>
+    <updated>2018-07-24T17:21:57.412Z</updated>
     
     <summary type="html">
     
@@ -139,7 +167,7 @@
       
         
         
-          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is my
+          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is one
         
       
     
@@ -155,11 +183,11 @@
   </entry>
   
   <entry>
-    <title>Trigger word</title>
-    <link href="https://snaildove.github.io/2018/06/06/Trigger%20word%20detection%20-%20v1/"/>
-    <id>https://snaildove.github.io/2018/06/06/Trigger word detection - v1/</id>
+    <title>summary of nlp sequence models</title>
+    <link href="https://snaildove.github.io/2018/06/06/summary_of_nlp-sequence-models/"/>
+    <id>https://snaildove.github.io/2018/06/06/summary_of_nlp-sequence-models/</id>
     <published>2018-06-05T16:00:00.000Z</published>
-    <updated>2018-07-24T17:21:57.412Z</updated>
+    <updated>2018-09-23T10:25:41.950Z</updated>
     
     <summary type="html">
     
@@ -167,7 +195,7 @@
       
         
         
-          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is one
+          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is my
         
       
     
@@ -323,34 +351,6 @@
   </entry>
   
   <entry>
-    <title>natural language processing word embeddings</title>
-    <link href="https://snaildove.github.io/2018/06/02/02_natural-language-processing-word-embeddings/"/>
-    <id>https://snaildove.github.io/2018/06/02/02_natural-language-processing-word-embeddings/</id>
-    <published>2018-06-01T16:00:00.000Z</published>
-    <updated>2018-07-24T17:23:06.352Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is my
-        
-      
-    
-    </summary>
-    
-      <category term="english" scheme="https://snaildove.github.io/categories/english/"/>
-    
-    
-      <category term="deep learning" scheme="https://snaildove.github.io/tags/deep-learning/"/>
-    
-      <category term="nlp-sequence-models" scheme="https://snaildove.github.io/tags/nlp-sequence-models/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Dinosaurus Island Character level language model final</title>
     <link href="https://snaildove.github.io/2018/06/02/Dinosaurus+Island+--+Character+level+language+model+final+-+v3/"/>
     <id>https://snaildove.github.io/2018/06/02/Dinosaurus+Island+--+Character+level+language+model+final+-+v3/</id>
@@ -392,6 +392,34 @@
         
         
           &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is one
+        
+      
+    
+    </summary>
+    
+      <category term="english" scheme="https://snaildove.github.io/categories/english/"/>
+    
+    
+      <category term="deep learning" scheme="https://snaildove.github.io/tags/deep-learning/"/>
+    
+      <category term="nlp-sequence-models" scheme="https://snaildove.github.io/tags/nlp-sequence-models/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>natural language processing word embeddings</title>
+    <link href="https://snaildove.github.io/2018/06/02/02_natural-language-processing-word-embeddings/"/>
+    <id>https://snaildove.github.io/2018/06/02/02_natural-language-processing-word-embeddings/</id>
+    <published>2018-06-01T16:00:00.000Z</published>
+    <updated>2018-07-24T17:23:06.352Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is my
         
       
     
@@ -491,34 +519,6 @@
   </entry>
   
   <entry>
-    <title>Face Recognition for the Happy House</title>
-    <link href="https://snaildove.github.io/2018/05/04/Face+Recognition+for+the+Happy+House+-+v3/"/>
-    <id>https://snaildove.github.io/2018/05/04/Face+Recognition+for+the+Happy+House+-+v3/</id>
-    <published>2018-05-03T16:00:00.000Z</published>
-    <updated>2018-07-24T17:23:41.876Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;These are
-        
-      
-    
-    </summary>
-    
-      <category term="english" scheme="https://snaildove.github.io/categories/english/"/>
-    
-    
-      <category term="deep learning" scheme="https://snaildove.github.io/tags/deep-learning/"/>
-    
-      <category term="convolutional-neural-networks" scheme="https://snaildove.github.io/tags/convolutional-neural-networks/"/>
-    
-  </entry>
-  
-  <entry>
     <title>summary of convolutional neural networks</title>
     <link href="https://snaildove.github.io/2018/05/04/summary_of_convolutional-neural-networks/"/>
     <id>https://snaildove.github.io/2018/05/04/summary_of_convolutional-neural-networks/</id>
@@ -547,11 +547,11 @@
   </entry>
   
   <entry>
-    <title>Autonomous driving - Car detection</title>
-    <link href="https://snaildove.github.io/2018/05/03/Autonomous+driving+application+-+Car+detection+-+v3/"/>
-    <id>https://snaildove.github.io/2018/05/03/Autonomous+driving+application+-+Car+detection+-+v3/</id>
-    <published>2018-05-02T16:00:00.000Z</published>
-    <updated>2018-07-24T17:23:52.279Z</updated>
+    <title>Face Recognition for the Happy House</title>
+    <link href="https://snaildove.github.io/2018/05/04/Face+Recognition+for+the+Happy+House+-+v3/"/>
+    <id>https://snaildove.github.io/2018/05/04/Face+Recognition+for+the+Happy+House+-+v3/</id>
+    <published>2018-05-03T16:00:00.000Z</published>
+    <updated>2018-07-24T17:23:41.876Z</updated>
     
     <summary type="html">
     

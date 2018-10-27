@@ -98,13 +98,13 @@
 
 
 
-<meta name="description" content="这是个人学习完李航 《统计学习方法》 的总结笔记，时间有限，我会慢慢更新，将以图片注解的方式梳理10主要统计学习方法。那么注意勘误(errata)，首先将引入作者自己的总结，而后，我再对每个具体算法和关联性进行总结，逐渐形成系统性的理解，算法之间的分类，联系，优缺点对比，以及适用场景才是我们学习的重点。 作者的总结 1 适用问题分类问题是从实例的特征向量到类标记的预测问题；标注问题是从观测序列到">
+<meta name="description" content="这是个人学习完李航 《统计学习方法》 的总结笔记，之前是在纸质版书籍上做的笔记，接下来会陆续更新每一章总结，由于时间有限，将以PDF注解的方式梳理10个主要统计学习方法。那么注意勘误(errata)，首先将引入作者自己的总结，而后，我再对每个具体算法和关联性进行总结，逐渐形成系统性的理解，算法之间的分类，联系，优缺点对比，以及适用场景才是我们学习的重点。 总结 1 适用问题分类问题是从实例的特征">
 <meta name="keywords" content="Machine Learning,统计学习方法">
 <meta property="og:type" content="article">
 <meta property="og:title" content="《统计学习方法总结》">
 <meta property="og:url" content="https://snaildove.github.io/2018/10/01/summary_of_LiHang_Statistical-learning-methods/index.html">
 <meta property="og:site_name" content="SnailDove&#39;s blog">
-<meta property="og:description" content="这是个人学习完李航 《统计学习方法》 的总结笔记，时间有限，我会慢慢更新，将以图片注解的方式梳理10主要统计学习方法。那么注意勘误(errata)，首先将引入作者自己的总结，而后，我再对每个具体算法和关联性进行总结，逐渐形成系统性的理解，算法之间的分类，联系，优缺点对比，以及适用场景才是我们学习的重点。 作者的总结 1 适用问题分类问题是从实例的特征向量到类标记的预测问题；标注问题是从观测序列到">
+<meta property="og:description" content="这是个人学习完李航 《统计学习方法》 的总结笔记，之前是在纸质版书籍上做的笔记，接下来会陆续更新每一章总结，由于时间有限，将以PDF注解的方式梳理10个主要统计学习方法。那么注意勘误(errata)，首先将引入作者自己的总结，而后，我再对每个具体算法和关联性进行总结，逐渐形成系统性的理解，算法之间的分类，联系，优缺点对比，以及适用场景才是我们学习的重点。 总结 1 适用问题分类问题是从实例的特征">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/12/1540219365690.png">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/12/1540219464014.png">
@@ -112,10 +112,10 @@
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/12/1540220600579.png">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/12/1540220784790.png">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/12/1540221036831.png">
-<meta property="og:updated_time" content="2018-10-26T17:04:29.692Z">
+<meta property="og:updated_time" content="2018-10-27T03:48:05.209Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="《统计学习方法总结》">
-<meta name="twitter:description" content="这是个人学习完李航 《统计学习方法》 的总结笔记，时间有限，我会慢慢更新，将以图片注解的方式梳理10主要统计学习方法。那么注意勘误(errata)，首先将引入作者自己的总结，而后，我再对每个具体算法和关联性进行总结，逐渐形成系统性的理解，算法之间的分类，联系，优缺点对比，以及适用场景才是我们学习的重点。 作者的总结 1 适用问题分类问题是从实例的特征向量到类标记的预测问题；标注问题是从观测序列到">
+<meta name="twitter:description" content="这是个人学习完李航 《统计学习方法》 的总结笔记，之前是在纸质版书籍上做的笔记，接下来会陆续更新每一章总结，由于时间有限，将以PDF注解的方式梳理10个主要统计学习方法。那么注意勘误(errata)，首先将引入作者自己的总结，而后，我再对每个具体算法和关联性进行总结，逐渐形成系统性的理解，算法之间的分类，联系，优缺点对比，以及适用场景才是我们学习的重点。 总结 1 适用问题分类问题是从实例的特征">
 <meta name="twitter:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/12/1540219365690.png">
 
 
@@ -427,7 +427,7 @@
                   <span class="post-meta-item-text">Words count in article</span>
                 
                 <span title="Words count in article">
-                  1,833
+                  1,853
                 </span>
               
 
@@ -464,8 +464,8 @@
       
 
       
-        <script src="\assets\js\APlayer.min.js"> </script><p>这是个人学习完<a href="http://www.hangli-hl.com/index.html" target="_blank" rel="noopener">李航</a> <a href="https://book.douban.com/subject/10590856/" target="_blank" rel="noopener">《统计学习方法》</a> 的总结笔记，时间有限，我会慢慢更新，将以图片注解的方式梳理10主要统计学习方法。那么注意<a href="http://www.hangli-hl.com/uploads/3/4/4/6/34465961/errata.pdf" target="_blank" rel="noopener">勘误(errata)</a>，首先将引入作者自己的总结，而后，我再对每个具体算法和关联性进行总结，<strong>逐渐形成系统性的理解，算法之间的分类，联系，优缺点对比，以及适用场景才是我们学习的重点</strong>。</p>
-<h2 id="作者的总结"><a href="#作者的总结" class="headerlink" title="作者的总结"></a>作者的总结</h2><p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/12/1540219365690.png" alt="1540219365690"></p>
+        <script src="\assets\js\APlayer.min.js"> </script><p>这是个人学习完<a href="http://www.hangli-hl.com/index.html" target="_blank" rel="noopener">李航</a> <a href="https://book.douban.com/subject/10590856/" target="_blank" rel="noopener">《统计学习方法》</a> 的总结笔记，之前是在纸质版书籍上做的笔记，接下来会陆续更新每一章总结，由于时间有限，将以PDF注解的方式梳理10个主要统计学习方法。那么注意<a href="http://www.hangli-hl.com/uploads/3/4/4/6/34465961/errata.pdf" target="_blank" rel="noopener">勘误(errata)</a>，首先将引入作者自己的总结，而后，我再对每个具体算法和关联性进行总结，<strong>逐渐形成系统性的理解，算法之间的分类，联系，优缺点对比，以及适用场景才是我们学习的重点</strong>。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/12/1540219365690.png" alt="1540219365690"></p>
 <h3 id="1-适用问题"><a href="#1-适用问题" class="headerlink" title="1 适用问题"></a>1 适用问题</h3><p>分类问题是从实例的特征向量到类标记的预测问题；标注问题是从观测序列到标记序列(或状态序列)的预测问题。可以认为分类问题是标注问题的特殊情况。</p>
 <p>分类问题中可能的预测结果是二类或多类；而标注问题中可能的预测结果是所有的标记序列，其数目是指数级的。</p>
 <p>感知机、k近邻法、朴素贝叶斯法、决策树是简单的分类方法，具有模型直观、方法简单、实现容易等特点；</p>
@@ -498,7 +498,7 @@
 <p>提升方法利用学习的模型是<strong>加法模型</strong>、损失函数是指数损失函数的特点，启发式地从前向后逐步学习模型，以达到逼近优化目标函数的目的。</p>
 <p>EM算法是一种迭代的求解<strong>含隐变量概率模型参数</strong>的方法，它的收敛性可以保证，但是不能保证收敛到全局最优。</p>
 <p>支持向量机学习、逻辑斯谛回归与最大熵模型学习、条件随机场学习是<strong>凸优化问题</strong>，全局最优解保证存在。而其他学习问题则不是凸优化问题。</p>
-<h2 id="个人总结"><a href="#个人总结" class="headerlink" title="个人总结"></a>个人总结</h2><p>数学基础不再重复，请参考我的数学笔记<a href="https://snaildove.github.io/2017/12/28/summary_of_Linear-Algebra/">线性代数总结</a> 和 MIT的概率论教材 <a href="https://book.douban.com/subject/26694188/" target="_blank" rel="noopener">《introduction to probability》</a> 和 <a href="">凸优化</a></p>
+<h2 id="分章节总结"><a href="#分章节总结" class="headerlink" title="分章节总结"></a>分章节总结</h2><p>数学基础不再重复，请参考我的数学笔记<a href="https://snaildove.github.io/2017/12/28/summary_of_Linear-Algebra/">线性代数总结</a> 和 MIT的概率论教材 <a href="https://book.douban.com/subject/26694188/" target="_blank" rel="noopener">《introduction to probability》</a> 和 <a href="">凸优化</a></p>
 <ol>
 <li><a href="https://snaildove.github.io/2018/10/01/8.Booting-Methods_LiHang-Statistical-Learning-Methods/">第8章 提升方法之AdaBoost\BoostingTree\GBDT</a></li>
 <li>MaxEnt</li>
@@ -573,8 +573,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/06/28/summary_of_learning_of_Deep_Learning_Specializatio_on_Coursera/" rel="next" title="summary of learning Deep Learning Specialization">
-                <i class="fa fa-chevron-left"></i> summary of learning Deep Learning Specialization
+              <a href="/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/" rel="next" title="《统计学习方法》第9章 EM/GMM/GEM">
+                <i class="fa fa-chevron-left"></i> 《统计学习方法》第9章 EM/GMM/GEM
               </a>
             
           </div>
@@ -583,8 +583,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/10/01/8.Booting-Methods_LiHang-Statistical-Learning-Methods/" rel="prev" title="《统计学习方法》第8章 提升方法之AdaBoost\BoostingTree\GBDT">
-                《统计学习方法》第8章 提升方法之AdaBoost\BoostingTree\GBDT <i class="fa fa-chevron-right"></i>
+              <a href="/2018/10/01/4.Naive-Bayes_LiHang-Statistical-Learning-Methods/" rel="prev" title="《统计学习方法》第4章 NaiveBayes">
+                《统计学习方法》第4章 NaiveBayes <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -671,7 +671,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">101</span>
+                  <span class="site-state-item-count">102</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -705,7 +705,7 @@
 				<h4 class="widget-title">Tag Cloud</h4>
 					<div id="myCanvasContainer" class="widget tagcloud">
 					<canvas width="250" height="250" id="resCanvas" style="width=100%">
-						<ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Basic-Algorithm/">Basic Algorithm</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Calculus-and-Differential/">Calculus and Differential</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Data-Structure/">Data Structure</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Improving-Deep-Neural-Networks/">Improving Deep Neural Networks</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Information-Theory/">Information Theory</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Latex/">Latex</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning/">Machine Learning</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning-by-Andrew-NG/">Machine Learning by Andrew NG</a><span class="tag-list-count">19</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python-Data-Science-Cookbook/">Python Data Science Cookbook</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Structuring-Machine-Learning-Projects/">Structuring Machine Learning Projects</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/convolutional-neural-networks/">convolutional-neural-networks</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/deep-learning/">deep learning</a><span class="tag-list-count">41</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/english/">english</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/">java</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linear-algebra/">linear_algebra</a><span class="tag-list-count">13</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/neural-networks-deep-learning/">neural-networks-deep-learning</a><span class="tag-list-count">8</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nlp-sequence-models/">nlp-sequence-models</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/probability/">probability</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/统计学习方法/">统计学习方法</a><span class="tag-list-count">3</span></li></ul>
+						<ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Basic-Algorithm/">Basic Algorithm</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Calculus-and-Differential/">Calculus and Differential</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Data-Structure/">Data Structure</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Improving-Deep-Neural-Networks/">Improving Deep Neural Networks</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Information-Theory/">Information Theory</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Latex/">Latex</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning/">Machine Learning</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning-by-Andrew-NG/">Machine Learning by Andrew NG</a><span class="tag-list-count">19</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python-Data-Science-Cookbook/">Python Data Science Cookbook</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Structuring-Machine-Learning-Projects/">Structuring Machine Learning Projects</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/convolutional-neural-networks/">convolutional-neural-networks</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/deep-learning/">deep learning</a><span class="tag-list-count">41</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/english/">english</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/">java</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linear-algebra/">linear_algebra</a><span class="tag-list-count">13</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/neural-networks-deep-learning/">neural-networks-deep-learning</a><span class="tag-list-count">8</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nlp-sequence-models/">nlp-sequence-models</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/probability/">probability</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/统计学习方法/">统计学习方法</a><span class="tag-list-count">4</span></li></ul>
 					</canvas>
 				</div>
 			</div>
@@ -771,7 +771,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#作者的总结"><span class="nav-text">作者的总结</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-适用问题"><span class="nav-text">1 适用问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-模型"><span class="nav-text">2 模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-学习策略"><span class="nav-text">3  学习策略</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-学习算法"><span class="nav-text">4 学习算法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#个人总结"><span class="nav-text">个人总结</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-text">总结</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-适用问题"><span class="nav-text">1 适用问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-模型"><span class="nav-text">2 模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-学习策略"><span class="nav-text">3  学习策略</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-学习算法"><span class="nav-text">4 学习算法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分章节总结"><span class="nav-text">分章节总结</span></a></li></ol></div>
             
 
           </div>
@@ -804,7 +804,7 @@
     
       <span class="post-meta-item-text">Site words total count</span>
     
-    <span title="Site words total count">543.2k</span>
+    <span title="Site words total count">545.8k</span>
   
 </div>
 
