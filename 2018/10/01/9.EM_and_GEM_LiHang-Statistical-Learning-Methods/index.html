@@ -131,10 +131,10 @@
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/9-EM/1540661928677.png">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/9-EM/1540718325352.png">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/9-EM/1540719981294.png">
-<meta property="og:image" content="c:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1540720314102.png">
+<meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/9-EM/1540720314102.png">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/9-EM/1540720724130.png">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/9-EM/1540720890464.png">
-<meta property="og:updated_time" content="2018-10-28T10:38:53.681Z">
+<meta property="og:updated_time" content="2018-10-28T10:50:46.881Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="《统计学习方法》第9章 EM&#x2F;GMM&#x2F;F-MM&#x2F;GEM">
 <meta name="twitter:description" content="前言EM（期望最大）算法有很多的应用，最广泛的就是混合高斯模型、聚类、HMM等等，本质上就是一种优化算法，不断迭代，获得优值，与梯度下降、牛顿法、共轭梯度法都起到同一类的作用。 本文是对李航《统计学习方法》的第9章复习总结，主要内容如下  EM（期望最大）算法证明有跳跃性的地方全部事无巨细地写出来，  清晰地梳理网上很多人觉得没看明白的三硬币例子，将会把这个例子跟公式一一对应起来  GMM（高斯">
@@ -551,7 +551,7 @@
 <p>由公式 $(9.33)$ 和 $(9.34)$ :<br>$$<br>F(\tilde{P}, \theta)=E_{\tilde{p}}[\log P(Y,Z|\theta)] + H(\tilde{P}) \\<br>\tilde{P}_{\theta}(Z) = P(Z|Y,\theta)<br>$$<br>得到：<br>$$<br>\begin{align}<br>F(\tilde{P}, \theta)&amp;=\sum\limits_{Z}{\tilde{P}_{\theta}(Z)}\log P(Y,Z|\theta) - \sum\limits_{Z}{\tilde{P}_{\theta}(Z)}\log \tilde{P}_{\theta}(Z) \\<br>&amp;=\sum\limits_{Z} P(Z|Y,\theta)\log P(Y,Z|\theta) - \sum\limits_{Z}P(Z|Y,\theta)\log P(Z|Y,\theta) \\<br>&amp;=\sum\limits_{Z}P(Z|Y,\theta)[\log P(Y,Z|\theta) - \log P(Z|Y,\theta)] \\<br>&amp;=\sum\limits_{Z}P(Z|Y,\theta)\log\frac{P(Y,Z|\theta)}{P(Z|Y,\theta)}\\<br>&amp;=\sum\limits_{Z}P(Z|Y,\theta)\log\left\{\frac{P(Y,Z,\theta)}{p(\theta)}\frac{P(Y,\theta)}{P(Y,Z,\theta)}\right\}\\<br>&amp;= \sum\limits_{Z}P(Z|Y,\theta)\log P(Y|\theta) \\<br>&amp;= \log P(Y|\theta) \\<br> \end{align}<br>$$<br><b><font color="red">引理9.2证明完毕</font></b></p>
 <hr>
 <p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/9-EM/1540719981294.png" alt="1540719981294"></p>
-<p><img src="C:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1540720314102.png" alt="1540720314102"></p>
+<p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/9-EM/1540720314102.png" alt="1540720314102"></p>
 <h3 id="9-4-2-GEM算法"><a href="#9-4-2-GEM算法" class="headerlink" title="9.4.2 GEM算法"></a>9.4.2 GEM算法</h3><p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/9-EM/1540720724130.png" alt="1540720724130"></p>
 <h2 id="本章概要"><a href="#本章概要" class="headerlink" title="本章概要"></a>本章概要</h2><p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/9-EM/1540720890464.png" alt="1540720890464"></p>
 <h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><ol>
