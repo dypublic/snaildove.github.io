@@ -325,7 +325,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://snaildove.github.io/2015/04/24/perception_learning_algorithm/">
+    <link itemprop="mainEntityOfPage" href="https://snaildove.github.io/2018/10/01/4.Naive-Bayes_LiHang-Statistical-Learning-Methods/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="SnailDove">
@@ -344,15 +344,11 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2015/04/24/perception_learning_algorithm/" itemprop="url">Perception Learning Algorithm</a></h1>
+                <a class="post-title-link" href="/2018/10/01/4.Naive-Bayes_LiHang-Statistical-Learning-Methods/" itemprop="url">《统计学习方法》第4章 NaiveBayes</a></h1>
         
 
         <div class="post-meta">
 		  
-            <i class="fa fa-thumb-tack"></i>
-            <font color=7D26CD>sticky</font>
-            <span class="post-meta-divider">|</span>
-          
           <span class="post-time">
             
               <span class="post-meta-item-icon">
@@ -361,8 +357,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2015-04-24T20:16:00+08:00">
-                2015-04-24
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-10-01T00:00:00+08:00">
+                2018-10-01
               </time>
             
 
@@ -415,7 +411,7 @@
                   <span class="post-meta-item-text">Words count in article</span>
                 
                 <span title="Words count in article">
-                  1,329
+                  156
                 </span>
               
 
@@ -431,7 +427,7 @@
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
                 <span title="Reading time">
-                  6
+                  1
                 </span>
               
             </div>
@@ -454,12 +450,28 @@
       
         
           
-           PLA(Perception Learning Algorithm) 适用于二维及高维的线性可划分问题。问题的答案只有同意或者不同意。
-例子银行可以根据顾客的个人信息来判断是否给顾客发放信用卡。将顾客抽象为一个向量$X$，包括姓名、年龄、年收入、负债数等。同时设定各个属性所占的权重向量为$W$，对于正相关的属性设置相对较高的权重，如年收入，对于负相关的属性设置较低的权重，如负债数。$y$表示是否
-          ...
+           前言写本文章主要目的是复习（毕竟之前看纸质版做的笔记）， 对于证明比较跳跃和勘误的地方我都做了注解，以便初学者和以后复习地时候快速阅读理解不会卡住。
+朴素贝叶斯法
+4.1 朴素贝叶斯法的学习与分类4.1.1 基本方法
+
+4.1.2 后验概率最大化的含义
+
+4.2 朴素贝叶斯法的参数估计4.2.1 极大似然估计
+4.2.2 学习与分类算法
+例子
+
+4.2.3 贝叶斯估计
+
+本章概要
+
+习题
+
+
+
+          
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2015/04/24/perception_learning_algorithm/#more" rel="contents">
+            <a class="btn" href="/2018/10/01/4.Naive-Bayes_LiHang-Statistical-Learning-Methods/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -872,6 +884,187 @@ Neural Machine TranslationWelcome to
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://snaildove.github.io/2018/06/03/Operations+on+word+vectors+-+v2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="SnailDove">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SnailDove's blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/06/03/Operations+on+word+vectors+-+v2/" itemprop="url">Operations on word vectors</a></h1>
+        
+
+        <div class="post-meta">
+		  
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-06-03T00:00:00+08:00">
+                2018-06-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/english/" itemprop="url" rel="index">
+                    <span itemprop="name">english</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article</span>
+                
+                <span title="Words count in article">
+                  3,341
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">
+                  21
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+           NoteThis is one of my personal programming assignments after studying the course nlp sequence models at the 2nd week and the copyright belongs to deeplearning.ai.
+Operations on word vectorsWelcome to
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/06/03/Operations+on+word+vectors+-+v2/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://snaildove.github.io/2018/06/03/Emojify+-+v2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1003,187 +1196,6 @@ Emojify!Welcome to the second assign
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/06/03/Emojify+-+v2/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://snaildove.github.io/2018/06/03/03_sequence-models-attention-mechanism/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="SnailDove">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="SnailDove's blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/06/03/03_sequence-models-attention-mechanism/" itemprop="url">sequence models attention mechanism</a></h1>
-        
-
-        <div class="post-meta">
-		  
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-06-03T00:00:00+08:00">
-                2018-06-03
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/english/" itemprop="url" rel="index">
-                    <span itemprop="name">english</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Words count in article</span>
-                
-                <span title="Words count in article">
-                  15,715
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Reading time &asymp;</span>
-                
-                <span title="Reading time">
-                  98
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-           NoteThis is my personal lecture note after studying the course nlp sequence models at the 3rd week and the copyright belongs to deeplearning.ai.## 01_various-sequence-to-sequence-architectures
-01_bas
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/06/03/03_sequence-models-attention-mechanism/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1398,7 +1410,7 @@ Emojify!Welcome to the second assign
     
       <span class="post-meta-item-text">Site words total count</span>
     
-    <span title="Site words total count">546.5k</span>
+    <span title="Site words total count">546.7k</span>
   
 </div>
 
