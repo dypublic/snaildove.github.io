@@ -77,7 +77,7 @@
     <link href="https://snaildove.github.io/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/"/>
     <id>https://snaildove.github.io/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/</id>
     <published>2018-09-30T16:00:00.000Z</published>
-    <updated>2018-10-29T04:38:19.967Z</updated>
+    <updated>2018-10-29T05:16:14.738Z</updated>
     
     <summary type="html">
     
@@ -463,34 +463,6 @@
   </entry>
   
   <entry>
-    <title>summary of convolutional neural networks</title>
-    <link href="https://snaildove.github.io/2018/05/04/summary_of_convolutional-neural-networks/"/>
-    <id>https://snaildove.github.io/2018/05/04/summary_of_convolutional-neural-networks/</id>
-    <published>2018-05-03T16:00:00.000Z</published>
-    <updated>2018-07-25T14:05:29.151Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is my
-        
-      
-    
-    </summary>
-    
-      <category term="english" scheme="https://snaildove.github.io/categories/english/"/>
-    
-    
-      <category term="deep learning" scheme="https://snaildove.github.io/tags/deep-learning/"/>
-    
-      <category term="convolutional-neural-networks" scheme="https://snaildove.github.io/tags/convolutional-neural-networks/"/>
-    
-  </entry>
-  
-  <entry>
     <title>04_special-applications-face-recognition-neural-style-transfer</title>
     <link href="https://snaildove.github.io/2018/05/04/04_special-applications-face-recognition-neural-style-transfer/"/>
     <id>https://snaildove.github.io/2018/05/04/04_special-applications-face-recognition-neural-style-transfer/</id>
@@ -560,6 +532,34 @@
         
         
           &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;These are
+        
+      
+    
+    </summary>
+    
+      <category term="english" scheme="https://snaildove.github.io/categories/english/"/>
+    
+    
+      <category term="deep learning" scheme="https://snaildove.github.io/tags/deep-learning/"/>
+    
+      <category term="convolutional-neural-networks" scheme="https://snaildove.github.io/tags/convolutional-neural-networks/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>summary of convolutional neural networks</title>
+    <link href="https://snaildove.github.io/2018/05/04/summary_of_convolutional-neural-networks/"/>
+    <id>https://snaildove.github.io/2018/05/04/summary_of_convolutional-neural-networks/</id>
+    <published>2018-05-03T16:00:00.000Z</published>
+    <updated>2018-07-25T14:05:29.151Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is my
         
       
     
