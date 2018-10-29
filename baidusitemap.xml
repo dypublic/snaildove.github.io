@@ -4,14 +4,16 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2017/08/03/singular_values_decomposition/</loc>
-    <lastmod>2018-10-29T06:15:03.192Z</lastmod>
+    <loc>https://snaildove.github.io/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/</loc>
+    <lastmod>2018-10-29T08:40:44.377Z</lastmod>
     <data>
         <display>
-        <title>Tsinghua linear-algebra-2 3rd-lecture Singular-Values-Decomposition</title>
-        <pubTime>2017-08-03T12:16:00.000Z</pubTime>
+        <title>《统计学习方法》第9章 EM/GMM/F-MM/GEM</title>
+        <pubTime>2018-09-30T16:00:00.000Z</pubTime>
         
-        <tag>linear_algebra</tag>
+        <tag>Machine Learning</tag>
+         
+        <tag>统计学习方法</tag>
          
          
            
@@ -24,16 +26,14 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/</loc>
-    <lastmod>2018-10-29T05:16:14.738Z</lastmod>
+    <loc>https://snaildove.github.io/2017/08/03/singular_values_decomposition/</loc>
+    <lastmod>2018-10-29T06:15:22.032Z</lastmod>
     <data>
         <display>
-        <title>《统计学习方法》第9章 EM/GMM/F-MM/GEM</title>
-        <pubTime>2018-09-30T16:00:00.000Z</pubTime>
+        <title>Tsinghua linear-algebra-2 3rd-lecture Singular-Values-Decomposition</title>
+        <pubTime>2017-08-03T12:16:00.000Z</pubTime>
         
-        <tag>Machine Learning</tag>
-         
-        <tag>统计学习方法</tag>
+        <tag>linear_algebra</tag>
          
          
            
