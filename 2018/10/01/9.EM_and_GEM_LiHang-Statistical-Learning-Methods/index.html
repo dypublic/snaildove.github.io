@@ -98,13 +98,13 @@
 
 
 
-<meta name="description" content="前言EM（期望最大）算法有很多的应用，最广泛的就是混合高斯模型、聚类、HMM等等，本质上就是一种优化算法，不断迭代，获得优值，与梯度下降、牛顿法、共轭梯度法都起到同一类的作用。 本文是对李航《统计学习方法》的第9章复习总结，主要内容如下  EM（期望最大）算法证明有跳跃性的地方全部事无巨细地写出来，  清晰地梳理网上很多人觉得没看明白的三硬币例子，将会把这个例子跟公式一一对应起来  GMM（高斯">
+<meta name="description" content="前言EM（期望最大）算法有很多的应用，最广泛的就是混合高斯模型、聚类、HMM等等，本质上就是一种优化算法，不断迭代，获得优值，与梯度下降、牛顿法、共轭梯度法都起到同一类的作用。 本文是对李航《统计学习方法》的第9章复习总结，主要内容如下  EM（期望最大）算法证明有跳跃性的地方全部事无巨细地写出来，  在 三硬币例子解析 这一节将会把这个例子跟公式一一对应起来  GMM（高斯混合模型）迭代公式证">
 <meta name="keywords" content="Machine Learning,统计学习方法">
 <meta property="og:type" content="article">
 <meta property="og:title" content="《统计学习方法》第9章 EM&#x2F;GMM&#x2F;F-MM&#x2F;GEM">
 <meta property="og:url" content="https://snaildove.github.io/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/index.html">
 <meta property="og:site_name" content="SnailDove&#39;s blog">
-<meta property="og:description" content="前言EM（期望最大）算法有很多的应用，最广泛的就是混合高斯模型、聚类、HMM等等，本质上就是一种优化算法，不断迭代，获得优值，与梯度下降、牛顿法、共轭梯度法都起到同一类的作用。 本文是对李航《统计学习方法》的第9章复习总结，主要内容如下  EM（期望最大）算法证明有跳跃性的地方全部事无巨细地写出来，  清晰地梳理网上很多人觉得没看明白的三硬币例子，将会把这个例子跟公式一一对应起来  GMM（高斯">
+<meta property="og:description" content="前言EM（期望最大）算法有很多的应用，最广泛的就是混合高斯模型、聚类、HMM等等，本质上就是一种优化算法，不断迭代，获得优值，与梯度下降、牛顿法、共轭梯度法都起到同一类的作用。 本文是对李航《统计学习方法》的第9章复习总结，主要内容如下  EM（期望最大）算法证明有跳跃性的地方全部事无巨细地写出来，  在 三硬币例子解析 这一节将会把这个例子跟公式一一对应起来  GMM（高斯混合模型）迭代公式证">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/9-EM/1540625262559.png">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/9-EM/1540629489022.png">
@@ -134,10 +134,10 @@
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/9-EM/1540720314102.png">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/9-EM/1540720724130.png">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/9-EM/1540720890464.png">
-<meta property="og:updated_time" content="2018-10-29T04:30:27.949Z">
+<meta property="og:updated_time" content="2018-10-29T04:38:19.967Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="《统计学习方法》第9章 EM&#x2F;GMM&#x2F;F-MM&#x2F;GEM">
-<meta name="twitter:description" content="前言EM（期望最大）算法有很多的应用，最广泛的就是混合高斯模型、聚类、HMM等等，本质上就是一种优化算法，不断迭代，获得优值，与梯度下降、牛顿法、共轭梯度法都起到同一类的作用。 本文是对李航《统计学习方法》的第9章复习总结，主要内容如下  EM（期望最大）算法证明有跳跃性的地方全部事无巨细地写出来，  清晰地梳理网上很多人觉得没看明白的三硬币例子，将会把这个例子跟公式一一对应起来  GMM（高斯">
+<meta name="twitter:description" content="前言EM（期望最大）算法有很多的应用，最广泛的就是混合高斯模型、聚类、HMM等等，本质上就是一种优化算法，不断迭代，获得优值，与梯度下降、牛顿法、共轭梯度法都起到同一类的作用。 本文是对李航《统计学习方法》的第9章复习总结，主要内容如下  EM（期望最大）算法证明有跳跃性的地方全部事无巨细地写出来，  在 三硬币例子解析 这一节将会把这个例子跟公式一一对应起来  GMM（高斯混合模型）迭代公式证">
 <meta name="twitter:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/9-EM/1540625262559.png">
 
 
@@ -449,7 +449,7 @@
                   <span class="post-meta-item-text">Words count in article</span>
                 
                 <span title="Words count in article">
-                  3,490
+                  3,479
                 </span>
               
 
@@ -491,7 +491,7 @@
 <ol>
 <li><p><strong>EM（期望最大）算法证明有跳跃性的地方全部事无巨细地写出来，</strong></p>
 </li>
-<li><p><strong>清晰地梳理网上很多人觉得没看明白的三硬币例子，将会把这个例子跟公式一一对应起来</strong></p>
+<li><p><strong>在 <a href="#三硬币例子解析">三硬币例子解析</a> 这一节将会把这个例子跟公式一一对应起来</strong></p>
 </li>
 <li><p><strong>GMM（高斯混合模型）迭代公式证明</strong></p>
 </li>
@@ -546,15 +546,11 @@
 <h2 id="9-4-EM算法的推广"><a href="#9-4-EM算法的推广" class="headerlink" title="9.4 EM算法的推广"></a>9.4 EM算法的推广</h2><p>EM算法还可以解释为F函数（F function） 的<strong>极大-极大算法（maximization maximization algorithm）</strong> ， 基于这个解释有若干变形与推广， 如<strong>广义期望极大（generalized expectation maximization，GEM）</strong> 算法。</p>
 <p> <b><font color="red" bold="true">注：原文引理(9.1)(9.2)的证明有坑需要注意，先看原文，后面列出详细过程</font></b></p>
 <h3 id="9-4-1-F函数的极大-极大算法"><a href="#9-4-1-F函数的极大-极大算法" class="headerlink" title="9.4.1 F函数的极大-极大算法"></a>9.4.1 F函数的极大-极大算法</h3><p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/9-EM/1540661928677.png" alt="1540661928677"></p>
-<hr>
 <p>熵这块，不清楚的可以回顾一下我的另一篇总结：<a href="/2018/03/28/Information_Theory/">《机器学习中的信息论基础》</a> 。</p>
 <p><b><span style="color:red">引理9.1需要更详细说明：</span></b><br>$$<br>L=E_{\tilde{p}}\log P(Y,Z|\theta) - E_{\tilde{p}}\log \tilde{P}(Z) + \lambda\left\{1-\sum\limits_{Z}\tilde{P}(Z)\right\}<br>$$<br><strong>证明过程思路：拉格朗日求有约束的极大值</strong>。需要注意，由<strong>累加号和均值</strong>可以看出这里的 $Z$  是指 $Z_i, i$ 这里是 $Z$ 的离散值的标号 ，因此需要<strong>重写公式 (9.35) </strong>比较清楚：<br>$$<br>L=\sum\limits_{Z_i}{\tilde{P}(Z_i)}\log P(Y,Z_i|\theta) - \sum\limits_{Z_i}{\tilde{P}(Z_i)}\log \tilde{P}(Z_i)+\lambda\left\{1-\sum\limits_{Z_i}\tilde{P}(Z_i)\right\}<br>$$<br>所以这里其实是 $L$ 关于 $P(Z_i)$的求导（这里作者求导的时候把对数函数默认当做自然对数）：<br>$$<br>\begin{align}<br>&amp;\frac{\partial{L}}{\partial{\tilde{P}(Z_i)}}=\log P(Y,Z_i|\theta)-\log \tilde{P}(Z_i)-1-\lambda \\<br>&amp;\because\quad\frac{\partial{L}}{\partial{\tilde{P}(Z_i)}}=0\\ &amp;\therefore\quad \lambda=\log P(Y,Z_i|\theta)-\log \tilde{P}(Z_i)-1<br>\end{align}<br>$$<br>上式两端同取对数：<br>$$<br>\begin{align}<br>\lambda+1&amp;=\log P(Y,Z_i|\theta)-\log \tilde{P}(Z_i) \\<br> &amp;\Rightarrow e^{\lambda+1}=\frac{P(Y,Z_i|\theta)}{\tilde{P}(Z_i)}  \\<br>&amp;\Rightarrow\tilde{P}(Z_i)=\frac{P(Y,Z_i|\theta)}{e^{\lambda+1}} \tag{9-1}<br>\end{align}<br>$$<br>由离散变量的概率和为1，得到：<br>$$<br>\begin{align}<br>\sum\limits_{Z_i}e^{\lambda+1} &amp;= \frac{\sum\limits_{Z_i}P(Y,Z_i|\theta)}{\sum\limits_{Z_i}\tilde{P}(Z_i)} \Rightarrow\\<br>e^{\lambda+1} &amp;= P(Y|\theta) \tag{9-2}<br>\end{align}<br>$$<br>将 (9-2) 代入 (9-1)​ 式，得到<br>$$<br>\begin{align}<br>\tilde{P}(Z_i)&amp;=\frac{P(Y,Z_i|\theta)}{P(Y|\theta)} \\<br>&amp;=\frac{P(Y,Z_i,\theta)}{p(\theta)}\frac{P(\theta)}{P(Y,\theta)} \\<br>&amp;= P(Z_i|Y,\theta)<br>\end{align}<br>$$<br>这里前提条件是 $\theta$ 是固定情况下的推导过程，所以原文给上式标记出了 $\theta$ ，又因为每个 $Z_i$ 都符合这个式子，那么可重写上式：<br>$$<br>\tilde{P}_{\theta}(Z) = P(Z|Y,\theta)<br>$$<br><b><font color="red">这样引理9.1证明完毕。</font></b></p>
-<hr>
 <p> <img src="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/9-EM/1540718325352.png" alt="1540718325352"></p>
-<hr>
 <p><b><font color="red">引理9.2如下</font></b></p>
 <p>由公式 $(9.33)$ 和 $(9.34)$ :<br>$$<br>F(\tilde{P}, \theta)=E_{\tilde{p}}[\log P(Y,Z|\theta)] + H(\tilde{P}) \\<br>\tilde{P}_{\theta}(Z) = P(Z|Y,\theta)<br>$$<br>得到：<br>$$<br>\begin{align}<br>F(\tilde{P}, \theta)&amp;=\sum\limits_{Z}{\tilde{P}_{\theta}(Z)}\log P(Y,Z|\theta) - \sum\limits_{Z}{\tilde{P}_{\theta}(Z)}\log \tilde{P}_{\theta}(Z) \\<br>&amp;=\sum\limits_{Z} P(Z|Y,\theta)\log P(Y,Z|\theta) - \sum\limits_{Z}P(Z|Y,\theta)\log P(Z|Y,\theta) \\<br>&amp;=\sum\limits_{Z}P(Z|Y,\theta)[\log P(Y,Z|\theta) - \log P(Z|Y,\theta)] \\<br>&amp;=\sum\limits_{Z}P(Z|Y,\theta)\log\frac{P(Y,Z|\theta)}{P(Z|Y,\theta)}\\<br>&amp;=\sum\limits_{Z}P(Z|Y,\theta)\log\left\{\frac{P(Y,Z,\theta)}{p(\theta)}\frac{P(Y,\theta)}{P(Y,Z,\theta)}\right\}\\<br>&amp;= \sum\limits_{Z}P(Z|Y,\theta)\log P(Y|\theta) \\<br>&amp;= \log P(Y|\theta) \\<br> \end{align}<br>$$<br><b><font color="red">引理9.2证明完毕</font></b></p>
-<hr>
 <p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/9-EM/1540719981294.png" alt="1540719981294"></p>
 <p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/9-EM/1540720314102.png" alt="1540720314102"></p>
 <h3 id="9-4-2-GEM算法"><a href="#9-4-2-GEM算法" class="headerlink" title="9.4.2 GEM算法"></a>9.4.2 GEM算法</h3><p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/9-EM/1540720724130.png" alt="1540720724130"></p>
