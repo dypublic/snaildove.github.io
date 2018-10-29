@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://snaildove.github.io/2017/08/03/singular_values_decomposition/</loc>
+    
+    <lastmod>2018-10-29T06:15:03.192Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://snaildove.github.io/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/</loc>
     
     <lastmod>2018-10-29T05:16:14.738Z</lastmod>
@@ -544,13 +551,6 @@
     <loc>https://snaildove.github.io/2017/08/11/computer_graphics/</loc>
     
     <lastmod>2018-06-03T16:07:46.818Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2017/08/03/singular_values_decomposition/</loc>
-    
-    <lastmod>2018-06-03T16:07:41.116Z</lastmod>
     
   </url>
   
