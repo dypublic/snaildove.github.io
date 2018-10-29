@@ -98,13 +98,13 @@
 
 
 
-<meta name="description" content="前言写本文章主要目的是复习（毕竟之前看纸质版做的笔记），对于证明比较跳跃和勘误的地方我都做了注解，以便初学者和以后复习地时候快速阅读理解不会卡住。 朴素贝叶斯法 4.1 朴素贝叶斯法的学习与分类4.1.1 基本方法  4.1.2 后验概率最大化的含义  4.2 朴素贝叶斯法的参数估计4.2.1 极大似然估计 4.2.2 学习与分类算法 例子  4.2.3 贝叶斯估计  本章概要  习题">
+<meta name="description" content="前言写本文章主要目的是复习（毕竟之前看纸质版做的笔记）， 对于证明比较跳跃和勘误的地方我都做了注解，以便初学者和以后复习地时候快速阅读理解不会卡住。 朴素贝叶斯法 4.1 朴素贝叶斯法的学习与分类4.1.1 基本方法  4.1.2 后验概率最大化的含义  4.2 朴素贝叶斯法的参数估计4.2.1 极大似然估计 4.2.2 学习与分类算法 例子  4.2.3 贝叶斯估计  本章概要  习题">
 <meta name="keywords" content="Machine Learning,统计学习方法">
 <meta property="og:type" content="article">
 <meta property="og:title" content="《统计学习方法》第4章 NaiveBayes">
 <meta property="og:url" content="https://snaildove.github.io/2018/10/01/4.Naive-Bayes_LiHang-Statistical-Learning-Methods/index.html">
 <meta property="og:site_name" content="SnailDove&#39;s blog">
-<meta property="og:description" content="前言写本文章主要目的是复习（毕竟之前看纸质版做的笔记），对于证明比较跳跃和勘误的地方我都做了注解，以便初学者和以后复习地时候快速阅读理解不会卡住。 朴素贝叶斯法 4.1 朴素贝叶斯法的学习与分类4.1.1 基本方法  4.1.2 后验概率最大化的含义  4.2 朴素贝叶斯法的参数估计4.2.1 极大似然估计 4.2.2 学习与分类算法 例子  4.2.3 贝叶斯估计  本章概要  习题">
+<meta property="og:description" content="前言写本文章主要目的是复习（毕竟之前看纸质版做的笔记）， 对于证明比较跳跃和勘误的地方我都做了注解，以便初学者和以后复习地时候快速阅读理解不会卡住。 朴素贝叶斯法 4.1 朴素贝叶斯法的学习与分类4.1.1 基本方法  4.1.2 后验概率最大化的含义  4.2 朴素贝叶斯法的参数估计4.2.1 极大似然估计 4.2.2 学习与分类算法 例子  4.2.3 贝叶斯估计  本章概要  习题">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540570806562.png">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540571408562.png">
@@ -122,10 +122,10 @@
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540572590441.png">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540572915993.png">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540572931945.png">
-<meta property="og:updated_time" content="2018-10-26T16:59:51.076Z">
+<meta property="og:updated_time" content="2018-10-29T02:33:46.871Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="《统计学习方法》第4章 NaiveBayes">
-<meta name="twitter:description" content="前言写本文章主要目的是复习（毕竟之前看纸质版做的笔记），对于证明比较跳跃和勘误的地方我都做了注解，以便初学者和以后复习地时候快速阅读理解不会卡住。 朴素贝叶斯法 4.1 朴素贝叶斯法的学习与分类4.1.1 基本方法  4.1.2 后验概率最大化的含义  4.2 朴素贝叶斯法的参数估计4.2.1 极大似然估计 4.2.2 学习与分类算法 例子  4.2.3 贝叶斯估计  本章概要  习题">
+<meta name="twitter:description" content="前言写本文章主要目的是复习（毕竟之前看纸质版做的笔记）， 对于证明比较跳跃和勘误的地方我都做了注解，以便初学者和以后复习地时候快速阅读理解不会卡住。 朴素贝叶斯法 4.1 朴素贝叶斯法的学习与分类4.1.1 基本方法  4.1.2 后验概率最大化的含义  4.2 朴素贝叶斯法的参数估计4.2.1 极大似然估计 4.2.2 学习与分类算法 例子  4.2.3 贝叶斯估计  本章概要  习题">
 <meta name="twitter:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540570806562.png">
 
 
@@ -470,7 +470,7 @@
       
 
       
-        <script src="\assets\js\APlayer.min.js"> </script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>写本文章主要目的是复习（毕竟之前看纸质版做的笔记），对于证明比较跳跃和勘误的地方我都做了注解，以便初学者和以后复习地时候快速阅读理解不会卡住。</p>
+        <script src="\assets\js\APlayer.min.js"> </script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>写本文章主要目的是复习（毕竟之前看纸质版做的笔记）， <b><font color="red" bold="true">对于证明比较跳跃和勘误的地方我都做了注解，以便初学者和以后复习地时候快速阅读理解不会卡住</font></b>。</p>
 <h1 id="朴素贝叶斯法"><a href="#朴素贝叶斯法" class="headerlink" title="朴素贝叶斯法"></a>朴素贝叶斯法</h1><p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540570806562.png" alt="1540570806562"></p>
 <h2 id="4-1-朴素贝叶斯法的学习与分类"><a href="#4-1-朴素贝叶斯法的学习与分类" class="headerlink" title="4.1 朴素贝叶斯法的学习与分类"></a>4.1 朴素贝叶斯法的学习与分类</h2><h3 id="4-1-1-基本方法"><a href="#4-1-1-基本方法" class="headerlink" title="4.1.1 基本方法"></a>4.1.1 基本方法</h3><p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540571408562.png" alt="1540571408562"></p>
 <p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540571499199.png" alt="1540571499199"></p>
