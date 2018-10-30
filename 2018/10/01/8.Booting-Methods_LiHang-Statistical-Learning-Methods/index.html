@@ -131,7 +131,7 @@
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/8-boosting/1540465941113.png">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/8-boosting/1540466073088.png">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/8-boosting/1540466119053.png">
-<meta property="og:updated_time" content="2018-10-30T03:53:56.067Z">
+<meta property="og:updated_time" content="2018-10-30T04:37:03.566Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="《统计学习方法》第8章 提升方法之AdaBoost\BoostingTree\GradientBoosting">
 <meta name="twitter:description" content="前言在深度学习火起来之前，提升方法（包括AdaBoost, GBDT, XGBoost）是 kaggle 等比赛中的利器，所以提升方法是必备的知识点。李航《统计学习方法》第8章——提升方法主要内容：AdaBoost, Boosting Tree, GradientBoosting。写本文章主要目的是复习（毕竟之前看纸质版做的笔记）， 对于证明比较跳跃和勘误的地方我都做了注解，以便初学者快速阅读理">
@@ -483,7 +483,7 @@
       
 
       
-        <script src="\assets\js\APlayer.min.js"> </script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>在深度学习火起来之前，提升方法（包括AdaBoost, GBDT, XGBoost）是 kaggle 等比赛中的利器，所以提升方法是必备的知识点。<strong>李航《统计学习方法》第8章——提升方法主要内容：AdaBoost, Boosting Tree, GradientBoosting</strong>。写本文章主要目的是复习（毕竟之前看纸质版做的笔记）， <b><font color="red">对于证明比较跳跃和勘误的地方我都做了注解，以便初学者快速阅读理解不会卡住</font></b>。另外李航这本书著作于2012年，<a href="https://homes.cs.washington.edu/~tqchen/" target="_blank" rel="noopener">陈天奇</a>的<a href="https://xgboost.ai/" target="_blank" rel="noopener">XGBoost</a> (eXtreme Gradient Boosting) 在2014年惊艳四方，本文暂时不叙述这个，将会另开一片，包括微软的<a href="http://lightgbm.apachecn.org/cn/latest/" target="_blank" rel="noopener">LightGBM</a>，但是<strong>本文是 XGBoost 和 LightGBM 的基础，所以要先总结本文</strong>。</p>
+        <script src="\assets\js\APlayer.min.js"> </script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>在深度学习火起来之前，提升方法（包括AdaBoost, GBDT, XGBoost）是 kaggle 等比赛中的利器，所以提升方法是必备的知识点。<strong>李航《统计学习方法》第8章——提升方法主要内容：AdaBoost, Boosting Tree, GradientBoosting</strong>。写本文章主要目的是复习（毕竟之前看纸质版做的笔记）， <b><font color="red">对于证明比较跳跃和勘误的地方我都做了注解，以便初学者快速阅读理解不会卡住</font></b>。另外李航这本书著作于2012年，<a href="https://homes.cs.washington.edu/~tqchen/" target="_blank" rel="noopener">陈天奇</a>的<a href="https://xgboost.ai/" target="_blank" rel="noopener">XGBoost</a> (eXtreme Gradient Boosting) 在2015年惊艳四方，本文暂时不叙述这个，将会另开一片，包括微软的<a href="http://lightgbm.apachecn.org/cn/latest/" target="_blank" rel="noopener">LightGBM</a>，但是<strong>本文是 XGBoost 和 LightGBM 的基础，所以要先总结本文</strong>。</p>
 <h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p><strong>提升（boosting） 方法</strong>是一种常用的统计学习方法， 应用广泛且 有效。 <strong>在分类问题中， 它通过改变训练样本的权重， 学习多个分类 器， 并将这些分类器进行线性组合， 提高分类的性能</strong>。 </p>
 <p><strong>本章主要内容</strong></p>
 <ol>
