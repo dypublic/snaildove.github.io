@@ -4,8 +4,30 @@
 
     
   <url>
+    <loc>https://snaildove.github.io/2018/10/01/8.Booting-Methods_LiHang-Statistical-Learning-Methods/</loc>
+    <lastmod>2018-10-30T03:53:56.067Z</lastmod>
+    <data>
+        <display>
+        <title>《统计学习方法》第8章 提升方法之AdaBoost\BoostingTree\GradientBoosting</title>
+        <pubTime>2018-09-30T16:00:00.000Z</pubTime>
+        
+        <tag>Machine Learning</tag>
+         
+        <tag>统计学习方法</tag>
+         
+         
+           
+             
+              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://snaildove.github.io/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/</loc>
-    <lastmod>2018-10-29T10:09:50.017Z</lastmod>
+    <lastmod>2018-10-29T11:11:21.384Z</lastmod>
     <data>
         <display>
         <title>《统计学习方法》第9章 EM/GMM/F-MM/GEM</title>
@@ -51,28 +73,6 @@
     <data>
         <display>
         <title>《统计学习方法总结》</title>
-        <pubTime>2018-09-30T16:00:00.000Z</pubTime>
-        
-        <tag>Machine Learning</tag>
-         
-        <tag>统计学习方法</tag>
-         
-         
-           
-             
-              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://snaildove.github.io/2018/10/01/8.Booting-Methods_LiHang-Statistical-Learning-Methods/</loc>
-    <lastmod>2018-10-29T03:57:37.301Z</lastmod>
-    <data>
-        <display>
-        <title>《统计学习方法》第8章 提升方法之AdaBoost\BoostingTree\GradientBoosting</title>
         <pubTime>2018-09-30T16:00:00.000Z</pubTime>
         
         <tag>Machine Learning</tag>
