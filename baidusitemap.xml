@@ -4,11 +4,11 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2018/10/01/summary_of_LiHang_Statistical-learning-methods/</loc>
-    <lastmod>2018-11-03T09:25:16.899Z</lastmod>
+    <loc>https://snaildove.github.io/2018/10/01/8.Booting-Methods_LiHang-Statistical-Learning-Methods/</loc>
+    <lastmod>2018-11-03T11:56:24.843Z</lastmod>
     <data>
         <display>
-        <title>《统计学习方法总结》</title>
+        <title>《统计学习方法》第8章 提升方法之AdaBoost\BoostingTree\GBDT</title>
         <pubTime>2018-09-30T16:00:00.000Z</pubTime>
         
         <tag>Machine Learning</tag>
@@ -26,11 +26,11 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2018/10/01/8.Booting-Methods_LiHang-Statistical-Learning-Methods/</loc>
-    <lastmod>2018-11-03T08:09:26.077Z</lastmod>
+    <loc>https://snaildove.github.io/2018/10/01/summary_of_LiHang_Statistical-learning-methods/</loc>
+    <lastmod>2018-11-03T09:25:16.899Z</lastmod>
     <data>
         <display>
-        <title>《统计学习方法》第8章 提升方法之AdaBoost\BoostingTree\GBDT</title>
+        <title>《统计学习方法总结》</title>
         <pubTime>2018-09-30T16:00:00.000Z</pubTime>
         
         <tag>Machine Learning</tag>
