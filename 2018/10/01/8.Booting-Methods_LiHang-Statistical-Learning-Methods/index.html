@@ -98,13 +98,13 @@
 
 
 
-<meta name="description" content="前言在深度学习火起来之前，提升方法（包括AdaBoost, GBDT, XGBoost）是 kaggle 等比赛中的利器，所以提升方法是必备的知识点。李航《统计学习方法》第8章——提升方法主要内容：AdaBoost, Boosting Tree, GBDT。写本文章主要目的是复习（毕竟之前看纸质版做的笔记）， 对于证明比较跳跃和勘误的地方我都做了注解，以便初学者快速阅读理解不会卡住，另外本文拓展">
+<meta name="description" content="前言在深度学习火起来之前，提升方法（包括AdaBoost, GBDT, XGBoost）是 kaggle 等比赛中的利器，所以提升方法是必备的知识点。李航《统计学习方法》第8章——提升方法主要内容：AdaBoost, Boosting Tree, GBDT(这一块原文不够详细，将补充一些)。写本文主要目的是复习（毕竟之前看纸质版做的笔记）， 对于证明比较跳跃和勘误的地方我都做了注解，以便初学者快">
 <meta name="keywords" content="Machine Learning,统计学习方法">
 <meta property="og:type" content="article">
 <meta property="og:title" content="《统计学习方法》第8章 提升方法之AdaBoost\BoostingTree\GBDT">
 <meta property="og:url" content="https://snaildove.github.io/2018/10/01/8.Booting-Methods_LiHang-Statistical-Learning-Methods/index.html">
 <meta property="og:site_name" content="SnailDove&#39;s blog">
-<meta property="og:description" content="前言在深度学习火起来之前，提升方法（包括AdaBoost, GBDT, XGBoost）是 kaggle 等比赛中的利器，所以提升方法是必备的知识点。李航《统计学习方法》第8章——提升方法主要内容：AdaBoost, Boosting Tree, GBDT。写本文章主要目的是复习（毕竟之前看纸质版做的笔记）， 对于证明比较跳跃和勘误的地方我都做了注解，以便初学者快速阅读理解不会卡住，另外本文拓展">
+<meta property="og:description" content="前言在深度学习火起来之前，提升方法（包括AdaBoost, GBDT, XGBoost）是 kaggle 等比赛中的利器，所以提升方法是必备的知识点。李航《统计学习方法》第8章——提升方法主要内容：AdaBoost, Boosting Tree, GBDT(这一块原文不够详细，将补充一些)。写本文主要目的是复习（毕竟之前看纸质版做的笔记）， 对于证明比较跳跃和勘误的地方我都做了注解，以便初学者快">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/8-boosting/1540460336537.png">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/8-boosting/1540463170951.png">
@@ -130,10 +130,11 @@
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/8-boosting/1540465941114.png">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/8-boosting/1541169882361.png">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/8-boosting/1541171081333.png">
-<meta property="og:updated_time" content="2018-11-03T11:56:24.843Z">
+<meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/8-boosting/1541266736974.png">
+<meta property="og:updated_time" content="2018-11-03T18:12:51.449Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="《统计学习方法》第8章 提升方法之AdaBoost\BoostingTree\GBDT">
-<meta name="twitter:description" content="前言在深度学习火起来之前，提升方法（包括AdaBoost, GBDT, XGBoost）是 kaggle 等比赛中的利器，所以提升方法是必备的知识点。李航《统计学习方法》第8章——提升方法主要内容：AdaBoost, Boosting Tree, GBDT。写本文章主要目的是复习（毕竟之前看纸质版做的笔记）， 对于证明比较跳跃和勘误的地方我都做了注解，以便初学者快速阅读理解不会卡住，另外本文拓展">
+<meta name="twitter:description" content="前言在深度学习火起来之前，提升方法（包括AdaBoost, GBDT, XGBoost）是 kaggle 等比赛中的利器，所以提升方法是必备的知识点。李航《统计学习方法》第8章——提升方法主要内容：AdaBoost, Boosting Tree, GBDT(这一块原文不够详细，将补充一些)。写本文主要目的是复习（毕竟之前看纸质版做的笔记）， 对于证明比较跳跃和勘误的地方我都做了注解，以便初学者快">
 <meta name="twitter:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/8-boosting/1540460336537.png">
 
 
@@ -445,7 +446,7 @@
                   <span class="post-meta-item-text">Words count in article</span>
                 
                 <span title="Words count in article">
-                  4,284
+                  4,419
                 </span>
               
 
@@ -461,7 +462,7 @@
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
                 <span title="Reading time">
-                  15
+                  16
                 </span>
               
             </div>
@@ -482,7 +483,7 @@
       
 
       
-        <script src="\assets\js\APlayer.min.js"> </script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>在深度学习火起来之前，提升方法（包括AdaBoost, GBDT, XGBoost）是 kaggle 等比赛中的利器，所以提升方法是必备的知识点。<strong>李航《统计学习方法》第8章——提升方法主要内容：AdaBoost, Boosting Tree, GBDT</strong>。写本文章主要目的是复习（毕竟之前看纸质版做的笔记）， <font color="red">对于证明比较跳跃和勘误的地方我都做了注解，以便初学者快速阅读理解不会卡住，另外本文拓展部分补充了</font>：<font color="blue"><strong>集成学习</strong></font>。另外李航这本书著作于2012年，<a href="https://homes.cs.washington.edu/~tqchen/" target="_blank" rel="noopener">陈天奇</a>的<a href="https://xgboost.ai/" target="_blank" rel="noopener">XGBoost</a> (eXtreme Gradient Boosting) 在2015年惊艳四方，本文暂时不叙述这个，将会另开一篇，包括微软的<a href="http://lightgbm.apachecn.org/cn/latest/" target="_blank" rel="noopener">LightGBM</a>，但是<strong>本文是 XGBoost 和 LightGBM 的基础，所以要先总结本文</strong>。<font color="green">初学者看到前言这么多名词不必畏惧，直接看正文，本人也是从本章正文学习，再拓展出这些的，初学直接看正文，一步一步往下顺</font>。</p>
+        <script src="\assets\js\APlayer.min.js"> </script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>在深度学习火起来之前，提升方法（包括AdaBoost, GBDT, XGBoost）是 kaggle 等比赛中的利器，所以提升方法是必备的知识点。<strong>李航《统计学习方法》第8章——提升方法主要内容：AdaBoost, Boosting Tree, GBDT</strong>(这一块原文不够详细，将补充一些)。写本文主要目的是复习（毕竟之前看纸质版做的笔记）， <font color="red">对于证明比较跳跃和勘误的地方我都做了注解，以便初学者快速阅读理解不会卡住，另外本文拓展部分补充了</font>：<font color="blue"><strong>集成学习</strong></font>。另外李航这本书著作于2012年，<a href="https://homes.cs.washington.edu/~tqchen/" target="_blank" rel="noopener">陈天奇</a>的<a href="https://xgboost.ai/" target="_blank" rel="noopener">XGBoost</a> (eXtreme Gradient Boosting) 在2015年惊艳四方，本文暂时不叙述这个，将会另开一篇，包括微软的<a href="http://lightgbm.apachecn.org/cn/latest/" target="_blank" rel="noopener">LightGBM</a>，但是<strong>本文是 XGBoost 和 LightGBM 的基础，所以要先总结本文</strong>。<font color="green">初学者看到前言这么多名词不必畏惧，直接看正文，本人也是从本章正文学习，再拓展出这些的，初学直接看正文，一步一步往下顺</font>。</p>
 <h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p><strong>提升（boosting） 方法</strong>是一种常用的统计学习方法， 应用广泛且 有效。 <strong>在分类问题中， 它通过改变训练样本的权重， 学习多个分类 器， 并将这些分类器进行线性组合， 提高分类的性能</strong>。 </p>
 <p><strong>本章主要内容</strong></p>
 <ol>
@@ -520,10 +521,12 @@
 <p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/8-boosting/1540465774682.png" alt="1540465774680"></p>
 <h3 id="8-4-3-梯度提升Gradient-Boosting"><a href="#8-4-3-梯度提升Gradient-Boosting" class="headerlink" title="8.4.3 梯度提升Gradient Boosting"></a>8.4.3 梯度提升Gradient Boosting</h3><p>有前面的例子非常容易理解这部分内容，不再赘述，</p>
 <p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/8-boosting/1540465941114.png" alt="1540465941113"></p>
-<h2 id="GBDT"><a href="#GBDT" class="headerlink" title="GBDT"></a>GBDT</h2><p>如果看懂前文，那么理解GBDT就简单很多。以下摘录自：大名鼎鼎的 Stanford 统计教材 《The Elements of  Statistical Learning》。根据《李航统计学习方法》的提升方法这一章的参考附录正是此书，对比之下，异曲同工，这里不再赘述，这里快速总结一下。</p>
+<h2 id="GBDT"><a href="#GBDT" class="headerlink" title="GBDT"></a>GBDT</h2><p>如果看懂前文，那么理解GBDT就简单很多。有一篇博客，清晰易懂，总结很不错，推荐看一下： <a href="https://www.cnblogs.com/pinard/p/6140514.html" target="_blank" rel="noopener">梯度提升树(GBDT)原理小结</a> ，里面的这有一个<strong>提示</strong>：关于多分类问题：<strong>每轮都在拟合概率向量 [类别1概率，类别2概率…,类别k的概率] 的伪残差</strong>。</p>
+<p>以下摘录自：大名鼎鼎的 Stanford 统计教材 《The Elements of  Statistical Learning》。根据《李航统计学习方法》的提升方法这一章的参考附录正是此书，对比之下，异曲同工，这里不再赘述，这里快速总结一下。</p>
 <p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/8-boosting/1541169882361.png" alt="1541169882361"></p>
 <p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/8-boosting/1541171081333.png" alt="1541171081333"></p>
-<p>有一篇博客，清晰易懂，总结很不错，推荐看一下： <a href="https://www.cnblogs.com/pinard/p/6140514.html" target="_blank" rel="noopener">梯度提升树(GBDT)原理小结</a> ，里面的一个<strong>提示</strong>：关于多分类问题：<strong>每轮都在拟合概率向量 [类别1概率，类别2概率…,类别k的概率] 的伪残差</strong>。</p>
+<p><strong>仔细体会这句话</strong>：它和梯度下降十分相似，不同在于GBDT 就是在<font color="blue">函数空间</font>的“梯度下降”，以前学习ML和DL的梯度下降是在<font color="blue">参数空间</font>的梯度下降。 在梯度下降中，不断减去 $\frac{\partial{f(x)}}{\partial{\theta}}$，希望求得 $min_{\theta}f(x)$ ; 同理梯度提升中不断减去$\frac{\partial{L(y,f(x))}}{f(x)}$，希望求得 $min_{f(x)}L(y, f(x))​$ 。这里引用 <a href="https://wepon.me" target="_blank" rel="noopener">https://wepon.me</a> 的介绍：</p>
+<p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/8-boosting/1541266736974.png" alt="此图来自https://wepon.me"></p>
 <p><b><font color="red">注意</font></b>：《统计学习方法》这一章介绍的都是最原始的提升树算法，实际上有进一步改进的调整：</p>
 <ol>
 <li><p>步进参数 $\nu$ ，专业名词为shrinkage，又称缩减，类似梯度下降算法的学习率，这里为什么称为步进参数，因为前文提到：提升方法是加法模型的前向分布算法，提升树也属于提升方法中一种（基学习器是决策树）。</p>
@@ -659,8 +662,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/10/01/summary_of_LiHang_Statistical-learning-methods/" rel="next" title="《统计学习方法总结》">
-                <i class="fa fa-chevron-left"></i> 《统计学习方法总结》
+              <a href="/2018/10/01/4.Naive-Bayes_LiHang-Statistical-Learning-Methods/" rel="next" title="《统计学习方法》第4章 NaiveBayes">
+                <i class="fa fa-chevron-left"></i> 《统计学习方法》第4章 NaiveBayes
               </a>
             
           </div>
@@ -668,6 +671,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/10/01/summary_of_LiHang_Statistical-learning-methods/" rel="prev" title="《统计学习方法总结》">
+                《统计学习方法总结》 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -892,7 +899,7 @@
     
       <span class="post-meta-item-text">Site words total count</span>
     
-    <span title="Site words total count">549.9k</span>
+    <span title="Site words total count">550.1k</span>
   
 </div>
 
