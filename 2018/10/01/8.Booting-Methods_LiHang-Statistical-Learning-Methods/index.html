@@ -130,7 +130,7 @@
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/8-boosting/1540465941114.png">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/8-boosting/1541169882361.png">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/8-boosting/1541171081333.png">
-<meta property="og:updated_time" content="2018-11-02T17:50:43.250Z">
+<meta property="og:updated_time" content="2018-11-03T08:04:13.439Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="《统计学习方法》第8章 提升方法之AdaBoost\BoostingTree\GBDT">
 <meta name="twitter:description" content="前言在深度学习火起来之前，提升方法（包括AdaBoost, GBDT, XGBoost）是 kaggle 等比赛中的利器，所以提升方法是必备的知识点。李航《统计学习方法》第8章——提升方法主要内容：AdaBoost, Boosting Tree, GBDT。写本文章主要目的是复习（毕竟之前看纸质版做的笔记）， 对于证明比较跳跃和勘误的地方我都做了注解，以便初学者快速阅读理解不会卡住，另外本文拓展">
@@ -445,7 +445,7 @@
                   <span class="post-meta-item-text">Words count in article</span>
                 
                 <span title="Words count in article">
-                  2,364
+                  2,369
                 </span>
               
 
@@ -523,8 +523,7 @@
 <h2 id="GBDT"><a href="#GBDT" class="headerlink" title="GBDT"></a>GBDT</h2><p>如果看懂前文，那么理解GBDT就简单很多。以下摘录自：大名鼎鼎的 Stanford 统计教材 《The Elements of  Statistical Learning》。根据《李航统计学习方法》的提升方法这一章的参考附录正是此书，对比之下，异曲同工，这里不再赘述，这里快速总结一下。</p>
 <p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/8-boosting/1541169882361.png" alt="1541169882361"></p>
 <p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/8-boosting/1541171081333.png" alt="1541171081333"></p>
-<p>有一篇博客，清晰易懂，总结很不错，推荐看一下： <a href="https://www.cnblogs.com/pinard/p/6140514.html" target="_blank" rel="noopener">梯度提升树(GBDT)原理小结</a> </p>
-<p><strong>提示</strong>：关于多分类问题：<strong>每轮都在拟合概率向量 [类别1概率，类别2概率…,类别k的概率] 的伪残差</strong>。</p>
+<p>有一篇博客，清晰易懂，总结很不错，推荐看一下： <a href="https://www.cnblogs.com/pinard/p/6140514.html" target="_blank" rel="noopener">梯度提升树(GBDT)原理小结</a> ，里面的一个<strong>提示</strong>：关于多分类问题：<strong>每轮都在拟合概率向量 [类别1概率，类别2概率…,类别k的概率] 的伪残差</strong>。</p>
 <p><b><font color="red">注意</font></b>：《统计学习方法》这一章介绍的都是最原始的提升树算法，实际上有进一步改进的调整：</p>
 <ol>
 <li><p>步进参数 $\nu$ ，专业名词为shrinkage，又称缩减，类似梯度下降算法的学习率，这里为什么称为步进参数，因为前文提到：提升方法是加法模型的前向分布算法，提升树也属于提升方法中一种（基学习器是决策树）。</p>
@@ -621,8 +620,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/06/28/summary_of_learning_of_Deep_Learning_Specializatio_on_Coursera/" rel="next" title="summary of learning Deep Learning Specialization">
-                <i class="fa fa-chevron-left"></i> summary of learning Deep Learning Specialization
+              <a href="/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/" rel="next" title="《统计学习方法》第9章 EM/GMM/F-MM/GEM">
+                <i class="fa fa-chevron-left"></i> 《统计学习方法》第9章 EM/GMM/F-MM/GEM
               </a>
             
           </div>
@@ -630,10 +629,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/" rel="prev" title="《统计学习方法》第9章 EM/GMM/F-MM/GEM">
-                《统计学习方法》第9章 EM/GMM/F-MM/GEM <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
