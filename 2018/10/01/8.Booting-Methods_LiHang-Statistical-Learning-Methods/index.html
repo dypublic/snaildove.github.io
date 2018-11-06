@@ -131,7 +131,7 @@
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/8-boosting/1541169882361.png">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/8-boosting/1541171081333.png">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/8-boosting/1541266736974.png">
-<meta property="og:updated_time" content="2018-11-03T18:12:51.449Z">
+<meta property="og:updated_time" content="2018-11-06T09:58:50.731Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="《统计学习方法》第8章 提升方法之AdaBoost\BoostingTree\GBDT">
 <meta name="twitter:description" content="前言在深度学习火起来之前，提升方法（包括AdaBoost, GBDT, XGBoost）是 kaggle 等比赛中的利器，所以提升方法是必备的知识点。李航《统计学习方法》第8章——提升方法主要内容：AdaBoost, Boosting Tree, GBDT(这一块原文不够详细，将补充一些)。写本文主要目的是复习（毕竟之前看纸质版做的笔记）， 对于证明比较跳跃和勘误的地方我都做了注解，以便初学者快">
@@ -446,7 +446,7 @@
                   <span class="post-meta-item-text">Words count in article</span>
                 
                 <span title="Words count in article">
-                  4,419
+                  4,476
                 </span>
               
 
@@ -483,7 +483,8 @@
       
 
       
-        <script src="\assets\js\APlayer.min.js"> </script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>在深度学习火起来之前，提升方法（包括AdaBoost, GBDT, XGBoost）是 kaggle 等比赛中的利器，所以提升方法是必备的知识点。<strong>李航《统计学习方法》第8章——提升方法主要内容：AdaBoost, Boosting Tree, GBDT</strong>(这一块原文不够详细，将补充一些)。写本文主要目的是复习（毕竟之前看纸质版做的笔记）， <font color="red">对于证明比较跳跃和勘误的地方我都做了注解，以便初学者快速阅读理解不会卡住，另外本文拓展部分补充了</font>：<font color="blue"><strong>集成学习</strong></font>。另外李航这本书著作于2012年，<a href="https://homes.cs.washington.edu/~tqchen/" target="_blank" rel="noopener">陈天奇</a>的<a href="https://xgboost.ai/" target="_blank" rel="noopener">XGBoost</a> (eXtreme Gradient Boosting) 在2015年惊艳四方，本文暂时不叙述这个，将会另开一篇，包括微软的<a href="http://lightgbm.apachecn.org/cn/latest/" target="_blank" rel="noopener">LightGBM</a>，但是<strong>本文是 XGBoost 和 LightGBM 的基础，所以要先总结本文</strong>。<font color="green">初学者看到前言这么多名词不必畏惧，直接看正文，本人也是从本章正文学习，再拓展出这些的，初学直接看正文，一步一步往下顺</font>。</p>
+        <script src="\assets\js\APlayer.min.js"> </script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>在深度学习火起来之前，提升方法（包括AdaBoost, GBDT, XGBoost）是 kaggle 等比赛中的利器，所以提升方法是必备的知识点。<strong>李航《统计学习方法》第8章——提升方法主要内容：AdaBoost, Boosting Tree, GBDT</strong>(这一块原文不够详细，将补充一些)。写本文主要目的是复习（毕竟之前看纸质版做的笔记）， <font color="red">对于证明比较跳跃和勘误的地方我都做了注解，以便初学者快速阅读理解不会卡住，另外本文拓展部分补充了</font>：<font color="blue"><strong>集成学习</strong></font>。另外李航这本书著作于2012年，<a href="https://homes.cs.washington.edu/~tqchen/" target="_blank" rel="noopener">陈天奇</a> 的 <a href="https://xgboost.ai/" target="_blank" rel="noopener">XGBoost</a> (eXtreme Gradient Boosting) 在2015年惊艳四方，本文暂时不叙述这个，将会另开一篇，包括微软的<a href="http://lightgbm.apachecn.org/cn/latest/" target="_blank" rel="noopener">LightGBM</a>，但是<strong>本文是 XGBoost 和 LightGBM 的基础，所以要先总结本文</strong>。<font color="green">初学者看到前言这么多名词不必畏惧，直接看正文，本人也是从本章正文学习，再拓展出这些的，初学直接看正文，一步一步往下顺</font>。</p>
+<p><strong>由于CSDN的公式编辑器公式支持不全，有些公式没法正常显示</strong>，欢迎点击<a href="https://snaildove.github.io/2018/10/01/8.Booting-Methods_LiHang-Statistical-Learning-Methods/">此处</a>查看原文, 个人技术博客：<a href="https://snaildove.github.io/">SnailDove</a></p>
 <h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p><strong>提升（boosting） 方法</strong>是一种常用的统计学习方法， 应用广泛且 有效。 <strong>在分类问题中， 它通过改变训练样本的权重， 学习多个分类 器， 并将这些分类器进行线性组合， 提高分类的性能</strong>。 </p>
 <p><strong>本章主要内容</strong></p>
 <ol>
@@ -522,10 +523,10 @@
 <h3 id="8-4-3-梯度提升Gradient-Boosting"><a href="#8-4-3-梯度提升Gradient-Boosting" class="headerlink" title="8.4.3 梯度提升Gradient Boosting"></a>8.4.3 梯度提升Gradient Boosting</h3><p>有前面的例子非常容易理解这部分内容，不再赘述，</p>
 <p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/8-boosting/1540465941114.png" alt="1540465941113"></p>
 <h2 id="GBDT"><a href="#GBDT" class="headerlink" title="GBDT"></a>GBDT</h2><p>如果看懂前文，那么理解GBDT就简单很多。有一篇博客，清晰易懂，总结很不错，推荐看一下： <a href="https://www.cnblogs.com/pinard/p/6140514.html" target="_blank" rel="noopener">梯度提升树(GBDT)原理小结</a> ，里面的这有一个<strong>提示</strong>：关于多分类问题：<strong>每轮都在拟合概率向量 [类别1概率，类别2概率…,类别k的概率] 的伪残差</strong>。</p>
-<p>以下摘录自：大名鼎鼎的 Stanford 统计教材 《The Elements of  Statistical Learning》。根据《李航统计学习方法》的提升方法这一章的参考附录正是此书，对比之下，异曲同工，这里不再赘述，这里快速总结一下。</p>
+<p>以下摘录自：大名鼎鼎的 Stanford 统计教材 《The Elements of  Statistical Learning》。根据《李航统计学习方法》的提升方法这一章的参考附录正是此书，对比之下，异曲同工，这里不再赘述，快速总结一下。</p>
 <p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/8-boosting/1541169882361.png" alt="1541169882361"></p>
 <p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/8-boosting/1541171081333.png" alt="1541171081333"></p>
-<p><strong>仔细体会这句话</strong>：它和梯度下降十分相似，不同在于GBDT 就是在<font color="blue">函数空间</font>的“梯度下降”，以前学习ML和DL的梯度下降是在<font color="blue">参数空间</font>的梯度下降。 在梯度下降中，不断减去 $\frac{\partial{f(x)}}{\partial{\theta}}$，希望求得 $min_{\theta}f(x)$ ; 同理梯度提升中不断减去$\frac{\partial{L(y,f(x))}}{f(x)}$，希望求得 $min_{f(x)}L(y, f(x))​$ 。这里引用 <a href="https://wepon.me" target="_blank" rel="noopener">https://wepon.me</a> 的介绍：</p>
+<p><strong>仔细体会这句话</strong>：它和梯度下降十分相似，不同在于GBDT 就是在<font color="blue">函数空间</font>的“梯度下降”，以前学习ML和DL的梯度下降是在<font color="blue">参数空间</font>的梯度下降。 在梯度下降中，不断减去 $\frac{\partial{f(x)}}{\partial{\theta}}$，希望求得 $min_{\theta}f(x)$ ; 同理梯度提升中不断减去$\frac{\partial{L(y,f(x))}}{f(x)}$，希望求得 $min_{f(x)}L(y, f(x))$ 。这里引用 <a href="https://wepon.me" target="_blank" rel="noopener">https://wepon.me</a> 的介绍：</p>
 <p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/8-boosting/1541266736974.png" alt="此图来自https://wepon.me"></p>
 <p><b><font color="red">注意</font></b>：《统计学习方法》这一章介绍的都是最原始的提升树算法，实际上有进一步改进的调整：</p>
 <ol>
@@ -535,13 +536,12 @@
 <li><p>正则化手段：subsampling 子抽样（包括：样本子抽样和特征的子抽样），提高泛化能力。</p>
 <p> 例如：在随机森林中，每棵树的训练样本都是对原始训练集有放回的子抽样，好处如下：</p>
 <ul>
-<li><p>如果不进行随机抽样，每棵树的训练集都一样，那么最终训练出的树分类结果也是完全一样的，依然没有解决决策树过拟合问题。随机抽样是为了保证不同决策树之间的多样性，从而提高模型的泛化能力。使得随机森林不容易陷入过拟合，并且具有较好的抗噪能力（比如：对缺省值不敏感）。</p>
-</li>
-<li><p>而随机森林最后分类取决于多棵树（弱分类器）的投票表决，这种表决应该是”求同”。如果是无放回的抽样，那么每棵树的训练样本都是不同的，都是没有交集的，这样每棵树都是”有偏的”，从而影响最终的投票结果。为了保证最终结果的可靠性，同时又要保证模型的泛化能力，需要每一颗树既要“求同“ 又要 ”存异”。</p>
-</li>
+<li>如果不进行随机抽样，每棵树的训练集都一样，那么最终训练出的树分类结果也是完全一样的，依然没有解决决策树过拟合问题。随机抽样是为了保证不同决策树之间的多样性，从而提高模型的泛化能力。使得随机森林不容易陷入过拟合，并且具有较好的抗噪能力（比如：对缺省值不敏感）。</li>
+<li>而随机森林最后分类取决于多棵树（弱分类器）的投票表决，这种表决应该是”求同”。如果是无放回的抽样，那么每棵树的训练样本都是不同的，都是没有交集的，这样每棵树都是”有偏的”，从而影响最终的投票结果。为了保证最终结果的可靠性，同时又要保证模型的泛化能力，需要每一颗树既要“求同“ 又要 ”存异”。</li>
 </ul>
 </li>
 </ol>
+<p>深入理解请看<strong>GDBT的论文</strong>：<a href="https://statweb.stanford.edu/~jhf/ftp/trebst.pdf" target="_blank" rel="noopener">Greedy Function Approximation：A Gradient Boosting Machine</a></p>
 <h2 id="拓展—集成学习"><a href="#拓展—集成学习" class="headerlink" title="拓展—集成学习"></a>拓展—集成学习</h2><p>实际上，提升方法（boosting） 属于<strong><a href="https://en.wikipedia.org/wiki/Ensemble_learning" target="_blank" rel="noopener">集成学习（ensemble learning）</a></strong> 的一种，集成模型还有2类比较出名：bagging 方法（Bagging 由来：Bootstrap aggregating）和 Stacking方法，随机森林属于第二类。由于随机森林不像提升树不用等待上一轮（上一棵树）结果，各棵树都可以独立求解（包括独立进行子抽样），即可以在树这个粒度下并发进行运算求解，在大规模数据下并发性能良好，随机森林比较简单。后来 XGBoost 和 lightGBM 的良好地实现了算法模型GBDT，虽然依然不是在树粒度层面的并发，但是运行时间和效果在kaggle、KDD Cup等比赛中惊艳四方，将会在日后另一篇中总结xgboost。</p>
 <p><strong>进一步学习的经典资料</strong></p>
 <ol>
@@ -560,7 +560,7 @@
 <li><p>知乎探讨：为什么说bagging是减少variance，而boosting是减少bias? - 知乎<br> <a href="https://www.zhihu.com/question/26760839" target="_blank" rel="noopener">https://www.zhihu.com/question/26760839</a></p>
 </li>
 </ol>
-<h3 id="为什么在实际的kaggle比赛中，GBDT和Random-Forest效果非常好"><a href="#为什么在实际的kaggle比赛中，GBDT和Random-Forest效果非常好" class="headerlink" title="为什么在实际的kaggle比赛中，GBDT和Random Forest效果非常好"></a>为什么在实际的kaggle比赛中，GBDT和Random Forest效果非常好</h3><p>以下来自<a href="https://www.zhihu.com/question/51818176/answer/127637712" target="_blank" rel="noopener">马超博士的回答 - 知乎</a></p>
+<h2 id="为什么在实际的kaggle比赛中，GBDT和Random-Forest效果非常好"><a href="#为什么在实际的kaggle比赛中，GBDT和Random-Forest效果非常好" class="headerlink" title="为什么在实际的kaggle比赛中，GBDT和Random Forest效果非常好"></a>为什么在实际的kaggle比赛中，GBDT和Random Forest效果非常好</h2><p>以下来自<a href="https://www.zhihu.com/question/51818176/answer/127637712" target="_blank" rel="noopener">马超博士的回答 - 知乎</a></p>
 <p>这是一个非常好，也非常值得思考的问题。换一个方式来问这个问题：为什么基于 tree-ensemble 的机器学习方法，在实际的 kaggle 比赛中效果非常好？</p>
 <p>通常，解释一个机器学习模型的表现是一件很复杂事情，而这篇文章尽可能用最直观的方式来解释这一问题。</p>
 <p>我主要从三个方面来回答楼主这个问题。</p>
@@ -662,8 +662,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/10/01/4.Naive-Bayes_LiHang-Statistical-Learning-Methods/" rel="next" title="《统计学习方法》第4章 NaiveBayes">
-                <i class="fa fa-chevron-left"></i> 《统计学习方法》第4章 NaiveBayes
+              <a href="/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/" rel="next" title="《统计学习方法》第9章 EM/GMM/F-MM/GEM">
+                <i class="fa fa-chevron-left"></i> 《统计学习方法》第9章 EM/GMM/F-MM/GEM
               </a>
             
           </div>
@@ -671,10 +671,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/10/01/summary_of_LiHang_Statistical-learning-methods/" rel="prev" title="《统计学习方法总结》">
-                《统计学习方法总结》 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -866,7 +862,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#正文"><span class="nav-text">正文</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#8-1-提升方法AdaBoost算法"><span class="nav-text">8.1 提升方法AdaBoost算法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#8-1-1-提升方法的基本思路"><span class="nav-text">8.1.1 提升方法的基本思路</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#提升方法的思想"><span class="nav-text">提升方法的思想</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#历史背景"><span class="nav-text">历史背景</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#提升方法的核心问题和思想"><span class="nav-text">提升方法的核心问题和思想</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-1-2-AdaBoost算法"><span class="nav-text">8.1.2 AdaBoost算法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-1-3-AdaBoost的例子"><span class="nav-text">8.1.3 AdaBoost的例子</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-2-AdaBoost算法的训练误差分析"><span class="nav-text">8.2 AdaBoost算法的训练误差分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-3-AdaBoost算法的解释"><span class="nav-text">8.3 AdaBoost算法的解释</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#8-3-1-前向分步算法"><span class="nav-text">8.3.1 前向分步算法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-3-2-前向分步算法与AdaBoost"><span class="nav-text">8.3.2 前向分步算法与AdaBoost</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-4-提升树"><span class="nav-text">8.4 提升树</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#8-4-1-提升树模型"><span class="nav-text">8.4.1 提升树模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-4-2-提升树算法"><span class="nav-text">8.4.2 提升树算法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-4-3-梯度提升Gradient-Boosting"><span class="nav-text">8.4.3 梯度提升Gradient Boosting</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GBDT"><span class="nav-text">GBDT</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#拓展—集成学习"><span class="nav-text">拓展—集成学习</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#为什么在实际的kaggle比赛中，GBDT和Random-Forest效果非常好"><span class="nav-text">为什么在实际的kaggle比赛中，GBDT和Random Forest效果非常好</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#站在理论模型的角度"><span class="nav-text">站在理论模型的角度</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#站在数据的角度"><span class="nav-text">站在数据的角度</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#站在系统实现的角度"><span class="nav-text">站在系统实现的角度</span></a></li></ol></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#正文"><span class="nav-text">正文</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#8-1-提升方法AdaBoost算法"><span class="nav-text">8.1 提升方法AdaBoost算法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#8-1-1-提升方法的基本思路"><span class="nav-text">8.1.1 提升方法的基本思路</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#提升方法的思想"><span class="nav-text">提升方法的思想</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#历史背景"><span class="nav-text">历史背景</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#提升方法的核心问题和思想"><span class="nav-text">提升方法的核心问题和思想</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-1-2-AdaBoost算法"><span class="nav-text">8.1.2 AdaBoost算法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-1-3-AdaBoost的例子"><span class="nav-text">8.1.3 AdaBoost的例子</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-2-AdaBoost算法的训练误差分析"><span class="nav-text">8.2 AdaBoost算法的训练误差分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-3-AdaBoost算法的解释"><span class="nav-text">8.3 AdaBoost算法的解释</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#8-3-1-前向分步算法"><span class="nav-text">8.3.1 前向分步算法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-3-2-前向分步算法与AdaBoost"><span class="nav-text">8.3.2 前向分步算法与AdaBoost</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-4-提升树"><span class="nav-text">8.4 提升树</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#8-4-1-提升树模型"><span class="nav-text">8.4.1 提升树模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-4-2-提升树算法"><span class="nav-text">8.4.2 提升树算法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-4-3-梯度提升Gradient-Boosting"><span class="nav-text">8.4.3 梯度提升Gradient Boosting</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GBDT"><span class="nav-text">GBDT</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#拓展—集成学习"><span class="nav-text">拓展—集成学习</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么在实际的kaggle比赛中，GBDT和Random-Forest效果非常好"><span class="nav-text">为什么在实际的kaggle比赛中，GBDT和Random Forest效果非常好</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#站在理论模型的角度"><span class="nav-text">站在理论模型的角度</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#站在数据的角度"><span class="nav-text">站在数据的角度</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#站在系统实现的角度"><span class="nav-text">站在系统实现的角度</span></a></li></ol></li></ol></li></ol></li></ol></div>
             
 
           </div>
