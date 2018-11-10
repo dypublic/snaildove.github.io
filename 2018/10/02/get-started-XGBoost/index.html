@@ -123,7 +123,7 @@
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1541783628978.png">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1541846850051.png">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1541270621305.png">
-<meta property="og:updated_time" content="2018-11-10T10:54:29.458Z">
+<meta property="og:updated_time" content="2018-11-10T11:20:16.239Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="get started XGBoost">
 <meta name="twitter:description" content="前言在深度学习火起来之前，集成学习 （ensemble learning 包括  boosting: GBDT, XGBoost）是 kaggle 等比赛中的利器，所以集成学习是机器学习必备的知识点，如果提升树或者GBDT不熟悉，最好先看一下我的另一文： 《统计学习方法》第8章 提升方法之AdaBoost\BoostingTree\GBDT ，陈天奇 的 XGBoost (eXtreme Gra">
@@ -438,7 +438,7 @@
                   <span class="post-meta-item-text">Words count in article</span>
                 
                 <span title="Words count in article">
-                  12,785
+                  12,788
                 </span>
               
 
@@ -520,8 +520,8 @@
 <td>第i个训练集的对应的标签</td>
 </tr>
 <tr>
-<td>$Θ$</td>
-<td>特征权重的集合，$Θ=\{w_j</td>
+<td>$\Theta$</td>
+<td>特征权重的集合，$\Theta=\{w_j</td>
 <td>j=1,…,d\}$</td>
 </tr>
 </tbody>
@@ -536,9 +536,9 @@
 <li>其余的大部分也是基于 $\hat{y}_i$ 做了一些运算得到最后的分数</li>
 </ul>
 <p><strong>参数</strong></p>
-<p>  参数就是 $Θ$ ，这也正是我们所需要通过训练得出的。</p>
+<p>  参数就是 $\Theta$ ，这也正是我们所需要通过训练得出的。</p>
 <p><strong>训练时的目标函数</strong></p>
-<p>  训练时通用的目标函数如下：<br>$$<br>Obj(Θ)=L(Θ)+Ω(Θ)<br>$$<br>在上式中 $L(Θ)$ 代表的是训练误差，表示该模型对于训练集的匹配程度。$Ω(Θ)$ 代表的是正则项，表明的是模型的复杂度。</p>
+<p>  训练时通用的目标函数如下：<br>$$<br>Obj(\Theta)=L(\Theta)+Ω(\Theta)<br>$$<br>在上式中 $L(\Theta)$ 代表的是训练误差，表示该模型对于训练集的匹配程度。$Ω(\Theta)$ 代表的是正则项，表明的是模型的复杂度。</p>
 <p>训练误差可以用 $L = \sum_{i = 1}^n l(y_i, \hat y_i)$ 来表示，一般有方差和logistic误差。</p>
 <ul>
 <li>方差: $l(y_i,\hat y_i) = (y_i - \hat y_i)^2$</li>
@@ -557,8 +557,8 @@
 </li>
 <li>lasso比较少见，它是由线性模型，方差和L1范数构成的。具体式子为 $\sum\limits_{i = 1}^n (y_i - w^T x_i)^2 + \lambda \vert \vert w \vert \vert     _1$</li>
 </ul>
-<p>我们的目标的就是让 $Obj(Θ)$ 最小。那么由上述分析可见，这时必须让 $L(Θ$ ) 和 $Ω(Θ)$ 都比较小。而我们训练模型的时候，要在 bias 和 variance 中间找平衡点。bias 由 $L(Θ)$  控制，variance 由 $Ω(Θ)$ 控制。欠拟合，那么 $L(Θ)$ 和 $Ω(Θ)$ 都会比较大，过拟合的话 $Ω(Θ)$ 会比较大，因为模型的扩展性不强，或者说稳定性不好。</p>
-<h4 id="回归树和集成模型-What-are-we-Learning"><a href="#回归树和集成模型-What-are-we-Learning" class="headerlink" title="回归树和集成模型 (What are we Learning)"></a>回归树和集成模型 (What are we Learning)</h4><p><strong>Regression Tree (CART) </strong></p>
+<p>我们的目标的就是让 $Obj(\Theta)$ 最小。那么由上述分析可见，这时必须让 $L(\Theta$ ) 和 $Ω(\Theta)$ 都比较小。而我们训练模型的时候，要在 bias 和 variance 中间找平衡点。bias 由 $L(\Theta)$  控制，variance 由 $Ω(\Theta)$ 控制。欠拟合，那么 $L(\Theta)$ 和 $Ω(\Theta)$ 都会比较大，过拟合的话 $Ω(\Theta)$ 会比较大，因为模型的扩展性不强，或者说稳定性不好。</p>
+<h4 id="回归树和集成模型-What-are-we-Learning"><a href="#回归树和集成模型-What-are-we-Learning" class="headerlink" title="回归树和集成模型 (What are we Learning)"></a>回归树和集成模型 (What are we Learning)</h4><p><strong>Regression Tree (CART)</strong></p>
 <p>回归树，也叫做分类与回归树，我认为就是一个叶子节点具有权重的二叉决策树。它具有以下两点特征</p>
 <ul>
 <li><p>决策规则与决策树的一样。</p>
@@ -578,7 +578,7 @@
 <li>能学习特征之间更高级别的相互关系</li>
 <li>很容易对其扩展</li>
 </ol>
-<h5 id="模型和参数"><a href="#模型和参数" class="headerlink" title="模型和参数"></a>模型和参数</h5><p>  假设我们有 $K$ 棵树，那么<br>$$<br>\hat y_i = \sum_{k = 1}^K f_k(x_i),\ \ f_k \in \cal F<br>$$<br>上式中 $\cal F$ 表示的是回归森林中的所有函数空间。$f_k(x_i)$ 表示的就是第 $i$ 个样本在第 $k$ 棵树中落在的叶子的权重。那么现在我们需要求的参数就是每棵树的结构和每片叶子的权重，或者简单的来说就是求 $f_k$ 。那么为了和上一节所说的通用结构统一，可以设<br>$$<br>\Theta = \lbrace f_1,f_2,f_3, \cdot ,f_k \rbrace<br>$$</p>
+<h5 id="模型和参数"><a href="#模型和参数" class="headerlink" title="模型和参数"></a>模型和参数</h5><p>  假设我们有 $K$ 棵树，那么<br>$$<br>\hat y_i = \sum_{k = 1}^K f_k(x_i),\ \ f_k \in \cal F<br>$$<br>上式中 $\cal F​$ 表示的是回归森林中的所有函数空间。$f_k(x_i)​$ 表示的就是第 $i​$ 个样本在第 $k​$ 棵树中落在的叶子的权重。那么现在我们需要求的参数就是每棵树的结构和每片叶子的权重，或者简单的来说就是求 $f_k​$ 。那么为了和上一节所说的通用结构统一，可以设<br>$$<br>\Theta = \lbrace f_1,f_2,f_3, \cdots ,f_k \rbrace<br>$$</p>
 <h5 id="在单一变量上学习一棵树"><a href="#在单一变量上学习一棵树" class="headerlink" title="在单一变量上学习一棵树"></a>在单一变量上学习一棵树</h5><ul>
 <li>定义一个目标对象，优化它。</li>
 <li>例如：<ul>
@@ -599,9 +599,9 @@
 <ul>
 <li>树的节点数或深度</li>
 <li>树叶子节点的L2范式</li>
-<li>…（后面有更多的细节）</li>
+<li>…（后面会介绍有更多的细节）</li>
 </ul>
-<h5 id="目标函数-vs-启发式"><a href="#目标函数-vs-启发式" class="headerlink" title="目标函数 vs  启发式"></a><strong>目标函数 vs  启发式</strong></h5><p>当你讨论决策树，它通常是启发式的</p>
+<h5 id="目标函数-vs-启发式"><a href="#目标函数-vs-启发式" class="headerlink" title="目标函数 vs 启发式"></a>目标函数 vs 启发式</h5><p>当你讨论决策树，它通常是启发式的</p>
 <ul>
 <li>按信息增益</li>
 <li>对树剪枝</li>
@@ -1248,7 +1248,7 @@ Gain &amp;= Obj_{unsplit} - Obj_{split} \\
 </ul>
 </li>
 </ul>
-<h2 id="调参"><a href="#调参" class="headerlink" title="调参"></a>调参</h2><p>调参主要参考 <a href="https://www.analyticsvidhya.com/blog/2016/03/complete-guide-parameter-tuning-xgboost-with-codes-python/" target="_blank" rel="noopener">Complete Guide to Parameter Tuning in XGBoost (with codes in Python)</a> ，有空再详细说明。</p>
+<h3 id="调参"><a href="#调参" class="headerlink" title="调参"></a>调参</h3><p>调参主要参考 <a href="https://www.analyticsvidhya.com/blog/2016/03/complete-guide-parameter-tuning-xgboost-with-codes-python/" target="_blank" rel="noopener">Complete Guide to Parameter Tuning in XGBoost (with codes in Python)</a> ，有空再详细说明。</p>
 
       
     </div>
@@ -1312,8 +1312,8 @@ Gain &amp;= Obj_{unsplit} - Obj_{split} \\
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/10/01/4.Naive-Bayes_LiHang-Statistical-Learning-Methods/" rel="next" title="《统计学习方法》第4章 NaiveBayes">
-                <i class="fa fa-chevron-left"></i> 《统计学习方法》第4章 NaiveBayes
+              <a href="/2018/10/01/summary_of_LiHang_Statistical-learning-methods/" rel="next" title="《统计学习方法总结》">
+                <i class="fa fa-chevron-left"></i> 《统计学习方法总结》
               </a>
             
           </div>
@@ -1512,7 +1512,7 @@ Gain &amp;= Obj_{unsplit} - Obj_{split} \\
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#正文"><span class="nav-text">正文</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#XGBoost"><span class="nav-text">XGBoost</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#快速了解"><span class="nav-text">快速了解</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#outlook-幻灯片大纲"><span class="nav-text">outlook 幻灯片大纲</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Review-of-key-concepts-of-supervised-learning-监督学习的关键概念的回顾"><span class="nav-text">Review of key concepts of supervised learning 监督学习的关键概念的回顾</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#回归树和集成模型-What-are-we-Learning"><span class="nav-text">回归树和集成模型 (What are we Learning)</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#模型和参数"><span class="nav-text">模型和参数</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#在单一变量上学习一棵树"><span class="nav-text">在单一变量上学习一棵树</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#学习阶跃函数"><span class="nav-text">学习阶跃函数</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#目标函数-vs-启发式"><span class="nav-text">目标函数 vs  启发式</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#回归树不仅仅用于回归"><span class="nav-text">回归树不仅仅用于回归</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#梯度提升Gradient-Boosting-How-do-we-Learn"><span class="nav-text">梯度提升Gradient Boosting (How do we Learn)</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#那怎么学习？"><span class="nav-text">那怎么学习？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#加法训练"><span class="nav-text">加法训练</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#损失函数的泰勒展开"><span class="nav-text">损失函数的泰勒展开</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#这么苦逼图啥？"><span class="nav-text">这么苦逼图啥？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#改进树的定义-Refine-the-definition-of-tree"><span class="nav-text">改进树的定义 Refine the definition of tree</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#定义树的复杂度-Define-Complexity-of-a-Tree"><span class="nav-text">定义树的复杂度 Define Complexity of a Tree</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#修改目标函数-Revisit-the-Objectives"><span class="nav-text">修改目标函数 Revisit the Objectives</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#结构分-The-Structure-Score"><span class="nav-text">结构分 The Structure Score</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#用于单棵树的搜索算法-Searching-Algorithm-for-Single-Tree"><span class="nav-text">用于单棵树的搜索算法 Searching Algorithm for Single Tree</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#树的贪婪学习-Greedy-Learning-of-the-Tree"><span class="nav-text">树的贪婪学习 Greedy Learning of the Tree</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#最好分裂点的查找-Efficient-Finding-of-the-Best-Split"><span class="nav-text">最好分裂点的查找 Efficient Finding of the Best Split</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#分裂点查找算法-An-Algorithm-for-Split-Finding"><span class="nav-text">分裂点查找算法 An Algorithm for Split Finding</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#类变量（categorical-variables）？"><span class="nav-text">类变量（categorical variables）？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#剪枝和正则化-Pruning-and-Regularization"><span class="nav-text">剪枝和正则化 Pruning and Regularization</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#回顾提升树算法-Recap-Boosted-Tree-Algorithm"><span class="nav-text">回顾提升树算法 Recap: Boosted Tree Algorithm</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#近似贪婪算法"><span class="nav-text">近似贪婪算法</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#注意稀疏的分裂点查找-Sparsity-aware-Split-Finding"><span class="nav-text">注意稀疏的分裂点查找 Sparsity-aware Split Finding</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#系统设计"><span class="nav-text">系统设计</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#XGBoost-对-GBDT-实现的巧妙之处"><span class="nav-text">XGBoost 对 GBDT 实现的巧妙之处</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#优化的角度"><span class="nav-text">优化的角度</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#高可用的xgboost"><span class="nav-text">高可用的xgboost</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hello-world"><span class="nav-text">hello world</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参数详解"><span class="nav-text">参数详解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#通用参数-general-parameters"><span class="nav-text">通用参数 general parameters</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#提升器参数-Booster-parameters"><span class="nav-text">提升器参数 Booster parameters</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#树提升器参数-Parameters-for-Tree-Booster"><span class="nav-text">树提升器参数 Parameters for Tree Booster</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Additional-parameters-for-Dart-Booster-booster-dart"><span class="nav-text">Additional parameters for Dart Booster (booster=dart)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#学习任务的参数-Learning-Task-Parameters"><span class="nav-text">学习任务的参数 Learning Task Parameters</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#命令行参数-Command-Line-Parameters"><span class="nav-text">命令行参数 Command Line Parameters</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#调参"><span class="nav-text">调参</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#正文"><span class="nav-text">正文</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#XGBoost"><span class="nav-text">XGBoost</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#快速了解"><span class="nav-text">快速了解</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#outlook-幻灯片大纲"><span class="nav-text">outlook 幻灯片大纲</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Review-of-key-concepts-of-supervised-learning-监督学习的关键概念的回顾"><span class="nav-text">Review of key concepts of supervised learning 监督学习的关键概念的回顾</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#回归树和集成模型-What-are-we-Learning"><span class="nav-text">回归树和集成模型 (What are we Learning)</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#模型和参数"><span class="nav-text">模型和参数</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#在单一变量上学习一棵树"><span class="nav-text">在单一变量上学习一棵树</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#学习阶跃函数"><span class="nav-text">学习阶跃函数</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#目标函数-vs-启发式"><span class="nav-text">目标函数 vs 启发式</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#回归树不仅仅用于回归"><span class="nav-text">回归树不仅仅用于回归</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#梯度提升Gradient-Boosting-How-do-we-Learn"><span class="nav-text">梯度提升Gradient Boosting (How do we Learn)</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#那怎么学习？"><span class="nav-text">那怎么学习？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#加法训练"><span class="nav-text">加法训练</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#损失函数的泰勒展开"><span class="nav-text">损失函数的泰勒展开</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#这么苦逼图啥？"><span class="nav-text">这么苦逼图啥？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#改进树的定义-Refine-the-definition-of-tree"><span class="nav-text">改进树的定义 Refine the definition of tree</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#定义树的复杂度-Define-Complexity-of-a-Tree"><span class="nav-text">定义树的复杂度 Define Complexity of a Tree</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#修改目标函数-Revisit-the-Objectives"><span class="nav-text">修改目标函数 Revisit the Objectives</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#结构分-The-Structure-Score"><span class="nav-text">结构分 The Structure Score</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#用于单棵树的搜索算法-Searching-Algorithm-for-Single-Tree"><span class="nav-text">用于单棵树的搜索算法 Searching Algorithm for Single Tree</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#树的贪婪学习-Greedy-Learning-of-the-Tree"><span class="nav-text">树的贪婪学习 Greedy Learning of the Tree</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#最好分裂点的查找-Efficient-Finding-of-the-Best-Split"><span class="nav-text">最好分裂点的查找 Efficient Finding of the Best Split</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#分裂点查找算法-An-Algorithm-for-Split-Finding"><span class="nav-text">分裂点查找算法 An Algorithm for Split Finding</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#类变量（categorical-variables）？"><span class="nav-text">类变量（categorical variables）？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#剪枝和正则化-Pruning-and-Regularization"><span class="nav-text">剪枝和正则化 Pruning and Regularization</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#回顾提升树算法-Recap-Boosted-Tree-Algorithm"><span class="nav-text">回顾提升树算法 Recap: Boosted Tree Algorithm</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#近似贪婪算法"><span class="nav-text">近似贪婪算法</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#注意稀疏的分裂点查找-Sparsity-aware-Split-Finding"><span class="nav-text">注意稀疏的分裂点查找 Sparsity-aware Split Finding</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#系统设计"><span class="nav-text">系统设计</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#XGBoost-对-GBDT-实现的巧妙之处"><span class="nav-text">XGBoost 对 GBDT 实现的巧妙之处</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#优化的角度"><span class="nav-text">优化的角度</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#高可用的xgboost"><span class="nav-text">高可用的xgboost</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hello-world"><span class="nav-text">hello world</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参数详解"><span class="nav-text">参数详解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#通用参数-general-parameters"><span class="nav-text">通用参数 general parameters</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#提升器参数-Booster-parameters"><span class="nav-text">提升器参数 Booster parameters</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#树提升器参数-Parameters-for-Tree-Booster"><span class="nav-text">树提升器参数 Parameters for Tree Booster</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Additional-parameters-for-Dart-Booster-booster-dart"><span class="nav-text">Additional parameters for Dart Booster (booster=dart)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#学习任务的参数-Learning-Task-Parameters"><span class="nav-text">学习任务的参数 Learning Task Parameters</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#命令行参数-Command-Line-Parameters"><span class="nav-text">命令行参数 Command Line Parameters</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#调参"><span class="nav-text">调参</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
