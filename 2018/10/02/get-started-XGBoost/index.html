@@ -118,12 +118,20 @@
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1541701662020.png">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1541753658541.png">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1541756389096.png">
-<meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1541781827106.png">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1541781900967.png">
+<meta property="og:image" content="c:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1541870733911.png">
+<meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1541781827106.png">
+<meta property="og:image" content="c:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1541873737581.png">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1541783628978.png">
+<meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1541862763402.png">
+<meta property="og:image" content="https://images0.cnblogs.com/blog/354318/201502/042300502345067.png">
+<meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1541875753533.png">
+<meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1541876055067.png">
+<meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1541876128716.png">
+<meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1541876848274.png">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1541846850051.png">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1541270621305.png">
-<meta property="og:updated_time" content="2018-11-10T11:20:16.239Z">
+<meta property="og:updated_time" content="2018-11-10T19:36:42.481Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="get started XGBoost">
 <meta name="twitter:description" content="前言在深度学习火起来之前，集成学习 （ensemble learning 包括  boosting: GBDT, XGBoost）是 kaggle 等比赛中的利器，所以集成学习是机器学习必备的知识点，如果提升树或者GBDT不熟悉，最好先看一下我的另一文： 《统计学习方法》第8章 提升方法之AdaBoost\BoostingTree\GBDT ，陈天奇 的 XGBoost (eXtreme Gra">
@@ -438,7 +446,7 @@
                   <span class="post-meta-item-text">Words count in article</span>
                 
                 <span title="Words count in article">
-                  12,788
+                  13,614
                 </span>
               
 
@@ -454,7 +462,7 @@
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
                 <span title="Reading time">
-                  56
+                  59
                 </span>
               
             </div>
@@ -479,15 +487,13 @@
 <blockquote>
 <p>Among the 29 challenge winning solutions 3 published at Kaggle’s blog during 2015, 17 solutions used XGBoost. Among these solutions, eight solely used XGBoost to train the model, while most others combined XGBoost with neural nets in ensembles. For comparison, the second most popular method, deep neural nets, was used in 11 solutions. The success of the system was also witnessed in KDDCup 2015, where XGBoost was used by every winning team in the top-10. Moreover, the winning teams reported that ensemble methods outperform a well-configured XGBoost by only a small amount [1]. </p>
 </blockquote>
-<p>也正因为如此，大量资料关于 XGBoost 总结，本文主要参考以下</p>
+<p>正文分成以下几个部分</p>
 <ol>
-<li>陈天奇的论文 <a href="https://arxiv.org/pdf/1603.02754" target="_blank" rel="noopener">XGBoost: A Scalable Tree Boosting System</a></li>
-<li>陈天奇的演讲视频 <a href="https://www.youtube.com/watch?v=Vly8xGnNiWs&amp;list=PLSz28ynAy1RohdgsPfC4l4t3lHu863PGx&amp;index=3&amp;t=1786s" target="_blank" rel="noopener">XGBoost A Scalable Tree Boosting System June 02, 2016 </a> <a href="https://speakerdeck.com/datasciencela/tianqi-chen-xgboost-overview-and-latest-news-la-meetup-talk" target="_blank" rel="noopener">演讲幻灯片 </a>和  <a href="https://homes.cs.washington.edu/~tqchen/pdf/BoostedTree.pdf" target="_blank" rel="noopener">官网幻灯片</a></li>
-<li><a href="https://xgboost.ai/" target="_blank" rel="noopener">XGBoost 官网</a></li>
-<li>XGBoost的贡献者之一的 <a href="https://www.youtube.com/watch?v=ufHo8vbk6g4" target="_blank" rel="noopener">演讲</a></li>
-<li><a href="https://www.zhihu.com/question/41354392" target="_blank" rel="noopener">机器学习算法中 GBDT 和 XGBOOST 的区别有哪些？ - 知乎</a></li>
+<li>快速了解：来自陈天奇的ppt</li>
+<li>XGBoost的设计精髓：来自陈天奇的关于XGBoost的论文</li>
+<li>参数详解：结合原理+XGBoost官网API的翻译</li>
 </ol>
-<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><h2 id="XGBoost"><a href="#XGBoost" class="headerlink" title="XGBoost"></a>XGBoost</h2><h3 id="快速了解"><a href="#快速了解" class="headerlink" title="快速了解"></a>快速了解</h3><p>这部分内容基本上是对陈天奇幻灯片和论文的翻译和个人理解</p>
+<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><h2 id="XGBoost"><a href="#XGBoost" class="headerlink" title="XGBoost"></a>XGBoost</h2><h3 id="快速了解"><a href="#快速了解" class="headerlink" title="快速了解"></a>快速了解</h3><p>这部分内容基本上是对陈天奇幻灯片：<a href="https://homes.cs.washington.edu/~tqchen/pdf/BoostedTree.pdf" target="_blank" rel="noopener">官网幻灯片</a> </p>
 <p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1541689140248.png" alt="1541689140248"></p>
 <h4 id="outlook-幻灯片大纲"><a href="#outlook-幻灯片大纲" class="headerlink" title="outlook 幻灯片大纲"></a>outlook 幻灯片大纲</h4><p>• 监督学习的主要概念的回顾<br>• 回归树和集成模型 (What are we Learning)<br>• 梯度提升 (How do we Learn)<br>• 总结 </p>
 <h4 id="Review-of-key-concepts-of-supervised-learning-监督学习的关键概念的回顾"><a href="#Review-of-key-concepts-of-supervised-learning-监督学习的关键概念的回顾" class="headerlink" title="Review of key concepts of supervised learning 监督学习的关键概念的回顾"></a>Review of key concepts of supervised learning 监督学习的关键概念的回顾</h4><p><strong>概念</strong></p>
@@ -578,7 +584,7 @@
 <li>能学习特征之间更高级别的相互关系</li>
 <li>很容易对其扩展</li>
 </ol>
-<h5 id="模型和参数"><a href="#模型和参数" class="headerlink" title="模型和参数"></a>模型和参数</h5><p>  假设我们有 $K$ 棵树，那么<br>$$<br>\hat y_i = \sum_{k = 1}^K f_k(x_i),\ \ f_k \in \cal F<br>$$<br>上式中 $\cal F​$ 表示的是回归森林中的所有函数空间。$f_k(x_i)​$ 表示的就是第 $i​$ 个样本在第 $k​$ 棵树中落在的叶子的权重。那么现在我们需要求的参数就是每棵树的结构和每片叶子的权重，或者简单的来说就是求 $f_k​$ 。那么为了和上一节所说的通用结构统一，可以设<br>$$<br>\Theta = \lbrace f_1,f_2,f_3, \cdots ,f_k \rbrace<br>$$</p>
+<h5 id="模型和参数"><a href="#模型和参数" class="headerlink" title="模型和参数"></a>模型和参数</h5><p>  假设我们有 $K$ 棵树，那么<br>$$<br>\hat y_i = \sum_{k = 1}^K f_k(x_i),\ \ f_k \in \cal F<br>$$<br>上式中 $\cal F$ 表示的是回归森林中的所有函数空间。$f_k(x_i)$ 表示的就是第 $i$ 个样本在第 $k$ 棵树中落在的叶子的权重。那么现在我们需要求的参数就是每棵树的结构和每片叶子的权重，或者简单的来说就是求 $f_k$ 。那么为了和上一节所说的通用结构统一，可以设<br>$$<br>\Theta = \lbrace f_1,f_2,f_3, \cdots ,f_k \rbrace<br>$$</p>
 <h5 id="在单一变量上学习一棵树"><a href="#在单一变量上学习一棵树" class="headerlink" title="在单一变量上学习一棵树"></a>在单一变量上学习一棵树</h5><ul>
 <li>定义一个目标对象，优化它。</li>
 <li>例如：<ul>
@@ -768,43 +774,77 @@ Gain &amp;= Obj_{unsplit} - Obj_{split} \\
 </ul>
 </li>
 </ul>
-<h5 id="近似贪婪算法"><a href="#近似贪婪算法" class="headerlink" title="近似贪婪算法"></a>近似贪婪算法</h5><p>根据前面的讨论，我们可以发现我们的模型对特征中的值的范围不敏感，只对顺序敏感。举个例子，假设一个样本集中某特征出现的值有1，3，6，10，那么把它对应的换成1, 2, 3, 4。生成的模型里树的结构是一样的，只不过对应的判断条件变了，比如把小于6换成了小于3而已。这也给我们一个启示，我们完全可以用百分比作为基础来构造模型。</p>
-<p>考虑 $\cal{D}_k = \lbrace (x_{1k},h_1), (x_{2k},h_2), (x_{3k},h_3), \cdot \cdot \cdot , (x_{nk},h_n)\rbrace$ 代表每个样本的第 k 个特征和其对应的二阶梯度所组成的集合。那么我们现在就能用百分比来定义下面的这个排名函数 $r_k:\Bbb R \rightarrow [0,1]$<br>$$<br>r_k(z) = \frac 1 {\sum_{(x,h) \in \cal{D}_k}h} \sum_{(x,h)\in \cal{D}_k,x \lt z} h<br>$$<br>上式表示的就是该特征的值小于 $z$ 的样本所占总样本的比例。于是我们就能用下面这个不等式来寻找分离点 $\lbrace s_{k1},s_{k2},s_{k3}, \cdots, s_{kl} \rbrace$<br>$$<br>|r_k(s_{k,j}) - r_k(s_{k, j+1})| \lt \epsilon,\ s_{k1}=\underset{i}{min}\ x_{ik},s_{kl}=\underset{i}{max}\ x_{ik}<br>$$<br>上式中 ϵ 表示的是一个近似比例，或者说一个扫描步进。就从最小值开始，每次增加 $ϵ∗(\underset{i}\max x_{ik}−\underset{i}\min x_{ik})$ 作为分离点。然后在这些分离点中选择一个最大分数作为最后的分离点。直觉上，这意味着这大约有 $1/\epsilon$ 候选点，每个数据点的权重是  $h_i$ ，原因如下：<br>$$<br>\begin{align}<br>Obj^{(t)} &amp;\approx \sum_{i = 1}^n [g_i f_t(x_i) + \frac 1 2 h_i f_t^2 (x_i)] + \Omega (f_t) \\<br>&amp;= \sum\limits_{i=1}^{n}\frac{1}{2}h_i(f_t(x_i)-\frac{g_i}{h_i})^2+\Omega(f_t) + \frac{g_i^2}{2h_i}<br> \\<br>&amp;= \sum\limits_{i=1}^{n}\frac{1}{2}h_i(f_t(x_i)-\frac{g_i}{h_i})^2+\Omega(f_t)+constant<br>\end{align}<br>$$<br>说明：上式是标签为 $\frac{g_i}{h_i}$ 且权重为 $h_i$ 的平方误差，此时视 $\frac{g_i^2}{2h_i}$ 常数。</p>
-<p>论文给出近似算法的2种方案：</p>
+<p>————————————————————–<font color="brown">幻灯片内容结束</font>———————————————————————-</p>
+<h3 id="XGBoost-系统设计的精髓"><a href="#XGBoost-系统设计的精髓" class="headerlink" title="XGBoost 系统设计的精髓"></a>XGBoost 系统设计的精髓</h3><p>这部分内容主要来自陈天奇的论文 <a href="https://arxiv.org/pdf/1603.02754" target="_blank" rel="noopener">XGBoost: A Scalable Tree Boosting System</a> </p>
+<h4 id="缩小和列抽样-shrinkage-and-column-subsampling"><a href="#缩小和列抽样-shrinkage-and-column-subsampling" class="headerlink" title="缩小和列抽样 shrinkage and column subsampling"></a>缩小和列抽样 shrinkage and column subsampling</h4><p>随机森林中的用法和目的一样，用来防止过拟合，主要参考论文2.3节</p>
+<ul>
+<li>这个xgboost与现代的gbdt一样，都有shrinkage参数 （最原始的gbdt没有这个参数）类似于梯度下降算法中的学习速率，在每一步tree boosting之后增加了一个参数 $\eta$（被加入树的权重），通过这种方式来减小每棵树的影响力，给后面的树提供空间去优化模型。</li>
+<li>column subsampling 列（特征）抽样，这个经常用在随机森林，不过据XGBoost的使用者反馈，列抽样防止过拟合的效果比传统的行抽样还好（xgboost也提供行抽样的参数供用户使用），并且有利于后面提到的并行化处理算法。</li>
+</ul>
+<h4 id="查找分裂点的近似算法-Approximate-Algorithm"><a href="#查找分裂点的近似算法-Approximate-Algorithm" class="headerlink" title="查找分裂点的近似算法 Approximate Algorithm"></a>查找分裂点的近似算法 Approximate Algorithm</h4><p>主要参考论文3.2节</p>
+<p>当数据量十分庞大，以致于不能全部放入内存时，精确的贪婪算法就不可能很有效率，通样的问题也出现在分布式的数据集中，为了高效的梯度提升算法，在这两种背景下，近似的算法被提出使用，算法的伪代码如下图所示</p>
+<p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1541781900967.png" alt="1541781900967"></p>
+<p>概括一下：枚举所有特征，根据特征，比如是第 $k$ 个特征的分布的分位数来决定出 $l$ 个候选切分点 $S_k = \{s_{k1},s_{k2},\cdots s_{kl}\}$ ，然后根据这些候选切分点把相应的样本映射到对应的<strong>桶</strong>中，对每个桶的 $G,H$ 进行累加。最后在候选切分点集合上贪心查找，和Exact Greedy Algorithm类似。  </p>
+<p><strong>特征分布的分位数的理解</strong></p>
+<p><img src="C:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1541870733911.png" alt="weapon大神的《 GBDT算法原理与系统设计简介》"></p>
+<p>此图来自知乎weapon大神的《 GBDT算法原理与系统设计简介》</p>
+<p>论文给出近似算法的2种变体，主要是根据候选点的来源不同区分：</p>
 <ol>
-<li>在建树之前预先将数据进行<strong>全局分桶</strong>，需要设置更小的 ϵ ，产生更多的桶，特征分裂查找基于候选点多，计算较慢，但只需在全局执行一次，全局分桶多次使用。 </li>
-<li><strong>每次分裂重新局部分桶</strong>，可以设置较大的 ϵ ，产生更少的桶，每次特征分裂查找基于候选点少，计算速度快，但是需要每次节点分裂后重新执行，论文中说该方案<strong>更适合树深的场景</strong>。 </li>
+<li>在<strong>建树之前预先将数据进行全局（global）分桶</strong>，需要设置更小的 ϵ ，产生更多的桶，特征分裂查找基于候选点多，计算较慢，但只需在全局执行一次，全局分桶多次使用。 </li>
+<li><strong>每次分裂重新局部（local）分桶</strong>，可以设置较大的 ϵ ，产生更少的桶，每次特征分裂查找基于较少的候选点，计算速度快，但是需要每次节点分裂后重新执行，论文中说该方案<strong>更适合树深的场景</strong>。 </li>
 </ol>
 <p>论文给出Higgs案例下，方案1全局分桶设置 ϵ=0.05 与精确算法效果差不多，方案2局部分桶设置 ϵ=0.3 与精确算法仅稍差点，方案1全局分桶设置 ϵ=0.3 则效果极差，如下图：</p>
 <p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1541781827106.png" alt="1541781827106"></p>
 <p>由此可见，局部选择的近似算法的确比全局选择的近似算法优秀的多，所得出的结果和贪婪算法几乎不相上下。</p>
-<p>算法的伪代码如下图所示</p>
-<p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1541781900967.png" alt="1541781900967"></p>
-<h5 id="注意稀疏的分裂点查找-Sparsity-aware-Split-Finding"><a href="#注意稀疏的分裂点查找-Sparsity-aware-Split-Finding" class="headerlink" title="注意稀疏的分裂点查找 Sparsity-aware Split Finding"></a>注意稀疏的分裂点查找 Sparsity-aware Split Finding</h5><p>对于数据缺失数据、one-hot编码等造成的特征稀疏现象，作者在论文中提出可以处理稀疏特征的分裂算法，主要是对稀疏特征值缺失的样本学习出默认节点分裂方向： </p>
+<p>最后很重的是：使用哪种方案，xgboost用户可以自由选择。</p>
+<blockquote>
+<p>Notably, <strong>it is also possible to directly construct <a href="http://www.cs.cornell.edu/~kilian/papers/fr819-tyreeA.pdf" target="_blank" rel="noopener">approximate histograms of gradient statistics</a></strong>. Our system efficiently supports exact greedy for the single machine setting, as well as approximate algorithm with both local and global proposal methods for all settings. Users can <strong>freely</strong> choose between the methods according to their needs. </p>
+</blockquote>
+<p>这里直方图算法，常用于GPU的内存优化算法，leetcode上也有人总结出来：<a href="https://www.cnblogs.com/felixfang/p/3676193.html" target="_blank" rel="noopener">LeetCode Largest Rectangle in Histogram O(n) 解法详析， Maximal Rectangle</a></p>
+<h4 id="带权的分位方案-Weighted-Quantile-Sketch"><a href="#带权的分位方案-Weighted-Quantile-Sketch" class="headerlink" title="带权的分位方案 Weighted Quantile Sketch"></a>带权的分位方案 Weighted Quantile Sketch</h4><p>主要参考论文3.3节</p>
+<p>在近似的分裂点查找算法中，一个步骤就是提出候选分裂点，通常情况下，一个特征的分位数使候选分裂点均匀地分布在数据集上，就像前文举的关于特征分位数的例子。</p>
+<p>考虑 $\cal{D}_k = \lbrace (x_{1k},h_1), (x_{2k},h_2), (x_{3k},h_3), \cdot \cdot \cdot , (x_{nk},h_n)\rbrace$ 代表每个样本的第 $k$ 个特征和其对应的二阶梯度所组成的集合。那么我们现在就能用分位数来定义下面的这个排序函数 $r_k:\Bbb R \rightarrow [0,1]$<br>$$<br>r_k(z) = \frac 1 {\sum_{(x,h) \in \cal{D}_k}h} \sum_{(x,h)\in \cal{D}_k,x \lt z} h<br>$$<br>上式表示的就是该特征的值小于 $z$ 的样本所占总样本的比例。于是我们就能用下面这个不等式来寻找分裂候选点$\lbrace s_{k1},s_{k2},s_{k3}, \cdots, s_{kl} \rbrace$<br>$$<br>|r_k(s_{k,j}) - r_k(s_{k, j+1})| \lt \epsilon,\ s_{k1}=\underset{i}{min}\ x_{ik},s_{kl}=\underset{i}{max}\ x_{ik}<br>$$<br>上式中 $\epsilon$ 的作用：控制让相邻两个候选分裂点相差不超过某个值 $\epsilon$ ，那么 $1/\epsilon$ 的整数值就代表几分位，举例 $\epsilon=1/3$ ，那么就是三分位，即有 $3-1$ 个候选分裂点。数学上，从最小值开始，每次增加 $ϵ∗(\underset{i}\max x_{ik}−\underset{i}\min x_{ik})$ 作为分裂候选点。然后在这些分裂候选点中选择一个最大分数作为最后的分裂点，而且每个数据点的权重是  $h_i$ ，原因如下：<br>$$<br>\begin{align}<br>Obj^{(t)} &amp;\approx \sum_{i = 1}^n [g_i f_t(x_i) + \frac 1 2 h_i f_t^2 (x_i)] + \Omega (f_t) \\<br>&amp;=\sum_{i=1}^N\frac{1}{2}h_i\left(2\frac{g_i}{h_i}f_t({\bf x_i}) + f_t^2({\bf x_i})\right) + \Omega(f_t) \\<br>&amp;=\sum_{i=1}^N \frac{1}{2}h_i\left(\frac{g_i^2}{h_i^2} +2\frac{g_i}{h_i}f_t({\bf x_i}) + f_t^2({\bf x_i})\right) + \Omega(f_t) - \frac{g_i^2}{2h_i} \\<br>&amp;=\sum_{i=1}^N \frac{1}{2}{\color{green}h_i}\left( f_t({\bf x_i}) – ({\color{green}- \frac{g_i}{h_i}})\right)^2 + \Omega(f_t) - \frac{g_i^2}{2h_i} \\<br>&amp;=\sum_{i=1}^N \frac{1}{2}{\color{green}h_i}\left( f_t({\bf x_i}) – ({\color{green}- \frac{g_i}{h_i}})\right)^2 + \Omega(f_t) - constant<br>\end{align}<br>$$<br><strong>说明</strong>：这部分论文原文推导有些错误，国外问答网站 <a href="https://datascience.stackexchange.com/a/11017/62341" target="_blank" rel="noopener">stack exchange</a> 给出很明确的答复， 上式可以视为标签为 $-\frac{g_i}{h_i}$ 且权重为 $h_i$ 的平方误差，此时视 $\frac{g_i^2}{2h_i}$ 常数 （因为是来自上一轮的梯度和二阶梯度）。</p>
+<p>现在应该明白 Weighted Quantile Sketch 带权的分位方案的由来，下面举个例子：</p>
+<p><img src="C:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1541873737581.png" alt="1541873737581"></p>
+<p>即要切分为3个，总和为1.8，因此第1个在0.6处，第2个在1.2处。此图来自知乎weapon大神的《 GBDT算法原理与系统设计简介》</p>
+<h4 id="注意稀疏问题的分裂点查找-Sparsity-aware-Split-Finding"><a href="#注意稀疏问题的分裂点查找-Sparsity-aware-Split-Finding" class="headerlink" title="注意稀疏问题的分裂点查找 Sparsity-aware Split Finding"></a>注意稀疏问题的分裂点查找 Sparsity-aware Split Finding</h4><p>主要参考论文3.4节</p>
+<p>对于数据缺失数据、one-hot编码等造成的特征稀疏现象，作者在论文中提出可以处理稀疏特征的分裂算法，主要是对稀疏特征值缺失的样本学习出默认节点分裂方向： </p>
 <ol>
 <li><p>默认miss value进右子树，对non-missing value的样本在左子树的统计值 $G_L$ 与 $H_L$，右子树为 $G-G_L$ 与$H−H_L$，其中包含miss的样本。 </p>
 </li>
 <li><p>默认miss value进左子树，对non-missing value的样本在右子树的统计值 $G_R$ 与 $H_R$，左子树为 $G-G_R$ 与$H−H_R$ ，其中包含miss的样本。 </p>
 </li>
 </ol>
-<p>最后，找出增益最大的特征值、以及miss value的分裂方向，作者在论文中提出基于稀疏分裂算法： </p>
+<p>这样最后求出增益最大的特征值以及miss value的分裂方向。作者在论文中提出基于稀疏分裂算法： </p>
 <p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1541783628978.png" alt="1541783628978"></p>
-<h3 id="系统设计"><a href="#系统设计" class="headerlink" title="系统设计"></a>系统设计</h3><p>这部分属于算法在分布式数据集上的性能优化的设计（包括上文distributed approximately quantitle sketch），相当复杂，如果想要深入理解，建议参考此专栏 <a href="https://blog.csdn.net/matrix_zzl/article/category/7296255" target="_blank" rel="noopener">xgboost源码解析</a> 和 陈天奇论文的附录资料来学习，这里简要说明3点</p>
-<ol>
-<li><p>旨在并行学习的列块结构 Column Block for Parallel Learning </p>
-<p> CSR 应对稀疏样本进行压缩的行存储 + CSC 进入内存以后，样本是按按列的压缩存储，这样有利于按列（特征）排序的近似分位算法。</p>
-</li>
-<li><p>关注缓存的存取 Cache-aware Access </p>
-<p> 应对CSC的缓存不命中的问题：CSC存储优化会导致获取每个样本获取统计值而不连续，造成样本计算cache不断切换而导致cache-miss，然后提出这个改进措施。</p>
-</li>
-<li><p>核外块的计算 Blocks for Out-of-core Computation</p>
+<p>使用了该方法，相当于比传统方法多遍历了一次，但是它只在非缺失值的样本上进行迭代，因此其复杂度与非缺失值的样本成线性关系。在 Allstate-10k 数据集上，比传统方法快了50倍：</p>
+<p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1541862763402.png" alt="1541862763402"></p>
+<h4 id="旨在并行学习的列块结构-Column-Block-for-Parallel-Learning"><a href="#旨在并行学习的列块结构-Column-Block-for-Parallel-Learning" class="headerlink" title="旨在并行学习的列块结构 Column Block for Parallel Learning"></a>旨在并行学习的列块结构 Column Block for Parallel Learning</h4><p>主要参考论文4.1节</p>
+<p><strong>CSR vs CSC </strong></p>
+<p>稀疏矩阵的压缩存储形式，比较常见的其中两种：压缩的稀疏行（Compressed Sparse Row）和 压缩的稀疏列（Compressed Sparse Row）</p>
+<p><img src="https://images0.cnblogs.com/blog/354318/201502/042300502345067.png" alt=""></p>
+<p>CSR包含非0数据块values，行偏移offsets，列下标indices。offsets数组大小为（总行数目+1），CSR是对稠密矩阵的压缩，实际上直接访问稠密矩阵元素 (i,j) 并不高效，毕竟损失部分信息，访问过程如下：</p>
+<pre><code>    1. 根据行i 得到偏移区间开始位置 `offsets[i]`与区间结束位置 `offsets[i+1]-1`，得到ii行数据块 `values[offsets[i]..(offsets[i+1]-1)]`， 与非0的列下表`indices[offsets[i]..(offsets[i+1]-1)]`
+    2. 在列下标数据块中二分查找j，找不到则返回0，否则找到下标值k，返回values[offsets[i]+k]
+</code></pre><p>从访问单个元素来说，从 $O(1)$ 时间复杂度升到 $O(\log N)$, N 为该行非稀疏数据项个数。但是如果要遍历访问整行非0数据，则无需访问indices数组，时间复杂度反而更低，因为少了大量的稀疏为0的数据访问。</p>
+<p>CSC与CSR变量结构上并无差别，只是变量意义不同，其中values仍然为非0数据块，offsets为列偏移，即特征id对应数组，indices为行下标，对应样本id数组，XBGoost使用CSC主要用于对特征的全局预排序。预先将CSR数据转化为无序的CSC数据，遍历每个特征，并对每个特征 i 进行排序：<code>sort(&amp;values[offsets[i]], &amp;values[offsets[i+1]-1])</code>。全局特征排序后，后期节点分裂可以复用全局排序信息，而不需要重新排序。</p>
+<p>矩阵的存储形式，参考此文：<a href="https://www.cnblogs.com/xbinworld/p/4273506.html" target="_blank" rel="noopener">稀疏矩阵存储格式总结+存储效率对比:COO,CSR,DIA,ELL,HYB</a></p>
+<p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1541875753533.png" alt="1541875753533"></p>
+<p><strong>采取这种存储结构的好处</strong></p>
+<p>未完待续。。。。。</p>
+<h4 id="关注缓存的存取-Cache-aware-Access"><a href="#关注缓存的存取-Cache-aware-Access" class="headerlink" title="关注缓存的存取 Cache-aware Access"></a>关注缓存的存取 Cache-aware Access</h4><p>使用Block结构的一个缺点是取梯度的时候，是通过索引来获取的，而这些梯度的获取顺序是按照特征的大小顺序的。这将导致<strong>非连续</strong>的内存访问，可能使得CPU cache缓存命中率低，从而影响算法效率。</p>
+<p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1541876055067.png" alt="1541876055067">  </p>
+<p>因此，对于exact greedy算法中, 使用<strong>缓存预取</strong>。具体来说，对每个线程分配一个连续的buffer，读取梯度信息并存入Buffer中（这样就实现了非连续到连续的转化），然后再统计梯度信息。该方式在训练样本数大的时候特别有用，见下图：</p>
+<p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1541876128716.png" alt="1541876128716"></p>
+<p>在 approximate 算法中，对Block的大小进行了合理的设置。定义Block的大小为Block中最多的样本数。设置合适的大小是很重要的，设置过大则容易导致命中率低，过小则容易导致并行化效率不高。经过实验，发现 $2^{16}$ 比较好，那么上文提到CSC存储结构的 indices 数组（存储的行下表）的元素占用的字节数就是 16/8 = 2 。</p>
+<p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1541876848274.png" alt="1541876848274"></p>
+<h4 id="核外块的计算-Blocks-for-Out-of-core-Computation"><a href="#核外块的计算-Blocks-for-Out-of-core-Computation" class="headerlink" title="核外块的计算 Blocks for Out-of-core Computation"></a>核外块的计算 Blocks for Out-of-core Computation</h4><p>XGBoost中提出Out-of-core Computation优化，解决了在硬盘上读取数据耗时过长，吞吐量不足</p>
 <ul>
 <li>多线程对<strong>数据分块压缩</strong> Block Compression，再将数据传输到内存，最后再用独立的线程解压缩，<strong>核心思想</strong>：将磁盘的读取消耗转换为解压缩所消耗的计算资源。</li>
-<li>分布式数据库系统的常见设计：Block Sharding将数据分片到多块硬盘上，每块硬盘分配一个预取线程，将数据fetche到in-memory buffer中。训练线程交替读取多块缓存，提升了硬盘总体的吞吐量。</li>
+<li>分布式数据库系统的常见设计：Block Sharding将数据分片到多块硬盘上，每块硬盘分配一个预取线程，将数据fetche到in-memory buffer中。训练线程交替读取多块缓存的同时，计算任务也在运转，提升了硬盘总体的吞吐量。</li>
 </ul>
-</li>
-</ol>
-<h3 id="XGBoost-对-GBDT-实现的巧妙之处"><a href="#XGBoost-对-GBDT-实现的巧妙之处" class="headerlink" title="XGBoost 对 GBDT 实现的巧妙之处"></a>XGBoost 对 GBDT 实现的巧妙之处</h3><p>这部分内容主要参考了知乎上的一个问答 <a href="https://www.zhihu.com/question/41354392" target="_blank" rel="noopener">机器学习算法中 GBDT 和 XGBOOST 的区别有哪些？ - 知乎</a> 根据他们的总结和我自己对论文的理解和补充。</p>
+<p>注：这部分内容属于外存算法<a href="https://en.wikipedia.org/wiki/External_memory_algorithm" target="_blank" rel="noopener">External_memory_algorithm</a></p>
+<h3 id="XGBoost-对-GBDT-实现的不同之处"><a href="#XGBoost-对-GBDT-实现的不同之处" class="headerlink" title="XGBoost 对 GBDT 实现的不同之处"></a>XGBoost 对 GBDT 实现的不同之处</h3><p>这部分内容主要参考了知乎上的一个问答 <a href="https://www.zhihu.com/question/41354392" target="_blank" rel="noopener">机器学习算法中 GBDT 和 XGBOOST 的区别有哪些？ - 知乎</a> 根据他们的总结和我自己对论文的理解和补充。</p>
 <ol>
 <li><p>传统GBDT以CART作为基分类器，xgboost支持<strong>多种基础分类器</strong>。比如，线性分类器，这个时候xgboost相当于带 L1 和 L2正则化项 的逻辑斯蒂回归（分类问题）或者线性回归（回归问题）。 </p>
 <p> 可以通过booster [default=gbtree] 设置参数，详细参照官网</p>
@@ -817,20 +857,6 @@ Gain &amp;= Obj_{unsplit} - Obj_{split} \\
 <li><p>传统GBDT在优化时只用到一阶导数信息，xgboost则对损失函数函数进行了<strong>二阶泰勒展开</strong>，同时用到了一阶和二阶导数，这样相对会精确地代表损失函数的值。顺便提一下，xgboost工具支持自定义代价函数，只要函数可一阶和二阶求导，详细参照官网API。 </p>
 </li>
 <li><p>xgboost在代价函数里加入了<strong>正则项</strong>，用于控制模型的复杂度。正则项里包含了树的叶子节点个数、每个叶子节点上输出的score的L2模的平方和，防止过拟合，这也是xgboost优于传统GBDT的一个特性。正则化的两个部分，都是为了防止过拟合，剪枝是都有的，叶子结点输出L2平滑是新增的。</p>
-</li>
-<li><p><strong>shrinkage and column subsampling</strong>  与随机森林中的用法和目的一样，用来防止过拟合，在论文2.3节有介绍，这里总结一下</p>
-<ul>
-<li>这个xgboost与现代的gbdt一样，都有shrinkage参数 （最原始的gbdt没有这个参数）类似于梯度下降算法中的学习速率，在每一步tree boosting之后增加了一个参数n（权重），通过这种方式来减小每棵树的影响力，给后面的树提供空间去优化模型。</li>
-<li>column subsampling 列(特征)抽样，说是从随机森林那边学习来的，防止过拟合的效果比传统的行抽样还好（行抽样功能也有），并且有利于后面提到的并行化处理算法。</li>
-</ul>
-</li>
-<li><p><strong>split finding algorithms 划分点查找算法</strong>  论文第3节部分，这部分内容主要是<strong>算法工程上的优化</strong>，涉及到分布式形式下的数据集，<font color="blue">这部分内容我只略知一二，详细还要看陈天列出来的引用论文: <a href="https://pdfs.semanticscholar.org/03a0/f978de91f70249dc39de75e8958c49df4583.pdf" target="_blank" rel="noopener">A fast algorithm for approximate quantiles</a></font><br> （1）exact greedy algorithm 贪心算法获取最优切分点<br> （2）approximate algorithm 近似算法，提出了候选分割点概念，先通过直方图算法获得候选分割点的分布情况，然后根据候选分割点将连续的特征信息映射到不同的buckets中，并统计汇总信息。近似算法主要对数据分布进行分桶，同时希望每个桶尽量均匀。<br> （3）distributed weighted quantile sketch</p>
-<p> 这里的算法 (2)、(3) 是为了解决数据无法一次载入内存或者在分布式情况下算法（1）效率低的问题</p>
-<p> 这里直方图算法，常用于GPU的内存优化算法，leetcode上也有人总结出来：<a href="https://www.cnblogs.com/felixfang/p/3676193.html" target="_blank" rel="noopener">LeetCode Largest Rectangle in Histogram O(n) 解法详析， Maximal Rectangle</a></p>
-</li>
-<li><p><strong>自带对缺失值的处理</strong>。对于特征的值有缺失的样本，xgboost可以自动学习出它的分裂方向。</p>
-</li>
-<li><p>论文3.4节，Algorithm 3: Sparsity-aware Split Finding  稀疏感知的分裂点查找算法</p>
 </li>
 <li><p>Built-in Cross-Validation <strong>内置交叉验证</strong> </p>
 </li>
@@ -850,21 +876,8 @@ Gain &amp;= Obj_{unsplit} - Obj_{split} \\
 <blockquote>
 <p>XGBoost allow users to define custom optimization objectives and evaluation criteria.<br>This adds a whole new dimension to the model and there is no limit to what we can do.</p>
 </blockquote>
-<ol>
-<li><p>系统设计模块（工程上极度优化）</p>
-<ul>
-<li><p>论文4.1 节：Column Block for Parallel Learning  为了并发学习的列块结构CRC </p>
-</li>
-<li><p>论文4.2 节：Cache-aware Access  缓存感知算法</p>
-<p>  xgboost还设计了高速缓存压缩感知算法，这是系统设计模块的效率提升。<br>  当梯度统计不适合于处理器高速缓存和高速缓存丢失时，会大大减慢切分点查找算法的速度。<br>  （1）针对 exact greedy algorithm采用缓存感知预取算法<br>  （2）针对 approximate algorithms选择合适的块大小</p>
-</li>
-<li><p>论文4.3 节：Blocks for Out-of-core Computation 核外块的计算（多线程）</p>
-</li>
-</ul>
-</li>
-</ol>
 <p>xgboost工具支持并行。注意xgboost不同于随机森林中的并行粒度是：tree，xgboost与其他提升方法（比如GBDT）一样，也是一次迭代完才能进行下一次迭代的（第t次迭代的代价函数里包含了前面t-1次迭代的预测值）。xgboost的并行是在特征粒度上的。我们知道，决策树的学习最耗时的一个步骤就是对特征的值进行排序（因为要确定最佳分割点），xgboost在训练之前，预先对数据进行了排序，然后保存为block结构，后面的迭代中重复地使用这个结构，大大减小计算量。这个block结构也使得并行成为了可能，在进行节点的分裂时，需要计算每个特征的增益，最终选增益最大的那个特征去做分裂，那么各个特征的增益计算就可以开多线程进行。</p>
-<p><strong>总体来说，这部分内容需要学习很多，特别是涉及到分布式地并发优化和资源调度算法，这就不仅仅是数学模型的问题了，还涉及到系统设计，程序运行性能的优化，本人实在是才疏学浅，这部分内容理解尚浅，进一步学习还需要其他论文和看XGBoost源码，有些优化的地方也不是作者首创，论文中也表示从附录的论文中得以学习集成到XGBoost中，真的是集万千之大作，作者不愧是上海交大ACM班出身</strong>。大神的访谈：<a href="https://cosx.org/2015/06/interview-of-tianqi/" target="_blank" rel="noopener">https://cosx.org/2015/06/interview-of-tianqi/</a></p>
+<p><strong>总体来说，这部分内容需要学习很多，特别是涉及到分布式地并发优化和资源调度算法，这就不仅仅是数学模型的问题了，还涉及到系统设计，程序运行性能的优化，本人实在是才疏学浅，这部分内容理解尚浅，进一步学习还需要其他论文和看XGBoost源码，有些优化的地方也不是作者首创，表示从附录的论文中得以学习集成到XGBoost中，真的是集万千之大作，作者不愧是上海交大ACM班出身</strong>。大神的访谈：<a href="https://cosx.org/2015/06/interview-of-tianqi/" target="_blank" rel="noopener">https://cosx.org/2015/06/interview-of-tianqi/</a></p>
 <h4 id="优化的角度"><a href="#优化的角度" class="headerlink" title="优化的角度"></a>优化的角度</h4><p><a href="https://www.zhihu.com/question/41354392/answer/157538270" target="_blank" rel="noopener">马琳同学的回答</a> 非常棒，真是让我感受到了：<font color="blue">横看成岭侧成峰</font><br><img src="http://p8o3egtyk.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1541846850051.png" alt=""></p>
 <h3 id="高可用的xgboost"><a href="#高可用的xgboost" class="headerlink" title="高可用的xgboost"></a>高可用的xgboost</h3><p>由于xgboost发展平稳成熟，现在已经非常易用，下图来自<a href="https://xgboost.ai" target="_blank" rel="noopener">官网</a></p>
 <p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1541270621305.png" alt="1541270621305"></p>
@@ -1249,6 +1262,13 @@ Gain &amp;= Obj_{unsplit} - Obj_{split} \\
 </li>
 </ul>
 <h3 id="调参"><a href="#调参" class="headerlink" title="调参"></a>调参</h3><p>调参主要参考 <a href="https://www.analyticsvidhya.com/blog/2016/03/complete-guide-parameter-tuning-xgboost-with-codes-python/" target="_blank" rel="noopener">Complete Guide to Parameter Tuning in XGBoost (with codes in Python)</a> ，有空再详细说明。</p>
+<h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><ol>
+<li>陈天奇的论文 <a href="https://arxiv.org/pdf/1603.02754" target="_blank" rel="noopener">XGBoost: A Scalable Tree Boosting System</a></li>
+<li>陈天奇的演讲视频 <a href="https://www.youtube.com/watch?v=Vly8xGnNiWs&amp;list=PLSz28ynAy1RohdgsPfC4l4t3lHu863PGx&amp;index=3&amp;t=1786s" target="_blank" rel="noopener">XGBoost A Scalable Tree Boosting System June 02, 2016 </a> <a href="https://speakerdeck.com/datasciencela/tianqi-chen-xgboost-overview-and-latest-news-la-meetup-talk" target="_blank" rel="noopener">演讲幻灯片 </a>和  <a href="https://homes.cs.washington.edu/~tqchen/pdf/BoostedTree.pdf" target="_blank" rel="noopener">官网幻灯片</a> </li>
+<li><a href="https://xgboost.ai/" target="_blank" rel="noopener">XGBoost 官网</a></li>
+<li>XGBoost的贡献者之一的 <a href="https://www.youtube.com/watch?v=ufHo8vbk6g4" target="_blank" rel="noopener">演讲</a></li>
+<li><a href="https://www.zhihu.com/question/41354392" target="_blank" rel="noopener">机器学习算法中 GBDT 和 XGBOOST 的区别有哪些？ - 知乎</a></li>
+</ol>
 
       
     </div>
@@ -1312,8 +1332,8 @@ Gain &amp;= Obj_{unsplit} - Obj_{split} \\
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/10/01/summary_of_LiHang_Statistical-learning-methods/" rel="next" title="《统计学习方法总结》">
-                <i class="fa fa-chevron-left"></i> 《统计学习方法总结》
+              <a href="/2018/10/01/4.Naive-Bayes_LiHang-Statistical-Learning-Methods/" rel="next" title="《统计学习方法》第4章 NaiveBayes">
+                <i class="fa fa-chevron-left"></i> 《统计学习方法》第4章 NaiveBayes
               </a>
             
           </div>
@@ -1512,7 +1532,7 @@ Gain &amp;= Obj_{unsplit} - Obj_{split} \\
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#正文"><span class="nav-text">正文</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#XGBoost"><span class="nav-text">XGBoost</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#快速了解"><span class="nav-text">快速了解</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#outlook-幻灯片大纲"><span class="nav-text">outlook 幻灯片大纲</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Review-of-key-concepts-of-supervised-learning-监督学习的关键概念的回顾"><span class="nav-text">Review of key concepts of supervised learning 监督学习的关键概念的回顾</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#回归树和集成模型-What-are-we-Learning"><span class="nav-text">回归树和集成模型 (What are we Learning)</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#模型和参数"><span class="nav-text">模型和参数</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#在单一变量上学习一棵树"><span class="nav-text">在单一变量上学习一棵树</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#学习阶跃函数"><span class="nav-text">学习阶跃函数</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#目标函数-vs-启发式"><span class="nav-text">目标函数 vs 启发式</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#回归树不仅仅用于回归"><span class="nav-text">回归树不仅仅用于回归</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#梯度提升Gradient-Boosting-How-do-we-Learn"><span class="nav-text">梯度提升Gradient Boosting (How do we Learn)</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#那怎么学习？"><span class="nav-text">那怎么学习？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#加法训练"><span class="nav-text">加法训练</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#损失函数的泰勒展开"><span class="nav-text">损失函数的泰勒展开</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#这么苦逼图啥？"><span class="nav-text">这么苦逼图啥？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#改进树的定义-Refine-the-definition-of-tree"><span class="nav-text">改进树的定义 Refine the definition of tree</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#定义树的复杂度-Define-Complexity-of-a-Tree"><span class="nav-text">定义树的复杂度 Define Complexity of a Tree</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#修改目标函数-Revisit-the-Objectives"><span class="nav-text">修改目标函数 Revisit the Objectives</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#结构分-The-Structure-Score"><span class="nav-text">结构分 The Structure Score</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#用于单棵树的搜索算法-Searching-Algorithm-for-Single-Tree"><span class="nav-text">用于单棵树的搜索算法 Searching Algorithm for Single Tree</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#树的贪婪学习-Greedy-Learning-of-the-Tree"><span class="nav-text">树的贪婪学习 Greedy Learning of the Tree</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#最好分裂点的查找-Efficient-Finding-of-the-Best-Split"><span class="nav-text">最好分裂点的查找 Efficient Finding of the Best Split</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#分裂点查找算法-An-Algorithm-for-Split-Finding"><span class="nav-text">分裂点查找算法 An Algorithm for Split Finding</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#类变量（categorical-variables）？"><span class="nav-text">类变量（categorical variables）？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#剪枝和正则化-Pruning-and-Regularization"><span class="nav-text">剪枝和正则化 Pruning and Regularization</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#回顾提升树算法-Recap-Boosted-Tree-Algorithm"><span class="nav-text">回顾提升树算法 Recap: Boosted Tree Algorithm</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#近似贪婪算法"><span class="nav-text">近似贪婪算法</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#注意稀疏的分裂点查找-Sparsity-aware-Split-Finding"><span class="nav-text">注意稀疏的分裂点查找 Sparsity-aware Split Finding</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#系统设计"><span class="nav-text">系统设计</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#XGBoost-对-GBDT-实现的巧妙之处"><span class="nav-text">XGBoost 对 GBDT 实现的巧妙之处</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#优化的角度"><span class="nav-text">优化的角度</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#高可用的xgboost"><span class="nav-text">高可用的xgboost</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hello-world"><span class="nav-text">hello world</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参数详解"><span class="nav-text">参数详解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#通用参数-general-parameters"><span class="nav-text">通用参数 general parameters</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#提升器参数-Booster-parameters"><span class="nav-text">提升器参数 Booster parameters</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#树提升器参数-Parameters-for-Tree-Booster"><span class="nav-text">树提升器参数 Parameters for Tree Booster</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Additional-parameters-for-Dart-Booster-booster-dart"><span class="nav-text">Additional parameters for Dart Booster (booster=dart)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#学习任务的参数-Learning-Task-Parameters"><span class="nav-text">学习任务的参数 Learning Task Parameters</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#命令行参数-Command-Line-Parameters"><span class="nav-text">命令行参数 Command Line Parameters</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#调参"><span class="nav-text">调参</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#正文"><span class="nav-text">正文</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#XGBoost"><span class="nav-text">XGBoost</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#快速了解"><span class="nav-text">快速了解</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#outlook-幻灯片大纲"><span class="nav-text">outlook 幻灯片大纲</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Review-of-key-concepts-of-supervised-learning-监督学习的关键概念的回顾"><span class="nav-text">Review of key concepts of supervised learning 监督学习的关键概念的回顾</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#回归树和集成模型-What-are-we-Learning"><span class="nav-text">回归树和集成模型 (What are we Learning)</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#模型和参数"><span class="nav-text">模型和参数</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#在单一变量上学习一棵树"><span class="nav-text">在单一变量上学习一棵树</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#学习阶跃函数"><span class="nav-text">学习阶跃函数</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#目标函数-vs-启发式"><span class="nav-text">目标函数 vs 启发式</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#回归树不仅仅用于回归"><span class="nav-text">回归树不仅仅用于回归</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#梯度提升Gradient-Boosting-How-do-we-Learn"><span class="nav-text">梯度提升Gradient Boosting (How do we Learn)</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#那怎么学习？"><span class="nav-text">那怎么学习？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#加法训练"><span class="nav-text">加法训练</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#损失函数的泰勒展开"><span class="nav-text">损失函数的泰勒展开</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#这么苦逼图啥？"><span class="nav-text">这么苦逼图啥？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#改进树的定义-Refine-the-definition-of-tree"><span class="nav-text">改进树的定义 Refine the definition of tree</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#定义树的复杂度-Define-Complexity-of-a-Tree"><span class="nav-text">定义树的复杂度 Define Complexity of a Tree</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#修改目标函数-Revisit-the-Objectives"><span class="nav-text">修改目标函数 Revisit the Objectives</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#结构分-The-Structure-Score"><span class="nav-text">结构分 The Structure Score</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#用于单棵树的搜索算法-Searching-Algorithm-for-Single-Tree"><span class="nav-text">用于单棵树的搜索算法 Searching Algorithm for Single Tree</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#树的贪婪学习-Greedy-Learning-of-the-Tree"><span class="nav-text">树的贪婪学习 Greedy Learning of the Tree</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#最好分裂点的查找-Efficient-Finding-of-the-Best-Split"><span class="nav-text">最好分裂点的查找 Efficient Finding of the Best Split</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#分裂点查找算法-An-Algorithm-for-Split-Finding"><span class="nav-text">分裂点查找算法 An Algorithm for Split Finding</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#类变量（categorical-variables）？"><span class="nav-text">类变量（categorical variables）？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#剪枝和正则化-Pruning-and-Regularization"><span class="nav-text">剪枝和正则化 Pruning and Regularization</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#回顾提升树算法-Recap-Boosted-Tree-Algorithm"><span class="nav-text">回顾提升树算法 Recap: Boosted Tree Algorithm</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#XGBoost-系统设计的精髓"><span class="nav-text">XGBoost 系统设计的精髓</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#缩小和列抽样-shrinkage-and-column-subsampling"><span class="nav-text">缩小和列抽样 shrinkage and column subsampling</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#查找分裂点的近似算法-Approximate-Algorithm"><span class="nav-text">查找分裂点的近似算法 Approximate Algorithm</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#带权的分位方案-Weighted-Quantile-Sketch"><span class="nav-text">带权的分位方案 Weighted Quantile Sketch</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#注意稀疏问题的分裂点查找-Sparsity-aware-Split-Finding"><span class="nav-text">注意稀疏问题的分裂点查找 Sparsity-aware Split Finding</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#旨在并行学习的列块结构-Column-Block-for-Parallel-Learning"><span class="nav-text">旨在并行学习的列块结构 Column Block for Parallel Learning</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#关注缓存的存取-Cache-aware-Access"><span class="nav-text">关注缓存的存取 Cache-aware Access</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#核外块的计算-Blocks-for-Out-of-core-Computation"><span class="nav-text">核外块的计算 Blocks for Out-of-core Computation</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#XGBoost-对-GBDT-实现的不同之处"><span class="nav-text">XGBoost 对 GBDT 实现的不同之处</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#优化的角度"><span class="nav-text">优化的角度</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#高可用的xgboost"><span class="nav-text">高可用的xgboost</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hello-world"><span class="nav-text">hello world</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参数详解"><span class="nav-text">参数详解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#通用参数-general-parameters"><span class="nav-text">通用参数 general parameters</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#提升器参数-Booster-parameters"><span class="nav-text">提升器参数 Booster parameters</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#树提升器参数-Parameters-for-Tree-Booster"><span class="nav-text">树提升器参数 Parameters for Tree Booster</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Additional-parameters-for-Dart-Booster-booster-dart"><span class="nav-text">Additional parameters for Dart Booster (booster=dart)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#学习任务的参数-Learning-Task-Parameters"><span class="nav-text">学习任务的参数 Learning Task Parameters</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#命令行参数-Command-Line-Parameters"><span class="nav-text">命令行参数 Command Line Parameters</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#调参"><span class="nav-text">调参</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#引用"><span class="nav-text">引用</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -1545,7 +1565,7 @@ Gain &amp;= Obj_{unsplit} - Obj_{split} \\
     
       <span class="post-meta-item-text">Site words total count</span>
     
-    <span title="Site words total count">562.9k</span>
+    <span title="Site words total count">563.8k</span>
   
 </div>
 
