@@ -4,8 +4,28 @@
 
     
   <url>
+    <loc>https://snaildove.github.io/2018/10/02/get-started-XGBoost/</loc>
+    <lastmod>2018-11-10T10:54:29.458Z</lastmod>
+    <data>
+        <display>
+        <title>get started XGBoost</title>
+        <pubTime>2018-10-01T16:00:00.000Z</pubTime>
+        
+        <tag>Machine Learning</tag>
+         
+         
+           
+             
+              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://snaildove.github.io/2018/10/01/8.Booting-Methods_LiHang-Statistical-Learning-Methods/</loc>
-    <lastmod>2018-11-06T09:58:50.731Z</lastmod>
+    <lastmod>2018-11-10T07:25:51.716Z</lastmod>
     <data>
         <display>
         <title>《统计学习方法》第8章 提升方法之AdaBoost\BoostingTree\GBDT</title>
@@ -14,6 +34,27 @@
         <tag>Machine Learning</tag>
          
         <tag>统计学习方法</tag>
+         
+         
+           
+             
+              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
+    <loc>https://snaildove.github.io/2017/08/03/singular_values_decomposition/</loc>
+    <lastmod>2018-11-07T03:33:03.866Z</lastmod>
+    <data>
+        <display>
+        <title>Tsinghua linear-algebra-2 3rd-lecture Singular-Values-Decomposition</title>
+        <pubTime>2017-08-03T12:16:00.000Z</pubTime>
+        
+        <tag>linear_algebra</tag>
          
          
            
@@ -418,26 +459,6 @@
         <tag>Machine Learning</tag>
          
         <tag>统计学习方法</tag>
-         
-         
-           
-             
-              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://snaildove.github.io/2017/08/03/singular_values_decomposition/</loc>
-    <lastmod>2018-10-29T06:15:22.032Z</lastmod>
-    <data>
-        <display>
-        <title>Tsinghua linear-algebra-2 3rd-lecture Singular-Values-Decomposition</title>
-        <pubTime>2017-08-03T12:16:00.000Z</pubTime>
-        
-        <tag>linear_algebra</tag>
          
          
            
@@ -2004,7 +2025,6 @@
     </data>
     </url>
 
-    
     
   <url>
     <loc>https://snaildove.github.io/2018/02/01/01_introduction-to-deep-learning/</loc>

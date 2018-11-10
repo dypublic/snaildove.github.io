@@ -131,7 +131,7 @@
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/8-boosting/1541169882361.png">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/8-boosting/1541171081333.png">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/8-boosting/1541266736974.png">
-<meta property="og:updated_time" content="2018-11-06T09:58:50.731Z">
+<meta property="og:updated_time" content="2018-11-10T07:25:51.716Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="《统计学习方法》第8章 提升方法之AdaBoost\BoostingTree\GBDT">
 <meta name="twitter:description" content="前言在深度学习火起来之前，提升方法（包括AdaBoost, GBDT, XGBoost）是 kaggle 等比赛中的利器，所以提升方法是必备的知识点。李航《统计学习方法》第8章——提升方法主要内容：AdaBoost, Boosting Tree, GBDT(这一块原文不够详细，将补充一些)。写本文主要目的是复习（毕竟之前看纸质版做的笔记）， 对于证明比较跳跃和勘误的地方我都做了注解，以便初学者快">
@@ -530,7 +530,7 @@
 <p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/8-boosting/1541266736974.png" alt="此图来自https://wepon.me"></p>
 <p><b><font color="red">注意</font></b>：《统计学习方法》这一章介绍的都是最原始的提升树算法，实际上有进一步改进的调整：</p>
 <ol>
-<li><p>步进参数 $\nu$ ，专业名词为shrinkage，又称缩减，类似梯度下降算法的学习率，这里为什么称为步进参数，因为前文提到：提升方法是加法模型的前向分布算法，提升树也属于提升方法中一种（基学习器是决策树）。</p>
+<li><p>步进参数 $\nu$ ，专业名词为shrinkage，又称收缩，类似梯度下降算法的学习率，这里为什么称为步进参数，因为前文提到：提升方法是加法模型的前向分布算法，提升树也属于提升方法中一种（基学习器是决策树）。</p>
 <p> 例如：运用在GBDT中 $f_m(x)=f_{m-1}(x)+\nu\cdot \sum\limits_{j=1}^{J}\gamma_{jm}I(x\in R_{jm})$</p>
 </li>
 <li><p>正则化手段：subsampling 子抽样（包括：样本子抽样和特征的子抽样），提高泛化能力。</p>
@@ -581,8 +581,8 @@
 <p>在这些 hypothesis 里，我们可以选择 svm, 也可以选择 logistic regression. 可以选择单棵决策树，也可以选择 tree-ensemble (gbdt, random forest).  现在的问题就是，为什么 tree-ensemble 在实际中的效果很好呢？</p>
 <p>区别就在于 “<strong>模型的可控性</strong>”。</p>
 <p>先说结论，tree-ensemble 这样的模型的可控性是好的，而像 LR  这样的模型的可控性是不够好的（或者说，可控性是没有 tree-ensemble 好的）。为什么会这样？别急，听我慢慢道来。</p>
-<p>我们之前说，当我们选择一个 hypothsis 后，就需要在训练数据上进行训练，从而逼近我们的 “上帝函数”。我们都知道，对于 LR 这样的模型。如果 underfit，我们可以通过加 feature，或者通过高次的特征转换来使得我们的模型在训练数据上取得足够高的正确率。而对于 tree-enseble 来说，我们解决这一问题的方法是通过训练更多的 “弱弱” 的 tree.  所以，这两类模型都可以把 training error 做的足够低，也就是说模型的表达能力都是足够的。但是这样就完事了吗？没有，我们还需要让我们的模型的 vc-dimension 低一些。<strong>而这里，重点来了。</strong>在 tree-ensemble 模型中，通过加 tree 的方式，对于模型的 vc-dimension 的改变是比较小的。而在 LR 中，初始的维数设定，或者说特征的高次转换对于 vc-dimension 的影响都是更大的。换句话说，tree-ensemble 总是用一些 “弱弱” 的树联合起来去逼近 “上帝函数”，一次一小步，总能拟合的比较好。而对于 LR 这样的模型，我们很难去猜到这个“上帝函数”到底长什么样子（到底是2次函数还是3次函数？上帝函数如果是介于2次和3次之间怎么办呢？）。所以，一不小心我们设定的多项式维数高了，模型就 <strong>“刹不住车了”</strong>。俗话说的好，步子大了，总会扯着蛋。这也就是我们之前说的，tree-ensemble 模型的可控性更好，也即更不容易 overfit.</p>
-<h4 id="站在数据的角度"><a href="#站在数据的角度" class="headerlink" title="站在数据的角度"></a>站在数据的角度</h4><p>除了理论模型之外, 实际的数据也对我们的算法最终能取得好的效果息息相关。kaggle 比赛选择的都是真实世界中的问题。所以数据多多少少都是有噪音的。而基于树的算法通常抗噪能力更强。比如在树模型中，我们很容易对缺失值进行处理。除此之外，基于树的模型对于 categorical feature 也更加友好。</p>
+<p>我们之前说，当我们选择一个 hypothsis 后，就需要在训练数据上进行训练，从而逼近我们的 “上帝函数”。我们都知道，对于 LR 这样的模型。如果 underfit，我们可以通过加 feature，或者通过高次的特征转换来使得我们的模型在训练数据上取得足够高的正确率。而对于 tree-enseble 来说，我们解决这一问题的方法是通过训练更多的 “弱弱” 的 tree.  所以，这两类模型都可以把 training error 做的足够低，也就是说模型的表达能力都是足够的。但是这样就完事了吗？没有，我们还需要让我们的模型的 vc-dimension 低一些。而这里，重点来了。在 tree-ensemble 模型中，通过加 tree 的方式，对于模型的 vc-dimension 的改变是比较小的。而在 LR 中，初始的维数设定，或者说特征的高次转换对于 vc-dimension 的影响都是更大的。<strong>换句话说，tree-ensemble 总是用一些 “弱弱” 的树联合起来去逼近 “上帝函数”，一次一小步，总能拟合的比较好。而对于 LR 这样的模型，我们很难去猜到这个“上帝函数”到底长什么样子（到底是2次函数还是3次函数？上帝函数如果是介于2次和3次之间怎么办呢？）。所以，一不小心我们设定的多项式维数高了，模型就 “刹不住车了”。</strong>俗话说的好，步子大了，总会扯着蛋。这也就是我们之前说的，tree-ensemble 模型的可控性更好，也即更不容易 overfit.</p>
+<h4 id="站在数据的角度"><a href="#站在数据的角度" class="headerlink" title="站在数据的角度"></a>站在数据的角度</h4><p>除了理论模型之外, 实际的数据也对我们的算法最终能取得好的效果息息相关。kaggle 比赛选择的都是<strong>真实世界中</strong>的问题。所以<strong>数据多多少少都是有噪音的</strong>。而<strong>基于树的算法通常抗噪能力更强</strong>。比如在树模型中，我们很容易对<strong>缺失值</strong>进行处理。除此之外，基于树的模型对于 <strong>categorical feature 也更加友好</strong>。</p>
 <p>除了数据噪音之外，feature 的多样性也是 tree-ensemble 模型能够取得更好效果的原因之一。通常在一个kaggle任务中，我们可能有年龄特征，收入特征，性别特征等等从不同 channel 获得的特征。而特征的多样性也正是为什么工业界很少去使用 svm 的一个重要原因之一，因为 svm 本质上是属于一个几何模型，这个模型需要去定义 instance 之间的 kernel 或者 similarity （对于linear svm 来说，这个similarity 就是内积）。这其实和我们在之前说过的问题是相似的，我们无法预先设定一个很好的similarity。这样的数学模型使得 svm 更适合去处理 “同性质”的特征，例如图像特征提取中的 lbp 。而从不同 channel 中来的 feature 则更适合 tree-based model, 这些模型对数据的 distributation 通常并不敏感。</p>
 <h4 id="站在系统实现的角度"><a href="#站在系统实现的角度" class="headerlink" title="站在系统实现的角度"></a>站在系统实现的角度</h4><p>除了有合适的模型和数据，一个良好的机器学习系统实现往往也是算法最终能否取得好的效果的关键。一个好的机器学习系统实现应该具备以下特征：</p>
 <ol>
@@ -592,7 +592,7 @@
 <li>系统具有可扩展性, 可以从容处理更大的数据。</li>
 </ol>
 <p>到目前为止，xgboost 是我发现的唯一一个能够很好的满足上述所有要求的 machine learning package. 在此感谢青年才俊 陈天奇。</p>
-<p>在效率方面，xgboost 高效的 c++ 实现能够通常能够比其它机器学习库更快的完成训练任务。<br>在灵活性方面，xgboost 可以深度定制每一个子分类器，并且可以灵活的选择 loss function（logistic，linear，softmax 等等）。除此之外，xgboost还提供了一系列在机器学习比赛中十分有用的功能，例如 early-stop， cv 等等<br>在易用性方面，xgboost 提供了各种语言的封装，使得不同语言的用户都可以使用这个优秀的系统。<br>最后，在可扩展性方面，xgboost 提供了分布式训练（底层采用 rabit 接口），并且其分布式版本可以跑在各种平台之上，例如 mpi, yarn, spark 等等。</p>
+<p>在效率方面，xgboost 高效的 c++ 实现能够通常能够比其它机器学习库更快的完成训练任务。<br>在<strong>灵活性方面</strong>，xgboost 可以深度定制每一个子分类器，并且可以灵活的选择 loss function（logistic，linear，softmax 等等）。除此之外，xgboost还提供了一系列在机器学习比赛中十分有用的功能，例如 early-stop， cv 等等<br>在<strong>易用性方面</strong>，xgboost 提供了各种语言的封装，使得不同语言的用户都可以使用这个优秀的系统。<br>最后，在可扩展性方面，xgboost 提供了分布式训练（底层采用 rabit 接口），并且其分布式版本可以跑在各种平台之上，例如 mpi, yarn, spark 等等。</p>
 <p>有了这么多优秀的特性，自然这个系统会吸引更多的人去使用它来参加 kaggle 比赛。</p>
 <p>综上所述，理论模型，实际的数据，良好的系统实现，都是使得 tree-ensemble 在实际的 kaggle 比赛中“屡战屡胜”的原因。</p>
 <font color="red"><strong>用一句话与大家共勉：算法学习要学习算法之间的联系与区别，优缺点和适用场合，这样能做到融会贯通。</strong></font>
@@ -671,6 +671,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/10/01/4.Naive-Bayes_LiHang-Statistical-Learning-Methods/" rel="prev" title="《统计学习方法》第4章 NaiveBayes">
+                《统计学习方法》第4章 NaiveBayes <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -756,7 +760,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">102</span>
+                  <span class="site-state-item-count">103</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -790,7 +794,7 @@
 				<h4 class="widget-title">Tag Cloud</h4>
 					<div id="myCanvasContainer" class="widget tagcloud">
 					<canvas width="250" height="250" id="resCanvas" style="width=100%">
-						<ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Basic-Algorithm/">Basic Algorithm</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Calculus-and-Differential/">Calculus and Differential</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Data-Structure/">Data Structure</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Improving-Deep-Neural-Networks/">Improving Deep Neural Networks</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Information-Theory/">Information Theory</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Latex/">Latex</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning/">Machine Learning</a><span class="tag-list-count">25</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning-by-Andrew-NG/">Machine Learning by Andrew NG</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python-Data-Science-Cookbook/">Python Data Science Cookbook</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Structuring-Machine-Learning-Projects/">Structuring Machine Learning Projects</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/convolutional-neural-networks/">convolutional-neural-networks</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/deep-learning/">deep learning</a><span class="tag-list-count">41</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/english/">english</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/">java</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linear-algebra/">linear_algebra</a><span class="tag-list-count">13</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/neural-networks-deep-learning/">neural-networks-deep-learning</a><span class="tag-list-count">8</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nlp-sequence-models/">nlp-sequence-models</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/probability/">probability</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/统计学习方法/">统计学习方法</a><span class="tag-list-count">4</span></li></ul>
+						<ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Basic-Algorithm/">Basic Algorithm</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Calculus-and-Differential/">Calculus and Differential</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Data-Structure/">Data Structure</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Improving-Deep-Neural-Networks/">Improving Deep Neural Networks</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Information-Theory/">Information Theory</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Latex/">Latex</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning/">Machine Learning</a><span class="tag-list-count">26</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning-by-Andrew-NG/">Machine Learning by Andrew NG</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python-Data-Science-Cookbook/">Python Data Science Cookbook</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Structuring-Machine-Learning-Projects/">Structuring Machine Learning Projects</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/convolutional-neural-networks/">convolutional-neural-networks</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/deep-learning/">deep learning</a><span class="tag-list-count">41</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/english/">english</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/">java</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linear-algebra/">linear_algebra</a><span class="tag-list-count">13</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/neural-networks-deep-learning/">neural-networks-deep-learning</a><span class="tag-list-count">8</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nlp-sequence-models/">nlp-sequence-models</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/probability/">probability</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/统计学习方法/">统计学习方法</a><span class="tag-list-count">4</span></li></ul>
 					</canvas>
 				</div>
 			</div>
@@ -895,7 +899,7 @@
     
       <span class="post-meta-item-text">Site words total count</span>
     
-    <span title="Site words total count">550.1k</span>
+    <span title="Site words total count">562.9k</span>
   
 </div>
 

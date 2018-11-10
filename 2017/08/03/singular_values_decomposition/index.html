@@ -98,13 +98,13 @@
 
 
 
-<meta name="description" content="前言笔记源自：清华大学公开课：线性代数2——第三讲：奇异值分解 清华大学线性代数2公开课笔记总结 第1讲：正定矩阵第2讲：相似矩阵第3讲：奇异值分解第4讲：线性变换1第5讲：线性变换2第6讲：伪逆第7讲：工程中的矩阵第8讲：图与网络第9讲：Markov矩阵和正矩阵第10讲：Fourier级数第11讲：计算机图像第12讲：复数与复矩阵 正文对角矩阵是我们最喜欢的一类矩阵，对能够相似于对角阵的矩阵能">
+<meta name="description" content="前言笔记源自：清华大学公开课：线性代数2——第三讲：奇异值分解，本文将每一步推导都详细列出来了。 清华大学线性代数2公开课笔记总结 第1讲：正定矩阵第2讲：相似矩阵第3讲：奇异值分解第4讲：线性变换1第5讲：线性变换2第6讲：伪逆第7讲：工程中的矩阵第8讲：图与网络第9讲：Markov矩阵和正矩阵第10讲：Fourier级数第11讲：计算机图像第12讲：复数与复矩阵 正文对角矩阵是我们最喜欢的一">
 <meta name="keywords" content="linear_algebra">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Tsinghua linear-algebra-2 3rd-lecture Singular-Values-Decomposition">
 <meta property="og:url" content="https://snaildove.github.io/2017/08/03/singular_values_decomposition/index.html">
 <meta property="og:site_name" content="SnailDove&#39;s blog">
-<meta property="og:description" content="前言笔记源自：清华大学公开课：线性代数2——第三讲：奇异值分解 清华大学线性代数2公开课笔记总结 第1讲：正定矩阵第2讲：相似矩阵第3讲：奇异值分解第4讲：线性变换1第5讲：线性变换2第6讲：伪逆第7讲：工程中的矩阵第8讲：图与网络第9讲：Markov矩阵和正矩阵第10讲：Fourier级数第11讲：计算机图像第12讲：复数与复矩阵 正文对角矩阵是我们最喜欢的一类矩阵，对能够相似于对角阵的矩阵能">
+<meta property="og:description" content="前言笔记源自：清华大学公开课：线性代数2——第三讲：奇异值分解，本文将每一步推导都详细列出来了。 清华大学线性代数2公开课笔记总结 第1讲：正定矩阵第2讲：相似矩阵第3讲：奇异值分解第4讲：线性变换1第5讲：线性变换2第6讲：伪逆第7讲：工程中的矩阵第8讲：图与网络第9讲：Markov矩阵和正矩阵第10讲：Fourier级数第11讲：计算机图像第12讲：复数与复矩阵 正文对角矩阵是我们最喜欢的一">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpage/tsinghua_linear_algebra/2-3/1.png">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpage/tsinghua_linear_algebra/2-3/2.png">
@@ -119,10 +119,10 @@
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpage/tsinghua_linear_algebra/2-3/11.png">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpage/tsinghua_linear_algebra/2-3/12.png">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpage/tsinghua_linear_algebra/2-3/13.png">
-<meta property="og:updated_time" content="2018-10-29T06:15:22.032Z">
+<meta property="og:updated_time" content="2018-11-07T03:33:03.866Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Tsinghua linear-algebra-2 3rd-lecture Singular-Values-Decomposition">
-<meta name="twitter:description" content="前言笔记源自：清华大学公开课：线性代数2——第三讲：奇异值分解 清华大学线性代数2公开课笔记总结 第1讲：正定矩阵第2讲：相似矩阵第3讲：奇异值分解第4讲：线性变换1第5讲：线性变换2第6讲：伪逆第7讲：工程中的矩阵第8讲：图与网络第9讲：Markov矩阵和正矩阵第10讲：Fourier级数第11讲：计算机图像第12讲：复数与复矩阵 正文对角矩阵是我们最喜欢的一类矩阵，对能够相似于对角阵的矩阵能">
+<meta name="twitter:description" content="前言笔记源自：清华大学公开课：线性代数2——第三讲：奇异值分解，本文将每一步推导都详细列出来了。 清华大学线性代数2公开课笔记总结 第1讲：正定矩阵第2讲：相似矩阵第3讲：奇异值分解第4讲：线性变换1第5讲：线性变换2第6讲：伪逆第7讲：工程中的矩阵第8讲：图与网络第9讲：Markov矩阵和正矩阵第10讲：Fourier级数第11讲：计算机图像第12讲：复数与复矩阵 正文对角矩阵是我们最喜欢的一">
 <meta name="twitter:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpage/tsinghua_linear_algebra/2-3/1.png">
 
 
@@ -434,7 +434,7 @@
                   <span class="post-meta-item-text">Words count in article</span>
                 
                 <span title="Words count in article">
-                  1,103
+                  1,118
                 </span>
               
 
@@ -471,7 +471,7 @@
       
 
       
-        <script src="\assets\js\APlayer.min.js"> </script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>笔记源自：清华大学公开课：线性代数2——第三讲：奇异值分解</p>
+        <script src="\assets\js\APlayer.min.js"> </script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>笔记源自：清华大学公开课：线性代数2——第三讲：奇异值分解，<strong>本文将每一步推导都详细列出来了</strong>。</p>
 <p><strong>清华大学线性代数2公开课笔记总结</strong></p>
 <p>第1讲：<a href="https://snaildove.github.io/2017/08/01/positive_definite_matrix/">正定矩阵</a><br>第2讲：<a href="">相似矩阵</a><br>第3讲：<a href="https://snaildove.github.io/2017/08/03/singular_values_decomposition/">奇异值分解</a><br>第4讲：<a href="https://snaildove.github.io/2017/08/04/linear_transformation_1st_part/">线性变换1</a><br>第5讲：<a href="https://snaildove.github.io/2017/08/05/linear_transformation_2nd_part/">线性变换2</a><br>第6讲：<a href="https://snaildove.github.io/2017/08/06/pseudo_inverse/">伪逆</a><br>第7讲：<a href="https://snaildove.github.io/2017/08/07/engineering_matrices/">工程中的矩阵</a><br>第8讲：<a href="https://snaildove.github.io/2017/08/08/graph_and_network/">图与网络</a><br>第9讲：<a href="https://snaildove.github.io/2017/08/06/Markov_matrix/">Markov矩阵和正矩阵</a><br>第10讲：<a href="https://snaildove.github.io/2017/08/02/Fourier_series/">Fourier级数</a><br>第11讲：<a href="https://snaildove.github.io/2017/08/11/computer_graphics/">计算机图像</a><br>第12讲：<a href="https://snaildove.github.io/2017/08/12/complex_and_complex_matrix/">复数与复矩阵</a></p>
 <h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><p>对角矩阵是我们最喜欢的一类矩阵，对能够相似于对角阵的矩阵能方便地计算其幂和指数，对不能相似于对角阵的方阵。上节课我们讨论了如何求出其尽可能简单的相似标准形及Jordan标准形以上讨论的都是方阵。那么对m乘n的矩阵我们如何来对它进行对角化呢？</p>
@@ -656,7 +656,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">102</span>
+                  <span class="site-state-item-count">103</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -690,7 +690,7 @@
 				<h4 class="widget-title">Tag Cloud</h4>
 					<div id="myCanvasContainer" class="widget tagcloud">
 					<canvas width="250" height="250" id="resCanvas" style="width=100%">
-						<ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Basic-Algorithm/">Basic Algorithm</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Calculus-and-Differential/">Calculus and Differential</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Data-Structure/">Data Structure</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Improving-Deep-Neural-Networks/">Improving Deep Neural Networks</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Information-Theory/">Information Theory</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Latex/">Latex</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning/">Machine Learning</a><span class="tag-list-count">25</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning-by-Andrew-NG/">Machine Learning by Andrew NG</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python-Data-Science-Cookbook/">Python Data Science Cookbook</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Structuring-Machine-Learning-Projects/">Structuring Machine Learning Projects</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/convolutional-neural-networks/">convolutional-neural-networks</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/deep-learning/">deep learning</a><span class="tag-list-count">41</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/english/">english</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/">java</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linear-algebra/">linear_algebra</a><span class="tag-list-count">13</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/neural-networks-deep-learning/">neural-networks-deep-learning</a><span class="tag-list-count">8</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nlp-sequence-models/">nlp-sequence-models</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/probability/">probability</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/统计学习方法/">统计学习方法</a><span class="tag-list-count">4</span></li></ul>
+						<ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Basic-Algorithm/">Basic Algorithm</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Calculus-and-Differential/">Calculus and Differential</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Data-Structure/">Data Structure</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Improving-Deep-Neural-Networks/">Improving Deep Neural Networks</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Information-Theory/">Information Theory</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Latex/">Latex</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning/">Machine Learning</a><span class="tag-list-count">26</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning-by-Andrew-NG/">Machine Learning by Andrew NG</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python-Data-Science-Cookbook/">Python Data Science Cookbook</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Structuring-Machine-Learning-Projects/">Structuring Machine Learning Projects</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/convolutional-neural-networks/">convolutional-neural-networks</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/deep-learning/">deep learning</a><span class="tag-list-count">41</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/english/">english</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/">java</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linear-algebra/">linear_algebra</a><span class="tag-list-count">13</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/neural-networks-deep-learning/">neural-networks-deep-learning</a><span class="tag-list-count">8</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nlp-sequence-models/">nlp-sequence-models</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/probability/">probability</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/统计学习方法/">统计学习方法</a><span class="tag-list-count">4</span></li></ul>
 					</canvas>
 				</div>
 			</div>
@@ -795,7 +795,7 @@
     
       <span class="post-meta-item-text">Site words total count</span>
     
-    <span title="Site words total count">550.1k</span>
+    <span title="Site words total count">562.9k</span>
   
 </div>
 

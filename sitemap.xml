@@ -2,9 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://snaildove.github.io/2018/10/02/get-started-XGBoost/</loc>
+    
+    <lastmod>2018-11-10T10:54:29.458Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://snaildove.github.io/2018/10/01/8.Booting-Methods_LiHang-Statistical-Learning-Methods/</loc>
     
-    <lastmod>2018-11-06T09:58:50.731Z</lastmod>
+    <lastmod>2018-11-10T07:25:51.716Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/about/index.html</loc>
+    
+    <lastmod>2018-11-07T10:08:05.027Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2017/08/03/singular_values_decomposition/</loc>
+    
+    <lastmod>2018-11-07T03:33:03.866Z</lastmod>
     
   </url>
   
@@ -145,13 +166,6 @@
     <loc>https://snaildove.github.io/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/</loc>
     
     <lastmod>2018-10-29T11:11:21.384Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2017/08/03/singular_values_decomposition/</loc>
-    
-    <lastmod>2018-10-29T06:15:22.032Z</lastmod>
     
   </url>
   
@@ -670,13 +684,6 @@
     <loc>https://snaildove.github.io/2018/02/05/logistic-regression-with-a-neural-network-mindset_week1_and_week2/</loc>
     
     <lastmod>2018-05-30T02:51:15.023Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/about/index.html</loc>
-    
-    <lastmod>2018-05-29T07:52:23.859Z</lastmod>
     
   </url>
   
