@@ -106,19 +106,19 @@
 <meta property="og:site_name" content="SnailDove&#39;s blog">
 <meta property="og:description" content="NoteThese are my personal programming assignments at the 1th week after studying the course convolutional neural networks and the copyright belongs to deeplearning.ai. Convolutional Neural Networks:">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpage/deeplearning.ai/convolutional-neural-networks/jupter/week1/images/model.png">
-<meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpage/deeplearning.ai/convolutional-neural-networks/jupter/week1/images/conv_nn.png">
-<meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpage/deeplearning.ai/convolutional-neural-networks/jupter/week1/images/PAD.png">
-<meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpage/deeplearning.ai/convolutional-neural-networks/jupter/week1/images/output_7_2.png">
+<meta property="og:image" content="http://pil64vxk1.bkt.clouddn.com/gitpage/deeplearning.ai/convolutional-neural-networks/jupter/week1/images/model.png">
+<meta property="og:image" content="http://pil64vxk1.bkt.clouddn.com/gitpage/deeplearning.ai/convolutional-neural-networks/jupter/week1/images/conv_nn.png">
+<meta property="og:image" content="http://pil64vxk1.bkt.clouddn.com/gitpage/deeplearning.ai/convolutional-neural-networks/jupter/week1/images/PAD.png">
+<meta property="og:image" content="http://pil64vxk1.bkt.clouddn.com/gitpage/deeplearning.ai/convolutional-neural-networks/jupter/week1/images/output_7_2.png">
 <meta property="og:image" content="https://snaildove.github.io/2018/05/01/Convolution+model+-+Step+by+Step+-+v2/images/Convolution_schematic.gif">
-<meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpage/deeplearning.ai/convolutional-neural-networks/jupter/week1/images/vert_horiz_kiank.png">
-<meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpage/deeplearning.ai/convolutional-neural-networks/jupter/week1/images/max_pool1.png">
-<meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpage/deeplearning.ai/convolutional-neural-networks/jupter/week1/images/a_pool.png">
-<meta property="og:updated_time" content="2018-07-19T04:13:47.791Z">
+<meta property="og:image" content="http://pil64vxk1.bkt.clouddn.com/gitpage/deeplearning.ai/convolutional-neural-networks/jupter/week1/images/vert_horiz_kiank.png">
+<meta property="og:image" content="http://pil64vxk1.bkt.clouddn.com/gitpage/deeplearning.ai/convolutional-neural-networks/jupter/week1/images/max_pool1.png">
+<meta property="og:image" content="http://pil64vxk1.bkt.clouddn.com/gitpage/deeplearning.ai/convolutional-neural-networks/jupter/week1/images/a_pool.png">
+<meta property="og:updated_time" content="2018-11-22T09:39:38.256Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Convolution model Step by Step">
 <meta name="twitter:description" content="NoteThese are my personal programming assignments at the 1th week after studying the course convolutional neural networks and the copyright belongs to deeplearning.ai. Convolutional Neural Networks:">
-<meta name="twitter:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpage/deeplearning.ai/convolutional-neural-networks/jupter/week1/images/model.png">
+<meta name="twitter:image" content="http://pil64vxk1.bkt.clouddn.com/gitpage/deeplearning.ai/convolutional-neural-networks/jupter/week1/images/model.png">
 
 
 
@@ -515,13 +515,13 @@
 </li>
 </ul>
 <p>This notebook will ask you to implement these functions from scratch in <code>numpy</code>. In the next notebook, you will use the TensorFlow equivalents of these functions to build the following model:</p>
-<p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpage/deeplearning.ai/convolutional-neural-networks/jupter/week1/images/model.png" style="width:800px;height:300px;"></p>
+<p><img src="http://pil64vxk1.bkt.clouddn.com/gitpage/deeplearning.ai/convolutional-neural-networks/jupter/week1/images/model.png" style="width:800px;height:300px;"></p>
 <p><strong>Note</strong> that for every forward function, there is its corresponding backward equivalent. Hence, at every step of your forward module you will store some parameters in a cache. These parameters are used to compute gradients during backpropagation. </p>
 <h2 id="3-Convolutional-Neural-Networks"><a href="#3-Convolutional-Neural-Networks" class="headerlink" title="3 - Convolutional Neural Networks"></a>3 - Convolutional Neural Networks</h2><p>Although programming frameworks make convolutions easy to use, they remain one of the hardest concepts to understand in Deep Learning. A convolution layer transforms an input volume into an output volume of different size, as shown below. </p>
-<p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpage/deeplearning.ai/convolutional-neural-networks/jupter/week1/images/conv_nn.png" style="width:350px;height:200px;"></p>
+<p><img src="http://pil64vxk1.bkt.clouddn.com/gitpage/deeplearning.ai/convolutional-neural-networks/jupter/week1/images/conv_nn.png" style="width:350px;height:200px;"></p>
 <p>In this part, you will build every step of the convolution layer. You will first implement two helper functions: one for zero padding and the other for computing the convolution function itself. </p>
 <h3 id="3-1-Zero-Padding"><a href="#3-1-Zero-Padding" class="headerlink" title="3.1 - Zero-Padding"></a>3.1 - Zero-Padding</h3><p>Zero-padding adds zeros around the border of an image:</p>
-<p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpage/deeplearning.ai/convolutional-neural-networks/jupter/week1/images/PAD.png" style="width:600px;height:400px;"></p>
+<p><img src="http://pil64vxk1.bkt.clouddn.com/gitpage/deeplearning.ai/convolutional-neural-networks/jupter/week1/images/PAD.png" style="width:600px;height:400px;"></p>
 <caption><center> <u> <font color="purple"> <strong>Figure 1</strong> </font></u><font color="purple">  : <strong>Zero-Padding</strong><br> Image (3 channels, RGB) with a padding of 2. </font></center></caption>
 
 <p>The main benefits of padding are the following:</p>
@@ -552,7 +552,7 @@ x_pad[1,1] = [[0. 0.]
 
 
 &lt;matplotlib.image.AxesImage at 0x2917ff759b0&gt;
-</code></pre><p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpage/deeplearning.ai/convolutional-neural-networks/jupter/week1/images/output_7_2.png" alt="png"></p>
+</code></pre><p><img src="http://pil64vxk1.bkt.clouddn.com/gitpage/deeplearning.ai/convolutional-neural-networks/jupter/week1/images/output_7_2.png" alt="png"></p>
 <p><strong>Expected Output</strong>:</p>
 <table><br>    <tr><br>        <td><br>            <strong>x.shape</strong>:<br>        </td><br>        <td><br>           (4, 3, 3, 2)<br>        </td><br>    </tr><br>        <tr><br>        <td><br>            <strong>x_pad.shape</strong>:<br>        </td><br>        <td><br>           (4, 7, 7, 2)<br>        </td><br>    </tr><br>        <tr><br>        <td><br>            <strong>x[1,1]</strong>:<br>        </td><br>        <td><br>           [[ 0.90085595 -0.68372786]<br> [-0.12289023 -0.93576943]<br> [-0.26788808  0.53035547]]<br>        </td><br>    </tr><br>        <tr><br>        <td><br>            <strong>x_pad[1,1]</strong>:<br>        </td><br>        <td><br>           [[ 0.  0.]<br> [ 0.  0.]<br> [ 0.  0.]<br> [ 0.  0.]<br> [ 0.  0.]<br> [ 0.  0.]<br> [ 0.  0.]]<br>        </td><br>    </tr><br><br></table>
 
@@ -575,7 +575,7 @@ x_pad[1,1] = [[0. 0.]
 <table><br>    <tr><br>        <td><br>            <strong>Z</strong><br>        </td><br>        <td><br>            -6.99908945068<br>        </td><br>    </tr><br><br></table>
 
 <h3 id="3-3-Convolutional-Neural-Networks-Forward-pass"><a href="#3-3-Convolutional-Neural-Networks-Forward-pass" class="headerlink" title="3.3 - Convolutional Neural Networks - Forward pass"></a>3.3 - Convolutional Neural Networks - Forward pass</h3><p>In the forward pass, you will take many filters and convolve them on the input. Each ‘convolution’ gives you a 2D matrix output. You will then stack these outputs to get a 3D volume: </p>
-<center><br><video width="620" height="440" src="http://p8o3egtyk.bkt.clouddn.com/gitpage/deeplearning.ai/convolutional-neural-networks/jupter/week1/images/conv_kiank.mp4" type="video/mp4" controls><br></video><br></center>
+<center><br><video width="620" height="440" src="http://pil64vxk1.bkt.clouddn.com/gitpage/deeplearning.ai/convolutional-neural-networks/jupter/week1/images/conv_kiank.mp4" type="video/mp4" controls><br></video><br></center>
 
 <p><strong>Exercise</strong>: Implement the function below to convolve the filters W on an input activation A_prev. This function takes as input A_prev, the activations output by the previous layer (for a batch of m inputs), F filters/weights denoted by W, and a bias vector denoted by b, where each filter has its own (single) bias. Finally you also have access to the hyperparameters dictionary which contains the stride and the padding. </p>
 <p><strong>Hint</strong>: </p>
@@ -587,7 +587,7 @@ x_pad[1,1] = [[0. 0.]
 <ol>
 <li>To define a_slice you will need to first define its corners <code>vert_start</code>, <code>vert_end</code>, <code>horiz_start</code> and <code>horiz_end</code>. This figure may be helpful for you to find how each of the corner can be defined using h, w, f and s in the code below.</li>
 </ol>
-<p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpage/deeplearning.ai/convolutional-neural-networks/jupter/week1/images/vert_horiz_kiank.png" style="width:400px;height:300px;"></p>
+<p><img src="http://pil64vxk1.bkt.clouddn.com/gitpage/deeplearning.ai/convolutional-neural-networks/jupter/week1/images/vert_horiz_kiank.png" style="width:400px;height:300px;"></p>
 <caption><center> <u> <font color="purple"> <strong>Figure 3</strong> </font></u><font color="purple">  : <strong>Definition of a slice using vertical and horizontal start/end (with a 2x2 filter)</strong> <br> This figure shows only a single channel.  </font></center></caption>
 
 
@@ -613,7 +613,7 @@ cache_conv[0][1][2][3] = [-0.20075807  0.18656139  0.41005165]
 <li><p>Average-pooling layer: slides an ($f, f$) window over the input and stores the average value of the window in the output.</p>
 </li>
 </ul>
-<table><br><td><br><img src="http://p8o3egtyk.bkt.clouddn.com/gitpage/deeplearning.ai/convolutional-neural-networks/jupter/week1/images/max_pool1.png" style="width:500px;height:300px;"><br></td><td><br><br></td><td><br><img src="http://p8o3egtyk.bkt.clouddn.com/gitpage/deeplearning.ai/convolutional-neural-networks/jupter/week1/images/a_pool.png" style="width:500px;height:300px;"><br></td><td><br></td></table>
+<table><br><td><br><img src="http://pil64vxk1.bkt.clouddn.com/gitpage/deeplearning.ai/convolutional-neural-networks/jupter/week1/images/max_pool1.png" style="width:500px;height:300px;"><br></td><td><br><br></td><td><br><img src="http://pil64vxk1.bkt.clouddn.com/gitpage/deeplearning.ai/convolutional-neural-networks/jupter/week1/images/a_pool.png" style="width:500px;height:300px;"><br></td><td><br></td></table>
 
 <p>These pooling layers have no parameters for backpropagation to train. However, they have hyperparameters such as the window size $f$. This specifies the height and width of the fxf window you would compute a max or average over. </p>
 <h3 id="4-1-Forward-Pooling"><a href="#4-1-Forward-Pooling" class="headerlink" title="4.1 - Forward Pooling"></a>4.1 - Forward Pooling</h3><p>Now, you are going to implement MAX-POOL and AVG-POOL, in the same function. </p>
@@ -781,8 +781,8 @@ dA_prev[1,1] =  [[ 0.08485462  0.2787552 ]
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/05/01/01_foundations-of-convolutional-neural-networks/" rel="next" title="01_foundations-of-convolutional-neural-networks">
-                <i class="fa fa-chevron-left"></i> 01_foundations-of-convolutional-neural-networks
+              <a href="/2018/05/01/02_deep-convolutional-models-case-studies/" rel="next" title="02_deep-convolutional-models-case-studies">
+                <i class="fa fa-chevron-left"></i> 02_deep-convolutional-models-case-studies
               </a>
             
           </div>
@@ -791,8 +791,8 @@ dA_prev[1,1] =  [[ 0.08485462  0.2787552 ]
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/05/01/02_deep-convolutional-models-case-studies/" rel="prev" title="02_deep-convolutional-models-case-studies">
-                02_deep-convolutional-models-case-studies <i class="fa fa-chevron-right"></i>
+              <a href="/2018/05/02/Residual+Networks+-+v2/" rel="prev" title="Residual Networks">
+                Residual Networks <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
