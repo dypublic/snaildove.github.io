@@ -124,14 +124,15 @@
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1541873737581.png">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1541783628978.png">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1541862763402.png">
-<meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/ML/get_started_xgboost/042300502345067.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20181122153115983.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_111,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://images0.cnblogs.com/blog/354318/201502/042300502345067.png">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1541875753533.png">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1541876055067.png">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1541876128716.png">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1541876848274.png">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1541846850051.png">
 <meta property="og:image" content="http://p8o3egtyk.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1541270621305.png">
-<meta property="og:updated_time" content="2018-11-12T02:52:13.096Z">
+<meta property="og:updated_time" content="2018-11-22T07:38:37.198Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="get started XGBoost">
 <meta name="twitter:description" content="前言在深度学习火起来之前，集成学习 （ensemble learning 包括  boosting: GBDT, XGBoost）是 kaggle 等比赛中的利器，所以集成学习是机器学习必备的知识点，如果提升树或者GBDT不熟悉，最好先看一下我的另一文： 《统计学习方法》第8章 提升方法之AdaBoost\BoostingTree\GBDT ，陈天奇 的 XGBoost (eXtreme Gra">
@@ -446,7 +447,7 @@
                   <span class="post-meta-item-text">Words count in article</span>
                 
                 <span title="Words count in article">
-                  13,732
+                  14,177
                 </span>
               
 
@@ -462,7 +463,7 @@
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
                 <span title="Reading time">
-                  60
+                  61
                 </span>
               
             </div>
@@ -801,28 +802,34 @@
 <p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1541873737581.png" alt="1541873737581"></p>
 <p>即要切分为3个，总和为1.8，因此第1个在0.6处，第2个在1.2处。此图来自知乎weapon大神的《 GBDT算法原理与系统设计简介》</p>
 <h4 id="注意稀疏问题的分裂点查找-Sparsity-aware-Split-Finding"><a href="#注意稀疏问题的分裂点查找-Sparsity-aware-Split-Finding" class="headerlink" title="注意稀疏问题的分裂点查找 Sparsity-aware Split Finding"></a>注意稀疏问题的分裂点查找 Sparsity-aware Split Finding</h4><p>主要参考论文3.4节</p>
-<p>对于数据缺失数据、one-hot编码等造成的特征稀疏现象，作者在论文中提出可以处理稀疏特征的分裂算法，主要是对稀疏特征值缺失的样本学习出默认节点分裂方向：<br>​    1. 默认miss value进右子树，对non-missing value的样本在左子树的统计值 $G_L$ 与 $H_L$，右子树为 $G-G_L$ 与$H−H_L$，其中包含miss的样本，统计这种方案（默认miss value进右子树）的分数。<br>​        2. 默认miss value进左子树，对non-missing value的样本在右子树的统计值 $G_R$ 与 $H_R$，左子树为 $G-G_R$ 与$H−H_R$ ，其中包含miss的样本，统计这种方案（默认miss value进左子树）的分数。<br>​        3. 选择分数（即增益）比较大的方案。</p>
-<p>这样最后求出增益最大的特征值以及miss value的分裂方向。作者在论文中提出基于稀疏分裂算法： </p>
+<p>对于数据缺失数据、one-hot编码等造成的特征稀疏现象，作者在论文中提出可以处理稀疏特征的分裂算法，主要是对稀疏特征值缺失的样本学习出默认节点分裂方向： </p>
+<ol>
+<li>默认miss value进右子树，对non-missing value的样本在左子树的统计值 $G_L$ 与 $H_L$，右子树为 $G-G_L$ 与$H−H_L$，其中包含miss的样本，统计这种方案（默认miss value进右子树）的分数。 </li>
+<li>默认miss value进左子树，对non-missing value的样本在右子树的统计值 $G_R$ 与 $H_R$，左子树为 $G-G_R$ 与$H−H_R$ ，其中包含miss的样本，统计这种方案（默认miss value进左子树）的分数。 </li>
+<li>选择分数（即增益）比较大的方案。</li>
+</ol>
+<p>这样最后求出增益最大的特征值以及 miss value 的分裂方向，作者在论文中提出基于稀疏分裂算法： （<font color="red">修正：</font>下文 “Input: d feature dimension”  这里 “d” 应该改为 “m”）</p>
 <p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1541783628978.png" alt="1541783628978"></p>
 <p>使用了该方法，相当于比传统方法多遍历了一次，但是它只在非缺失值的样本上进行迭代，因此其复杂度与非缺失值的样本成线性关系。在 Allstate-10k 数据集上，比传统方法快了50倍：</p>
 <p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1541862763402.png" alt="1541862763402"></p>
 <h4 id="旨在并行学习的列块结构-Column-Block-for-Parallel-Learning"><a href="#旨在并行学习的列块结构-Column-Block-for-Parallel-Learning" class="headerlink" title="旨在并行学习的列块结构 Column Block for Parallel Learning"></a>旨在并行学习的列块结构 Column Block for Parallel Learning</h4><p>主要参考论文4.1节</p>
 <p><strong>CSR vs CSC </strong></p>
 <p>稀疏矩阵的压缩存储形式，比较常见的其中两种：压缩的稀疏行（Compressed Sparse Row）和 压缩的稀疏列（Compressed Sparse Row）</p>
-<p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpages/ML/get_started_xgboost/042300502345067.png" alt=""></p>
-<p>CSR结构包含非0数据块values，行偏移offsets，列下标indices。offsets数组大小为（总行数目+1），CSR是对稠密矩阵的压缩，实际上直接访问稠密矩阵元素 $(i,j)$ 并不高效，毕竟损失部分信息，访问过程如下：</p>
+<p><img src="https://img-blog.csdnimg.cn/20181122153115983.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_111,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><img src="https://images0.cnblogs.com/blog/354318/201502/042300502345067.png" alt=""></p>
+<p>CSR结构包含非0数据块values，行偏移offsets，列下标indices。offsets数组大小为（总行数目+1），CSR 是对稠密矩阵的压缩，实际上直接访问稠密矩阵元素 $(i,j)$ 并不高效，毕竟损失部分信息，访问过程如下：</p>
 <ol>
 <li>根据行 $i$ 得到偏移区间开始位置 <code>offsets[i]</code>与区间结束位置 <code>offsets[i+1]-1</code>，得到 $i$ 行数据块 <code>values[offsets[i]..(offsets[i+1]-1)]</code>， 与非0的列下表<code>indices[offsets[i]..(offsets[i+1]-1)]</code></li>
 <li>在列下标数据块中二分查找 $j$，找不到则返回0，否则找到下标值 $k$，返回 <code>values[offsets[i]+k]</code></li>
 </ol>
 <p><strong>从访问单个元素来说，相比坐标系的存储结构，那么从 $O(1)$ 时间复杂度升到 $O(\log N)$, N 为该行非稀疏数据项个数。但是如果要遍历访问整行非0数据，则无需访问indices数组，时间复杂度反而更低，因为少了大量的稀疏为0的数据访问。</strong> </p>
-<p>CSC与CSR变量结构上并无差别，只是变量意义不同</p>
+<p>CSC 与 CSR 变量结构上并无差别，只是变量意义不同</p>
 <ol>
 <li>values仍然为矩阵的非0数据块</li>
 <li>offsets为列偏移，即特征id对应数组</li>
 <li>indices为行下标，对应样本id数组</li>
 </ol>
-<p>XBGoost使用CSC主要用于对特征的全局预排序。预先将CSR数据转化为无序的CSC数据，遍历每个特征，并对每个特征 $i$ 进行排序：<code>sort(&amp;values[offsets[i]], &amp;values[offsets[i+1]-1])</code>。全局特征排序后，后期节点分裂可以复用全局排序信息，而不需要重新排序。</p>
+<p>XBGoost使用CSC 主要用于对特征的全局预排序。预先将 CSR 数据转化为无序的 CSC 数据，遍历每个特征，并对每个特征 $i$ 进行排序：<code>sort(&amp;values[offsets[i]], &amp;values[offsets[i+1]-1])</code>。全局特征排序后，后期节点分裂可以复用全局排序信息，而不需要重新排序。</p>
 <p>矩阵的存储形式，参考此文：<a href="https://www.cnblogs.com/xbinworld/p/4273506.html" target="_blank" rel="noopener">稀疏矩阵存储格式总结+存储效率对比:COO,CSR,DIA,ELL,HYB</a></p>
 <p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1541875753533.png" alt="1541875753533"></p>
 <p><strong>采取这种存储结构的好处</strong></p>
@@ -833,10 +840,10 @@
 <p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1541876128716.png" alt="1541876128716"></p>
 <p>在近似算法中，对块的大小进行了合理的设置。定义Block的大小为Block中最多的样本数。设置合适的大小是很重要的，设置过大则容易导致命中率低，过小则容易导致并行化效率不高。经过实验，发现 $2^{16}$ 比较好，那么上文提到CSC存储结构的 indices 数组（存储的行下表）的元素占用的字节数就是 16/8 = 2 。</p>
 <p><img src="http://p8o3egtyk.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1541876848274.png" alt="1541876848274"></p>
-<h4 id="核外块的计算-Blocks-for-Out-of-core-Computation"><a href="#核外块的计算-Blocks-for-Out-of-core-Computation" class="headerlink" title="核外块的计算 Blocks for Out-of-core Computation"></a>核外块的计算 Blocks for Out-of-core Computation</h4><p>XGBoost中提出Out-of-core Computation优化，解决了在硬盘上读取数据耗时过长，吞吐量不足</p>
+<h4 id="核外块的计算-Blocks-for-Out-of-core-Computation"><a href="#核外块的计算-Blocks-for-Out-of-core-Computation" class="headerlink" title="核外块的计算 Blocks for Out-of-core Computation"></a>核外块的计算 Blocks for Out-of-core Computation</h4><p>XGBoost 中提出 Out-of-core Computation优化，解决了在硬盘上读取数据耗时过长，吞吐量不足</p>
 <ul>
-<li>多线程对<strong>数据分块压缩</strong> Block Compression存储在硬盘上，再将数据传输到内存，最后再用独立的线程解压缩，<strong>核心思想</strong>：将磁盘的读取消耗转换为解压缩所消耗的计算资源。</li>
-<li>分布式数据库系统的常见设计：Block Sharding将数据分片到多块硬盘上，每块硬盘分配一个预取线程，将数据fetche到in-memory buffer中。训练线程交替读取多块缓存的同时，计算任务也在运转，提升了硬盘总体的吞吐量。</li>
+<li>多线程对<strong>数据分块压缩</strong> Block Compression 存储在硬盘上，再将数据传输到内存，最后再用独立的线程解压缩，<strong>核心思想</strong>：将磁盘的读取消耗转换为解压缩所消耗的计算资源。</li>
+<li>分布式数据库系统的常见设计：Block Sharding 将数据分片到多块硬盘上，每块硬盘分配一个预取线程，将数据fetche到in-memory buffer中。训练线程交替读取多块缓存的同时，计算任务也在运转，提升了硬盘总体的吞吐量。</li>
 </ul>
 <p>注：这部分内容属于外存算法<a href="https://en.wikipedia.org/wiki/External_memory_algorithm" target="_blank" rel="noopener">External_memory_algorithm</a></p>
 <h3 id="XGBoost-对-GBDT-实现的不同之处"><a href="#XGBoost-对-GBDT-实现的不同之处" class="headerlink" title="XGBoost 对 GBDT 实现的不同之处"></a>XGBoost 对 GBDT 实现的不同之处</h3><p>这部分内容主要参考了知乎上的一个问答 <a href="https://www.zhihu.com/question/41354392" target="_blank" rel="noopener">机器学习算法中 GBDT 和 XGBOOST 的区别有哪些？ - 知乎</a> 根据他们的总结和我自己对论文的理解和补充。</p>
@@ -851,7 +858,20 @@
 </li>
 <li><p>传统GBDT在优化时只用到一阶导数信息，xgboost则对损失函数函数进行了<strong>二阶泰勒展开</strong>，同时用到了一阶和二阶导数，这样相对会精确地代表损失函数的值。顺便提一下，xgboost工具支持自定义代价函数，只要函数可一阶和二阶求导，详细参照官网API。 </p>
 </li>
-<li><p>xgboost在代价函数里加入了<strong>正则项</strong>，用于控制模型的复杂度。正则项里包含了树的叶子节点个数、每个叶子节点上输出的score的L2模的平方和，防止过拟合，这也是xgboost优于传统GBDT的一个特性。正则化的两个部分，都是为了防止过拟合，剪枝是都有的，叶子结点输出L2平滑是新增的。</p>
+<li><p>并行处理，相比GBM有了速度的飞跃</p>
+<ul>
+<li>借助 OpenMP ，自动利用单机CPU的多核进行并行计算</li>
+<li>支持GPU加速</li>
+<li>支持分布式 </li>
+</ul>
+</li>
+<li><p>剪枝</p>
+<ul>
+<li>当新增分裂带来负增益时，GBM会停止分裂（贪心策略，非全局的剪枝）</li>
+<li>XGBoost一直分裂到指定的最大深度(max_depth)，然后回过头来剪枝（事后，进行全局剪枝） </li>
+</ul>
+</li>
+<li><p>xgboost在代价函数里加入了<strong>显示的正则项</strong>，用于控制模型的复杂度。正则项里包含了树的叶子节点个数、每个叶子节点上输出的score的L2模的平方和，防止过拟合，这也是xgboost优于传统GBDT的一个特性。正则化的两个部分，都是为了防止过拟合，剪枝是都有的，叶子结点输出L2平滑是新增的。</p>
 </li>
 <li><p>Built-in Cross-Validation <strong>内置交叉验证</strong> </p>
 </li>
@@ -859,11 +879,15 @@
 <blockquote>
 <p>XGBoost allows user to run a cross-validation at each iteration of the boosting process and thus it is easy to get the exact optimum number of boosting iterations in a single run.<br>This is unlike GBM where we have to run a grid-search and only a limited values can be tested.</p>
 </blockquote>
+<ul>
+<li>XGBoost允许在每一轮boosting迭代中使用交叉验证，这样可以方便地获得最优boosting迭代次数</li>
+<li>GBM使用网格搜索，只能检测有限个值 </li>
+</ul>
 <ol>
-<li>continue on Existing Model <strong>可以保存模型下次接着训练</strong></li>
+<li>continue on Existing Model <strong>可以保存模型下次接着训练，方便在线学习</strong></li>
 </ol>
 <blockquote>
-<p>User can start training an XGBoost model from its last iteration of previous run. This can be of significant advantage in certain specific applications.<br>GBM implementation of sklearn also has this feature so they are even on this point.</p>
+<p>User can start training an XGBoost model from its last iteration of previous run. This can be of significant advantage in certain specific applications.<br>GBM implementation of sklearn <strong>also</strong> has this feature so they are even on this point.</p>
 </blockquote>
 <ol>
 <li>High Flexibility <strong>可定制损失函数，只要这个损失函数2阶可导</strong></li>
@@ -871,7 +895,23 @@
 <blockquote>
 <p>XGBoost allow users to define custom optimization objectives and evaluation criteria.<br>This adds a whole new dimension to the model and there is no limit to what we can do.</p>
 </blockquote>
-<p>xgboost工具支持并行。注意xgboost不同于随机森林中的并行粒度是：tree，xgboost与其他提升方法（比如GBDT）一样，也是一次迭代完才能进行下一次迭代的（第t次迭代的代价函数里包含了前面t-1次迭代的预测值）。xgboost的并行是在特征粒度上的。我们知道，决策树的学习最耗时的一个步骤就是对特征的值进行排序（因为要确定最佳分割点），xgboost在训练之前，预先对数据进行了排序，然后保存为block结构，后面的迭代中重复地使用这个结构，大大减小计算量。这个block结构也使得并行成为了可能，在进行节点的分裂时，需要计算每个特征的增益，最终选增益最大的那个特征去做分裂，那么各个特征的增益计算就可以开多线程进行。</p>
+<ol>
+<li><p>提供多语言接口</p>
+<ul>
+<li>命令行（Command Line Interface， CLI）</li>
+<li>C++/Python（可以和scikit-learn结合）/R（可以和caret包结合）/Julia/JAVA和JVM语言（如Scala、 Hadoop平台等） </li>
+</ul>
+</li>
+<li><p>xgboost工具支持并行，执行速度确实比其他Gradient Boosting实现快</p>
+<ul>
+<li><p>模型性能：在<strong>结构化数据集</strong>上，在分类／回归/排序预测建模上表现突出，相比之下，神经网络尤其擅长非结构化的数据集（比如：图片，语音） </p>
+</li>
+<li><p>注意xgboost不同于随机森林中的并行粒度是：tree，xgboost与其他提升方法（比如GBDT）一样，也是一次迭代完才能进行下一次迭代的（第t次迭代的代价函数里包含了前面t-1次迭代的预测值）。xgboost的并行是在特征粒度上的。</p>
+</li>
+</ul>
+</li>
+</ol>
+<p>我们知道，决策树的学习最耗时的一个步骤就是对特征的值进行排序（因为要确定最佳分割点），xgboost在训练之前，预先对数据进行了排序，然后保存为block结构，后面的迭代中重复地使用这个结构，大大减小计算量。这个block结构也使得并行成为了可能，在进行节点的分裂时，需要计算每个特征的增益，最终选增益最大的那个特征去做分裂，那么各个特征的增益计算就可以开多线程进行。</p>
 <p><strong>总体来说，这部分内容需要学习很多，特别是涉及到分布式地并发优化和资源调度算法，这就不仅仅是数学模型的问题了，还涉及到系统设计，程序运行性能的优化，本人实在是才疏学浅，这部分内容理解尚浅，进一步学习还需要其他论文和看XGBoost源码，有些优化的地方也不是作者首创，表示从附录的论文中得以学习集成到XGBoost中，真的是集万千之大作，作者不愧是上海交大ACM班出身</strong>。大神的访谈：<a href="https://cosx.org/2015/06/interview-of-tianqi/" target="_blank" rel="noopener">https://cosx.org/2015/06/interview-of-tianqi/</a></p>
 <h4 id="优化的角度"><a href="#优化的角度" class="headerlink" title="优化的角度"></a>优化的角度</h4><p><a href="https://www.zhihu.com/question/41354392/answer/157538270" target="_blank" rel="noopener">马琳同学的回答</a> 非常棒，真是让我感受到了：<font color="blue">横看成岭侧成峰</font><br><img src="http://p8o3egtyk.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1541846850051.png" alt=""></p>
 <h3 id="高可用的xgboost"><a href="#高可用的xgboost" class="headerlink" title="高可用的xgboost"></a>高可用的xgboost</h3><p>由于xgboost发展平稳成熟，现在已经非常易用，下图来自<a href="https://xgboost.ai" target="_blank" rel="noopener">官网</a></p>
@@ -938,7 +978,7 @@
 <p> shrinkage参数，用于更新叶子节点权重时，乘以该系数，避免步长过大。参数值越大，越可能无法收敛。把学习率 eta 设置的小一些，小学习率可以使得后面的学习更加仔细。 </p>
 </li>
 <li><p><code>gamma</code> [default=0 alias: <code>min_split_loss</code>] , range $[0, \infty]​$</p>
-<p> 功能与<code>min_split_loss</code> 一样，（alias是“别名，又名”的意思，联想linux命令：alias就非常容易理解，即给相应的命令起了新的名字，引用是同一段功能的同一个程序是一样）后剪枝时，用于控制是否后剪枝的参数。</p>
+<p> 功能与<code>min_split_loss</code> 一样，（alias是“别名，又名”的意思，联想linux命令：alias就非常容易理解，即给相应的命令起了新的名字，引用同一个程序，功能是一样的），损失函数减少的最小量。</p>
 </li>
 <li><p><code>max_depth</code> [default=6], range $[0, \infty]$</p>
 <p> 每颗树的最大深度，树高越深，越容易过拟合。 </p>
@@ -947,7 +987,8 @@
 <p> 这个参数默认是 1，是每个叶子里面loss函数二阶导（ hessian）的和至少是多少，对正负样本不均衡时的 0-1 分类而言，假设 h 在 0.01 附近，min_child_weight 为 1 意味着叶子节点中最少需要包含 100 个样本。这个参数非常影响结果，控制叶子节点中二阶导的和的最小值，该参数值越小，越容易 overfitting。 </p>
 </li>
 <li><p><code>max_delta_step</code> [default=0] , range: $[0, \infty]$ </p>
-<p> 这个参数在更新步骤中起作用，如果取0表示没有约束，如果取正值则使得更新步骤更加保守。可以防止做太大的更新步子，使更新更加平缓。 </p>
+<p> <strong>Maximum delta step we allow each leaf output to be</strong>. If the value is set to 0, it means there is no constraint. If it is set to a positive value, it can help making the update step more conservative. <strong>Usually this parameter is not needed, but it might help in logistic regression when class is extremely imbalanced. Set it to value of 1-10 might help control the update</strong>.</p>
+<p> 这参数限制每棵树权重改变的最大步长。如果这个参数的值为0，那就意味着没有约束。如果它被赋予了某个正值，那么它会让这个算法更加保守。通常，这个参数不需要设置。但是当各类别的样本十分不平衡时，它对逻辑回归是很有帮助的。这个参数一般用不到，但是你可以挖掘出来它更多的用处。</p>
 </li>
 <li><p><code>subsample</code> [default=1], range: $[0, 1]$ </p>
 <p> 训练实例的抽样率，较低的值使得算法更加保守，防止过拟合，但是太小的值也会造成欠拟合。如果设置0.5，那就意味着随机树的生长之前，随机抽取训练数据的50%做样本。 </p>
@@ -1137,7 +1178,7 @@
 </li>
 <li><p><code>binary:logitraw</code>: logistic regression for binary classification, <strong>output score</strong> before logistic transformation</p>
 </li>
-<li><p><code>binary:hinge</code>: <strong>hinge loss</strong> for binary classification. This makes predictions of 0 or 1, rather than producing probabilities.</p>
+<li><p><code>binary:hinge</code>: <strong>hinge loss</strong> for binary classification. This makes predictions of 0 or 1, rather than producing probabilities. 2分类的链式损失</p>
 </li>
 <li><p><code>gpu:reg:linear</code>, <code>gpu:reg:logistic</code>, <code>gpu:binary:logistic</code>, <code>gpu:binary:logitraw</code>: versions of the corresponding objective functions evaluated on the GPU; note that like the GPU histogram algorithm, they can only be used when the entire training session uses the same dataset</p>
 </li>
@@ -1148,9 +1189,9 @@
 </li>
 <li><p><code>survival:cox</code>: <strong>Cox regression</strong> for right censored survival time data (negative values are considered right censored). Note that predictions are returned on the hazard ratio scale (i.e., as HR = exp(marginal_prediction) in the proportional hazard function <code>h(t) = h0(t) * HR</code>). 比例风险回归模型(proportional hazards model，简称Cox模型)” 这块不太懂</p>
 </li>
-<li><p><code>multi:softmax</code>: set XGBoost to do multiclass classification using the softmax objective, you also need to set num_class(number of classes)</p>
+<li><p><code>multi:softmax</code>: set XGBoost to do multiclass classification using the softmax objective, you also need to set num_class(number of classes) 多分类输出one-hot向量</p>
 </li>
-<li><p><code>multi:softprob</code>: same as softmax, but output a vector of <code>ndata * nclass</code>, which can be further reshaped to <code>ndata * nclass</code> matrix. The result contains predicted probability of each data point belonging to each class. </p>
+<li><p><code>multi:softprob</code>: same as softmax, but output a vector of <code>ndata * nclass</code>, which can be further reshaped to <code>ndata * nclass</code> matrix. The result contains predicted probability of each data point belonging to each class.  多分类输出各个类的概率向量</p>
 </li>
 <li><p><code>rank:pairwise</code>: Use <strong>LambdaMART</strong> to perform pairwise ranking where the pairwise loss is minimized</p>
 </li>
@@ -1566,7 +1607,7 @@
     
       <span class="post-meta-item-text">Site words total count</span>
     
-    <span title="Site words total count">563.9k</span>
+    <span title="Site words total count">564.3k</span>
   
 </div>
 
