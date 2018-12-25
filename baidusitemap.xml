@@ -1788,16 +1788,16 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2018/02/02/02_neural-networks-basics/</loc>
+    <loc>https://snaildove.github.io/2018/03/02/03_hyperparameter-tuning-batch-normalization-and-programming-frameworks/</loc>
     <lastmod>2018-12-25T15:50:07.994Z</lastmod>
     <data>
         <display>
-        <title>02_logistic-regression-as-a-neural-network</title>
-        <pubTime>2018-02-01T16:00:00.000Z</pubTime>
+        <title>03_hyperparameter-tuning-batch-normalization-and-programming-frameworks</title>
+        <pubTime>2018-03-01T16:00:00.000Z</pubTime>
         
-        <tag>neural-networks-deep-learning</tag>
-         
         <tag>deep learning</tag>
+         
+        <tag>Improving Deep Neural Networks</tag>
          
          
            
@@ -1830,16 +1830,16 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2018/03/02/03_hyperparameter-tuning-batch-normalization-and-programming-frameworks/</loc>
+    <loc>https://snaildove.github.io/2018/02/02/02_neural-networks-basics/</loc>
     <lastmod>2018-12-25T15:50:07.994Z</lastmod>
     <data>
         <display>
-        <title>03_hyperparameter-tuning-batch-normalization-and-programming-frameworks</title>
-        <pubTime>2018-03-01T16:00:00.000Z</pubTime>
+        <title>02_logistic-regression-as-a-neural-network</title>
+        <pubTime>2018-02-01T16:00:00.000Z</pubTime>
         
-        <tag>deep learning</tag>
+        <tag>neural-networks-deep-learning</tag>
          
-        <tag>Improving Deep Neural Networks</tag>
+        <tag>deep learning</tag>
          
          
            
@@ -2088,16 +2088,16 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2018/05/01/02_deep-convolutional-models-case-studies/</loc>
+    <loc>https://snaildove.github.io/2018/02/01/01_introduction-to-deep-learning/</loc>
     <lastmod>2018-12-25T15:50:07.756Z</lastmod>
     <data>
         <display>
-        <title>02_deep-convolutional-models-case-studies</title>
-        <pubTime>2018-04-30T16:00:00.000Z</pubTime>
+        <title>01_introduction-to-deep-learning</title>
+        <pubTime>2018-01-31T16:00:00.000Z</pubTime>
         
-        <tag>deep learning</tag>
+        <tag>neural-networks-deep-learning</tag>
          
-        <tag>convolutional-neural-networks</tag>
+        <tag>deep learning</tag>
          
          
            
@@ -2110,16 +2110,16 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2018/02/01/01_introduction-to-deep-learning/</loc>
+    <loc>https://snaildove.github.io/2018/05/01/02_deep-convolutional-models-case-studies/</loc>
     <lastmod>2018-12-25T15:50:07.756Z</lastmod>
     <data>
         <display>
-        <title>01_introduction-to-deep-learning</title>
-        <pubTime>2018-01-31T16:00:00.000Z</pubTime>
+        <title>02_deep-convolutional-models-case-studies</title>
+        <pubTime>2018-04-30T16:00:00.000Z</pubTime>
         
-        <tag>neural-networks-deep-learning</tag>
-         
         <tag>deep learning</tag>
+         
+        <tag>convolutional-neural-networks</tag>
          
          
            
