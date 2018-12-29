@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://snaildove.github.io/2018/06/28/summary_of_learning_of_Deep_Learning_Specializatio_on_Coursera/</loc>
+    
+    <lastmod>2018-12-29T04:06:53.245Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2018/10/02/get-started-XGBoost/</loc>
+    
+    <lastmod>2018-12-26T14:32:04.492Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2018/10/01/8.Booting-Methods_LiHang-Statistical-Learning-Methods/</loc>
+    
+    <lastmod>2018-12-26T13:33:13.368Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://snaildove.github.io/2016/01/20/vim_without_widgets/</loc>
     
     <lastmod>2018-12-25T15:50:19.838Z</lastmod>
@@ -82,13 +103,6 @@
     <loc>https://snaildove.github.io/2018/10/01/summary_of_LiHang_Statistical-learning-methods/</loc>
     
     <lastmod>2018-12-25T15:50:19.024Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2018/06/28/summary_of_learning_of_Deep_Learning_Specializatio_on_Coursera/</loc>
-    
-    <lastmod>2018-12-25T15:50:18.936Z</lastmod>
     
   </url>
   
@@ -331,13 +345,6 @@
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2018/10/02/get-started-XGBoost/</loc>
-    
-    <lastmod>2018-12-25T15:50:13.558Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://snaildove.github.io/2017/08/02/Fourier_series/</loc>
     
     <lastmod>2018-12-25T15:50:13.497Z</lastmod>
@@ -467,13 +474,6 @@
     <loc>https://snaildove.github.io/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/</loc>
     
     <lastmod>2018-12-25T15:50:10.811Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2018/10/01/8.Booting-Methods_LiHang-Statistical-Learning-Methods/</loc>
-    
-    <lastmod>2018-12-25T15:50:10.726Z</lastmod>
     
   </url>
   
@@ -646,14 +646,14 @@
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2018/05/03/03_object-detection/</loc>
+    <loc>https://snaildove.github.io/2018/01/03/03_linear-algebra-review/</loc>
     
     <lastmod>2018-12-25T15:50:07.913Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2018/01/03/03_linear-algebra-review/</loc>
+    <loc>https://snaildove.github.io/2018/05/03/03_object-detection/</loc>
     
     <lastmod>2018-12-25T15:50:07.913Z</lastmod>
     
@@ -688,14 +688,14 @@
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2018/03/01/01_practical-aspects-of-deep-learning/</loc>
+    <loc>https://snaildove.github.io/2018/01/02/02_linear-regression-with-one-variable/</loc>
     
     <lastmod>2018-12-25T15:50:07.757Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2018/01/02/02_linear-regression-with-one-variable/</loc>
+    <loc>https://snaildove.github.io/2018/03/01/01_practical-aspects-of-deep-learning/</loc>
     
     <lastmod>2018-12-25T15:50:07.757Z</lastmod>
     

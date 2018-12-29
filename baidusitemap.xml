@@ -4,6 +4,68 @@
 
     
   <url>
+    <loc>https://snaildove.github.io/2018/06/28/summary_of_learning_of_Deep_Learning_Specializatio_on_Coursera/</loc>
+    <lastmod>2018-12-29T04:06:53.245Z</lastmod>
+    <data>
+        <display>
+        <title>summary of learning Deep Learning Specialization</title>
+        <pubTime>2018-06-27T16:00:00.000Z</pubTime>
+        
+        <tag>deep learning</tag>
+         
+         
+           
+             
+              <breadCrumb title="english, 中文" url="https://snaildove.github.io/categories/english-%E4%B8%AD%E6%96%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2018/10/02/get-started-XGBoost/</loc>
+    <lastmod>2018-12-26T14:32:04.492Z</lastmod>
+    <data>
+        <display>
+        <title>get started XGBoost</title>
+        <pubTime>2018-10-01T16:00:00.000Z</pubTime>
+        
+        <tag>Machine Learning</tag>
+         
+         
+           
+             
+              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2018/10/01/8.Booting-Methods_LiHang-Statistical-Learning-Methods/</loc>
+    <lastmod>2018-12-26T13:33:13.368Z</lastmod>
+    <data>
+        <display>
+        <title>《统计学习方法》第8章 提升方法之AdaBoost\BoostingTree\GBDT</title>
+        <pubTime>2018-09-30T16:00:00.000Z</pubTime>
+        
+        <tag>Machine Learning</tag>
+         
+        <tag>统计学习方法</tag>
+         
+         
+           
+             
+              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://snaildove.github.io/2016/01/20/vim_without_widgets/</loc>
     <lastmod>2018-12-25T15:50:19.838Z</lastmod>
     <data>
@@ -249,26 +311,6 @@
            
              
               <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://snaildove.github.io/2018/06/28/summary_of_learning_of_Deep_Learning_Specializatio_on_Coursera/</loc>
-    <lastmod>2018-12-25T15:50:18.936Z</lastmod>
-    <data>
-        <display>
-        <title>summary of learning Deep Learning Specialization</title>
-        <pubTime>2018-06-27T16:00:00.000Z</pubTime>
-        
-        <tag>deep learning</tag>
-         
-         
-           
-             
-              <breadCrumb title="english, 中文" url="https://snaildove.github.io/categories/english-%E4%B8%AD%E6%96%87/"/>
           
         </display>
     </data>
@@ -980,26 +1022,6 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2018/10/02/get-started-XGBoost/</loc>
-    <lastmod>2018-12-25T15:50:13.558Z</lastmod>
-    <data>
-        <display>
-        <title>get started XGBoost</title>
-        <pubTime>2018-10-01T16:00:00.000Z</pubTime>
-        
-        <tag>Machine Learning</tag>
-         
-         
-           
-             
-              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://snaildove.github.io/2017/08/02/Fourier_series/</loc>
     <lastmod>2018-12-25T15:50:13.497Z</lastmod>
     <data>
@@ -1398,28 +1420,6 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2018/10/01/8.Booting-Methods_LiHang-Statistical-Learning-Methods/</loc>
-    <lastmod>2018-12-25T15:50:10.726Z</lastmod>
-    <data>
-        <display>
-        <title>《统计学习方法》第8章 提升方法之AdaBoost\BoostingTree\GBDT</title>
-        <pubTime>2018-09-30T16:00:00.000Z</pubTime>
-        
-        <tag>Machine Learning</tag>
-         
-        <tag>统计学习方法</tag>
-         
-         
-           
-             
-              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://snaildove.github.io/2018/10/01/4.Naive-Bayes_LiHang-Statistical-Learning-Methods/</loc>
     <lastmod>2018-12-25T15:50:10.637Z</lastmod>
     <data>
@@ -1788,16 +1788,16 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2018/03/02/03_hyperparameter-tuning-batch-normalization-and-programming-frameworks/</loc>
+    <loc>https://snaildove.github.io/2018/02/02/02_neural-networks-basics/</loc>
     <lastmod>2018-12-25T15:50:07.994Z</lastmod>
     <data>
         <display>
-        <title>03_hyperparameter-tuning-batch-normalization-and-programming-frameworks</title>
-        <pubTime>2018-03-01T16:00:00.000Z</pubTime>
+        <title>02_logistic-regression-as-a-neural-network</title>
+        <pubTime>2018-02-01T16:00:00.000Z</pubTime>
         
-        <tag>deep learning</tag>
+        <tag>neural-networks-deep-learning</tag>
          
-        <tag>Improving Deep Neural Networks</tag>
+        <tag>deep learning</tag>
          
          
            
@@ -1830,16 +1830,16 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2018/02/02/02_neural-networks-basics/</loc>
+    <loc>https://snaildove.github.io/2018/03/02/03_hyperparameter-tuning-batch-normalization-and-programming-frameworks/</loc>
     <lastmod>2018-12-25T15:50:07.994Z</lastmod>
     <data>
         <display>
-        <title>02_logistic-regression-as-a-neural-network</title>
-        <pubTime>2018-02-01T16:00:00.000Z</pubTime>
+        <title>03_hyperparameter-tuning-batch-normalization-and-programming-frameworks</title>
+        <pubTime>2018-03-01T16:00:00.000Z</pubTime>
         
-        <tag>neural-networks-deep-learning</tag>
-         
         <tag>deep learning</tag>
+         
+        <tag>Improving Deep Neural Networks</tag>
          
          
            
@@ -2046,26 +2046,6 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2018/01/02/02_linear-regression-with-one-variable/</loc>
-    <lastmod>2018-12-25T15:50:07.757Z</lastmod>
-    <data>
-        <display>
-        <title>02_linear-regression-with-one-variable note2</title>
-        <pubTime>2018-01-01T16:00:00.000Z</pubTime>
-        
-        <tag>Machine Learning</tag>
-         
-         
-           
-             
-              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://snaildove.github.io/2018/03/01/01_practical-aspects-of-deep-learning/</loc>
     <lastmod>2018-12-25T15:50:07.757Z</lastmod>
     <data>
@@ -2088,16 +2068,14 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2018/02/01/01_introduction-to-deep-learning/</loc>
-    <lastmod>2018-12-25T15:50:07.756Z</lastmod>
+    <loc>https://snaildove.github.io/2018/01/02/02_linear-regression-with-one-variable/</loc>
+    <lastmod>2018-12-25T15:50:07.757Z</lastmod>
     <data>
         <display>
-        <title>01_introduction-to-deep-learning</title>
-        <pubTime>2018-01-31T16:00:00.000Z</pubTime>
+        <title>02_linear-regression-with-one-variable note2</title>
+        <pubTime>2018-01-01T16:00:00.000Z</pubTime>
         
-        <tag>neural-networks-deep-learning</tag>
-         
-        <tag>deep learning</tag>
+        <tag>Machine Learning</tag>
          
          
            
@@ -2120,6 +2098,28 @@
         <tag>deep learning</tag>
          
         <tag>convolutional-neural-networks</tag>
+         
+         
+           
+             
+              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2018/02/01/01_introduction-to-deep-learning/</loc>
+    <lastmod>2018-12-25T15:50:07.756Z</lastmod>
+    <data>
+        <display>
+        <title>01_introduction-to-deep-learning</title>
+        <pubTime>2018-01-31T16:00:00.000Z</pubTime>
+        
+        <tag>neural-networks-deep-learning</tag>
+         
+        <tag>deep learning</tag>
          
          
            

@@ -98,13 +98,13 @@
 
 
 
-<meta name="description" content="前言在深度学习火起来之前，提升方法（包括AdaBoost, GBDT, XGBoost）是 kaggle 等比赛中的利器，所以提升方法是必备的知识点。李航《统计学习方法》第8章——提升方法主要内容：AdaBoost, Boosting Tree, GBDT(这一块原文不够详细，将补充一些)。写本文主要目的是复习（毕竟之前看纸质版做的笔记）， 对于证明比较跳跃和勘误的地方我都做了注解，以便初学者快">
+<meta name="description" content="前言在深度学习火起来之前，提升方法（包括AdaBoost, GBDT, XGBoost）是 kaggle 等比赛中的利器，所以提升方法 （boosting） 是必备的知识点。李航《统计学习方法》第8章——提升方法主要内容：AdaBoost, Boosting Tree, GBDT(这一块原文不够详细，将补充一些)。写本文主要目的是复习（毕竟之前看纸质版做的笔记）， 对于证明比较跳跃和勘误的地方我">
 <meta name="keywords" content="Machine Learning,统计学习方法">
 <meta property="og:type" content="article">
 <meta property="og:title" content="《统计学习方法》第8章 提升方法之AdaBoost\BoostingTree\GBDT">
 <meta property="og:url" content="https://snaildove.github.io/2018/10/01/8.Booting-Methods_LiHang-Statistical-Learning-Methods/index.html">
 <meta property="og:site_name" content="SnailDove&#39;s blog">
-<meta property="og:description" content="前言在深度学习火起来之前，提升方法（包括AdaBoost, GBDT, XGBoost）是 kaggle 等比赛中的利器，所以提升方法是必备的知识点。李航《统计学习方法》第8章——提升方法主要内容：AdaBoost, Boosting Tree, GBDT(这一块原文不够详细，将补充一些)。写本文主要目的是复习（毕竟之前看纸质版做的笔记）， 对于证明比较跳跃和勘误的地方我都做了注解，以便初学者快">
+<meta property="og:description" content="前言在深度学习火起来之前，提升方法（包括AdaBoost, GBDT, XGBoost）是 kaggle 等比赛中的利器，所以提升方法 （boosting） 是必备的知识点。李航《统计学习方法》第8章——提升方法主要内容：AdaBoost, Boosting Tree, GBDT(这一块原文不够详细，将补充一些)。写本文主要目的是复习（毕竟之前看纸质版做的笔记）， 对于证明比较跳跃和勘误的地方我">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://pkaunwk1s.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/8-boosting/1540460336537.png">
 <meta property="og:image" content="http://pkaunwk1s.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/8-boosting/1540463170951.png">
@@ -131,10 +131,10 @@
 <meta property="og:image" content="http://pkaunwk1s.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/8-boosting/1541169882361.png">
 <meta property="og:image" content="http://pkaunwk1s.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/8-boosting/1541171081333.png">
 <meta property="og:image" content="http://pkaunwk1s.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/8-boosting/1541266736974.png">
-<meta property="og:updated_time" content="2018-12-25T15:50:10.726Z">
+<meta property="og:updated_time" content="2018-12-26T13:33:13.368Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="《统计学习方法》第8章 提升方法之AdaBoost\BoostingTree\GBDT">
-<meta name="twitter:description" content="前言在深度学习火起来之前，提升方法（包括AdaBoost, GBDT, XGBoost）是 kaggle 等比赛中的利器，所以提升方法是必备的知识点。李航《统计学习方法》第8章——提升方法主要内容：AdaBoost, Boosting Tree, GBDT(这一块原文不够详细，将补充一些)。写本文主要目的是复习（毕竟之前看纸质版做的笔记）， 对于证明比较跳跃和勘误的地方我都做了注解，以便初学者快">
+<meta name="twitter:description" content="前言在深度学习火起来之前，提升方法（包括AdaBoost, GBDT, XGBoost）是 kaggle 等比赛中的利器，所以提升方法 （boosting） 是必备的知识点。李航《统计学习方法》第8章——提升方法主要内容：AdaBoost, Boosting Tree, GBDT(这一块原文不够详细，将补充一些)。写本文主要目的是复习（毕竟之前看纸质版做的笔记）， 对于证明比较跳跃和勘误的地方我">
 <meta name="twitter:image" content="http://pkaunwk1s.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/8-boosting/1540460336537.png">
 
 
@@ -446,7 +446,7 @@
                   <span class="post-meta-item-text">Words count in article</span>
                 
                 <span title="Words count in article">
-                  4,476
+                  4,438
                 </span>
               
 
@@ -483,8 +483,7 @@
       
 
       
-        <script src="\assets\js\APlayer.min.js"> </script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>在深度学习火起来之前，提升方法（包括AdaBoost, GBDT, XGBoost）是 kaggle 等比赛中的利器，所以提升方法是必备的知识点。<strong>李航《统计学习方法》第8章——提升方法主要内容：AdaBoost, Boosting Tree, GBDT</strong>(这一块原文不够详细，将补充一些)。写本文主要目的是复习（毕竟之前看纸质版做的笔记）， <font color="red">对于证明比较跳跃和勘误的地方我都做了注解，以便初学者快速阅读理解不会卡住，另外本文拓展部分补充了</font>：<font color="blue"><strong>集成学习</strong></font>。另外李航这本书著作于2012年，<a href="https://homes.cs.washington.edu/~tqchen/" target="_blank" rel="noopener">陈天奇</a> 的 <a href="https://xgboost.ai/" target="_blank" rel="noopener">XGBoost</a> (eXtreme Gradient Boosting) 在2015年惊艳四方，本文暂时不叙述这个，将会另开一篇，包括微软的<a href="http://lightgbm.apachecn.org/cn/latest/" target="_blank" rel="noopener">LightGBM</a>，但是<strong>本文是 XGBoost 和 LightGBM 的基础，所以要先总结本文</strong>。<font color="green">初学者看到前言这么多名词不必畏惧，直接看正文，本人也是从本章正文学习，再拓展出这些的，初学直接看正文，一步一步往下顺</font>。</p>
-<p><strong>由于CSDN的公式编辑器公式支持不全，有些公式没法正常显示</strong>，欢迎点击<a href="https://snaildove.github.io/2018/10/01/8.Booting-Methods_LiHang-Statistical-Learning-Methods/">此处</a>查看原文, 个人技术博客：<a href="https://snaildove.github.io/">SnailDove</a></p>
+        <script src="\assets\js\APlayer.min.js"> </script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>在深度学习火起来之前，提升方法（包括AdaBoost, GBDT, XGBoost）是 kaggle 等比赛中的利器，所以提升方法 （boosting） 是必备的知识点。<strong>李航《统计学习方法》第8章——提升方法主要内容：AdaBoost, Boosting Tree, GBDT</strong>(这一块原文不够详细，将补充一些)。写本文主要目的是复习（毕竟之前看纸质版做的笔记）， <font color="red">对于证明比较跳跃和勘误的地方我都做了注解，以便初学者快速阅读理解不会卡住，另外本文拓展部分补充了</font>：<font color="blue"><strong>集成学习</strong></font>。另外李航这本书著作于2012年，<a href="https://homes.cs.washington.edu/~tqchen/" target="_blank" rel="noopener">陈天奇</a> 的 <a href="https://xgboost.ai/" target="_blank" rel="noopener">XGBoost</a> (eXtreme Gradient Boosting) 在2015年惊艳四方，本文暂时不叙述这个，将会另开一篇：<a href="2018/10/02/get-started-XGBoost/">XGBoost入门</a>，包括微软的<a href="http://lightgbm.apachecn.org/cn/latest/" target="_blank" rel="noopener">LightGBM</a>，但是<strong>本文是 XGBoost 和 LightGBM 的基础，所以要先总结本文</strong>。<font color="green">初学者看到前言这么多名词不必畏惧，直接看正文，本人也是从本章正文学习，再拓展出这些的，初学直接看正文，一步一步往下顺</font>。</p>
 <h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p><strong>提升（boosting） 方法</strong>是一种常用的统计学习方法， 应用广泛且 有效。 <strong>在分类问题中， 它通过改变训练样本的权重， 学习多个分类 器， 并将这些分类器进行线性组合， 提高分类的性能</strong>。 </p>
 <p><strong>本章主要内容</strong></p>
 <ol>
@@ -672,8 +671,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/10/02/get-started-XGBoost/" rel="prev" title="get started XGBoost">
-                get started XGBoost <i class="fa fa-chevron-right"></i>
+              <a href="/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/" rel="prev" title="《统计学习方法》第9章 EM/GMM/F-MM/GEM">
+                《统计学习方法》第9章 EM/GMM/F-MM/GEM <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
