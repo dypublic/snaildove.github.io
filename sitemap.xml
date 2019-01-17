@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://snaildove.github.io/2018/12/28/foundations_of_spark_programming/</loc>
+    
+    <lastmod>2019-01-17T10:43:16.837Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://snaildove.github.io/2018/06/28/summary_of_learning_of_Deep_Learning_Specializatio_on_Coursera/</loc>
     
     <lastmod>2018-12-29T04:06:53.245Z</lastmod>
@@ -604,6 +611,13 @@
   </url>
   
   <url>
+    <loc>https://snaildove.github.io/2018/01/04/04_linear-regression-with-multiple-variables/</loc>
+    
+    <lastmod>2018-12-25T15:50:07.994Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://snaildove.github.io/2018/03/02/03_hyperparameter-tuning-batch-normalization-and-programming-frameworks/</loc>
     
     <lastmod>2018-12-25T15:50:07.994Z</lastmod>
@@ -612,13 +626,6 @@
   
   <url>
     <loc>https://snaildove.github.io/2018/02/02/02_neural-networks-basics/</loc>
-    
-    <lastmod>2018-12-25T15:50:07.994Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2018/01/04/04_linear-regression-with-multiple-variables/</loc>
     
     <lastmod>2018-12-25T15:50:07.994Z</lastmod>
     

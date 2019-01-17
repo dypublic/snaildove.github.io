@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>https://snaildove.github.io/2018/12/28/foundations_of_spark_programming/</loc>
+    <lastmod>2019-01-17T10:43:16.837Z</lastmod>
+    <data>
+        <display>
+        <title>spark编程基础笔记</title>
+        <pubTime>2018-12-27T16:00:00.000Z</pubTime>
+        
+        <tag>spark</tag>
+         
+         
+           
+             
+              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://snaildove.github.io/2018/06/28/summary_of_learning_of_Deep_Learning_Specializatio_on_Coursera/</loc>
     <lastmod>2018-12-29T04:06:53.245Z</lastmod>
     <data>
@@ -1788,16 +1808,14 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2018/02/02/02_neural-networks-basics/</loc>
+    <loc>https://snaildove.github.io/2018/01/04/04_linear-regression-with-multiple-variables/</loc>
     <lastmod>2018-12-25T15:50:07.994Z</lastmod>
     <data>
         <display>
-        <title>02_logistic-regression-as-a-neural-network</title>
-        <pubTime>2018-02-01T16:00:00.000Z</pubTime>
+        <title>04_linear-regression-with-multiple-variables note4</title>
+        <pubTime>2018-01-03T16:00:00.000Z</pubTime>
         
-        <tag>neural-networks-deep-learning</tag>
-         
-        <tag>deep learning</tag>
+        <tag>Machine Learning</tag>
          
          
            
@@ -1810,14 +1828,16 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2018/01/04/04_linear-regression-with-multiple-variables/</loc>
+    <loc>https://snaildove.github.io/2018/02/02/02_neural-networks-basics/</loc>
     <lastmod>2018-12-25T15:50:07.994Z</lastmod>
     <data>
         <display>
-        <title>04_linear-regression-with-multiple-variables note4</title>
-        <pubTime>2018-01-03T16:00:00.000Z</pubTime>
+        <title>02_logistic-regression-as-a-neural-network</title>
+        <pubTime>2018-02-01T16:00:00.000Z</pubTime>
         
-        <tag>Machine Learning</tag>
+        <tag>neural-networks-deep-learning</tag>
+         
+        <tag>deep learning</tag>
          
          
            
@@ -2046,16 +2066,14 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2018/03/01/01_practical-aspects-of-deep-learning/</loc>
+    <loc>https://snaildove.github.io/2018/01/02/02_linear-regression-with-one-variable/</loc>
     <lastmod>2018-12-25T15:50:07.757Z</lastmod>
     <data>
         <display>
-        <title>01_practical-aspects-of-deep-learning</title>
-        <pubTime>2018-02-28T16:00:00.000Z</pubTime>
+        <title>02_linear-regression-with-one-variable note2</title>
+        <pubTime>2018-01-01T16:00:00.000Z</pubTime>
         
-        <tag>deep learning</tag>
-         
-        <tag>Improving Deep Neural Networks</tag>
+        <tag>Machine Learning</tag>
          
          
            
@@ -2068,14 +2086,16 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2018/01/02/02_linear-regression-with-one-variable/</loc>
+    <loc>https://snaildove.github.io/2018/03/01/01_practical-aspects-of-deep-learning/</loc>
     <lastmod>2018-12-25T15:50:07.757Z</lastmod>
     <data>
         <display>
-        <title>02_linear-regression-with-one-variable note2</title>
-        <pubTime>2018-01-01T16:00:00.000Z</pubTime>
+        <title>01_practical-aspects-of-deep-learning</title>
+        <pubTime>2018-02-28T16:00:00.000Z</pubTime>
         
-        <tag>Machine Learning</tag>
+        <tag>deep learning</tag>
+         
+        <tag>Improving Deep Neural Networks</tag>
          
          
            
