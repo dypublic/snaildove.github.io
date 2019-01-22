@@ -5,7 +5,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/12/28/name_and_sex/</loc>
-    <lastmod>2019-01-22T19:00:58.487Z</lastmod>
+    <lastmod>2019-01-22T19:16:13.401Z</lastmod>
     <data>
         <display>
         <title>kaggle首战Titanic 82.275%</title>
@@ -1850,14 +1850,16 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2018/01/04/04_linear-regression-with-multiple-variables/</loc>
+    <loc>https://snaildove.github.io/2018/03/02/03_hyperparameter-tuning-batch-normalization-and-programming-frameworks/</loc>
     <lastmod>2018-12-25T15:50:07.994Z</lastmod>
     <data>
         <display>
-        <title>04_linear-regression-with-multiple-variables note4</title>
-        <pubTime>2018-01-03T16:00:00.000Z</pubTime>
+        <title>03_hyperparameter-tuning-batch-normalization-and-programming-frameworks</title>
+        <pubTime>2018-03-01T16:00:00.000Z</pubTime>
         
-        <tag>Machine Learning</tag>
+        <tag>deep learning</tag>
+         
+        <tag>Improving Deep Neural Networks</tag>
          
          
            
@@ -1870,16 +1872,14 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2018/03/02/03_hyperparameter-tuning-batch-normalization-and-programming-frameworks/</loc>
+    <loc>https://snaildove.github.io/2018/01/04/04_linear-regression-with-multiple-variables/</loc>
     <lastmod>2018-12-25T15:50:07.994Z</lastmod>
     <data>
         <display>
-        <title>03_hyperparameter-tuning-batch-normalization-and-programming-frameworks</title>
-        <pubTime>2018-03-01T16:00:00.000Z</pubTime>
+        <title>04_linear-regression-with-multiple-variables note4</title>
+        <pubTime>2018-01-03T16:00:00.000Z</pubTime>
         
-        <tag>deep learning</tag>
-         
-        <tag>Improving Deep Neural Networks</tag>
+        <tag>Machine Learning</tag>
          
          
            
