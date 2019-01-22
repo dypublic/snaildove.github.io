@@ -5,7 +5,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2019/01/06/name_and_sex/</loc>
-    <lastmod>2019-01-22T19:26:32.291Z</lastmod>
+    <lastmod>2019-01-22T20:07:10.936Z</lastmod>
     <data>
         <display>
         <title>kaggle首战Titanic 82.275%</title>
@@ -1828,16 +1828,14 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2018/02/02/02_neural-networks-basics/</loc>
+    <loc>https://snaildove.github.io/2018/01/04/04_linear-regression-with-multiple-variables/</loc>
     <lastmod>2018-12-25T15:50:07.994Z</lastmod>
     <data>
         <display>
-        <title>02_logistic-regression-as-a-neural-network</title>
-        <pubTime>2018-02-01T16:00:00.000Z</pubTime>
+        <title>04_linear-regression-with-multiple-variables note4</title>
+        <pubTime>2018-01-03T16:00:00.000Z</pubTime>
         
-        <tag>neural-networks-deep-learning</tag>
-         
-        <tag>deep learning</tag>
+        <tag>Machine Learning</tag>
          
          
            
@@ -1872,14 +1870,16 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2018/01/04/04_linear-regression-with-multiple-variables/</loc>
+    <loc>https://snaildove.github.io/2018/02/02/02_neural-networks-basics/</loc>
     <lastmod>2018-12-25T15:50:07.994Z</lastmod>
     <data>
         <display>
-        <title>04_linear-regression-with-multiple-variables note4</title>
-        <pubTime>2018-01-03T16:00:00.000Z</pubTime>
+        <title>02_logistic-regression-as-a-neural-network</title>
+        <pubTime>2018-02-01T16:00:00.000Z</pubTime>
         
-        <tag>Machine Learning</tag>
+        <tag>neural-networks-deep-learning</tag>
+         
+        <tag>deep learning</tag>
          
          
            
@@ -1958,14 +1958,16 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2018/01/03/03_linear-algebra-review/</loc>
+    <loc>https://snaildove.github.io/2018/05/03/03_object-detection/</loc>
     <lastmod>2018-12-25T15:50:07.913Z</lastmod>
     <data>
         <display>
-        <title>03_linear-algebra-review note3</title>
-        <pubTime>2018-01-02T16:00:00.000Z</pubTime>
+        <title>03_object-detection</title>
+        <pubTime>2018-05-02T16:00:00.000Z</pubTime>
         
-        <tag>Machine Learning</tag>
+        <tag>deep learning</tag>
+         
+        <tag>convolutional-neural-networks</tag>
          
          
            
@@ -1978,16 +1980,14 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2018/05/03/03_object-detection/</loc>
+    <loc>https://snaildove.github.io/2018/01/03/03_linear-algebra-review/</loc>
     <lastmod>2018-12-25T15:50:07.913Z</lastmod>
     <data>
         <display>
-        <title>03_object-detection</title>
-        <pubTime>2018-05-02T16:00:00.000Z</pubTime>
+        <title>03_linear-algebra-review note3</title>
+        <pubTime>2018-01-02T16:00:00.000Z</pubTime>
         
-        <tag>deep learning</tag>
-         
-        <tag>convolutional-neural-networks</tag>
+        <tag>Machine Learning</tag>
          
          
            
@@ -2086,14 +2086,16 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2018/01/02/02_linear-regression-with-one-variable/</loc>
+    <loc>https://snaildove.github.io/2018/03/01/01_practical-aspects-of-deep-learning/</loc>
     <lastmod>2018-12-25T15:50:07.757Z</lastmod>
     <data>
         <display>
-        <title>02_linear-regression-with-one-variable note2</title>
-        <pubTime>2018-01-01T16:00:00.000Z</pubTime>
+        <title>01_practical-aspects-of-deep-learning</title>
+        <pubTime>2018-02-28T16:00:00.000Z</pubTime>
         
-        <tag>Machine Learning</tag>
+        <tag>deep learning</tag>
+         
+        <tag>Improving Deep Neural Networks</tag>
          
          
            
@@ -2106,16 +2108,14 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2018/03/01/01_practical-aspects-of-deep-learning/</loc>
+    <loc>https://snaildove.github.io/2018/01/02/02_linear-regression-with-one-variable/</loc>
     <lastmod>2018-12-25T15:50:07.757Z</lastmod>
     <data>
         <display>
-        <title>01_practical-aspects-of-deep-learning</title>
-        <pubTime>2018-02-28T16:00:00.000Z</pubTime>
+        <title>02_linear-regression-with-one-variable note2</title>
+        <pubTime>2018-01-01T16:00:00.000Z</pubTime>
         
-        <tag>deep learning</tag>
-         
-        <tag>Improving Deep Neural Networks</tag>
+        <tag>Machine Learning</tag>
          
          
            
