@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://snaildove.github.io/"/>
-  <updated>2019-01-22T19:16:13.401Z</updated>
+  <updated>2019-01-22T19:26:32.291Z</updated>
   <id>https://snaildove.github.io/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>kaggle首战Titanic 82.275%</title>
-    <link href="https://snaildove.github.io/2018/12/28/name_and_sex/"/>
-    <id>https://snaildove.github.io/2018/12/28/name_and_sex/</id>
-    <published>2018-12-27T16:00:00.000Z</published>
-    <updated>2019-01-22T19:16:13.401Z</updated>
+    <link href="https://snaildove.github.io/2019/01/06/name_and_sex/"/>
+    <id>https://snaildove.github.io/2019/01/06/name_and_sex/</id>
+    <published>2019-01-05T16:00:00.000Z</published>
+    <updated>2019-01-22T19:26:32.291Z</updated>
     
     <summary type="html">
     
@@ -233,11 +233,11 @@
   </entry>
   
   <entry>
-    <title>summary of nlp sequence models</title>
-    <link href="https://snaildove.github.io/2018/06/06/summary_of_nlp-sequence-models/"/>
-    <id>https://snaildove.github.io/2018/06/06/summary_of_nlp-sequence-models/</id>
+    <title>Trigger word</title>
+    <link href="https://snaildove.github.io/2018/06/06/Trigger_word_detection-v1/"/>
+    <id>https://snaildove.github.io/2018/06/06/Trigger_word_detection-v1/</id>
     <published>2018-06-05T16:00:00.000Z</published>
-    <updated>2018-12-25T15:50:19.333Z</updated>
+    <updated>2018-12-25T15:50:19.682Z</updated>
     
     <summary type="html">
     
@@ -245,7 +245,7 @@
       
         
         
-          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is my
+          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is one
         
       
     
@@ -261,11 +261,11 @@
   </entry>
   
   <entry>
-    <title>Trigger word</title>
-    <link href="https://snaildove.github.io/2018/06/06/Trigger_word_detection-v1/"/>
-    <id>https://snaildove.github.io/2018/06/06/Trigger_word_detection-v1/</id>
+    <title>summary of nlp sequence models</title>
+    <link href="https://snaildove.github.io/2018/06/06/summary_of_nlp-sequence-models/"/>
+    <id>https://snaildove.github.io/2018/06/06/summary_of_nlp-sequence-models/</id>
     <published>2018-06-05T16:00:00.000Z</published>
-    <updated>2018-12-25T15:50:19.682Z</updated>
+    <updated>2018-12-25T15:50:19.333Z</updated>
     
     <summary type="html">
     
@@ -273,7 +273,7 @@
       
         
         
-          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is one
+          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is my
         
       
     
@@ -345,34 +345,6 @@
   </entry>
   
   <entry>
-    <title>Operations on word vectors</title>
-    <link href="https://snaildove.github.io/2018/06/03/Operations+on+word+vectors+-+v2/"/>
-    <id>https://snaildove.github.io/2018/06/03/Operations+on+word+vectors+-+v2/</id>
-    <published>2018-06-02T16:00:00.000Z</published>
-    <updated>2018-12-25T15:50:16.543Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is one
-        
-      
-    
-    </summary>
-    
-      <category term="english" scheme="https://snaildove.github.io/categories/english/"/>
-    
-    
-      <category term="deep learning" scheme="https://snaildove.github.io/tags/deep-learning/"/>
-    
-      <category term="nlp-sequence-models" scheme="https://snaildove.github.io/tags/nlp-sequence-models/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Emojify</title>
     <link href="https://snaildove.github.io/2018/06/03/Emojify+-+v2/"/>
     <id>https://snaildove.github.io/2018/06/03/Emojify+-+v2/</id>
@@ -401,11 +373,39 @@
   </entry>
   
   <entry>
-    <title>Building a Recurrent Neural Network Step by Step</title>
-    <link href="https://snaildove.github.io/2018/06/02/Building+a+Recurrent+Neural+Network+-+Step+by+Step+-+v3/"/>
-    <id>https://snaildove.github.io/2018/06/02/Building+a+Recurrent+Neural+Network+-+Step+by+Step+-+v3/</id>
+    <title>Operations on word vectors</title>
+    <link href="https://snaildove.github.io/2018/06/03/Operations+on+word+vectors+-+v2/"/>
+    <id>https://snaildove.github.io/2018/06/03/Operations+on+word+vectors+-+v2/</id>
+    <published>2018-06-02T16:00:00.000Z</published>
+    <updated>2018-12-25T15:50:16.543Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is one
+        
+      
+    
+    </summary>
+    
+      <category term="english" scheme="https://snaildove.github.io/categories/english/"/>
+    
+    
+      <category term="deep learning" scheme="https://snaildove.github.io/tags/deep-learning/"/>
+    
+      <category term="nlp-sequence-models" scheme="https://snaildove.github.io/tags/nlp-sequence-models/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Dinosaurus Island Character level language model final</title>
+    <link href="https://snaildove.github.io/2018/06/02/Dinosaurus+Island+--+Character+level+language+model+final+-+v3/"/>
+    <id>https://snaildove.github.io/2018/06/02/Dinosaurus+Island+--+Character+level+language+model+final+-+v3/</id>
     <published>2018-06-01T16:00:00.000Z</published>
-    <updated>2018-12-25T15:50:11.652Z</updated>
+    <updated>2018-12-25T15:50:13.101Z</updated>
     
     <summary type="html">
     
@@ -457,11 +457,11 @@
   </entry>
   
   <entry>
-    <title>Dinosaurus Island Character level language model final</title>
-    <link href="https://snaildove.github.io/2018/06/02/Dinosaurus+Island+--+Character+level+language+model+final+-+v3/"/>
-    <id>https://snaildove.github.io/2018/06/02/Dinosaurus+Island+--+Character+level+language+model+final+-+v3/</id>
+    <title>Building a Recurrent Neural Network Step by Step</title>
+    <link href="https://snaildove.github.io/2018/06/02/Building+a+Recurrent+Neural+Network+-+Step+by+Step+-+v3/"/>
+    <id>https://snaildove.github.io/2018/06/02/Building+a+Recurrent+Neural+Network+-+Step+by+Step+-+v3/</id>
     <published>2018-06-01T16:00:00.000Z</published>
-    <updated>2018-12-25T15:50:13.101Z</updated>
+    <updated>2018-12-25T15:50:11.652Z</updated>
     
     <summary type="html">
     
