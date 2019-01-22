@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://snaildove.github.io/2018/12/28/name_and_sex/</loc>
+    
+    <lastmod>2019-01-22T19:00:58.487Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2018/06/05/Neural+machine+translation+with+attention+-+v4/</loc>
+    
+    <lastmod>2019-01-22T06:51:26.633Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://snaildove.github.io/2018/12/28/foundations_of_spark_programming/</loc>
     
-    <lastmod>2019-01-17T10:43:16.837Z</lastmod>
+    <lastmod>2019-01-19T03:29:24.642Z</lastmod>
     
   </url>
   
@@ -222,13 +236,6 @@
     <loc>https://snaildove.github.io/2017/08/27/normal_random_variables/</loc>
     
     <lastmod>2018-12-25T15:50:16.438Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2018/06/05/Neural+machine+translation+with+attention+-+v4/</loc>
-    
-    <lastmod>2018-12-25T15:50:16.365Z</lastmod>
     
   </url>
   

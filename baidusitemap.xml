@@ -4,8 +4,50 @@
 
     
   <url>
+    <loc>https://snaildove.github.io/2018/12/28/name_and_sex/</loc>
+    <lastmod>2019-01-22T19:00:58.487Z</lastmod>
+    <data>
+        <display>
+        <title>kaggle首战Titanic 82.275%</title>
+        <pubTime>2018-12-27T16:00:00.000Z</pubTime>
+        
+        <tag>kaggle</tag>
+         
+         
+           
+             
+              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2018/06/05/Neural+machine+translation+with+attention+-+v4/</loc>
+    <lastmod>2019-01-22T06:51:26.633Z</lastmod>
+    <data>
+        <display>
+        <title>Neural machine translation with attention</title>
+        <pubTime>2018-06-04T16:00:00.000Z</pubTime>
+        
+        <tag>deep learning</tag>
+         
+        <tag>nlp-sequence-models</tag>
+         
+         
+           
+             
+              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://snaildove.github.io/2018/12/28/foundations_of_spark_programming/</loc>
-    <lastmod>2019-01-17T10:43:16.837Z</lastmod>
+    <lastmod>2019-01-19T03:29:24.642Z</lastmod>
     <data>
         <display>
         <title>spark编程基础笔记</title>
@@ -667,28 +709,6 @@
            
              
               <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://snaildove.github.io/2018/06/05/Neural+machine+translation+with+attention+-+v4/</loc>
-    <lastmod>2018-12-25T15:50:16.365Z</lastmod>
-    <data>
-        <display>
-        <title>Neural machine translation with attention</title>
-        <pubTime>2018-06-04T16:00:00.000Z</pubTime>
-        
-        <tag>deep learning</tag>
-         
-        <tag>nlp-sequence-models</tag>
-         
-         
-           
-             
-              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
           
         </display>
     </data>
@@ -1808,14 +1828,16 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2018/01/04/04_linear-regression-with-multiple-variables/</loc>
+    <loc>https://snaildove.github.io/2018/02/02/02_neural-networks-basics/</loc>
     <lastmod>2018-12-25T15:50:07.994Z</lastmod>
     <data>
         <display>
-        <title>04_linear-regression-with-multiple-variables note4</title>
-        <pubTime>2018-01-03T16:00:00.000Z</pubTime>
+        <title>02_logistic-regression-as-a-neural-network</title>
+        <pubTime>2018-02-01T16:00:00.000Z</pubTime>
         
-        <tag>Machine Learning</tag>
+        <tag>neural-networks-deep-learning</tag>
+         
+        <tag>deep learning</tag>
          
          
            
@@ -1828,16 +1850,14 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2018/02/02/02_neural-networks-basics/</loc>
+    <loc>https://snaildove.github.io/2018/01/04/04_linear-regression-with-multiple-variables/</loc>
     <lastmod>2018-12-25T15:50:07.994Z</lastmod>
     <data>
         <display>
-        <title>02_logistic-regression-as-a-neural-network</title>
-        <pubTime>2018-02-01T16:00:00.000Z</pubTime>
+        <title>04_linear-regression-with-multiple-variables note4</title>
+        <pubTime>2018-01-03T16:00:00.000Z</pubTime>
         
-        <tag>neural-networks-deep-learning</tag>
-         
-        <tag>deep learning</tag>
+        <tag>Machine Learning</tag>
          
          
            
@@ -1938,16 +1958,14 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2018/05/03/03_object-detection/</loc>
+    <loc>https://snaildove.github.io/2018/01/03/03_linear-algebra-review/</loc>
     <lastmod>2018-12-25T15:50:07.913Z</lastmod>
     <data>
         <display>
-        <title>03_object-detection</title>
-        <pubTime>2018-05-02T16:00:00.000Z</pubTime>
+        <title>03_linear-algebra-review note3</title>
+        <pubTime>2018-01-02T16:00:00.000Z</pubTime>
         
-        <tag>deep learning</tag>
-         
-        <tag>convolutional-neural-networks</tag>
+        <tag>Machine Learning</tag>
          
          
            
@@ -1960,14 +1978,16 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2018/01/03/03_linear-algebra-review/</loc>
+    <loc>https://snaildove.github.io/2018/05/03/03_object-detection/</loc>
     <lastmod>2018-12-25T15:50:07.913Z</lastmod>
     <data>
         <display>
-        <title>03_linear-algebra-review note3</title>
-        <pubTime>2018-01-02T16:00:00.000Z</pubTime>
+        <title>03_object-detection</title>
+        <pubTime>2018-05-02T16:00:00.000Z</pubTime>
         
-        <tag>Machine Learning</tag>
+        <tag>deep learning</tag>
+         
+        <tag>convolutional-neural-networks</tag>
          
          
            
@@ -2108,16 +2128,16 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2018/05/01/02_deep-convolutional-models-case-studies/</loc>
+    <loc>https://snaildove.github.io/2018/02/01/01_introduction-to-deep-learning/</loc>
     <lastmod>2018-12-25T15:50:07.756Z</lastmod>
     <data>
         <display>
-        <title>02_deep-convolutional-models-case-studies</title>
-        <pubTime>2018-04-30T16:00:00.000Z</pubTime>
+        <title>01_introduction-to-deep-learning</title>
+        <pubTime>2018-01-31T16:00:00.000Z</pubTime>
         
-        <tag>deep learning</tag>
+        <tag>neural-networks-deep-learning</tag>
          
-        <tag>convolutional-neural-networks</tag>
+        <tag>deep learning</tag>
          
          
            
@@ -2130,16 +2150,16 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2018/02/01/01_introduction-to-deep-learning/</loc>
+    <loc>https://snaildove.github.io/2018/05/01/02_deep-convolutional-models-case-studies/</loc>
     <lastmod>2018-12-25T15:50:07.756Z</lastmod>
     <data>
         <display>
-        <title>01_introduction-to-deep-learning</title>
-        <pubTime>2018-01-31T16:00:00.000Z</pubTime>
+        <title>02_deep-convolutional-models-case-studies</title>
+        <pubTime>2018-04-30T16:00:00.000Z</pubTime>
         
-        <tag>neural-networks-deep-learning</tag>
-         
         <tag>deep learning</tag>
+         
+        <tag>convolutional-neural-networks</tag>
          
          
            
