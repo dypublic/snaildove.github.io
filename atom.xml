@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://snaildove.github.io/"/>
-  <updated>2019-01-22T20:08:28.892Z</updated>
+  <updated>2019-01-23T06:14:51.185Z</updated>
   <id>https://snaildove.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://snaildove.github.io/2019/01/06/name_and_sex/"/>
     <id>https://snaildove.github.io/2019/01/06/name_and_sex/</id>
     <published>2019-01-05T16:00:00.000Z</published>
-    <updated>2019-01-22T20:08:28.892Z</updated>
+    <updated>2019-01-23T06:14:51.185Z</updated>
     
     <summary type="html">
     
@@ -47,7 +47,7 @@
     <link href="https://snaildove.github.io/2018/12/28/foundations_of_spark_programming/"/>
     <id>https://snaildove.github.io/2018/12/28/foundations_of_spark_programming/</id>
     <published>2018-12-27T16:00:00.000Z</published>
-    <updated>2019-01-19T03:29:24.642Z</updated>
+    <updated>2019-01-23T06:09:53.987Z</updated>
     
     <summary type="html">
     
@@ -69,11 +69,11 @@
   </entry>
   
   <entry>
-    <title>get started XGBoost</title>
+    <title>XGBoost原理和底层实现剖析</title>
     <link href="https://snaildove.github.io/2018/10/02/get-started-XGBoost/"/>
     <id>https://snaildove.github.io/2018/10/02/get-started-XGBoost/</id>
     <published>2018-10-01T16:00:00.000Z</published>
-    <updated>2018-12-26T14:32:04.492Z</updated>
+    <updated>2019-01-23T06:13:26.135Z</updated>
     
     <summary type="html">
     
@@ -99,7 +99,7 @@
     <link href="https://snaildove.github.io/2018/10/01/8.Booting-Methods_LiHang-Statistical-Learning-Methods/"/>
     <id>https://snaildove.github.io/2018/10/01/8.Booting-Methods_LiHang-Statistical-Learning-Methods/</id>
     <published>2018-09-30T16:00:00.000Z</published>
-    <updated>2018-12-26T13:33:13.368Z</updated>
+    <updated>2019-01-23T06:09:13.846Z</updated>
     
     <summary type="html">
     
@@ -155,7 +155,7 @@
     <link href="https://snaildove.github.io/2018/10/01/4.Naive-Bayes_LiHang-Statistical-Learning-Methods/"/>
     <id>https://snaildove.github.io/2018/10/01/4.Naive-Bayes_LiHang-Statistical-Learning-Methods/</id>
     <published>2018-09-30T16:00:00.000Z</published>
-    <updated>2018-12-25T15:50:10.637Z</updated>
+    <updated>2019-01-23T06:09:40.149Z</updated>
     
     <summary type="html">
     
@@ -183,7 +183,7 @@
     <link href="https://snaildove.github.io/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/"/>
     <id>https://snaildove.github.io/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/</id>
     <published>2018-09-30T16:00:00.000Z</published>
-    <updated>2018-12-25T15:50:10.811Z</updated>
+    <updated>2019-01-23T06:09:25.956Z</updated>
     
     <summary type="html">
     
@@ -317,11 +317,11 @@
   </entry>
   
   <entry>
-    <title>sequence models attention mechanism</title>
-    <link href="https://snaildove.github.io/2018/06/03/03_sequence-models-attention-mechanism/"/>
-    <id>https://snaildove.github.io/2018/06/03/03_sequence-models-attention-mechanism/</id>
+    <title>Operations on word vectors</title>
+    <link href="https://snaildove.github.io/2018/06/03/Operations+on+word+vectors+-+v2/"/>
+    <id>https://snaildove.github.io/2018/06/03/Operations+on+word+vectors+-+v2/</id>
     <published>2018-06-02T16:00:00.000Z</published>
-    <updated>2018-12-25T15:50:08.027Z</updated>
+    <updated>2018-12-25T15:50:16.543Z</updated>
     
     <summary type="html">
     
@@ -329,7 +329,7 @@
       
         
         
-          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is my
+          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is one
         
       
     
@@ -345,11 +345,11 @@
   </entry>
   
   <entry>
-    <title>Operations on word vectors</title>
-    <link href="https://snaildove.github.io/2018/06/03/Operations+on+word+vectors+-+v2/"/>
-    <id>https://snaildove.github.io/2018/06/03/Operations+on+word+vectors+-+v2/</id>
+    <title>sequence models attention mechanism</title>
+    <link href="https://snaildove.github.io/2018/06/03/03_sequence-models-attention-mechanism/"/>
+    <id>https://snaildove.github.io/2018/06/03/03_sequence-models-attention-mechanism/</id>
     <published>2018-06-02T16:00:00.000Z</published>
-    <updated>2018-12-25T15:50:16.543Z</updated>
+    <updated>2018-12-25T15:50:08.027Z</updated>
     
     <summary type="html">
     
@@ -357,7 +357,7 @@
       
         
         
-          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is one
+          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is my
         
       
     

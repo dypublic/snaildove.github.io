@@ -5,13 +5,139 @@
     
   <url>
     <loc>https://snaildove.github.io/2019/01/06/name_and_sex/</loc>
-    <lastmod>2019-01-22T20:08:28.892Z</lastmod>
+    <lastmod>2019-01-23T06:14:51.185Z</lastmod>
     <data>
         <display>
         <title>kaggle首战Titanic 82.275%</title>
         <pubTime>2019-01-05T16:00:00.000Z</pubTime>
         
         <tag>kaggle</tag>
+         
+         
+           
+             
+              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2018/10/02/get-started-XGBoost/</loc>
+    <lastmod>2019-01-23T06:13:26.135Z</lastmod>
+    <data>
+        <display>
+        <title>XGBoost原理和底层实现剖析</title>
+        <pubTime>2018-10-01T16:00:00.000Z</pubTime>
+        
+        <tag>Machine Learning</tag>
+         
+         
+           
+             
+              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2017/10/02/Tsinghua-open-course_Java-programming-language(2nd_part)/</loc>
+    <lastmod>2019-01-23T06:10:43.558Z</lastmod>
+    <data>
+        <display>
+        <title>Tsinghua-open-course Java programming language(2nd part)</title>
+        <pubTime>2017-10-01T16:00:00.000Z</pubTime>
+        
+        <tag>java</tag>
+         
+         
+           
+             
+              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2018/12/28/foundations_of_spark_programming/</loc>
+    <lastmod>2019-01-23T06:09:53.987Z</lastmod>
+    <data>
+        <display>
+        <title>spark编程基础笔记</title>
+        <pubTime>2018-12-27T16:00:00.000Z</pubTime>
+        
+        <tag>spark</tag>
+         
+         
+           
+             
+              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2018/10/01/4.Naive-Bayes_LiHang-Statistical-Learning-Methods/</loc>
+    <lastmod>2019-01-23T06:09:40.149Z</lastmod>
+    <data>
+        <display>
+        <title>《统计学习方法》第4章 NaiveBayes</title>
+        <pubTime>2018-09-30T16:00:00.000Z</pubTime>
+        
+        <tag>Machine Learning</tag>
+         
+        <tag>统计学习方法</tag>
+         
+         
+           
+             
+              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/</loc>
+    <lastmod>2019-01-23T06:09:25.956Z</lastmod>
+    <data>
+        <display>
+        <title>《统计学习方法》第9章 EM/GMM/F-MM/GEM</title>
+        <pubTime>2018-09-30T16:00:00.000Z</pubTime>
+        
+        <tag>Machine Learning</tag>
+         
+        <tag>统计学习方法</tag>
+         
+         
+           
+             
+              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2018/10/01/8.Booting-Methods_LiHang-Statistical-Learning-Methods/</loc>
+    <lastmod>2019-01-23T06:09:13.846Z</lastmod>
+    <data>
+        <display>
+        <title>《统计学习方法》第8章 提升方法之AdaBoost\BoostingTree\GBDT</title>
+        <pubTime>2018-09-30T16:00:00.000Z</pubTime>
+        
+        <tag>Machine Learning</tag>
+         
+        <tag>统计学习方法</tag>
          
          
            
@@ -46,26 +172,6 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2018/12/28/foundations_of_spark_programming/</loc>
-    <lastmod>2019-01-19T03:29:24.642Z</lastmod>
-    <data>
-        <display>
-        <title>spark编程基础笔记</title>
-        <pubTime>2018-12-27T16:00:00.000Z</pubTime>
-        
-        <tag>spark</tag>
-         
-         
-           
-             
-              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://snaildove.github.io/2018/06/28/summary_of_learning_of_Deep_Learning_Specializatio_on_Coursera/</loc>
     <lastmod>2018-12-29T04:06:53.245Z</lastmod>
     <data>
@@ -86,48 +192,6 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2018/10/02/get-started-XGBoost/</loc>
-    <lastmod>2018-12-26T14:32:04.492Z</lastmod>
-    <data>
-        <display>
-        <title>get started XGBoost</title>
-        <pubTime>2018-10-01T16:00:00.000Z</pubTime>
-        
-        <tag>Machine Learning</tag>
-         
-         
-           
-             
-              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://snaildove.github.io/2018/10/01/8.Booting-Methods_LiHang-Statistical-Learning-Methods/</loc>
-    <lastmod>2018-12-26T13:33:13.368Z</lastmod>
-    <data>
-        <display>
-        <title>《统计学习方法》第8章 提升方法之AdaBoost\BoostingTree\GBDT</title>
-        <pubTime>2018-09-30T16:00:00.000Z</pubTime>
-        
-        <tag>Machine Learning</tag>
-         
-        <tag>统计学习方法</tag>
-         
-         
-           
-             
-              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://snaildove.github.io/2016/01/20/vim_without_widgets/</loc>
     <lastmod>2018-12-25T15:50:19.838Z</lastmod>
     <data>
@@ -136,26 +200,6 @@
         <pubTime>2016-01-20T12:16:00.000Z</pubTime>
         
         <tag>linux</tag>
-         
-         
-           
-             
-              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://snaildove.github.io/2017/10/02/Tsinghua-open-course_Java-programming-language(2nd_part)/</loc>
-    <lastmod>2018-12-25T15:50:19.755Z</lastmod>
-    <data>
-        <display>
-        <title>Tsinghua-open-course Java programming language(2nd part)</title>
-        <pubTime>2017-10-01T16:00:00.000Z</pubTime>
-        
-        <tag>java</tag>
          
          
            
@@ -1438,50 +1482,6 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/</loc>
-    <lastmod>2018-12-25T15:50:10.811Z</lastmod>
-    <data>
-        <display>
-        <title>《统计学习方法》第9章 EM/GMM/F-MM/GEM</title>
-        <pubTime>2018-09-30T16:00:00.000Z</pubTime>
-        
-        <tag>Machine Learning</tag>
-         
-        <tag>统计学习方法</tag>
-         
-         
-           
-             
-              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://snaildove.github.io/2018/10/01/4.Naive-Bayes_LiHang-Statistical-Learning-Methods/</loc>
-    <lastmod>2018-12-25T15:50:10.637Z</lastmod>
-    <data>
-        <display>
-        <title>《统计学习方法》第4章 NaiveBayes</title>
-        <pubTime>2018-09-30T16:00:00.000Z</pubTime>
-        
-        <tag>Machine Learning</tag>
-         
-        <tag>统计学习方法</tag>
-         
-         
-           
-             
-              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://snaildove.github.io/2018/01/18/18_application-example-photo-ocr/</loc>
     <lastmod>2018-12-25T15:50:10.601Z</lastmod>
     <data>
@@ -1958,14 +1958,16 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2018/01/03/03_linear-algebra-review/</loc>
+    <loc>https://snaildove.github.io/2018/05/03/03_object-detection/</loc>
     <lastmod>2018-12-25T15:50:07.913Z</lastmod>
     <data>
         <display>
-        <title>03_linear-algebra-review note3</title>
-        <pubTime>2018-01-02T16:00:00.000Z</pubTime>
+        <title>03_object-detection</title>
+        <pubTime>2018-05-02T16:00:00.000Z</pubTime>
         
-        <tag>Machine Learning</tag>
+        <tag>deep learning</tag>
+         
+        <tag>convolutional-neural-networks</tag>
          
          
            
@@ -1978,16 +1980,14 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2018/05/03/03_object-detection/</loc>
+    <loc>https://snaildove.github.io/2018/01/03/03_linear-algebra-review/</loc>
     <lastmod>2018-12-25T15:50:07.913Z</lastmod>
     <data>
         <display>
-        <title>03_object-detection</title>
-        <pubTime>2018-05-02T16:00:00.000Z</pubTime>
+        <title>03_linear-algebra-review note3</title>
+        <pubTime>2018-01-02T16:00:00.000Z</pubTime>
         
-        <tag>deep learning</tag>
-         
-        <tag>convolutional-neural-networks</tag>
+        <tag>Machine Learning</tag>
          
          
            
@@ -2086,26 +2086,6 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2018/01/02/02_linear-regression-with-one-variable/</loc>
-    <lastmod>2018-12-25T15:50:07.757Z</lastmod>
-    <data>
-        <display>
-        <title>02_linear-regression-with-one-variable note2</title>
-        <pubTime>2018-01-01T16:00:00.000Z</pubTime>
-        
-        <tag>Machine Learning</tag>
-         
-         
-           
-             
-              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://snaildove.github.io/2018/03/01/01_practical-aspects-of-deep-learning/</loc>
     <lastmod>2018-12-25T15:50:07.757Z</lastmod>
     <data>
@@ -2128,16 +2108,14 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2018/05/01/02_deep-convolutional-models-case-studies/</loc>
-    <lastmod>2018-12-25T15:50:07.756Z</lastmod>
+    <loc>https://snaildove.github.io/2018/01/02/02_linear-regression-with-one-variable/</loc>
+    <lastmod>2018-12-25T15:50:07.757Z</lastmod>
     <data>
         <display>
-        <title>02_deep-convolutional-models-case-studies</title>
-        <pubTime>2018-04-30T16:00:00.000Z</pubTime>
+        <title>02_linear-regression-with-one-variable note2</title>
+        <pubTime>2018-01-01T16:00:00.000Z</pubTime>
         
-        <tag>deep learning</tag>
-         
-        <tag>convolutional-neural-networks</tag>
+        <tag>Machine Learning</tag>
          
          
            
@@ -2160,6 +2138,28 @@
         <tag>neural-networks-deep-learning</tag>
          
         <tag>deep learning</tag>
+         
+         
+           
+             
+              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2018/05/01/02_deep-convolutional-models-case-studies/</loc>
+    <lastmod>2018-12-25T15:50:07.756Z</lastmod>
+    <data>
+        <display>
+        <title>02_deep-convolutional-models-case-studies</title>
+        <pubTime>2018-04-30T16:00:00.000Z</pubTime>
+        
+        <tag>deep learning</tag>
+         
+        <tag>convolutional-neural-networks</tag>
          
          
            

@@ -4,7 +4,49 @@
   <url>
     <loc>https://snaildove.github.io/2019/01/06/name_and_sex/</loc>
     
-    <lastmod>2019-01-22T20:08:28.892Z</lastmod>
+    <lastmod>2019-01-23T06:14:51.185Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2018/10/02/get-started-XGBoost/</loc>
+    
+    <lastmod>2019-01-23T06:13:26.135Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2017/10/02/Tsinghua-open-course_Java-programming-language(2nd_part)/</loc>
+    
+    <lastmod>2019-01-23T06:10:43.558Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2018/12/28/foundations_of_spark_programming/</loc>
+    
+    <lastmod>2019-01-23T06:09:53.987Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2018/10/01/4.Naive-Bayes_LiHang-Statistical-Learning-Methods/</loc>
+    
+    <lastmod>2019-01-23T06:09:40.149Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/</loc>
+    
+    <lastmod>2019-01-23T06:09:25.956Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2018/10/01/8.Booting-Methods_LiHang-Statistical-Learning-Methods/</loc>
+    
+    <lastmod>2019-01-23T06:09:13.846Z</lastmod>
     
   </url>
   
@@ -16,13 +58,6 @@
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2018/12/28/foundations_of_spark_programming/</loc>
-    
-    <lastmod>2019-01-19T03:29:24.642Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://snaildove.github.io/2018/06/28/summary_of_learning_of_Deep_Learning_Specializatio_on_Coursera/</loc>
     
     <lastmod>2018-12-29T04:06:53.245Z</lastmod>
@@ -30,30 +65,9 @@
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2018/10/02/get-started-XGBoost/</loc>
-    
-    <lastmod>2018-12-26T14:32:04.492Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2018/10/01/8.Booting-Methods_LiHang-Statistical-Learning-Methods/</loc>
-    
-    <lastmod>2018-12-26T13:33:13.368Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://snaildove.github.io/2016/01/20/vim_without_widgets/</loc>
     
     <lastmod>2018-12-25T15:50:19.838Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2017/10/02/Tsinghua-open-course_Java-programming-language(2nd_part)/</loc>
-    
-    <lastmod>2018-12-25T15:50:19.755Z</lastmod>
     
   </url>
   
@@ -485,20 +499,6 @@
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/</loc>
-    
-    <lastmod>2018-12-25T15:50:10.811Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2018/10/01/4.Naive-Bayes_LiHang-Statistical-Learning-Methods/</loc>
-    
-    <lastmod>2018-12-25T15:50:10.637Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://snaildove.github.io/2018/01/18/18_application-example-photo-ocr/</loc>
     
     <lastmod>2018-12-25T15:50:10.601Z</lastmod>
@@ -618,14 +618,14 @@
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2018/01/04/04_linear-regression-with-multiple-variables/</loc>
+    <loc>https://snaildove.github.io/2018/03/02/03_hyperparameter-tuning-batch-normalization-and-programming-frameworks/</loc>
     
     <lastmod>2018-12-25T15:50:07.994Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2018/03/02/03_hyperparameter-tuning-batch-normalization-and-programming-frameworks/</loc>
+    <loc>https://snaildove.github.io/2018/01/04/04_linear-regression-with-multiple-variables/</loc>
     
     <lastmod>2018-12-25T15:50:07.994Z</lastmod>
     
@@ -660,14 +660,14 @@
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2018/01/03/03_linear-algebra-review/</loc>
+    <loc>https://snaildove.github.io/2018/05/03/03_object-detection/</loc>
     
     <lastmod>2018-12-25T15:50:07.913Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2018/05/03/03_object-detection/</loc>
+    <loc>https://snaildove.github.io/2018/01/03/03_linear-algebra-review/</loc>
     
     <lastmod>2018-12-25T15:50:07.913Z</lastmod>
     
