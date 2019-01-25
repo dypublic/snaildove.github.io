@@ -85,7 +85,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="kaggle," />
 
 
 
@@ -98,16 +98,20 @@
 
 
 
-<meta name="description" content="keep enthusiasm">
-<meta property="og:type" content="website">
-<meta property="og:title" content="SnailDove&#39;s blog">
-<meta property="og:url" content="https://snaildove.github.io/tags/spark/index.html">
+<meta name="description" content="本文用数据分析探索规律，效果好于一堆的随机森林和xgboost，超过参加这个比赛的很多ensemble模型，至少排在前306/10231（Top 3%），最终只选择name，sex，age，Ticket 4个特征，构建出新的特征，然后进行规则判断，即多个嵌套的if-else，再一次感受到了特征工程的强大。省了数据缺失弥补，其他繁琐的数据预处理，数据清洗，后续的调参和集成模型。另外，下一文将介绍">
+<meta name="keywords" content="kaggle">
+<meta property="og:type" content="article">
+<meta property="og:title" content="kaggle首战Titanic 82.275%">
+<meta property="og:url" content="https://snaildove.github.io/2019/01/06/Titanic_with_name_sex_age_and_ticket_features-0.82275/index.html">
 <meta property="og:site_name" content="SnailDove&#39;s blog">
-<meta property="og:description" content="keep enthusiasm">
+<meta property="og:description" content="本文用数据分析探索规律，效果好于一堆的随机森林和xgboost，超过参加这个比赛的很多ensemble模型，至少排在前306/10231（Top 3%），最终只选择name，sex，age，Ticket 4个特征，构建出新的特征，然后进行规则判断，即多个嵌套的if-else，再一次感受到了特征工程的强大。省了数据缺失弥补，其他繁琐的数据预处理，数据清洗，后续的调参和集成模型。另外，下一文将介绍">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="http://pltr89sz6.bkt.clouddn.com/gitpages/kaggle/titanic/1548184260540.png">
+<meta property="og:updated_time" content="2019-01-25T17:54:30.353Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="SnailDove&#39;s blog">
-<meta name="twitter:description" content="keep enthusiasm">
+<meta name="twitter:title" content="kaggle首战Titanic 82.275%">
+<meta name="twitter:description" content="本文用数据分析探索规律，效果好于一堆的随机森林和xgboost，超过参加这个比赛的很多ensemble模型，至少排在前306/10231（Top 3%），最终只选择name，sex，age，Ticket 4个特征，构建出新的特征，然后进行规则判断，即多个嵌套的if-else，再一次感受到了特征工程的强大。省了数据缺失弥补，其他繁琐的数据预处理，数据清洗，后续的调参和集成模型。另外，下一文将介绍">
+<meta name="twitter:image" content="http://pltr89sz6.bkt.clouddn.com/gitpages/kaggle/titanic/1548184260540.png">
 
 
 
@@ -137,13 +141,13 @@
 
 
 
-  <link rel="canonical" href="https://snaildove.github.io/tags/spark/"/>
+  <link rel="canonical" href="https://snaildove.github.io/2019/01/06/Titanic_with_name_sex_age_and_ticket_features-0.82275/"/>
 
 
 
 
 
-  <title>Tag: spark | SnailDove's blog</title>
+  <title>kaggle首战Titanic 82.275% | SnailDove's blog</title>
   
 
 
@@ -172,7 +176,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -310,54 +314,246 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>spark<small>Tag</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://snaildove.github.io/2019/01/06/Titanic_with_name_sex_age_and_ticket_features-0.82275/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="SnailDove">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SnailDove's blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/12/28/foundations_of_spark_programming/" itemprop="url">
-              
-                <span itemprop="name">spark编程基础笔记</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">kaggle首战Titanic 82.275%</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-12-28T00:00:00+08:00"
-              content="2018-12-28" >
-          12-28
-        </time>
-      </div>
+        <div class="post-meta">
+		  
+            <i class="fa fa-thumb-tack"></i>
+            <font color=7D26CD>sticky</font>
+            <span class="post-meta-divider">|</span>
+          
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-06T00:00:00+08:00">
+                2019-01-06
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/中文/" itemprop="url" rel="index">
+                    <span itemprop="name">中文</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-eye"></i>
+                  <span class="post-meta-item-text">Hits</span>
+              <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article</span>
+                
+                <span title="Words count in article">
+                  173
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">
+                  1
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <script src="\assets\js\APlayer.min.js"> </script><p><img src="http://pltr89sz6.bkt.clouddn.com/gitpages/kaggle/titanic/1548184260540.png" alt="1548184260540"></p>
+<p>本文用数据分析探索规律，效果好于一堆的随机森林和xgboost，超过参加这个比赛的很多ensemble模型，至少排在前306/10231（Top 3%），最终只选择name，sex，age，Ticket 4个特征，构建出新的特征，然后进行规则判断，即多个嵌套的if-else，再一次感受到了特征工程的强大。省了数据缺失弥补，其他繁琐的数据预处理，数据清洗，后续的调参和集成模型。<br>另外，下一文将介绍Top2%方案，近期将会分享怎么XGBoost调参数跑这个比赛。</p>
+<p>具体方案细节，查看我的jupyter notebook： <a href="https://nbviewer.jupyter.org/github/SnailDove/github-blog/blob/master/Titanic_with_name_sex_age_and_ticket_features-0.82275.ipynb" target="_blank" rel="noopener">Titanic_with_name_sex_age_and_ticket_features-0.82275.ipynb</a></p>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:</strong>
+    SnailDove
+  </li>
+  <li class="post-copyright-link">
+    <strong>Post link:</strong>
+    <a href="https://snaildove.github.io/2019/01/06/Titanic_with_name_sex_age_and_ticket_features-0.82275/" title="kaggle首战Titanic 82.275%">https://snaildove.github.io/2019/01/06/Titanic_with_name_sex_age_and_ticket_features-0.82275/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice: </strong>
+    All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> unless stating additionally.
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/kaggle/" rel="tag"><i class="fa fa-tag"></i> kaggle</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div id="needsharebutton-postbottom">
+            <span class="btn">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </span>
+          </div>
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/12/28/foundations_of_spark_programming/" rel="next" title="spark编程基础笔记">
+                <i class="fa fa-chevron-left"></i> spark编程基础笔记
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -365,6 +561,15 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zMjg4NC85NDQ1"></div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -692,6 +897,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -720,6 +929,17 @@
 
 
 
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 
