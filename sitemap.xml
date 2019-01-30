@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://snaildove.github.io/2018/03/02/02_optimization-algorithms/</loc>
+    
+    <lastmod>2019-01-30T16:49:14.307Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://snaildove.github.io/2018/12/18/get_started_feature-engineering/</loc>
     
     <lastmod>2019-01-28T06:44:21.122Z</lastmod>
@@ -656,13 +663,6 @@
     <loc>https://snaildove.github.io/2018/03/02/03_hyperparameter-tuning-batch-normalization-and-programming-frameworks/</loc>
     
     <lastmod>2019-01-24T08:13:00.527Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2018/03/02/02_optimization-algorithms/</loc>
-    
-    <lastmod>2019-01-24T08:13:00.340Z</lastmod>
     
   </url>
   

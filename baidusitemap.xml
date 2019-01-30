@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>https://snaildove.github.io/2018/03/02/02_optimization-algorithms/</loc>
+    <lastmod>2019-01-30T16:49:14.307Z</lastmod>
+    <data>
+        <display>
+        <title>02_optimization-algorithms</title>
+        <pubTime>2018-03-01T16:00:00.000Z</pubTime>
+        
+        <tag>deep learning</tag>
+         
+        <tag>Improving Deep Neural Networks</tag>
+         
+         
+           
+             
+              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://snaildove.github.io/2018/12/18/get_started_feature-engineering/</loc>
     <lastmod>2019-01-28T06:44:21.122Z</lastmod>
     <data>
@@ -1939,28 +1961,6 @@
     <data>
         <display>
         <title>03_hyperparameter-tuning-batch-normalization-and-programming-frameworks</title>
-        <pubTime>2018-03-01T16:00:00.000Z</pubTime>
-        
-        <tag>deep learning</tag>
-         
-        <tag>Improving Deep Neural Networks</tag>
-         
-         
-           
-             
-              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://snaildove.github.io/2018/03/02/02_optimization-algorithms/</loc>
-    <lastmod>2019-01-24T08:13:00.340Z</lastmod>
-    <data>
-        <display>
-        <title>02_optimization-algorithms</title>
         <pubTime>2018-03-01T16:00:00.000Z</pubTime>
         
         <tag>deep learning</tag>
