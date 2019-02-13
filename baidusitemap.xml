@@ -4,8 +4,28 @@
 
     
   <url>
+    <loc>https://snaildove.github.io/2019/01/06/Titanic_with_name_sex_age_and_ticket_features-0.82275/</loc>
+    <lastmod>2019-02-13T16:43:27.054Z</lastmod>
+    <data>
+        <display>
+        <title>kaggle首战Titanic 82.275%</title>
+        <pubTime>2019-01-05T16:00:00.000Z</pubTime>
+        
+        <tag>kaggle</tag>
+         
+         
+           
+             
+              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://snaildove.github.io/2018/03/02/02_optimization-algorithms/</loc>
-    <lastmod>2019-01-30T16:49:14.307Z</lastmod>
+    <lastmod>2019-02-04T04:29:55.798Z</lastmod>
     <data>
         <display>
         <title>02_optimization-algorithms</title>
@@ -36,26 +56,6 @@
         <tag>Machine Learning， feature engineering</tag>
          
         <tag>XGBoost</tag>
-         
-         
-           
-             
-              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://snaildove.github.io/2019/01/06/Titanic_with_name_sex_age_and_ticket_features-0.82275/</loc>
-    <lastmod>2019-01-25T17:54:30.353Z</lastmod>
-    <data>
-        <display>
-        <title>kaggle首战Titanic 82.275%</title>
-        <pubTime>2019-01-05T16:00:00.000Z</pubTime>
-        
-        <tag>kaggle</tag>
          
          
            

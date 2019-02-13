@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://snaildove.github.io/2019/01/06/Titanic_with_name_sex_age_and_ticket_features-0.82275/</loc>
+    
+    <lastmod>2019-02-13T16:43:27.054Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://snaildove.github.io/2018/03/02/02_optimization-algorithms/</loc>
     
-    <lastmod>2019-01-30T16:49:14.307Z</lastmod>
+    <lastmod>2019-02-04T04:29:55.798Z</lastmod>
     
   </url>
   
@@ -12,13 +19,6 @@
     <loc>https://snaildove.github.io/2018/12/18/get_started_feature-engineering/</loc>
     
     <lastmod>2019-01-28T06:44:21.122Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2019/01/06/Titanic_with_name_sex_age_and_ticket_features-0.82275/</loc>
-    
-    <lastmod>2019-01-25T17:54:30.353Z</lastmod>
     
   </url>
   
