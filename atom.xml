@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://snaildove.github.io/"/>
-  <updated>2019-02-13T17:04:55.984Z</updated>
+  <updated>2019-02-13T18:01:08.415Z</updated>
   <id>https://snaildove.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>kaggle首战Titanic 82.275% &amp; 83.37%</title>
-    <link href="https://snaildove.github.io/2019/01/06/Titanic_with_name_sex_age_and_ticket_features-0.82275/"/>
-    <id>https://snaildove.github.io/2019/01/06/Titanic_with_name_sex_age_and_ticket_features-0.82275/</id>
+    <title>kaggle首战Titanic 0.82275-Top3% &amp; 0.83732-Top2%</title>
+    <link href="https://snaildove.github.io/2019/01/06/Titanic_with_name_sex_age_and_ticket_features-0.82275-0.83732/"/>
+    <id>https://snaildove.github.io/2019/01/06/Titanic_with_name_sex_age_and_ticket_features-0.82275-0.83732/</id>
     <published>2019-01-05T16:00:00.000Z</published>
-    <updated>2019-02-13T17:04:55.984Z</updated>
+    <updated>2019-02-13T18:01:08.415Z</updated>
     
     <summary type="html">
     
@@ -29,7 +29,7 @@
       
         
         
-          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;&lt;img src=&quot;http://pltr89sz6.bkt.clouddn.com/gitpages/kaggle/titanic/1548184260540.png&quot;
+          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;&lt;img src=&quot;http://pltr89sz6.bkt.clouddn.com/gitpages/kaggle/Titanic/1.png&quot;
         
       
     
@@ -123,11 +123,11 @@
   </entry>
   
   <entry>
-    <title>《统计学习方法》第9章 EM/GMM/F-MM/GEM</title>
-    <link href="https://snaildove.github.io/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/"/>
-    <id>https://snaildove.github.io/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/</id>
+    <title>《统计学习方法》第4章 NaiveBayes</title>
+    <link href="https://snaildove.github.io/2018/10/01/4.Naive-Bayes_LiHang-Statistical-Learning-Methods/"/>
+    <id>https://snaildove.github.io/2018/10/01/4.Naive-Bayes_LiHang-Statistical-Learning-Methods/</id>
     <published>2018-09-30T16:00:00.000Z</published>
-    <updated>2019-01-24T08:13:03.492Z</updated>
+    <updated>2019-01-24T08:13:03.127Z</updated>
     
     <summary type="html">
     
@@ -179,11 +179,11 @@
   </entry>
   
   <entry>
-    <title>《统计学习方法》第4章 NaiveBayes</title>
-    <link href="https://snaildove.github.io/2018/10/01/4.Naive-Bayes_LiHang-Statistical-Learning-Methods/"/>
-    <id>https://snaildove.github.io/2018/10/01/4.Naive-Bayes_LiHang-Statistical-Learning-Methods/</id>
+    <title>《统计学习方法》第9章 EM/GMM/F-MM/GEM</title>
+    <link href="https://snaildove.github.io/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/"/>
+    <id>https://snaildove.github.io/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/</id>
     <published>2018-09-30T16:00:00.000Z</published>
-    <updated>2019-01-24T08:13:03.127Z</updated>
+    <updated>2019-01-24T08:13:03.492Z</updated>
     
     <summary type="html">
     
@@ -345,6 +345,34 @@
   </entry>
   
   <entry>
+    <title>Operations on word vectors</title>
+    <link href="https://snaildove.github.io/2018/06/03/Operations+on+word+vectors+-+v2/"/>
+    <id>https://snaildove.github.io/2018/06/03/Operations+on+word+vectors+-+v2/</id>
+    <published>2018-06-02T16:00:00.000Z</published>
+    <updated>2019-01-24T08:13:08.748Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is one
+        
+      
+    
+    </summary>
+    
+      <category term="english" scheme="https://snaildove.github.io/categories/english/"/>
+    
+    
+      <category term="deep learning" scheme="https://snaildove.github.io/tags/deep-learning/"/>
+    
+      <category term="nlp-sequence-models" scheme="https://snaildove.github.io/tags/nlp-sequence-models/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Emojify</title>
     <link href="https://snaildove.github.io/2018/06/03/Emojify+-+v2/"/>
     <id>https://snaildove.github.io/2018/06/03/Emojify+-+v2/</id>
@@ -401,11 +429,11 @@
   </entry>
   
   <entry>
-    <title>Operations on word vectors</title>
-    <link href="https://snaildove.github.io/2018/06/03/Operations+on+word+vectors+-+v2/"/>
-    <id>https://snaildove.github.io/2018/06/03/Operations+on+word+vectors+-+v2/</id>
-    <published>2018-06-02T16:00:00.000Z</published>
-    <updated>2019-01-24T08:13:08.748Z</updated>
+    <title>Building a Recurrent Neural Network Step by Step</title>
+    <link href="https://snaildove.github.io/2018/06/02/Building+a+Recurrent+Neural+Network+-+Step+by+Step+-+v3/"/>
+    <id>https://snaildove.github.io/2018/06/02/Building+a+Recurrent+Neural+Network+-+Step+by+Step+-+v3/</id>
+    <published>2018-06-01T16:00:00.000Z</published>
+    <updated>2019-01-24T08:13:03.869Z</updated>
     
     <summary type="html">
     
@@ -429,11 +457,11 @@
   </entry>
   
   <entry>
-    <title>Building a Recurrent Neural Network Step by Step</title>
-    <link href="https://snaildove.github.io/2018/06/02/Building+a+Recurrent+Neural+Network+-+Step+by+Step+-+v3/"/>
-    <id>https://snaildove.github.io/2018/06/02/Building+a+Recurrent+Neural+Network+-+Step+by+Step+-+v3/</id>
+    <title>natural language processing word embeddings</title>
+    <link href="https://snaildove.github.io/2018/06/02/02_natural-language-processing-word-embeddings/"/>
+    <id>https://snaildove.github.io/2018/06/02/02_natural-language-processing-word-embeddings/</id>
     <published>2018-06-01T16:00:00.000Z</published>
-    <updated>2019-01-24T08:13:03.869Z</updated>
+    <updated>2019-01-24T08:12:59.772Z</updated>
     
     <summary type="html">
     
@@ -441,7 +469,7 @@
       
         
         
-          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is one
+          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is my
         
       
     
@@ -498,34 +526,6 @@
         
         
           &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is one
-        
-      
-    
-    </summary>
-    
-      <category term="english" scheme="https://snaildove.github.io/categories/english/"/>
-    
-    
-      <category term="deep learning" scheme="https://snaildove.github.io/tags/deep-learning/"/>
-    
-      <category term="nlp-sequence-models" scheme="https://snaildove.github.io/tags/nlp-sequence-models/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>natural language processing word embeddings</title>
-    <link href="https://snaildove.github.io/2018/06/02/02_natural-language-processing-word-embeddings/"/>
-    <id>https://snaildove.github.io/2018/06/02/02_natural-language-processing-word-embeddings/</id>
-    <published>2018-06-01T16:00:00.000Z</published>
-    <updated>2019-01-24T08:12:59.772Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is my
         
       
     

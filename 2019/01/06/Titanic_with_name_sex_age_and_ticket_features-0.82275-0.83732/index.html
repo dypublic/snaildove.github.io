@@ -98,20 +98,21 @@
 
 
 
-<meta name="description" content="本文用数据分析探索规律，效果好于一堆的随机森林和xgboost，超过参加这个比赛的很多ensemble模型，至少排在前306/10231（Top 3%），最终只选择name，sex，age，Ticket 4个特征，构建出新的特征，然后进行规则判断，即多个嵌套的if-else，再一次感受到了特征工程的强大。省了数据缺失弥补，其他繁琐的数据预处理，数据清洗，后续的调参和集成模型。另外，下一文将介绍">
+<meta name="description" content="本文用数据分析探索规律，效果好于一堆的随机森林和xgboost，超过参加这个比赛的很多ensemble模型，至少排在前306/10231（Top 2%），最终只选择name，sex，age，Ticket 4个特征，构建出新的特征，然后进行规则判断，即多个嵌套的if-else，再一次感受到了特征工程的强大。省了数据缺失弥补，其他繁琐的数据预处理，数据清洗，后续的调参和集成模型。另外，下一文将介">
 <meta name="keywords" content="kaggle">
 <meta property="og:type" content="article">
-<meta property="og:title" content="kaggle首战Titanic 82.275% &amp; 83.37%">
-<meta property="og:url" content="https://snaildove.github.io/2019/01/06/Titanic_with_name_sex_age_and_ticket_features-0.82275/index.html">
+<meta property="og:title" content="kaggle首战Titanic 0.82275-Top3% &amp; 0.83732-Top2%">
+<meta property="og:url" content="https://snaildove.github.io/2019/01/06/Titanic_with_name_sex_age_and_ticket_features-0.82275-0.83732/index.html">
 <meta property="og:site_name" content="SnailDove&#39;s blog">
-<meta property="og:description" content="本文用数据分析探索规律，效果好于一堆的随机森林和xgboost，超过参加这个比赛的很多ensemble模型，至少排在前306/10231（Top 3%），最终只选择name，sex，age，Ticket 4个特征，构建出新的特征，然后进行规则判断，即多个嵌套的if-else，再一次感受到了特征工程的强大。省了数据缺失弥补，其他繁琐的数据预处理，数据清洗，后续的调参和集成模型。另外，下一文将介绍">
+<meta property="og:description" content="本文用数据分析探索规律，效果好于一堆的随机森林和xgboost，超过参加这个比赛的很多ensemble模型，至少排在前306/10231（Top 2%），最终只选择name，sex，age，Ticket 4个特征，构建出新的特征，然后进行规则判断，即多个嵌套的if-else，再一次感受到了特征工程的强大。省了数据缺失弥补，其他繁琐的数据预处理，数据清洗，后续的调参和集成模型。另外，下一文将介">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="http://pltr89sz6.bkt.clouddn.com/gitpages/kaggle/titanic/1548184260540.png">
-<meta property="og:updated_time" content="2019-02-13T17:04:55.984Z">
+<meta property="og:image" content="http://pltr89sz6.bkt.clouddn.com/gitpages/kaggle/Titanic/1.png">
+<meta property="og:image" content="http://pltr89sz6.bkt.clouddn.com/gitpages/kaggle/Titanic/2.png">
+<meta property="og:updated_time" content="2019-02-13T18:01:08.415Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="kaggle首战Titanic 82.275% &amp; 83.37%">
-<meta name="twitter:description" content="本文用数据分析探索规律，效果好于一堆的随机森林和xgboost，超过参加这个比赛的很多ensemble模型，至少排在前306/10231（Top 3%），最终只选择name，sex，age，Ticket 4个特征，构建出新的特征，然后进行规则判断，即多个嵌套的if-else，再一次感受到了特征工程的强大。省了数据缺失弥补，其他繁琐的数据预处理，数据清洗，后续的调参和集成模型。另外，下一文将介绍">
-<meta name="twitter:image" content="http://pltr89sz6.bkt.clouddn.com/gitpages/kaggle/titanic/1548184260540.png">
+<meta name="twitter:title" content="kaggle首战Titanic 0.82275-Top3% &amp; 0.83732-Top2%">
+<meta name="twitter:description" content="本文用数据分析探索规律，效果好于一堆的随机森林和xgboost，超过参加这个比赛的很多ensemble模型，至少排在前306/10231（Top 2%），最终只选择name，sex，age，Ticket 4个特征，构建出新的特征，然后进行规则判断，即多个嵌套的if-else，再一次感受到了特征工程的强大。省了数据缺失弥补，其他繁琐的数据预处理，数据清洗，后续的调参和集成模型。另外，下一文将介">
+<meta name="twitter:image" content="http://pltr89sz6.bkt.clouddn.com/gitpages/kaggle/Titanic/1.png">
 
 
 
@@ -141,13 +142,13 @@
 
 
 
-  <link rel="canonical" href="https://snaildove.github.io/2019/01/06/Titanic_with_name_sex_age_and_ticket_features-0.82275/"/>
+  <link rel="canonical" href="https://snaildove.github.io/2019/01/06/Titanic_with_name_sex_age_and_ticket_features-0.82275-0.83732/"/>
 
 
 
 
 
-  <title>kaggle首战Titanic 82.275% & 83.37% | SnailDove's blog</title>
+  <title>kaggle首战Titanic 0.82275-Top3% & 0.83732-Top2% | SnailDove's blog</title>
   
 
 
@@ -328,7 +329,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://snaildove.github.io/2019/01/06/Titanic_with_name_sex_age_and_ticket_features-0.82275/">
+    <link itemprop="mainEntityOfPage" href="https://snaildove.github.io/2019/01/06/Titanic_with_name_sex_age_and_ticket_features-0.82275-0.83732/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="SnailDove">
@@ -345,7 +346,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">kaggle首战Titanic 82.275% & 83.37%</h1>
+          <h1 class="post-title" itemprop="name headline">kaggle首战Titanic 0.82275-Top3% & 0.83732-Top2%</h1>
         
 
         <div class="post-meta">
@@ -459,12 +460,13 @@
       
 
       
-        <script src="\assets\js\APlayer.min.js"> </script><p><img src="http://pltr89sz6.bkt.clouddn.com/gitpages/kaggle/titanic/1548184260540.png" alt="1548184260540"></p>
-<p>本文用数据分析探索规律，效果好于一堆的随机森林和xgboost，超过参加这个比赛的很多ensemble模型，至少排在前306/10231（Top 3%），最终只选择name，sex，age，Ticket 4个特征，构建出新的特征，然后进行规则判断，即多个嵌套的if-else，再一次感受到了特征工程的强大。省了数据缺失弥补，其他繁琐的数据预处理，数据清洗，后续的调参和集成模型。<br>另外，下一文将介绍Top2%方案，近期将会分享怎么XGBoost调参数跑这个比赛。</p>
+        <script src="\assets\js\APlayer.min.js"> </script><p><img src="http://pltr89sz6.bkt.clouddn.com/gitpages/kaggle/Titanic/1.png" alt=""></p>
+<p><img src="http://pltr89sz6.bkt.clouddn.com/gitpages/kaggle/Titanic/2.png" alt=""></p>
+<p>本文用数据分析探索规律，效果好于一堆的随机森林和xgboost，超过参加这个比赛的很多ensemble模型，至少排在前306/10231（Top 2%），最终只选择name，sex，age，Ticket 4个特征，构建出新的特征，然后进行规则判断，即多个嵌套的if-else，再一次感受到了特征工程的强大。省了数据缺失弥补，其他繁琐的数据预处理，数据清洗，后续的调参和集成模型。<br>另外，下一文将介绍Top2%方案，近期将会分享怎么XGBoost调参数跑这个比赛。</p>
 <p>具体方案细节，查看我的jupyter notebook： </p>
 <ol>
 <li><a href="https://nbviewer.jupyter.org/github/SnailDove/github-blog/blob/master/Titanic_with_name_sex_age_and_ticket_features-0.82275.ipynb" target="_blank" rel="noopener">Titanic_with_name_sex_age_and_ticket_features-0.82275.ipynb</a></li>
-<li><a href="https://nbviewer.jupyter.org/github/SnailDove/github-blog/blob/master/Titanic-0.837.ipynb" target="_blank" rel="noopener">[Titanic_with_name_sex_age_and_ticket_features-0.83725.ipynb]</a></li>
+<li><a href="https://nbviewer.jupyter.org/github/SnailDove/github-blog/blob/master/Titanic-0.837.ipynb" target="_blank" rel="noopener">Titanic_with_name_sex_age_and_ticket_features-0.83732.ipynb</a></li>
 </ol>
 
       
@@ -486,7 +488,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>Post link:</strong>
-    <a href="https://snaildove.github.io/2019/01/06/Titanic_with_name_sex_age_and_ticket_features-0.82275/" title="kaggle首战Titanic 82.275% & 83.37%">https://snaildove.github.io/2019/01/06/Titanic_with_name_sex_age_and_ticket_features-0.82275/</a>
+    <a href="https://snaildove.github.io/2019/01/06/Titanic_with_name_sex_age_and_ticket_features-0.82275-0.83732/" title="kaggle首战Titanic 0.82275-Top3% & 0.83732-Top2%">https://snaildove.github.io/2019/01/06/Titanic_with_name_sex_age_and_ticket_features-0.82275-0.83732/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice: </strong>
