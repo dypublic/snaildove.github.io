@@ -4,58 +4,14 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2019/01/06/Titanic_with_name_sex_age_and_ticket_features-0.82275-0.83732/</loc>
-    <lastmod>2019-02-13T18:01:08.415Z</lastmod>
+    <loc>https://snaildove.github.io/2019/01/01/Maximum-Likelihood-Estimation_VS_Bayes-Estimation/</loc>
+    <lastmod>2019-02-23T16:49:16.866Z</lastmod>
     <data>
         <display>
-        <title>kaggle首战Titanic 0.82275-Top3% & 0.83732-Top2%</title>
-        <pubTime>2019-01-05T16:00:00.000Z</pubTime>
+        <title>极大化似然估计与贝叶斯估计区别</title>
+        <pubTime>2018-12-31T16:00:00.000Z</pubTime>
         
-        <tag>kaggle</tag>
-         
-         
-           
-             
-              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://snaildove.github.io/2018/03/02/02_optimization-algorithms/</loc>
-    <lastmod>2019-02-04T04:29:55.798Z</lastmod>
-    <data>
-        <display>
-        <title>02_optimization-algorithms</title>
-        <pubTime>2018-03-01T16:00:00.000Z</pubTime>
-        
-        <tag>deep learning</tag>
-         
-        <tag>Improving Deep Neural Networks</tag>
-         
-         
-           
-             
-              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://snaildove.github.io/2018/12/18/get_started_feature-engineering/</loc>
-    <lastmod>2019-01-28T06:44:21.122Z</lastmod>
-    <data>
-        <display>
-        <title>从特征工程到XGBoost参数调优</title>
-        <pubTime>2018-12-17T16:00:00.000Z</pubTime>
-        
-        <tag>Machine Learning， feature engineering</tag>
-         
-        <tag>XGBoost</tag>
+        <tag>Probability</tag>
          
          
            
@@ -69,7 +25,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2016/01/20/vim_without_widgets/</loc>
-    <lastmod>2019-01-24T08:13:12.388Z</lastmod>
+    <lastmod>2019-02-23T16:40:13.342Z</lastmod>
     <data>
         <display>
         <title>vim无插件使用</title>
@@ -89,7 +45,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2017/10/02/Tsinghua-open-course_Java-programming-language(2nd_part)/</loc>
-    <lastmod>2019-01-24T08:13:12.289Z</lastmod>
+    <lastmod>2019-02-23T16:40:13.164Z</lastmod>
     <data>
         <display>
         <title>Tsinghua-open-course Java programming language(2nd part)</title>
@@ -109,7 +65,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/06/06/Trigger_word_detection-v1/</loc>
-    <lastmod>2019-01-24T08:13:12.192Z</lastmod>
+    <lastmod>2019-02-23T16:40:13.022Z</lastmod>
     <data>
         <display>
         <title>Trigger word</title>
@@ -131,7 +87,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2017/08/15/trees_describe_the_sample_space/</loc>
-    <lastmod>2019-01-24T08:13:12.071Z</lastmod>
+    <lastmod>2019-02-23T16:40:12.615Z</lastmod>
     <data>
         <display>
         <title>Trees describe the sample space</title>
@@ -150,8 +106,28 @@
 
     
   <url>
+    <loc>https://snaildove.github.io/2019/01/06/Titanic_with_name_sex_age_and_ticket_features-0.82275-0.83732/</loc>
+    <lastmod>2019-02-23T16:40:12.401Z</lastmod>
+    <data>
+        <display>
+        <title>kaggle首战Titanic 0.82275-Top3% & 0.83732-Top2%</title>
+        <pubTime>2019-01-05T16:00:00.000Z</pubTime>
+        
+        <tag>kaggle</tag>
+         
+         
+           
+             
+              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://snaildove.github.io/2017/08/24/the_two-envelopes_paradox/</loc>
-    <lastmod>2019-01-24T08:13:11.959Z</lastmod>
+    <lastmod>2019-02-23T16:40:12.184Z</lastmod>
     <data>
         <display>
         <title>经典摘录-两个信封的悖论</title>
@@ -171,7 +147,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/03/03/TensorflowTutorial/</loc>
-    <lastmod>2019-01-24T08:13:11.905Z</lastmod>
+    <lastmod>2019-02-23T16:40:12.041Z</lastmod>
     <data>
         <display>
         <title>Tensorflow Tutorial</title>
@@ -193,7 +169,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/04/03/summary_of_Structuring-Machine-Learning-Projects/</loc>
-    <lastmod>2019-01-24T08:13:11.726Z</lastmod>
+    <lastmod>2019-02-23T16:40:11.819Z</lastmod>
     <data>
         <display>
         <title>summary of Structuring Machine Learning Projects</title>
@@ -215,7 +191,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/06/06/summary_of_nlp-sequence-models/</loc>
-    <lastmod>2019-01-24T08:13:11.582Z</lastmod>
+    <lastmod>2019-02-23T16:40:11.521Z</lastmod>
     <data>
         <display>
         <title>summary of nlp sequence models</title>
@@ -237,7 +213,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/02/08/summary_of_neural-networks-deep-learning/</loc>
-    <lastmod>2019-01-24T08:13:11.306Z</lastmod>
+    <lastmod>2019-02-23T16:40:11.346Z</lastmod>
     <data>
         <display>
         <title>summary of neural-networks-deep-learning</title>
@@ -259,7 +235,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/01/20/summary_of_ml-coursera-andrew-ng/</loc>
-    <lastmod>2019-01-24T08:13:11.218Z</lastmod>
+    <lastmod>2019-02-23T16:40:11.156Z</lastmod>
     <data>
         <display>
         <title>summary of Machine Learning</title>
@@ -279,7 +255,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2017/12/28/summary_of_Linear-Algebra/</loc>
-    <lastmod>2019-01-24T08:13:11.107Z</lastmod>
+    <lastmod>2019-02-23T16:40:10.913Z</lastmod>
     <data>
         <display>
         <title>summary of Linear Algebra</title>
@@ -299,7 +275,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/10/01/summary_of_LiHang_Statistical-learning-methods/</loc>
-    <lastmod>2019-01-24T08:13:11.010Z</lastmod>
+    <lastmod>2019-02-23T16:40:10.776Z</lastmod>
     <data>
         <display>
         <title>《统计学习方法总结》</title>
@@ -321,7 +297,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/06/28/summary_of_learning_of_Deep_Learning_Specializatio_on_Coursera/</loc>
-    <lastmod>2019-01-24T08:13:10.904Z</lastmod>
+    <lastmod>2019-02-23T16:40:10.587Z</lastmod>
     <data>
         <display>
         <title>summary of learning Deep Learning Specialization</title>
@@ -341,7 +317,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/03/02/summary_of_Improving-Deep-Neural-Networks/</loc>
-    <lastmod>2019-01-24T08:13:10.827Z</lastmod>
+    <lastmod>2019-02-23T16:40:10.390Z</lastmod>
     <data>
         <display>
         <title>summary of Improving-Deep-Neural-Networks</title>
@@ -363,7 +339,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/05/04/summary_of_convolutional-neural-networks/</loc>
-    <lastmod>2019-01-24T08:13:10.689Z</lastmod>
+    <lastmod>2019-02-23T16:40:09.991Z</lastmod>
     <data>
         <display>
         <title>summary of convolutional neural networks</title>
@@ -385,7 +361,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2013/05/12/stack_application_on_line-editor_or_buff_zone/</loc>
-    <lastmod>2019-01-24T08:13:10.593Z</lastmod>
+    <lastmod>2019-02-23T16:40:09.829Z</lastmod>
     <data>
         <display>
         <title>行编辑器/容错缓冲区-栈的基础应用2</title>
@@ -405,7 +381,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2013/05/13/stack_application_on_expression-resolution-with-braces/</loc>
-    <lastmod>2019-01-24T08:13:10.401Z</lastmod>
+    <lastmod>2019-02-23T16:40:09.598Z</lastmod>
     <data>
         <display>
         <title>含括号的运算表达式求解-栈的基础应用3</title>
@@ -425,7 +401,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2017/08/03/singular_values_decomposition/</loc>
-    <lastmod>2019-01-24T08:13:10.164Z</lastmod>
+    <lastmod>2019-02-23T16:40:09.377Z</lastmod>
     <data>
         <display>
         <title>Tsinghua linear-algebra-2 3rd-lecture Singular-Values-Decomposition</title>
@@ -445,7 +421,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/05/02/Residual+Networks+-+v2/</loc>
-    <lastmod>2019-01-24T08:13:10.084Z</lastmod>
+    <lastmod>2019-02-23T16:40:09.243Z</lastmod>
     <data>
         <display>
         <title>Residual Networks</title>
@@ -467,7 +443,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2017/08/06/pseudo_inverse/</loc>
-    <lastmod>2019-01-24T08:13:09.929Z</lastmod>
+    <lastmod>2019-02-23T16:40:08.976Z</lastmod>
     <data>
         <display>
         <title>Tsinghua linear-algebra-2 6th-lecture pseudo-inverse</title>
@@ -487,7 +463,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/03/01/practical-aspects-of-deep-learning/</loc>
-    <lastmod>2019-01-24T08:13:09.840Z</lastmod>
+    <lastmod>2019-02-23T16:40:08.585Z</lastmod>
     <data>
         <display>
         <title>practical-aspects-of-deep-learning</title>
@@ -509,7 +485,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2017/08/01/positive_definite_matrix/</loc>
-    <lastmod>2019-01-24T08:13:09.582Z</lastmod>
+    <lastmod>2019-02-23T16:40:08.327Z</lastmod>
     <data>
         <display>
         <title>Tsinghua linear-algebra-2 1st-lecture positive-definite-matrix</title>
@@ -529,7 +505,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2017/08/01/positive_definite_and_least_square/</loc>
-    <lastmod>2019-01-24T08:13:09.502Z</lastmod>
+    <lastmod>2019-02-23T16:40:08.160Z</lastmod>
     <data>
         <display>
         <title>positive definite and least squares</title>
@@ -549,7 +525,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/02/06/planar-data-classification-with-one-hidden-layer_week3/</loc>
-    <lastmod>2019-01-24T08:13:09.346Z</lastmod>
+    <lastmod>2019-02-23T16:40:08.011Z</lastmod>
     <data>
         <display>
         <title>planar data classification with one-hidden layer</title>
@@ -571,7 +547,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2015/04/24/perception_learning_algorithm/</loc>
-    <lastmod>2019-01-24T08:13:09.054Z</lastmod>
+    <lastmod>2019-02-23T16:40:07.812Z</lastmod>
     <data>
         <display>
         <title>Perception Learning Algorithm</title>
@@ -591,7 +567,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2017/02/11/PCA_in_action/</loc>
-    <lastmod>2019-01-24T08:13:08.954Z</lastmod>
+    <lastmod>2019-02-23T16:40:07.666Z</lastmod>
     <data>
         <display>
         <title>PCA in action</title>
@@ -613,7 +589,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/03/02/OptimizationMethods/</loc>
-    <lastmod>2019-01-24T08:13:08.867Z</lastmod>
+    <lastmod>2019-02-23T16:40:07.497Z</lastmod>
     <data>
         <display>
         <title>Optimization Methods</title>
@@ -635,7 +611,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/06/03/Operations+on+word+vectors+-+v2/</loc>
-    <lastmod>2019-01-24T08:13:08.748Z</lastmod>
+    <lastmod>2019-02-23T16:40:07.255Z</lastmod>
     <data>
         <display>
         <title>Operations on word vectors</title>
@@ -657,7 +633,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2017/08/27/normal_random_variables/</loc>
-    <lastmod>2019-01-24T08:13:08.634Z</lastmod>
+    <lastmod>2019-02-23T16:40:07.034Z</lastmod>
     <data>
         <display>
         <title>经典摘录-正态随机变量</title>
@@ -677,7 +653,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/06/05/Neural+machine+translation+with+attention+-+v4/</loc>
-    <lastmod>2019-01-24T08:13:08.498Z</lastmod>
+    <lastmod>2019-02-23T16:40:06.873Z</lastmod>
     <data>
         <display>
         <title>Neural machine translation with attention</title>
@@ -699,7 +675,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2017/08/26/mean_and_variance_of_uniform_random_variable/</loc>
-    <lastmod>2019-01-24T08:13:08.260Z</lastmod>
+    <lastmod>2019-02-23T16:40:06.638Z</lastmod>
     <data>
         <display>
         <title>经典摘录-均匀随机变量的均值和方差</title>
@@ -719,7 +695,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2017/08/23/mean_and_variance_of_the_geometric/</loc>
-    <lastmod>2019-01-24T08:13:07.995Z</lastmod>
+    <lastmod>2019-02-23T16:40:06.445Z</lastmod>
     <data>
         <display>
         <title>经典摘录-几何随机变量的均值和方差</title>
@@ -739,7 +715,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2017/08/25/mean_and_variance_of_sample_and_estimating_probability_by_simulation/</loc>
-    <lastmod>2019-01-24T08:13:07.905Z</lastmod>
+    <lastmod>2019-02-23T16:40:06.295Z</lastmod>
     <data>
         <display>
         <title>经典摘录-样本均值的期望方差与模拟的方法估计概率</title>
@@ -759,7 +735,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2017/08/28/mean_and_variance_of_Bernoulli_and_Possion_random/</loc>
-    <lastmod>2019-01-24T08:13:07.820Z</lastmod>
+    <lastmod>2019-02-23T16:40:05.985Z</lastmod>
     <data>
         <display>
         <title>经典摘录 - 伯努利和泊松随机变量的均值方差</title>
@@ -779,7 +755,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2017/08/27/mean_and_variance_of_a_piecewise_constant_PDF/</loc>
-    <lastmod>2019-01-24T08:13:07.714Z</lastmod>
+    <lastmod>2019-02-23T16:40:05.622Z</lastmod>
     <data>
         <display>
         <title>经典摘录-分段常数概率密度函数的均值和方差</title>
@@ -799,7 +775,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2017/08/06/Markov_matrix/</loc>
-    <lastmod>2019-01-24T08:13:07.455Z</lastmod>
+    <lastmod>2019-02-23T16:40:05.259Z</lastmod>
     <data>
         <display>
         <title>Tsinghua linear-algebra-2 9th-lecture Markov-matrix_and_positive-matrix</title>
@@ -819,7 +795,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2014/06/01/longest_common_sub-sequence/</loc>
-    <lastmod>2019-01-24T08:13:07.356Z</lastmod>
+    <lastmod>2019-02-23T16:40:04.960Z</lastmod>
     <data>
         <display>
         <title>动态规划-最长公共子序列</title>
@@ -839,7 +815,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/02/05/logistic-regression-with-a-neural-network-mindset_week1_and_week2/</loc>
-    <lastmod>2019-01-24T08:13:07.284Z</lastmod>
+    <lastmod>2019-02-23T16:40:04.548Z</lastmod>
     <data>
         <display>
         <title>logistic-regression-with-a-neural-network-mindset</title>
@@ -861,7 +837,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2017/08/05/linear_transformation_2nd_part/</loc>
-    <lastmod>2019-01-24T08:13:07.118Z</lastmod>
+    <lastmod>2019-02-23T16:40:04.396Z</lastmod>
     <data>
         <display>
         <title>Tsinghua linear-algebra-2 5th-lecture linear-transformation-2nd-part</title>
@@ -881,7 +857,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2017/08/04/linear_transformation_1st_part/</loc>
-    <lastmod>2019-01-24T08:13:06.959Z</lastmod>
+    <lastmod>2019-02-23T16:40:04.230Z</lastmod>
     <data>
         <display>
         <title>Tsinghua linear-algebra-2 4th-lecture linear-transformation-1st-part</title>
@@ -901,7 +877,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2017/08/20/LaTeX_symbols/</loc>
-    <lastmod>2019-01-24T08:13:06.808Z</lastmod>
+    <lastmod>2019-02-23T16:40:04.038Z</lastmod>
     <data>
         <display>
         <title>转载-LaTeX各种符号</title>
@@ -921,7 +897,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/05/02/Keras+-+Tutorial+-+Happy+House+v2/</loc>
-    <lastmod>2019-01-24T08:13:06.721Z</lastmod>
+    <lastmod>2019-02-23T16:40:03.875Z</lastmod>
     <data>
         <display>
         <title>Keras Tutorial Happy House</title>
@@ -943,7 +919,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/03/28/Information_Theory/</loc>
-    <lastmod>2019-01-24T08:13:06.608Z</lastmod>
+    <lastmod>2019-02-23T16:40:03.645Z</lastmod>
     <data>
         <display>
         <title>Information Theory in Machine Learning</title>
@@ -963,7 +939,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/06/02/Improvise+a+Jazz+Solo+with+an+LSTM+Network+-+v3/</loc>
-    <lastmod>2019-01-24T08:13:06.373Z</lastmod>
+    <lastmod>2019-02-23T16:40:03.459Z</lastmod>
     <data>
         <display>
         <title>Improvise a Jazz Solo with an LSTM Network</title>
@@ -985,7 +961,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/01/23/hexo_source-code_synchronization/</loc>
-    <lastmod>2019-01-24T08:13:06.258Z</lastmod>
+    <lastmod>2019-02-23T16:40:03.280Z</lastmod>
     <data>
         <display>
         <title>同步hexo博客</title>
@@ -1005,7 +981,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/02/02/greek-letters/</loc>
-    <lastmod>2019-01-24T08:13:06.173Z</lastmod>
+    <lastmod>2019-02-23T16:40:03.050Z</lastmod>
     <data>
         <display>
         <title>转载-希腊字母常用指代意义及中文读音</title>
@@ -1025,7 +1001,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2017/08/08/graph_and_network/</loc>
-    <lastmod>2019-01-24T08:13:06.086Z</lastmod>
+    <lastmod>2019-02-23T16:40:02.886Z</lastmod>
     <data>
         <display>
         <title>Tsinghua linear-algebra-2 8th-lecture graph-and-network</title>
@@ -1045,7 +1021,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/10/02/get-started-XGBoost/</loc>
-    <lastmod>2019-01-24T08:13:05.917Z</lastmod>
+    <lastmod>2019-02-23T16:40:02.695Z</lastmod>
     <data>
         <display>
         <title>XGBoost原理和底层实现剖析</title>
@@ -1064,8 +1040,30 @@
 
     
   <url>
+    <loc>https://snaildove.github.io/2018/12/18/get_started_feature-engineering/</loc>
+    <lastmod>2019-02-23T16:40:02.500Z</lastmod>
+    <data>
+        <display>
+        <title>从特征工程到XGBoost参数调优</title>
+        <pubTime>2018-12-17T16:00:00.000Z</pubTime>
+        
+        <tag>Machine Learning， feature engineering</tag>
+         
+        <tag>XGBoost</tag>
+         
+         
+           
+             
+              <breadCrumb title="中文" url="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://snaildove.github.io/2017/08/02/Fourier_series/</loc>
-    <lastmod>2019-01-24T08:13:05.730Z</lastmod>
+    <lastmod>2019-02-23T16:40:02.325Z</lastmod>
     <data>
         <display>
         <title>Tsinghua linear-algebra-2 10th-lecture Fourier series</title>
@@ -1085,7 +1083,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/12/28/foundations_of_spark_programming/</loc>
-    <lastmod>2019-01-24T08:13:05.645Z</lastmod>
+    <lastmod>2019-02-23T16:40:02.077Z</lastmod>
     <data>
         <display>
         <title>spark编程基础笔记</title>
@@ -1105,7 +1103,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/05/04/Face+Recognition+for+the+Happy+House+-+v3/</loc>
-    <lastmod>2019-01-24T08:13:05.599Z</lastmod>
+    <lastmod>2019-02-23T16:40:01.869Z</lastmod>
     <data>
         <display>
         <title>Face Recognition for the Happy House</title>
@@ -1127,7 +1125,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2017/08/25/exponential_random_variables/</loc>
-    <lastmod>2019-01-24T08:13:05.358Z</lastmod>
+    <lastmod>2019-02-23T16:40:01.667Z</lastmod>
     <data>
         <display>
         <title>经典摘录-指数型随机变量的均值和方差</title>
@@ -1147,7 +1145,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2017/08/07/engineering_matrices/</loc>
-    <lastmod>2019-01-24T08:13:05.190Z</lastmod>
+    <lastmod>2019-02-23T16:40:01.418Z</lastmod>
     <data>
         <display>
         <title>Tsinghua linear-algebra-2 7th-lecture engineering-matrix</title>
@@ -1167,7 +1165,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/06/03/Emojify+-+v2/</loc>
-    <lastmod>2019-01-24T08:13:05.117Z</lastmod>
+    <lastmod>2019-02-23T16:40:01.234Z</lastmod>
     <data>
         <display>
         <title>Emojify</title>
@@ -1189,7 +1187,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/06/02/Dinosaurus+Island+--+Character+level+language+model+final+-+v3/</loc>
-    <lastmod>2019-01-24T08:13:05.025Z</lastmod>
+    <lastmod>2019-02-23T16:40:00.972Z</lastmod>
     <data>
         <display>
         <title>Dinosaurus Island Character level language model final</title>
@@ -1211,7 +1209,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2017/08/14/definition_of_expectation/</loc>
-    <lastmod>2019-01-24T08:13:04.824Z</lastmod>
+    <lastmod>2019-02-23T16:40:00.824Z</lastmod>
     <data>
         <display>
         <title>期望定义的由来</title>
@@ -1231,7 +1229,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2015/05/01/decision_tree/</loc>
-    <lastmod>2019-01-24T08:13:04.654Z</lastmod>
+    <lastmod>2019-02-23T16:40:00.676Z</lastmod>
     <data>
         <display>
         <title>决策树学习</title>
@@ -1251,7 +1249,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2017/08/26/cumulative_distribution_function/</loc>
-    <lastmod>2019-01-24T08:13:04.567Z</lastmod>
+    <lastmod>2019-02-23T16:40:00.385Z</lastmod>
     <data>
         <display>
         <title>经典摘录-[累积]分布函数CDF</title>
@@ -1271,7 +1269,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/05/01/Convolution+model+-+Step+by+Step+-+v2/</loc>
-    <lastmod>2019-01-24T08:13:04.497Z</lastmod>
+    <lastmod>2019-02-23T16:40:00.259Z</lastmod>
     <data>
         <display>
         <title>Convolution model Step by Step</title>
@@ -1293,7 +1291,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2017/08/11/computer_graphics/</loc>
-    <lastmod>2019-01-24T08:13:04.296Z</lastmod>
+    <lastmod>2019-02-23T16:40:00.148Z</lastmod>
     <data>
         <display>
         <title>Tsinghua linear-algebra-2 11th-lecture computer-graphics</title>
@@ -1313,7 +1311,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2017/08/12/complex_and_complex_matrix/</loc>
-    <lastmod>2019-01-24T08:13:04.112Z</lastmod>
+    <lastmod>2019-02-23T16:39:59.895Z</lastmod>
     <data>
         <display>
         <title>Tsinghua linear-algebra-2 12th-lecture complex_and_complex-matrix</title>
@@ -1333,7 +1331,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/01/28/Calculus_and_Differential/</loc>
-    <lastmod>2019-01-24T08:13:04.025Z</lastmod>
+    <lastmod>2019-02-23T16:39:59.586Z</lastmod>
     <data>
         <display>
         <title>Calculus and Differential in Machine Learning</title>
@@ -1353,7 +1351,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/02/07/Building-your-Deep-Neural-Network_week4/</loc>
-    <lastmod>2019-01-24T08:13:03.972Z</lastmod>
+    <lastmod>2019-02-23T16:39:59.454Z</lastmod>
     <data>
         <display>
         <title>Building your Deep Neural Network</title>
@@ -1375,7 +1373,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/06/02/Building+a+Recurrent+Neural+Network+-+Step+by+Step+-+v3/</loc>
-    <lastmod>2019-01-24T08:13:03.869Z</lastmod>
+    <lastmod>2019-02-23T16:39:59.239Z</lastmod>
     <data>
         <display>
         <title>Building a Recurrent Neural Network Step by Step</title>
@@ -1397,7 +1395,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2017/08/28/Bayes'_rule/</loc>
-    <lastmod>2019-01-24T08:13:03.761Z</lastmod>
+    <lastmod>2019-02-23T16:39:58.930Z</lastmod>
     <data>
         <display>
         <title>经典摘录-Bayes' rule贝叶斯定律</title>
@@ -1417,7 +1415,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/05/03/Autonomous+driving+application+-+Car+detection+-+v3/</loc>
-    <lastmod>2019-01-24T08:13:03.679Z</lastmod>
+    <lastmod>2019-02-23T16:39:58.758Z</lastmod>
     <data>
         <display>
         <title>Autonomous driving - Car detection</title>
@@ -1439,7 +1437,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/05/04/Art+Generation+with+Neural+Style+Transfer+-+v3/</loc>
-    <lastmod>2019-01-24T08:13:03.585Z</lastmod>
+    <lastmod>2019-02-23T16:39:58.535Z</lastmod>
     <data>
         <display>
         <title>Deep Learning & Art Neural Style Transfer</title>
@@ -1461,7 +1459,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/</loc>
-    <lastmod>2019-01-24T08:13:03.492Z</lastmod>
+    <lastmod>2019-02-23T16:39:58.318Z</lastmod>
     <data>
         <display>
         <title>《统计学习方法》第9章 EM/GMM/F-MM/GEM</title>
@@ -1483,7 +1481,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/10/01/8.Booting-Methods_LiHang-Statistical-Learning-Methods/</loc>
-    <lastmod>2019-01-24T08:13:03.370Z</lastmod>
+    <lastmod>2019-02-23T16:39:58.166Z</lastmod>
     <data>
         <display>
         <title>《统计学习方法》第8章 提升方法之AdaBoost\BoostingTree\GBDT</title>
@@ -1505,7 +1503,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/10/01/4.Naive-Bayes_LiHang-Statistical-Learning-Methods/</loc>
-    <lastmod>2019-01-24T08:13:03.127Z</lastmod>
+    <lastmod>2019-02-23T16:39:57.935Z</lastmod>
     <data>
         <display>
         <title>《统计学习方法》第4章 NaiveBayes</title>
@@ -1527,7 +1525,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/01/18/18_application-example-photo-ocr/</loc>
-    <lastmod>2019-01-24T08:13:03.020Z</lastmod>
+    <lastmod>2019-02-23T16:39:57.732Z</lastmod>
     <data>
         <display>
         <title>18_application-example-photo-ocr note18</title>
@@ -1547,7 +1545,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/01/17/17_large-scale-machine-learning/</loc>
-    <lastmod>2019-01-24T08:13:02.945Z</lastmod>
+    <lastmod>2019-02-23T16:39:57.582Z</lastmod>
     <data>
         <display>
         <title>17_large-scale-machine-learning note17</title>
@@ -1567,7 +1565,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/01/16/16_recommender-systems/</loc>
-    <lastmod>2019-01-24T08:13:02.870Z</lastmod>
+    <lastmod>2019-02-23T16:39:57.408Z</lastmod>
     <data>
         <display>
         <title>16_recommender-systems note16</title>
@@ -1587,7 +1585,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/01/15/15_anomaly-detection/</loc>
-    <lastmod>2019-01-24T08:13:02.736Z</lastmod>
+    <lastmod>2019-02-23T16:39:57.211Z</lastmod>
     <data>
         <display>
         <title>15_anomaly-detection note15</title>
@@ -1607,7 +1605,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/01/14/14_dimensionality-reduction/</loc>
-    <lastmod>2019-01-24T08:13:02.497Z</lastmod>
+    <lastmod>2019-02-23T16:39:56.994Z</lastmod>
     <data>
         <display>
         <title>14_dimensionality-reduction note14</title>
@@ -1627,7 +1625,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/01/13/13_unsupervised-learning/</loc>
-    <lastmod>2019-01-24T08:13:02.405Z</lastmod>
+    <lastmod>2019-02-23T16:39:56.831Z</lastmod>
     <data>
         <display>
         <title>13_unsupervised-learning note13</title>
@@ -1647,7 +1645,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/01/12/12_support-vector-machines/</loc>
-    <lastmod>2019-01-24T08:13:02.323Z</lastmod>
+    <lastmod>2019-02-23T16:39:56.625Z</lastmod>
     <data>
         <display>
         <title>12_support-vector-machines note12</title>
@@ -1667,7 +1665,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/01/11/11_machine-learning-system-design/</loc>
-    <lastmod>2019-01-24T08:13:02.234Z</lastmod>
+    <lastmod>2019-02-23T16:39:56.431Z</lastmod>
     <data>
         <display>
         <title>11_machine-learning-system-design note11</title>
@@ -1687,7 +1685,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/01/10/10_advice-for-applying-machine-learning/</loc>
-    <lastmod>2019-01-24T08:13:02.151Z</lastmod>
+    <lastmod>2019-02-23T16:39:56.280Z</lastmod>
     <data>
         <display>
         <title>10_advice-for-applying-machine-learning note10</title>
@@ -1707,7 +1705,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/01/09/09_neural-networks-learning/</loc>
-    <lastmod>2019-01-24T08:13:02.048Z</lastmod>
+    <lastmod>2019-02-23T16:39:56.063Z</lastmod>
     <data>
         <display>
         <title>09_neural-networks-learning note9</title>
@@ -1727,7 +1725,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/01/08/08_neural-networks-representation/</loc>
-    <lastmod>2019-01-24T08:13:01.957Z</lastmod>
+    <lastmod>2019-02-23T16:39:55.862Z</lastmod>
     <data>
         <display>
         <title>08_neural-networks-representation note8</title>
@@ -1747,7 +1745,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/01/07/07_regularization/</loc>
-    <lastmod>2019-01-24T08:13:01.867Z</lastmod>
+    <lastmod>2019-02-23T16:39:55.693Z</lastmod>
     <data>
         <display>
         <title>07_regularization note7</title>
@@ -1767,7 +1765,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/01/06/06_logistic-regression/</loc>
-    <lastmod>2019-01-24T08:13:01.727Z</lastmod>
+    <lastmod>2019-02-23T16:39:55.460Z</lastmod>
     <data>
         <display>
         <title>06_logistic-regression note6</title>
@@ -1787,7 +1785,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/01/01/05_octave-matlab-tutorial/</loc>
-    <lastmod>2019-01-24T08:13:01.542Z</lastmod>
+    <lastmod>2019-02-23T16:39:55.276Z</lastmod>
     <data>
         <display>
         <title>05_octave-matlab-tutorial note5</title>
@@ -1807,7 +1805,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/05/04/04_special-applications-face-recognition-neural-style-transfer/</loc>
-    <lastmod>2019-01-24T08:13:01.400Z</lastmod>
+    <lastmod>2019-02-23T16:39:55.095Z</lastmod>
     <data>
         <display>
         <title>04_special-applications-face-recognition-neural-style-transfer</title>
@@ -1829,7 +1827,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/01/04/04_linear-regression-with-multiple-variables/</loc>
-    <lastmod>2019-01-24T08:13:01.304Z</lastmod>
+    <lastmod>2019-02-23T16:39:54.957Z</lastmod>
     <data>
         <display>
         <title>04_linear-regression-with-multiple-variables note4</title>
@@ -1849,7 +1847,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/02/04/04_deep-neural-networks/</loc>
-    <lastmod>2019-01-24T08:13:01.151Z</lastmod>
+    <lastmod>2019-02-23T16:39:54.806Z</lastmod>
     <data>
         <display>
         <title>04_deep-neural-network</title>
@@ -1871,7 +1869,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/02/03/03_shallow-neural-networks/</loc>
-    <lastmod>2019-01-24T08:13:00.956Z</lastmod>
+    <lastmod>2019-02-23T16:39:54.494Z</lastmod>
     <data>
         <display>
         <title>03_shallow-neural-networks</title>
@@ -1893,7 +1891,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/06/03/03_sequence-models-attention-mechanism/</loc>
-    <lastmod>2019-01-24T08:13:00.847Z</lastmod>
+    <lastmod>2019-02-23T16:39:54.173Z</lastmod>
     <data>
         <display>
         <title>sequence models attention mechanism</title>
@@ -1915,7 +1913,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/05/03/03_object-detection/</loc>
-    <lastmod>2019-01-24T08:13:00.759Z</lastmod>
+    <lastmod>2019-02-23T16:39:53.852Z</lastmod>
     <data>
         <display>
         <title>03_object-detection</title>
@@ -1937,7 +1935,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/01/03/03_linear-algebra-review/</loc>
-    <lastmod>2019-01-24T08:13:00.651Z</lastmod>
+    <lastmod>2019-02-23T16:39:53.632Z</lastmod>
     <data>
         <display>
         <title>03_linear-algebra-review note3</title>
@@ -1957,7 +1955,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/03/02/03_hyperparameter-tuning-batch-normalization-and-programming-frameworks/</loc>
-    <lastmod>2019-01-24T08:13:00.527Z</lastmod>
+    <lastmod>2019-02-23T16:39:53.435Z</lastmod>
     <data>
         <display>
         <title>03_hyperparameter-tuning-batch-normalization-and-programming-frameworks</title>
@@ -1978,8 +1976,30 @@
 
     
   <url>
+    <loc>https://snaildove.github.io/2018/03/02/02_optimization-algorithms/</loc>
+    <lastmod>2019-02-23T16:39:53.303Z</lastmod>
+    <data>
+        <display>
+        <title>02_optimization-algorithms</title>
+        <pubTime>2018-03-01T16:00:00.000Z</pubTime>
+        
+        <tag>deep learning</tag>
+         
+        <tag>Improving Deep Neural Networks</tag>
+         
+         
+           
+             
+              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://snaildove.github.io/2018/02/02/02_neural-networks-basics/</loc>
-    <lastmod>2019-01-24T08:12:59.918Z</lastmod>
+    <lastmod>2019-02-23T16:39:53.119Z</lastmod>
     <data>
         <display>
         <title>02_logistic-regression-as-a-neural-network</title>
@@ -2001,7 +2021,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/06/02/02_natural-language-processing-word-embeddings/</loc>
-    <lastmod>2019-01-24T08:12:59.772Z</lastmod>
+    <lastmod>2019-02-23T16:39:52.980Z</lastmod>
     <data>
         <display>
         <title>natural language processing word embeddings</title>
@@ -2023,7 +2043,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/04/02/02_ml-strategy-2/</loc>
-    <lastmod>2019-01-24T08:12:59.698Z</lastmod>
+    <lastmod>2019-02-23T16:39:52.664Z</lastmod>
     <data>
         <display>
         <title>02_ml-strategy-2</title>
@@ -2045,7 +2065,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/01/02/02_linear-regression-with-one-variable/</loc>
-    <lastmod>2019-01-24T08:12:59.579Z</lastmod>
+    <lastmod>2019-02-23T16:39:51.922Z</lastmod>
     <data>
         <display>
         <title>02_linear-regression-with-one-variable note2</title>
@@ -2065,7 +2085,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/05/01/02_deep-convolutional-models-case-studies/</loc>
-    <lastmod>2019-01-24T08:12:59.494Z</lastmod>
+    <lastmod>2019-02-23T16:39:51.506Z</lastmod>
     <data>
         <display>
         <title>02_deep-convolutional-models-case-studies</title>
@@ -2087,7 +2107,7 @@
     
   <url>
     <loc>https://snaildove.github.io/2018/01/01/01_what-is-machine-learning/</loc>
-    <lastmod>2019-01-24T08:12:59.404Z</lastmod>
+    <lastmod>2019-02-23T16:39:51.380Z</lastmod>
     <data>
         <display>
         <title>01_introduction note1</title>
@@ -2106,30 +2126,8 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2018/04/01/01_ml-strategy-1/</loc>
-    <lastmod>2019-01-24T08:12:59.342Z</lastmod>
-    <data>
-        <display>
-        <title>01_ml-strategy-1</title>
-        <pubTime>2018-03-31T16:00:00.000Z</pubTime>
-        
-        <tag>deep learning</tag>
-         
-        <tag>Structuring Machine Learning Projects</tag>
-         
-         
-           
-             
-              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://snaildove.github.io/2018/06/01/01_recurrent-neural-networks/</loc>
-    <lastmod>2019-01-24T08:12:59.316Z</lastmod>
+    <lastmod>2019-02-23T16:39:51.287Z</lastmod>
     <data>
         <display>
         <title>recurrent neural networks</title>
@@ -2150,30 +2148,8 @@
 
     
   <url>
-    <loc>https://snaildove.github.io/2018/02/01/01_introduction-to-deep-learning/</loc>
-    <lastmod>2019-01-24T08:12:59.242Z</lastmod>
-    <data>
-        <display>
-        <title>01_introduction-to-deep-learning</title>
-        <pubTime>2018-01-31T16:00:00.000Z</pubTime>
-        
-        <tag>neural-networks-deep-learning</tag>
-         
-        <tag>deep learning</tag>
-         
-         
-           
-             
-              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://snaildove.github.io/2018/03/01/01_practical-aspects-of-deep-learning/</loc>
-    <lastmod>2019-01-24T08:12:59.185Z</lastmod>
+    <lastmod>2019-02-23T16:39:51.088Z</lastmod>
     <data>
         <display>
         <title>01_practical-aspects-of-deep-learning</title>
@@ -2194,8 +2170,52 @@
 
     
   <url>
+    <loc>https://snaildove.github.io/2018/04/01/01_ml-strategy-1/</loc>
+    <lastmod>2019-02-23T16:39:50.940Z</lastmod>
+    <data>
+        <display>
+        <title>01_ml-strategy-1</title>
+        <pubTime>2018-03-31T16:00:00.000Z</pubTime>
+        
+        <tag>deep learning</tag>
+         
+        <tag>Structuring Machine Learning Projects</tag>
+         
+         
+           
+             
+              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://snaildove.github.io/2018/02/01/01_introduction-to-deep-learning/</loc>
+    <lastmod>2019-02-23T16:39:50.813Z</lastmod>
+    <data>
+        <display>
+        <title>01_introduction-to-deep-learning</title>
+        <pubTime>2018-01-31T16:00:00.000Z</pubTime>
+        
+        <tag>neural-networks-deep-learning</tag>
+         
+        <tag>deep learning</tag>
+         
+         
+           
+             
+              <breadCrumb title="english" url="https://snaildove.github.io/categories/english/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://snaildove.github.io/2018/05/01/01_foundations-of-convolutional-neural-networks/</loc>
-    <lastmod>2019-01-24T08:12:59.182Z</lastmod>
+    <lastmod>2019-02-23T16:39:50.703Z</lastmod>
     <data>
         <display>
         <title>01_foundations-of-convolutional-neural-networks</title>

@@ -106,27 +106,27 @@
 <meta property="og:site_name" content="SnailDove&#39;s blog">
 <meta property="og:description" content="前言写本文章主要目的是复习（毕竟之前看纸质版做的笔记）， 对于证明比较跳跃和勘误的地方我都做了注解，以便初学者和以后复习地时候快速阅读理解不会卡住。 朴素贝叶斯法 4.1 朴素贝叶斯法的学习与分类4.1.1 基本方法  4.1.2 后验概率最大化的含义  4.2 朴素贝叶斯法的参数估计4.2.1 极大似然估计 4.2.2 学习与分类算法 例子  4.2.3 贝叶斯估计  本章概要  习题">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="http://pltr89sz6.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540570806562.png">
-<meta property="og:image" content="http://pltr89sz6.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540571408562.png">
-<meta property="og:image" content="http://pltr89sz6.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540571499199.png">
-<meta property="og:image" content="http://pltr89sz6.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540571586312.png">
-<meta property="og:image" content="http://pltr89sz6.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540571706979.png">
-<meta property="og:image" content="http://pltr89sz6.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540571821260.png">
-<meta property="og:image" content="http://pltr89sz6.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540572126659.png">
-<meta property="og:image" content="http://pltr89sz6.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540572250062.png">
-<meta property="og:image" content="http://pltr89sz6.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540572369143.png">
-<meta property="og:image" content="http://pltr89sz6.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540572418367.png">
-<meta property="og:image" content="http://pltr89sz6.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540572478856.png">
-<meta property="og:image" content="http://pltr89sz6.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540572536968.png">
-<meta property="og:image" content="http://pltr89sz6.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540572556306.png">
-<meta property="og:image" content="http://pltr89sz6.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540572590441.png">
-<meta property="og:image" content="http://pltr89sz6.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540572915993.png">
-<meta property="og:image" content="http://pltr89sz6.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540572931945.png">
-<meta property="og:updated_time" content="2019-01-24T08:13:03.127Z">
+<meta property="og:image" content="http://pne0wr4lu.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540570806562.png">
+<meta property="og:image" content="http://pne0wr4lu.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540571408562.png">
+<meta property="og:image" content="http://pne0wr4lu.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540571499199.png">
+<meta property="og:image" content="http://pne0wr4lu.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540571586312.png">
+<meta property="og:image" content="http://pne0wr4lu.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540571706979.png">
+<meta property="og:image" content="http://pne0wr4lu.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540571821260.png">
+<meta property="og:image" content="http://pne0wr4lu.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540572126659.png">
+<meta property="og:image" content="http://pne0wr4lu.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540572250062.png">
+<meta property="og:image" content="http://pne0wr4lu.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540572369143.png">
+<meta property="og:image" content="http://pne0wr4lu.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540572418367.png">
+<meta property="og:image" content="http://pne0wr4lu.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540572478856.png">
+<meta property="og:image" content="http://pne0wr4lu.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540572536968.png">
+<meta property="og:image" content="http://pne0wr4lu.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540572556306.png">
+<meta property="og:image" content="http://pne0wr4lu.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540572590441.png">
+<meta property="og:image" content="http://pne0wr4lu.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540572915993.png">
+<meta property="og:image" content="http://pne0wr4lu.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540572931945.png">
+<meta property="og:updated_time" content="2019-02-23T16:39:57.935Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="《统计学习方法》第4章 NaiveBayes">
 <meta name="twitter:description" content="前言写本文章主要目的是复习（毕竟之前看纸质版做的笔记）， 对于证明比较跳跃和勘误的地方我都做了注解，以便初学者和以后复习地时候快速阅读理解不会卡住。 朴素贝叶斯法 4.1 朴素贝叶斯法的学习与分类4.1.1 基本方法  4.1.2 后验概率最大化的含义  4.2 朴素贝叶斯法的参数估计4.2.1 极大似然估计 4.2.2 学习与分类算法 例子  4.2.3 贝叶斯估计  本章概要  习题">
-<meta name="twitter:image" content="http://pltr89sz6.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540570806562.png">
+<meta name="twitter:image" content="http://pne0wr4lu.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540570806562.png">
 
 
 
@@ -475,22 +475,22 @@
 
       
         <script src="\assets\js\APlayer.min.js"> </script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>写本文章主要目的是复习（毕竟之前看纸质版做的笔记）， <b><font color="red" bold="true">对于证明比较跳跃和勘误的地方我都做了注解，以便初学者和以后复习地时候快速阅读理解不会卡住</font></b>。</p>
-<h1 id="朴素贝叶斯法"><a href="#朴素贝叶斯法" class="headerlink" title="朴素贝叶斯法"></a>朴素贝叶斯法</h1><p><img src="http://pltr89sz6.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540570806562.png" alt="1540570806562"></p>
-<h2 id="4-1-朴素贝叶斯法的学习与分类"><a href="#4-1-朴素贝叶斯法的学习与分类" class="headerlink" title="4.1 朴素贝叶斯法的学习与分类"></a>4.1 朴素贝叶斯法的学习与分类</h2><h3 id="4-1-1-基本方法"><a href="#4-1-1-基本方法" class="headerlink" title="4.1.1 基本方法"></a>4.1.1 基本方法</h3><p><img src="http://pltr89sz6.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540571408562.png" alt="1540571408562"></p>
-<p><img src="http://pltr89sz6.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540571499199.png" alt="1540571499199"></p>
-<h3 id="4-1-2-后验概率最大化的含义"><a href="#4-1-2-后验概率最大化的含义" class="headerlink" title="4.1.2 后验概率最大化的含义"></a>4.1.2 后验概率最大化的含义</h3><p><img src="http://pltr89sz6.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540571586312.png" alt="1540571586312"></p>
-<p><img src="http://pltr89sz6.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540571706979.png" alt="1540571706979"></p>
-<h2 id="4-2-朴素贝叶斯法的参数估计"><a href="#4-2-朴素贝叶斯法的参数估计" class="headerlink" title="4.2 朴素贝叶斯法的参数估计"></a>4.2 朴素贝叶斯法的参数估计</h2><h3 id="4-2-1-极大似然估计"><a href="#4-2-1-极大似然估计" class="headerlink" title="4.2.1 极大似然估计"></a>4.2.1 极大似然估计</h3><p><img src="http://pltr89sz6.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540571821260.png" alt="1540571821260"></p>
-<h3 id="4-2-2-学习与分类算法"><a href="#4-2-2-学习与分类算法" class="headerlink" title="4.2.2 学习与分类算法"></a>4.2.2 学习与分类算法</h3><p><img src="http://pltr89sz6.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540572126659.png" alt="1540572126659"></p>
-<h4 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h4><p><img src="http://pltr89sz6.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540572250062.png" alt="1540572250062"></p>
-<p><img src="http://pltr89sz6.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540572369143.png" alt="1540572369143"></p>
-<h3 id="4-2-3-贝叶斯估计"><a href="#4-2-3-贝叶斯估计" class="headerlink" title="4.2.3 贝叶斯估计"></a>4.2.3 贝叶斯估计</h3><p><img src="http://pltr89sz6.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540572418367.png" alt="1540572418367"></p>
-<p><img src="http://pltr89sz6.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540572478856.png" alt="1540572478856"></p>
-<h2 id="本章概要"><a href="#本章概要" class="headerlink" title="本章概要"></a>本章概要</h2><p><img src="http://pltr89sz6.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540572536968.png" alt="1540572536968"></p>
-<p><img src="http://pltr89sz6.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540572556306.png" alt="1540572556306"></p>
-<h2 id="习题"><a href="#习题" class="headerlink" title="习题"></a>习题</h2><p><img src="http://pltr89sz6.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540572590441.png" alt="1540572590441"></p>
-<p><img src="http://pltr89sz6.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540572915993.png" alt="1540572915993"></p>
-<p><img src="http://pltr89sz6.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540572931945.png" alt="1540572931945"></p>
+<h1 id="朴素贝叶斯法"><a href="#朴素贝叶斯法" class="headerlink" title="朴素贝叶斯法"></a>朴素贝叶斯法</h1><p><img src="http://pne0wr4lu.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540570806562.png" alt="1540570806562"></p>
+<h2 id="4-1-朴素贝叶斯法的学习与分类"><a href="#4-1-朴素贝叶斯法的学习与分类" class="headerlink" title="4.1 朴素贝叶斯法的学习与分类"></a>4.1 朴素贝叶斯法的学习与分类</h2><h3 id="4-1-1-基本方法"><a href="#4-1-1-基本方法" class="headerlink" title="4.1.1 基本方法"></a>4.1.1 基本方法</h3><p><img src="http://pne0wr4lu.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540571408562.png" alt="1540571408562"></p>
+<p><img src="http://pne0wr4lu.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540571499199.png" alt="1540571499199"></p>
+<h3 id="4-1-2-后验概率最大化的含义"><a href="#4-1-2-后验概率最大化的含义" class="headerlink" title="4.1.2 后验概率最大化的含义"></a>4.1.2 后验概率最大化的含义</h3><p><img src="http://pne0wr4lu.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540571586312.png" alt="1540571586312"></p>
+<p><img src="http://pne0wr4lu.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540571706979.png" alt="1540571706979"></p>
+<h2 id="4-2-朴素贝叶斯法的参数估计"><a href="#4-2-朴素贝叶斯法的参数估计" class="headerlink" title="4.2 朴素贝叶斯法的参数估计"></a>4.2 朴素贝叶斯法的参数估计</h2><h3 id="4-2-1-极大似然估计"><a href="#4-2-1-极大似然估计" class="headerlink" title="4.2.1 极大似然估计"></a>4.2.1 极大似然估计</h3><p><img src="http://pne0wr4lu.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540571821260.png" alt="1540571821260"></p>
+<h3 id="4-2-2-学习与分类算法"><a href="#4-2-2-学习与分类算法" class="headerlink" title="4.2.2 学习与分类算法"></a>4.2.2 学习与分类算法</h3><p><img src="http://pne0wr4lu.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540572126659.png" alt="1540572126659"></p>
+<h4 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h4><p><img src="http://pne0wr4lu.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540572250062.png" alt="1540572250062"></p>
+<p><img src="http://pne0wr4lu.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540572369143.png" alt="1540572369143"></p>
+<h3 id="4-2-3-贝叶斯估计"><a href="#4-2-3-贝叶斯估计" class="headerlink" title="4.2.3 贝叶斯估计"></a>4.2.3 贝叶斯估计</h3><p><img src="http://pne0wr4lu.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540572418367.png" alt="1540572418367"></p>
+<p><img src="http://pne0wr4lu.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540572478856.png" alt="1540572478856"></p>
+<h2 id="本章概要"><a href="#本章概要" class="headerlink" title="本章概要"></a>本章概要</h2><p><img src="http://pne0wr4lu.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540572536968.png" alt="1540572536968"></p>
+<p><img src="http://pne0wr4lu.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540572556306.png" alt="1540572556306"></p>
+<h2 id="习题"><a href="#习题" class="headerlink" title="习题"></a>习题</h2><p><img src="http://pne0wr4lu.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540572590441.png" alt="1540572590441"></p>
+<p><img src="http://pne0wr4lu.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540572915993.png" alt="1540572915993"></p>
+<p><img src="http://pne0wr4lu.bkt.clouddn.com/gitpages/LiHang_Statistical-learning-methods/4-naive-bayes/1540572931945.png" alt="1540572931945"></p>
 
       
     </div>
@@ -556,8 +556,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/10/01/8.Booting-Methods_LiHang-Statistical-Learning-Methods/" rel="next" title="《统计学习方法》第8章 提升方法之AdaBoost\BoostingTree\GBDT">
-                <i class="fa fa-chevron-left"></i> 《统计学习方法》第8章 提升方法之AdaBoost\BoostingTree\GBDT
+              <a href="/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/" rel="next" title="《统计学习方法》第9章 EM/GMM/F-MM/GEM">
+                <i class="fa fa-chevron-left"></i> 《统计学习方法》第9章 EM/GMM/F-MM/GEM
               </a>
             
           </div>
@@ -566,8 +566,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/10/02/get-started-XGBoost/" rel="prev" title="XGBoost原理和底层实现剖析">
-                XGBoost原理和底层实现剖析 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/10/01/8.Booting-Methods_LiHang-Statistical-Learning-Methods/" rel="prev" title="《统计学习方法》第8章 提升方法之AdaBoost\BoostingTree\GBDT">
+                《统计学习方法》第8章 提升方法之AdaBoost\BoostingTree\GBDT <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -654,7 +654,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">106</span>
+                  <span class="site-state-item-count">107</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -676,7 +676,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">26</span>
+                  <span class="site-state-item-count">27</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -688,7 +688,7 @@
 				<h4 class="widget-title">Tag Cloud</h4>
 					<div id="myCanvasContainer" class="widget tagcloud">
 					<canvas width="250" height="250" id="resCanvas" style="width=100%">
-						<ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Basic-Algorithm/">Basic Algorithm</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Calculus-and-Differential/">Calculus and Differential</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Data-Structure/">Data Structure</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Improving-Deep-Neural-Networks/">Improving Deep Neural Networks</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Information-Theory/">Information Theory</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Latex/">Latex</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning/">Machine Learning</a><span class="tag-list-count">26</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning-by-Andrew-NG/">Machine Learning by Andrew NG</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning，-feature-engineering/">Machine Learning， feature engineering</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python-Data-Science-Cookbook/">Python Data Science Cookbook</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Structuring-Machine-Learning-Projects/">Structuring Machine Learning Projects</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/XGBoost/">XGBoost</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/convolutional-neural-networks/">convolutional-neural-networks</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/deep-learning/">deep learning</a><span class="tag-list-count">41</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/english/">english</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/">java</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/kaggle/">kaggle</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linear-algebra/">linear_algebra</a><span class="tag-list-count">13</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/neural-networks-deep-learning/">neural-networks-deep-learning</a><span class="tag-list-count">8</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nlp-sequence-models/">nlp-sequence-models</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/probability/">probability</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/spark/">spark</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/统计学习方法/">统计学习方法</a><span class="tag-list-count">4</span></li></ul>
+						<ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Basic-Algorithm/">Basic Algorithm</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Calculus-and-Differential/">Calculus and Differential</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Data-Structure/">Data Structure</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Improving-Deep-Neural-Networks/">Improving Deep Neural Networks</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Information-Theory/">Information Theory</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Latex/">Latex</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning/">Machine Learning</a><span class="tag-list-count">26</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning-by-Andrew-NG/">Machine Learning by Andrew NG</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning，-feature-engineering/">Machine Learning， feature engineering</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Probability/">Probability</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python-Data-Science-Cookbook/">Python Data Science Cookbook</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Structuring-Machine-Learning-Projects/">Structuring Machine Learning Projects</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/XGBoost/">XGBoost</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/convolutional-neural-networks/">convolutional-neural-networks</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/deep-learning/">deep learning</a><span class="tag-list-count">41</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/english/">english</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/">java</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/kaggle/">kaggle</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linear-algebra/">linear_algebra</a><span class="tag-list-count">13</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/neural-networks-deep-learning/">neural-networks-deep-learning</a><span class="tag-list-count">8</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nlp-sequence-models/">nlp-sequence-models</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/probability/">probability</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/spark/">spark</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/统计学习方法/">统计学习方法</a><span class="tag-list-count">4</span></li></ul>
 					</canvas>
 				</div>
 			</div>
@@ -793,7 +793,7 @@
     
       <span class="post-meta-item-text">Site words total count</span>
     
-    <span title="Site words total count">571.9k</span>
+    <span title="Site words total count">572.1k</span>
   
 </div>
 
