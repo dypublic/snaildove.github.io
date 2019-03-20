@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://snaildove.github.io/2019/03/10/Transformer_learning-resources/</loc>
+    
+    <lastmod>2019-03-18T04:10:31.264Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2019/01/06/Titanic_with_name_sex_age_and_ticket_features-0.82275-0.83732/</loc>
+    
+    <lastmod>2019-03-09T10:23:10.774Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://snaildove.github.io/2019/01/01/Maximum-Likelihood-Estimation_VS_Bayes-Estimation/</loc>
     
-    <lastmod>2019-02-24T07:14:28.425Z</lastmod>
+    <lastmod>2019-03-04T08:13:20.583Z</lastmod>
     
   </url>
   
@@ -33,13 +47,6 @@
     <loc>https://snaildove.github.io/2017/08/15/trees_describe_the_sample_space/</loc>
     
     <lastmod>2019-02-23T16:40:12.615Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2019/01/06/Titanic_with_name_sex_age_and_ticket_features-0.82275-0.83732/</loc>
-    
-    <lastmod>2019-02-23T16:40:12.401Z</lastmod>
     
   </url>
   
@@ -471,7 +478,7 @@
   </url>
   
   <url>
-    <loc>https://snaildove.github.io/2017/08/28/Bayes'_rule/</loc>
+    <loc>https://snaildove.github.io/2017/08/28/Bayesian_rule/</loc>
     
     <lastmod>2019-02-23T16:39:58.930Z</lastmod>
     
