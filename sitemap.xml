@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://snaildove.github.io/2018/12/28/foundations_of_spark_programming/</loc>
+    
+    <lastmod>2019-04-17T05:57:42.216Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://snaildove.github.io/2019/03/10/Transformer_learning-resources/</loc>
     
     <lastmod>2019-03-31T09:22:24.702Z</lastmod>
@@ -369,13 +376,6 @@
     <loc>https://snaildove.github.io/2017/08/02/Fourier_series/</loc>
     
     <lastmod>2019-03-31T06:39:06.979Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2018/12/28/foundations_of_spark_programming/</loc>
-    
-    <lastmod>2019-03-31T06:39:06.797Z</lastmod>
     
   </url>
   
