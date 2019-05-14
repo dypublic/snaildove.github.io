@@ -106,17 +106,17 @@
 <meta property="og:site_name" content="SnailDove&#39;s blog">
 <meta property="og:description" content="NoteThis is one of my personal programming assignments after studying the course nlp sequence models at the 1st week and the copyright belongs to deeplearning.ai. Building your Recurrent Neural Netwo">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="http://pp7w3fdyo.bkt.clouddn.com/gitpage/deeplearning.ai/nlp-sequence-models/jupter/week1/build_rnn/images/RNN.png">
-<meta property="og:image" content="http://pp7w3fdyo.bkt.clouddn.com/gitpage/deeplearning.ai/nlp-sequence-models/jupter/week1/build_rnn/images/rnn_step_forward.png">
-<meta property="og:image" content="http://pp7w3fdyo.bkt.clouddn.com/gitpage/deeplearning.ai/nlp-sequence-models/jupter/week1/build_rnn/images/rnn%281%29.png">
-<meta property="og:image" content="http://pp7w3fdyo.bkt.clouddn.com/gitpage/deeplearning.ai/nlp-sequence-models/jupter/week1/build_rnn/images/LSTM.png">
-<meta property="og:image" content="http://pp7w3fdyo.bkt.clouddn.com/gitpage/deeplearning.ai/nlp-sequence-models/jupter/week1/build_rnn/images/LSTM_rnn.png">
-<meta property="og:image" content="http://pp7w3fdyo.bkt.clouddn.com/gitpage/deeplearning.ai/nlp-sequence-models/jupter/week1/build_rnn/images/rnn_cell_backprop.png">
-<meta property="og:updated_time" content="2019-03-31T06:39:02.380Z">
+<meta property="og:image" content="http://prhg9qt4r.bkt.clouddn.com/gitpage/deeplearning.ai/nlp-sequence-models/jupter/week1/build_rnn/images/RNN.png">
+<meta property="og:image" content="http://prhg9qt4r.bkt.clouddn.com/gitpage/deeplearning.ai/nlp-sequence-models/jupter/week1/build_rnn/images/rnn_step_forward.png">
+<meta property="og:image" content="http://prhg9qt4r.bkt.clouddn.com/gitpage/deeplearning.ai/nlp-sequence-models/jupter/week1/build_rnn/images/rnn%281%29.png">
+<meta property="og:image" content="http://prhg9qt4r.bkt.clouddn.com/gitpage/deeplearning.ai/nlp-sequence-models/jupter/week1/build_rnn/images/LSTM.png">
+<meta property="og:image" content="http://prhg9qt4r.bkt.clouddn.com/gitpage/deeplearning.ai/nlp-sequence-models/jupter/week1/build_rnn/images/LSTM_rnn.png">
+<meta property="og:image" content="http://prhg9qt4r.bkt.clouddn.com/gitpage/deeplearning.ai/nlp-sequence-models/jupter/week1/build_rnn/images/rnn_cell_backprop.png">
+<meta property="og:updated_time" content="2019-05-14T07:26:26.027Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Building a Recurrent Neural Network Step by Step">
 <meta name="twitter:description" content="NoteThis is one of my personal programming assignments after studying the course nlp sequence models at the 1st week and the copyright belongs to deeplearning.ai. Building your Recurrent Neural Netwo">
-<meta name="twitter:image" content="http://pp7w3fdyo.bkt.clouddn.com/gitpage/deeplearning.ai/nlp-sequence-models/jupter/week1/build_rnn/images/RNN.png">
+<meta name="twitter:image" content="http://prhg9qt4r.bkt.clouddn.com/gitpage/deeplearning.ai/nlp-sequence-models/jupter/week1/build_rnn/images/RNN.png">
 
 
 
@@ -488,7 +488,7 @@
 <p>Let’s first import all the packages that you will need during this assignment.</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">from</span> rnn_utils <span class="keyword">import</span> *</span><br></pre></td></tr></table></figure>
 <h2 id="1-Forward-propagation-for-the-basic-Recurrent-Neural-Network"><a href="#1-Forward-propagation-for-the-basic-Recurrent-Neural-Network" class="headerlink" title="1 - Forward propagation for the basic Recurrent Neural Network"></a>1 - Forward propagation for the basic Recurrent Neural Network</h2><p>Later this week, you will generate music using an RNN. The basic RNN that you will implement has the structure below. In this example, $T_x = T_y$. </p>
-<p><img src="http://pp7w3fdyo.bkt.clouddn.com/gitpage/deeplearning.ai/nlp-sequence-models/jupter/week1/build_rnn/images/RNN.png" style="width:500;height:300px;"></p>
+<p><img src="http://prhg9qt4r.bkt.clouddn.com/gitpage/deeplearning.ai/nlp-sequence-models/jupter/week1/build_rnn/images/RNN.png" style="width:500;height:300px;"></p>
 <caption><center> <strong>Figure 1</strong>: Basic RNN model </center></caption>
 
 <p>Here’s how you can implement an RNN: </p>
@@ -499,7 +499,7 @@
 </ol>
 <p>Let’s go!</p>
 <h2 id="1-1-RNN-cell"><a href="#1-1-RNN-cell" class="headerlink" title="1.1 - RNN cell"></a>1.1 - RNN cell</h2><p>A Recurrent neural network can be seen as the repetition of a single cell. You are first going to implement the computations for a single time-step. The following figure describes the operations for a single time-step of an RNN cell. </p>
-<p><img src="http://pp7w3fdyo.bkt.clouddn.com/gitpage/deeplearning.ai/nlp-sequence-models/jupter/week1/build_rnn/images/rnn_step_forward.png" style="width:700px;height:300px;"></p>
+<p><img src="http://prhg9qt4r.bkt.clouddn.com/gitpage/deeplearning.ai/nlp-sequence-models/jupter/week1/build_rnn/images/rnn_step_forward.png" style="width:700px;height:300px;"></p>
 <caption><center> <strong>Figure 2</strong>: Basic RNN cell. Takes as input $x^{\langle t \rangle}$ (current input) and $a^{\langle t - 1\rangle}$ (previous hidden state containing information from the past), and outputs $a^{\langle t \rangle}$ which is given to the next RNN cell and also used to predict $y^{\langle t \rangle}$ </center></caption>
 
 <p><strong>Exercise</strong>: Implement the RNN-cell described in Figure (2).</p>
@@ -523,7 +523,7 @@ yt_pred.shape =  (2, 10)
 <table><br>    <tr><br>        <td><br>            <strong>a_next[4]</strong>:<br>        </td><br>        <td><br>           [ 0.59584544  0.18141802  0.61311866  0.99808218  0.85016201  0.99980978<br> -0.18887155  0.99815551  0.6531151   0.82872037]<br>        </td><br>    </tr><br>        <tr><br>        <td><br>            <strong>a_next.shape</strong>:<br>        </td><br>        <td><br>           (5, 10)<br>        </td><br>    </tr><br>        <tr><br>        <td><br>            <strong>yt[1]</strong>:<br>        </td><br>        <td><br>           [ 0.9888161   0.01682021  0.21140899  0.36817467  0.98988387  0.88945212<br>  0.36920224  0.9966312   0.9982559   0.17746526]<br>        </td><br>    </tr><br>        <tr><br>        <td><br>            <strong>yt.shape</strong>:<br>        </td><br>        <td><br>           (2, 10)<br>        </td><br>    </tr><br></table>
 
 <h2 id="1-2-RNN-forward-pass"><a href="#1-2-RNN-forward-pass" class="headerlink" title="1.2 - RNN forward pass"></a>1.2 - RNN forward pass</h2><p>You can see an RNN as the repetition of the cell you’ve just built. If your input sequence of data is carried over 10 time steps, then you will copy the RNN cell 10 times. Each cell takes as input the hidden state from the previous cell ($a^{\langle t-1 \rangle}$) and the current time-step’s input data ($x^{\langle t \rangle}$). It outputs a hidden state ($a^{\langle t \rangle}$) and a prediction ($y^{\langle t \rangle}$) for this time-step.</p>
-<p><img src="http://pp7w3fdyo.bkt.clouddn.com/gitpage/deeplearning.ai/nlp-sequence-models/jupter/week1/build_rnn/images/rnn%281%29.png" style="width:800px;height:300px;"></p>
+<p><img src="http://prhg9qt4r.bkt.clouddn.com/gitpage/deeplearning.ai/nlp-sequence-models/jupter/week1/build_rnn/images/rnn%281%29.png" style="width:800px;height:300px;"></p>
 <caption><center> <strong>Figure 3</strong>: Basic RNN. The input sequence $x = (x^{\langle 1 \rangle}, x^{\langle 2 \rangle}, …, x^{\langle T_x \rangle})$  is carried over $T_x$ time steps. The network outputs $y = (y^{\langle 1 \rangle}, y^{\langle 2 \rangle}, …, y^{\langle T_x \rangle})$. </center></caption>
 
 
@@ -556,7 +556,7 @@ len(caches) =  2
 <p>Congratulations! You’ve successfully built the forward propagation of a recurrent neural network from scratch. This will work well enough for some applications, but it suffers from vanishing gradient problems. So it works best when each output $y^{\langle t \rangle}$ can be estimated using mainly “local” context (meaning information from inputs $x^{\langle t’ \rangle}$ where $t’$ is not too far from $t$). </p>
 <p>In the next part, you will build a more complex LSTM model, which is better at addressing vanishing gradients. The LSTM will be better able to remember a piece of information and keep it saved for many timesteps. </p>
 <h2 id="2-Long-Short-Term-Memory-LSTM-network"><a href="#2-Long-Short-Term-Memory-LSTM-network" class="headerlink" title="2 - Long Short-Term Memory (LSTM) network"></a>2 - Long Short-Term Memory (LSTM) network</h2><p>This following figure shows the operations of an LSTM-cell.</p>
-<p><img src="http://pp7w3fdyo.bkt.clouddn.com/gitpage/deeplearning.ai/nlp-sequence-models/jupter/week1/build_rnn/images/LSTM.png" style="width:500;height:400px;"></p>
+<p><img src="http://prhg9qt4r.bkt.clouddn.com/gitpage/deeplearning.ai/nlp-sequence-models/jupter/week1/build_rnn/images/LSTM.png" style="width:500;height:400px;"></p>
 <caption><center> <strong>Figure 4</strong>: LSTM-cell. This tracks and updates a “cell state” or memory variable $c^{\langle t \rangle}$ at every time-step, which can be different from $a^{\langle t \rangle}$. </center></caption>
 
 <p>Similar to the RNN example above, you will start by implementing the LSTM cell for a single time-step. Then you can iteratively call it from inside a for-loop to have it process an input with $T_x$ time-steps. </p>
@@ -600,7 +600,7 @@ len(cache) =  10
 <table><br>    <tr><br>        <td><br>           <strong>a_next[4]</strong>:<br>        </td><br>        <td><br>           [-0.66408471  0.0036921   0.02088357  0.22834167 -0.85575339  0.00138482<br>  0.76566531  0.34631421 -0.00215674  0.43827275]<br>        </td><br>    </tr><br>        <tr><br>        <td><br>            <strong>a_next.shape</strong>:<br>        </td><br>        <td><br>           (5, 10)<br>        </td><br>    </tr><br>        <tr><br>        <td><br>            <strong>c_next[2]</strong>:<br>        </td><br>        <td><br>           [ 0.63267805  1.00570849  0.35504474  0.20690913 -1.64566718  0.11832942<br>  0.76449811 -0.0981561  -0.74348425 -0.26810932]<br>        </td><br>    </tr><br>        <tr><br>        <td><br>            <strong>c_next.shape</strong>:<br>        </td><br>        <td><br>           (5, 10)<br>        </td><br>    </tr><br>        <tr><br>        <td><br>            <strong>yt[1]</strong>:<br>        </td><br>        <td><br>           [ 0.79913913  0.15986619  0.22412122  0.15606108  0.97057211  0.31146381<br>  0.00943007  0.12666353  0.39380172  0.07828381]<br>        </td><br>    </tr><br>        <tr><br>        <td><br>            <strong>yt.shape</strong>:<br>        </td><br>        <td><br>           (2, 10)<br>        </td><br>    </tr><br>    <tr><br>        <td><br>            <strong>cache[1][3]</strong>:<br>        </td><br>        <td><br>           [-0.16263996  1.03729328  0.72938082 -0.54101719  0.02752074 -0.30821874<br>  0.07651101 -1.03752894  1.41219977 -0.37647422]<br>        </td><br>    </tr><br>        <tr><br>        <td><br>            <strong>len(cache)</strong>:<br>        </td><br>        <td><br>           10<br>        </td><br>    </tr><br></table>
 
 <h3 id="2-2-Forward-pass-for-LSTM"><a href="#2-2-Forward-pass-for-LSTM" class="headerlink" title="2.2 - Forward pass for LSTM"></a>2.2 - Forward pass for LSTM</h3><p>Now that you have implemented one step of an LSTM, you can now iterate this over this using a for-loop to process a sequence of $T_x$ inputs. </p>
-<p><img src="http://pp7w3fdyo.bkt.clouddn.com/gitpage/deeplearning.ai/nlp-sequence-models/jupter/week1/build_rnn/images/LSTM_rnn.png" style="width:500;height:300px;"></p>
+<p><img src="http://prhg9qt4r.bkt.clouddn.com/gitpage/deeplearning.ai/nlp-sequence-models/jupter/week1/build_rnn/images/LSTM_rnn.png" style="width:500;height:300px;"></p>
 <caption><center> <strong>Figure 4</strong>: LSTM over multiple time-steps. </center></caption>
 
 <p><strong>Exercise:</strong> Implement <code>lstm_forward()</code> to run an LSTM over $T_x$ time-steps. </p>
@@ -623,7 +623,7 @@ len(caches) =  2
 <h2 id="3-Backpropagation-in-recurrent-neural-networks-OPTIONAL-UNGRADED"><a href="#3-Backpropagation-in-recurrent-neural-networks-OPTIONAL-UNGRADED" class="headerlink" title="3 - Backpropagation in recurrent neural networks (OPTIONAL / UNGRADED)"></a>3 - Backpropagation in recurrent neural networks (OPTIONAL / UNGRADED)</h2><p>In modern deep learning frameworks, you only have to implement the forward pass, and the framework takes care of the backward pass, so most deep learning engineers do not need to bother with the details of the backward pass. If however you are an expert in calculus and want to see the details of backprop in RNNs, you can work through this optional portion of the notebook. </p>
 <p>When in an earlier course you implemented a simple (fully connected) neural network, you used backpropagation to compute the derivatives with respect to the cost to update the parameters. Similarly, in recurrent neural networks you can to calculate the derivatives with respect to the cost in order to update the parameters. The backprop equations are quite complicated and we did not derive them in lecture. However, we will briefly present them below. </p>
 <h3 id="3-1-Basic-RNN-backward-pass"><a href="#3-1-Basic-RNN-backward-pass" class="headerlink" title="3.1 - Basic RNN  backward pass"></a>3.1 - Basic RNN  backward pass</h3><p>We will start by computing the backward pass for the basic RNN-cell.</p>
-<p><img src="http://pp7w3fdyo.bkt.clouddn.com/gitpage/deeplearning.ai/nlp-sequence-models/jupter/week1/build_rnn/images/rnn_cell_backprop.png" style="width:500;height:300px;"> <br></p>
+<p><img src="http://prhg9qt4r.bkt.clouddn.com/gitpage/deeplearning.ai/nlp-sequence-models/jupter/week1/build_rnn/images/rnn_cell_backprop.png" style="width:500;height:300px;"> <br></p>
 <caption><center> <strong>Figure 5</strong>: RNN-cell’s backward pass. Just like in a fully-connected neural network, the derivative of the cost function $J$ backpropagates through the RNN by following the chain-rule from calculas. The chain-rule is also used to calculate $(\frac{\partial J}{\partial W_{ax}},\frac{\partial J}{\partial W_{aa}},\frac{\partial J}{\partial b})$ to update the parameters $(W_{ax}, W_{aa}, b_a)$. </center></caption>
 
 <h4 id="Deriving-the-one-step-backward-functions"><a href="#Deriving-the-one-step-backward-functions" class="headerlink" title="Deriving the one step backward functions:"></a>Deriving the one step backward functions:</h4><p>To compute the <code>rnn_cell_backward</code> you need to compute the following equations. It is a good exercise to derive them by hand. </p>
@@ -825,8 +825,8 @@ gradients[&quot;dbo&quot;].shape = (5, 1)
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/06/02/Dinosaurus+Island+--+Character+level+language+model+final+-+v3/" rel="prev" title="Dinosaurus Island Character level language model final">
-                Dinosaurus Island Character level language model final <i class="fa fa-chevron-right"></i>
+              <a href="/2018/06/02/02_natural-language-processing-word-embeddings/" rel="prev" title="natural language processing word embeddings">
+                natural language processing word embeddings <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
