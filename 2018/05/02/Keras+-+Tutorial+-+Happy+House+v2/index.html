@@ -106,15 +106,15 @@
 <meta property="og:site_name" content="SnailDove&#39;s blog">
 <meta property="og:description" content="NoteThese are my personal programming assignments at the 2nd week after studying the course convolutional neural networks and the copyright belongs to deeplearning.ai. Keras tutorial - the Happy Hous">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="http://prhg9qt4r.bkt.clouddn.com/gitpage/deeplearning.ai/convolutional-neural-networks/jupter/week2/keras-tutorial/images/happy-house.jpg">
-<meta property="og:image" content="http://prhg9qt4r.bkt.clouddn.com/gitpage/deeplearning.ai/convolutional-neural-networks/jupter/week2/keras-tutorial/images/house-members.png">
-<meta property="og:image" content="http://prhg9qt4r.bkt.clouddn.com/gitpage/deeplearning.ai/convolutional-neural-networks/jupter/week2/keras-tutorial/images/output_20_1.png">
-<meta property="og:image" content="http://prhg9qt4r.bkt.clouddn.com/gitpage/deeplearning.ai/convolutional-neural-networks/jupter/week2/keras-tutorial/images/output_23_0.svg">
-<meta property="og:updated_time" content="2019-05-14T07:26:32.393Z">
+<meta property="og:image" content="http://pt8q6wt5q.bkt.clouddn.com/gitpage/deeplearning.ai/convolutional-neural-networks/jupter/week2/keras-tutorial/images/happy-house.jpg">
+<meta property="og:image" content="http://pt8q6wt5q.bkt.clouddn.com/gitpage/deeplearning.ai/convolutional-neural-networks/jupter/week2/keras-tutorial/images/house-members.png">
+<meta property="og:image" content="http://pt8q6wt5q.bkt.clouddn.com/gitpage/deeplearning.ai/convolutional-neural-networks/jupter/week2/keras-tutorial/images/output_20_1.png">
+<meta property="og:image" content="http://pt8q6wt5q.bkt.clouddn.com/gitpage/deeplearning.ai/convolutional-neural-networks/jupter/week2/keras-tutorial/images/output_23_0.svg">
+<meta property="og:updated_time" content="2019-06-17T11:23:50.326Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Keras Tutorial Happy House">
 <meta name="twitter:description" content="NoteThese are my personal programming assignments at the 2nd week after studying the course convolutional neural networks and the copyright belongs to deeplearning.ai. Keras tutorial - the Happy Hous">
-<meta name="twitter:image" content="http://prhg9qt4r.bkt.clouddn.com/gitpage/deeplearning.ai/convolutional-neural-networks/jupter/week2/keras-tutorial/images/happy-house.jpg">
+<meta name="twitter:image" content="http://pt8q6wt5q.bkt.clouddn.com/gitpage/deeplearning.ai/convolutional-neural-networks/jupter/week2/keras-tutorial/images/happy-house.jpg">
 
 
 
@@ -468,13 +468,13 @@
 <pre><code>Using TensorFlow backend.
 </code></pre><p><strong>Note</strong>: As you can see, we’ve imported a lot of functions from Keras. You can use them easily just by calling them directly in the notebook. Ex: <code>X = Input(...)</code> or <code>X = ZeroPadding2D(...)</code>.</p>
 <h2 id="1-The-Happy-House"><a href="#1-The-Happy-House" class="headerlink" title="1 - The Happy House"></a>1 - The Happy House</h2><p>For your next vacation, you decided to spend a week with five of your friends from school. It is a very convenient house with many things to do nearby. But the most important benefit is that everybody has commited to be happy when they are in the house. So anyone wanting to enter the house must prove their current state of happiness.</p>
-<p><img src="http://prhg9qt4r.bkt.clouddn.com/gitpage/deeplearning.ai/convolutional-neural-networks/jupter/week2/keras-tutorial/images/happy-house.jpg" style="width:350px;height:270px;"></p>
+<p><img src="http://pt8q6wt5q.bkt.clouddn.com/gitpage/deeplearning.ai/convolutional-neural-networks/jupter/week2/keras-tutorial/images/happy-house.jpg" style="width:350px;height:270px;"></p>
 <caption><center> <u> <font color="purple"> <strong>Figure 1</strong> </font></u><font color="purple">  : <strong>the Happy House</strong></font></center></caption>
 
 
 <p>As a deep learning expert, to make sure the “Happy” rule is strictly applied, you are going to build an algorithm which that uses pictures from the front door camera to check if the person is happy or not. The door should open only if the person is happy. </p>
 <p>You have gathered pictures of your friends and yourself, taken by the front-door camera. The dataset is labbeled. </p>
-<p><img src="http://prhg9qt4r.bkt.clouddn.com/gitpage/deeplearning.ai/convolutional-neural-networks/jupter/week2/keras-tutorial/images/house-members.png" style="width:550px;height:250px;"></p>
+<p><img src="http://pt8q6wt5q.bkt.clouddn.com/gitpage/deeplearning.ai/convolutional-neural-networks/jupter/week2/keras-tutorial/images/house-members.png" style="width:550px;height:250px;"></p>
 <p>Run the following code to normalize the dataset and learn about its shapes.</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">X_train_orig, Y_train_orig, X_test_orig, Y_test_orig, classes = load_dataset()</span><br><span class="line"></span><br><span class="line"><span class="comment"># Normalize image vectors</span></span><br><span class="line">X_train = X_train_orig/<span class="number">255.</span></span><br><span class="line">X_test = X_test_orig/<span class="number">255.</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Reshape</span></span><br><span class="line">Y_train = Y_train_orig.T</span><br><span class="line">Y_test = Y_test_orig.T</span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> (<span class="string">"number of training examples = "</span> + str(X_train.shape[<span class="number">0</span>]))</span><br><span class="line"><span class="keyword">print</span> (<span class="string">"number of test examples = "</span> + str(X_test.shape[<span class="number">0</span>]))</span><br><span class="line"><span class="keyword">print</span> (<span class="string">"X_train shape: "</span> + str(X_train.shape))</span><br><span class="line"><span class="keyword">print</span> (<span class="string">"Y_train shape: "</span> + str(Y_train.shape))</span><br><span class="line"><span class="keyword">print</span> (<span class="string">"X_test shape: "</span> + str(X_test.shape))</span><br><span class="line"><span class="keyword">print</span> (<span class="string">"Y_test shape: "</span> + str(Y_test.shape))</span><br></pre></td></tr></table></figure>
 <pre><code>number of training examples = 600
@@ -589,7 +589,7 @@ Test Accuracy = 0.800000001589
 </code></pre><p>The training/test sets were quite similar; for example, all the pictures were taken against the same background (since a front door camera is always mounted in the same position). This makes the problem easier, but a model trained on this data may or may not work on your own data. But feel free to give it a try! </p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">### START CODE HERE ###</span></span><br><span class="line">img_path = <span class="string">'images/my_image.jpg'</span></span><br><span class="line"><span class="comment">### END CODE HERE ###</span></span><br><span class="line">img = image.load_img(img_path, target_size=(<span class="number">64</span>, <span class="number">64</span>))</span><br><span class="line">imshow(img)</span><br><span class="line"></span><br><span class="line">x = image.img_to_array(img)</span><br><span class="line">x = np.expand_dims(x, axis=<span class="number">0</span>)</span><br><span class="line">x = preprocess_input(x)</span><br><span class="line"></span><br><span class="line">print(happyModel.predict(x))</span><br></pre></td></tr></table></figure>
 <pre><code>[[  2.04726325e-36]]
-</code></pre><p><img src="http://prhg9qt4r.bkt.clouddn.com/gitpage/deeplearning.ai/convolutional-neural-networks/jupter/week2/keras-tutorial/images/output_20_1.png" alt="png"></p>
+</code></pre><p><img src="http://pt8q6wt5q.bkt.clouddn.com/gitpage/deeplearning.ai/convolutional-neural-networks/jupter/week2/keras-tutorial/images/output_20_1.png" alt="png"></p>
 <h2 id="5-Other-useful-functions-in-Keras-Optional"><a href="#5-Other-useful-functions-in-Keras-Optional" class="headerlink" title="5 - Other useful functions in Keras (Optional)"></a>5 - Other useful functions in Keras (Optional)</h2><p>Two other basic features of Keras that you’ll find useful are:</p>
 <ul>
 <li><code>model.summary()</code>: prints the details of your layers in a table with the sizes of its inputs/outputs</li>
@@ -621,7 +621,7 @@ Trainable params: 37,569
 Non-trainable params: 64
 _________________________________________________________________
 </code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">plot_model(happyModel, to_file=<span class="string">'HappyModel.png'</span>)</span><br><span class="line">SVG(model_to_dot(happyModel).create(prog=<span class="string">'dot'</span>, format=<span class="string">'svg'</span>))</span><br></pre></td></tr></table></figure>
-<p><img src="http://prhg9qt4r.bkt.clouddn.com/gitpage/deeplearning.ai/convolutional-neural-networks/jupter/week2/keras-tutorial/images/output_23_0.svg" alt="svg"></p>
+<p><img src="http://pt8q6wt5q.bkt.clouddn.com/gitpage/deeplearning.ai/convolutional-neural-networks/jupter/week2/keras-tutorial/images/output_23_0.svg" alt="svg"></p>
 
       
     </div>
