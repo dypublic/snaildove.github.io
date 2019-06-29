@@ -205,11 +205,11 @@
   </entry>
   
   <entry>
-    <title>《统计学习方法》第4章 NaiveBayes</title>
-    <link href="https://snaildove.github.io/2018/10/01/4.Naive-Bayes_LiHang-Statistical-Learning-Methods/"/>
-    <id>https://snaildove.github.io/2018/10/01/4.Naive-Bayes_LiHang-Statistical-Learning-Methods/</id>
+    <title>《统计学习方法》第9章 EM/GMM/F-MM/GEM</title>
+    <link href="https://snaildove.github.io/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/"/>
+    <id>https://snaildove.github.io/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/</id>
     <published>2018-09-30T16:00:00.000Z</published>
-    <updated>2019-06-17T11:23:41.263Z</updated>
+    <updated>2019-06-17T11:23:41.562Z</updated>
     
     <summary type="html">
     
@@ -261,11 +261,11 @@
   </entry>
   
   <entry>
-    <title>《统计学习方法》第9章 EM/GMM/F-MM/GEM</title>
-    <link href="https://snaildove.github.io/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/"/>
-    <id>https://snaildove.github.io/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/</id>
+    <title>《统计学习方法》第4章 NaiveBayes</title>
+    <link href="https://snaildove.github.io/2018/10/01/4.Naive-Bayes_LiHang-Statistical-Learning-Methods/"/>
+    <id>https://snaildove.github.io/2018/10/01/4.Naive-Bayes_LiHang-Statistical-Learning-Methods/</id>
     <published>2018-09-30T16:00:00.000Z</published>
-    <updated>2019-06-17T11:23:41.562Z</updated>
+    <updated>2019-06-17T11:23:41.263Z</updated>
     
     <summary type="html">
     
@@ -315,34 +315,6 @@
   </entry>
   
   <entry>
-    <title>summary of nlp sequence models</title>
-    <link href="https://snaildove.github.io/2018/06/06/summary_of_nlp-sequence-models/"/>
-    <id>https://snaildove.github.io/2018/06/06/summary_of_nlp-sequence-models/</id>
-    <published>2018-06-05T16:00:00.000Z</published>
-    <updated>2019-06-17T11:24:01.067Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is my
-        
-      
-    
-    </summary>
-    
-      <category term="english" scheme="https://snaildove.github.io/categories/english/"/>
-    
-    
-      <category term="deep learning" scheme="https://snaildove.github.io/tags/deep-learning/"/>
-    
-      <category term="nlp-sequence-models" scheme="https://snaildove.github.io/tags/nlp-sequence-models/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Trigger word</title>
     <link href="https://snaildove.github.io/2018/06/06/Trigger_word_detection-v1/"/>
     <id>https://snaildove.github.io/2018/06/06/Trigger_word_detection-v1/</id>
@@ -371,11 +343,11 @@
   </entry>
   
   <entry>
-    <title>Neural machine translation with attention</title>
-    <link href="https://snaildove.github.io/2018/06/05/Neural+machine+translation+with+attention+-+v4/"/>
-    <id>https://snaildove.github.io/2018/06/05/Neural+machine+translation+with+attention+-+v4/</id>
-    <published>2018-06-04T16:00:00.000Z</published>
-    <updated>2019-06-17T11:23:54.785Z</updated>
+    <title>summary of nlp sequence models</title>
+    <link href="https://snaildove.github.io/2018/06/06/summary_of_nlp-sequence-models/"/>
+    <id>https://snaildove.github.io/2018/06/06/summary_of_nlp-sequence-models/</id>
+    <published>2018-06-05T16:00:00.000Z</published>
+    <updated>2019-06-17T11:24:01.067Z</updated>
     
     <summary type="html">
     
@@ -383,7 +355,7 @@
       
         
         
-          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is one
+          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is my
         
       
     
@@ -399,11 +371,11 @@
   </entry>
   
   <entry>
-    <title>Operations on word vectors</title>
-    <link href="https://snaildove.github.io/2018/06/03/Operations+on+word+vectors+-+v2/"/>
-    <id>https://snaildove.github.io/2018/06/03/Operations+on+word+vectors+-+v2/</id>
-    <published>2018-06-02T16:00:00.000Z</published>
-    <updated>2019-06-17T11:23:55.204Z</updated>
+    <title>Neural machine translation with attention</title>
+    <link href="https://snaildove.github.io/2018/06/05/Neural+machine+translation+with+attention+-+v4/"/>
+    <id>https://snaildove.github.io/2018/06/05/Neural+machine+translation+with+attention+-+v4/</id>
+    <published>2018-06-04T16:00:00.000Z</published>
+    <updated>2019-06-17T11:23:54.785Z</updated>
     
     <summary type="html">
     
@@ -483,11 +455,11 @@
   </entry>
   
   <entry>
-    <title>natural language processing word embeddings</title>
-    <link href="https://snaildove.github.io/2018/06/02/02_natural-language-processing-word-embeddings/"/>
-    <id>https://snaildove.github.io/2018/06/02/02_natural-language-processing-word-embeddings/</id>
-    <published>2018-06-01T16:00:00.000Z</published>
-    <updated>2019-06-17T11:23:34.159Z</updated>
+    <title>Operations on word vectors</title>
+    <link href="https://snaildove.github.io/2018/06/03/Operations+on+word+vectors+-+v2/"/>
+    <id>https://snaildove.github.io/2018/06/03/Operations+on+word+vectors+-+v2/</id>
+    <published>2018-06-02T16:00:00.000Z</published>
+    <updated>2019-06-17T11:23:55.204Z</updated>
     
     <summary type="html">
     
@@ -495,7 +467,7 @@
       
         
         
-          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is my
+          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is one
         
       
     
@@ -511,11 +483,11 @@
   </entry>
   
   <entry>
-    <title>Improvise a Jazz Solo with an LSTM Network</title>
-    <link href="https://snaildove.github.io/2018/06/02/Improvise+a+Jazz+Solo+with+an+LSTM+Network+-+v3/"/>
-    <id>https://snaildove.github.io/2018/06/02/Improvise+a+Jazz+Solo+with+an+LSTM+Network+-+v3/</id>
+    <title>Building a Recurrent Neural Network Step by Step</title>
+    <link href="https://snaildove.github.io/2018/06/02/Building+a+Recurrent+Neural+Network+-+Step+by+Step+-+v3/"/>
+    <id>https://snaildove.github.io/2018/06/02/Building+a+Recurrent+Neural+Network+-+Step+by+Step+-+v3/</id>
     <published>2018-06-01T16:00:00.000Z</published>
-    <updated>2019-06-17T11:23:49.994Z</updated>
+    <updated>2019-06-17T11:23:42.113Z</updated>
     
     <summary type="html">
     
@@ -552,6 +524,34 @@
         
         
           &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is one
+        
+      
+    
+    </summary>
+    
+      <category term="english" scheme="https://snaildove.github.io/categories/english/"/>
+    
+    
+      <category term="deep learning" scheme="https://snaildove.github.io/tags/deep-learning/"/>
+    
+      <category term="nlp-sequence-models" scheme="https://snaildove.github.io/tags/nlp-sequence-models/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>natural language processing word embeddings</title>
+    <link href="https://snaildove.github.io/2018/06/02/02_natural-language-processing-word-embeddings/"/>
+    <id>https://snaildove.github.io/2018/06/02/02_natural-language-processing-word-embeddings/</id>
+    <published>2018-06-01T16:00:00.000Z</published>
+    <updated>2019-06-17T11:23:34.159Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is my
         
       
     
