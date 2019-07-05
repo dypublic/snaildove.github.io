@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://snaildove.github.io/2018/10/02/get-started-XGBoost/</loc>
+    
+    <lastmod>2019-07-05T08:35:54.257Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://snaildove.github.io/2016/01/20/vim_without_widgets/</loc>
     
     <lastmod>2019-06-17T11:24:03.884Z</lastmod>
@@ -348,13 +355,6 @@
     <loc>https://snaildove.github.io/2017/08/08/graph_and_network/</loc>
     
     <lastmod>2019-06-17T11:23:47.379Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2018/10/02/get-started-XGBoost/</loc>
-    
-    <lastmod>2019-06-17T11:23:47.043Z</lastmod>
     
   </url>
   

@@ -131,7 +131,7 @@
 <meta property="og:image" content="http://pt8q6wt5q.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1541876848274.png">
 <meta property="og:image" content="http://pt8q6wt5q.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1541846850051.png">
 <meta property="og:image" content="http://pt8q6wt5q.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1541270621305.png">
-<meta property="og:updated_time" content="2019-06-17T11:23:47.043Z">
+<meta property="og:updated_time" content="2019-07-05T08:35:54.257Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="XGBoost原理和底层实现剖析">
 <meta name="twitter:description" content="前言在深度学习火起来之前，集成学习 （ensemble learning 包括  boosting: GBDT, XGBoost）是 kaggle 等比赛中的利器，所以集成学习是机器学习必备的知识点，如果提升树或者GBDT不熟悉，最好先看一下我的另一文： 《统计学习方法》第8章 提升方法之AdaBoost\BoostingTree\GBDT ，陈天奇 的 XGBoost (eXtreme Gra">
@@ -552,12 +552,10 @@
 <li>L2 范数: $Ω(w)=λ||w||_2$</li>
 <li>L1 范数(lasso): $Ω(w)=λ||w||_1$</li>
 </ul>
-<p>常见的优化函数有有岭回归，logstic回归和Lasso，具体的式子如下​    </p>
+<p>常见的优化函数有有岭回归，logstic回归和Lasso，具体的式子如下​：</p>
 <ul>
-<li><p>岭回归，这是最常见的一种，由线性模型，方差和L2范数构成。具体式子为 $\sum\limits^n_{i=1}(y_i−w^Tx_i)2+λ||w||_2$</p>
-</li>
-<li><p>logstic回归，这也是常见的一种，主要是用于二分类问题，比如爱还是不爱之类的。由线性模型，logistic 误差和L2范数构成。具体式子为 $\sum\limits^n_{i=1} [y_iln(1+e^{−w^Tx_i})+(1−y_i)ln(1+e^{w^Tx_i})]+λ||w||_2$</p>
-</li>
+<li>岭回归，这是最常见的一种，由线性模型，方差和L2范数构成。具体式子为 $\sum\limits^n_{i=1}(y_i−w^Tx_i)^2+λ||w||_2$</li>
+<li>logstic回归，这也是常见的一种，主要是用于二分类问题，比如爱还是不爱之类的。由线性模型，logistic 误差和L2范数构成。具体式子为 $\sum\limits^n_{i=1} [y_iln(1+e^{−w^Tx_i})+(1−y_i)ln(1+e^{w^Tx_i})]+λ||w||_2$</li>
 <li>lasso比较少见，它是由线性模型，方差和L1范数构成的。具体式子为 $\sum\limits_{i = 1}^n (y_i - w^T x_i)^2 + \lambda \vert \vert w \vert \vert     _1$</li>
 </ul>
 <p>我们的目标的就是让 $Obj(\Theta)$ 最小。那么由上述分析可见，这时必须让 $L(\Theta$ ) 和 $Ω(\Theta)$ 都比较小。而我们训练模型的时候，要在 bias 和 variance 中间找平衡点。bias 由 $L(\Theta)$  控制，variance 由 $Ω(\Theta)$ 控制。欠拟合，那么 $L(\Theta)$ 和 $Ω(\Theta)$ 都会比较大，过拟合的话 $Ω(\Theta)$ 会比较大，因为模型的扩展性不强，或者说稳定性不好。</p>
@@ -692,7 +690,7 @@
 <li><p>当分裂规则是 $x_j&lt;a$ 时，树的增益是 ?  假设 $x_j$ 是年龄</p>
 <p>  <img src="http://pt8q6wt5q.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1541756389096.png" alt="1541756389096"></p>
 </li>
-<li><p>我们所需要就是上图的两边 $g$ 和 $h$ 的和，然后计算<br>  $$<br>  Gain = \frac{G_L^2}{H_L+\lambda} + \frac{G_L^2}{H_L+\lambda} - \frac{(G_L+G_R)^2}{H_L+H_R+\lambda} - \gamma<br>  $$</p>
+<li><p>我们所需要就是上图的两边 $g$ 和 $h$ 的和，然后计算<br>  $$<br>  Gain = \frac{G_L^2}{H_L+\lambda} + \frac{G_L^2}{H_R+\lambda} - \frac{(G_L+G_R)^2}{H_L+H_R+\lambda} - \gamma<br>  $$</p>
 </li>
 <li><p>在一个特征上，从左至右对已经排序的实例进行线性扫描能够决定哪个是最好的分裂点。</p>
 </li>
