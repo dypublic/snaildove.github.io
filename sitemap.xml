@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://snaildove.github.io/2019/05/14/HadoopYARNFederation/</loc>
+    
+    <lastmod>2019-07-22T03:00:53.545Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://snaildove.github.io/2019/02/01/Achitecture_of_Apache_Hadoop_YARN/</loc>
     
     <lastmod>2019-07-21T17:03:06.008Z</lastmod>
