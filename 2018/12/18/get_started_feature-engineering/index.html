@@ -119,7 +119,7 @@
 <meta property="og:image" content="http://puzzab8gd.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1548607383824.png">
 <meta property="og:image" content="http://puzzab8gd.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1548607476814.png">
 <meta property="og:image" content="http://puzzab8gd.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1548608348576.png">
-<meta property="og:updated_time" content="2019-07-21T16:20:32.427Z">
+<meta property="og:updated_time" content="2019-07-24T05:02:24.478Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="从特征工程到XGBoost参数调优">
 <meta name="twitter:description" content="前言本文陈述脉络：理论结合kaggle上一个具体的比赛。 正文数据科学的一般流程 指南 特征工程 评价指标 XGBoost参数调优 XGBoost并行处理   特征工程结合以下案例分析： Two Sigma Connect: Rental Listing Inquiries 任务：根据公寓的listing 内容，预测纽约市某公寓租赁listing的受欢迎程度标签： interest_level，">
@@ -432,7 +432,7 @@
                   <span class="post-meta-item-text">Words count in article</span>
                 
                 <span title="Words count in article">
-                  7,365
+                  7,330
                 </span>
               
 
@@ -448,7 +448,7 @@
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
                 <span title="Reading time">
-                  33
+                  32
                 </span>
               
             </div>
@@ -815,20 +815,317 @@
 </li>
 <li><p>评价指标是越高越好，因此用一些损失函数当评价指标时，需要再加负号，如neg_log_loss，neg_mean_squared_error</p>
 </li>
-<li><p>详见sklearn文档：<br>  <a href="http://scikit-learn.org/stable/modules/model_evaluation.html" target="_blank" rel="noopener">http://scikit-learn.org/stable/modules/model_evaluation.html</a> </p>
-<p>  | Scoring                        | Function                                                     | Comment                          |<br>  | —————————— | ———————————————————— | ——————————– |<br>  | <strong>Classification</strong>             |                                                              |                                  |<br>  | ‘accuracy’                     | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html#sklearn.metrics.accuracy_score" target="_blank" rel="noopener"><code>metrics.accuracy_score</code></a> |                                  |<br>  | ‘balanced_accuracy’            | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.balanced_accuracy_score.html#sklearn.metrics.balanced_accuracy_score" target="_blank" rel="noopener"><code>metrics.balanced_accuracy_score</code></a> | for binary targets               |<br>  | ‘average_precision’            | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.average_precision_score.html#sklearn.metrics.average_precision_score" target="_blank" rel="noopener"><code>metrics.average_precision_score</code></a> |                                  |<br>  | ‘brier_score_loss’             | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.brier_score_loss.html#sklearn.metrics.brier_score_loss" target="_blank" rel="noopener"><code>metrics.brier_score_loss</code></a> |                                  |<br>  | ‘f1’                           | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html#sklearn.metrics.f1_score" target="_blank" rel="noopener"><code>metrics.f1_score</code></a> | for binary targets               |<br>  | ‘f1_micro’                     | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html#sklearn.metrics.f1_score" target="_blank" rel="noopener"><code>metrics.f1_score</code></a> | micro-averaged                   |<br>  | ‘f1_macro’                     | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html#sklearn.metrics.f1_score" target="_blank" rel="noopener"><code>metrics.f1_score</code></a> | macro-averaged                   |<br>  | ‘f1_weighted’                  | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html#sklearn.metrics.f1_score" target="_blank" rel="noopener"><code>metrics.f1_score</code></a> | weighted average                 |<br>  | ‘f1_samples’                   | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html#sklearn.metrics.f1_score" target="_blank" rel="noopener"><code>metrics.f1_score</code></a> | by multilabel sample             |<br>  | ‘neg_log_loss’                 | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.log_loss.html#sklearn.metrics.log_loss" target="_blank" rel="noopener"><code>metrics.log_loss</code></a> | requires <code>predict_proba</code> support |<br>  | ‘precision’ etc.               | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_score.html#sklearn.metrics.precision_score" target="_blank" rel="noopener"><code>metrics.precision_score</code></a> | suffixes apply as with ‘f1’      |<br>  | ‘recall’ etc.                  | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.recall_score.html#sklearn.metrics.recall_score" target="_blank" rel="noopener"><code>metrics.recall_score</code></a> | suffixes apply as with ‘f1’      |<br>  | ‘roc_auc’                      | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.roc_auc_score.html#sklearn.metrics.roc_auc_score" target="_blank" rel="noopener"><code>metrics.roc_auc_score</code></a> |                                  |<br>  | <strong>Clustering</strong>                 |                                                              |                                  |<br>  | ‘adjusted_mutual_info_score’   | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.adjusted_mutual_info_score.html#sklearn.metrics.adjusted_mutual_info_score" target="_blank" rel="noopener"><code>metrics.adjusted_mutual_info_score</code></a> |                                  |<br>  | ‘adjusted_rand_score’          | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.adjusted_rand_score.html#sklearn.metrics.adjusted_rand_score" target="_blank" rel="noopener"><code>metrics.adjusted_rand_score</code></a> |                                  |<br>  | ‘completeness_score’           | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.completeness_score.html#sklearn.metrics.completeness_score" target="_blank" rel="noopener"><code>metrics.completeness_score</code></a> |                                  |<br>  | ‘fowlkes_mallows_score’        | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.fowlkes_mallows_score.html#sklearn.metrics.fowlkes_mallows_score" target="_blank" rel="noopener"><code>metrics.fowlkes_mallows_score</code></a> |                                  |<br>  | ‘homogeneity_score’            | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.homogeneity_score.html#sklearn.metrics.homogeneity_score" target="_blank" rel="noopener"><code>metrics.homogeneity_score</code></a> |                                  |<br>  | ‘mutual_info_score’            | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mutual_info_score.html#sklearn.metrics.mutual_info_score" target="_blank" rel="noopener"><code>metrics.mutual_info_score</code></a> |                                  |<br>  | ‘normalized_mutual_info_score’ | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.normalized_mutual_info_score.html#sklearn.metrics.normalized_mutual_info_score" target="_blank" rel="noopener"><code>metrics.normalized_mutual_info_score</code></a> |                                  |<br>  | ‘v_measure_score’              | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.v_measure_score.html#sklearn.metrics.v_measure_score" target="_blank" rel="noopener"><code>metrics.v_measure_score</code></a> |                                  |<br>  | <strong>Regression</strong>                 |                                                              |                                  |<br>  | ‘explained_variance’           | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.explained_variance_score.html#sklearn.metrics.explained_variance_score" target="_blank" rel="noopener"><code>metrics.explained_variance_score</code></a> |                                  |<br>  | ‘neg_mean_absolute_error’      | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_absolute_error.html#sklearn.metrics.mean_absolute_error" target="_blank" rel="noopener"><code>metrics.mean_absolute_error</code></a> |                                  |<br>  | ‘neg_mean_squared_error’       | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_squared_error.html#sklearn.metrics.mean_squared_error" target="_blank" rel="noopener"><code>metrics.mean_squared_error</code></a> |                                  |<br>  | ‘neg_mean_squared_log_error’   | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_squared_log_error.html#sklearn.metrics.mean_squared_log_error" target="_blank" rel="noopener"><code>metrics.mean_squared_log_error</code></a> |                                  |<br>  | ‘neg_median_absolute_error’    | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.median_absolute_error.html#sklearn.metrics.median_absolute_error" target="_blank" rel="noopener"><code>metrics.median_absolute_error</code></a> |                                  |<br>  | ‘r2’                           | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.r2_score.html#sklearn.metrics.r2_score" target="_blank" rel="noopener"><code>metrics.r2_score</code></a> |                                  |</p>
+<li><p>详见sklearn文档：<a href="http://scikit-learn.org/stable/modules/model_evaluation.html" target="_blank" rel="noopener">http://scikit-learn.org/stable/modules/model_evaluation.html</a></p>
 </li>
 </ul>
+<table>
+<thead>
+<tr>
+<th>Scoring</th>
+<th>Function</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Classification</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>‘accuracy’</td>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html#sklearn.metrics.accuracy_score" target="_blank" rel="noopener"><code>metrics.accuracy_score</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td>‘balanced_accuracy’</td>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.balanced_accuracy_score.html#sklearn.metrics.balanced_accuracy_score" target="_blank" rel="noopener"><code>metrics.balanced_accuracy_score</code></a></td>
+<td>for binary targets</td>
+</tr>
+<tr>
+<td>‘average_precision’</td>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.average_precision_score.html#sklearn.metrics.average_precision_score" target="_blank" rel="noopener"><code>metrics.average_precision_score</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td>‘brier_score_loss’</td>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.brier_score_loss.html#sklearn.metrics.brier_score_loss" target="_blank" rel="noopener"><code>metrics.brier_score_loss</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td>‘f1’</td>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html#sklearn.metrics.f1_score" target="_blank" rel="noopener"><code>metrics.f1_score</code></a></td>
+<td>for binary targets</td>
+</tr>
+<tr>
+<td>‘f1_micro’</td>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html#sklearn.metrics.f1_score" target="_blank" rel="noopener"><code>metrics.f1_score</code></a></td>
+<td>micro-averaged</td>
+</tr>
+<tr>
+<td>‘f1_macro’</td>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html#sklearn.metrics.f1_score" target="_blank" rel="noopener"><code>metrics.f1_score</code></a></td>
+<td>macro-averaged</td>
+</tr>
+<tr>
+<td>‘f1_weighted’</td>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html#sklearn.metrics.f1_score" target="_blank" rel="noopener"><code>metrics.f1_score</code></a></td>
+<td>weighted average</td>
+</tr>
+<tr>
+<td>‘f1_samples’</td>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html#sklearn.metrics.f1_score" target="_blank" rel="noopener"><code>metrics.f1_score</code></a></td>
+<td>by multilabel sample</td>
+</tr>
+<tr>
+<td>‘neg_log_loss’</td>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.log_loss.html#sklearn.metrics.log_loss" target="_blank" rel="noopener"><code>metrics.log_loss</code></a></td>
+<td>requires <code>predict_proba</code> support</td>
+</tr>
+<tr>
+<td>‘precision’ etc.</td>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_score.html#sklearn.metrics.precision_score" target="_blank" rel="noopener"><code>metrics.precision_score</code></a></td>
+<td>suffixes apply as with ‘f1’</td>
+</tr>
+<tr>
+<td>‘recall’ etc.</td>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.recall_score.html#sklearn.metrics.recall_score" target="_blank" rel="noopener"><code>metrics.recall_score</code></a></td>
+<td>suffixes apply as with ‘f1’</td>
+</tr>
+<tr>
+<td>‘roc_auc’</td>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.roc_auc_score.html#sklearn.metrics.roc_auc_score" target="_blank" rel="noopener"><code>metrics.roc_auc_score</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Clustering</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>‘adjusted_mutual_info_score’</td>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.adjusted_mutual_info_score.html#sklearn.metrics.adjusted_mutual_info_score" target="_blank" rel="noopener"><code>metrics.adjusted_mutual_info_score</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td>‘adjusted_rand_score’</td>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.adjusted_rand_score.html#sklearn.metrics.adjusted_rand_score" target="_blank" rel="noopener"><code>metrics.adjusted_rand_score</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td>‘completeness_score’</td>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.completeness_score.html#sklearn.metrics.completeness_score" target="_blank" rel="noopener"><code>metrics.completeness_score</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td>‘fowlkes_mallows_score’</td>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.fowlkes_mallows_score.html#sklearn.metrics.fowlkes_mallows_score" target="_blank" rel="noopener"><code>metrics.fowlkes_mallows_score</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td>‘homogeneity_score’</td>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.homogeneity_score.html#sklearn.metrics.homogeneity_score" target="_blank" rel="noopener"><code>metrics.homogeneity_score</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td>‘mutual_info_score’</td>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mutual_info_score.html#sklearn.metrics.mutual_info_score" target="_blank" rel="noopener"><code>metrics.mutual_info_score</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td>‘normalized_mutual_info_score’</td>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.normalized_mutual_info_score.html#sklearn.metrics.normalized_mutual_info_score" target="_blank" rel="noopener"><code>metrics.normalized_mutual_info_score</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td>‘v_measure_score’</td>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.v_measure_score.html#sklearn.metrics.v_measure_score" target="_blank" rel="noopener"><code>metrics.v_measure_score</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Regression</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>‘explained_variance’</td>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.explained_variance_score.html#sklearn.metrics.explained_variance_score" target="_blank" rel="noopener"><code>metrics.explained_variance_score</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td>‘neg_mean_absolute_error’</td>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_absolute_error.html#sklearn.metrics.mean_absolute_error" target="_blank" rel="noopener"><code>metrics.mean_absolute_error</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td>‘neg_mean_squared_error’</td>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_squared_error.html#sklearn.metrics.mean_squared_error" target="_blank" rel="noopener"><code>metrics.mean_squared_error</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td>‘neg_mean_squared_log_error’</td>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_squared_log_error.html#sklearn.metrics.mean_squared_log_error" target="_blank" rel="noopener"><code>metrics.mean_squared_log_error</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td>‘neg_median_absolute_error’</td>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.median_absolute_error.html#sklearn.metrics.median_absolute_error" target="_blank" rel="noopener"><code>metrics.median_absolute_error</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td>‘r2’</td>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.r2_score.html#sklearn.metrics.r2_score" target="_blank" rel="noopener"><code>metrics.r2_score</code></a></td>
+</tr>
+</tbody>
+</table>
 <h3 id="SciKit-Learn：sklearn-metrics"><a href="#SciKit-Learn：sklearn-metrics" class="headerlink" title="SciKit-Learn：sklearn.metrics"></a>SciKit-Learn：sklearn.metrics</h3><ul>
-<li><p>metrics模块还提供为其他目的而实现的预测误差评估函数<br>  分类任务的评估函数如表所示，其他任务评估函数请见：<a href="http://scikitlearn.org/stable/modules/classes.html#module-sklearn.metrics" target="_blank" rel="noopener">http://scikitlearn.org/stable/modules/classes.html#module-sklearn.metrics</a> </p>
-<h4 id="Classification-metrics"><a href="#Classification-metrics" class="headerlink" title="Classification metrics"></a>Classification metrics</h4><p>  See the <a href="https://scikit-learn.org/stable/modules/model_evaluation.html#classification-metrics" target="_blank" rel="noopener">Classification metrics</a> section of the user guide for further details.</p>
-<p>  | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html#sklearn.metrics.accuracy_score" target="_blank" rel="noopener"><code>metrics.accuracy_score</code></a>(y_true, y_pred[, …]) | Accuracy classification score.                               |<br>  | ———————————————————— | ———————————————————— |<br>  | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.auc.html#sklearn.metrics.auc" target="_blank" rel="noopener"><code>metrics.auc</code></a>(x, y[, reorder]) | Compute Area Under the Curve (AUC) using the trapezoidal rule |<br>  | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.average_precision_score.html#sklearn.metrics.average_precision_score" target="_blank" rel="noopener"><code>metrics.average_precision_score</code></a>(y_true, y_score) | Compute average precision (AP) from prediction scores        |<br>  | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.balanced_accuracy_score.html#sklearn.metrics.balanced_accuracy_score" target="_blank" rel="noopener"><code>metrics.balanced_accuracy_score</code></a>(y_true, y_pred) | Compute the balanced accuracy                                |<br>  | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.brier_score_loss.html#sklearn.metrics.brier_score_loss" target="_blank" rel="noopener"><code>metrics.brier_score_loss</code></a>(y_true, y_prob[, …]) | Compute the Brier score.                                     |<br>  | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.classification_report.html#sklearn.metrics.classification_report" target="_blank" rel="noopener"><code>metrics.classification_report</code></a>(y_true, y_pred) | Build a text report showing the main classification metrics  |<br>  | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.cohen_kappa_score.html#sklearn.metrics.cohen_kappa_score" target="_blank" rel="noopener"><code>metrics.cohen_kappa_score</code></a>(y1, y2[, labels, …]) | Cohen’s kappa: a statistic that measures inter-annotator agreement. |<br>  | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html#sklearn.metrics.confusion_matrix" target="_blank" rel="noopener"><code>metrics.confusion_matrix</code></a>(y_true, y_pred[, …]) | Compute confusion matrix to evaluate the accuracy of a classification |<br>  | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html#sklearn.metrics.f1_score" target="_blank" rel="noopener"><code>metrics.f1_score</code></a>(y_true, y_pred[, labels, …]) | Compute the F1 score, also known as balanced F-score or F-measure |<br>  | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.fbeta_score.html#sklearn.metrics.fbeta_score" target="_blank" rel="noopener"><code>metrics.fbeta_score</code></a>(y_true, y_pred, beta[, …]) | Compute the F-beta score                                     |<br>  | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.hamming_loss.html#sklearn.metrics.hamming_loss" target="_blank" rel="noopener"><code>metrics.hamming_loss</code></a>(y_true, y_pred[, …]) | Compute the average Hamming loss.                            |<br>  | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.hinge_loss.html#sklearn.metrics.hinge_loss" target="_blank" rel="noopener"><code>metrics.hinge_loss</code></a>(y_true, pred_decision[, …]) | Average hinge loss (non-regularized)                         |<br>  | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.jaccard_similarity_score.html#sklearn.metrics.jaccard_similarity_score" target="_blank" rel="noopener"><code>metrics.jaccard_similarity_score</code></a>(y_true, y_pred) | Jaccard similarity coefficient score                         |<br>  | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.log_loss.html#sklearn.metrics.log_loss" target="_blank" rel="noopener"><code>metrics.log_loss</code></a>(y_true, y_pred[, eps, …]) | Log loss, aka logistic loss or cross-entropy loss.           |<br>  | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.matthews_corrcoef.html#sklearn.metrics.matthews_corrcoef" target="_blank" rel="noopener"><code>metrics.matthews_corrcoef</code></a>(y_true, y_pred[, …]) | Compute the Matthews correlation coefficient (MCC)           |<br>  | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_recall_curve.html#sklearn.metrics.precision_recall_curve" target="_blank" rel="noopener"><code>metrics.precision_recall_curve</code></a>(y_true, …) | Compute precision-recall pairs for different probability thresholds |<br>  | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_recall_fscore_support.html#sklearn.metrics.precision_recall_fscore_support" target="_blank" rel="noopener"><code>metrics.precision_recall_fscore_support</code></a>(…) | Compute precision, recall, F-measure and support for each class |<br>  | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_score.html#sklearn.metrics.precision_score" target="_blank" rel="noopener"><code>metrics.precision_score</code></a>(y_true, y_pred[, …]) | Compute the precision                                        |<br>  | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.recall_score.html#sklearn.metrics.recall_score" target="_blank" rel="noopener"><code>metrics.recall_score</code></a>(y_true, y_pred[, …]) | Compute the recall                                           |<br>  | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.roc_auc_score.html#sklearn.metrics.roc_auc_score" target="_blank" rel="noopener"><code>metrics.roc_auc_score</code></a>(y_true, y_score[, …]) | Compute Area Under the Receiver Operating Characteristic Curve (ROC AUC) from prediction scores. |<br>  | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.roc_curve.html#sklearn.metrics.roc_curve" target="_blank" rel="noopener"><code>metrics.roc_curve</code></a>(y_true, y_score[, …]) | Compute Receiver operating characteristic (ROC)              |<br>  | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.zero_one_loss.html#sklearn.metrics.zero_one_loss" target="_blank" rel="noopener"><code>metrics.zero_one_loss</code></a>(y_true, y_pred[, …]) | Zero-one classification loss.                                |</p>
-<h4 id="Regression-metrics"><a href="#Regression-metrics" class="headerlink" title="Regression metrics"></a>Regression metrics</h4><p>  See the <a href="https://scikit-learn.org/stable/modules/model_evaluation.html#regression-metrics" target="_blank" rel="noopener">Regression metrics</a> section of the user guide for further details.</p>
-<p>  | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.explained_variance_score.html#sklearn.metrics.explained_variance_score" target="_blank" rel="noopener"><code>metrics.explained_variance_score</code></a>(y_true, y_pred) | Explained variance regression score function                 |<br>  | ———————————————————— | ———————————————————— |<br>  | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_absolute_error.html#sklearn.metrics.mean_absolute_error" target="_blank" rel="noopener"><code>metrics.mean_absolute_error</code></a>(y_true, y_pred) | Mean absolute error regression loss                          |<br>  | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_squared_error.html#sklearn.metrics.mean_squared_error" target="_blank" rel="noopener"><code>metrics.mean_squared_error</code></a>(y_true, y_pred[, …]) | Mean squared error regression loss                           |<br>  | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_squared_log_error.html#sklearn.metrics.mean_squared_log_error" target="_blank" rel="noopener"><code>metrics.mean_squared_log_error</code></a>(y_true, y_pred) | Mean squared logarithmic error regression loss               |<br>  | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.median_absolute_error.html#sklearn.metrics.median_absolute_error" target="_blank" rel="noopener"><code>metrics.median_absolute_error</code></a>(y_true, y_pred) | Median absolute error regression loss                        |<br>  | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.r2_score.html#sklearn.metrics.r2_score" target="_blank" rel="noopener"><code>metrics.r2_score</code></a>(y_true, y_pred[, …]) | R^2 (coefficient of determination) regression score function. |</p>
-<h4 id="Multilabel-ranking-metrics"><a href="#Multilabel-ranking-metrics" class="headerlink" title="Multilabel ranking metrics"></a>Multilabel ranking metrics</h4><p>  See the <a href="https://scikit-learn.org/stable/modules/model_evaluation.html#multilabel-ranking-metrics" target="_blank" rel="noopener">Multilabel ranking metrics</a> section of the user guide for further details.</p>
-<p>  | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.coverage_error.html#sklearn.metrics.coverage_error" target="_blank" rel="noopener"><code>metrics.coverage_error</code></a>(y_true, y_score[, …]) | Coverage error measure                  |<br>  | ———————————————————— | ————————————— |<br>  | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.label_ranking_average_precision_score.html#sklearn.metrics.label_ranking_average_precision_score" target="_blank" rel="noopener"><code>metrics.label_ranking_average_precision_score</code></a>(…) | Compute ranking-based average precision |<br>  | <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.label_ranking_loss.html#sklearn.metrics.label_ranking_loss" target="_blank" rel="noopener"><code>metrics.label_ranking_loss</code></a>(y_true, y_score) | Compute Ranking loss measure            |</p>
-</li>
+<li>metrics模块还提供为其他目的而实现的预测误差评估函数<br>  分类任务的评估函数如表所示，其他任务评估函数请见：<a href="http://scikitlearn.org/stable/modules/classes.html#module-sklearn.metrics" target="_blank" rel="noopener">http://scikitlearn.org/stable/modules/classes.html#module-sklearn.metrics</a> </li>
 </ul>
+<h4 id="Classification-metrics"><a href="#Classification-metrics" class="headerlink" title="Classification metrics"></a>Classification metrics</h4><p>See the <a href="https://scikit-learn.org/stable/modules/model_evaluation.html#classification-metrics" target="_blank" rel="noopener">Classification metrics</a> section of the user guide for further details.</p>
+<table>
+<thead>
+<tr>
+<th><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html#sklearn.metrics.accuracy_score" target="_blank" rel="noopener"><code>metrics.accuracy_score</code></a>(y_true, y_pred[, …])</th>
+<th>Accuracy classification score.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.auc.html#sklearn.metrics.auc" target="_blank" rel="noopener"><code>metrics.auc</code></a>(x, y[, reorder])</td>
+<td>Compute Area Under the Curve (AUC) using the trapezoidal rule</td>
+</tr>
+<tr>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.average_precision_score.html#sklearn.metrics.average_precision_score" target="_blank" rel="noopener"><code>metrics.average_precision_score</code></a>(y_true, y_score)</td>
+<td>Compute average precision (AP) from prediction scores</td>
+</tr>
+<tr>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.balanced_accuracy_score.html#sklearn.metrics.balanced_accuracy_score" target="_blank" rel="noopener"><code>metrics.balanced_accuracy_score</code></a>(y_true, y_pred)</td>
+<td>Compute the balanced accuracy</td>
+</tr>
+<tr>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.brier_score_loss.html#sklearn.metrics.brier_score_loss" target="_blank" rel="noopener"><code>metrics.brier_score_loss</code></a>(y_true, y_prob[, …])</td>
+<td>Compute the Brier score.</td>
+</tr>
+<tr>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.classification_report.html#sklearn.metrics.classification_report" target="_blank" rel="noopener"><code>metrics.classification_report</code></a>(y_true, y_pred)</td>
+<td>Build a text report showing the main classification metrics</td>
+</tr>
+<tr>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.cohen_kappa_score.html#sklearn.metrics.cohen_kappa_score" target="_blank" rel="noopener"><code>metrics.cohen_kappa_score</code></a>(y1, y2[, labels, …])</td>
+<td>Cohen’s kappa: a statistic that measures inter-annotator agreement.</td>
+</tr>
+<tr>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html#sklearn.metrics.confusion_matrix" target="_blank" rel="noopener"><code>metrics.confusion_matrix</code></a>(y_true, y_pred[, …])</td>
+<td>Compute confusion matrix to evaluate the accuracy of a classification</td>
+</tr>
+<tr>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html#sklearn.metrics.f1_score" target="_blank" rel="noopener"><code>metrics.f1_score</code></a>(y_true, y_pred[, labels, …])</td>
+<td>Compute the F1 score, also known as balanced F-score or F-measure</td>
+</tr>
+<tr>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.fbeta_score.html#sklearn.metrics.fbeta_score" target="_blank" rel="noopener"><code>metrics.fbeta_score</code></a>(y_true, y_pred, beta[, …])</td>
+<td>Compute the F-beta score</td>
+</tr>
+<tr>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.hamming_loss.html#sklearn.metrics.hamming_loss" target="_blank" rel="noopener"><code>metrics.hamming_loss</code></a>(y_true, y_pred[, …])</td>
+<td>Compute the average Hamming loss.</td>
+</tr>
+<tr>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.hinge_loss.html#sklearn.metrics.hinge_loss" target="_blank" rel="noopener"><code>metrics.hinge_loss</code></a>(y_true, pred_decision[, …])</td>
+<td>Average hinge loss (non-regularized)</td>
+</tr>
+<tr>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.jaccard_similarity_score.html#sklearn.metrics.jaccard_similarity_score" target="_blank" rel="noopener"><code>metrics.jaccard_similarity_score</code></a>(y_true, y_pred)</td>
+<td>Jaccard similarity coefficient score</td>
+</tr>
+<tr>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.log_loss.html#sklearn.metrics.log_loss" target="_blank" rel="noopener"><code>metrics.log_loss</code></a>(y_true, y_pred[, eps, …])</td>
+<td>Log loss, aka logistic loss or cross-entropy loss.</td>
+</tr>
+<tr>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.matthews_corrcoef.html#sklearn.metrics.matthews_corrcoef" target="_blank" rel="noopener"><code>metrics.matthews_corrcoef</code></a>(y_true, y_pred[, …])</td>
+<td>Compute the Matthews correlation coefficient (MCC)</td>
+</tr>
+<tr>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_recall_curve.html#sklearn.metrics.precision_recall_curve" target="_blank" rel="noopener"><code>metrics.precision_recall_curve</code></a>(y_true, …)</td>
+<td>Compute precision-recall pairs for different probability thresholds</td>
+</tr>
+<tr>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_recall_fscore_support.html#sklearn.metrics.precision_recall_fscore_support" target="_blank" rel="noopener"><code>metrics.precision_recall_fscore_support</code></a>(…)</td>
+<td>Compute precision, recall, F-measure and support for each class</td>
+</tr>
+<tr>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_score.html#sklearn.metrics.precision_score" target="_blank" rel="noopener"><code>metrics.precision_score</code></a>(y_true, y_pred[, …])</td>
+<td>Compute the precision</td>
+</tr>
+<tr>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.recall_score.html#sklearn.metrics.recall_score" target="_blank" rel="noopener"><code>metrics.recall_score</code></a>(y_true, y_pred[, …])</td>
+<td>Compute the recall</td>
+</tr>
+<tr>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.roc_auc_score.html#sklearn.metrics.roc_auc_score" target="_blank" rel="noopener"><code>metrics.roc_auc_score</code></a>(y_true, y_score[, …])</td>
+<td>Compute Area Under the Receiver Operating Characteristic Curve (ROC AUC) from prediction scores.</td>
+</tr>
+<tr>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.roc_curve.html#sklearn.metrics.roc_curve" target="_blank" rel="noopener"><code>metrics.roc_curve</code></a>(y_true, y_score[, …])</td>
+<td>Compute Receiver operating characteristic (ROC)</td>
+</tr>
+<tr>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.zero_one_loss.html#sklearn.metrics.zero_one_loss" target="_blank" rel="noopener"><code>metrics.zero_one_loss</code></a>(y_true, y_pred[, …])</td>
+<td>Zero-one classification loss.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="Regression-metrics"><a href="#Regression-metrics" class="headerlink" title="Regression metrics"></a>Regression metrics</h4><p>See the <a href="https://scikit-learn.org/stable/modules/model_evaluation.html#regression-metrics" target="_blank" rel="noopener">Regression metrics</a> section of the user guide for further details.</p>
+<table>
+<thead>
+<tr>
+<th><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.explained_variance_score.html#sklearn.metrics.explained_variance_score" target="_blank" rel="noopener"><code>metrics.explained_variance_score</code></a>(y_true, y_pred)</th>
+<th>Explained variance regression score function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_absolute_error.html#sklearn.metrics.mean_absolute_error" target="_blank" rel="noopener"><code>metrics.mean_absolute_error</code></a>(y_true, y_pred)</td>
+<td>Mean absolute error regression loss</td>
+</tr>
+<tr>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_squared_error.html#sklearn.metrics.mean_squared_error" target="_blank" rel="noopener"><code>metrics.mean_squared_error</code></a>(y_true, y_pred[, …])</td>
+<td>Mean squared error regression loss</td>
+</tr>
+<tr>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_squared_log_error.html#sklearn.metrics.mean_squared_log_error" target="_blank" rel="noopener"><code>metrics.mean_squared_log_error</code></a>(y_true, y_pred)</td>
+<td>Mean squared logarithmic error regression loss</td>
+</tr>
+<tr>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.median_absolute_error.html#sklearn.metrics.median_absolute_error" target="_blank" rel="noopener"><code>metrics.median_absolute_error</code></a>(y_true, y_pred)</td>
+<td>Median absolute error regression loss</td>
+</tr>
+<tr>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.r2_score.html#sklearn.metrics.r2_score" target="_blank" rel="noopener"><code>metrics.r2_score</code></a>(y_true, y_pred[, …])</td>
+<td>R^2 (coefficient of determination) regression score function.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="Multilabel-ranking-metrics"><a href="#Multilabel-ranking-metrics" class="headerlink" title="Multilabel ranking metrics"></a>Multilabel ranking metrics</h4><p>See the <a href="https://scikit-learn.org/stable/modules/model_evaluation.html#multilabel-ranking-metrics" target="_blank" rel="noopener">Multilabel ranking metrics</a> section of the user guide for further details.</p>
+<table>
+<thead>
+<tr>
+<th><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.coverage_error.html#sklearn.metrics.coverage_error" target="_blank" rel="noopener"><code>metrics.coverage_error</code></a>(y_true, y_score[, …])</th>
+<th>Coverage error measure</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.label_ranking_average_precision_score.html#sklearn.metrics.label_ranking_average_precision_score" target="_blank" rel="noopener"><code>metrics.label_ranking_average_precision_score</code></a>(…)</td>
+<td>Compute ranking-based average precision</td>
+</tr>
+<tr>
+<td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.label_ranking_loss.html#sklearn.metrics.label_ranking_loss" target="_blank" rel="noopener"><code>metrics.label_ranking_loss</code></a>(y_true, y_score)</td>
+<td>Compute Ranking loss measure</td>
+</tr>
+</tbody>
+</table>
 <p><strong><font color="red">XGBoost 原理部分参考：</font></strong> <a href="/2018/10/02/get-started-XGBoost/">XGBoost第一课</a></p>
 <h2 id="XGBoost支持的目标函数"><a href="#XGBoost支持的目标函数" class="headerlink" title="XGBoost支持的目标函数"></a>XGBoost支持的目标函数</h2><p>objective参数，这个参数在 XGBoost 里面属于任务参数（Learning Task Parameters）</p>
 <p> [default=reg:linear]</p>

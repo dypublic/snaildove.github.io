@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://snaildove.github.io/2018/12/18/get_started_feature-engineering/</loc>
+    <lastmod>2019-07-24</lastmod>
+  </url>  <url>
     <loc>https://snaildove.github.io/2019/03/10/Transformer_learning-resources/</loc>
     <lastmod>2019-07-24</lastmod>
   </url>  <url>
@@ -161,9 +164,6 @@
     <lastmod>2019-07-21</lastmod>
   </url>  <url>
     <loc>https://snaildove.github.io/2018/10/02/get-started-XGBoost/</loc>
-    <lastmod>2019-07-21</lastmod>
-  </url>  <url>
-    <loc>https://snaildove.github.io/2018/12/18/get_started_feature-engineering/</loc>
     <lastmod>2019-07-21</lastmod>
   </url>  <url>
     <loc>https://snaildove.github.io/2017/08/02/Fourier_series/</loc>

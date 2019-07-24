@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://snaildove.github.io/2018/12/18/get_started_feature-engineering/</loc>
+    
+    <lastmod>2019-07-24T05:02:24.478Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/about/index.html</loc>
+    
+    <lastmod>2019-07-24T04:05:44.157Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://snaildove.github.io/2019/03/10/Transformer_learning-resources/</loc>
     
     <lastmod>2019-07-24T03:08:10.547Z</lastmod>
@@ -376,13 +390,6 @@
     <loc>https://snaildove.github.io/2018/10/02/get-started-XGBoost/</loc>
     
     <lastmod>2019-07-21T16:20:32.493Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2018/12/18/get_started_feature-engineering/</loc>
-    
-    <lastmod>2019-07-21T16:20:32.427Z</lastmod>
     
   </url>
   
@@ -768,13 +775,6 @@
     <loc>https://snaildove.github.io/2018/05/01/01_foundations-of-convolutional-neural-networks/</loc>
     
     <lastmod>2019-07-21T16:20:30.113Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/about/index.html</loc>
-    
-    <lastmod>2018-11-07T10:08:05.027Z</lastmod>
     
   </url>
   
