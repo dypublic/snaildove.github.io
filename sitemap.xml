@@ -2,16 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://snaildove.github.io/2019/03/10/Transformer_learning-resources/</loc>
+    <loc>https://snaildove.github.io/2018/10/02/get-started-XGBoost/</loc>
     
-    <lastmod>2019-07-24T09:18:29.732Z</lastmod>
+    <lastmod>2019-08-01T05:53:46.918Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2019/06/02/Chapter20_StreamProcessingFundamentals(SparkTheDefinitiveGuide)/</loc>
+    
+    <lastmod>2019-08-01T05:32:20.130Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2019/06/02/Chapter19_PerformanceTuning(SparkTheDefinitiveGuide)/</loc>
+    
+    <lastmod>2019-07-30T14:16:10.839Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://snaildove.github.io/2018/12/18/get_started_feature-engineering/</loc>
     
-    <lastmod>2019-07-24T05:02:24.478Z</lastmod>
+    <lastmod>2019-07-24T10:25:48.057Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2019/03/10/Transformer_learning-resources/</loc>
+    
+    <lastmod>2019-07-24T09:18:29.732Z</lastmod>
     
   </url>
   
@@ -383,13 +404,6 @@
     <loc>https://snaildove.github.io/2017/08/08/graph_and_network/</loc>
     
     <lastmod>2019-07-21T16:20:32.533Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2018/10/02/get-started-XGBoost/</loc>
-    
-    <lastmod>2019-07-21T16:20:32.493Z</lastmod>
     
   </url>
   
