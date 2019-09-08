@@ -285,6 +285,62 @@
   </entry>
   
   <entry>
+    <title>《统计学习方法总结》</title>
+    <link href="https://snaildove.github.io/2018/10/01/summary_of_LiHang_Statistical-learning-methods/"/>
+    <id>https://snaildove.github.io/2018/10/01/summary_of_LiHang_Statistical-learning-methods/</id>
+    <published>2018-09-30T16:00:00.000Z</published>
+    <updated>2019-08-28T09:50:52.836Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;这是个人学习完&lt;a href=&quot;http://www.hangli-hl.com/index.html&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="中文" scheme="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+    
+    
+      <category term="Machine Learning" scheme="https://snaildove.github.io/tags/Machine-Learning/"/>
+    
+      <category term="统计学习方法" scheme="https://snaildove.github.io/tags/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《统计学习方法》第4章 NaiveBayes</title>
+    <link href="https://snaildove.github.io/2018/10/01/4.Naive-Bayes_LiHang-Statistical-Learning-Methods/"/>
+    <id>https://snaildove.github.io/2018/10/01/4.Naive-Bayes_LiHang-Statistical-Learning-Methods/</id>
+    <published>2018-09-30T16:00:00.000Z</published>
+    <updated>2019-08-28T09:50:33.386Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="中文" scheme="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
+    
+    
+      <category term="Machine Learning" scheme="https://snaildove.github.io/tags/Machine-Learning/"/>
+    
+      <category term="统计学习方法" scheme="https://snaildove.github.io/tags/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
     <title>《统计学习方法》第8章 提升方法之AdaBoost\BoostingTree\GBDT</title>
     <link href="https://snaildove.github.io/2018/10/01/8.Booting-Methods_LiHang-Statistical-Learning-Methods/"/>
     <id>https://snaildove.github.io/2018/10/01/8.Booting-Methods_LiHang-Statistical-Learning-Methods/</id>
@@ -341,62 +397,6 @@
   </entry>
   
   <entry>
-    <title>《统计学习方法》第4章 NaiveBayes</title>
-    <link href="https://snaildove.github.io/2018/10/01/4.Naive-Bayes_LiHang-Statistical-Learning-Methods/"/>
-    <id>https://snaildove.github.io/2018/10/01/4.Naive-Bayes_LiHang-Statistical-Learning-Methods/</id>
-    <published>2018-09-30T16:00:00.000Z</published>
-    <updated>2019-08-28T09:50:33.386Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="中文" scheme="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
-    
-    
-      <category term="Machine Learning" scheme="https://snaildove.github.io/tags/Machine-Learning/"/>
-    
-      <category term="统计学习方法" scheme="https://snaildove.github.io/tags/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>《统计学习方法总结》</title>
-    <link href="https://snaildove.github.io/2018/10/01/summary_of_LiHang_Statistical-learning-methods/"/>
-    <id>https://snaildove.github.io/2018/10/01/summary_of_LiHang_Statistical-learning-methods/</id>
-    <published>2018-09-30T16:00:00.000Z</published>
-    <updated>2019-08-28T09:50:52.836Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;这是个人学习完&lt;a href=&quot;http://www.hangli-hl.com/index.html&quot; target=&quot;_blank&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="中文" scheme="https://snaildove.github.io/categories/%E4%B8%AD%E6%96%87/"/>
-    
-    
-      <category term="Machine Learning" scheme="https://snaildove.github.io/tags/Machine-Learning/"/>
-    
-      <category term="统计学习方法" scheme="https://snaildove.github.io/tags/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
     <title>summary of learning Deep Learning Specialization</title>
     <link href="https://snaildove.github.io/2018/06/28/summary_of_learning_of_Deep_Learning_Specializatio_on_Coursera/"/>
     <id>https://snaildove.github.io/2018/06/28/summary_of_learning_of_Deep_Learning_Specializatio_on_Coursera/</id>
@@ -423,11 +423,11 @@
   </entry>
   
   <entry>
-    <title>summary of nlp sequence models</title>
-    <link href="https://snaildove.github.io/2018/06/06/summary_of_nlp-sequence-models/"/>
-    <id>https://snaildove.github.io/2018/06/06/summary_of_nlp-sequence-models/</id>
+    <title>Trigger word</title>
+    <link href="https://snaildove.github.io/2018/06/06/Trigger_word_detection-v1/"/>
+    <id>https://snaildove.github.io/2018/06/06/Trigger_word_detection-v1/</id>
     <published>2018-06-05T16:00:00.000Z</published>
-    <updated>2019-08-28T09:50:53.354Z</updated>
+    <updated>2019-08-28T09:50:55.855Z</updated>
     
     <summary type="html">
     
@@ -435,7 +435,7 @@
       
         
         
-          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is my
+          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is one
         
       
     
@@ -451,11 +451,11 @@
   </entry>
   
   <entry>
-    <title>Trigger word</title>
-    <link href="https://snaildove.github.io/2018/06/06/Trigger_word_detection-v1/"/>
-    <id>https://snaildove.github.io/2018/06/06/Trigger_word_detection-v1/</id>
+    <title>summary of nlp sequence models</title>
+    <link href="https://snaildove.github.io/2018/06/06/summary_of_nlp-sequence-models/"/>
+    <id>https://snaildove.github.io/2018/06/06/summary_of_nlp-sequence-models/</id>
     <published>2018-06-05T16:00:00.000Z</published>
-    <updated>2019-08-28T09:50:55.855Z</updated>
+    <updated>2019-08-28T09:50:53.354Z</updated>
     
     <summary type="html">
     
@@ -463,7 +463,7 @@
       
         
         
-          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is one
+          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is my
         
       
     
@@ -507,11 +507,11 @@
   </entry>
   
   <entry>
-    <title>sequence models attention mechanism</title>
-    <link href="https://snaildove.github.io/2018/06/03/03_sequence-models-attention-mechanism/"/>
-    <id>https://snaildove.github.io/2018/06/03/03_sequence-models-attention-mechanism/</id>
+    <title>Operations on word vectors</title>
+    <link href="https://snaildove.github.io/2018/06/03/Operations+on+word+vectors+-+v2/"/>
+    <id>https://snaildove.github.io/2018/06/03/Operations+on+word+vectors+-+v2/</id>
     <published>2018-06-02T16:00:00.000Z</published>
-    <updated>2019-08-28T09:50:29.572Z</updated>
+    <updated>2019-08-28T09:50:44.669Z</updated>
     
     <summary type="html">
     
@@ -519,7 +519,7 @@
       
         
         
-          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is my
+          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is one
         
       
     
@@ -535,11 +535,11 @@
   </entry>
   
   <entry>
-    <title>Emojify</title>
-    <link href="https://snaildove.github.io/2018/06/03/Emojify+-+v2/"/>
-    <id>https://snaildove.github.io/2018/06/03/Emojify+-+v2/</id>
+    <title>sequence models attention mechanism</title>
+    <link href="https://snaildove.github.io/2018/06/03/03_sequence-models-attention-mechanism/"/>
+    <id>https://snaildove.github.io/2018/06/03/03_sequence-models-attention-mechanism/</id>
     <published>2018-06-02T16:00:00.000Z</published>
-    <updated>2019-08-28T09:50:38.184Z</updated>
+    <updated>2019-08-28T09:50:29.572Z</updated>
     
     <summary type="html">
     
@@ -547,7 +547,7 @@
       
         
         
-          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is one
+          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is my
         
       
     
