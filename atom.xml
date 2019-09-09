@@ -129,7 +129,7 @@
     <link href="https://snaildove.github.io/2019/02/01/Achitecture_of_Apache_Hadoop_YARN/"/>
     <id>https://snaildove.github.io/2019/02/01/Achitecture_of_Apache_Hadoop_YARN/</id>
     <published>2019-01-31T16:00:00.000Z</published>
-    <updated>2019-08-28T09:50:35.073Z</updated>
+    <updated>2019-09-09T03:30:36.881Z</updated>
     
     <summary type="html">
     
@@ -341,11 +341,11 @@
   </entry>
   
   <entry>
-    <title>《统计学习方法》第8章 提升方法之AdaBoost\BoostingTree\GBDT</title>
-    <link href="https://snaildove.github.io/2018/10/01/8.Booting-Methods_LiHang-Statistical-Learning-Methods/"/>
-    <id>https://snaildove.github.io/2018/10/01/8.Booting-Methods_LiHang-Statistical-Learning-Methods/</id>
+    <title>《统计学习方法》第9章 EM/GMM/F-MM/GEM</title>
+    <link href="https://snaildove.github.io/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/"/>
+    <id>https://snaildove.github.io/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/</id>
     <published>2018-09-30T16:00:00.000Z</published>
-    <updated>2019-08-28T09:50:33.448Z</updated>
+    <updated>2019-08-28T09:50:33.649Z</updated>
     
     <summary type="html">
     
@@ -369,11 +369,11 @@
   </entry>
   
   <entry>
-    <title>《统计学习方法》第9章 EM/GMM/F-MM/GEM</title>
-    <link href="https://snaildove.github.io/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/"/>
-    <id>https://snaildove.github.io/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/</id>
+    <title>《统计学习方法》第8章 提升方法之AdaBoost\BoostingTree\GBDT</title>
+    <link href="https://snaildove.github.io/2018/10/01/8.Booting-Methods_LiHang-Statistical-Learning-Methods/"/>
+    <id>https://snaildove.github.io/2018/10/01/8.Booting-Methods_LiHang-Statistical-Learning-Methods/</id>
     <published>2018-09-30T16:00:00.000Z</published>
-    <updated>2019-08-28T09:50:33.649Z</updated>
+    <updated>2019-08-28T09:50:33.448Z</updated>
     
     <summary type="html">
     
@@ -423,11 +423,11 @@
   </entry>
   
   <entry>
-    <title>Trigger word</title>
-    <link href="https://snaildove.github.io/2018/06/06/Trigger_word_detection-v1/"/>
-    <id>https://snaildove.github.io/2018/06/06/Trigger_word_detection-v1/</id>
+    <title>summary of nlp sequence models</title>
+    <link href="https://snaildove.github.io/2018/06/06/summary_of_nlp-sequence-models/"/>
+    <id>https://snaildove.github.io/2018/06/06/summary_of_nlp-sequence-models/</id>
     <published>2018-06-05T16:00:00.000Z</published>
-    <updated>2019-08-28T09:50:55.855Z</updated>
+    <updated>2019-08-28T09:50:53.354Z</updated>
     
     <summary type="html">
     
@@ -435,7 +435,7 @@
       
         
         
-          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is one
+          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is my
         
       
     
@@ -451,11 +451,11 @@
   </entry>
   
   <entry>
-    <title>summary of nlp sequence models</title>
-    <link href="https://snaildove.github.io/2018/06/06/summary_of_nlp-sequence-models/"/>
-    <id>https://snaildove.github.io/2018/06/06/summary_of_nlp-sequence-models/</id>
+    <title>Trigger word</title>
+    <link href="https://snaildove.github.io/2018/06/06/Trigger_word_detection-v1/"/>
+    <id>https://snaildove.github.io/2018/06/06/Trigger_word_detection-v1/</id>
     <published>2018-06-05T16:00:00.000Z</published>
-    <updated>2019-08-28T09:50:53.354Z</updated>
+    <updated>2019-08-28T09:50:55.855Z</updated>
     
     <summary type="html">
     
@@ -463,7 +463,7 @@
       
         
         
-          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is my
+          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is one
         
       
     
@@ -507,11 +507,11 @@
   </entry>
   
   <entry>
-    <title>Operations on word vectors</title>
-    <link href="https://snaildove.github.io/2018/06/03/Operations+on+word+vectors+-+v2/"/>
-    <id>https://snaildove.github.io/2018/06/03/Operations+on+word+vectors+-+v2/</id>
+    <title>Emojify</title>
+    <link href="https://snaildove.github.io/2018/06/03/Emojify+-+v2/"/>
+    <id>https://snaildove.github.io/2018/06/03/Emojify+-+v2/</id>
     <published>2018-06-02T16:00:00.000Z</published>
-    <updated>2019-08-28T09:50:44.669Z</updated>
+    <updated>2019-08-28T09:50:38.184Z</updated>
     
     <summary type="html">
     
@@ -535,11 +535,11 @@
   </entry>
   
   <entry>
-    <title>Emojify</title>
-    <link href="https://snaildove.github.io/2018/06/03/Emojify+-+v2/"/>
-    <id>https://snaildove.github.io/2018/06/03/Emojify+-+v2/</id>
+    <title>sequence models attention mechanism</title>
+    <link href="https://snaildove.github.io/2018/06/03/03_sequence-models-attention-mechanism/"/>
+    <id>https://snaildove.github.io/2018/06/03/03_sequence-models-attention-mechanism/</id>
     <published>2018-06-02T16:00:00.000Z</published>
-    <updated>2019-08-28T09:50:38.184Z</updated>
+    <updated>2019-08-28T09:50:29.572Z</updated>
     
     <summary type="html">
     
@@ -547,7 +547,7 @@
       
         
         
-          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is one
+          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Note&quot;&gt;&lt;a href=&quot;#Note&quot; class=&quot;headerlink&quot; title=&quot;Note&quot;&gt;&lt;/a&gt;Note&lt;/h2&gt;&lt;p&gt;This is my
         
       
     

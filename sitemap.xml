@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://snaildove.github.io/2019/02/01/Achitecture_of_Apache_Hadoop_YARN/</loc>
+    
+    <lastmod>2019-09-09T03:30:36.881Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://snaildove.github.io/2019/01/06/Titanic_with_name_sex_age_and_ticket_features-0.82275-0.83732/</loc>
     
     <lastmod>2019-09-01T10:58:52.828Z</lastmod>
@@ -516,13 +523,6 @@
     <loc>https://snaildove.github.io/2018/05/04/Art+Generation+with+Neural+Style+Transfer+-+v3/</loc>
     
     <lastmod>2019-08-28T09:50:35.186Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2019/02/01/Achitecture_of_Apache_Hadoop_YARN/</loc>
-    
-    <lastmod>2019-08-28T09:50:35.073Z</lastmod>
     
   </url>
   
