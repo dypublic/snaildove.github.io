@@ -98,18 +98,20 @@
 
 
 
-<meta name="description" content="The previous chapters of this part of the book have covered Structured Streaming from a user’s perspective. Naturally this is the core of your application. This chapter covers some of the operational">
+<meta name="description" content="Chapter 23 Structured Streaming in Production 生产环境中的结构化流The previous chapters of this part of the book have covered Structured Streaming from a user’s perspective. Naturally this is the core of your">
 <meta name="keywords" content="Spark">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Chapter23 Structured Streaming in Production">
-<meta property="og:url" content="https://snaildove.github.io/2019/08/10/Chapter23_StructuredStreamingInProduction/index.html">
+<meta property="og:title" content="翻译 Chapter 23 Structured Streaming in Production">
+<meta property="og:url" content="https://snaildove.github.io/2019/08/10/Chapter23_StructuredStreamingInProduction(SparkTheDefinitiveGuide)_online/index.html">
 <meta property="og:site_name" content="SnailDove&#39;s blog">
-<meta property="og:description" content="The previous chapters of this part of the book have covered Structured Streaming from a user’s perspective. Naturally this is the core of your application. This chapter covers some of the operational">
+<meta property="og:description" content="Chapter 23 Structured Streaming in Production 生产环境中的结构化流The previous chapters of this part of the book have covered Structured Streaming from a user’s perspective. Naturally this is the core of your">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-08-28T09:50:36.078Z">
+<meta property="og:image" content="https://img3.doubanio.com/view/subject/l/public/s29478060.jpg">
+<meta property="og:updated_time" content="2019-09-10T03:23:34.647Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Chapter23 Structured Streaming in Production">
-<meta name="twitter:description" content="The previous chapters of this part of the book have covered Structured Streaming from a user’s perspective. Naturally this is the core of your application. This chapter covers some of the operational">
+<meta name="twitter:title" content="翻译 Chapter 23 Structured Streaming in Production">
+<meta name="twitter:description" content="Chapter 23 Structured Streaming in Production 生产环境中的结构化流The previous chapters of this part of the book have covered Structured Streaming from a user’s perspective. Naturally this is the core of your">
+<meta name="twitter:image" content="https://img3.doubanio.com/view/subject/l/public/s29478060.jpg">
 
 
 
@@ -139,13 +141,13 @@
 
 
 
-  <link rel="canonical" href="https://snaildove.github.io/2019/08/10/Chapter23_StructuredStreamingInProduction/">
+  <link rel="canonical" href="https://snaildove.github.io/2019/08/10/Chapter23_StructuredStreamingInProduction(SparkTheDefinitiveGuide)_online/">
 
 
 
 
 
-  <title>Chapter23 Structured Streaming in Production | SnailDove's blog</title>
+  <title>翻译 Chapter 23 Structured Streaming in Production | SnailDove's blog</title>
   
 
 
@@ -324,7 +326,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://snaildove.github.io/2019/08/10/Chapter23_StructuredStreamingInProduction/">
+    <link itemprop="mainEntityOfPage" href="https://snaildove.github.io/2019/08/10/Chapter23_StructuredStreamingInProduction(SparkTheDefinitiveGuide)_online/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="SnailDove">
@@ -341,7 +343,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Chapter23 Structured Streaming in Production</h1>
+          <h1 class="post-title" itemprop="name headline">翻译 Chapter 23 Structured Streaming in Production</h1>
         
 
         <div class="post-meta">
@@ -414,7 +416,7 @@
                   <span class="post-meta-item-text">Words count in article</span>
                 
                 <span title="Words count in article">
-                  6,558
+                  6,574
                 </span>
               
 
@@ -451,7 +453,8 @@
       
 
       
-        <script src="\assets\js\APlayer.min.js"> </script><p>The previous chapters of this part of the book have covered Structured Streaming from a user’s perspective. Naturally this is the core of your application. This chapter covers some of the operational tools needed to run Structured Streaming robustly in production after you’ve developed an application.</p>
+        <script src="\assets\js\APlayer.min.js"> </script><p><img src="https://img3.doubanio.com/view/subject/l/public/s29478060.jpg" alt></p>
+<h1 id="Chapter-23-Structured-Streaming-in-Production-生产环境中的结构化流"><a href="#Chapter-23-Structured-Streaming-in-Production-生产环境中的结构化流" class="headerlink" title="Chapter 23 Structured Streaming in Production 生产环境中的结构化流"></a>Chapter 23 Structured Streaming in Production 生产环境中的结构化流</h1><p>The previous chapters of this part of the book have covered Structured Streaming from a user’s perspective. Naturally this is the core of your application. This chapter covers some of the operational tools needed to run Structured Streaming robustly in production after you’ve developed an application.</p>
 <p>本书这一部分的前几章从用户的角度介绍了结构化流。当然，这是应用程序的核心。<strong>本章介绍在开发应用程序之后，在生产环境中可靠地运行结构化流所需的一些操作工具。</strong></p>
 <p>Structured Streaming was marked as production-ready in Apache Spark 2.2.0, meaning that this release has all the features required for production use and stabilizes the API. Many organizations are already using the system in production because, frankly, it’s not much different from running other production Spark applications. Indeed, through features such as transactional sources/sinks and exactly-once processing, the Structured Streaming designers sought to make it as easy to operate as possible. This chapter will walk you through some of the key operational tasks specific to Structured Streaming. This should supplement everything we saw and learned about Spark operations in Part II.</p>
 <p>结构化流在 Apache Spark 2.2.0中被标记为生产就绪，这意味着该版本具有生产使用所需的所有功能，并稳定了API。许多组织已经在生产中使用该系统，因为坦率地说，<strong>它与运行其他生产Spark应用程序没有太大区别。事实上，通过事务性源/接收器和一次性处理等功能，结构化流设计人员力求使其尽可能易于操作。本章将引导您完成特定于结构化流的一些关键操作任务</strong>。这应该补充我们在第二部分中看到和学到的关于 Spark 操作的所有知识。</p>
@@ -569,7 +572,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>Post link:</strong>
-    <a href="https://snaildove.github.io/2019/08/10/Chapter23_StructuredStreamingInProduction/" title="Chapter23 Structured Streaming in Production">https://snaildove.github.io/2019/08/10/Chapter23_StructuredStreamingInProduction/</a>
+    <a href="https://snaildove.github.io/2019/08/10/Chapter23_StructuredStreamingInProduction(SparkTheDefinitiveGuide)_online/" title="翻译 Chapter 23 Structured Streaming in Production">https://snaildove.github.io/2019/08/10/Chapter23_StructuredStreamingInProduction(SparkTheDefinitiveGuide)_online/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice: </strong>
@@ -612,8 +615,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/08/07/Chapter17_Deploying-Spark(SparkTheDefinitiveGuide)_online/" rel="next" title="翻译 Chapter17_Deploying-Spark">
-                <i class="fa fa-chevron-left"></i> 翻译 Chapter17_Deploying-Spark
+              <a href="/2019/08/07/Chapter17_Deploying-Spark(SparkTheDefinitiveGuide)_online/" rel="next" title="翻译 Chapter 17 Deploying-Spark">
+                <i class="fa fa-chevron-left"></i> 翻译 Chapter 17 Deploying-Spark
               </a>
             
           </div>
@@ -719,7 +722,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -814,7 +817,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Fault-Tolerance-and-Checkpointing-容错和检查点"><span class="nav-text">Fault Tolerance and Checkpointing 容错和检查点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Updating-Your-Streaming-Application-Code-更新流应用程序代码"><span class="nav-text">Updating Your Streaming Application Code 更新流应用程序代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Updating-Your-Spark-Version-更新Spark版本"><span class="nav-text">Updating Your Spark Version 更新Spark版本</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sizing-and-Rescaling-Your-Application-调整应用程序的大小和重新缩放"><span class="nav-text">Sizing and Rescaling Your Application 调整应用程序的大小和重新缩放</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Metrics-and-Monitoring-量化指标和监控"><span class="nav-text">Metrics and Monitoring 量化指标和监控</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Query-Status"><span class="nav-text">Query Status</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Recent-Progress"><span class="nav-text">Recent Progress</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Input-rate-and-processing-rate-输入速率和处理速率"><span class="nav-text">Input rate and processing rate 输入速率和处理速率</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Batch-duration-批处理持续时间"><span class="nav-text">Batch duration 批处理持续时间</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Spark-UI-Spark用户界面"><span class="nav-text">Spark UI Spark用户界面</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Alerting-警告"><span class="nav-text">Alerting 警告</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Advanced-Monitoring-with-the-Streaming-Listener-使用流式侦听器进行高级监视"><span class="nav-text">Advanced Monitoring with the Streaming Listener 使用流式侦听器进行高级监视</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Conclusion-结论"><span class="nav-text">Conclusion 结论</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Chapter-23-Structured-Streaming-in-Production-生产环境中的结构化流"><span class="nav-text">Chapter 23 Structured Streaming in Production 生产环境中的结构化流</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Fault-Tolerance-and-Checkpointing-容错和检查点"><span class="nav-text">Fault Tolerance and Checkpointing 容错和检查点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Updating-Your-Streaming-Application-Code-更新流应用程序代码"><span class="nav-text">Updating Your Streaming Application Code 更新流应用程序代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Updating-Your-Spark-Version-更新Spark版本"><span class="nav-text">Updating Your Spark Version 更新Spark版本</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sizing-and-Rescaling-Your-Application-调整应用程序的大小和重新缩放"><span class="nav-text">Sizing and Rescaling Your Application 调整应用程序的大小和重新缩放</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Metrics-and-Monitoring-量化指标和监控"><span class="nav-text">Metrics and Monitoring 量化指标和监控</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Query-Status"><span class="nav-text">Query Status</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Recent-Progress"><span class="nav-text">Recent Progress</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Input-rate-and-processing-rate-输入速率和处理速率"><span class="nav-text">Input rate and processing rate 输入速率和处理速率</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Batch-duration-批处理持续时间"><span class="nav-text">Batch duration 批处理持续时间</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Spark-UI-Spark用户界面"><span class="nav-text">Spark UI Spark用户界面</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Alerting-警告"><span class="nav-text">Alerting 警告</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Advanced-Monitoring-with-the-Streaming-Listener-使用流式侦听器进行高级监视"><span class="nav-text">Advanced Monitoring with the Streaming Listener 使用流式侦听器进行高级监视</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Conclusion-结论"><span class="nav-text">Conclusion 结论</span></a></li></ol></li></ol></div>
             
 
           </div>

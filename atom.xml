@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://snaildove.github.io/"/>
-  <updated>2019-09-09T16:37:03.030Z</updated>
+  <updated>2019-09-10T03:29:00.611Z</updated>
   <id>https://snaildove.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://snaildove.github.io/2019/08/10/Chapter18_Monitoring-and-Debugging(SparkTheDefinitiveGuide)_online/"/>
     <id>https://snaildove.github.io/2019/08/10/Chapter18_Monitoring-and-Debugging(SparkTheDefinitiveGuide)_online/</id>
     <published>2019-08-09T16:00:00.000Z</published>
-    <updated>2019-09-09T16:37:03.030Z</updated>
+    <updated>2019-09-10T03:29:00.611Z</updated>
     
     <summary type="html">
     
@@ -44,11 +44,11 @@
   </entry>
   
   <entry>
-    <title>Chapter23 Structured Streaming in Production</title>
-    <link href="https://snaildove.github.io/2019/08/10/Chapter23_StructuredStreamingInProduction/"/>
-    <id>https://snaildove.github.io/2019/08/10/Chapter23_StructuredStreamingInProduction/</id>
+    <title>翻译 Chapter 23 Structured Streaming in Production</title>
+    <link href="https://snaildove.github.io/2019/08/10/Chapter23_StructuredStreamingInProduction(SparkTheDefinitiveGuide)_online/"/>
+    <id>https://snaildove.github.io/2019/08/10/Chapter23_StructuredStreamingInProduction(SparkTheDefinitiveGuide)_online/</id>
     <published>2019-08-09T16:00:00.000Z</published>
-    <updated>2019-08-28T09:50:36.078Z</updated>
+    <updated>2019-09-10T03:23:34.647Z</updated>
     
     <summary type="html">
     
@@ -56,7 +56,8 @@
       
         
         
-          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;The previous chapters of this part of the book have covered Structured Streaming from
+          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;&lt;img src=&quot;https://img3.doubanio.com/view/subject/l/public/s29478060.jpg&quot; alt&gt;&lt;/p&gt;
+&lt;h1
         
       
     
@@ -70,11 +71,11 @@
   </entry>
   
   <entry>
-    <title>翻译 Chapter17_Deploying-Spark</title>
+    <title>翻译 Chapter 17 Deploying-Spark</title>
     <link href="https://snaildove.github.io/2019/08/07/Chapter17_Deploying-Spark(SparkTheDefinitiveGuide)_online/"/>
     <id>https://snaildove.github.io/2019/08/07/Chapter17_Deploying-Spark(SparkTheDefinitiveGuide)_online/</id>
     <published>2019-08-06T16:00:00.000Z</published>
-    <updated>2019-09-09T16:11:45.697Z</updated>
+    <updated>2019-09-10T04:51:15.054Z</updated>
     
     <summary type="html">
     
@@ -90,33 +91,6 @@
     </summary>
     
       <category term="English,中文" scheme="https://snaildove.github.io/categories/English-%E4%B8%AD%E6%96%87/"/>
-    
-    
-      <category term="Spark" scheme="https://snaildove.github.io/tags/Spark/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>翻译 Chapter 16 Developing Spark Applications</title>
-    <link href="https://snaildove.github.io/2019/08/05/Chapter16_DevelopingSparkApplications(SparkTheDefinitiveGuide)_online/"/>
-    <id>https://snaildove.github.io/2019/08/05/Chapter16_DevelopingSparkApplications(SparkTheDefinitiveGuide)_online/</id>
-    <published>2019-08-04T16:00:00.000Z</published>
-    <updated>2019-09-09T15:45:30.040Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;&lt;img src=&quot;https://img3.doubanio.com/view/subject/l/public/s29478060.jpg&quot; alt&gt;&lt;/p&gt;
-&lt;h1
-        
-      
-    
-    </summary>
-    
-      <category term="English" scheme="https://snaildove.github.io/categories/English/"/>
     
     
       <category term="Spark" scheme="https://snaildove.github.io/tags/Spark/"/>
@@ -128,7 +102,7 @@
     <link href="https://snaildove.github.io/2019/08/05/Chapter15_HowSparkRuns-on-a-Cluster(SparkTheDefinitiveGuide)_online/"/>
     <id>https://snaildove.github.io/2019/08/05/Chapter15_HowSparkRuns-on-a-Cluster(SparkTheDefinitiveGuide)_online/</id>
     <published>2019-08-04T16:00:00.000Z</published>
-    <updated>2019-09-09T15:30:21.394Z</updated>
+    <updated>2019-09-10T05:44:39.224Z</updated>
     
     <summary type="html">
     
@@ -151,11 +125,11 @@
   </entry>
   
   <entry>
-    <title>Chapter 20 Stream Processing Fundamentals</title>
-    <link href="https://snaildove.github.io/2019/06/02/Chapter20_StreamProcessingFundamentals(SparkTheDefinitiveGuide)/"/>
-    <id>https://snaildove.github.io/2019/06/02/Chapter20_StreamProcessingFundamentals(SparkTheDefinitiveGuide)/</id>
-    <published>2019-06-01T16:00:00.000Z</published>
-    <updated>2019-08-28T09:50:35.818Z</updated>
+    <title>翻译 Chapter 16 Developing Spark Applications</title>
+    <link href="https://snaildove.github.io/2019/08/05/Chapter16_DevelopingSparkApplications(SparkTheDefinitiveGuide)_online/"/>
+    <id>https://snaildove.github.io/2019/08/05/Chapter16_DevelopingSparkApplications(SparkTheDefinitiveGuide)_online/</id>
+    <published>2019-08-04T16:00:00.000Z</published>
+    <updated>2019-09-10T08:06:53.366Z</updated>
     
     <summary type="html">
     
@@ -163,7 +137,35 @@
       
         
         
-          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;Stream processing is a key requirement in many big data applications. As soon as an
+          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;&lt;img src=&quot;https://img3.doubanio.com/view/subject/l/public/s29478060.jpg&quot; alt&gt;&lt;/p&gt;
+&lt;h1
+        
+      
+    
+    </summary>
+    
+      <category term="English" scheme="https://snaildove.github.io/categories/English/"/>
+    
+    
+      <category term="Spark" scheme="https://snaildove.github.io/tags/Spark/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>翻译 Chapter 20 Stream Processing Fundamentals</title>
+    <link href="https://snaildove.github.io/2019/06/02/Chapter20_StreamProcessingFundamentals(SparkTheDefinitiveGuide)_online/"/>
+    <id>https://snaildove.github.io/2019/06/02/Chapter20_StreamProcessingFundamentals(SparkTheDefinitiveGuide)_online/</id>
+    <published>2019-06-01T16:00:00.000Z</published>
+    <updated>2019-09-10T04:15:38.706Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;&lt;img src=&quot;https://img3.doubanio.com/view/subject/l/public/s29478060.jpg&quot; alt&gt;&lt;/p&gt;
+&lt;h1
         
       
     
@@ -509,7 +511,7 @@
     <link href="https://snaildove.github.io/2018/06/28/summary_of_learning_of_Deep_Learning_Specializatio_on_Coursera/"/>
     <id>https://snaildove.github.io/2018/06/28/summary_of_learning_of_Deep_Learning_Specializatio_on_Coursera/</id>
     <published>2018-06-27T16:00:00.000Z</published>
-    <updated>2019-08-28T09:50:52.387Z</updated>
+    <updated>2019-09-10T04:47:55.834Z</updated>
     
     <summary type="html">
     
@@ -523,7 +525,7 @@
     
     </summary>
     
-      <category term="English, 中文" scheme="https://snaildove.github.io/categories/English-%E4%B8%AD%E6%96%87/"/>
+      <category term="English,中文" scheme="https://snaildove.github.io/categories/English-%E4%B8%AD%E6%96%87/"/>
     
     
       <category term="deep learning" scheme="https://snaildove.github.io/tags/deep-learning/"/>

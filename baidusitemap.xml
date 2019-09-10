@@ -1,17 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://snaildove.github.io/2019/08/10/Chapter18_Monitoring-and-Debugging(SparkTheDefinitiveGuide)_online/</loc>
-    <lastmod>2019-09-09</lastmod>
-  </url>  <url>
-    <loc>https://snaildove.github.io/2019/08/07/Chapter17_Deploying-Spark(SparkTheDefinitiveGuide)_online/</loc>
-    <lastmod>2019-09-09</lastmod>
-  </url>  <url>
     <loc>https://snaildove.github.io/2019/08/05/Chapter16_DevelopingSparkApplications(SparkTheDefinitiveGuide)_online/</loc>
-    <lastmod>2019-09-09</lastmod>
+    <lastmod>2019-09-10</lastmod>
   </url>  <url>
     <loc>https://snaildove.github.io/2019/08/05/Chapter15_HowSparkRuns-on-a-Cluster(SparkTheDefinitiveGuide)_online/</loc>
-    <lastmod>2019-09-09</lastmod>
+    <lastmod>2019-09-10</lastmod>
+  </url>  <url>
+    <loc>https://snaildove.github.io/2019/08/07/Chapter17_Deploying-Spark(SparkTheDefinitiveGuide)_online/</loc>
+    <lastmod>2019-09-10</lastmod>
+  </url>  <url>
+    <loc>https://snaildove.github.io/2018/06/28/summary_of_learning_of_Deep_Learning_Specializatio_on_Coursera/</loc>
+    <lastmod>2019-09-10</lastmod>
+  </url>  <url>
+    <loc>https://snaildove.github.io/2019/06/02/Chapter20_StreamProcessingFundamentals(SparkTheDefinitiveGuide)_online/</loc>
+    <lastmod>2019-09-10</lastmod>
+  </url>  <url>
+    <loc>https://snaildove.github.io/2019/08/10/Chapter18_Monitoring-and-Debugging(SparkTheDefinitiveGuide)_online/</loc>
+    <lastmod>2019-09-10</lastmod>
+  </url>  <url>
+    <loc>https://snaildove.github.io/2019/08/10/Chapter23_StructuredStreamingInProduction(SparkTheDefinitiveGuide)_online/</loc>
+    <lastmod>2019-09-10</lastmod>
   </url>  <url>
     <loc>https://snaildove.github.io/2019/02/01/Achitecture_of_Apache_Hadoop_YARN/</loc>
     <lastmod>2019-09-09</lastmod>
@@ -56,9 +65,6 @@
     <lastmod>2019-08-28</lastmod>
   </url>  <url>
     <loc>https://snaildove.github.io/2018/10/01/summary_of_LiHang_Statistical-learning-methods/</loc>
-    <lastmod>2019-08-28</lastmod>
-  </url>  <url>
-    <loc>https://snaildove.github.io/2018/06/28/summary_of_learning_of_Deep_Learning_Specializatio_on_Coursera/</loc>
     <lastmod>2019-08-28</lastmod>
   </url>  <url>
     <loc>https://snaildove.github.io/2018/03/02/summary_of_Improving-Deep-Neural-Networks/</loc>
@@ -212,12 +218,6 @@
     <lastmod>2019-08-28</lastmod>
   </url>  <url>
     <loc>https://snaildove.github.io/2017/08/12/complex_and_complex_matrix/</loc>
-    <lastmod>2019-08-28</lastmod>
-  </url>  <url>
-    <loc>https://snaildove.github.io/2019/08/10/Chapter23_StructuredStreamingInProduction/</loc>
-    <lastmod>2019-08-28</lastmod>
-  </url>  <url>
-    <loc>https://snaildove.github.io/2019/06/02/Chapter20_StreamProcessingFundamentals(SparkTheDefinitiveGuide)/</loc>
     <lastmod>2019-08-28</lastmod>
   </url>  <url>
     <loc>https://snaildove.github.io/2018/01/28/Calculus_and_Differential/</loc>
