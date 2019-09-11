@@ -131,7 +131,7 @@
 <meta property="og:image" content="http://pwmpcnhis.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1541876848274.png">
 <meta property="og:image" content="http://pwmpcnhis.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1541846850051.png">
 <meta property="og:image" content="http://pwmpcnhis.bkt.clouddn.com/gitpages/ML/get_started_xgboost/1541270621305.png">
-<meta property="og:updated_time" content="2019-08-28T09:50:39.163Z">
+<meta property="og:updated_time" content="2019-09-11T04:37:45.759Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="XGBoost原理和底层实现剖析">
 <meta name="twitter:description" content="前言在深度学习火起来之前，集成学习 （ensemble learning 包括  boosting: GBDT, XGBoost）是 kaggle 等比赛中的利器，所以集成学习是机器学习必备的知识点，如果提升树或者GBDT不熟悉，最好先看一下我的另一文： 《统计学习方法》第8章 提升方法之AdaBoost\BoostingTree\GBDT ，陈天奇 的 XGBoost (eXtreme Gra">
@@ -444,7 +444,7 @@
                   <span class="post-meta-item-text">Words count in article</span>
                 
                 <span title="Words count in article">
-                  14,177
+                  14,171
                 </span>
               
 
@@ -868,28 +868,28 @@
 <li><p>xgboost在代价函数里加入了<strong>显示的正则项</strong>，用于控制模型的复杂度。正则项里包含了树的叶子节点个数、每个叶子节点上输出的score的L2模的平方和，防止过拟合，这也是xgboost优于传统GBDT的一个特性。正则化的两个部分，都是为了防止过拟合，剪枝是都有的，叶子结点输出L2平滑是新增的。</p>
 </li>
 <li><p>Built-in Cross-Validation <strong>内置交叉验证</strong> </p>
+<blockquote>
+<p>XGBoost allows user to run a cross-validation at each iteration of the boosting process and thus it is easy to get the exact optimum number of boosting iterations in a single run. </p>
+<p>This is unlike GBM where we have to run a grid-search and only a limited values can be tested.</p>
+</blockquote>
 </li>
 </ol>
-<blockquote>
-<p>XGBoost allows user to run a cross-validation at each iteration of the boosting process and thus it is easy to get the exact optimum number of boosting iterations in a single run.<br>This is unlike GBM where we have to run a grid-search and only a limited values can be tested.</p>
-</blockquote>
 <ul>
 <li>XGBoost允许在每一轮boosting迭代中使用交叉验证，这样可以方便地获得最优boosting迭代次数</li>
 <li>GBM使用网格搜索，只能检测有限个值 </li>
 </ul>
 <ol>
-<li>continue on Existing Model <strong>可以保存模型下次接着训练，方便在线学习</strong></li>
-</ol>
+<li><p>continue on Existing Model <strong>可以保存模型下次接着训练，方便在线学习</strong></p>
 <blockquote>
-<p>User can start training an XGBoost model from its last iteration of previous run. This can be of significant advantage in certain specific applications.<br>GBM implementation of sklearn <strong>also</strong> has this feature so they are even on this point.</p>
+<p>User can start training an XGBoost model from its last iteration of previous run. This can be of significant advantage in certain specific applications. </p>
+<p>GBM implementation of sklearn <strong>also</strong> has this feature so they are even on this point.</p>
 </blockquote>
-<ol>
-<li>High Flexibility <strong>可定制损失函数，只要这个损失函数2阶可导</strong></li>
-</ol>
+</li>
+<li><p>High Flexibility <strong>可定制损失函数，只要这个损失函数2阶可导</strong></p>
 <blockquote>
-<p>XGBoost allow users to define custom optimization objectives and evaluation criteria.<br>This adds a whole new dimension to the model and there is no limit to what we can do.</p>
+<p>XGBoost allow users to define custom optimization objectives and evaluation criteria.  This adds a whole new dimension to the model and there is no limit to what we can do.</p>
 </blockquote>
-<ol>
+</li>
 <li><p>提供多语言接口</p>
 <ul>
 <li>命令行（Command Line Interface， CLI）</li>
@@ -1296,13 +1296,17 @@
 </ul>
 </li>
 </ul>
-<h3 id="调参"><a href="#调参" class="headerlink" title="调参"></a>调参</h3><p>调参主要参考 <a href="https://www.analyticsvidhya.com/blog/2016/03/complete-guide-parameter-tuning-xgboost-with-codes-python/" target="_blank" rel="noopener">Complete Guide to Parameter Tuning in XGBoost (with codes in Python)</a> ，有空再详细说明。</p>
-<p><a href="https://www.cnblogs.com/infaraway/p/7890558.html" target="_blank" rel="noopener">https://www.cnblogs.com/infaraway/p/7890558.html</a></p>
+<h3 id="调参"><a href="#调参" class="headerlink" title="调参"></a>调参</h3><ol>
+<li><p><a href="https://www.analyticsvidhya.com/blog/2016/03/complete-guide-parameter-tuning-xgboost-with-codes-python/" target="_blank" rel="noopener">Complete Guide to Parameter Tuning in XGBoost (with codes in Python)</a>  主要</p>
+</li>
+<li><p><a href="https://www.cnblogs.com/infaraway/p/7890558.html" target="_blank" rel="noopener">https://www.cnblogs.com/infaraway/p/7890558.html</a></p>
+</li>
+</ol>
 <h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><ol>
 <li>陈天奇的论文 <a href="https://arxiv.org/pdf/1603.02754" target="_blank" rel="noopener">XGBoost: A Scalable Tree Boosting System</a></li>
 <li>陈天奇的演讲视频 <a href="https://www.youtube.com/watch?v=Vly8xGnNiWs&amp;list=PLSz28ynAy1RohdgsPfC4l4t3lHu863PGx&amp;index=3&amp;t=1786s" target="_blank" rel="noopener">XGBoost A Scalable Tree Boosting System June 02, 2016 </a> <a href="https://speakerdeck.com/datasciencela/tianqi-chen-xgboost-overview-and-latest-news-la-meetup-talk" target="_blank" rel="noopener">演讲幻灯片 </a>和  <a href="https://homes.cs.washington.edu/~tqchen/pdf/BoostedTree.pdf" target="_blank" rel="noopener">官网幻灯片</a> </li>
 <li><a href="https://xgboost.ai/" target="_blank" rel="noopener">XGBoost 官网</a></li>
-<li>XGBoost的贡献者之一的 <a href="https://www.youtube.com/watch?v=ufHo8vbk6g4" target="_blank" rel="noopener">演讲</a></li>
+<li>XGBoost的源代码贡献者之一的 <a href="https://www.youtube.com/watch?v=ufHo8vbk6g4" target="_blank" rel="noopener">演讲</a></li>
 <li><a href="https://www.zhihu.com/question/41354392" target="_blank" rel="noopener">机器学习算法中 GBDT 和 XGBOOST 的区别有哪些？ - 知乎</a></li>
 </ol>
 
@@ -1392,8 +1396,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/10/01/4.Naive-Bayes_LiHang-Statistical-Learning-Methods/" rel="next" title="《统计学习方法》第4章 NaiveBayes">
-                <i class="fa fa-chevron-left"></i> 《统计学习方法》第4章 NaiveBayes
+              <a href="/2018/10/01/8.Booting-Methods_LiHang-Statistical-Learning-Methods/" rel="next" title="《统计学习方法》第8章 提升方法之AdaBoost\BoostingTree\GBDT">
+                <i class="fa fa-chevron-left"></i> 《统计学习方法》第8章 提升方法之AdaBoost\BoostingTree\GBDT
               </a>
             
           </div>
@@ -1488,7 +1492,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">116</span>
+                  <span class="site-state-item-count">117</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -1522,7 +1526,7 @@
 				<h4 class="widget-title">Tag Cloud</h4>
 					<div id="myCanvasContainer" class="widget tagcloud">
 					<canvas width="250" height="250" id="resCanvas" style="width=100%">
-						<ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Basic-Algorithm/">Basic Algorithm</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Calculus-and-Differential/">Calculus and Differential</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Data-Structure/">Data Structure</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Distributed-System/">Distributed System</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hadoop-YARN/">Hadoop YARN</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Improving-Deep-Neural-Networks/">Improving Deep Neural Networks</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Information-Theory/">Information Theory</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Latex/">Latex</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning/">Machine Learning</a><span class="tag-list-count">27</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning-by-Andrew-NG/">Machine Learning by Andrew NG</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning，-feature-engineering/">Machine Learning， feature engineering</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/NLP/">NLP</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python-Data-Science-Cookbook/">Python Data Science Cookbook</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Spark/">Spark</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Structuring-Machine-Learning-Projects/">Structuring Machine Learning Projects</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/XGBoost/">XGBoost</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/convolutional-neural-networks/">convolutional-neural-networks</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/deep-learning/">deep learning</a><span class="tag-list-count">41</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/english/">english</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/">java</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/kaggle/">kaggle</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linear-algebra/">linear_algebra</a><span class="tag-list-count">13</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/neural-networks-deep-learning/">neural-networks-deep-learning</a><span class="tag-list-count">8</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nlp-sequence-models/">nlp-sequence-models</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/probability/">probability</a><span class="tag-list-count">13</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/spark/">spark</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/统计学习方法/">统计学习方法</a><span class="tag-list-count">4</span></li></ul>
+						<ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Basic-Algorithm/">Basic Algorithm</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Calculus-and-Differential/">Calculus and Differential</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Data-Structure/">Data Structure</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Distributed-System/">Distributed System</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hadoop-YARN/">Hadoop YARN</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Improving-Deep-Neural-Networks/">Improving Deep Neural Networks</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Information-Theory/">Information Theory</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Latex/">Latex</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning/">Machine Learning</a><span class="tag-list-count">27</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning-by-Andrew-NG/">Machine Learning by Andrew NG</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning，-feature-engineering/">Machine Learning， feature engineering</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/NLP/">NLP</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python-Data-Science-Cookbook/">Python Data Science Cookbook</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Spark/">Spark</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Structuring-Machine-Learning-Projects/">Structuring Machine Learning Projects</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/XGBoost/">XGBoost</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/convolutional-neural-networks/">convolutional-neural-networks</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/deep-learning/">deep learning</a><span class="tag-list-count">41</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/english/">english</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/">java</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/kaggle/">kaggle</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linear-algebra/">linear_algebra</a><span class="tag-list-count">13</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/neural-networks-deep-learning/">neural-networks-deep-learning</a><span class="tag-list-count">8</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nlp-sequence-models/">nlp-sequence-models</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/probability/">probability</a><span class="tag-list-count">13</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/spark/">spark</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/统计学习方法/">统计学习方法</a><span class="tag-list-count">4</span></li></ul>
 					</canvas>
 				</div>
 			</div>
@@ -1627,7 +1631,7 @@
     
       <span class="post-meta-item-text">Site words total count</span>
     
-    <span title="Site words total count">648.2k</span>
+    <span title="Site words total count">658.7k</span>
   
 </div>
 
