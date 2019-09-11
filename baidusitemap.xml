@@ -2,12 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://snaildove.github.io/2019/08/05/Chapter16_DevelopingSparkApplications(SparkTheDefinitiveGuide)_online/</loc>
-    <lastmod>2019-09-10</lastmod>
+    <lastmod>2019-09-11</lastmod>
   </url>  <url>
-    <loc>https://snaildove.github.io/2019/08/05/Chapter15_HowSparkRuns-on-a-Cluster(SparkTheDefinitiveGuide)_online/</loc>
+    <loc>https://snaildove.github.io/2019/05/14/HadoopYARNFederation/</loc>
     <lastmod>2019-09-10</lastmod>
   </url>  <url>
     <loc>https://snaildove.github.io/2019/08/07/Chapter17_Deploying-Spark(SparkTheDefinitiveGuide)_online/</loc>
+    <lastmod>2019-09-10</lastmod>
+  </url>  <url>
+    <loc>https://snaildove.github.io/2019/08/05/Chapter15_HowSparkRuns-on-a-Cluster(SparkTheDefinitiveGuide)_online/</loc>
     <lastmod>2019-09-10</lastmod>
   </url>  <url>
     <loc>https://snaildove.github.io/2018/06/28/summary_of_learning_of_Deep_Learning_Specializatio_on_Coursera/</loc>
@@ -164,9 +167,6 @@
     <lastmod>2019-08-28</lastmod>
   </url>  <url>
     <loc>https://snaildove.github.io/2018/01/23/hexo_source-code_synchronization/</loc>
-    <lastmod>2019-08-28</lastmod>
-  </url>  <url>
-    <loc>https://snaildove.github.io/2019/05/14/HadoopYARNFederation/</loc>
     <lastmod>2019-08-28</lastmod>
   </url>  <url>
     <loc>https://snaildove.github.io/2018/02/02/greek-letters/</loc>
