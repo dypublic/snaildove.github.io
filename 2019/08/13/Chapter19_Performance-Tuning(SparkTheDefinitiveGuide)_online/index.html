@@ -107,8 +107,8 @@
 <meta property="og:description" content="Chapter 19 Performance Tuning 性能调优Chapter 18 covered the Spark user interface (UI) and basic first-aid for your Spark Application. Using the tools outlined in that chapter, you should be able to ens">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://img3.doubanio.com/view/subject/l/public/s29478060.jpg">
-<meta property="og:image" content="http://py5wporew.bkt.clouddn.com/SparkTheDefinitiveGuide/Chapter19/1564413229643.png">
-<meta property="og:updated_time" content="2019-09-21T03:39:05.333Z">
+<meta property="og:image" content="http://pzve054vf.bkt.clouddn.com/SparkTheDefinitiveGuide/Chapter19/1564413229643.png">
+<meta property="og:updated_time" content="2019-10-24T08:34:20.034Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="翻译 Charpter 19 Performance Tuning">
 <meta name="twitter:description" content="Chapter 19 Performance Tuning 性能调优Chapter 18 covered the Spark user interface (UI) and basic first-aid for your Spark Application. Using the tools outlined in that chapter, you should be able to ens">
@@ -609,7 +609,7 @@
 <p>图19-1给出了该过程的简单说明。</p>
 <p>We load an initial DataFrame from a CSV file and then derive some new DataFrames from it using transformations. We can avoid having to recompute the original DataFrame (i.e., load and parse the CSV file) many times by adding a line to cache it along the way.</p>
 <p>我们从csv文件加载一个初始数据帧，然后使用转换从中派生一些新的数据帧。我们可以避免多次重新计算原始数据帧（即加载和解析csv文件），方法是添加一行缓存它。</p>
-<p><img src="http://py5wporew.bkt.clouddn.com/SparkTheDefinitiveGuide/Chapter19/1564413229643.png" alt="1564413229643"></p>
+<p><img src="http://pzve054vf.bkt.clouddn.com/SparkTheDefinitiveGuide/Chapter19/1564413229643.png" alt="1564413229643"></p>
 <p>Now let’s walk through the code:</p>
 <p>现在让我们完整地学习一个代码：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># in Python</span></span><br><span class="line"><span class="comment"># Original loading code that does *not* cache DataFrame</span></span><br><span class="line">DF1 = spark.read.format(<span class="string">"csv"</span>)\</span><br><span class="line">.option(<span class="string">"inferSchema"</span>, <span class="string">"true"</span>)\</span><br><span class="line">.option(<span class="string">"header"</span>, <span class="string">"true"</span>)\</span><br><span class="line">.load(<span class="string">"/data/flight-data/csv/2015-summary.csv"</span>)</span><br><span class="line">DF2 = DF1.groupBy(<span class="string">"DEST_COUNTRY_NAME"</span>).count().collect()</span><br><span class="line">DF3 = DF1.groupBy(<span class="string">"ORIGIN_COUNTRY_NAME"</span>).count().collect()</span><br><span class="line">DF4 = DF1.groupBy(<span class="string">"count"</span>).count().collect()</span><br></pre></td></tr></table></figure>
