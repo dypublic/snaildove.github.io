@@ -107,7 +107,7 @@
 <meta property="og:description" content="前言本文是对 官网：Architecture of Apache Hadoop YARN 的翻译，记录本篇的时候，版本为 2.9.2。本文简单过一下，深入了解可以看看列出的参考资料。 正文The fundamental idea of YARN is to split up the functionalities of resource management and job scheduling">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/yarn_architecture.gif">
-<meta property="og:updated_time" content="2019-12-02T14:48:06.946Z">
+<meta property="og:updated_time" content="2020-01-08T03:48:30.489Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="了解Hadoop YARN架构">
 <meta name="twitter:description" content="前言本文是对 官网：Architecture of Apache Hadoop YARN 的翻译，记录本篇的时候，版本为 2.9.2。本文简单过一下，深入了解可以看看列出的参考资料。 正文The fundamental idea of YARN is to split up the functionalities of resource management and job scheduling">
@@ -416,7 +416,7 @@
                   <span class="post-meta-item-text">Words count in article</span>
                 
                 <span title="Words count in article">
-                  1,467
+                  1,444
                 </span>
               
 
@@ -457,7 +457,7 @@
 <h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><p>The fundamental idea of YARN is to split up the functionalities of resource management and job scheduling/monitoring into separate daemons. The idea is to have a global ResourceManager (RM) and per-application ApplicationMaster (AM). An application is either a single job or a DAG of jobs.</p>
 <p>YARN 的基本思想是将资源管理和作业调度/监视功能拆分为单独的守护进程。其想法是拥有一个全局资源管理器（ResourceManager: RM）和每个应用程序的应用程序主控器（ApplicationMaster：AM）。应用程序可以是单个作业，也可以是一个DAG作业。</p>
 <p>The ResourceManager and the NodeManager form the data-computation framework. The ResourceManager is <font color="#32cd32">the ultimate authority</font> that arbitrates resources among all the applications in the system. The NodeManager is the per-machine framework agent who is responsible for containers, monitoring their resource usage (cpu, memory, disk, network) and reporting the same to the ResourceManager/Scheduler.</p>
-<p>资源管理器和节点管理器构成了数据计算框架。资源管理器是在系统中所有应用程序之间仲裁资源的最高权威（机构）。节点管理器是每台计算机框架的代理负责容器、监视其资源使用情况（CPU、内存、磁盘、网络），并向资源管理器（<strong>ResourceManager</strong>）/调度程序（<strong>Scheduler</strong>）报告这些情况。</p>
+<p>ResourceManager 和 NodeManager 构成了数据计算框架。ResourceManager 是在系统中所有应用程序之间仲裁资源的最高权威（机构）。NodeManager 是每台计算机框架的代理，它负责容器、监视其资源使用情况（CPU、内存、磁盘、网络），并向资源管理器（<strong>ResourceManager</strong>）/调度程序（<strong>Scheduler</strong>）报告这些情况。</p>
 <p>The per-application ApplicationMaster is, in effect, a framework specific library and is tasked with negotiating resources from the ResourceManager and working with the NodeManager(s) to execute and monitor the tasks.</p>
 <p>实际上，每个应用程序的 ApplicationMaster  是一个特定于框架的库，它的任务是与ResourceManager协商资源，并与节点管理器一起执行和监视任务。</p>
 <p><img src="https://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/yarn_architecture.gif" alt="MapReduce NextGen Architecture"></p>
@@ -470,13 +470,13 @@
 <p> 调度器有一个可插拔的策略，负责在不同的队列、应用程序等之间划分集群资源。当前的调度器（如<a href="https://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/CapacityScheduler.html" target="_blank" rel="noopener">CapacityScheduler</a> 和 <a href="https://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/FairScheduler.html" target="_blank" rel="noopener">FairScheduler</a>）是插件的一些示例。</p>
 </li>
 <li><p>The ApplicationsManager is responsible for accepting job-submissions, negotiating the first container for executing the application specific ApplicationMaster and provides the service for restarting the ApplicationMaster container on failure. The per-application ApplicationMaster has the responsibility of negotiating appropriate resource containers from the Scheduler, tracking their status and monitoring for progress.</p>
-<p> <strong>ApplicationsManager</strong> 负责接受作业的提交过程，协商得到用来执行应用程序相关的 ApplicationMaster  的第一个容器，并提供在失败时重新启动 ApplicationMaster  容器的服务。每个应用程序的 ApplicationMaster  负责从调度器协商适当的资源容器，跟踪它们的状态并监控进度。</p>
+<p> <strong>ApplicationsManager</strong>负责接受作业提交、协商用于执行某一个具体应用程序的ApplicationMaster的第一个容器，并提供在失败时重新启动ApplicationMaster容器的服务。每个应用程序ApplicationMaster负责与Scheduler协商合适的资源容器，跟踪其状态并监视进度。</p>
 </li>
 </ol>
 <p>MapReduce in hadoop-2.x maintains API compatibility with previous stable release (hadoop-1.x). This means that all MapReduce jobs should still run unchanged on top of YARN with just a recompile.</p>
 <p><strong>hadoop-2.x中的 MapReduce 与以前的稳定版本（hadoop-1.x）保持API兼容性</strong>。这意味着，所有 MapReduce  作业都应该在 YARN 上保持不变，只需重新编译即可。</p>
 <p>YARN supports the notion of resource reservation via the <a href="https://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/ReservationSystem.html" target="_blank" rel="noopener">ReservationSystem</a>, a component that allows users to specify a profile of resources over-time and temporal constraints (e.g., deadlines), and reserve resources to ensure the predictable execution of important jobs.The ReservationSystem tracks resources over-time, performs admission control for reservations, and dynamically instruct the underlying scheduler to ensure that the reservation is fullfilled.</p>
-<p>YARN 支持通过 <strong>ReservationSystem</strong> 保留资源的概念，<a href="https://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/ReservationSystem.html" target="_blank" rel="noopener">ReservationSystem</a> 是一个组件，允许用户指定一个临时和时间限制的资源配置文件（例如截止日期），并保留资源以确保重要作业的可预测执行。ReservationSystem 跟踪随着时间的推移，资源将对预订执行许可控制，并动态指示基础调度器以确保预订得到执行。</p>
+<p>YARN 支持通过 <strong>ReservationSystem</strong> 保存资源的概念，<a href="https://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/ReservationSystem.html" target="_blank" rel="noopener">ReservationSystem</a> 是一个组件，允许用户指定一个临时和时间限制的资源配置文件（例如截止日期），并保存资源以确保重要作业的可预测执行。ReservationSystem 跟踪随着时间的推移，资源将对预订执行许可控制，并动态指示基础调度器以确保预订得到执行。</p>
 <p>In order to scale YARN beyond few thousands nodes, YARN supports the notion of Federation via the <a href="https://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/Federation.html" target="_blank" rel="noopener">YARN Federation</a> feature. Federation allows to transparently wire together multiple yarn (sub-)clusters, and make them appear as a single massive cluster. This can be used to achieve larger scale, and/or to allow multiple independent clusters to be used together for very large jobs, or for tenants who have capacity across all of them.</p>
 <p><strong>为了将YARN扩展到数千个节点之外，YARN 通过 <a href="https://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/Federation.html" target="_blank" rel="noopener">YARN Federation</a> 特性支持 Federation 的概念。</strong>联邦（Federation）允许透明地将多个YARN（子）集群连接在一起，并使它们看起来像一个单独的大集群。这可以用于实现更大的规模，和/或允许将多个独立的集群一起用于非常大的工作，或用于具有所有能力使用所有集群的租户（tennant: 用户。租户）。</p>
 <font color="red">YARN Federation 详细参考的另一篇读记：<a href="https://snaildove.github.io/2019/05/14/HadoopYARNFederation">Hadoop YARN Federation</a></font>
@@ -674,7 +674,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">117</span>
+                  <span class="site-state-item-count">118</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -696,7 +696,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">30</span>
+                  <span class="site-state-item-count">33</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -708,7 +708,7 @@
 				<h4 class="widget-title">Tag Cloud</h4>
 					<div id="myCanvasContainer" class="widget tagcloud">
 					<canvas width="250" height="250" id="resCanvas" style="width=100%">
-						<ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Basic-Algorithm/">Basic Algorithm</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Calculus-and-Differential/">Calculus and Differential</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Data-Structure/">Data Structure</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Distributed-System/">Distributed System</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hadoop-YARN/">Hadoop YARN</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Improving-Deep-Neural-Networks/">Improving Deep Neural Networks</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Information-Theory/">Information Theory</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Latex/">Latex</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning/">Machine Learning</a><span class="tag-list-count">27</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning-by-Andrew-NG/">Machine Learning by Andrew NG</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning，-feature-engineering/">Machine Learning， feature engineering</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/NLP/">NLP</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python-Data-Science-Cookbook/">Python Data Science Cookbook</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Spark/">Spark</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Structuring-Machine-Learning-Projects/">Structuring Machine Learning Projects</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/XGBoost/">XGBoost</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/convolutional-neural-networks/">convolutional-neural-networks</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/deep-learning/">deep learning</a><span class="tag-list-count">41</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/english/">english</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/">java</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/kaggle/">kaggle</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linear-algebra/">linear_algebra</a><span class="tag-list-count">13</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/neural-networks-deep-learning/">neural-networks-deep-learning</a><span class="tag-list-count">8</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nlp-sequence-models/">nlp-sequence-models</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/probability/">probability</a><span class="tag-list-count">13</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/spark/">spark</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/统计学习方法/">统计学习方法</a><span class="tag-list-count">4</span></li></ul>
+						<ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Basic-Algorithm/">Basic Algorithm</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Calculus-and-Differential/">Calculus and Differential</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Data-Structure/">Data Structure</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Distributed-System/">Distributed System</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hadoop-YARN/">Hadoop YARN</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Improving-Deep-Neural-Networks/">Improving Deep Neural Networks</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Information-Theory/">Information Theory</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Latex/">Latex</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning/">Machine Learning</a><span class="tag-list-count">27</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning-by-Andrew-NG/">Machine Learning by Andrew NG</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning，-feature-engineering/">Machine Learning， feature engineering</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/NLP/">NLP</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python-Data-Science-Cookbook/">Python Data Science Cookbook</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Spark/">Spark</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Structuring-Machine-Learning-Projects/">Structuring Machine Learning Projects</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/XGBoost/">XGBoost</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/convolutional-neural-networks/">convolutional-neural-networks</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/deep-learning/">deep learning</a><span class="tag-list-count">41</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/distributed-system/">distributed system</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/english/">english</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/google/">google</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/">java</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/kaggle/">kaggle</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linear-algebra/">linear_algebra</a><span class="tag-list-count">13</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/neural-networks-deep-learning/">neural-networks-deep-learning</a><span class="tag-list-count">8</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nlp-sequence-models/">nlp-sequence-models</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/papers/">papers</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/probability/">probability</a><span class="tag-list-count">13</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/spark/">spark</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/统计学习方法/">统计学习方法</a><span class="tag-list-count">4</span></li></ul>
 					</canvas>
 				</div>
 			</div>
@@ -799,7 +799,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2018 &mdash; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; 2018 &mdash; <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -813,7 +813,7 @@
     
       <span class="post-meta-item-text">Site words total count</span>
     
-    <span title="Site words total count">658.7k</span>
+    <span title="Site words total count">685.7k</span>
   
 </div>
 
