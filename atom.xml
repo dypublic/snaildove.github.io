@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://snaildove.github.io/"/>
-  <updated>2020-01-08T03:48:38.629Z</updated>
+  <updated>2020-01-29T13:40:25.800Z</updated>
   <id>https://snaildove.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://snaildove.github.io/2019/08/13/Chapter19_Performance-Tuning(SparkTheDefinitiveGuide)_online/"/>
     <id>https://snaildove.github.io/2019/08/13/Chapter19_Performance-Tuning(SparkTheDefinitiveGuide)_online/</id>
     <published>2019-08-12T16:00:00.000Z</published>
-    <updated>2020-01-08T03:48:38.629Z</updated>
+    <updated>2020-01-29T13:40:25.800Z</updated>
     
     <summary type="html">
     
@@ -48,7 +48,7 @@
     <link href="https://snaildove.github.io/2019/08/10/Chapter18_Monitoring-and-Debugging(SparkTheDefinitiveGuide)_online/"/>
     <id>https://snaildove.github.io/2019/08/10/Chapter18_Monitoring-and-Debugging(SparkTheDefinitiveGuide)_online/</id>
     <published>2019-08-09T16:00:00.000Z</published>
-    <updated>2020-01-08T03:48:38.415Z</updated>
+    <updated>2020-01-29T13:40:25.548Z</updated>
     
     <summary type="html">
     
@@ -75,7 +75,7 @@
     <link href="https://snaildove.github.io/2019/08/10/Chapter23_StructuredStreamingInProduction(SparkTheDefinitiveGuide)_online/"/>
     <id>https://snaildove.github.io/2019/08/10/Chapter23_StructuredStreamingInProduction(SparkTheDefinitiveGuide)_online/</id>
     <published>2019-08-09T16:00:00.000Z</published>
-    <updated>2020-01-08T03:48:38.965Z</updated>
+    <updated>2020-01-29T13:40:26.303Z</updated>
     
     <summary type="html">
     
@@ -102,7 +102,7 @@
     <link href="https://snaildove.github.io/2019/08/07/Chapter17_Deploying-Spark(SparkTheDefinitiveGuide)_online/"/>
     <id>https://snaildove.github.io/2019/08/07/Chapter17_Deploying-Spark(SparkTheDefinitiveGuide)_online/</id>
     <published>2019-08-06T16:00:00.000Z</published>
-    <updated>2020-01-08T03:48:38.273Z</updated>
+    <updated>2020-01-29T13:40:25.300Z</updated>
     
     <summary type="html">
     
@@ -129,7 +129,7 @@
     <link href="https://snaildove.github.io/2019/08/05/Chapter16_DevelopingSparkApplications(SparkTheDefinitiveGuide)_online/"/>
     <id>https://snaildove.github.io/2019/08/05/Chapter16_DevelopingSparkApplications(SparkTheDefinitiveGuide)_online/</id>
     <published>2019-08-04T16:00:00.000Z</published>
-    <updated>2020-01-08T03:48:38.095Z</updated>
+    <updated>2020-01-29T13:40:25.047Z</updated>
     
     <summary type="html">
     
@@ -156,7 +156,7 @@
     <link href="https://snaildove.github.io/2019/08/05/Chapter15_HowSparkRuns-on-a-Cluster(SparkTheDefinitiveGuide)_online/"/>
     <id>https://snaildove.github.io/2019/08/05/Chapter15_HowSparkRuns-on-a-Cluster(SparkTheDefinitiveGuide)_online/</id>
     <published>2019-08-04T16:00:00.000Z</published>
-    <updated>2020-01-08T03:48:37.908Z</updated>
+    <updated>2020-01-29T13:40:24.754Z</updated>
     
     <summary type="html">
     
@@ -183,7 +183,7 @@
     <link href="https://snaildove.github.io/2019/06/02/Chapter20_StreamProcessingFundamentals(SparkTheDefinitiveGuide)_online/"/>
     <id>https://snaildove.github.io/2019/06/02/Chapter20_StreamProcessingFundamentals(SparkTheDefinitiveGuide)_online/</id>
     <published>2019-06-01T16:00:00.000Z</published>
-    <updated>2020-01-08T03:48:38.805Z</updated>
+    <updated>2020-01-29T13:40:26.060Z</updated>
     
     <summary type="html">
     
@@ -210,7 +210,7 @@
     <link href="https://snaildove.github.io/2019/05/14/HadoopYARNFederation/"/>
     <id>https://snaildove.github.io/2019/05/14/HadoopYARNFederation/</id>
     <published>2019-05-13T16:00:00.000Z</published>
-    <updated>2020-01-08T03:48:50.250Z</updated>
+    <updated>2020-01-29T13:40:30.498Z</updated>
     
     <summary type="html">
     
@@ -238,7 +238,7 @@
     <link href="https://snaildove.github.io/2019/03/10/Transformer_learning-resources/"/>
     <id>https://snaildove.github.io/2019/03/10/Transformer_learning-resources/</id>
     <published>2019-03-09T16:00:00.000Z</published>
-    <updated>2020-01-08T03:49:14.610Z</updated>
+    <updated>2020-01-29T13:40:40.238Z</updated>
     
     <summary type="html">
     
@@ -266,7 +266,7 @@
     <link href="https://snaildove.github.io/2019/02/01/Achitecture_of_Apache_Hadoop_YARN/"/>
     <id>https://snaildove.github.io/2019/02/01/Achitecture_of_Apache_Hadoop_YARN/</id>
     <published>2019-01-31T16:00:00.000Z</published>
-    <updated>2020-01-08T03:48:30.489Z</updated>
+    <updated>2020-01-29T13:40:22.983Z</updated>
     
     <summary type="html">
     
@@ -294,7 +294,7 @@
     <link href="https://snaildove.github.io/2019/01/06/Titanic_with_name_sex_age_and_ticket_features-0.82275-0.83732/"/>
     <id>https://snaildove.github.io/2019/01/06/Titanic_with_name_sex_age_and_ticket_features-0.82275-0.83732/</id>
     <published>2019-01-05T16:00:00.000Z</published>
-    <updated>2020-01-08T03:49:14.243Z</updated>
+    <updated>2020-01-29T13:40:40.043Z</updated>
     
     <summary type="html">
     
@@ -302,7 +302,7 @@
       
         
         
-          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;&lt;img src=&quot;http://q3rrj5fj6.bkt.clouddn.com/gitpages/kaggle/Titanic/1.png&quot;
+          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;&lt;img src=&quot;http://q4vftizgw.bkt.clouddn.com/gitpages/kaggle/Titanic/1.png&quot;
         
       
     
@@ -320,7 +320,7 @@
     <link href="https://snaildove.github.io/2019/01/01/Maximum-Likelihood-Estimation_VS_Bayes-Estimation/"/>
     <id>https://snaildove.github.io/2019/01/01/Maximum-Likelihood-Estimation_VS_Bayes-Estimation/</id>
     <published>2018-12-31T16:00:00.000Z</published>
-    <updated>2020-01-08T03:48:55.716Z</updated>
+    <updated>2020-01-29T13:40:32.992Z</updated>
     
     <summary type="html">
     
@@ -346,7 +346,7 @@
     <link href="https://snaildove.github.io/2018/12/28/foundations_of_spark_programming/"/>
     <id>https://snaildove.github.io/2018/12/28/foundations_of_spark_programming/</id>
     <published>2018-12-27T16:00:00.000Z</published>
-    <updated>2020-01-08T03:48:49.267Z</updated>
+    <updated>2020-01-29T13:40:29.057Z</updated>
     
     <summary type="html">
     
@@ -372,7 +372,7 @@
     <link href="https://snaildove.github.io/2018/12/18/get_started_feature-engineering/"/>
     <id>https://snaildove.github.io/2018/12/18/get_started_feature-engineering/</id>
     <published>2018-12-17T16:00:00.000Z</published>
-    <updated>2020-01-08T03:48:49.684Z</updated>
+    <updated>2020-01-29T13:40:29.574Z</updated>
     
     <summary type="html">
     
@@ -400,7 +400,7 @@
     <link href="https://snaildove.github.io/2018/10/02/get-started-XGBoost/"/>
     <id>https://snaildove.github.io/2018/10/02/get-started-XGBoost/</id>
     <published>2018-10-01T16:00:00.000Z</published>
-    <updated>2020-01-08T03:48:49.852Z</updated>
+    <updated>2020-01-29T13:40:29.827Z</updated>
     
     <summary type="html">
     
@@ -426,7 +426,7 @@
     <link href="https://snaildove.github.io/2018/10/01/4.Naive-Bayes_LiHang-Statistical-Learning-Methods/"/>
     <id>https://snaildove.github.io/2018/10/01/4.Naive-Bayes_LiHang-Statistical-Learning-Methods/</id>
     <published>2018-09-30T16:00:00.000Z</published>
-    <updated>2020-01-08T03:48:28.662Z</updated>
+    <updated>2020-01-29T13:40:22.268Z</updated>
     
     <summary type="html">
     
@@ -454,7 +454,7 @@
     <link href="https://snaildove.github.io/2018/10/01/8.Booting-Methods_LiHang-Statistical-Learning-Methods/"/>
     <id>https://snaildove.github.io/2018/10/01/8.Booting-Methods_LiHang-Statistical-Learning-Methods/</id>
     <published>2018-09-30T16:00:00.000Z</published>
-    <updated>2020-01-08T03:48:29.189Z</updated>
+    <updated>2020-01-29T13:40:22.493Z</updated>
     
     <summary type="html">
     
@@ -482,7 +482,7 @@
     <link href="https://snaildove.github.io/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/"/>
     <id>https://snaildove.github.io/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/</id>
     <published>2018-09-30T16:00:00.000Z</published>
-    <updated>2020-01-08T03:48:29.916Z</updated>
+    <updated>2020-01-29T13:40:22.736Z</updated>
     
     <summary type="html">
     
@@ -510,7 +510,7 @@
     <link href="https://snaildove.github.io/2018/10/01/summary_of_LiHang_Statistical-learning-methods/"/>
     <id>https://snaildove.github.io/2018/10/01/summary_of_LiHang_Statistical-learning-methods/</id>
     <published>2018-09-30T16:00:00.000Z</published>
-    <updated>2020-01-08T03:49:09.199Z</updated>
+    <updated>2020-01-29T13:40:38.292Z</updated>
     
     <summary type="html">
     
@@ -538,7 +538,7 @@
     <link href="https://snaildove.github.io/2018/06/28/summary_of_learning_of_Deep_Learning_Specializatio_on_Coursera/"/>
     <id>https://snaildove.github.io/2018/06/28/summary_of_learning_of_Deep_Learning_Specializatio_on_Coursera/</id>
     <published>2018-06-27T16:00:00.000Z</published>
-    <updated>2020-01-08T03:49:08.385Z</updated>
+    <updated>2020-01-29T13:40:38.085Z</updated>
     
     <summary type="html">
     
