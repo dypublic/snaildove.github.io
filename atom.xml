@@ -88,11 +88,11 @@
   </entry>
   
   <entry>
-    <title>翻译 Chapter 23 Structured Streaming in Production</title>
-    <link href="https://snaildove.github.io/2019/08/10/Chapter23_StructuredStreamingInProduction(SparkTheDefinitiveGuide)_online/"/>
-    <id>https://snaildove.github.io/2019/08/10/Chapter23_StructuredStreamingInProduction(SparkTheDefinitiveGuide)_online/</id>
+    <title>翻译 Chapter18_Monitoring-and-Debugging</title>
+    <link href="https://snaildove.github.io/2019/08/10/Chapter18_Monitoring-and-Debugging(SparkTheDefinitiveGuide)_online/"/>
+    <id>https://snaildove.github.io/2019/08/10/Chapter18_Monitoring-and-Debugging(SparkTheDefinitiveGuide)_online/</id>
     <published>2019-08-09T16:00:00.000Z</published>
-    <updated>2020-01-29T13:40:26.303Z</updated>
+    <updated>2020-01-29T13:40:25.548Z</updated>
     
     <summary type="html">
     
@@ -115,11 +115,11 @@
   </entry>
   
   <entry>
-    <title>翻译 Chapter18_Monitoring-and-Debugging</title>
-    <link href="https://snaildove.github.io/2019/08/10/Chapter18_Monitoring-and-Debugging(SparkTheDefinitiveGuide)_online/"/>
-    <id>https://snaildove.github.io/2019/08/10/Chapter18_Monitoring-and-Debugging(SparkTheDefinitiveGuide)_online/</id>
+    <title>翻译 Chapter 23 Structured Streaming in Production</title>
+    <link href="https://snaildove.github.io/2019/08/10/Chapter23_StructuredStreamingInProduction(SparkTheDefinitiveGuide)_online/"/>
+    <id>https://snaildove.github.io/2019/08/10/Chapter23_StructuredStreamingInProduction(SparkTheDefinitiveGuide)_online/</id>
     <published>2019-08-09T16:00:00.000Z</published>
-    <updated>2020-01-29T13:40:25.548Z</updated>
+    <updated>2020-01-29T13:40:26.303Z</updated>
     
     <summary type="html">
     
@@ -466,11 +466,11 @@
   </entry>
   
   <entry>
-    <title>《统计学习方法总结》</title>
-    <link href="https://snaildove.github.io/2018/10/01/summary_of_LiHang_Statistical-learning-methods/"/>
-    <id>https://snaildove.github.io/2018/10/01/summary_of_LiHang_Statistical-learning-methods/</id>
+    <title>《统计学习方法》第9章 EM/GMM/F-MM/GEM</title>
+    <link href="https://snaildove.github.io/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/"/>
+    <id>https://snaildove.github.io/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/</id>
     <published>2018-09-30T16:00:00.000Z</published>
-    <updated>2020-01-29T13:40:38.292Z</updated>
+    <updated>2020-01-29T13:40:22.736Z</updated>
     
     <summary type="html">
     
@@ -478,7 +478,7 @@
       
         
         
-          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;这是个人学习完&lt;a href=&quot;http://www.hangli-hl.com/index.html&quot; target=&quot;_blank&quot;
+          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;
         
       
     
@@ -522,11 +522,11 @@
   </entry>
   
   <entry>
-    <title>《统计学习方法》第9章 EM/GMM/F-MM/GEM</title>
-    <link href="https://snaildove.github.io/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/"/>
-    <id>https://snaildove.github.io/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/</id>
+    <title>《统计学习方法总结》</title>
+    <link href="https://snaildove.github.io/2018/10/01/summary_of_LiHang_Statistical-learning-methods/"/>
+    <id>https://snaildove.github.io/2018/10/01/summary_of_LiHang_Statistical-learning-methods/</id>
     <published>2018-09-30T16:00:00.000Z</published>
-    <updated>2020-01-29T13:40:22.736Z</updated>
+    <updated>2020-01-29T13:40:38.292Z</updated>
     
     <summary type="html">
     
@@ -534,7 +534,7 @@
       
         
         
-          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;
+          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;这是个人学习完&lt;a href=&quot;http://www.hangli-hl.com/index.html&quot; target=&quot;_blank&quot;
         
       
     
