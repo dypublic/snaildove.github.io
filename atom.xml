@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://snaildove.github.io/"/>
-  <updated>2020-02-01T03:37:27.534Z</updated>
+  <updated>2020-02-02T03:19:27.902Z</updated>
   <id>https://snaildove.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://snaildove.github.io/2019/12/31/Paper-Google-Bigtable_translation-and-summary_online/"/>
     <id>https://snaildove.github.io/2019/12/31/Paper-Google-Bigtable_translation-and-summary_online/</id>
     <published>2019-12-30T16:00:00.000Z</published>
-    <updated>2020-02-01T03:37:27.534Z</updated>
+    <updated>2020-02-02T03:19:27.902Z</updated>
     
     <summary type="html">
     
@@ -45,7 +45,7 @@
     <link href="https://snaildove.github.io/2019/12/11/a-brief-introduction-of-Paxos-Raft-ZAB/"/>
     <id>https://snaildove.github.io/2019/12/11/a-brief-introduction-of-Paxos-Raft-ZAB/</id>
     <published>2019-12-10T16:00:00.000Z</published>
-    <updated>2020-02-01T03:37:05.694Z</updated>
+    <updated>2020-02-02T03:20:58.738Z</updated>
     
     <summary type="html">
     
@@ -169,11 +169,11 @@
   </entry>
   
   <entry>
-    <title>翻译 Chapter 16 Developing Spark Applications</title>
-    <link href="https://snaildove.github.io/2019/08/05/Chapter16_DevelopingSparkApplications(SparkTheDefinitiveGuide)_online/"/>
-    <id>https://snaildove.github.io/2019/08/05/Chapter16_DevelopingSparkApplications(SparkTheDefinitiveGuide)_online/</id>
+    <title>翻译 Chapter 15 How Spark Runs on a Cluster</title>
+    <link href="https://snaildove.github.io/2019/08/05/Chapter15_HowSparkRuns-on-a-Cluster(SparkTheDefinitiveGuide)_online/"/>
+    <id>https://snaildove.github.io/2019/08/05/Chapter15_HowSparkRuns-on-a-Cluster(SparkTheDefinitiveGuide)_online/</id>
     <published>2019-08-04T16:00:00.000Z</published>
-    <updated>2020-01-29T13:40:25.047Z</updated>
+    <updated>2020-01-29T13:40:24.754Z</updated>
     
     <summary type="html">
     
@@ -196,11 +196,11 @@
   </entry>
   
   <entry>
-    <title>翻译 Chapter 15 How Spark Runs on a Cluster</title>
-    <link href="https://snaildove.github.io/2019/08/05/Chapter15_HowSparkRuns-on-a-Cluster(SparkTheDefinitiveGuide)_online/"/>
-    <id>https://snaildove.github.io/2019/08/05/Chapter15_HowSparkRuns-on-a-Cluster(SparkTheDefinitiveGuide)_online/</id>
+    <title>翻译 Chapter 16 Developing Spark Applications</title>
+    <link href="https://snaildove.github.io/2019/08/05/Chapter16_DevelopingSparkApplications(SparkTheDefinitiveGuide)_online/"/>
+    <id>https://snaildove.github.io/2019/08/05/Chapter16_DevelopingSparkApplications(SparkTheDefinitiveGuide)_online/</id>
     <published>2019-08-04T16:00:00.000Z</published>
-    <updated>2020-01-29T13:40:24.754Z</updated>
+    <updated>2020-01-29T13:40:25.047Z</updated>
     
     <summary type="html">
     
@@ -494,11 +494,11 @@
   </entry>
   
   <entry>
-    <title>《统计学习方法总结》</title>
-    <link href="https://snaildove.github.io/2018/10/01/summary_of_LiHang_Statistical-learning-methods/"/>
-    <id>https://snaildove.github.io/2018/10/01/summary_of_LiHang_Statistical-learning-methods/</id>
+    <title>《统计学习方法》第4章 NaiveBayes</title>
+    <link href="https://snaildove.github.io/2018/10/01/4.Naive-Bayes_LiHang-Statistical-Learning-Methods/"/>
+    <id>https://snaildove.github.io/2018/10/01/4.Naive-Bayes_LiHang-Statistical-Learning-Methods/</id>
     <published>2018-09-30T16:00:00.000Z</published>
-    <updated>2020-01-29T13:40:38.292Z</updated>
+    <updated>2020-01-29T13:40:22.268Z</updated>
     
     <summary type="html">
     
@@ -506,7 +506,7 @@
       
         
         
-          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;这是个人学习完&lt;a href=&quot;http://www.hangli-hl.com/index.html&quot; target=&quot;_blank&quot;
+          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;
         
       
     
