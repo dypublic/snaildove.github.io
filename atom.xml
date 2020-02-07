@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://snaildove.github.io/"/>
-  <updated>2020-02-07T09:50:54.984Z</updated>
+  <updated>2020-02-07T11:19:12.263Z</updated>
   <id>https://snaildove.github.io/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>读书笔记——第2章Java内存区域与内存溢出异常&lt;br/&gt;&lt;font size=&quot;3&quot;&gt;《深入理解Java虚拟机：JVM高级特性与最佳实践（第3版）》&lt;/font&gt;</title>
-    <link href="https://snaildove.github.io/2019/12/31/%E7%AC%AC2%E7%AB%A0-Java%E5%86%85%E5%AD%98%E5%8C%BA%E5%9F%9F%E4%B8%8E%E5%86%85%E5%AD%98%E6%BA%A2%E5%87%BA%E5%BC%82%E5%B8%B8%E3%80%8A%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Java%E8%99%9A%E6%8B%9F%E6%9C%BA%EF%BC%9AJVM%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7%E4%B8%8E%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%EF%BC%88%E7%AC%AC3%E7%89%88%EF%BC%89%E3%80%8B/"/>
-    <id>https://snaildove.github.io/2019/12/31/第2章-Java内存区域与内存溢出异常《深入理解Java虚拟机：JVM高级特性与最佳实践（第3版）》/</id>
-    <published>2019-12-30T16:00:00.000Z</published>
-    <updated>2020-02-07T09:50:54.984Z</updated>
+    <link href="https://snaildove.github.io/2020/01/06/%E7%AC%AC2%E7%AB%A0-Java%E5%86%85%E5%AD%98%E5%8C%BA%E5%9F%9F%E4%B8%8E%E5%86%85%E5%AD%98%E6%BA%A2%E5%87%BA%E5%BC%82%E5%B8%B8%E3%80%8A%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Java%E8%99%9A%E6%8B%9F%E6%9C%BA%EF%BC%9AJVM%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7%E4%B8%8E%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%EF%BC%88%E7%AC%AC3%E7%89%88%EF%BC%89%E3%80%8B/"/>
+    <id>https://snaildove.github.io/2020/01/06/第2章-Java内存区域与内存溢出异常《深入理解Java虚拟机：JVM高级特性与最佳实践（第3版）》/</id>
+    <published>2020-01-05T16:00:00.000Z</published>
+    <updated>2020-02-07T11:19:12.263Z</updated>
     
     <summary type="html">
     
@@ -32,11 +32,7 @@
       <category term="English,中文" scheme="https://snaildove.github.io/categories/English-%E4%B8%AD%E6%96%87/"/>
     
     
-      <category term="distributed system" scheme="https://snaildove.github.io/tags/distributed-system/"/>
-    
-      <category term="papers" scheme="https://snaildove.github.io/tags/papers/"/>
-    
-      <category term="google" scheme="https://snaildove.github.io/tags/google/"/>
+      <category term="java" scheme="https://snaildove.github.io/tags/java/"/>
     
   </entry>
   
@@ -79,7 +75,7 @@
     
     <summary type="html">
     
-      有东西被加密了, 请输入密码查看.
+      Here&#39;s something encrypted, password is required to continue reading.
     
     </summary>
     
@@ -496,11 +492,11 @@
   </entry>
   
   <entry>
-    <title>《统计学习方法》第4章 NaiveBayes</title>
-    <link href="https://snaildove.github.io/2018/10/01/4.Naive-Bayes_LiHang-Statistical-Learning-Methods/"/>
-    <id>https://snaildove.github.io/2018/10/01/4.Naive-Bayes_LiHang-Statistical-Learning-Methods/</id>
+    <title>《统计学习方法》第9章 EM/GMM/F-MM/GEM</title>
+    <link href="https://snaildove.github.io/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/"/>
+    <id>https://snaildove.github.io/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/</id>
     <published>2018-09-30T16:00:00.000Z</published>
-    <updated>2020-01-29T13:40:22.268Z</updated>
+    <updated>2020-01-29T13:40:22.736Z</updated>
     
     <summary type="html">
     
@@ -524,11 +520,11 @@
   </entry>
   
   <entry>
-    <title>《统计学习方法》第9章 EM/GMM/F-MM/GEM</title>
-    <link href="https://snaildove.github.io/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/"/>
-    <id>https://snaildove.github.io/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/</id>
+    <title>《统计学习方法》第4章 NaiveBayes</title>
+    <link href="https://snaildove.github.io/2018/10/01/4.Naive-Bayes_LiHang-Statistical-Learning-Methods/"/>
+    <id>https://snaildove.github.io/2018/10/01/4.Naive-Bayes_LiHang-Statistical-Learning-Methods/</id>
     <published>2018-09-30T16:00:00.000Z</published>
-    <updated>2020-01-29T13:40:22.736Z</updated>
+    <updated>2020-01-29T13:40:22.268Z</updated>
     
     <summary type="html">
     
