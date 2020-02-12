@@ -313,7 +313,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://snaildove.github.io/2016/01/20/vim_without_widgets/">
+    <link itemprop="mainEntityOfPage" href="https://snaildove.github.io/2017/08/26/cumulative_distribution_function/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="SnailDove">
@@ -332,7 +332,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2016/01/20/vim_without_widgets/" itemprop="url">vim无插件使用</a></h1>
+                <a class="post-title-link" href="/2017/08/26/cumulative_distribution_function/" itemprop="url">经典摘录-[累积]分布函数CDF</a></h1>
         
 
         <div class="post-meta">
@@ -345,8 +345,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-01-20T20:16:00+08:00">
-                2016-01-20
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-26T20:16:00+08:00">
+                2017-08-26
               </time>
             
 
@@ -399,7 +399,7 @@
                   <span class="post-meta-item-text">Words count in article</span>
                 
                 <span title="Words count in article">
-                  7,253
+                  2,946
                 </span>
               
 
@@ -415,7 +415,7 @@
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
                 <span title="Reading time">
-                  28
+                  13
                 </span>
               
             </div>
@@ -438,17 +438,13 @@
       
         
           
-           本文根据使用经验，会持续更新。
-vim的四种模式
-一般模式：normal模式。可以移动光标，删除字符或整行，也可复制、粘贴文件数据。打开vim就是进入这个模式，3个模式的切换也是在这里中转。
-编辑模式：一般模式下按下i I o O a A r R s S 任何一个进入该模式。可以编辑文件内容，按Esc回到一般模式。 
-
-i I是insert（在光标所在字符前和行首）
-o O是open新行（在光标
+           说明：全文摘自 Introduction to probability, 2nd Edition
+分布函数我们分别用概率质量函数 PMF(Probability Mass Function) 和概率密度函数 PDF(Probability Density Function) 来刻画随机变量 $X$ 的取值规律。现在希望用一个统一的数学工具去刻画随机变量的取值规律。  
+​分布函数（用记号 CDF
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2016/01/20/vim_without_widgets/#more" rel="contents">
+            <a class="btn" href="/2017/08/26/cumulative_distribution_function/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -499,7 +495,7 @@ o O是open新行（在光标
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://snaildove.github.io/2015/05/01/decision_tree/">
+    <link itemprop="mainEntityOfPage" href="https://snaildove.github.io/2017/08/26/mean_and_variance_of_uniform_random_variable/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="SnailDove">
@@ -518,7 +514,7 @@ o O是open新行（在光标
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2015/05/01/decision_tree/" itemprop="url">决策树学习</a></h1>
+                <a class="post-title-link" href="/2017/08/26/mean_and_variance_of_uniform_random_variable/" itemprop="url">经典摘录-均匀随机变量的均值和方差</a></h1>
         
 
         <div class="post-meta">
@@ -531,8 +527,8 @@ o O是open新行（在光标
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2015-05-01T20:16:00+08:00">
-                2015-05-01
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-26T20:16:00+08:00">
+                2017-08-26
               </time>
             
 
@@ -585,7 +581,7 @@ o O是open新行（在光标
                   <span class="post-meta-item-text">Words count in article</span>
                 
                 <span title="Words count in article">
-                  1,960
+                  603
                 </span>
               
 
@@ -601,7 +597,7 @@ o O是open新行（在光标
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
                 <span title="Reading time">
-                  8
+                  3
                 </span>
               
             </div>
@@ -624,15 +620,15 @@ o O是open新行（在光标
       
         
           
-           决策树学习决策树学习通常包含三个方面：特征选择、决策树生成和决策树剪枝。决策树学习思想主要来源于：Quinlan在1986年提出的ID算法、在1993年提出的C4.5算法和Breiman等人在1984年提出的CART算法。
-特征选择为了解释清楚各个数学概念，引入例子
-表5.1  贷款申请样本数据表（来自李航《统计方法》）
+           说明：全文摘自Introduction to robability, 2nd Edition 
+均匀分布的离散随机变量按照定义，离散均匀随机变量的取值范围由相邻的整数所组成的有限集合，而取每个整数的概率都是相等的。这样它的分布列：
+$$p_X(k)=\cases{\frac{1}{b-a+1}, &amp; if k=a, a+1, … ,b\\0, &amp;  otherwise}$$
 
-​       上表有15个样本数据组成的贷款申请训练数据D。数据包括贷
+其
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2015/05/01/decision_tree/#more" rel="contents">
+            <a class="btn" href="/2017/08/26/mean_and_variance_of_uniform_random_variable/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -683,7 +679,7 @@ o O是open新行（在光标
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://snaildove.github.io/2014/06/01/longest_common_sub-sequence/">
+    <link itemprop="mainEntityOfPage" href="https://snaildove.github.io/2017/08/25/exponential_random_variables/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="SnailDove">
@@ -702,7 +698,7 @@ o O是open新行（在光标
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2014/06/01/longest_common_sub-sequence/" itemprop="url">动态规划-最长公共子序列</a></h1>
+                <a class="post-title-link" href="/2017/08/25/exponential_random_variables/" itemprop="url">经典摘录-指数型随机变量的均值和方差</a></h1>
         
 
         <div class="post-meta">
@@ -715,8 +711,8 @@ o O是open新行（在光标
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2014-06-01T22:16:00+08:00">
-                2014-06-01
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-25T20:16:00+08:00">
+                2017-08-25
               </time>
             
 
@@ -769,7 +765,7 @@ o O是open新行（在光标
                   <span class="post-meta-item-text">Words count in article</span>
                 
                 <span title="Words count in article">
-                  1,763
+                  1,344
                 </span>
               
 
@@ -785,7 +781,7 @@ o O是open新行（在光标
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
                 <span title="Reading time">
-                  8
+                  6
                 </span>
               
             </div>
@@ -808,11 +804,12 @@ o O是open新行（在光标
       
         
           
-           算法总体思想动态规划（Dynamic Programming）是通过组合子问题的解而解决整个问题的。分治是指将问题划分成一些独立的子问题，递归地求解各子问题，然后合并子问题的解而得到原始问题的解，与此不同，动态规划适用于子问题不是独立的情况，也就是各个子问题包含公共的子问题。在这种情况下，采用分治法会做许多不必要的工作，即重复地求解公共地子问题。动态规划算法对每个子问题只求解一次，将其结果保存在
+           说明：全文摘自 Introduction to probability, 2nd Edition 
+一个指数型随机变量是拥有以下形式的概率密度函数：$$f_X(x)=\cases{    \lambda e^{-\lambda x}, &amp; if $x\ge 0$ \\    0, &amp; 其他情况}$$这个公式中$\lambda$ 是一个正数，这是一个符合概率归一性的定义，因为：$$
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2014/06/01/longest_common_sub-sequence/#more" rel="contents">
+            <a class="btn" href="/2017/08/25/exponential_random_variables/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -863,7 +860,7 @@ o O是open新行（在光标
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://snaildove.github.io/2013/05/13/stack_application_on_expression-resolution-with-braces/">
+    <link itemprop="mainEntityOfPage" href="https://snaildove.github.io/2017/08/25/mean_and_variance_of_sample_and_estimating_probability_by_simulation/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="SnailDove">
@@ -882,7 +879,7 @@ o O是open新行（在光标
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2013/05/13/stack_application_on_expression-resolution-with-braces/" itemprop="url">含括号的运算表达式求解-栈的基础应用3</a></h1>
+                <a class="post-title-link" href="/2017/08/25/mean_and_variance_of_sample_and_estimating_probability_by_simulation/" itemprop="url">经典摘录-样本均值的期望方差与模拟的方法估计概率</a></h1>
         
 
         <div class="post-meta">
@@ -895,8 +892,8 @@ o O是open新行（在光标
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2013-05-13T22:16:00+08:00">
-                2013-05-13
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-25T20:16:00+08:00">
+                2017-08-25
               </time>
             
 
@@ -949,7 +946,7 @@ o O是open新行（在光标
                   <span class="post-meta-item-text">Words count in article</span>
                 
                 <span title="Words count in article">
-                  1,462
+                  849
                 </span>
               
 
@@ -965,7 +962,7 @@ o O是open新行（在光标
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
                 <span title="Reading time">
-                  7
+                  3
                 </span>
               
             </div>
@@ -988,16 +985,13 @@ o O是open新行（在光标
       
         
           
-           本文根据严蔚敏老师数据结构（c语言版） 写的程序 如有需要先去看视频  如有错误不当之处，欢迎指出，以免害人害己。
-例子Exp = a  b + ( c – d / e ) f
-​    前缀式：+  a b  - c / d e f
-​    中缀式：a  b  + c–d / e  f
-​    后缀式：a b   cd e /-f   +
-相同点数字都是按原式子排列的：因此操作数就按顺序入
+           样本均值的期望方差摘录自：Introduction to probability, 2nd Edition Example 2.21. Mean and Variance of the Sample Mean  
+我们希望估计总统的支持率。为此，我们随机地选取n个选民，询问他们的看法。令 $x_i​$ 表示 $i​$ 个被问的选民的态度：
+$$X_i = \cases{1, \text{若第 $
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2013/05/13/stack_application_on_expression-resolution-with-braces/#more" rel="contents">
+            <a class="btn" href="/2017/08/25/mean_and_variance_of_sample_and_estimating_probability_by_simulation/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1048,7 +1042,7 @@ o O是open新行（在光标
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://snaildove.github.io/2013/05/12/stack_application_on_line-editor_or_buff_zone/">
+    <link itemprop="mainEntityOfPage" href="https://snaildove.github.io/2017/08/24/the_two-envelopes_paradox/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="SnailDove">
@@ -1067,7 +1061,7 @@ o O是open新行（在光标
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2013/05/12/stack_application_on_line-editor_or_buff_zone/" itemprop="url">行编辑器/容错缓冲区-栈的基础应用2</a></h1>
+                <a class="post-title-link" href="/2017/08/24/the_two-envelopes_paradox/" itemprop="url">经典摘录-两个信封的悖论</a></h1>
         
 
         <div class="post-meta">
@@ -1080,8 +1074,8 @@ o O是open新行（在光标
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2013-05-12T22:16:00+08:00">
-                2013-05-12
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-24T20:16:00+08:00">
+                2017-08-24
               </time>
             
 
@@ -1134,7 +1128,7 @@ o O是open新行（在光标
                   <span class="post-meta-item-text">Words count in article</span>
                 
                 <span title="Words count in article">
-                  529
+                  1,582
                 </span>
               
 
@@ -1150,7 +1144,7 @@ o O是open新行（在光标
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
                 <span title="Reading time">
-                  2
+                  6
                 </span>
               
             </div>
@@ -1173,11 +1167,13 @@ o O是open新行（在光标
       
         
           
-           功能接收用户的从终端输入程序或数据，并存入用户的数据区。由于用户在终端上输入难免出现差错，因此，若在行编辑程序中，“每接收一个字符即存入用户数据区”显然是不合理的。较好的做法，设立一个缓冲区，用以接收用户输入的每一行字符，然后逐行存入用户数据区。允许用户输入出错，并在发现有误时可以及时更正。例如，当用户发现刚刚键入的一个字符是错的时，补进一个退格符#，以表示前一个字符无效；如果发现当前键入的行内
+           本文摘录自：Introduction to probability, 2nd Edition Example 2.18. The Two-Envelopes Paradox.  
+这是一个广泛兴趣的智力测验问题，它涉及有关条件期望的数学要点。
+主持人给你两个信封，并且告诉你两个信封里有现金，其中一个信封里的钱是另一个信封里的$m$倍（$m&gt;1$且是一个整数）。当你打开一个信封的时候，看到信
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2013/05/12/stack_application_on_line-editor_or_buff_zone/#more" rel="contents">
+            <a class="btn" href="/2017/08/24/the_two-envelopes_paradox/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1219,7 +1215,7 @@ o O是open新行（在光标
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/23/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/23/">23</a><span class="page-number current">24</span>
+    <a class="extend prev" rel="prev" href="/page/23/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/23/">23</a><span class="page-number current">24</span><a class="page-number" href="/page/25/">25</a><span class="space">&hellip;</span><a class="page-number" href="/page/28/">28</a><a class="extend next" rel="next" href="/page/25/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -1267,7 +1263,7 @@ o O是open新行（在光标
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">120</span>
+                  <span class="site-state-item-count">140</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -1301,7 +1297,7 @@ o O是open新行（在光标
 				<h4 class="widget-title">Tag Cloud</h4>
 					<div id="myCanvasContainer" class="widget tagcloud">
 					<canvas width="250" height="250" id="resCanvas" style="width=100%">
-						<ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Basic-Algorithm/">Basic Algorithm</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Calculus-and-Differential/">Calculus and Differential</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Data-Structure/">Data Structure</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Distributed-System/">Distributed System</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hadoop-YARN/">Hadoop YARN</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Improving-Deep-Neural-Networks/">Improving Deep Neural Networks</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Information-Theory/">Information Theory</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java，JVM/">Java，JVM</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Latex/">Latex</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning/">Machine Learning</a><span class="tag-list-count">27</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning-by-Andrew-NG/">Machine Learning by Andrew NG</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning，-feature-engineering/">Machine Learning， feature engineering</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/NLP/">NLP</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python-Data-Science-Cookbook/">Python Data Science Cookbook</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Spark/">Spark</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Structuring-Machine-Learning-Projects/">Structuring Machine Learning Projects</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/XGBoost/">XGBoost</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/convolutional-neural-networks/">convolutional-neural-networks</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/deep-learning/">deep learning</a><span class="tag-list-count">41</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/distributed-system/">distributed system</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/distributed-system/">distributed-system</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/english/">english</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/google/">google</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/">java</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/kaggle/">kaggle</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linear-algebra/">linear_algebra</a><span class="tag-list-count">13</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/neural-networks-deep-learning/">neural-networks-deep-learning</a><span class="tag-list-count">8</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nlp-sequence-models/">nlp-sequence-models</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/papers/">papers</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/probability/">probability</a><span class="tag-list-count">13</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/spark/">spark</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/统计学习方法/">统计学习方法</a><span class="tag-list-count">4</span></li></ul>
+						<ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Basic-Algorithm/">Basic Algorithm</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Calculus-and-Differential/">Calculus and Differential</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Data-Structure/">Data Structure</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Distributed-System/">Distributed System</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hadoop-YARN/">Hadoop YARN</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Improving-Deep-Neural-Networks/">Improving Deep Neural Networks</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Information-Theory/">Information Theory</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java，JVM/">Java，JVM</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Latex/">Latex</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning/">Machine Learning</a><span class="tag-list-count">27</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning-by-Andrew-NG/">Machine Learning by Andrew NG</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning，-feature-engineering/">Machine Learning， feature engineering</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/NLP/">NLP</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python-Data-Science-Cookbook/">Python Data Science Cookbook</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Spark/">Spark</a><span class="tag-list-count">27</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Structuring-Machine-Learning-Projects/">Structuring Machine Learning Projects</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/XGBoost/">XGBoost</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/convolutional-neural-networks/">convolutional-neural-networks</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/deep-learning/">deep learning</a><span class="tag-list-count">41</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/distributed-system/">distributed system</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/distributed-system/">distributed-system</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/english/">english</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/google/">google</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/">java</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/kaggle/">kaggle</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linear-algebra/">linear_algebra</a><span class="tag-list-count">13</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/neural-networks-deep-learning/">neural-networks-deep-learning</a><span class="tag-list-count">8</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nlp-sequence-models/">nlp-sequence-models</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/papers/">papers</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/probability/">probability</a><span class="tag-list-count">13</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/spark/">spark</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/统计学习方法/">统计学习方法</a><span class="tag-list-count">4</span></li></ul>
 					</canvas>
 				</div>
 			</div>
@@ -1390,7 +1386,7 @@ o O是open新行（在光标
     
       <span class="post-meta-item-text">Site words total count</span>
     
-    <span title="Site words total count">691.9k</span>
+    <span title="Site words total count">916.6k</span>
   
 </div>
 
