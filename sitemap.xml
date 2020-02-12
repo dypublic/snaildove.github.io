@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://snaildove.github.io/2020/02/10/TheSummaryTranslation(SparkTheDefinitiveGuide)_online/</loc>
+    
+    <lastmod>2020-02-12T10:54:26.377Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2019/06/02/Chapter20_StreamProcessingFundamentals(SparkTheDefinitiveGuide)_online/</loc>
+    
+    <lastmod>2020-02-12T10:53:54.843Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2018/12/28/foundations_of_spark_programming/</loc>
+    
+    <lastmod>2020-02-12T10:52:57.227Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://snaildove.github.io/2019/11/14/HyperLogLog/</loc>
+    
+    <lastmod>2020-02-12T08:40:08.176Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://snaildove.github.io/2019/08/07/Chapter17_Deploying-Spark(SparkTheDefinitiveGuide)_online/</loc>
     
     <lastmod>2020-02-12T08:31:03.643Z</lastmod>
@@ -33,20 +61,6 @@
     <loc>https://snaildove.github.io/2019/08/13/Chapter19_Performance-Tuning(SparkTheDefinitiveGuide)_online/</loc>
     
     <lastmod>2020-02-12T08:30:04.242Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2019/06/02/Chapter20_StreamProcessingFundamentals(SparkTheDefinitiveGuide)_online/</loc>
-    
-    <lastmod>2020-02-12T08:29:51.409Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2020/02/12/TheSummaryTranslation(SparkTheDefinitiveGuide)_online/</loc>
-    
-    <lastmod>2020-02-12T08:27:36.164Z</lastmod>
     
   </url>
   
@@ -586,13 +600,6 @@
     <loc>https://snaildove.github.io/2017/08/02/Fourier_series/</loc>
     
     <lastmod>2020-01-29T13:40:29.302Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://snaildove.github.io/2018/12/28/foundations_of_spark_programming/</loc>
-    
-    <lastmod>2020-01-29T13:40:29.057Z</lastmod>
     
   </url>
   
