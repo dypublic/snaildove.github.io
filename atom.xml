@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://snaildove.github.io/"/>
-  <updated>2020-02-09T06:25:55.854Z</updated>
+  <updated>2020-02-11T03:24:23.061Z</updated>
   <id>https://snaildove.github.io/</id>
   
   <author>
@@ -17,22 +17,22 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>读书笔记——第2章Java内存区域与内存溢出异常&lt;br/&gt;&lt;font size=&quot;3&quot;&gt;《深入理解Java虚拟机：JVM高级特性与最佳实践（第3版）》&lt;/font&gt;</title>
+    <title>读书旁注——第2章Java内存区域与内存溢出异常&lt;br/&gt;&lt;font size=&quot;3&quot;&gt;《深入理解Java虚拟机：JVM高级特性与最佳实践（第3版）》&lt;/font&gt;</title>
     <link href="https://snaildove.github.io/2020/01/06/%E7%AC%AC2%E7%AB%A0-Java%E5%86%85%E5%AD%98%E5%8C%BA%E5%9F%9F%E4%B8%8E%E5%86%85%E5%AD%98%E6%BA%A2%E5%87%BA%E5%BC%82%E5%B8%B8%E3%80%8A%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Java%E8%99%9A%E6%8B%9F%E6%9C%BA%EF%BC%9AJVM%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7%E4%B8%8E%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%EF%BC%88%E7%AC%AC3%E7%89%88%EF%BC%89%E3%80%8B/"/>
     <id>https://snaildove.github.io/2020/01/06/第2章-Java内存区域与内存溢出异常《深入理解Java虚拟机：JVM高级特性与最佳实践（第3版）》/</id>
     <published>2020-01-05T16:00:00.000Z</published>
-    <updated>2020-02-09T06:25:55.854Z</updated>
+    <updated>2020-02-11T03:24:23.061Z</updated>
     
     <summary type="html">
     
-      &lt;center&gt;&lt;font color=&quot;red&quot;&gt;很抱歉的是：受制于以下版权，不对外开放，仅博主可见!&lt;/font&gt;&lt;/center&gt;&lt;/br&gt;在豆瓣阅读书店查看：&lt;a href=&quot;https://read.douban.com/ebook/128052544/&quot;&gt;《深入理解Java虚拟机：JVM高级特性与最佳实践（第3版）》 — 周志明&lt;/a&gt;，本作品由华章数媒授权豆瓣阅读全球范围内电子版制作与发行。© 版权所有，侵权必究。
+      对于从事C、C++程序开发的开发人员来说，在内存管理领域，他们既是拥有最高权力的“皇帝”，又是从事最基础工作的劳动人民——既拥有每一个对象的“所有权”，又担负着每一个对象生命从开始到终结的维护责任。&lt;br/&gt;对于Java程序员来说，在虚拟机自动内存管理机制的帮助下，不再需要为每一个new操作去写配对的delete/free代码，不容易出现内存泄漏和内存溢出问题，看起来由虚拟机管理内存一切都很美好。&lt;font color=&quot;yellow&gt;&quot;不过，也正是因为Java程序员把控制内存的权力交给了Java虚拟机，一旦出现内存泄漏和溢出方面的问题，如果不了解虚拟机是怎样使用内存的，那排查错误、修正问题将会成为一项异常艰难的工作。&lt;/font&gt;&lt;br/&gt;本章是第二部分的第1章，笔者将从概念上介绍Java虚拟机内存的各个区域，讲解这些区域的作用、服务对象以及其中可能产生的问题，这也是翻越虚拟机内存管理这堵围墙的第一步。
     
     </summary>
     
       <category term="English,中文" scheme="https://snaildove.github.io/categories/English-%E4%B8%AD%E6%96%87/"/>
     
     
-      <category term="java" scheme="https://snaildove.github.io/tags/java/"/>
+      <category term="Java，JVM" scheme="https://snaildove.github.io/tags/Java%EF%BC%8CJVM/"/>
     
   </entry>
   
@@ -121,11 +121,11 @@
   </entry>
   
   <entry>
-    <title>翻译 Chapter 23 Structured Streaming in Production</title>
-    <link href="https://snaildove.github.io/2019/08/10/Chapter23_StructuredStreamingInProduction(SparkTheDefinitiveGuide)_online/"/>
-    <id>https://snaildove.github.io/2019/08/10/Chapter23_StructuredStreamingInProduction(SparkTheDefinitiveGuide)_online/</id>
+    <title>翻译 Chapter18_Monitoring-and-Debugging</title>
+    <link href="https://snaildove.github.io/2019/08/10/Chapter18_Monitoring-and-Debugging(SparkTheDefinitiveGuide)_online/"/>
+    <id>https://snaildove.github.io/2019/08/10/Chapter18_Monitoring-and-Debugging(SparkTheDefinitiveGuide)_online/</id>
     <published>2019-08-09T16:00:00.000Z</published>
-    <updated>2020-01-29T13:40:26.303Z</updated>
+    <updated>2020-01-29T13:40:25.548Z</updated>
     
     <summary type="html">
     
@@ -148,11 +148,11 @@
   </entry>
   
   <entry>
-    <title>翻译 Chapter18_Monitoring-and-Debugging</title>
-    <link href="https://snaildove.github.io/2019/08/10/Chapter18_Monitoring-and-Debugging(SparkTheDefinitiveGuide)_online/"/>
-    <id>https://snaildove.github.io/2019/08/10/Chapter18_Monitoring-and-Debugging(SparkTheDefinitiveGuide)_online/</id>
+    <title>翻译 Chapter 23 Structured Streaming in Production</title>
+    <link href="https://snaildove.github.io/2019/08/10/Chapter23_StructuredStreamingInProduction(SparkTheDefinitiveGuide)_online/"/>
+    <id>https://snaildove.github.io/2019/08/10/Chapter23_StructuredStreamingInProduction(SparkTheDefinitiveGuide)_online/</id>
     <published>2019-08-09T16:00:00.000Z</published>
-    <updated>2020-01-29T13:40:25.548Z</updated>
+    <updated>2020-01-29T13:40:26.303Z</updated>
     
     <summary type="html">
     
@@ -499,11 +499,11 @@
   </entry>
   
   <entry>
-    <title>《统计学习方法》第9章 EM/GMM/F-MM/GEM</title>
-    <link href="https://snaildove.github.io/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/"/>
-    <id>https://snaildove.github.io/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/</id>
+    <title>《统计学习方法总结》</title>
+    <link href="https://snaildove.github.io/2018/10/01/summary_of_LiHang_Statistical-learning-methods/"/>
+    <id>https://snaildove.github.io/2018/10/01/summary_of_LiHang_Statistical-learning-methods/</id>
     <published>2018-09-30T16:00:00.000Z</published>
-    <updated>2020-01-29T13:40:22.736Z</updated>
+    <updated>2020-01-29T13:40:38.292Z</updated>
     
     <summary type="html">
     
@@ -511,7 +511,7 @@
       
         
         
-          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;
+          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;这是个人学习完&lt;a href=&quot;http://www.hangli-hl.com/index.html&quot; target=&quot;_blank&quot;
         
       
     
@@ -527,11 +527,11 @@
   </entry>
   
   <entry>
-    <title>《统计学习方法》第4章 NaiveBayes</title>
-    <link href="https://snaildove.github.io/2018/10/01/4.Naive-Bayes_LiHang-Statistical-Learning-Methods/"/>
-    <id>https://snaildove.github.io/2018/10/01/4.Naive-Bayes_LiHang-Statistical-Learning-Methods/</id>
+    <title>《统计学习方法》第8章 提升方法之AdaBoost\BoostingTree\GBDT</title>
+    <link href="https://snaildove.github.io/2018/10/01/8.Booting-Methods_LiHang-Statistical-Learning-Methods/"/>
+    <id>https://snaildove.github.io/2018/10/01/8.Booting-Methods_LiHang-Statistical-Learning-Methods/</id>
     <published>2018-09-30T16:00:00.000Z</published>
-    <updated>2020-01-29T13:40:22.268Z</updated>
+    <updated>2020-01-29T13:40:22.493Z</updated>
     
     <summary type="html">
     
