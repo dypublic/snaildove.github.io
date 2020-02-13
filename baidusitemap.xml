@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://snaildove.github.io/2019/08/05/Chapter15_HowSparkRuns-on-a-Cluster(SparkTheDefinitiveGuide)_online/</loc>
+    <lastmod>2020-02-13</lastmod>
+  </url>  <url>
+    <loc>https://snaildove.github.io/2019/08/05/Chapter5_Basic-Structured-Operations(SparkTheDefinitiveGuide)_online/</loc>
+    <lastmod>2020-02-13</lastmod>
+  </url>  <url>
     <loc>https://snaildove.github.io/2020/02/10/summary_of_Translation(SparkTheDefinitiveGuide)_online/</loc>
     <lastmod>2020-02-13</lastmod>
   </url>  <url>
@@ -17,9 +23,6 @@
     <lastmod>2020-02-12</lastmod>
   </url>  <url>
     <loc>https://snaildove.github.io/2019/08/05/Chapter16_DevelopingSparkApplications(SparkTheDefinitiveGuide)_online/</loc>
-    <lastmod>2020-02-12</lastmod>
-  </url>  <url>
-    <loc>https://snaildove.github.io/2019/08/05/Chapter15_HowSparkRuns-on-a-Cluster(SparkTheDefinitiveGuide)_online/</loc>
     <lastmod>2020-02-12</lastmod>
   </url>  <url>
     <loc>https://snaildove.github.io/2019/08/10/Chapter18_Monitoring-and-Debugging(SparkTheDefinitiveGuide)_online/</loc>
@@ -77,9 +80,6 @@
     <lastmod>2020-02-12</lastmod>
   </url>  <url>
     <loc>https://snaildove.github.io/2019/08/05/Chapter6_Working-with-Different-Types-of-Data(SparkTheDefinitiveGuide)_online/</loc>
-    <lastmod>2020-02-12</lastmod>
-  </url>  <url>
-    <loc>https://snaildove.github.io/2019/08/05/Chapter5_Basic-Structured-Operations(SparkTheDefinitiveGuide)_online/</loc>
     <lastmod>2020-02-12</lastmod>
   </url>  <url>
     <loc>https://snaildove.github.io/2019/08/05/Chapter4_StructuredAPIOverview(SparkTheDefinitiveGuide)_online/</loc>
