@@ -694,7 +694,7 @@ http://www.cnb
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://snaildove.github.io/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/">
+    <link itemprop="mainEntityOfPage" href="https://snaildove.github.io/2018/10/01/4.Naive-Bayes_LiHang-Statistical-Learning-Methods/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="SnailDove">
@@ -713,7 +713,7 @@ http://www.cnb
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/" itemprop="url">《统计学习方法》第9章 EM/GMM/F-MM/GEM</a></h1>
+                <a class="post-title-link" href="/2018/10/01/4.Naive-Bayes_LiHang-Statistical-Learning-Methods/" itemprop="url">《统计学习方法》第4章 NaiveBayes</a></h1>
         
 
         <div class="post-meta">
@@ -784,7 +784,7 @@ http://www.cnb
                   <span class="post-meta-item-text">Words count in article</span>
                 
                 <span title="Words count in article">
-                  3,560
+                  156
                 </span>
               
 
@@ -800,7 +800,7 @@ http://www.cnb
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
                 <span title="Reading time">
-                  17
+                  1
                 </span>
               
             </div>
@@ -823,18 +823,28 @@ http://www.cnb
       
         
           
-           前言EM（期望最大）算法有很多的应用，最广泛的就是混合高斯模型、聚类、HMM等等，本质上就是一种优化算法，不断迭代，获得优值，与梯度下降、牛顿法、共轭梯度法都起到同一类的作用。
-本文是对李航《统计学习方法》的第9章复习总结，主要内容如下
+           前言写本文章主要目的是复习（毕竟之前看纸质版做的笔记）， 对于证明比较跳跃和勘误的地方我都做了注解，以便初学者和以后复习地时候快速阅读理解不会卡住。
+朴素贝叶斯法
+4.1 朴素贝叶斯法的学习与分类4.1.1 基本方法
 
-EM（期望最大）算法证明有跳跃性的地方全部事无巨细地写出来，
+4.1.2 后验概率最大化的含义
 
-在 三硬币例子解析 这一节将会把这个例子跟公式一一对应起来
+4.2 朴素贝叶斯法的参数估计4.2.1 极大似然估计
+4.2.2 学习与分类算法
+例子
 
-GMM（高斯混合模型）迭代公式证
-          ...
+4.2.3 贝叶斯估计
+
+本章概要
+
+习题
+
+
+
+          
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/#more" rel="contents">
+            <a class="btn" href="/2018/10/01/4.Naive-Bayes_LiHang-Statistical-Learning-Methods/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1069,7 +1079,7 @@ GMM（高斯混合模型）迭代公式证
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://snaildove.github.io/2018/10/01/4.Naive-Bayes_LiHang-Statistical-Learning-Methods/">
+    <link itemprop="mainEntityOfPage" href="https://snaildove.github.io/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="SnailDove">
@@ -1088,7 +1098,7 @@ GMM（高斯混合模型）迭代公式证
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/10/01/4.Naive-Bayes_LiHang-Statistical-Learning-Methods/" itemprop="url">《统计学习方法》第4章 NaiveBayes</a></h1>
+                <a class="post-title-link" href="/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/" itemprop="url">《统计学习方法》第9章 EM/GMM/F-MM/GEM</a></h1>
         
 
         <div class="post-meta">
@@ -1159,7 +1169,7 @@ GMM（高斯混合模型）迭代公式证
                   <span class="post-meta-item-text">Words count in article</span>
                 
                 <span title="Words count in article">
-                  156
+                  3,560
                 </span>
               
 
@@ -1175,7 +1185,7 @@ GMM（高斯混合模型）迭代公式证
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
                 <span title="Reading time">
-                  1
+                  17
                 </span>
               
             </div>
@@ -1198,28 +1208,18 @@ GMM（高斯混合模型）迭代公式证
       
         
           
-           前言写本文章主要目的是复习（毕竟之前看纸质版做的笔记）， 对于证明比较跳跃和勘误的地方我都做了注解，以便初学者和以后复习地时候快速阅读理解不会卡住。
-朴素贝叶斯法
-4.1 朴素贝叶斯法的学习与分类4.1.1 基本方法
+           前言EM（期望最大）算法有很多的应用，最广泛的就是混合高斯模型、聚类、HMM等等，本质上就是一种优化算法，不断迭代，获得优值，与梯度下降、牛顿法、共轭梯度法都起到同一类的作用。
+本文是对李航《统计学习方法》的第9章复习总结，主要内容如下
 
-4.1.2 后验概率最大化的含义
+EM（期望最大）算法证明有跳跃性的地方全部事无巨细地写出来，
 
-4.2 朴素贝叶斯法的参数估计4.2.1 极大似然估计
-4.2.2 学习与分类算法
-例子
+在 三硬币例子解析 这一节将会把这个例子跟公式一一对应起来
 
-4.2.3 贝叶斯估计
-
-本章概要
-
-习题
-
-
-
-          
+GMM（高斯混合模型）迭代公式证
+          ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/10/01/4.Naive-Bayes_LiHang-Statistical-Learning-Methods/#more" rel="contents">
+            <a class="btn" href="/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1331,7 +1331,7 @@ GMM（高斯混合模型）迭代公式证
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">40</span>
+                  <span class="site-state-item-count">39</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -1343,7 +1343,7 @@ GMM（高斯混合模型）迭代公式证
 				<h4 class="widget-title">Tag Cloud</h4>
 					<div id="myCanvasContainer" class="widget tagcloud">
 					<canvas width="250" height="250" id="resCanvas" style="width=100%">
-						<ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Basic-Algorithm/">Basic Algorithm</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Big-Data/">Big Data</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Calculus-and-Differential/">Calculus and Differential</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Data-Structure/">Data Structure</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Distributed-System/">Distributed System</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Estimate/">Estimate</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hadoop-YARN/">Hadoop YARN</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Improving-Deep-Neural-Networks/">Improving Deep Neural Networks</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Information-Theory/">Information Theory</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JVM/">JVM</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java/">Java</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java，JVM/">Java，JVM</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Latex/">Latex</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning/">Machine Learning</a><span class="tag-list-count">27</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning-by-Andrew-NG/">Machine Learning by Andrew NG</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning-feature-engineering/">Machine Learning.feature engineering</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/NLP/">NLP</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python-Data-Science-Cookbook/">Python Data Science Cookbook</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Redis/">Redis</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Spark/">Spark</a><span class="tag-list-count">30</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Structuring-Machine-Learning-Projects/">Structuring Machine Learning Projects</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/XGBoost/">XGBoost</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/convolutional-neural-networks/">convolutional-neural-networks</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/deep-learning/">deep learning</a><span class="tag-list-count">41</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/distributed-compute/">distributed compute</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/distributed-system/">distributed system</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/distributed-system/">distributed-system</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/english/">english</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/google/">google</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/">java</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/kaggle/">kaggle</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linear-algebra/">linear_algebra</a><span class="tag-list-count">13</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/neural-networks-deep-learning/">neural-networks-deep-learning</a><span class="tag-list-count">8</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nlp-sequence-models/">nlp-sequence-models</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/papers/">papers</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/probability/">probability</a><span class="tag-list-count">13</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/统计学习方法/">统计学习方法</a><span class="tag-list-count">4</span></li></ul>
+						<ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Basic-Algorithm/">Basic Algorithm</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Big-Data/">Big Data</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Calculus-and-Differential/">Calculus and Differential</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Data-Structure/">Data Structure</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Distributed-System/">Distributed System</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Estimate/">Estimate</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hadoop-YARN/">Hadoop YARN</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Improving-Deep-Neural-Networks/">Improving Deep Neural Networks</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Information-Theory/">Information Theory</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JVM/">JVM</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java/">Java</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Latex/">Latex</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning/">Machine Learning</a><span class="tag-list-count">27</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning-by-Andrew-NG/">Machine Learning by Andrew NG</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Machine-Learning-feature-engineering/">Machine Learning.feature engineering</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/NLP/">NLP</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python-Data-Science-Cookbook/">Python Data Science Cookbook</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Redis/">Redis</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Spark/">Spark</a><span class="tag-list-count">30</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Structuring-Machine-Learning-Projects/">Structuring Machine Learning Projects</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/XGBoost/">XGBoost</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/convolutional-neural-networks/">convolutional-neural-networks</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/deep-learning/">deep learning</a><span class="tag-list-count">41</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/distributed-compute/">distributed compute</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/distributed-system/">distributed system</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/distributed-system/">distributed-system</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/english/">english</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/google/">google</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/">java</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/kaggle/">kaggle</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linear-algebra/">linear_algebra</a><span class="tag-list-count">13</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/neural-networks-deep-learning/">neural-networks-deep-learning</a><span class="tag-list-count">8</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nlp-sequence-models/">nlp-sequence-models</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/papers/">papers</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/probability/">probability</a><span class="tag-list-count">13</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/统计学习方法/">统计学习方法</a><span class="tag-list-count">4</span></li></ul>
 					</canvas>
 				</div>
 			</div>
