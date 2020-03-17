@@ -43,55 +43,11 @@
   </entry>
   
   <entry>
-    <title>读书旁注——第13章　线程安全与锁优化&lt;br/&gt;&lt;font size=&quot;3&quot;&gt;《深入理解Java虚拟机：JVM高级特性与最佳实践（第3版）》&lt;/font&gt;</title>
-    <link href="https://snaildove.github.io/2020/01/11/%E7%AC%AC13%E7%AB%A0-%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E4%B8%8E%E9%94%81%E4%BC%98%E5%8C%96%E3%80%8A%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Java%E8%99%9A%E6%8B%9F%E6%9C%BA%EF%BC%9AJVM%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7%E4%B8%8E%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%EF%BC%88%E7%AC%AC3%E7%89%88%EF%BC%89%E3%80%8B_online/"/>
-    <id>https://snaildove.github.io/2020/01/11/第13章-线程安全与锁优化《深入理解Java虚拟机：JVM高级特性与最佳实践（第3版）》_online/</id>
-    <published>2020-01-10T16:00:00.000Z</published>
-    <updated>2020-02-29T11:08:20.484Z</updated>
-    
-    <summary type="html">
-    
-      面向对象的编程思想极大地提升了现代软件开发的效率和软件可以达到的规模，但是现实世界与计算机世界之间不可避免地存在一些差异。例如，人们很难想象现实中的对象在一项工作进行期间，会被不停地中断和切换，对象的属性（数据）可能会在中断期间被修改和变脏，而这些事件在计算机世界中是再普通不过的事情。有时候，良好的设计原则不得不向现实做出一些妥协，我们必须保证程序在计算机中正确无误地运行，然后再考虑如何将代码组织得更好，让程序运行得更快。对于本章的主题“高效并发”来说，首先需要保证并发的正确性，然后在此基础上来实现高效。本章就先从如何保证并发的正确性及如何实现线程安全说起。
-    
-    </summary>
-    
-      <category term="English,中文" scheme="https://snaildove.github.io/categories/English-%E4%B8%AD%E6%96%87/"/>
-    
-    
-      <category term="Java" scheme="https://snaildove.github.io/tags/Java/"/>
-    
-      <category term="JVM" scheme="https://snaildove.github.io/tags/JVM/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>读书旁注——第2章Java内存区域与内存溢出异常&lt;br/&gt;&lt;font size=&quot;3&quot;&gt;《深入理解Java虚拟机：JVM高级特性与最佳实践（第3版）》&lt;/font&gt;</title>
-    <link href="https://snaildove.github.io/2020/01/06/%E7%AC%AC2%E7%AB%A0-Java%E5%86%85%E5%AD%98%E5%8C%BA%E5%9F%9F%E4%B8%8E%E5%86%85%E5%AD%98%E6%BA%A2%E5%87%BA%E5%BC%82%E5%B8%B8%E3%80%8A%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Java%E8%99%9A%E6%8B%9F%E6%9C%BA%EF%BC%9AJVM%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7%E4%B8%8E%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%EF%BC%88%E7%AC%AC3%E7%89%88%EF%BC%89%E3%80%8B_online/"/>
-    <id>https://snaildove.github.io/2020/01/06/第2章-Java内存区域与内存溢出异常《深入理解Java虚拟机：JVM高级特性与最佳实践（第3版）》_online/</id>
-    <published>2020-01-05T16:00:00.000Z</published>
-    <updated>2020-02-29T11:08:20.830Z</updated>
-    
-    <summary type="html">
-    
-      对于从事C、C++程序开发的开发人员来说，在内存管理领域，他们既是拥有最高权力的“皇帝”，又是从事最基础工作的劳动人民——既拥有每一个对象的“所有权”，又担负着每一个对象生命从开始到终结的维护责任。&lt;br/&gt;对于Java程序员来说，在虚拟机自动内存管理机制的帮助下，不再需要为每一个new操作去写配对的delete/free代码，不容易出现内存泄漏和内存溢出问题，看起来由虚拟机管理内存一切都很美好。&lt;font color=&quot;yellow&gt;&quot;不过，也正是因为Java程序员把控制内存的权力交给了Java虚拟机，一旦出现内存泄漏和溢出方面的问题，如果不了解虚拟机是怎样使用内存的，那排查错误、修正问题将会成为一项异常艰难的工作。&lt;/font&gt;&lt;br/&gt;本章是第二部分的第1章，笔者将从概念上介绍Java虚拟机内存的各个区域，讲解这些区域的作用、服务对象以及其中可能产生的问题，这也是翻越虚拟机内存管理这堵围墙的第一步。
-    
-    </summary>
-    
-      <category term="English,中文" scheme="https://snaildove.github.io/categories/English-%E4%B8%AD%E6%96%87/"/>
-    
-    
-      <category term="Java" scheme="https://snaildove.github.io/tags/Java/"/>
-    
-      <category term="JVM" scheme="https://snaildove.github.io/tags/JVM/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Paper Google Bigtable 翻译与总结</title>
     <link href="https://snaildove.github.io/2019/12/31/Paper-Google-Bigtable_translation-and-summary_online/"/>
     <id>https://snaildove.github.io/2019/12/31/Paper-Google-Bigtable_translation-and-summary_online/</id>
     <published>2019-12-30T16:00:00.000Z</published>
-    <updated>2020-03-17T10:40:45.863Z</updated>
+    <updated>2020-03-17T15:01:37.771Z</updated>
     
     <summary type="html">
     
@@ -178,11 +134,11 @@
   </entry>
   
   <entry>
-    <title>翻译 Chapter 12 Resilient Distributed Datasets (RDDs)</title>
-    <link href="https://snaildove.github.io/2019/11/07/Chapter12_Resilient-Distributed-Datasets-(RDDs)(SparkTheDefinitiveGuide)_online/"/>
-    <id>https://snaildove.github.io/2019/11/07/Chapter12_Resilient-Distributed-Datasets-(RDDs)(SparkTheDefinitiveGuide)_online/</id>
+    <title>翻译 Chapter 14 Distributed Shared Variables</title>
+    <link href="https://snaildove.github.io/2019/11/07/Chapter14_Distributed-Shared-Variables(SparkTheDefinitiveGuide)_online/"/>
+    <id>https://snaildove.github.io/2019/11/07/Chapter14_Distributed-Shared-Variables(SparkTheDefinitiveGuide)_online/</id>
     <published>2019-11-06T16:00:00.000Z</published>
-    <updated>2020-02-29T11:07:38.358Z</updated>
+    <updated>2020-02-29T11:07:38.874Z</updated>
     
     <summary type="html">
     
@@ -230,11 +186,11 @@
   </entry>
   
   <entry>
-    <title>翻译 Chapter 3 A Tour of Spark’s Toolset</title>
-    <link href="https://snaildove.github.io/2019/11/07/Chapter3_A-Tour-of-Spark-Toolset(SparkTheDefinitiveGuide)_online/"/>
-    <id>https://snaildove.github.io/2019/11/07/Chapter3_A-Tour-of-Spark-Toolset(SparkTheDefinitiveGuide)_online/</id>
+    <title>翻译 Chapter 12 Resilient Distributed Datasets (RDDs)</title>
+    <link href="https://snaildove.github.io/2019/11/07/Chapter12_Resilient-Distributed-Datasets-(RDDs)(SparkTheDefinitiveGuide)_online/"/>
+    <id>https://snaildove.github.io/2019/11/07/Chapter12_Resilient-Distributed-Datasets-(RDDs)(SparkTheDefinitiveGuide)_online/</id>
     <published>2019-11-06T16:00:00.000Z</published>
-    <updated>2020-02-29T11:07:46.554Z</updated>
+    <updated>2020-02-29T11:07:38.358Z</updated>
     
     <summary type="html">
     
@@ -282,11 +238,11 @@
   </entry>
   
   <entry>
-    <title>翻译 Chapter 14 Distributed Shared Variables</title>
-    <link href="https://snaildove.github.io/2019/11/07/Chapter14_Distributed-Shared-Variables(SparkTheDefinitiveGuide)_online/"/>
-    <id>https://snaildove.github.io/2019/11/07/Chapter14_Distributed-Shared-Variables(SparkTheDefinitiveGuide)_online/</id>
+    <title>翻译 Chapter 3 A Tour of Spark’s Toolset</title>
+    <link href="https://snaildove.github.io/2019/11/07/Chapter3_A-Tour-of-Spark-Toolset(SparkTheDefinitiveGuide)_online/"/>
+    <id>https://snaildove.github.io/2019/11/07/Chapter3_A-Tour-of-Spark-Toolset(SparkTheDefinitiveGuide)_online/</id>
     <published>2019-11-06T16:00:00.000Z</published>
-    <updated>2020-02-29T11:07:38.874Z</updated>
+    <updated>2020-02-29T11:07:46.554Z</updated>
     
     <summary type="html">
     
@@ -360,11 +316,11 @@
   </entry>
   
   <entry>
-    <title>翻译 Chapter 26 Classification</title>
-    <link href="https://snaildove.github.io/2019/09/01/Chapter26_Classification(SparkTheDefinitiveGuide)_online/"/>
-    <id>https://snaildove.github.io/2019/09/01/Chapter26_Classification(SparkTheDefinitiveGuide)_online/</id>
+    <title>翻译 Chapter 27 Regression</title>
+    <link href="https://snaildove.github.io/2019/09/01/Chapter27_Regression(SparkTheDefinitiveGuide)_online/"/>
+    <id>https://snaildove.github.io/2019/09/01/Chapter27_Regression(SparkTheDefinitiveGuide)_online/</id>
     <published>2019-08-31T16:00:00.000Z</published>
-    <updated>2020-02-29T11:07:44.189Z</updated>
+    <updated>2020-02-29T11:07:44.663Z</updated>
     
     <summary type="html">
     
@@ -386,11 +342,11 @@
   </entry>
   
   <entry>
-    <title>翻译 Chapter 27 Regression</title>
-    <link href="https://snaildove.github.io/2019/09/01/Chapter27_Regression(SparkTheDefinitiveGuide)_online/"/>
-    <id>https://snaildove.github.io/2019/09/01/Chapter27_Regression(SparkTheDefinitiveGuide)_online/</id>
+    <title>翻译 Chapter 26 Classification</title>
+    <link href="https://snaildove.github.io/2019/09/01/Chapter26_Classification(SparkTheDefinitiveGuide)_online/"/>
+    <id>https://snaildove.github.io/2019/09/01/Chapter26_Classification(SparkTheDefinitiveGuide)_online/</id>
     <published>2019-08-31T16:00:00.000Z</published>
-    <updated>2020-02-29T11:07:44.663Z</updated>
+    <updated>2020-02-29T11:07:44.189Z</updated>
     
     <summary type="html">
     
@@ -516,6 +472,32 @@
   </entry>
   
   <entry>
+    <title>翻译 Chapter18_Monitoring-and-Debugging</title>
+    <link href="https://snaildove.github.io/2019/08/10/Chapter18_Monitoring-and-Debugging(SparkTheDefinitiveGuide)_online/"/>
+    <id>https://snaildove.github.io/2019/08/10/Chapter18_Monitoring-and-Debugging(SparkTheDefinitiveGuide)_online/</id>
+    <published>2019-08-09T16:00:00.000Z</published>
+    <updated>2020-02-29T11:07:40.955Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;&lt;img src=&quot;http://q6gm8fomw.bkt.clouddn.com/SparkTheDefinitiveGuide/Spark权威指南封面.jpg&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="English,中文" scheme="https://snaildove.github.io/categories/English-%E4%B8%AD%E6%96%87/"/>
+    
+    
+      <category term="Spark" scheme="https://snaildove.github.io/tags/Spark/"/>
+    
+  </entry>
+  
+  <entry>
     <title>翻译 Chapter 23 Structured Streaming in Production</title>
     <link href="https://snaildove.github.io/2019/08/10/Chapter23_StructuredStreamingInProduction(SparkTheDefinitiveGuide)_online/"/>
     <id>https://snaildove.github.io/2019/08/10/Chapter23_StructuredStreamingInProduction(SparkTheDefinitiveGuide)_online/</id>
@@ -530,6 +512,32 @@
         
           &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;&lt;img src=&quot;https://img3.doubanio.com/view/subject/l/public/s29478060.jpg&quot; alt&gt;&lt;/p&gt;
 &lt;h1
+        
+      
+    
+    </summary>
+    
+      <category term="English,中文" scheme="https://snaildove.github.io/categories/English-%E4%B8%AD%E6%96%87/"/>
+    
+    
+      <category term="Spark" scheme="https://snaildove.github.io/tags/Spark/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>翻译 Chapter 17 Deploying Spark</title>
+    <link href="https://snaildove.github.io/2019/08/07/Chapter17_Deploying-Spark(SparkTheDefinitiveGuide)_online/"/>
+    <id>https://snaildove.github.io/2019/08/07/Chapter17_Deploying-Spark(SparkTheDefinitiveGuide)_online/</id>
+    <published>2019-08-06T16:00:00.000Z</published>
+    <updated>2020-02-29T11:07:40.712Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;&lt;img src=&quot;http://q6gm8fomw.bkt.clouddn.com/SparkTheDefinitiveGuide/Spark权威指南封面.jpg&quot;
         
       
     
