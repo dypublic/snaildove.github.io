@@ -116,7 +116,7 @@
 <meta property="og:image" content="http://q6gm8fomw.bkt.clouddn.com/distributed-system/Google-BigTable/Snipaste_2020-01-07_17-18-18.png">
 <meta property="og:image" content="http://q6gm8fomw.bkt.clouddn.com/distributed-system/Google-BigTable/Snipaste_2020-01-07_17-18-10.png">
 <meta property="og:image" content="http://q6gm8fomw.bkt.clouddn.com/distributed-system/Google-BigTable/bigtable_arch.png">
-<meta property="og:updated_time" content="2020-03-17T15:01:37.771Z">
+<meta property="og:updated_time" content="2020-03-17T15:03:43.174Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Paper Google Bigtable 翻译与总结">
 <meta name="twitter:description" content="前言 第一部分主要是论文的翻译与旁注：按照论文原文结构一步步翻译 第二部分主要是BigTable思想总结：BigTable论文相比GFS、MapReduce两篇复杂，行文并不流畅（可能本渣渣太弱），文中甚至没有总体结构说明和一些难点解释（例如：BigTable首创的并且在后来众多出名的开源组件（例如：LevelDB, RocksDB）中常用的SSTable文件索引格式：LSM 都没有详细说明），">
@@ -560,7 +560,7 @@
 <li>Root Tablet 保存了 METADATA Tablet 内所有其他 Tablet 的位置</li>
 <li>每个 METADATA Tablet（Root Tablet 除外）保存了一组 User Tables 的位置</li>
 </ul>
-<p>METADATA 的每行数据在内存中大约占 1KB。而 METADATA Tablet 的大小限制在 128MB，这种三级位置方案就可以存储高达  128MB = $2^{17}$ <em> 1KB，即每个 METADATA Tablet 可以指向 $2^{17}$ 个 User Table，每个 User Table 同样是 128MB 的大小话，就有 $2^{17} \</em> 2^{17} = 2^{34}$ 个 Tablet 。 如果每个 Tablet 128 MB 大小，那总数据量就高达 128MB = $2^{27}$ Byte， $2^{34} * 2^{27} = 2^{61}$ Byte，即2000PB</p>
+<p>METADATA 的每行数据在内存中大约占 1KB。而 METADATA Tablet 的大小限制在 128MB，这种三级位置方案就可以存储高达  128MB = $2^{17} * $  1KB，即每个 METADATA Tablet 可以指向 $2^{17}$ 个 User Table，每个 User Table 同样是 128MB 的大小话，就有 $2^{17} * 2^{17} = 2^{34}$ 个 Tablet 。 如果每个 Tablet 128 MB 大小，那总数据量就高达 128MB = $2^{27}$ Byte， $2^{34} * 2^{27} = 2^{61}$ Byte，即2000PB</p>
 </blockquote>
 <p>The client library caches tablet locations. If the client does not know the location of a tablet, or if it discovers that cached location information is incorrect, then it <u>recursively moves up the tablet location hierarchy</u>. If the client’s cache is empty, the location algorithm requires three network round-trips, including one read from Chubby. If the client’s cache is stale, the location algorithm could take up to six round-trips, because <u>stale cache entries</u> are only discovered upon misses (assuming that METADATA tablets do not move very frequently). Although tablet locations are stored in memory, so no GFS accesses are required, we further reduce this cost in the common case by having the client library prefetch tablet locations: it reads the metadata for more than one tablet whenever it reads the METADATA table.</p>
 <p>客户端库缓存Tablet的位置信息。 如果客户端不知道Tablet的位置，或者发现缓存的位置信息不正确，则它将在Tablet位置层级中向上递归<sup id="fnref:14"><a href="#fn:14" rel="footnote">14</a></sup>（查找想要的位置信息）。 如果客户的缓存为空，则定位算法需要进行三次网络往返，包括从Chubby中读取一次。 如果客户的缓存过时，则定位算法最多可能需要进行六次往返，因为过时的缓存项仅在未命中时才被发现（假设METADATA Tablet的移动频率不高）。 尽管Tablet位置存储在内存中，所以不需要GFS访问，但在常见情况下，我们通过让客户端库预取Tablet位置来进一步降低了此成本：每当读取METADATA表时，它都会读取一个以上Tablet的元数据。</p>
