@@ -134,11 +134,11 @@
   </entry>
   
   <entry>
-    <title>翻译 Chapter 3 A Tour of Spark’s Toolset</title>
-    <link href="https://snaildove.github.io/2019/11/07/Chapter3_A-Tour-of-Spark-Toolset(SparkTheDefinitiveGuide)_online/"/>
-    <id>https://snaildove.github.io/2019/11/07/Chapter3_A-Tour-of-Spark-Toolset(SparkTheDefinitiveGuide)_online/</id>
+    <title>翻译 Chapter 11 Datasets</title>
+    <link href="https://snaildove.github.io/2019/11/07/Chapter11_DataSets(SparkTheDefinitiveGuide)_online/"/>
+    <id>https://snaildove.github.io/2019/11/07/Chapter11_DataSets(SparkTheDefinitiveGuide)_online/</id>
     <published>2019-11-06T16:00:00.000Z</published>
-    <updated>2020-02-29T11:07:46.554Z</updated>
+    <updated>2020-02-29T11:07:38.139Z</updated>
     
     <summary type="html">
     
@@ -238,11 +238,11 @@
   </entry>
   
   <entry>
-    <title>翻译 Chapter 11 Datasets</title>
-    <link href="https://snaildove.github.io/2019/11/07/Chapter11_DataSets(SparkTheDefinitiveGuide)_online/"/>
-    <id>https://snaildove.github.io/2019/11/07/Chapter11_DataSets(SparkTheDefinitiveGuide)_online/</id>
+    <title>翻译 Chapter 3 A Tour of Spark’s Toolset</title>
+    <link href="https://snaildove.github.io/2019/11/07/Chapter3_A-Tour-of-Spark-Toolset(SparkTheDefinitiveGuide)_online/"/>
+    <id>https://snaildove.github.io/2019/11/07/Chapter3_A-Tour-of-Spark-Toolset(SparkTheDefinitiveGuide)_online/</id>
     <published>2019-11-06T16:00:00.000Z</published>
-    <updated>2020-02-29T11:07:38.139Z</updated>
+    <updated>2020-02-29T11:07:46.554Z</updated>
     
     <summary type="html">
     
@@ -316,11 +316,11 @@
   </entry>
   
   <entry>
-    <title>翻译 Chapter 26 Classification</title>
-    <link href="https://snaildove.github.io/2019/09/01/Chapter26_Classification(SparkTheDefinitiveGuide)_online/"/>
-    <id>https://snaildove.github.io/2019/09/01/Chapter26_Classification(SparkTheDefinitiveGuide)_online/</id>
+    <title>翻译 Chapter 27 Regression</title>
+    <link href="https://snaildove.github.io/2019/09/01/Chapter27_Regression(SparkTheDefinitiveGuide)_online/"/>
+    <id>https://snaildove.github.io/2019/09/01/Chapter27_Regression(SparkTheDefinitiveGuide)_online/</id>
     <published>2019-08-31T16:00:00.000Z</published>
-    <updated>2020-02-29T11:07:44.189Z</updated>
+    <updated>2020-02-29T11:07:44.663Z</updated>
     
     <summary type="html">
     
@@ -342,11 +342,11 @@
   </entry>
   
   <entry>
-    <title>翻译 Chapter 27 Regression</title>
-    <link href="https://snaildove.github.io/2019/09/01/Chapter27_Regression(SparkTheDefinitiveGuide)_online/"/>
-    <id>https://snaildove.github.io/2019/09/01/Chapter27_Regression(SparkTheDefinitiveGuide)_online/</id>
+    <title>翻译 Chapter 26 Classification</title>
+    <link href="https://snaildove.github.io/2019/09/01/Chapter26_Classification(SparkTheDefinitiveGuide)_online/"/>
+    <id>https://snaildove.github.io/2019/09/01/Chapter26_Classification(SparkTheDefinitiveGuide)_online/</id>
     <published>2019-08-31T16:00:00.000Z</published>
-    <updated>2020-02-29T11:07:44.663Z</updated>
+    <updated>2020-02-29T11:07:44.189Z</updated>
     
     <summary type="html">
     
@@ -472,32 +472,6 @@
   </entry>
   
   <entry>
-    <title>翻译 Chapter18_Monitoring-and-Debugging</title>
-    <link href="https://snaildove.github.io/2019/08/10/Chapter18_Monitoring-and-Debugging(SparkTheDefinitiveGuide)_online/"/>
-    <id>https://snaildove.github.io/2019/08/10/Chapter18_Monitoring-and-Debugging(SparkTheDefinitiveGuide)_online/</id>
-    <published>2019-08-09T16:00:00.000Z</published>
-    <updated>2020-02-29T11:07:40.955Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;&lt;img src=&quot;http://q6gm8fomw.bkt.clouddn.com/SparkTheDefinitiveGuide/Spark权威指南封面.jpg&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="English,中文" scheme="https://snaildove.github.io/categories/English-%E4%B8%AD%E6%96%87/"/>
-    
-    
-      <category term="Spark" scheme="https://snaildove.github.io/tags/Spark/"/>
-    
-  </entry>
-  
-  <entry>
     <title>翻译 Chapter 23 Structured Streaming in Production</title>
     <link href="https://snaildove.github.io/2019/08/10/Chapter23_StructuredStreamingInProduction(SparkTheDefinitiveGuide)_online/"/>
     <id>https://snaildove.github.io/2019/08/10/Chapter23_StructuredStreamingInProduction(SparkTheDefinitiveGuide)_online/</id>
@@ -512,6 +486,32 @@
         
           &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;&lt;img src=&quot;https://img3.doubanio.com/view/subject/l/public/s29478060.jpg&quot; alt&gt;&lt;/p&gt;
 &lt;h1
+        
+      
+    
+    </summary>
+    
+      <category term="English,中文" scheme="https://snaildove.github.io/categories/English-%E4%B8%AD%E6%96%87/"/>
+    
+    
+      <category term="Spark" scheme="https://snaildove.github.io/tags/Spark/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>翻译 Chapter18_Monitoring-and-Debugging</title>
+    <link href="https://snaildove.github.io/2019/08/10/Chapter18_Monitoring-and-Debugging(SparkTheDefinitiveGuide)_online/"/>
+    <id>https://snaildove.github.io/2019/08/10/Chapter18_Monitoring-and-Debugging(SparkTheDefinitiveGuide)_online/</id>
+    <published>2019-08-09T16:00:00.000Z</published>
+    <updated>2020-02-29T11:07:40.955Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;&lt;img src=&quot;http://q6gm8fomw.bkt.clouddn.com/SparkTheDefinitiveGuide/Spark权威指南封面.jpg&quot;
         
       
     
