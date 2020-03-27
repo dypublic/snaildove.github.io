@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://snaildove.github.io/2019/12/11/a-brief-introduction-of-Paxos-Raft-ZAB/</loc>
+    <lastmod>2020-03-27</lastmod>
+  </url>  <url>
     <loc>https://snaildove.github.io/2019/12/31/Paper-Google-Bigtable_translation-and-summary_online/</loc>
     <lastmod>2020-03-17</lastmod>
   </url>  <url>
@@ -308,9 +311,6 @@
     <lastmod>2020-02-29</lastmod>
   </url>  <url>
     <loc>https://snaildove.github.io/2019/02/01/Achitecture_of_Apache_Hadoop_YARN/</loc>
-    <lastmod>2020-02-29</lastmod>
-  </url>  <url>
-    <loc>https://snaildove.github.io/2019/12/11/a-brief-introduction-of-Paxos-Raft-ZAB/</loc>
     <lastmod>2020-02-29</lastmod>
   </url>  <url>
     <loc>https://snaildove.github.io/2018/10/01/9.EM_and_GEM_LiHang-Statistical-Learning-Methods/</loc>

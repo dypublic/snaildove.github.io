@@ -136,7 +136,7 @@
 <meta property="og:image" content="http://q6gm8fomw.bkt.clouddn.com/distributed-system/a-brief-introduction-of-Paxos-Raft-ZAB/ClientUnkown.gif">
 <meta property="og:image" content="http://q6gm8fomw.bkt.clouddn.com/distributed-system/a-brief-introduction-of-Paxos-Raft-ZAB/ClientSuccess.gif">
 <meta property="og:image" content="http://q6gm8fomw.bkt.clouddn.com/distributed-system/a-brief-introduction-of-Paxos-Raft-ZAB/ClientFailue.gif">
-<meta property="og:updated_time" content="2020-02-29T11:07:34.774Z">
+<meta property="og:updated_time" content="2020-03-27T07:48:06.591Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CAP定理图示与Raft各种场景演示">
 <meta name="twitter:description" content="本文主要着重于CAP定理和raft各种场景演示 CAP 定理根据加州大学伯克利分校计算机科学家Eric Brewer说法，该定理于1998年秋季首次出现。该定理于1999年作为CAP原理发表，并由Brewer在2000 年的分布式原理研讨会上提出计算（PODC）。2002年，麻省理工学院的塞斯·吉尔伯特（Seth Gilbert ) 和 南希·林奇（Nancy Lynch）发表了布鲁尔猜想的正式">
@@ -449,7 +449,7 @@
                   <span class="post-meta-item-text">Words count in article</span>
                 
                 <span title="Words count in article">
-                  5,410
+                  5,573
                 </span>
               
 
@@ -465,7 +465,7 @@
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
                 <span title="Reading time">
-                  21
+                  22
                 </span>
               
             </div>
@@ -487,15 +487,21 @@
 
       
         <script src="\assets\js\APlayer.min.js"> </script><p>本文主要着重于CAP定理和raft各种场景演示</p>
-<h2 id="CAP-定理"><a href="#CAP-定理" class="headerlink" title="CAP 定理"></a>CAP 定理</h2><p>根据加州大学伯克利分校计算机科学家Eric Brewer说法，该定理于1998年秋季首次出现。该定理于1999年作为CAP原理发表，并由Brewer在<u><a style="color:#0879e3" href="https://en.wikipedia.org/wiki/Symposium_on_Principles_of_Distributed_Computing)作为[猜想](https://en.wikipedia.org/wiki/Conjecture" target="_blank" rel="noopener">2000 年的分布式原理研讨会上</a></u>提出<u><a style="color:#0879e3" href="https://en.wikipedia.org/wiki/Symposium_on_Principles_of_Distributed_Computing" target="_blank" rel="noopener">计算</a></u>（PODC）。2002年，麻省理工学院的塞斯·吉尔伯特（<u><a style="color:#0879e3" href="https://en.wikipedia.org/w/index.php?title=Seth_Gilbert&action=edit&redlink=1" target="_blank" rel="noopener">Seth Gilbert</a></u> ) 和 南希·林奇（<u><a style="color:#0879e3" href="https://en.wikipedia.org/wiki/Nancy_Lynch" target="_blank" rel="noopener">Nancy Lynch</a></u>）发表了布鲁尔猜想的正式证明，使之成为一个<u><a style="color:#0879e3" href="http://en.wikipedia.org/wiki/CAP_theorem" target="_blank" rel="noopener">定理</a></u>。</p>
+<h2 id="CAP-定理"><a href="#CAP-定理" class="headerlink" title="CAP 定理"></a>CAP 定理</h2><p>根据加州大学伯克利分校计算机科学家Eric Brewer说法，该定理于1998年秋季首次出现。该定理于1999年作为CAP原理发表，并由Brewer在<a style="color:#0879e3" href="https://en.wikipedia.org/wiki/Symposium_on_Principles_of_Distributed_Computing)作为[猜想](https://en.wikipedia.org/wiki/Conjecture" target="_blank" rel="noopener">2000 年的分布式原理研讨会上</a>提出<a style="color:#0879e3" href="https://en.wikipedia.org/wiki/Symposium_on_Principles_of_Distributed_Computing" target="_blank" rel="noopener">计算</a>（PODC）。2002年，麻省理工学院的塞斯·吉尔伯特（<a style="color:#0879e3" href="https://en.wikipedia.org/w/index.php?title=Seth_Gilbert&action=edit&redlink=1" target="_blank" rel="noopener">Seth Gilbert</a> ) 和 南希·林奇（<a style="color:#0879e3" href="https://en.wikipedia.org/wiki/Nancy_Lynch" target="_blank" rel="noopener">Nancy Lynch</a>）发表了布鲁尔猜想的正式证明，使之成为一个<a style="color:#0879e3" href="http://en.wikipedia.org/wiki/CAP_theorem" target="_blank" rel="noopener">定理</a>。</p>
 <p><img src="https://stph.scenari-community.org/bdd/nos1/res/cap-theorem_1.png" alt="11122" style="zoom:65%;"></p>
-<p><u><a style="color:#0879e3" href="http://en.wikipedia.org/wiki/CAP_theorem" target="_blank" rel="noopener">CAP定理</a></u>指出分布式计算机系统不可能同时提供以下三个保证：</p>
+<p><a style="color:#0879e3" href="http://en.wikipedia.org/wiki/CAP_theorem" target="_blank" rel="noopener">CAP定理</a>指出分布式计算机系统不可能同时提供以下三个保证（来自<a style="color:#0879e3" href="https://en.wikipedia.org/wiki/CAP_theorem" target="_blank" rel="noopener"> wiki : CAP Theorum</a>）：</p>
 <ul>
-<li>Consistency 一致性（每次读取都会收到最新的写入或错误）</li>
-<li>Availability 可用性（保证每个请求都收到有关成功还是失败的响应），但不能保证它包含最新的写入</li>
-<li>Partition tolerance 分区容错性（尽管任意消息丢失或系统部分出现故障，系统仍可继续运行）</li>
+<li><p><strong>Consistency</strong>: Every read receives the most recent write or an error</p>
+<p>  一致性：每次读取都会收到最新的写入或错误</p>
+</li>
+<li><p><strong>Availability</strong>: Every request receives a (non-error) response, without the guarantee that it contains the most recent write</p>
+<p>  可用性：每个请求都会收到一个（非错误）响应，但不能保证它包含最新的写入</p>
+</li>
+<li><p><strong>Partition tolerance</strong>: The system continues to operate despite an arbitrary number of messages being dropped (or delayed) by the network between nodes</p>
+<p>  分区容忍：尽管节点之间的网络丢弃（或延迟）了任意数量的消息，但系统仍继续运行</p>
+</li>
 </ul>
-<p>CAP定理证明详细查看：<u><a style="color:#0879e3" href="http://lpd.epfl.ch/sgilbert/pubs/BrewersConjecture-SigAct.pdf" target="_blank" rel="noopener">Gilbert和Lynch的论文</a></u>，以下翻译自<u><a style="color:#0879e3" href="https://mwhittaker.github.io/blog/an_illustrated_proof_of_the_cap_theorem/" target="_blank" rel="noopener">图解CAP定理</a></u>：</p>
+<p>CAP定理证明详细查看：<a style="color:#0879e3" href="http://lpd.epfl.ch/sgilbert/pubs/BrewersConjecture-SigAct.pdf" target="_blank" rel="noopener">Gilbert和Lynch的论文</a>，以下翻译自<a style="color:#0879e3" href="https://mwhittaker.github.io/blog/an_illustrated_proof_of_the_cap_theorem/" target="_blank" rel="noopener">图解CAP定理</a>：</p>
 <h4 id="分布式系统"><a href="#分布式系统" class="headerlink" title="分布式系统"></a>分布式系统</h4><p>让我们考虑一个非常简单的分布式系统。我们的系统由两个服务器 $G_1$ 和 $G_2$ 组成。这两个服务器都跟踪相同的变量 $v_0$，其初始值为 $v_0$。$G_1$ 和 $G_2$ 可以相互通信，也可以与外部客户端通信。这是我们的系统的布局。</p>
 <p><img src="https://mwhittaker.github.io/blog/an_illustrated_proof_of_the_cap_theorem/assets/cap1.svg" alt="img"></p>
 <p>客户端可以请求从任何服务器进行写入和读取。服务器收到请求后，将执行所需的任何计算，然后响应客户端。例如，这是写的样子。</p>
@@ -672,9 +678,9 @@
 <p>要提交条目，节点首先将其复制到 follower 节点上， 然后 leader 等待，直到大多数（majority）节点都写入了条目，在这期间leader不断发送给follower心跳包，一方面确定集群中各节点是否存活，另一方面也可以知道follower是否写入了条目；现在，该条目已提交到 leader 节点上，并且节点状态为“ 5”；leader 节点然后通知 follower 节点该条目已提交（commited）；现在，集群已就系统状态达成共识（consensus），然后最后再响应给客户端表示成功。</p>
 <p><img src="http://q6gm8fomw.bkt.clouddn.com/distributed-system/a-brief-introduction-of-Paxos-Raft-ZAB/LogReplication.gif" alt="1" style="zoom:68%;"></p>
 <p>此过程称为<strong>日志复制（Log Replication）</strong>。</p>
-<p>面对网络分区，日志甚至可以保持一致。让我们添加一个分区以将A＆B与C，D＆E分开。由于有了这个分区，我们现在拥有两个术语不同的 leader。让我们添加另一个客户端，并尝试更新两个 leader。一个客户端将尝试将节点B的值设置为“ 3”。节点B无法复制为多数，因此其日志条目保持未提交状态。另一个客户端将尝试将节点E的值设置为“ 8”。这将成功，因为它可以复制到大多数。现在，让我们修复网络分区。节点B将看到更高的任期（term）并退出。节点A和B都将回滚其未提交的条目并匹配新 leader 的日志。现在，我们的日志在整个集群中是一致的。</p>
+<p><strong>面对网络分区</strong>，日志甚至可以保持一致。让我们添加一个分区以将A＆B与C，D＆E分开。由于有了这个分区，我们现在拥有两个术语不同的 leader。让我们添加另一个客户端，并尝试更新两个 leader。一个客户端将尝试将节点B的值设置为“ 3”。节点B无法复制为多数，因此其日志条目保持未提交状态。另一个客户端将尝试将节点E的值设置为“ 8”。这将成功，因为它可以复制到大多数。现在，让我们修复网络分区。节点B将看到更高的任期（term）并退出。节点A和B都将回滚其未提交的条目并匹配新 leader 的日志。现在，我们的日志在整个集群中是一致的。</p>
 <p><img src="http://q6gm8fomw.bkt.clouddn.com/distributed-system/a-brief-introduction-of-Paxos-Raft-ZAB/NetworkPartitionRecovery.gif" alt style="zoom:68%;"></p>
-<p>这里验证上文 CAP定理中的保证了强一致性和可用性（网络分区以后，分区两端还在使用），却牺牲分区容错性，因为 “SET 3” 被删除了，没有写到集群中，所以并没有完全正确。</p>
+<p>这里验证上文 CAP定理中的保证了强一致性和分区容忍，但是分区时，底下两个节点形成的集群(即一个分区)不是多数派(quorum)不具备可用性，但是整个集群依然可用。但是因为 “SET 3” 被删除了，没有写到集群中，所以并没有完全正确虽然保证了一致性。此处跟前文我注明的”译者附””一致：网络分区下，只能选择C A中的一者，这里实验选择了一致性，牺牲了B节点作为另外一个leader的可用性，即降低了可用性：所有客户端只能通过节点成功完成服务。</p>
 <h4 id="场景测试"><a href="#场景测试" class="headerlink" title="场景测试"></a><font color="#3399cc">场景测试</font></h4><p>由以上可知保证一致性并不能代表完全正确。接下来又一个例子将会说明，并到 <a href="https://raft.github.io/" target="_blank" rel="noopener">https://raft.github.io/</a> 网站进行验证。</p>
 <p>假设集群共有5个节点，Client 写请求，leader向follower同步日志，此时急集群中有3个节点失败，2个结点存活，对于客户端得到结果有3种情况。</p>
 <ol>
@@ -707,7 +713,9 @@
 <li><u><a style="color:#0879e3" href="https://teddyma.gitbooks.io/learncassandra/content/about/the_cap_theorem.html" target="_blank" rel="noopener">The CAP Theorem | Learn Cassandra</a></u></li>
 <li><u><a style="color:#0879e3" href="http://lpd.epfl.ch/sgilbert/pubs/BrewersConjecture-SigAct.pdf" target="_blank" rel="noopener">Gilbert and Lynch’s specification and proof of the CAP Theorem</a></u></li>
 <li><u><a style="color:#0879e3" href="https://thesecretlivesofdata.com/raft/" target="_blank" rel="noopener">Raft : Understandable Distributed Consensus</a></u></li>
-<li><u><a style="color:#0879e3" href="https://raft.github.io/" target="_blank" rel="noopener">https://raft.github.io/</a></u></li>
+<li><p><u><a style="color:#0879e3" href="https://raft.github.io/" target="_blank" rel="noopener">https://raft.github.io/</a></u></p>
+</li>
+<li></li>
 </ol>
 
       
@@ -1031,7 +1039,7 @@
     
       <span class="post-meta-item-text">Site words total count</span>
     
-    <span title="Site words total count">918.7k</span>
+    <span title="Site words total count">918.8k</span>
   
 </div>
 
