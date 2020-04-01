@@ -96,7 +96,7 @@
 <meta property="og:site_name" content="SnailDove&#39;s blog">
 <meta property="og:description" content="Chapter 8. Joins 连接 译者：https://snaildove.github.ioChapter 7 covered aggregating single datasets, which is helpful, but more often than not, your Spark applications are going to bring together a larg">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="http://q6gm8fomw.bkt.clouddn.com/SparkTheDefinitiveGuide/Spark权威指南封面.jpg">
+<meta property="og:image" content="http://q83p23d9i.bkt.clouddn.com/SparkTheDefinitiveGuide/Spark权威指南封面.jpg">
 <meta property="og:image" content="c:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1572709961399.png">
 <meta property="og:image" content="c:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1572710000748.png">
 <meta property="og:image" content="c:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1572711489110.png">
@@ -110,11 +110,11 @@
 <meta property="og:image" content="c:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1572709006834.png">
 <meta property="og:image" content="c:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1572709612960.png">
 <meta property="og:image" content="c:/Users/ruito/AppData/Roaming/Typora/typora-user-images/1572709687893.png">
-<meta property="og:updated_time" content="2020-02-29T11:07:47.850Z">
+<meta property="og:updated_time" content="2020-04-01T08:50:10.754Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="翻译 Chapter 8 Joins">
 <meta name="twitter:description" content="Chapter 8. Joins 连接 译者：https://snaildove.github.ioChapter 7 covered aggregating single datasets, which is helpful, but more often than not, your Spark applications are going to bring together a larg">
-<meta name="twitter:image" content="http://q6gm8fomw.bkt.clouddn.com/SparkTheDefinitiveGuide/Spark权威指南封面.jpg">
+<meta name="twitter:image" content="http://q83p23d9i.bkt.clouddn.com/SparkTheDefinitiveGuide/Spark权威指南封面.jpg">
 
 
 
@@ -456,7 +456,7 @@
       
 
       
-        <script src="\assets\js\APlayer.min.js"> </script><p><img src="http://q6gm8fomw.bkt.clouddn.com/SparkTheDefinitiveGuide/Spark权威指南封面.jpg" alt="1" style="zoom:68%;"></p>
+        <script src="\assets\js\APlayer.min.js"> </script><p><img src="http://q83p23d9i.bkt.clouddn.com/SparkTheDefinitiveGuide/Spark权威指南封面.jpg" alt="1" style="zoom:68%;"></p>
 <p></p><h1 align="center">Chapter 8. Joins 连接</h1><p></p>
 <p><center><strong>译者</strong>：<u><a style="color:#0879e3" href="https://snaildove.github.io">https://snaildove.github.io</a></u></center><br>Chapter 7 covered aggregating single datasets, which is helpful, but more often than not, your Spark applications are going to bring together a large number of different datasets. For this reason, joins are an essential part of nearly all Spark workloads. Spark’s ability to talk to different data means that you gain the ability to tap into a variety of data sources across your company. This chapter covers not just what joins exist in Spark and how to use them, but some of the basic internals so that you can think about how Spark actually goes about executing the join on the cluster. This basic knowledge can help you avoid running out of memory and tackle problems that you could not solve before.</p>
 <p>第7章介绍了聚合单个数据集的方法，这很有用，但通常，您的Spark应用程序将把大量不同的数据集组合在一起。因此，连接几乎是所有Spark工作负载中必不可少的一部分。 Spark能够处理不同数据的能力意味着您可以利用公司中的各种数据源。本章不仅涵盖Spark中存在的连接及其使用方式，还涵盖了一些基本的内部原理，以便您可以考虑Spark实际如何在集群上执行连接。这些基础知识可以帮助您避免内存不足，并解决以前无法解决的问题。</p>
@@ -706,8 +706,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/08/05/Chapter6_Working-with-Different-Types-of-Data(SparkTheDefinitiveGuide)_online/" rel="next" title="翻译 Chapter 6. Working with Different Types of Data">
-                <i class="fa fa-chevron-left"></i> 翻译 Chapter 6. Working with Different Types of Data
+              <a href="/2019/08/05/Chapter16_DevelopingSparkApplications(SparkTheDefinitiveGuide)_online/" rel="next" title="翻译 Chapter 16 Developing Spark Applications">
+                <i class="fa fa-chevron-left"></i> 翻译 Chapter 16 Developing Spark Applications
               </a>
             
           </div>
@@ -716,8 +716,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/08/05/Chapter15_HowSparkRuns-on-a-Cluster(SparkTheDefinitiveGuide)_online/" rel="prev" title="翻译 Chapter 15 How Spark Runs on a Cluster">
-                翻译 Chapter 15 How Spark Runs on a Cluster <i class="fa fa-chevron-right"></i>
+              <a href="/2019/08/05/Chapter6_Working-with-Different-Types-of-Data(SparkTheDefinitiveGuide)_online/" rel="prev" title="翻译 Chapter 6. Working with Different Types of Data">
+                翻译 Chapter 6. Working with Different Types of Data <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
